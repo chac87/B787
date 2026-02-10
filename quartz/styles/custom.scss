@@ -1,35 +1,47 @@
 // 1. ABSOLUT ZUERST: Die @use Regel
 @use "./base.scss";
 
-/* =========================================
-   HEADING LAYOUT HACKS
-   Nutzung:
-   h5 = zentriert
-   h6 = rechtsbündig
-   ========================================= */
+/* ============================================================
+   UNIVERSAL ALIGNMENT HACK (Obsidian Editor + Reading + Web)
+   Ziel: H5 = Zentriert, H6 = Rechtsbündig
+   Look: Exakt wie normaler Text (kein Fett, normale Größe)
+   ============================================================ */
 
-$heading-color: var(--web-text-normal, #111111);
-
-/* h5 – zentriert */
-h5 {
-  text-align: center;
-  font-weight: normal;
-  font-size: 1em;
-  margin: 0;
-  color: $heading-color;
-  line-height: 1.4;
-  border: none;
+/* 1. RESET FÜR ALLE MODI (Editor, Preview, Web) */
+/* Wir fassen alle Selektoren zusammen, um Wiederholung zu vermeiden */
+h5, h6,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.cm-s-obsidian .cm-header-5,  /* Obsidian Editor H5 */
+.cm-s-obsidian .cm-header-6   /* Obsidian Editor H6 */
+{
+    font-weight: normal !important;   /* Killt das Fett */
+    font-size: 1em !important;        /* Exakt so groß wie Fließtext */
+    line-height: 1.5 !important;      /* Normaler Zeilenabstand */
+    font-family: inherit !important;  /* Keine Überschriften-Schriftart */
+    color: var(--text-normal) !important;
+    margin: 0 !important;             /* Kein riesiger Abstand */
+    padding: 0 !important;
+    border: none !important;          /* Entfernt Unterstriche mancher Themes */
 }
 
-/* h6 – rechtsbündig */
-h6 {
-  text-align: right;
-  font-weight: normal;
-  font-size: 1em;
-  margin: 0;
-  color: $heading-color;
-  opacity: 0.9;
-  line-height: 1.4;
+/* 2. ZENTRIERUNG (H5 / #####) */
+h5, 
+.markdown-rendered h5,
+.cm-s-obsidian .cm-header-5 {
+    text-align: center !important;
+    display: block; /* Wichtig für Zentrierung im Web */
+    width: 100%;
+}
+
+/* 3. RECHTSBÜNDIG (H6 / ######) */
+h6, 
+.markdown-rendered h6,
+.cm-s-obsidian .cm-header-6 {
+    text-align: right !important;
+    display: block;
+    width: 100%;
+    opacity: 0.8; /* Optional: Leicht ausgegraut für Metadaten */
 }
 
 /* =========================================================

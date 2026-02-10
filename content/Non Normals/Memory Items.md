@@ -9,7 +9,7 @@
 > > Autostart did not start the engine
 > 
 > **PF** FUEL CONTROL switch...Confirm...CUTOFF  
-> START SELECTOR...NORM
+> START SELECTOR...NORM  
 
 > [!warning]- AIRSPEED UNRELIABLE
 > > [!proc] Condition
@@ -42,8 +42,8 @@
 > - Structural integrity in doubt? Limit airspeed, avoid high maneuvring loads  
 > - Descend at vMO/MMO. 
 > ---
-> *If flight deck or cabin temperature becomes too hot or too cold:.  
-> Consider CAB TEMP HOT/COLD checklist
+> *If flight deck or cabin temperature becomes too hot or too cold:*  
+> Consider CAB TEMP HOT/COLD checklist  
 
 > [!warning]- DUAL ENG FAIL/STALL
 > > [!proc] Condition

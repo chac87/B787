@@ -93,11 +93,11 @@ Immediately do the following at the first indication of stall (buffet or stick s
 >**PF** Wings level, 20° pitch
 >**PF** Verify speedbrakes retracted
 >###### Assure All Actions completed **PM**
->###### Monitor Altitude and V/S **PM**
->**PF** If necessary: Pitch up to the pitch limit indicator or stick shaker or initial buffet
->**PF** Do not change Config
->###### Callout trend towards terrain **PM**
->**PF** When clear of terrain: Decrease pitch and accelerate
+>###### Monitor Altitude and V/S **PM**  
+>**PF** If necessary: Pitch up to the pitch limit indicator or stick shaker or initial buffet  
+>**PF** Do not change Config  
+>###### Callout trend towards terrain **PM**  
+>**PF** When clear of terrain: Decrease pitch and accelerate  
 
 ---
 ## Traffic Avoidance
@@ -128,47 +128,53 @@ Immediately do the following at the first indication of stall (buffet or stick s
 - Bank angle > 45°
 - Airspeed inappropriate for the conditions
 
-> [!proc]- Upset Recovery - Nose High
-> >[!proc] Objective
-> >##### Lower the nose to the horizon
+> [!proc]- Upset Recovery - Nose High  
+> >[!proc] Objective  
+> >##### Lower the nose to the horizon  
 > 
-> "UPSET - I have Control"
-> Disengange AP, A/T
-> Apply Nose down elevator
-> Apply Nose down trim
-> Reduce Thrust
->    *If needed: Roll for nose down rate*
+> "UPSET - I have Control"  
+> Disengange AP, A/T  
+> Apply Nose down elevator  
+> Apply Nose down trim  
+> Reduce Thrust  
+>    *If needed: Roll for nose down rate*  
+>    
 > ---
-> ##### **Approaching horizon**
-> Roll wings level
-> Check Airspeed
-> Adjust thrust
-> Establish pitch attitude
+> 
+> ##### **Approaching horizon** 
+> Roll wings level  
+> Check Airspeed  
+> Adjust thrust  
+> Establish pitch attitude  
+> 
 > ---
-> ##### **PM**
-> Callout Attitude, airspeed, and altitude
-> Verify all required actions have been done
-> Callout Any continued deviation
+> 
+> ##### **PM**  
+> Callout Attitude, airspeed, and altitude  
+> Verify all required actions have been done  
+> Callout Any continued deviation  
 
 
 > [!proc]- Upset Recovery - Nose Low
 > >[!proc] Objective
 > >##### Raise the nose to the horizon without overstressing the airplane or stalling
 > 
-> "UPSET - I have Control"
-> Disengange AP, A/T
-> Recover from stall
-> Roll wings level
+> "UPSET - I have Control"  
+> Disengange AP, A/T  
+> Recover from stall  
+> Roll wings level  
+> 
 > ---
 > ##### **Complete Recovery**
-> Apply nose up elevator
->    *if needed: Nose up trim*
-> Adjust thrust and drag
+> Apply nose up elevator  
+>    *if needed: Nose up trim*  
+> Adjust thrust and drag  
+> 
 > ---
 >##### **PM**
-> Callout Attitude, airspeed, and altitude
-> Verify all required actions have been done
-> Callout Any continued deviation
+> Callout Attitude, airspeed, and altitude  
+> Verify all required actions have been done  
+> Callout Any continued deviation  
 
 ---
 ## Windshear
@@ -179,19 +185,20 @@ Immediately do the following at the first indication of stall (buffet or stick s
 - Active from rotation until 1.500 ft RA
 
 > [!proc]- Windshear Maneuver
-> **PF** "WINDSHEAR - I HAVE CONTROL"
-> **PF** Disengage AP
-> **PF** Push either TO/GA switch
-> ###### Monitor Vertical speed **PM**
-> **PF** "MAX POWER"
-> ###### Callout trends **PM**
-> **PF** Apply Maximum thrust
-> **PF** Disconnect A/T
-> **PF** Wings level, 15° pitch
-> **PF** Verify speedbrakes retracted
-> ###### Verify all actions completed **PM**
-> **PF** Follow FD
-> **PF** Do not change Config
+> **PF** "WINDSHEAR - I HAVE CONTROL"  
+> **PF** Disengage AP  
+> **PF** Push either TO/GA switch  
+> ###### Monitor Vertical speed **PM**  
+> **PF** "MAX POWER"  
+> ###### Callout trends **PM**  
+> **PF** Apply Maximum thrust  
+> **PF** Disconnect A/T  
+> **PF** Wings level, 15° pitch  
+> **PF** Verify speedbrakes retracted  
+> ###### Verify all actions completed **PM**  
+> **PF** Follow FD  
+> **PF** Do not change Config  
+> 
 > ---
 > 
 > ##### *If necessary: Increase pitch to PLI Pitch Limit Indicator, but don't exceed unless to avoid terrain*
