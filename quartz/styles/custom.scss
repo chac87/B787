@@ -1,3 +1,50 @@
+// 1. ABSOLUT ZUERST: Die @use Regel
 @use "./base.scss";
 
-// put your custom CSS here!
+// 2. DANACH: Alle Importe deiner Obsidian-Styles
+@import "obsidian/callouts.css";
+@import "obsidian/table-50-50.css";
+@import "obsidian/tabelle-in-callout.css";
+@import "obsidian/image-tweak.css";
+@import "obsidian/global-hacks.css";
+
+// 3. LAYOUT: Spalten entfernen & Text zentrieren
+.left, .right {
+  display: none !important;
+}
+
+.center {
+  grid-column: 1 / -1 !important;
+  max-width: 750px;
+  margin: 0 auto !important;
+  padding: 0 1.5rem;
+}
+
+header, footer {
+  max-width: 750px;
+  margin: 0 auto;
+  grid-column: 1 / -1 !important;
+}
+
+// 4. ELEMENTE: Titel und Datum ausblenden
+.article-title, .content-meta {
+  display: none;
+}
+
+// 5. ÜBERSETZER: Obsidian-Klassen für Quartz nutzbar machen
+.content, article {
+  @extend .markdown-rendered !optional;
+}
+
+// 6. FIX: Callout-Farben (Zuweisung der Obsidian-Logik)
+.callout {
+  border-radius: 12px !important;
+  &[data-callout="proc"] { --callout-color: 30, 144, 255; }
+  &[data-callout="memory"] { --callout-color: 220, 50, 50; }
+  &[data-callout="limit"] { --callout-color: 255, 170, 0; }
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+}

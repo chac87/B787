@@ -1,0 +1,98 @@
+/* =========================================
+   LAYOUT HACKS (GLOBAL)
+   Nutzung: ##### = Zentriert, ###### = Rechts
+   ========================================= */
+
+/* 1. ZENTRIERT (H5 / #####) - Für Titel & Warnungen */
+h5, 
+.markdown-rendered h5 {
+    text-align: center !important;
+    font-weight: normal !important; /* Nicht fett */
+    font-size: 1em !important;      /* Normale Größe */
+    margin: 0 !important;           
+    color: var(--text-normal) !important;
+    line-height: 1.4;
+    border: none !important;        /* Entfernt eventuelle Unterstriche von H5 */
+}
+
+/* 2. RECHTSBÜNDIG (H6 / ######) - Für PM Actions / Status */
+h6, 
+.markdown-rendered h6 {
+    text-align: right !important;
+    font-weight: normal !important;
+    font-size: 1em !important;
+    margin: 0 !important;
+    color: var(--text-normal) !important;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* 3. EDITOR SUPPORT (Damit du es beim Tippen schon siehst) */
+.cm-s-obsidian .cm-header-5 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.cm-s-obsidian .cm-header-6 {
+    text-align: right;
+    font-weight: normal;
+    font-size: 1em;
+    color: #999; /* Im Editor leicht ausgegraut zur Unterscheidung */
+}
+
+/* =========================================
+   NO GAPS HACK (Lücken zwischen Zeilen entfernen)
+   ========================================= */
+
+/* 1. Absätze in Callouts: Unteren Abstand killen */
+.callout-content p {
+    margin-bottom: 0 !important;
+}
+
+/* 2. Listen in Callouts: Unteren Abstand killen */
+/* Das ist wichtig, falls du Bulletpoints mit H5/H6 mischst */
+.callout-content ul,
+.callout-content ol {
+    margin-bottom: 0 !important;
+}
+
+/* 3. Nachbesserung für H5/H6 selbst */
+/* Stellt sicher, dass auch nach oben hin nichts drückt */
+.callout-content h5,
+.callout-content h6 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1.2 !important; /* Etwas engerer Zeilenabstand */
+}
+
+/* OPTIONAL: Falls du Leerraum WILLST, nutze <br> */
+
+/* =========================================
+   SEPARATOR HACK: Nutze --- für Abstand
+   ========================================= */
+.callout-content hr {
+    border: none;
+    /* Option A: Eine feine Linie (wie im Cockpit) */
+    border-top: 1px solid var(--text-faint); 
+    
+    /* Option B: Wenn du NUR leeren Raum willst, lösche border-top und nimm: */
+    /* background: transparent; */
+
+    margin: 12px 0 !important; /* Das erzwingt den Abstand! */
+    height: 0;
+    opacity: 0.5;
+}
+
+/* =========================================
+   TEXT COLORS (Signalfarben)
+   Nutzung: 
+   HTML: <span class="red">TEXT</span>
+   ========================================= */
+
+/* Helper Klassen (Web-Safe) */
+.red { color: #e74c3c !important; font-weight: bold; }
+.amber { color: #f39c12 !important; font-weight: bold; }
+.green { color: #2ecc71 !important; font-weight: bold; }
