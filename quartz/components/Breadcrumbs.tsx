@@ -1,93 +1,103 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import style from "./styles/breadcrumbs.scss"
+import breadcrumbsStyle from "./styles/breadcrumbs.scss"
+import { FullSlug, SimpleSlug, resolveRelative, simplifySlug } from "../util/path"
 import { classNames } from "../util/lang"
-import { resolveRelative, joinSegments } from "../util/path"
+import { trieFromAllFiles } from "../util/ctx"
 
-type Options = {
-  spacerSymbol: string 
-  rootName: string     
-  resolveFrontmatterTitle: boolean 
-  hideOnRoot: boolean  
+type CrumbData = {
+  displayName: string
+  path: string
 }
 
-const defaultOptions: Options = {
+interface BreadcrumbOptions {
+  /**
+   * Symbol between crumbs
+   */
+  spacerSymbol: string
+  /**
+   * Name of first crumb
+   */
+  rootName: string
+  /**
+   * Whether to look up frontmatter title for folders (could cause performance problems with big vaults)
+   */
+  resolveFrontmatterTitle: boolean
+  /**
+   * Whether to display the current page in the breadcrumbs.
+   */
+  showCurrentPage: boolean
+}
+
+const defaultOptions: BreadcrumbOptions = {
   spacerSymbol: "❯",
   rootName: "Home",
   resolveFrontmatterTitle: true,
-  hideOnRoot: true,
+  showCurrentPage: true,
 }
 
-// FORMATTER: Putzt den Namen, falls keine Datei gefunden wird
-function formatFallbackTitle(slugSegment: string): string {
-  // 1. Decodieren (falls %20 im URL steht)
-  let decoded = decodeURIComponent(slugSegment)
-  
-  // 2. Entferne führende Nummerierung (z.B. "01-", "01_", "1.")
-  let clean = decoded.replace(/^(\d+[-_\.])+/, "")
-  
-  // 3. Ersetze alle Bindestriche und Unterstriche durch Leerzeichen
-  clean = clean.replace(/[-_]/g, " ")
-  
-  // 4. Wörter großschreiben (Title Case)
-  return clean.replace(/\b\w/g, (c) => c.toUpperCase()).trim()
+function formatCrumb(displayName: string, baseSlug: FullSlug, currentSlug: SimpleSlug): CrumbData {
+  return {
+    displayName: displayName.replaceAll("-", " "),
+    path: resolveRelative(baseSlug, currentSlug),
+  }
 }
 
-export default ((opts?: Partial<Options>) => {
-  const options = { ...defaultOptions, ...opts }
+export default ((opts?: Partial<BreadcrumbOptions>) => {
+  const options: BreadcrumbOptions = { ...defaultOptions, ...opts }
+  const Breadcrumbs: QuartzComponent = ({
+    fileData,
+    allFiles,
+    displayClass,
+    ctx,
+  }: QuartzComponentProps) => {
+    const trie = (ctx.trie ??= trieFromAllFiles(allFiles))
+    const slugParts = fileData.slug!.split("/")
+    const pathNodes = trie.ancestryChain(slugParts)
 
-  const Breadcrumbs: QuartzComponent = ({ fileData, allFiles, displayClass }: QuartzComponentProps) => {
-    // Auf der Startseite ausblenden
-    if (options.hideOnRoot && fileData.slug === "index") {
+    if (!pathNodes) {
       return null
     }
 
-    // Pfad zerlegen
-    const slugParts = fileData.slug?.split("/") || []
-    
-    // Breadcrumbs generieren
-    const crumbs = slugParts.map((part, index) => {
-      // Den Pfad bis zu diesem Punkt rekonstruieren
-      const pathSoFar = joinSegments(...slugParts.slice(0, index + 1))
-      
-      // Standard-Titel (Fallback), falls wir keine Datei finden
-      let title = formatFallbackTitle(part)
-      
-      if (options.resolveFrontmatterTitle && allFiles) {
-        // SUCHE 1: Exakter Match (z.B. "folder/datei")
-        let matchingFile = allFiles.find((f) => f.slug === pathSoFar)
-        
-        // SUCHE 2: Folder Note Match (z.B. "folder" -> sucht "folder/index")
-        if (!matchingFile) {
-           matchingFile = allFiles.find((f) => f.slug === joinSegments(pathSoFar, "index"))
-        }
+    const crumbs: CrumbData[] = pathNodes.map((node, idx) => {
+  let displayName = node.displayName
 
-        // Wenn Datei gefunden und Titel vorhanden: Nimm den Titel!
-        if (matchingFile && matchingFile.frontmatter?.title && matchingFile.frontmatter.title !== "Untitled") {
-          title = matchingFile.frontmatter.title
-        }
+  // 🔴 WICHTIG: index.md → H1 / title verwenden
+  if (
+    node.displayName === "index" &&
+    node.data?.frontmatter?.title
+  ) {
+    displayName = node.data.frontmatter.title
+  }
+
+  const crumb = formatCrumb(displayName, fileData.slug!, simplifySlug(node.slug))
+      if (idx === 0) {
+        crumb.displayName = options.rootName
       }
 
-      return {
-        displayName: title,
-        path: resolveRelative(fileData.slug!, pathSoFar),
+      // For last node (current page), set empty path
+      if (idx === pathNodes.length - 1) {
+        crumb.path = ""
       }
+
+      return crumb
     })
+
+    if (!options.showCurrentPage) {
+      crumbs.pop()
+    }
 
     return (
       <nav class={classNames(displayClass, "breadcrumb-container")} aria-label="breadcrumbs">
-        <div class="breadcrumb-inner">
-          <a href={resolveRelative(fileData.slug!, "/")}>{options.rootName}</a>
-          {crumbs.map((crumb, i) => (
-            <div style={{ display: "contents" }}>
-              <span class="breadcrumb-spacer">{options.spacerSymbol}</span>
-              <a href={crumb.path}>{crumb.displayName}</a>
-            </div>
-          ))}
-        </div>
+        {crumbs.map((crumb, index) => (
+          <div class="breadcrumb-element">
+            <a href={crumb.path}>{crumb.displayName}</a>
+            {index !== crumbs.length - 1 && <p>{` ${options.spacerSymbol} `}</p>}
+          </div>
+        ))}
       </nav>
     )
   }
+  Breadcrumbs.css = breadcrumbsStyle
 
-  Breadcrumbs.css = style
   return Breadcrumbs
 }) satisfies QuartzComponentConstructor

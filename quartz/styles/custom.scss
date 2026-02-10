@@ -253,3 +253,21 @@ a.external:hover {
     color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
     background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
 }
+
+/* =========================================
+   HIDE FOLDER LIST
+   Entfernt die automatische Dateiliste und
+   den "Folder:" Titel auf Index-Seiten.
+   ========================================= */
+
+/* Versteckt die gesamte Liste der Dateien */
+.page-listing {
+    display: none !important;
+}
+
+/* Optional: Falls du auch den Titel "Folder: ..." ausblenden willst,
+   der evtl. noch durchscheint (da du ArticleTitle entfernt hast, 
+   sollte er eigentlich weg sein, aber sicher ist sicher): */
+.page-header h1 {
+    display: none; /* Vorsicht: Testen, ob das nicht zu viel versteckt */
+}
