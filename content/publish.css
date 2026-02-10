@@ -1,0 +1,217 @@
+/* =========================================
+   AVIATION CHECKLIST - MODERN BLUE THEME
+   ========================================= */
+
+/* 1. GLOBAL: Rundere Ecken & modernes Feeling */
+.callout {
+    border-radius: 12px !important; /* Deutlich runder (iOS Style) */
+    padding: 10px 14px;
+    margin-block: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Leichter Schatten für Tiefe */
+    border: none; /* Standard-Rahmen weg, wir setzen eigene */
+}
+
+.callout-title {
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 0.95em;
+}
+
+/* =========================================
+   TYPE: NORMAL PROCEDURE (Blauer Kasten)
+   Nutzung: > [!proc] TITLE
+   ========================================= */
+.callout[data-callout="proc"] {
+    /* RGB für sattes Blau (Dodger Blue) */
+    --callout-color: 30, 144, 255; 
+    --callout-icon: lucide-clipboard-check;
+    
+    /* Der blaue Kasten-Look */
+    background-color: rgba(30, 144, 255, 0.1); /* Leichte blaue Füllung */
+    border: 1px solid rgba(30, 144, 255, 0.3); /* Zarter blauer Rand */
+}
+
+/* Das Icon im Titel etwas kräftiger machen */
+.callout[data-callout="proc"] .callout-icon {
+    color: rgb(30, 144, 255);
+}
+
+/* =========================================
+   TYPE: MEMORY ITEMS (Roter Kasten - Unverändert wichtig)
+   Nutzung: > [!memory] TITLE
+   ========================================= */
+.callout[data-callout="memory"] {
+    --callout-color: 220, 50, 50;
+    --callout-icon: lucide-siren;
+    
+    background-color: rgba(220, 50, 50, 0.1);
+    border: 2px solid rgba(220, 50, 50, 0.8); /* Dickerer Rahmen für Alarm */
+}
+
+/* =========================================
+   TYPE: LIMITATION (Orange/Amber)
+   Nutzung: > [!limit] TITLE
+   ========================================= */
+.callout[data-callout="limit"] {
+    --callout-color: 255, 170, 0;
+    --callout-icon: lucide-alert-triangle;
+    
+    background-color: rgba(255, 170, 0, 0.1);
+    border: 1px dashed rgba(255, 170, 0, 0.5);
+}
+
+/* =========================================
+   TYPE: INFO / STATUS (Grüner Kasten) - NEU
+   Nutzung: > [!info] TITLE
+   ========================================= */
+.callout[data-callout="info"] {
+    /* RGB für sattes Grün (Emerald) */
+    --callout-color: 34, 197, 94; 
+    --callout-icon: lucide-info; /* Das Standard Info-Icon */
+    
+    background-color: rgba(34, 197, 94, 0.1);
+    border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+/* Das grüne Icon etwas kräftiger */
+.callout[data-callout="info"] .callout-icon {
+    color: rgb(34, 197, 94);
+}
+
+
+
+/* =========================================
+   LIMITATION TABS (Hängender Einzug)
+   Nutzung: > **Label** Langer Text...
+   ========================================= */
+
+/* 1. Der Container (Die Zeile) */
+/* Wir machen aus dem Absatz eine Flexbox. Das trennt Fett und Normal automatisch. */
+.callout[data-callout="limit"] .callout-content p {
+    display: flex;             
+    flex-direction: row;       /* Nebeneinander */
+    align-items: baseline;     /* Textlinie bündig halten */
+    margin-bottom: 2px;        /* Abstand zwischen den Einträgen */
+}
+
+/* 2. Die linke Spalte (Das Label) */
+.callout[data-callout="limit"] .callout-content strong {
+    flex: 0 0 200px;           /* Starr: Nicht wachsen, nicht schrumpfen, exakt 200px */
+    width: 200px;              /* Sicherheits-Breite */
+    margin-right: 12px;        /* Abstand zur rechten Spalte */
+    
+    font-weight: 600;
+    color: var(--text-normal);
+    
+    /* Falls das Label selbst mehrzeilig wird: */
+    white-space: normal;
+}
+
+/* 3. Die rechte Spalte (Der Wert) */
+/* Wir müssen das Textelement nicht explizit stylen, Flexbox erledigt das.
+   Der normale Text füllt automatisch den Rest und bricht in SEINER Spalte um. */
+   
+/* =============================================
+   GLOBAL HACKS
+      ========================================= */
+
+/* =========================================
+   LAYOUT HACKS (GLOBAL)
+   Nutzung: ##### = Zentriert, ###### = Rechts
+   ========================================= */
+
+/* 1. ZENTRIERT (H5 / #####) - Für Titel & Warnungen */
+h5, 
+.markdown-rendered h5 {
+    text-align: center !important;
+    font-weight: normal !important; /* Nicht fett */
+    font-size: 1em !important;      /* Normale Größe */
+    margin: 0 !important;           
+    color: var(--text-normal) !important;
+    line-height: 1.4;
+    border: none !important;        /* Entfernt eventuelle Unterstriche von H5 */
+}
+
+/* 2. RECHTSBÜNDIG (H6 / ######) - Für PM Actions / Status */
+h6, 
+.markdown-rendered h6 {
+    text-align: right !important;
+    font-weight: normal !important;
+    font-size: 1em !important;
+    margin: 0 !important;
+    color: var(--text-normal) !important;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* 3. EDITOR SUPPORT (Damit du es beim Tippen schon siehst) */
+.cm-s-obsidian .cm-header-5 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.cm-s-obsidian .cm-header-6 {
+    text-align: right;
+    font-weight: normal;
+    font-size: 1em;
+    color: #999; /* Im Editor leicht ausgegraut zur Unterscheidung */
+}
+
+/* =========================================
+   NO GAPS HACK (Lücken zwischen Zeilen entfernen)
+   ========================================= */
+
+/* 1. Absätze in Callouts: Unteren Abstand killen */
+.callout-content p {
+    margin-bottom: 0 !important;
+}
+
+/* 2. Listen in Callouts: Unteren Abstand killen */
+/* Das ist wichtig, falls du Bulletpoints mit H5/H6 mischst */
+.callout-content ul,
+.callout-content ol {
+    margin-bottom: 0 !important;
+}
+
+/* 3. Nachbesserung für H5/H6 selbst */
+/* Stellt sicher, dass auch nach oben hin nichts drückt */
+.callout-content h5,
+.callout-content h6 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1.2 !important; /* Etwas engerer Zeilenabstand */
+}
+
+/* OPTIONAL: Falls du Leerraum WILLST, nutze <br> */
+
+/* =========================================
+   SEPARATOR HACK: Nutze --- für Abstand
+   ========================================= */
+.callout-content hr {
+    border: none;
+    /* Option A: Eine feine Linie (wie im Cockpit) */
+    border-top: 1px solid var(--text-faint); 
+    
+    /* Option B: Wenn du NUR leeren Raum willst, lösche border-top und nimm: */
+    /* background: transparent; */
+
+    margin: 12px 0 !important; /* Das erzwingt den Abstand! */
+    height: 0;
+    opacity: 0.5;
+}
+
+/* =========================================
+   TEXT COLORS (Signalfarben)
+   Nutzung: 
+   HTML: <span class="red">TEXT</span>
+   ========================================= */
+
+/* Helper Klassen (Web-Safe) */
+.red { color: #e74c3c !important; font-weight: bold; }
+.amber { color: #f39c12 !important; font-weight: bold; }
+.green { color: #2ecc71 !important; font-weight: bold; }

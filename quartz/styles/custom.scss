@@ -1,50 +1,33 @@
 // 1. ABSOLUT ZUERST: Die @use Regel
 @use "./base.scss";
 
-// 2. DANACH: Alle Importe deiner Obsidian-Styles
-@import "obsidian/callouts.css";
-@import "obsidian/table-50-50.css";
-@import "obsidian/tabelle-in-callout.css";
-@import "obsidian/image-tweak.css";
-@import "obsidian/global-hacks.css";
+/* =========================================
+   HEADING LAYOUT HACKS
+   Nutzung:
+   h5 = zentriert
+   h6 = rechtsbündig
+   ========================================= */
 
-// 3. LAYOUT: Spalten entfernen & Text zentrieren
-.left, .right {
-  display: none !important;
+$heading-color: var(--web-text-normal, #111111);
+
+/* h5 – zentriert */
+h5 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0;
+  color: $heading-color;
+  line-height: 1.4;
+  border: none;
 }
 
-.center {
-  grid-column: 1 / -1 !important;
-  max-width: 750px;
-  margin: 0 auto !important;
-  padding: 0 1.5rem;
-}
-
-header, footer {
-  max-width: 750px;
-  margin: 0 auto;
-  grid-column: 1 / -1 !important;
-}
-
-// 4. ELEMENTE: Titel und Datum ausblenden
-.article-title, .content-meta {
-  display: none;
-}
-
-// 5. ÜBERSETZER: Obsidian-Klassen für Quartz nutzbar machen
-.content, article {
-  @extend .markdown-rendered !optional;
-}
-
-// 6. FIX: Callout-Farben (Zuweisung der Obsidian-Logik)
-.callout {
-  border-radius: 12px !important;
-  &[data-callout="proc"] { --callout-color: 30, 144, 255; }
-  &[data-callout="memory"] { --callout-color: 220, 50, 50; }
-  &[data-callout="limit"] { --callout-color: 255, 170, 0; }
-}
-
-table {
-  table-layout: fixed;
-  width: 100%;
+/* h6 – rechtsbündig */
+h6 {
+  text-align: right;
+  font-weight: normal;
+  font-size: 1em;
+  margin: 0;
+  color: $heading-color;
+  opacity: 0.9;
+  line-height: 1.4;
 }
