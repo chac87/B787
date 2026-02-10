@@ -1,3 +1,4 @@
+# Electrical
 ## Power Generation
 ![[elec system.png]]
 ### Stromquellen

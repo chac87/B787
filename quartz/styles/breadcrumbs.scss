@@ -1,0 +1,15 @@
+.breadcrumb-container {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+.breadcrumb-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.breadcrumb-spacer {
+  margin: 0 0.5rem;
+  opacity: 0.6;
+}

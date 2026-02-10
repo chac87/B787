@@ -1,8 +1,8 @@
 # Inhaltsverzeichnis
-## [[01_General Infos|General Infos]]
-## [[02_Limitations|Limitations]]
-## [[03_Systems|Systems]]
-## [[04_Normal Ops - SOPs|Normals Ops - SOPs]]
-## [[05_Supplementary Procedures|Supplementary Procedures]]
-## [[06_Non-Normals|Non-Normals]]
+## [[General Infos|General Infos]]
+## [[Limitations|Limitations]]
+## [[* Systems|Systems]]
+## [[* Normal Ops - SOPs|Normals Ops - SOPs]]
+## [[* Supplementary Procedures|Supplementary Procedures]]
+## [[* Non Normals|Non-Normals]]
 

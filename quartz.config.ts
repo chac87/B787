@@ -50,7 +50,11 @@ const config: QuartzConfig = {
   },
   plugins: {
     transformers: [
-      Plugin.FrontMatter(),
+      Plugin.FrontMatter({
+  title: {
+    override: "h1",
+  },
+}),
       Plugin.CreatedModifiedDate({
         priority: ["frontmatter", "git", "filesystem"],
       }),
