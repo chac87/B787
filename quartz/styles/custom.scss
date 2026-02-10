@@ -31,3 +31,140 @@ h6 {
   opacity: 0.9;
   line-height: 1.4;
 }
+
+/* =========================================================
+   UNIVERSAL CALLOUT SYSTEM
+   Obsidian • HTML • Pandoc • PDF
+   ========================================================= */
+
+/* ---------- Base ---------- */
+
+.callout {
+  --accent: #3b82f6;
+  --bg: #eff6ff;
+
+  border-left: 4px solid var(--accent);
+  background: var(--bg);
+  padding: 12px 14px;
+  margin: 1em 0;
+
+  border-radius: 6px;
+
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+/* Text spacing */
+.callout > p,
+.callout > div > p {
+  margin: 0.35em 0;
+}
+
+/* ---------- Title ---------- */
+
+.callout-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.45em;
+  opacity: 0.85;
+}
+
+/* =========================================================
+   CALLOUT TYPES (semantic)
+   ========================================================= */
+
+/* PROCEDURE – blue */
+.callout.proc {
+  --accent: #2563eb;
+  --bg: #eff6ff;
+}
+
+/* WARNING – red */
+.callout.warning {
+  --accent: #dc2626;
+  --bg: #fef2f2;
+}
+
+/* LIMITATION – yellow */
+.callout.limit {
+  --accent: #d97706;
+  --bg: #fff7ed;
+}
+
+/* INFO – green */
+.callout.info {
+  --accent: #16a34a;
+  --bg: #f0fdf4;
+}
+
+/* =========================================================
+   OBSIDIAN FALLBACK (data-callout)
+   ========================================================= */
+
+.callout[data-callout="proc"] {
+  --accent: #2563eb;
+  --bg: #eff6ff;
+}
+
+.callout[data-callout="warning"] {
+  --accent: #dc2626;
+  --bg: #fef2f2;
+}
+
+.callout[data-callout="limit"] {
+  --accent: #d97706;
+  --bg: #fff7ed;
+}
+
+.callout[data-callout="info"] {
+  --accent: #16a34a;
+  --bg: #f0fdf4;
+}
+
+/* =========================================================
+   LISTS INSIDE CALLOUTS
+   ========================================================= */
+
+.callout ul,
+.callout ol {
+  margin: 0.4em 0 0.4em 1.2em;
+}
+
+.callout li {
+  margin: 0.25em 0;
+}
+
+/* =========================================================
+   PRINT / PDF
+   ========================================================= */
+
+@media print {
+  .callout {
+    page-break-inside: avoid;
+    border-left-width: 3px;
+  }
+}
+
+/* =========================================
+   LIMIT CALLOUT TABS – SAFE MODE
+   Gilt NUR für Limit-Callouts
+   ========================================= */
+
+.callout[data-callout="limit"] p {
+  margin: 0.25em 0;
+}
+
+.callout[data-callout="limit"] p > strong:first-child {
+  display: inline-block;
+  min-width: 200px;
+  margin-right: 12px;
+
+  font-weight: 600;
+  white-space: normal;
+  vertical-align: baseline;
+}
+
+.callout[data-callout="limit"] {
+  font-variant-numeric: tabular-nums;
+}
