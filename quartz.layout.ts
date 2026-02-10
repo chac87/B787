@@ -6,7 +6,8 @@ import FloatingHome from "./quartz/components/FloatingHome"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [
-  Component.Search(),  
+  Component.Search(),
+  Component.Darkmode(),  
   ],
   afterBody: [FloatingHome()],
   footer: Component.Footer({

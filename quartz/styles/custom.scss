@@ -53,6 +53,7 @@ h6,
 
   border-left: 4px solid var(--accent);
   background: var(--bg);
+  color: #2b2b2b !important;
   padding: 12px 14px;
   margin: 1em 0;
 
@@ -60,6 +61,29 @@ h6,
 
   font-size: 0.95rem;
   line-height: 1.45;
+}
+
+.callout,
+.callout p,
+.callout div,
+.callout span,
+.callout li,
+.callout td,   /* Falls Tabellen drin sind */
+.callout th,
+.callout strong,
+.callout b,
+.callout em {
+    color: #222 !important; /* Dunkles Grau/Schwarz */
+}
+
+/* Links sollen trotzdem ihre blaue Farbe behalten */
+.callout a,
+.callout a.internal,
+.callout a.external {
+    color: var(--secondary) !important; 
+}
+.callout a:hover {
+    color: var(--tertiary) !important;
 }
 
 /* Text spacing */
@@ -252,22 +276,4 @@ a.internal:hover,
 a.external:hover {
     color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
     background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
-}
-
-/* =========================================
-   HIDE FOLDER LIST
-   Entfernt die automatische Dateiliste und
-   den "Folder:" Titel auf Index-Seiten.
-   ========================================= */
-
-/* Versteckt die gesamte Liste der Dateien */
-.page-listing {
-    display: none !important;
-}
-
-/* Optional: Falls du auch den Titel "Folder: ..." ausblenden willst,
-   der evtl. noch durchscheint (da du ArticleTitle entfernt hast, 
-   sollte er eigentlich weg sein, aber sicher ist sicher): */
-.page-header h1 {
-    display: none; /* Vorsicht: Testen, ob das nicht zu viel versteckt */
 }
