@@ -90,9 +90,9 @@ Immediately do the following at the first indication of stall (buffet or stick s
 > **PF** "Max Power"
 > **PF** Apply Maximum Thrust
 > ###### Assure Maximum Thrust **PM**
->**PF** Wings level, 20° pitch
->**PF** Verify speedbrakes retracted
->###### Assure All Actions completed **PM**
+>**PF** Wings level, 20° pitch  
+>**PF** Verify speedbrakes retracted  
+>###### Assure All Actions completed **PM**  
 >###### Monitor Altitude and V/S **PM**  
 >**PF** If necessary: Pitch up to the pitch limit indicator or stick shaker or initial buffet  
 >**PF** Do not change Config  

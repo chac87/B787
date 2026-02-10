@@ -1,5 +1,6 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
+import FloatingHome from "./quartz/components/FloatingHome"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -7,7 +8,7 @@ export const sharedPageComponents: SharedLayout = {
   header: [
   Component.Search(),  
   ],
-  afterBody: [],
+  afterBody: [FloatingHome()],
   footer: Component.Footer({
     links: {
       },

@@ -3,12 +3,8 @@
 
 /* ============================================================
    UNIVERSAL ALIGNMENT HACK (Obsidian Editor + Reading + Web)
-   Ziel: H5 = Zentriert, H6 = Rechtsbündig
-   Look: Exakt wie normaler Text (kein Fett, normale Größe)
    ============================================================ */
 
-/* 1. RESET FÜR ALLE MODI (Editor, Preview, Web) */
-/* Wir fassen alle Selektoren zusammen, um Wiederholung zu vermeiden */
 h5, h6,
 .markdown-rendered h5,
 .markdown-rendered h6,
@@ -179,4 +175,81 @@ h6,
 
 .callout[data-callout="limit"] {
   font-variant-numeric: tabular-nums;
+}
+
+/* =========================================
+   FLOATING HOME BUTTON
+   ========================================= */
+.floating-home {
+    position: fixed;          /* Fixiert am Bildschirm */
+    bottom: 30px;             /* Abstand von unten */
+    right: 30px;              /* Abstand von rechts */
+    z-index: 1000;            /* Über allem anderen liegen */
+    
+    background-color: var(--light); 
+    color: var(--dark);
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;       /* Kreisrund */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Hübscher Schatten */
+    transition: transform 0.2s ease, background-color 0.2s;
+    border: 1px solid var(--lightgray);
+}
+
+/* Hover Effekt (Macht ihn etwas größer) */
+.floating-home:hover {
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Dark Mode Anpassung */
+@media (prefers-color-scheme: dark) {
+    .floating-home {
+        background-color: #333;
+        color: #fff;
+        border-color: #444;
+    }
+    .floating-home:hover {
+        background-color: #444;
+    }
+}
+
+/* Home Button auf der Startseite selbst ausblenden */
+body[data-slug="index"] .floating-home {
+    display: none;
+}
+
+/* =========================================
+   CLEAN LINKS (Keine Unterstreichung)
+   ========================================= */
+
+/* 1. Alle Links im Text "nackt" machen */
+a, 
+a.internal, 
+a.external {
+    text-decoration: none !important;      /* Keine Linie */
+    background: none !important;           /* Kein Hintergrund-Balken */
+    border: none !important;
+    transition: color 0.2s ease;           /* Weicher Farbwechsel */
+}
+
+/* 2. Nur die Farbe steuert jetzt die Interaktion */
+/* Normalzustand */
+a {
+    color: var(--secondary) !important;
+}
+
+/* Hover-Zustand (Maus drüber) */
+a:hover, 
+a.internal:hover, 
+a.external:hover {
+    color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
+    background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
 }

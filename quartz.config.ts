@@ -1,14 +1,9 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
-/**
- * Quartz 4 Configuration
- *
- * See https://quartz.jzhao.xyz/configuration for more information.
- */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Quartz 4",
+    pageTitle: "B787 Guide",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
@@ -29,26 +24,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#F5F7FA",         // Dein Wunsch: Cooles "Tech-Papier" Weiß
+          lightgray: "#E2E7EE",     // Zartes Grau-Blau für Linien (wie Wolken)
+          gray: "#758696",          // Gedämpftes Metall-Grau für Datum/Meta
+          darkgray: "#334155",      // Dunkles Slate-Blue für Fließtext (weicher als Schwarz)
+          dark: "#05164D",          // LHG Deep Blue: Für mächtige Überschriften
+          secondary: "#3257BC",     // LHG Core Blue: Das klassische Link-Blau
+          tertiary: "#5291ED",      // LHG Red: Für Hover-Effekte (der "Crane" Akzent)
+          highlight: "rgba(50, 87, 188, 0.10)", // Zartes LHG Blau für Code-Hintergründe
+          textHighlight: "rgba(156, 143, 122, 0.4)", // LHG Sand: Stilvolles Gold zum Markieren
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#070D1F",         // Stratosphäre bei Nacht (ganz tiefes Blau)
+          lightgray: "#1C2638",     // Cockpit-Panel Dunkelgrau
+          gray: "#8D9EB6",          // Instrumenten-Beleuchtung (gedimmt)
+          darkgray: "#E2E8F0",      // Helles Silber für Text
+          dark: "#FFFFFF",          // Reines Weiß für Überschriften
+          secondary: "#5291ED",     // LHG Light Blue: Leuchtendes Cyan-Blau für Links
+          tertiary: "#FF526B",      // LHG Red (heller): Akzente im Darkmode
+          highlight: "rgba(82, 145, 237, 0.15)", // Leuchtendes Blau transparent
+          textHighlight: "rgba(156, 143, 122, 0.4)", // LHG Sand
         },
       },
     },
