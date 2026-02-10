@@ -1,3 +1,6 @@
+
+
+
 # Non-Normals
 
 ## [[Non-Normal Philosophy]]
