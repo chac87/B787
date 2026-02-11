@@ -83,6 +83,9 @@ export default (() => {
         )}
 
         <link rel="icon" href={iconPath} />
+        <link rel="apple-touch-icon" sizes="180x180" href={iconPath} />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content={cfg.pageTitle} />
         <meta name="description" content={description} />
         <meta name="generator" content="Quartz" />
 

@@ -1,7 +1,7 @@
 ---
 title: B787 Guide
 ---
-# Inhaltsverzeichnis
+# B787 Guide 
 ## [[General Infos|General Infos]]
 ## [[Limitations|Limitations]]
 ## [[Systems/index|Systems]]
