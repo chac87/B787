@@ -24,15 +24,15 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#F5F7FA",         // Dein Wunsch: Cooles "Tech-Papier" Weiß
-          lightgray: "#E2E7EE",     // Zartes Grau-Blau für Linien (wie Wolken)
-          gray: "#758696",          // Gedämpftes Metall-Grau für Datum/Meta
-          darkgray: "#334155",      // Dunkles Slate-Blue für Fließtext (weicher als Schwarz)
-          dark: "#05164D",          // LHG Deep Blue: Für mächtige Überschriften
-          secondary: "#3257BC",     // LHG Core Blue: Das klassische Link-Blau
-          tertiary: "#5291ED",      // LHG Red: Für Hover-Effekte (der "Crane" Akzent)
-          highlight: "rgba(50, 87, 188, 0.10)", // Zartes LHG Blau für Code-Hintergründe
-          textHighlight: "rgba(156, 143, 122, 0.4)", // LHG Sand: Stilvolles Gold zum Markieren
+          light: "#F1EDE3",        // Warmes Sand-Papier (statt kühles Weiß)
+lightgray: "#E3DCCD",    // Helles Leinen / Sandgrau für Linien
+gray: "#8A7F6B",         // Warmes Mittelgrau (mehr Braunanteil)
+darkgray: "#3F3A33",     // Weiches Espresso-Grau für Fließtext
+dark: "#1E2A44",         // Tiefes Navy mit weniger Sättigung
+secondary: "#3E5FA8",    // Gedämpftes LHG-Blau
+tertiary: "#6B8FD6",     // Entsättigtes Akzentblau
+highlight: "rgba(62, 95, 168, 0.08)", 
+textHighlight: "rgba(181, 162, 117, 0.45)", // Wärmeres Sand-Gold
         },
         darkMode: {
           light: "#070D1F",         // Stratosphäre bei Nacht (ganz tiefes Blau)
