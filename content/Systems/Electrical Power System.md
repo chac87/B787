@@ -32,7 +32,7 @@
 - dual engine fail (3 or more generators fail) -> APU starts automatically
 - Unattended Mode (at the gate, no engines running): 
 	- APU will auto shut down for a list of failures (bspw. APU fire)
-- - Attended Mode:
+- Attended Mode:
 	- engine is starting or started, in flight
 	- high EGT, high oil temperature, low oil pressure -> EICAS <strong><span class="c-amber">APU LIMIT</span></strong>
 	- for all other faults -> auto shut down
