@@ -277,3 +277,10 @@ a.external:hover {
     color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
     background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
 }
+
+/* =========================================
+   TEXT COLOR
+   ========================================= */
+.c-red   { color: #e74c3c }
+.c-amber { color: #f39c12 }
+.c-green { color: #2ecc71 }
