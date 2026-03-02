@@ -25,10 +25,8 @@ title: Systems
 
 ## [[Integrated Surveillance Systems]]
 
-## Navigation
+## [[Navigation]]
 
-## Lighting Systems
+## [[Oxygen Systems]]
 
-## Oxygen Systems
-
-## Doors & Windows
+## [[Doors & Windows]]

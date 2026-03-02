@@ -1,6 +1,6 @@
-# Air Conditioning & Pressurization
+# Air Conditioning, Pressurization
 ## Air Conditioning
-![[air condition ovhd.jpeg]]
+![[air con ovhd.png]]
 - Es wird keine bleed air von den engines gezapft.
 - Stattdessen gibt es 4 elektrische CACs (Cabin Air Compressors), zwei pro Pack.
 
