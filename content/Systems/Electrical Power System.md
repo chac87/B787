@@ -1,4 +1,4 @@
-# Electrical
+# Electrical Power System
 
 ![[elec distr.png]]
 ![[elec ovhd.png]]
@@ -42,6 +42,7 @@
 - Manual deployment: push button and hold for 1 sec
 - EICAS <strong><span class="c-amber">RAT UNLOCKED</span></strong>
 - No time or altitude restrictions (only: electrical output is reduced < 120 kts)
+- Siehe auch [[Hydraulic System#RAT|Hydraulic System - RAT]]
 ### PMGs, PMAs
 - 3 Engine Driven PMGs liefern primären Strom für die Flight Control Electronics.
 - 2 Engine Driven PMAs liefern primären Strom für die Electronic Engine Control (EEC).

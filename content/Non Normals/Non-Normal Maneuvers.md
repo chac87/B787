@@ -90,8 +90,8 @@ Immediately do the following at the first indication of stall (buffet or stick s
 > **PF** "Max Power"
 > **PF** Apply Maximum Thrust
 > ###### Assure Maximum Thrust **PM**
->**PF** Wings level, 20° pitch  
->**PF** Verify speedbrakes retracted  
+>**PF** Wings Level, 20° pitch
+>**PF** Verify Speedbrakes retracted
 >###### Assure All Actions completed **PM**  
 >###### Monitor Altitude and V/S **PM**  
 >**PF** If necessary: Pitch up to the pitch limit indicator or stick shaker or initial buffet  
@@ -167,7 +167,7 @@ Immediately do the following at the first indication of stall (buffet or stick s
 > ---
 > ##### **Complete Recovery**
 > Apply nose up elevator  
->    *if needed: Nose up trim*  
+>    *If needed: Nose up trim*  
 > Adjust thrust and drag  
 > 
 > ---
@@ -191,10 +191,10 @@ Immediately do the following at the first indication of stall (buffet or stick s
 > ###### Monitor Vertical speed **PM**  
 > **PF** "MAX POWER"  
 > ###### Callout trends **PM**  
-> **PF** Apply Maximum thrust  
-> **PF** Disconnect A/T  
-> **PF** Wings level, 15° pitch  
-> **PF** Verify speedbrakes retracted  
+> **PF** Apply Maximum Thrust
+> **PF** Disconnect A/T
+> **PF** Wings Level, 15° pitch
+> **PF** Verify Speedbrakes retracted
 > ###### Verify all actions completed **PM**  
 > **PF** Follow FD  
 > **PF** Do not change Config  

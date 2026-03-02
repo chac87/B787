@@ -44,13 +44,13 @@
 > **Door operation** 40 kts wind
 > 
 > **Door opening** 65 kts wind
-
-
-## Air System Limitations
-Normal max. Press.: 9.4 psi
-Max. Press. Relief: 9.9 psi
-Max. allowable
-cabin press. diff.: 0.11 psi
+ 
+> [!limit]- Air System Limitations
+> **Normal max. pressure** 9.4 psi
+> 
+> **Max. pressure relief** 9.9 psi
+> 
+> **Max. allowable cabin pressure diff.** 0.11 psi
 ## Anti-Ice Limitations
 
 ## Autoflight Limitations

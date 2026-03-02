@@ -1,6 +1,7 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 import FloatingHome from "./quartz/components/FloatingHome"
+import BookNavigation from "./quartz/components/BookNavigation"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
@@ -9,7 +10,7 @@ export const sharedPageComponents: SharedLayout = {
   Component.Search(),
   Component.Darkmode(),  
   ],
-  afterBody: [FloatingHome()],
+  afterBody: [BookNavigation(), FloatingHome()],
   footer: Component.Footer({
     links: {
       },
@@ -23,6 +24,7 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
+    BookNavigation(),
     // Component.ArticleTitle(),
     // Component.ContentMeta(),
     Component.TagList(),

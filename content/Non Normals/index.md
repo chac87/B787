@@ -25,7 +25,7 @@
 
 ## [[Hydraulic Non-Normals]]
 
-## Landing Gear & Brake Non-Normals
+## [[Landing Gear & Brakes Non-Normals]]
 
 ## Display & Instrument Failures
 

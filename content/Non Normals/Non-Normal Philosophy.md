@@ -15,7 +15,7 @@ Aktionen, die während des Lesens der Checkliste ausgeführt werden (Read and Do
 ## Annunciated Checklists
 Checklisten entsprechen einer EICAS-Meldung
 
-## Unannunciated Checklists
+## Un-annunciated Checklists
 Checklisten ohne direkte EICAS-Meldung (z. B. Ditching, Fuel Leak, Tailstrike), die über das Non-Normal Menu im ECL aufgerufen werden müssen
 
 ## Confirmation Policy

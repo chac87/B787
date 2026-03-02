@@ -13,7 +13,7 @@
 - Min. Dump Fuel is 3900 kg/main tank = 7800 kg total
 - Time to dump to MIN FUEL: 1:26h
 
-> [!info]- Unannciated Fuel Checklists
+> [!info] Un-annunciated Fuel Checklists
 > - FUEL LEAK
 > - FUEL JETTISON
 > 
