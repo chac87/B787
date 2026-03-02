@@ -10,7 +10,7 @@
 [[Powerplant System]]
 [[Fuel System]]
 [[Hydraulic System]]
-[[Landing Gear & Brakes]]
+[[Landing Gear, Brakes]]
 [[Fire Protection System]]
 [[Integrated Surveillance Systems]]
 ## [[Normal Ops/index|Normal Ops, SOPs]]

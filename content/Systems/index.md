@@ -19,7 +19,7 @@ title: Systems
 
 ## [[Hydraulic System]]
 
-## [[Landing Gear & Brakes]]
+## [[Landing Gear, Brakes]]
 
 ## [[Fire Protection System]]
 
@@ -29,4 +29,4 @@ title: Systems
 
 ## [[Oxygen Systems]]
 
-## [[Doors & Windows]]
+## [[Doors, Windows]]
