@@ -41,140 +41,151 @@ h6,
 }
 
 /* =========================================================
-   UNIVERSAL CALLOUT SYSTEM
-   Obsidian • HTML • Pandoc • PDF
+   APPLE-STYLE CALLOUT SYSTEM
+   Modern UI • Clean • Premium
    ========================================================= */
 
 /* ---------- Base ---------- */
 
 .callout {
-  --accent: #3b82f6;
-  --bg: #eff6ff;
+  /* Standard-Werte (Fallback) */
+  --accent: #007AFF;       /* Apple Blue */
+  --bg-opacity: 0.08;      /* Sehr zarter Hintergrund */
+  --border-opacity: 0.2;   /* Subtiler Rahmen */
+  
+  /* Apple System Font Stack für nativen Look */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Kein dicker linker Balken mehr, sondern feiner Rahmen rundherum */
+  border-left: none; 
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Fallback */
+  border-color: color-mix(in srgb, var(--accent), transparent 70%); /* Modernes CSS für Border-Farbe */
+  
+  /* Hintergrund basierend auf der Akzentfarbe mit Transparenz */
+  background-color: color-mix(in srgb, var(--accent), transparent 92%);
 
-  border-left: 4px solid var(--accent);
-  background: var(--bg);
-  color: #2b2b2b !important;
-  padding: 12px 14px;
-  margin: 1em 0;
-
-  border-radius: 6px;
-
+  /* Layout & Spacing */
+  padding: 16px 20px; /* Mehr "Breathing Room" */
+  margin: 1.5em 0;
+  
+  /* Die "Apple-Kurve" */
+  border-radius: 12px;
+  
+  /* Subtiler Schatten für Tiefe (Elevation) */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  
   font-size: 0.95rem;
-  line-height: 1.45;
-}
-
-.callout,
-.callout p,
-.callout div,
-.callout span,
-.callout li,
-.callout td,   /* Falls Tabellen drin sind */
-.callout th,
-.callout strong,
-.callout b,
-.callout em {
-    color: #222 !important; /* Dunkles Grau/Schwarz */
-}
-
-/* Links sollen trotzdem ihre blaue Farbe behalten */
-.callout a,
-.callout a.internal,
-.callout a.external {
-    color: var(--secondary) !important; 
-}
-.callout a:hover {
-    color: var(--tertiary) !important;
+  line-height: 1.6; /* Etwas mehr Zeilenabstand für Lesbarkeit */
 }
 
 /* Text spacing */
 .callout > p,
 .callout > div > p {
-  margin: 0.35em 0;
+  margin: 0.5em 0;
+}
+
+.callout > p:first-child,
+.callout > div > p:first-child {
+  margin-top: 0;
+}
+
+.callout > p:last-child,
+.callout > div > p:last-child {
+  margin-bottom: 0;
 }
 
 /* ---------- Title ---------- */
 
 .callout-title {
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.45em;
-  opacity: 0.85;
+  display: flex; /* Flexbox für saubere Ausrichtung */
+  align-items: center;
+  
+  font-weight: 700; /* Apple nutzt oft "Bold" (700) für Headlines */
+  font-size: 1.2rem; /* Deine gewünschte Größe */
+  letter-spacing: -0.01em; /* Tight tracking wie bei iOS */
+  
+  margin-bottom: 0.6em;
+  color: var(--accent); /* Titel in der Akzentfarbe */
+  opacity: 1;
+}
+
+/* Optional: Wenn du Icons im Titel hast, gibt ihnen etwas Abstand */
+.callout-title .callout-icon {
+  margin-right: 0.5em;
+  display: inline-flex;
 }
 
 /* =========================================================
-   CALLOUT TYPES (semantic)
+   CALLOUT TYPES (Apple Colors)
    ========================================================= */
 
-/* PROCEDURE – blue */
-.callout.proc {
-  --accent: #2563eb;
-  --bg: #eff6ff;
-}
-
-/* WARNING – red */
-.callout.warning {
-  --accent: #dc2626;
-  --bg: #fef2f2;
-}
-
-/* LIMITATION – yellow */
-.callout.limit {
-  --accent: #d97706;
-  --bg: #fff7ed;
-}
-
-/* INFO – green */
-.callout.info {
-  --accent: #16a34a;
-  --bg: #f0fdf4;
-}
-
-/* =========================================================
-   OBSIDIAN FALLBACK (data-callout)
-   ========================================================= */
-
+/* PROCEDURE – Apple Blue (System Blue) */
+.callout.proc, 
 .callout[data-callout="proc"] {
-  --accent: #2563eb;
-  --bg: #eff6ff;
+  --accent: #007AFF;
 }
 
+/* WARNING – Apple Red (System Red) */
+.callout.warning, 
 .callout[data-callout="warning"] {
-  --accent: #dc2626;
-  --bg: #fef2f2;
+  --accent: #FF3B30;
 }
 
+/* LIMITATION – Apple Orange/Yellow (System Orange) */
+.callout.limit, 
 .callout[data-callout="limit"] {
-  --accent: #d97706;
-  --bg: #fff7ed;
+  --accent: #FF9500;
 }
 
+/* INFO – Apple Green (System Green) */
+.callout.info, 
 .callout[data-callout="info"] {
-  --accent: #16a34a;
-  --bg: #f0fdf4;
+  --accent: #34C759;
 }
 
 /* =========================================================
-   LISTS INSIDE CALLOUTS
+   DARK MODE SUPPORT (Wichtig für hochwertigen Look)
    ========================================================= */
+@media (prefers-color-scheme: dark) {
+  .callout {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stärkerer Schatten im Darkmode */
+    background-color: color-mix(in srgb, var(--accent), transparent 85%); /* Etwas dunklerer Hintergrund */
+    border-color: color-mix(in srgb, var(--accent), transparent 60%);
+  }
 
-.callout ul,
-.callout ol {
-  margin: 0.4em 0 0.4em 1.2em;
-}
+  .callout-title {
+    /* Im Darkmode ist die reine Akzentfarbe manchmal zu grell,
+       wir hellen sie leicht auf oder lassen sie so */
+    color: color-mix(in srgb, var(--accent), white 10%);
+  }
 
-.callout li {
-  margin: 0.25em 0;
+  .floating-home {
+      background-color: #333;
+      color: #fff;
+      border-color: #444;
+  }
+  .floating-home:hover {
+      background-color: #444;
+  }
 }
 
 /* =========================================================
-   PRINT / PDF
+   PRINT / PDF OPTIMIZATION
    ========================================================= */
 
 @media print {
   .callout {
     page-break-inside: avoid;
-    border-left-width: 3px;
+    border: 2px solid var(--accent); /* Stärkerer Rahmen für Druck */
+    background: transparent !important; /* Tinte sparen, sauberer Druck */
+    box-shadow: none;
+    border-radius: 8px;
+  }
+  
+  .callout-title {
+    color: #000; /* Schwarz drucken für Kontrast */
+    text-decoration: underline solid var(--accent) 2px; /* Farbige Unterstreichung statt Farbe */
   }
 }
 
@@ -233,21 +244,22 @@ h6,
     box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* Dark Mode Anpassung */
-@media (prefers-color-scheme: dark) {
-    .floating-home {
-        background-color: #333;
-        color: #fff;
-        border-color: #444;
-    }
-    .floating-home:hover {
-        background-color: #444;
-    }
-}
-
 /* Home Button auf der Startseite selbst ausblenden */
 body[data-slug="index"] .floating-home {
     display: none;
+}
+
+/* =========================================
+   FOLD / EXPAND ICON
+   ========================================= */
+
+.callout .fold-callout-icon {
+  background-color: var(--accent) !important;
+  opacity: 1 !important;
+}
+
+.callout .fold-callout-icon:hover {
+  opacity: 0.7 !important;
 }
 
 /* =========================================

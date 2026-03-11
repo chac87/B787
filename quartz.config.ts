@@ -4,14 +4,13 @@ import * as Plugin from "./quartz/plugins"
 const config: QuartzConfig = {
   configuration: {
     pageTitle: "B787 Guide",
-    pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
     locale: "en-US",
-    baseUrl: "quartz.jzhao.xyz",
+    baseUrl: "b779.netlify.app",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
     theme: {
@@ -24,15 +23,15 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#F1EDE3",        // Warmes Sand-Papier (statt kühles Weiß)
-lightgray: "#E3DCCD",    // Helles Leinen / Sandgrau für Linien
-gray: "#8A7F6B",         // Warmes Mittelgrau (mehr Braunanteil)
-darkgray: "#3F3A33",     // Weiches Espresso-Grau für Fließtext
-dark: "#1E2A44",         // Tiefes Navy mit weniger Sättigung
-secondary: "#3E5FA8",    // Gedämpftes LHG-Blau
-tertiary: "#6B8FD6",     // Entsättigtes Akzentblau
-highlight: "rgba(62, 95, 168, 0.08)", 
-textHighlight: "rgba(181, 162, 117, 0.45)", // Wärmeres Sand-Gold
+          light: "#F1EDE3",                          // Warmes Sand-Papier (statt kühles Weiß)
+          lightgray: "#E3DCCD",                      // Helles Leinen / Sandgrau für Linien
+          gray: "#8A7F6B",                           // Warmes Mittelgrau (mehr Braunanteil)
+          darkgray: "#3F3A33",                       // Weiches Espresso-Grau für Fließtext
+          dark: "#1E2A44",                           // Tiefes Navy mit weniger Sättigung
+          secondary: "#3E5FA8",                      // Gedämpftes LHG-Blau
+          tertiary: "#6B8FD6",                       // Entsättigtes Akzentblau
+          highlight: "rgba(62, 95, 168, 0.08)",
+          textHighlight: "rgba(181, 162, 117, 0.45)", // Wärmeres Sand-Gold
         },
         darkMode: {
           light: "#070D1F",         // Stratosphäre bei Nacht (ganz tiefes Blau)
@@ -75,7 +74,7 @@ textHighlight: "rgba(181, 162, 117, 0.45)", // Wärmeres Sand-Gold
       Plugin.ContentPage(),
       Plugin.FolderPage(),
       Plugin.TagPage(),
-     Plugin.ContentIndex({
+      Plugin.ContentIndex({
         enableSiteMap: true,
         enableRSS: true,
       }),
@@ -83,7 +82,6 @@ textHighlight: "rgba(181, 162, 117, 0.45)", // Wärmeres Sand-Gold
       Plugin.Static(),
       Plugin.Favicon(),
       Plugin.NotFoundPage(),
-      // Comment out CustomOgImages to speed up build time
       Plugin.CustomOgImages(),
     ],
   },
