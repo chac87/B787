@@ -84,10 +84,12 @@ a.external:hover {
 
 
 /* =========================================
-   H2 SEPARATOR LINE
+   H2 SEPARATOR LINE (Quartz + Obsidian)
    ========================================= */
-h2 {
-    border-top: 1px solid var(--lightgray);
+h2,
+.markdown-rendered h2,
+.markdown-preview-view h2 {
+    border-top: 1px solid var(--lightgray, var(--color-base-30, #cccccc));
     padding-top: 1em;
     margin-top: 1.5em;
 }
