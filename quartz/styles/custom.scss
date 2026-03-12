@@ -80,20 +80,6 @@ a.external:hover {
 }
 
 
-
-
-
-/* =========================================
-   H2 SEPARATOR LINE (Quartz + Obsidian)
-   ========================================= */
-h2,
-.markdown-rendered h2,
-.markdown-preview-view h2 {
-    border-top: 1px solid var(--lightgray, var(--color-base-30, #cccccc));
-    padding-top: 1em;
-    margin-top: 1.5em;
-}
-
 /* AUTO-SYNC START */
 
 /* === snippet: callouts.css === */
@@ -355,6 +341,17 @@ h6,
 .c-red   { color: #e74c3c }
 .c-amber { color: #f39c12 }
 .c-green { color: #2ecc71 }
+
+/* =========================================
+   H2 SEPARATOR LINE (Quartz + Obsidian)
+   ========================================= */
+h2,
+.markdown-rendered h2,
+.markdown-preview-view h2 {
+    border-top: 1px solid var(--lightgray, var(--color-base-30, #cccccc));
+    padding-top: 1em;
+    margin-top: 1.5em;
+}
 
 /* === snippet: image-tweak.css === */
 /* =========================================
