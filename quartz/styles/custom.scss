@@ -1,45 +1,91 @@
 // 1. ABSOLUT ZUERST: Die @use Regel
 @use "./base.scss";
 
-/* ============================================================
-   UNIVERSAL ALIGNMENT HACK (Obsidian Editor + Reading + Web)
-   ============================================================ */
-
-h5, h6,
-.markdown-rendered h5,
-.markdown-rendered h6,
-.cm-s-obsidian .cm-header-5,  /* Obsidian Editor H5 */
-.cm-s-obsidian .cm-header-6   /* Obsidian Editor H6 */
-{
-    font-weight: normal !important;   /* Killt das Fett */
-    font-size: 1em !important;        /* Exakt so groß wie Fließtext */
-    line-height: 1.5 !important;      /* Normaler Zeilenabstand */
-    font-family: inherit !important;  /* Keine Überschriften-Schriftart */
-    color: var(--text-normal) !important;
-    margin: 0 !important;             /* Kein riesiger Abstand */
-    padding: 0 !important;
-    border: none !important;          /* Entfernt Unterstriche mancher Themes */
+/* =========================================
+   FLOATING HOME BUTTON
+   ========================================= */
+.floating-home {
+    position: fixed;          /* Fixiert am Bildschirm */
+    bottom: 30px;             /* Abstand von unten */
+    right: 30px;              /* Abstand von rechts */
+    z-index: 1000;            /* Über allem anderen liegen */
+    
+    background-color: var(--light); 
+    color: var(--dark);
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;       /* Kreisrund */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Hübscher Schatten */
+    transition: transform 0.2s ease, background-color 0.2s;
+    border: 1px solid var(--lightgray);
 }
 
-/* 2. ZENTRIERUNG (H5 / #####) */
-h5, 
-.markdown-rendered h5,
-.cm-s-obsidian .cm-header-5 {
-    text-align: center !important;
-    display: block; /* Wichtig für Zentrierung im Web */
-    width: 100%;
+/* Hover Effekt (Macht ihn etwas größer) */
+.floating-home:hover {
+    transform: scale(1.1);
+    background-color: white;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
 }
 
-/* 3. RECHTSBÜNDIG (H6 / ######) */
-h6, 
-.markdown-rendered h6,
-.cm-s-obsidian .cm-header-6 {
-    text-align: right !important;
-    display: block;
-    width: 100%;
-    opacity: 0.8; /* Optional: Leicht ausgegraut für Metadaten */
+/* Home Button auf der Startseite selbst ausblenden */
+body[data-slug="index"] .floating-home {
+    display: none;
 }
 
+/* =========================================
+   FOLD / EXPAND ICON
+   ========================================= */
+
+.callout .fold-callout-icon {
+  background-color: var(--accent) !important;
+  opacity: 1 !important;
+}
+
+.callout .fold-callout-icon:hover {
+  opacity: 0.7 !important;
+}
+
+/* =========================================
+   CLEAN LINKS (Keine Unterstreichung)
+   ========================================= */
+
+/* 1. Alle Links im Text "nackt" machen */
+a, 
+a.internal, 
+a.external {
+    text-decoration: none !important;      /* Keine Linie */
+    background: none !important;           /* Kein Hintergrund-Balken */
+    border: none !important;
+    transition: color 0.2s ease;           /* Weicher Farbwechsel */
+}
+
+/* 2. Nur die Farbe steuert jetzt die Interaktion */
+/* Normalzustand */
+a {
+    color: var(--secondary) !important;
+}
+
+/* Hover-Zustand (Maus drüber) */
+a:hover, 
+a.internal:hover, 
+a.external:hover {
+    color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
+    background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
+}
+
+
+
+
+
+/* AUTO-SYNC START */
+
+/* === snippet: callouts.css === */
 /* =========================================================
    APPLE-STYLE CALLOUT SYSTEM
    Modern UI • Clean • Premium
@@ -153,20 +199,11 @@ h6,
     background-color: color-mix(in srgb, var(--accent), transparent 85%); /* Etwas dunklerer Hintergrund */
     border-color: color-mix(in srgb, var(--accent), transparent 60%);
   }
-
+  
   .callout-title {
-    /* Im Darkmode ist die reine Akzentfarbe manchmal zu grell,
+    /* Im Darkmode ist die reine Akzentfarbe manchmal zu grell, 
        wir hellen sie leicht auf oder lassen sie so */
     color: color-mix(in srgb, var(--accent), white 10%);
-  }
-
-  .floating-home {
-      background-color: #333;
-      color: #fff;
-      border-color: #444;
-  }
-  .floating-home:hover {
-      background-color: #444;
   }
 }
 
@@ -212,82 +249,93 @@ h6,
   font-variant-numeric: tabular-nums;
 }
 
+/* === snippet: global-hacks.css === */
 /* =========================================
-   FLOATING HOME BUTTON
-   ========================================= */
-.floating-home {
-    position: fixed;          /* Fixiert am Bildschirm */
-    bottom: 30px;             /* Abstand von unten */
-    right: 30px;              /* Abstand von rechts */
-    z-index: 1000;            /* Über allem anderen liegen */
-    
-    background-color: var(--light); 
-    color: var(--dark);
-    
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;       /* Kreisrund */
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Hübscher Schatten */
-    transition: transform 0.2s ease, background-color 0.2s;
-    border: 1px solid var(--lightgray);
-}
-
-/* Hover Effekt (Macht ihn etwas größer) */
-.floating-home:hover {
-    transform: scale(1.1);
-    background-color: white;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-}
-
-/* Home Button auf der Startseite selbst ausblenden */
-body[data-slug="index"] .floating-home {
-    display: none;
-}
-
-/* =========================================
-   FOLD / EXPAND ICON
+   GLOBAL LAYOUT RULES (Web / PDF)
    ========================================= */
 
-.callout .fold-callout-icon {
-  background-color: var(--accent) !important;
-  opacity: 1 !important;
+/* ---------- Root Fallbacks ---------- */
+:root {
+    --web-text-normal: #111111;
+    --web-text-faint: #777777;
 }
 
-.callout .fold-callout-icon:hover {
-  opacity: 0.7 !important;
+/* ============================================================
+   UNIVERSAL ALIGNMENT HACK (Obsidian Editor + Reading + Web)
+   Ziel: H5 = Zentriert, H6 = Rechtsbündig
+   Look: Exakt wie normaler Text (kein Fett, normale Größe)
+   ============================================================ */
+
+/* 1. RESET FÜR ALLE MODI (Editor, Preview, Web) */
+/* Wir fassen alle Selektoren zusammen, um Wiederholung zu vermeiden */
+h5, h6,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.cm-s-obsidian .cm-header-5,  /* Obsidian Editor H5 */
+.cm-s-obsidian .cm-header-6   /* Obsidian Editor H6 */
+{
+    font-weight: normal !important;   /* Killt das Fett */
+    font-size: 1em !important;        /* Exakt so groß wie Fließtext */
+    line-height: 1.5 !important;      /* Normaler Zeilenabstand */
+    font-family: inherit !important;  /* Keine Überschriften-Schriftart */
+    color: var(--text-normal) !important;
+    margin: 0 !important;             /* Kein riesiger Abstand */
+    padding: 0 !important;
+    border: none !important;          /* Entfernt Unterstriche mancher Themes */
+}
+
+/* 2. ZENTRIERUNG (H5 / #####) */
+h5, 
+.markdown-rendered h5,
+.cm-s-obsidian .cm-header-5 {
+    text-align: center !important;
+    display: block; /* Wichtig für Zentrierung im Web */
+    width: 100%;
+}
+
+/* 3. RECHTSBÜNDIG (H6 / ######) */
+h6, 
+.markdown-rendered h6,
+.cm-s-obsidian .cm-header-6 {
+    text-align: right !important;
+    display: block;
+    width: 100%;
+    opacity: 0.8; /* Optional: Leicht ausgegraut für Metadaten */
+}
+/* =========================================
+   NO GAPS HACK (Callout Content)
+   ========================================= */
+
+/* Absätze */
+.callout-content p {
+    margin-bottom: 0 !important;
+}
+
+/* Listen */
+.callout-content ul,
+.callout-content ol {
+    margin-bottom: 0 !important;
+}
+
+/* Überschriften in Callouts */
+.callout-content h5,
+.callout-content h6 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1.2 !important;
 }
 
 /* =========================================
-   CLEAN LINKS (Keine Unterstreichung)
+   SEPARATOR (hr als Abstand / Linie)
    ========================================= */
-
-/* 1. Alle Links im Text "nackt" machen */
-a, 
-a.internal, 
-a.external {
-    text-decoration: none !important;      /* Keine Linie */
-    background: none !important;           /* Kein Hintergrund-Balken */
-    border: none !important;
-    transition: color 0.2s ease;           /* Weicher Farbwechsel */
-}
-
-/* 2. Nur die Farbe steuert jetzt die Interaktion */
-/* Normalzustand */
-a {
-    color: var(--secondary) !important;
-}
-
-/* Hover-Zustand (Maus drüber) */
-a:hover, 
-a.internal:hover, 
-a.external:hover {
-    color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
-    background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
+.callout-content hr {
+    border: none;
+    border-top: 1px solid var(--web-text-faint, #777777);
+    margin: 12px 0 !important;
+    height: 0;
+    opacity: 0.5;
 }
 
 /* =========================================
@@ -296,3 +344,226 @@ a.external:hover {
 .c-red   { color: #e74c3c }
 .c-amber { color: #f39c12 }
 .c-green { color: #2ecc71 }
+
+/* === snippet: image-tweak.css === */
+/* =========================================
+   IMAGE STYLING PACK (Web / Pandoc / PDF)
+   ========================================= */
+
+/* ---------- Root Fallbacks ---------- */
+:root {
+    --web-image-border: #cccccc;
+    --web-image-shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode Fallback (Browser / PDF-kompatibel) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --web-image-border: #444444;
+        --web-image-shadow: rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* =========================================
+   STANDARD IMAGE LOOK (Card Design)
+   ========================================= */
+img,
+article img,
+main img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--web-image-shadow, rgba(0,0,0,0.15));
+    border: 1px solid var(--web-image-border, #cccccc);
+
+    display: block;
+    margin: 16px auto;
+
+    max-width: 100%;
+    height: auto;
+
+    transition: transform 0.2s ease;
+}
+
+/* Hover-Effekt (nur relevant im Browser) */
+img:hover,
+article img:hover,
+main img:hover {
+    transform: scale(1.01);
+}
+
+/* =========================================
+   IMAGE MODIFIERS (via alt-Text)
+   ========================================= */
+
+/* INVERT */
+img[alt*="invert"] {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* CLEAN */
+img[alt*="clean"] {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+/* RIGHT FLOAT */
+img[alt*="right"] {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    max-width: 40%;
+    clear: right;
+}
+
+/* LEFT FLOAT */
+img[alt*="left"] {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    max-width: 40%;
+    clear: left;
+}
+
+/* SMALL */
+img[alt*="small"] {
+    max-width: 200px !important;
+}
+
+/* =========================================
+   MOBILE SAFETY
+   ========================================= */
+@media screen and (max-width: 600px) {
+    img[alt*="right"],
+    img[alt*="left"] {
+        float: none !important;
+        display: block !important;
+        margin: 10px auto !important;
+        max-width: 100% !important;
+    }
+}
+
+/* === snippet: tabelle-in-callout.css === */
+/* =========================================
+   TABLE STYLING – WEB / PANDOC / PDF
+   ========================================= */
+
+/* ---------- Root Variables (Web-safe) ---------- */
+:root {
+    /* Light Mode */
+    --web-text-normal: #2c3e50;
+    --web-text-muted: #7f8c8d;
+    --web-text-faint: #bdc3c7;
+    --web-border-muted: #ecf0f1;
+
+    /* Zebra Striping */
+    --web-table-row-alt: rgba(0, 0, 0, 0.04);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --web-text-normal: #dcddde;
+        --web-text-muted: #999999;
+        --web-text-faint: #444444;
+        --web-border-muted: #333333;
+
+        --web-table-row-alt: rgba(255, 255, 255, 0.04);
+    }
+}
+
+/* =========================================
+   TABLES INSIDE CALLOUTS / GENERIC CONTAINERS
+   ========================================= */
+
+/* Base table */
+.callout-content table,
+article table,
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 !important;
+    font-size: 0.9em;
+    border: none !important;
+}
+
+/* Header cells */
+.callout-content th,
+article th,
+main th {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    padding: 10px 6px;
+
+    border-bottom: 2px solid var(--web-text-faint, #ccc) !important;
+    color: var(--web-text-muted, #666);
+
+    text-align: center;
+}
+
+/* First header column left-aligned */
+.callout-content th:first-child,
+article th:first-child,
+main th:first-child {
+    text-align: left;
+}
+
+/* Data cells */
+.callout-content td,
+article td,
+main td {
+    padding: 8px 6px;
+    border-bottom: 1px solid var(--web-border-muted, #eee);
+
+    text-align: center;
+    vertical-align: middle;
+    color: var(--web-text-normal, #333);
+}
+
+/* First column emphasized */
+.callout-content td:first-child,
+article td:first-child,
+main td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: var(--web-text-normal, #333);
+}
+
+/* Zebra striping */
+.callout-content tr:nth-child(even),
+article tr:nth-child(even),
+main tr:nth-child(even) {
+    background-color: var(--web-table-row-alt, rgba(0,0,0,0.04));
+}
+
+/* === snippet: table-50-50.css === */
+/* =========================================
+   TABLE 50 / 50 LAYOUT (Web / Pandoc / PDF)
+   ========================================= */
+
+/* Basis: feste Tabellenaufteilung */
+table,
+article table,
+main table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* Gleichmäßige Spaltenbreite */
+table th,
+table td,
+article th,
+article td,
+main th,
+main td {
+    width: 50%;
+}
+/* AUTO-SYNC END */
