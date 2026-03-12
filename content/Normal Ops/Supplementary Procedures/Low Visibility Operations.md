@@ -1,2 +1,0 @@
-# Low Visibility Operations
-
