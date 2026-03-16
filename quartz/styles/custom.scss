@@ -575,3 +575,19 @@ main td {
     width: 50%;
 }
 /* AUTO-SYNC END */
+
+/* ── Page Transition Fade ───────────────────────────────────────────────── */
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+article.page-enter {
+  animation: pageFadeIn 0.18s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  article.page-enter {
+    animation: none;
+  }
+}
