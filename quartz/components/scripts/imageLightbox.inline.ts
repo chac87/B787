@@ -1,24 +1,37 @@
-// ── Reading Progress Bar (created once, persists across nav) ───────────────
-let progressBar = document.getElementById("reading-progress") as HTMLDivElement | null
-if (!progressBar) {
-  progressBar = document.createElement("div")
-  progressBar.id = "reading-progress"
-  document.body.appendChild(progressBar)
+// Create persistent elements once
+if (!document.getElementById("reading-progress")) {
+  const bar = document.createElement("div")
+  bar.id = "reading-progress"
+  document.body.appendChild(bar)
 }
 
-const updateProgress = () => {
-  const scrollTop = window.scrollY
-  const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight
-  const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0
-  progressBar!.style.width = `${pct}%`
+if (!document.getElementById("lightbox-overlay")) {
+  const overlay = document.createElement("div")
+  overlay.id = "lightbox-overlay"
+  overlay.innerHTML = `
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+  `
+  document.body.appendChild(overlay)
+
+  const closeBtn = document.getElementById("lightbox-close")!
+
+  const close = () => {
+    overlay.classList.remove("open")
+    document.body.classList.remove("lightbox-open")
+  }
+
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay || e.target === closeBtn) close()
+  })
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") close()
+  })
 }
 
-window.addEventListener("scroll", updateProgress, { passive: true })
-// Reset on each navigation
-progressBar.style.width = "0%"
-
-function setupLightbox() {
-  // ── Page transition ──────────────────────────────────────────────────────
+function setupPage() {
+  // ── Page transition ────────────────────────────────────────────────────────
   const article = document.querySelector("article")
   if (article) {
     article.classList.remove("page-enter")
@@ -26,82 +39,57 @@ function setupLightbox() {
     article.classList.add("page-enter")
   }
 
-  // ── Lightbox ─────────────────────────────────────────────────────────────
-  let overlay = document.getElementById("lightbox-overlay") as HTMLDivElement | null
-  if (!overlay) {
-    overlay = document.createElement("div")
-    overlay.id = "lightbox-overlay"
-    overlay.innerHTML = `
-      <button id="lightbox-close" aria-label="Close">&times;</button>
-      <img id="lightbox-img" src="" alt="" />
-    `
-    document.body.appendChild(overlay)
+  // ── Reading progress bar ───────────────────────────────────────────────────
+  const bar = document.getElementById("reading-progress") as HTMLDivElement
+  bar.style.width = "0%"
 
-    const closeBtn = document.getElementById("lightbox-close")!
-    const img = document.getElementById("lightbox-img") as HTMLImageElement
-
-    const close = () => {
-      overlay!.classList.remove("open")
-      document.body.classList.remove("lightbox-open")
-    }
-
-    overlay.addEventListener("click", (e) => {
-      if (e.target === overlay || e.target === closeBtn) close()
-    })
-
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") close()
-    }
-    document.addEventListener("keydown", onKey)
-    window.addCleanup(() => document.removeEventListener("keydown", onKey))
+  const updateProgress = () => {
+    const docHeight =
+      document.documentElement.scrollHeight - document.documentElement.clientHeight
+    const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0
+    bar.style.width = `${pct}%`
   }
 
-  // Attach to all content images (skip alt="...clean...")
+  window.addEventListener("scroll", updateProgress, { passive: true })
+  window.addCleanup(() => window.removeEventListener("scroll", updateProgress))
+
+  // ── Lightbox: attach to content images ────────────────────────────────────
+  const overlay = document.getElementById("lightbox-overlay")!
+  const lightboxImg = document.getElementById("lightbox-img") as HTMLImageElement
+
   const imgs = document.querySelectorAll<HTMLImageElement>(
     "article img:not([alt*='clean'])"
   )
 
-  const listeners: Array<{ el: HTMLImageElement; fn: () => void }> = []
-
   imgs.forEach((img) => {
     img.style.cursor = "zoom-in"
     const open = () => {
-      const lightboxImg = document.getElementById("lightbox-img") as HTMLImageElement
       lightboxImg.src = img.src
       lightboxImg.alt = img.alt
-      overlay!.classList.add("open")
+      overlay.classList.add("open")
       document.body.classList.add("lightbox-open")
     }
     img.addEventListener("click", open)
-    listeners.push({ el: img, fn: open })
+    window.addCleanup(() => img.removeEventListener("click", open))
   })
 
-  window.addCleanup(() => {
-    listeners.forEach(({ el, fn }) => el.removeEventListener("click", fn))
-  })
-
-  // ── Keyboard Arrow Navigation ─────────────────────────────────────────────
+  // ── Keyboard arrow navigation ─────────────────────────────────────────────
   const prevLink = document.querySelector<HTMLAnchorElement>(".nav-btn.prev")
   const nextLink = document.querySelector<HTMLAnchorElement>(".nav-btn.next")
 
   const onArrow = (e: KeyboardEvent) => {
-    // Skip if lightbox is open, or user is typing in an input
     if (document.body.classList.contains("lightbox-open")) return
     const tag = (e.target as HTMLElement).tagName
     if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return
     if ((e.target as HTMLElement).isContentEditable) return
-
-    if (e.key === "ArrowLeft" && prevLink) {
-      prevLink.click()
-    } else if (e.key === "ArrowRight" && nextLink) {
-      nextLink.click()
-    }
+    if (e.key === "ArrowLeft" && prevLink) prevLink.click()
+    else if (e.key === "ArrowRight" && nextLink) nextLink.click()
   }
 
   document.addEventListener("keydown", onArrow)
   window.addCleanup(() => document.removeEventListener("keydown", onArrow))
 
-  // ── Swipe Navigation ─────────────────────────────────────────────────────
+  // ── Swipe navigation ──────────────────────────────────────────────────────
   let touchStartX = 0
   const SWIPE_THRESHOLD = 50
 
@@ -125,4 +113,4 @@ function setupLightbox() {
   })
 }
 
-document.addEventListener("nav", setupLightbox)
+document.addEventListener("nav", setupPage)
