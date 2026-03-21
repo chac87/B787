@@ -24,10 +24,12 @@
     background: rgba(255, 255, 255, 0.05) !important;
 }
 
-.book-navigation .nav-btn:hover {
-  border-color: var(--tertiary);
-  background-color: var(--highlight) !important;
-  transform: translateY(-1px); /* Etwas weniger Bewegung beim Hover */
+@media (hover: hover) {
+  .book-navigation .nav-btn:hover {
+    border-color: var(--tertiary);
+    background-color: var(--highlight) !important;
+    transform: translateY(-1px);
+  }
 }
 
 .book-navigation .nav-btn.next {

@@ -56,13 +56,14 @@ body[data-slug="index"] .floating-home {
    ========================================= */
 
 /* 1. Alle Links im Text "nackt" machen */
-a, 
-a.internal, 
+a,
+a.internal,
 a.external {
     text-decoration: none !important;      /* Keine Linie */
     background: none !important;           /* Kein Hintergrund-Balken */
     border: none !important;
     transition: color 0.2s ease;           /* Weicher Farbwechsel */
+    touch-action: manipulation;            /* Verhindert iOS Doppelklick-Delay */
 }
 
 /* 2. Nur die Farbe steuert jetzt die Interaktion */
@@ -71,12 +72,14 @@ a {
     color: var(--secondary) !important;
 }
 
-/* Hover-Zustand (Maus drüber) */
-a:hover, 
-a.internal:hover, 
-a.external:hover {
-    color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
-    background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
+/* Hover-Zustand (nur auf Geräten mit echter Maus) */
+@media (hover: hover) {
+  a:hover,
+  a.internal:hover,
+  a.external:hover {
+      color: var(--tertiary) !important;    /* Wechselt zu Light Blue */
+      background: transparent !important;   /* Sicherstellen, dass kein Balken kommt */
+  }
 }
 
 
