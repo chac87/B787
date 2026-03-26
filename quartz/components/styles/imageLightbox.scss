@@ -15,18 +15,24 @@
 // ── Lightbox Overlay ────────────────────────────────────────────────────────
 
 #lightbox-overlay {
-  display: none;
+  // use visibility (not display:none) so opacity transition works
+  visibility: hidden;
+  pointer-events: none;
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(0, 0, 0, 0.88);
+  display: flex;
   align-items: center;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   opacity: 0;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
 
   &.open {
-    display: flex;
+    visibility: visible;
+    pointer-events: auto;
     opacity: 1;
   }
 
