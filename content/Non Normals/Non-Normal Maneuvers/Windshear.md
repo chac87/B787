@@ -13,17 +13,23 @@ tags: [non-normal, maneuvers]
 
 > [!proc]- Windshear Maneuver
 > **PF** "WINDSHEAR - I HAVE CONTROL"
+>
 > **PF** Disengage AP
+>
 > **PF** Push either TO/GA switch
 > ###### Monitor Vertical speed **PM**
 > **PF** "MAX POWER"
 > ###### Callout trends **PM**
 > **PF** Apply Maximum Thrust
+>
 > **PF** Disconnect A/T
+>
 > **PF** Wings Level, 15° pitch
+>
 > **PF** Verify Speedbrakes retracted
 > ###### Verify all actions completed **PM**
 > **PF** Follow FD
+>
 > **PF** Do not change Config
 >
 > ---

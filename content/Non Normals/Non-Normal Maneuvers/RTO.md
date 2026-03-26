@@ -50,7 +50,11 @@ tags: [non-normal, maneuvers]
 > **CM1** Stow Reversers
 > ###### Inform ATC **CM2**
 > **CM1** Set Parking Brake
+>
 > **CM1** "ATTENTION CREW ON STATION"
+>
 > **CM1** Evaluate Situation
+>
 > **CM1** Start appropriate Procedure
+>
 > **CM1** Start Evacuation, if required

@@ -16,15 +16,20 @@ tags: [non-normal, maneuvers]
 
 > [!proc]- GPWS Maneuver
 > **PF** „PULL UP – I have Control"
+>
 > **PF** Disconnect AP, A/T
+>
 > **PF** "Max Power"
+>
 > **PF** Apply Maximum Thrust
 > ###### Assure Maximum Thrust **PM**
 > **PF** Wings Level, 20° pitch
+>
 > **PF** Verify Speedbrakes retracted
 > ###### Assure All Actions completed **PM**
 > ###### Monitor Altitude and V/S **PM**
 > **PF** If necessary: Pitch up to the pitch limit indicator or stick shaker or initial buffet
+>
 > **PF** Do not change Config
 > ###### Callout trend towards terrain **PM**
 > **PF** When clear of terrain: Decrease pitch and accelerate
