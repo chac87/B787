@@ -367,6 +367,14 @@ h6,
   text-align: center;
 }
 
+/* Remove auto-anchor links from h6 inside proc callouts */
+.callout[data-callout="proc"] h6 a {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
 /* CM2 / PM — h6 lines in proc callouts → Dark Navy, right-aligned */
 .callout[data-callout="proc"] h6 {
   color: #1C3A6E;

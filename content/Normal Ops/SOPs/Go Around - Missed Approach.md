@@ -36,3 +36,47 @@ tags: [sop, go-around, normal-ops]
 >
 > **PF** Call "AFTER TAKEOFF CHECKLIST."
 > ###### Do the AFTER TAKEOFF checklist. **PM**
+
+## TO/GA Switch
+
+> [!info]- Availability
+> The TO/GA switch is available when:
+> - Flaps are out of UP, **or**
+> - Glide slope (GS) or glide path (GP) is captured
+>
+> The switch is **inhibited** after touchdown or if below 2 ft radio altitude for 3 seconds or more.
+> Above 5 ft radio altitude, the switch is re-enabled.
+
+> [!info]- First Push – Commands
+> On the first push of TO/GA, the autoflight system commands:
+> - A pitch attitude for approximately **2000 ft/min** climb
+> - Autothrottle mode: **THR** (go-around thrust)
+
+## High Flare / Bounced Landing / Balked Landing
+
+If a go-around is initiated from a high flare, after a bounce, or as a balked landing, the following rules apply:
+
+> [!caution]- Rules at Speed Below VREF
+> - Do **not** push TO/GA — the autoflight may command a pitch attitude that cannot be maintained at low speed
+> - Advance thrust levers **manually** to go-around thrust
+> - Rotate to go-around attitude (approximately 15°) smoothly
+> - After a positive rate of climb is established, retract gear and follow the standard go-around flow
+
+## Rejected Landing vs. Balked Landing
+
+A **Rejected Landing** is initiated before touchdown (e.g. runway incursion, ATC instruction). A **Balked Landing** is initiated after touchdown has occurred (e.g. after a bounce).
+
+> [!info]- Rejected Landing
+> Use the standard FCOM Go-Around procedure.
+> TO/GA is available if conditions are met (see above).
+
+> [!proc]- Balked Landing
+> **PF** Advance thrust levers to go-around thrust manually.
+>
+> **PF** Rotate to approximately 15° pitch attitude.
+>
+> **PF** Call "FLAPS 20."
+> ###### Set flap lever to 20. Call "FLAPS 20." **PM**
+> **PF** Verify a positive rate of climb. Call "GEAR UP."
+> ###### Set the landing gear lever to UP. Call "GEAR UP." **PM**
+> **PF** When airborne and positive rate confirmed — continue with the standard FCOM Go-Around procedure.
