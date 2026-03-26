@@ -19,6 +19,7 @@ Immediately do the following at the first indication of stall (buffet or stick s
 > **PF** Retract speedbrakes
 >
 > **PF** Do not change Config
+>
 > *During liftoff with Flaps UP: Call for Flaps 1*
 > ###### Flaps 1, as directed **PM**
 > **PF** Re-establish Flight Path

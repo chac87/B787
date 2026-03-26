@@ -356,6 +356,11 @@ h6,
   color: #007AFF;
 }
 
+/* Tight paragraph spacing in proc callouts (blank > lines create paragraphs) */
+.callout[data-callout="proc"] p {
+  margin: 0.15em 0;
+}
+
 /* CM2 / PM — h6 lines in proc callouts → Dark Navy, right-aligned */
 .callout[data-callout="proc"] h6 {
   color: #1C3A6E;
