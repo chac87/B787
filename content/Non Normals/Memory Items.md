@@ -13,12 +13,17 @@
 
 > [!warning]- AIRSPEED UNRELIABLE
 > > [!proc] Condition
-> > Airspeed indications disagree with AOA
+> > Airspeed or Mach indications disagree with AOA calculated airspeed. Objective: identify a reliable airspeed indication.
 >
-> 
-> **PF** AP Disconnect switch...PUSH  
-> **PF** A/T Disconnect switch...PUSH  
-> ###### FD switches (both)...OFF **PM**  
+> **PF** Autopilot disconnect switch...PUSH
+> ###### A/T ARM switches (both)...OFF **PM**
+> ###### F/D switches (both)...OFF **PM**
+> **PF** Set the following gear up pitch attitude and thrust:
+>
+> | | Pitch | Thrust |
+> |:---|:---:|:---:|
+> | Flaps extended | 10° | 85% N1 |
+> | Flaps up | 4° | 70% N1 |
 
 > [!warning]- CABIN ALTITUDE
 > > [!proc] Condition

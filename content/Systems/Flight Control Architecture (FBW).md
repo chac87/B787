@@ -1,5 +1,16 @@
 # Flight Controls & Protections
 
+## Flight Control Modes
+
+| Input | **NORMAL**<br><span style="font-size:0.78em;font-weight:normal;display:block;text-align:center;">Signal Computation: PFC</span> | **SECONDARY**<br><span style="font-size:0.78em;font-weight:normal;display:block;text-align:center;">Signal Computation: PFC</span> | **DIRECT**<br><span style="font-size:0.78em;font-weight:normal;display:block;text-align:center;">Signal Computation: ACE</span> |
+|:---:|:---:|:---:|:---:|
+| **PITCH** | Pitch rate / pitch compensation by PFC | Proportional elevator deflection | Proportional elevator deflection |
+| **PITCH TRIM** | ON GND: Stabilizer / IN FLIGHT: Trim reference speed | ON GND + IN FLIGHT: Stabilizer | ON GND + IN FLIGHT: Stabilizer |
+| **ROLL** | Roll rate | Proportional roll control surface deflection | Proportional roll control surface deflection |
+| **YAW** | Sideslip angle / Pedal force changes with displacement / Rudder ratio changer / Yaw Damping / Gust Suppression / SPD > 60 kts on GND and IN FLIGHT: Asymmetry Compensation | Proportional rudder deflection / Rudder ratio changer based on flap pos. / Yaw damping degraded | Proportional rudder deflection / Rudder ratio changer based on flap pos. / Yaw damping degraded |
+| **AUTOPILOT** | YES | NO | NO |
+| **PROTECTION** | YES | NO | NO |
+
 ## Fly-by-Wire
 ### Normal Mode
 Standardzustand, in dem alle drei Primary Flight Computers (PFCs) parallel arbeiten.

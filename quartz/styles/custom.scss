@@ -530,12 +530,22 @@ img[alt*="small"] {
 @media (prefers-color-scheme: dark) {
     :root {
         --web-text-normal: #dcddde;
-        --web-text-muted: #999999;
-        --web-text-faint: #444444;
-        --web-border-muted: #333333;
+        --web-text-muted: #aaaaaa;
+        --web-text-faint: #888888;
+        --web-border-muted: #444444;
 
         --web-table-row-alt: rgba(255, 255, 255, 0.04);
     }
+}
+
+/* Quartz JS-toggled dark mode */
+[saved-theme="dark"] {
+    --web-text-normal: #dcddde;
+    --web-text-muted: #aaaaaa;
+    --web-text-faint: #888888;
+    --web-border-muted: #444444;
+
+    --web-table-row-alt: rgba(255, 255, 255, 0.04);
 }
 
 /* =========================================
