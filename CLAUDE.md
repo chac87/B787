@@ -109,6 +109,23 @@ Current structure:
 - New Non-Normals go under the appropriate Non-Normals section
 - Also update the corresponding `index.md` with a `## [[link]]` entry
 
+## CSS Architecture — Snippets vs. custom.scss
+
+`quartz sync` runs `sync-snippets.sh` before every commit. This script merges all Obsidian CSS snippets directly into `custom.scss`, overwriting the `/* AUTO-SYNC START */` … `/* AUTO-SYNC END */` block.
+
+**Rule: never edit callout/snippet styles in `custom.scss` directly — always edit the source snippet file.**
+
+| What to change | Edit this file |
+|---|---|
+| Callout styles (padding, title size, colors, dark mode) | `~/.../787/.obsidian/snippets/callouts.css` |
+| Image tweaks | `~/.../787/.obsidian/snippets/image-tweak.css` |
+| Table in callout | `~/.../787/.obsidian/snippets/tabelle-in-callout.css` |
+| Table 50/50 | `~/.../787/.obsidian/snippets/table-50-50.css` |
+| Global hacks | `~/.../787/.obsidian/snippets/global-hacks.css` |
+| Everything else (checklist, layout, SOP classes) | `quartz/styles/custom.scss` directly |
+
+Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/.obsidian/snippets/`
+
 ## Deployment
 
 ```bash
