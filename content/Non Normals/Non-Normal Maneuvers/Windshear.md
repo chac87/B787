@@ -12,19 +12,19 @@ tags: [non-normal, maneuvers]
 - Active from rotation until 1.500 ft RA
 
 > [!proc]- Windshear Maneuver
-> **PF** "WINDSHEAR - I HAVE CONTROL"
-> **PF** Disengage AP
-> **PF** Push either TO/GA switch
-> ###### Monitor Vertical speed **PM**
-> **PF** "MAX POWER"
-> ###### Callout trends **PM**
-> **PF** Apply Maximum Thrust
-> **PF** Disconnect A/T
-> **PF** Wings Level, 15° pitch
-> **PF** Verify Speedbrakes retracted
-> ###### Verify all actions completed **PM**
-> **PF** Follow FD
-> **PF** Do not change Config
+> <span class="cm1">PF</span> "WINDSHEAR - I HAVE CONTROL"
+> <span class="cm1">PF</span> Disengage AP
+> <span class="cm1">PF</span> Push either TO/GA switch
+> <span class="cm2">PM</span> Monitor Vertical speed
+> <span class="cm1">PF</span> "MAX POWER"
+> <span class="cm2">PM</span> Callout trends
+> <span class="cm1">PF</span> Apply Maximum Thrust
+> <span class="cm1">PF</span> Disconnect A/T
+> <span class="cm1">PF</span> Wings Level, 15° pitch
+> <span class="cm1">PF</span> Verify Speedbrakes retracted
+> <span class="cm2">PM</span> Verify all actions completed
+> <span class="cm1">PF</span> Follow FD
+> <span class="cm1">PF</span> Do not change Config
 >
 > ---
 >

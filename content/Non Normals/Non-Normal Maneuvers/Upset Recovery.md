@@ -32,7 +32,7 @@ tags: [non-normal, maneuvers]
 >
 > ---
 >
-> ##### **PM**
+> ##### <span class="cm2">PM</span>
 > Callout Attitude, airspeed, and altitude
 > Verify all required actions have been done
 > Callout Any continued deviation
@@ -54,7 +54,7 @@ tags: [non-normal, maneuvers]
 > Adjust thrust and drag
 >
 > ---
->##### **PM**
+>##### <span class="cm2">PM</span>
 > Callout Attitude, airspeed, and altitude
 > Verify all required actions have been done
 > Callout Any continued deviation
