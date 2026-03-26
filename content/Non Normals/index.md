@@ -4,7 +4,7 @@
 # Non-Normals
 ## [[Non-Normal Philosophy]]
 ## [[EICAS Message Prioritization]]
-## [[Non-Normal Maneuvers]]
+## [[Non Normals/Non-Normal Maneuvers/index|Non-Normal Maneuvers]]
 ## [[Memory Items]]
 ## Electrical Non-Normals
 ## [[Air, Pressurization Non-Normals]]

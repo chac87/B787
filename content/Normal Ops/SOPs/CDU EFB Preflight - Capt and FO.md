@@ -7,23 +7,6 @@ role: Captain and First Officer
 
 # CDU/EFB Preflight Procedure – Captain and First Officer
 
-> [!info] Note
-> Start the CDU/EFB Preflight Procedure anytime after the Preliminary Preflight Procedure. The Initial Data and Navigation Data entries must be complete before the flight instrument check during the Preflight Procedure. The Performance Data entries must be complete before the Before Start Checklist.
-
-> [!info] Note
-> The PF makes CDU entries. The PM must verify the entries.
-
-> [!info] Note
-> Enter data in all the boxed items on the following CDU/EFB pages. Enter data in the dashed items or modify small font items that are listed in this procedure. Enter or modify other items at pilot's discretion.
-
-> [!warning] Caution
-> Failure to enter enroute winds can result in flight plan time and fuel burn errors.
-
-> [!info] Note
-> Refer to PeOM Flight Initialization (Pilots eOPS Manual).
-
-> [!warning] Caution
-> Do not load an instrument approach before departure. This prevents unwanted automatic LNAV arming and activation if a TO/GA switch is pushed after takeoff.
 
 <div class="checklist">
 
