@@ -380,6 +380,11 @@ h6,
   font-weight: 700;
 }
 
+/* Compact dot-leader rows inside limit callouts */
+.callout[data-callout="limit"] .cl-item {
+  margin: 0.15em 0;
+}
+
 /* =========================================
    H2 SEPARATOR LINE (Quartz + Obsidian)
    ========================================= */
