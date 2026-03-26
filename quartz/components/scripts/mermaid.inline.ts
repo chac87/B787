@@ -226,7 +226,7 @@ document.addEventListener("nav", async () => {
       themeVariables: {
         fontFamily: computedStyleMap["--codeFont"],
         primaryColor: computedStyleMap["--lightgray"],
-        primaryTextColor: computedStyleMap["--darkgray"],
+        primaryTextColor: "#1E2A44",
         primaryBorderColor: computedStyleMap["--lightgray"],
         lineColor: computedStyleMap["--gray"],
         secondaryColor: computedStyleMap["--lightgray"],

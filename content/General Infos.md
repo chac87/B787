@@ -2,7 +2,8 @@
 
 > [!info]- General Infos
 > <div class="cl-item"><strong>Wake Turbulence Category</strong><span class="cl-dots"></span><span>H</span></div>
-> <div class="cl-item"><strong>Approach Speed Category</strong><span class="cl-dots"></span><span>C</span></div>
+> <div class="cl-item"><strong>ICAO Code Letter (Ground Maneuvering)</strong><span class="cl-dots"></span><span>E — Wingspan 52 m to &lt;65 m</span></div>
+> <div class="cl-item"><strong>ICAO Approach Category</strong><span class="cl-dots"></span><span>D — Airspeed on Final &gt;160 kts</span></div>
 > <div class="cl-item"><strong>Range</strong><span class="cl-dots"></span><span>8300 NM</span></div>
 > <div class="cl-item"><strong>Engines</strong><span class="cl-dots"></span><span>2 × GEnx-1B (320 kN) or 2 × RR Trent 1000 (320 kN)</span></div>
 

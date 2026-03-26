@@ -530,22 +530,12 @@ img[alt*="small"] {
 @media (prefers-color-scheme: dark) {
     :root {
         --web-text-normal: #dcddde;
-        --web-text-muted: #aaaaaa;
-        --web-text-faint: #888888;
-        --web-border-muted: #444444;
+        --web-text-muted: #999999;
+        --web-text-faint: #444444;
+        --web-border-muted: #333333;
 
         --web-table-row-alt: rgba(255, 255, 255, 0.04);
     }
-}
-
-/* Quartz JS-toggled dark mode */
-[saved-theme="dark"] {
-    --web-text-normal: #dcddde;
-    --web-text-muted: #aaaaaa;
-    --web-text-faint: #888888;
-    --web-border-muted: #444444;
-
-    --web-table-row-alt: rgba(255, 255, 255, 0.04);
 }
 
 /* =========================================
@@ -637,6 +627,15 @@ main td {
     width: 50%;
 }
 /* AUTO-SYNC END */
+
+/* ── Mermaid: text color fix (dark mode) ────────────────────────────── */
+/* base.scss sets color: var(--darkgray) on <text> elements globally.    */
+/* In dark mode --darkgray is #E2E8F0 (light). Override for Mermaid SVG. */
+pre:has(> code.mermaid) svg text,
+#mermaid-container svg text {
+  fill: #1E2A44 !important;
+  color: #1E2A44 !important;
+}
 
 /* ── Page Transition Fade ───────────────────────────────────────────────── */
 @keyframes pageFadeIn {

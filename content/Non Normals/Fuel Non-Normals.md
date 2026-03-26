@@ -18,16 +18,14 @@ tags: [non-normal, fuel]
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryTextColor': '#1E2A44', 'lineColor': '#8A7F6B', 'edgeLabelBackground': '#F1EDE3'}}}%%
-flowchart TD
-    A["FUEL LEAK SUSPECTED"]
-    A --> B{"Leak due to unexpected fuel xfer?"}
+flowchart LR
+    A["FUEL LEAK SUSPECTED"] --> B{"Unexp. fuel xfer?"}
     B -->|YES| C["FUEL TRANSFER NNC"]
-    B -->|NO| D{"Leak in Engine or Main Tank?"}
-    D -->|NO| E["Check for center tank leak"]
-    D -->|YES| F["Shut down engine"]
-    F --> G{"Main tank fuel level remains the same?"}
-    G -->|YES| H["Leak is an engine leak — Eng stays shut down"]
-    G -->|NO| I["Leak is a main tank leak — Eng may be restarted"]
+    B -->|NO| D{"Engine or Main Tank?"}
+    D -->|NO| E["Check center tank"]
+    D -->|YES| F["Shut down engine"] --> G{"Main tank level stable?"}
+    G -->|YES| H["Engine leak — Eng stays off"]
+    G -->|NO| I["Main tank leak — Eng may restart"]
 
     classDef decision fill:#e8e0d0,stroke:#8A7F6B,color:#1E2A44
     classDef action fill:#f1ede3,stroke:#3E5FA8,color:#1E2A44
@@ -39,3 +37,58 @@ flowchart TD
     class H,I result
     class A start
 ```
+
+---
+
+## Fuel Jettison
+
+> [!caution] Fuel Jettison must be considered if…
+> - **Stopping distance or G/A performance** is a concern
+> - **Autoland** is required
+>
+> → Evaluate same or higher degree of safety
+> → s. auch [[Non Normals/Abnormal Emergency Procedures|Overweight Landing]]
+
+> [!info]- Requirements
+> **OM-A 8.3.15.1**
+> - In close coordination with ATC
+> - \> 6000 ft AGL
+> - Not in holding pattern
+> - Clear of cities and towns
+> - Away from thunderstorms
+> - A flight report must be filed
+>
+> **FCTM B787:** If adequate time is available — ensure adequate weather minimums
+>
+> **OM-B 1-20-12-1:** Do not jettison fuel at Flaps 30
+
+> [!info]- System Notes
+> - Inhibited on GND
+> - Jettison rate: Main tanks **500 kg/min** · Center tank **1200 kg/min**
+> - At least **3900 kg** of fuel per main tank must remain
+
+### Unannunciated Checklist
+
+<div class="checklist">
+
+<div class="cl-item"><strong>FUEL JETTISON ARM switch</strong><span class="cl-dots"></span><strong>ARMED</strong></div>
+<div class="cl-sub">Do not jettison fuel at flap settings listed on the FUEL JETTISON control panel placard</div>
+
+<div class="cl-item"><strong>FUEL TO REMAIN selector</strong><span class="cl-dots"></span><strong>PULL ON, set manually</strong></div>
+<div class="cl-sub">Change FUEL TO REMAIN value if required before pulling selector</div>
+
+<div class="cl-item"><strong>FUEL JETTISON NOZZLE valve switches (both)</strong><span class="cl-dots"></span><strong>ON</strong></div>
+
+</div>
+
+**When fuel jettison is complete:**
+
+<div class="checklist">
+
+<div class="cl-item"><strong>FUEL JETTISON NOZZLE valve switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+
+<div class="cl-item"><strong>FUEL TO REMAIN selector</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+
+<div class="cl-item"><strong>FUEL JETTISON ARM switch</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+
+</div>
