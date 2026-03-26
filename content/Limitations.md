@@ -1,74 +1,54 @@
 # Limitations
 
 > [!limit]- Weight Limitations
-> **MTW** 254.692
-> 
-> **MTOW** 254.011
-> 
-> **MLAW** 192.776
-> 
-> **MZFW** 181.436
-> 
-> **Min. Flight Weight** 110.677
+> <div class="cl-item"><strong>MTW</strong><span class="cl-dots"></span><span>254.692 t</span></div>
+> <div class="cl-item"><strong>MTOW</strong><span class="cl-dots"></span><span>254.011 t</span></div>
+> <div class="cl-item"><strong>MLAW</strong><span class="cl-dots"></span><span>192.776 t</span></div>
+> <div class="cl-item"><strong>MZFW</strong><span class="cl-dots"></span><span>181.436 t</span></div>
+> <div class="cl-item"><strong>Min. Flight Weight</strong><span class="cl-dots"></span><span>110.677 t</span></div>
 
 > [!limit]- Environmental Limitations
-> **Max. RWY slope** +-2 %  
-> 
-> **Max. Operating Altitude** 43.100 ft PA  
-> 
-> **Max. Takeoff and Landing Altitude** 14.000 ft PA  
-> 
-> **Max. precipitation depth allowable for takeoff** Dry snow 100 mm, wet snow 30 mm, Slush 15 mm, standing water 15 mm  
-> 
-> **Min. RWY width** 45 m  
+> <div class="cl-item"><strong>Max. RWY slope</strong><span class="cl-dots"></span><span>+-2 %</span></div>
+> <div class="cl-item"><strong>Max. Operating Altitude</strong><span class="cl-dots"></span><span>43.100 ft PA</span></div>
+> <div class="cl-item"><strong>Max. Takeoff and Landing Altitude</strong><span class="cl-dots"></span><span>14.000 ft PA</span></div>
+> <div class="cl-item"><strong>Max. precipitation depth (takeoff)</strong><span class="cl-dots"></span><span>Dry snow 100 mm · wet snow 30 mm · Slush 15 mm · standing water 15 mm</span></div>
+> <div class="cl-item"><strong>Min. RWY width</strong><span class="cl-dots"></span><span>45 m</span></div>
 
 > [!limit]- Speed Limitations
-> **vLO / MLO /vLE / MLE** 270 kt IAS / M .82
-> 
-> **vMO / MMO** 350 kts / M .90
-> 
-> **Turbulence Penetration Speed** 290 kts < 25.000 ft;
-> 310 kts/M .84 (whichever is lower) ≥ 25.000 ft
-> 
-> **Flaps 1** 260 kts
-> 
-> **Max. TWC dry, wet** 15 kts
-> 
-> **Max. TWC contaminated** 5 kts
-> 
-> **max. CWC Takeoff dry** 33 kts
-> 
-> **max. CWC Landing dry** 35 kts
+> <div class="cl-item"><strong>vLO / MLO / vLE / MLE</strong><span class="cl-dots"></span><span>270 kt IAS / M .82</span></div>
+> <div class="cl-item"><strong>vMO / MMO</strong><span class="cl-dots"></span><span>350 kts / M .90</span></div>
+> <div class="cl-item"><strong>Turbulence Penetration Speed</strong><span class="cl-dots"></span><span>290 kts &lt; 25.000 ft · 310 kts/M .84 ≥ 25.000 ft</span></div>
+> <div class="cl-item"><strong>Flaps 1</strong><span class="cl-dots"></span><span>260 kts</span></div>
+> <div class="cl-item"><strong>Max. TWC dry, wet</strong><span class="cl-dots"></span><span>15 kts</span></div>
+> <div class="cl-item"><strong>Max. TWC contaminated</strong><span class="cl-dots"></span><span>5 kts</span></div>
+> <div class="cl-item"><strong>Max. CWC Takeoff dry</strong><span class="cl-dots"></span><span>33 kts</span></div>
+> <div class="cl-item"><strong>Max. CWC Landing dry</strong><span class="cl-dots"></span><span>35 kts</span></div>
 
 > [!limit]- Door Limitations
-> **Door operation** 40 kts wind
-> 
-> **Door opening** 65 kts wind
- 
+> <div class="cl-item"><strong>Door operation</strong><span class="cl-dots"></span><span>40 kts wind</span></div>
+> <div class="cl-item"><strong>Door opening</strong><span class="cl-dots"></span><span>65 kts wind</span></div>
+
 > [!limit]- Air System Limitations
-> **Normal max. pressure** 9.4 psi
-> 
-> **Max. pressure relief** 9.9 psi
-> 
-> **Max. allowable cabin pressure diff.** 0.11 psi
-## Anti-Ice Limitations
+> <div class="cl-item"><strong>Normal max. pressure</strong><span class="cl-dots"></span><span>9.4 psi</span></div>
+> <div class="cl-item"><strong>Max. pressure relief</strong><span class="cl-dots"></span><span>9.9 psi</span></div>
+> <div class="cl-item"><strong>Max. allowable cabin pressure diff.</strong><span class="cl-dots"></span><span>0.11 psi</span></div>
 
-## Autoflight Limitations
+> [!limit]- Anti-Ice Limitations
 
-## Communication Limitations
+> [!limit]- Autoflight Limitations
 
-## Communication Limitations
+> [!limit]- Communication Limitations
 
-## Engines, APU Limitations
+> [!limit]- Engines, APU Limitations
 
-## Flight Controls Limitations
+> [!limit]- Flight Controls Limitations
 
-## Flight Instruments, Display Limitations
+> [!limit]- Flight Instruments, Display Limitations
 
-## Flight Management, Navigation Limitations
+> [!limit]- Flight Management, Navigation Limitations
 
-## Fuel Limitations
+> [!limit]- Fuel Limitations
 
-## Landing Gear Limitations
+> [!limit]- Landing Gear Limitations
 
-## Warning Systems
+> [!limit]- Warning Systems
