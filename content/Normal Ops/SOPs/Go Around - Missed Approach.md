@@ -5,11 +5,13 @@ tags: [sop, go-around, normal-ops]
 
 # Go Around – Missed Approach
 
+<div class="cl-warning">Warning: TO/GA function is inhibited close to the ground and after touchdown. If the thrust levers do not respond when TO/GA is pushed, or if the go-around is initiated after touchdown, advance the thrust levers manually to go-around thrust.</div>
+
 > [!proc]- Go Around Maneuver
 > **PF** Push the TO/GA switch. Call "GO AROUND"
 >
 > **PF** Verify that the thrust increases.
-> <div class="cl-warning">Warning: TO/GA function is inhibited close to the ground and after touchdown. If the thrust levers do not respond when TO/GA is pushed, or if the go-around is initiated after touchdown, advance the thrust levers manually to go-around thrust.</div>
+>
 > **PF** Call "FLAPS 20" or "FLAPS__" as needed.
 > ###### Set the flap lever as directed. Call "FLAPS__" **PM**
 > **PF** Verify the rotation to go-around attitude.
