@@ -20,7 +20,6 @@ export const defaultContentPageLayout: PageLayout = {
       condition: (page) => page.fileData.slug !== "index",
     }),
     BookNavigation(),
-    Component.TagList(),
   ],
   left: [],
   right: [],
