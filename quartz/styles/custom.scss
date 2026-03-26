@@ -111,8 +111,8 @@ a {
   background-color: color-mix(in srgb, var(--accent), transparent 92%);
 
   /* Layout & Spacing */
-  padding: 8px 14px;
-  margin: 0.75em 0;
+  padding: 16px 20px; /* Mehr "Breathing Room" */
+  margin: 1.5em 0;
   
   /* Die "Apple-Kurve" */
   border-radius: 12px;
@@ -147,11 +147,11 @@ a {
   display: flex; /* Flexbox für saubere Ausrichtung */
   align-items: center;
   
-  font-weight: 700;
-  font-size: 0.95rem;
-  letter-spacing: -0.01em;
-
-  margin-bottom: 0.3em;
+  font-weight: 700; /* Apple nutzt oft "Bold" (700) für Headlines */
+  font-size: 1.2rem; /* Deine gewünschte Größe */
+  letter-spacing: -0.01em; /* Tight tracking wie bei iOS */
+  
+  margin-bottom: 0.6em;
   color: var(--accent); /* Titel in der Akzentfarbe */
   opacity: 1;
 }
