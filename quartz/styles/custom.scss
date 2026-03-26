@@ -380,8 +380,9 @@ h6,
   font-weight: 700;
 }
 
-/* Compact dot-leader rows inside limit callouts */
-.callout[data-callout="limit"] .cl-item {
+/* Compact dot-leader rows inside callouts */
+.callout[data-callout="limit"] .cl-item,
+.callout[data-callout="info"] .cl-item {
   margin: 0.15em 0;
 }
 
