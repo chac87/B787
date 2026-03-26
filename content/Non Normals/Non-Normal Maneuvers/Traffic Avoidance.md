@@ -7,18 +7,18 @@ tags: [non-normal, maneuvers]
 
 ### Traffic Advisory
 > [!proc]- TA Maneuver
-> <span class="cm1">PF</span> "TCAS, I have Control"
-> <span class="cm2">PM</span> Identify Intruder
+> **PF** "TCAS, I have Control"
+> ###### Identify Intruder **PM**
 
 ### Resolution Advisory
 > [!proc]- RA Maneuver
 >
-> <span class="cm1">PF</span> Disengage AP, A/T
-> <span class="cm2">PM</span> Establish Visual Contact
+> **PF** Disengage AP, A/T
+> ###### Establish Visual Contact **PM**
 >
-> <span class="cm1">PF</span> Smoothly adjust Pitch/Thrust to satisfy RA command
-> <span class="cm2">PM</span> Callout any conflicting traffic
-> <span class="cm2">PM</span> Inform ATC ("TCAS RA / unable")
+> **PF** Smoothly adjust Pitch/Thrust to satisfy RA command
+> ###### Callout any conflicting traffic **PM**
+> ###### Inform ATC ("TCAS RA / unable") **PM**
 > ---
 >
 > ##### Follow the planned lateral path unless visual contact with conflicting traffic requires other action.
