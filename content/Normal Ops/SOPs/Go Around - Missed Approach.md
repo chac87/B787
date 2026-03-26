@@ -52,6 +52,24 @@ tags: [sop, go-around, normal-ops]
 > - A pitch attitude for approximately **2000 ft/min** climb
 > - Autothrottle mode: **THR** (go-around thrust)
 
+> [!info]- Autopilot Recommendation
+> It is generally recommended to fly an **automatic go-around** with the autopilot engaged.
+> If the autopilot was disconnected prior to the go-around, re-engage it as soon as the flight path is under control.
+
+## Go-Around above 1500 ft RA
+
+> [!info]- APP Button Deselect — Alternative to TOGA
+> Above **1500 ft radio altitude**, pushing **APP** releases both localizer and glideslope.
+> Depending on airline configuration, the autopilot reverts to **ATT** (attitude stabilized) or **HDG HOLD + V/S**.
+>
+> From here, select the modes required to comply with the ATC clearance, accelerate as needed, and reconfigure the aircraft (gear up, flaps as appropriate for speed).
+>
+> This avoids the full TOGA sequence and keeps the crew in direct control of the climb profile.
+
+> [!info]- Exiting TOGA Mode at Positive Rate
+> Once a positive rate of climb is established, TOGA mode can be exited.
+> Example: go-around instructed at 1300 ft with a 2000 ft level-off — select **V/S** at positive rate to control the climb and avoid capturing 2000 ft at high rate (TCAS RA risk).
+
 ## High Flare / Bounced Landing / Balked Landing
 
 If a go-around is initiated from a high flare, after a bounce, or as a balked landing, the following rules apply:
