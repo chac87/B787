@@ -63,14 +63,39 @@ function setupPage() {
 
   imgs.forEach((img) => {
     img.style.cursor = "zoom-in"
-    const open = () => {
+
+    let imgTouchStartX = 0
+    let imgTouchStartY = 0
+
+    const openLightbox = () => {
       lightboxImg.src = img.src
       lightboxImg.alt = img.alt
       overlay.classList.add("open")
       document.body.classList.add("lightbox-open")
     }
-    img.addEventListener("click", open)
-    window.addCleanup(() => img.removeEventListener("click", open))
+
+    const onImgTouchStart = (e: TouchEvent) => {
+      imgTouchStartX = e.touches[0].clientX
+      imgTouchStartY = e.touches[0].clientY
+    }
+
+    const onImgTouchEnd = (e: TouchEvent) => {
+      const dx = Math.abs(e.changedTouches[0].clientX - imgTouchStartX)
+      const dy = Math.abs(e.changedTouches[0].clientY - imgTouchStartY)
+      if (dx < 10 && dy < 10) {
+        e.preventDefault() // suppress subsequent click event
+        openLightbox()
+      }
+    }
+
+    img.addEventListener("touchstart", onImgTouchStart, { passive: true })
+    img.addEventListener("touchend", onImgTouchEnd, { passive: false })
+    img.addEventListener("click", openLightbox)
+    window.addCleanup(() => {
+      img.removeEventListener("touchstart", onImgTouchStart)
+      img.removeEventListener("touchend", onImgTouchEnd)
+      img.removeEventListener("click", openLightbox)
+    })
   })
 
   // ── Keyboard arrow navigation ─────────────────────────────────────────────
