@@ -57,10 +57,10 @@ tags: [sop, go-around, normal-ops]
 If a go-around is initiated from a high flare, after a bounce, or as a balked landing, the following rules apply:
 
 > [!caution]- Rules at Speed Below VREF
-> - Do **not** push TO/GA — the autoflight may command a pitch attitude that cannot be maintained at low speed
-> - Advance thrust levers **manually** to go-around thrust
-> - Rotate to go-around attitude (approximately 15°) smoothly
-> - After a positive rate of climb is established, retract gear and follow the standard go-around flow
+> - **Kein Config-Change** mit Speed < VREF
+> - Pitch darf mit Speed < VREF initially **nicht > 8° sein**
+> - **Aufsetzen im G/A ist wahrscheinlich** und darf keine Hemmschwelle sein
+> - Ziel ist **kontrollierte Pitch bis Speed wieder > VREF** und clear of Ground
 
 ## Rejected Landing vs. Balked Landing
 
@@ -71,12 +71,18 @@ A **Rejected Landing** is initiated before touchdown (e.g. runway incursion, ATC
 > TO/GA is available if conditions are met (see above).
 
 > [!proc]- Balked Landing
-> **PF** Advance thrust levers to go-around thrust manually.
+> **PF** Disengage autopilot.
 >
-> **PF** Rotate to approximately 15° pitch attitude.
+> **PF** Disconnect Autothrottle.
 >
-> **PF** Call "FLAPS 20."
-> ###### Set flap lever to 20. Call "FLAPS 20." **PM**
-> **PF** Verify a positive rate of climb. Call "GEAR UP."
-> ###### Set the landing gear lever to UP. Call "GEAR UP." **PM**
-> **PF** When airborne and positive rate confirmed — continue with the standard FCOM Go-Around procedure.
+> **PF** Maintain landing configuration.
+>
+> **PF** Manually advance thrust.
+>
+> **PF** Control pitch below VREF to < 8°.
+>
+> **PF** Rotate at or above VREF to 15° of pitch.
+>
+> *When airborne with positive rate of climb:*
+>
+> **PF** Use FCOM go-around procedure.
