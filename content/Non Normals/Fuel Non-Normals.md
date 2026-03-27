@@ -80,7 +80,7 @@ tags: [non-normal, fuel]
 
 > [!info]- System Notes
 > - Inhibited on GND
-> - Jettison rate: Main tanks **500 kg/min** · Center tank **1200 kg/min**
+> - Jettison rate: Main tanks **570 kg/min** · Center tank **1360 kg/min**
 > - At least **3900 kg** of fuel per main tank must remain
 
 ### Unannunciated Checklist
@@ -108,3 +108,52 @@ tags: [non-normal, fuel]
 <div class="cl-item"><strong>FUEL JETTISON ARM switch</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 
 </div>
+
+> Wenn <span class="c-amber">**FUEL AUTO JETTISON**</span> erscheint: Das System hat den Jettison automatisch gestartet, weil das Landegewicht überschritten wird. Checklist wie gewohnt — nur FUEL TO REMAIN prüfen/anpassen.
+
+---
+
+## Fuel Imbalance
+
+<span class="c-amber">**FUEL IMBALANCE**</span> — Differenz zwischen Main Tank 1 und 2 zu groß.
+
+**Ausgleichsmethoden (Reihenfolge nach Effektivität):**
+
+| Methode | Kommentar |
+|:---|:---|
+| **Fuel Balance System** | Automatisch oder manuell — bevorzugte Methode |
+| **Crossfeed** | Beide Triebwerke aus demselben Tank — Imbalance wächst nicht weiter |
+| **Triebwerk drosseln** | Letztes Mittel — Performance-Einschränkung |
+
+**EICAS-Meldungen:**
+
+| EICAS | Bedeutung |
+|:---|:---|
+| <span class="c-amber">**FUEL IMBALANCE**</span> | Main-Tank-Differenz überschreitet Grenzwert |
+| <span class="c-amber">**FUEL DISAGREE**</span> | Angezeigter vs. berechneter Kraftstoff weicht ab — möglicher Leak |
+| <span class="c-amber">**FUEL QTY LOW**</span> | Haupttank unter Mindestmenge |
+| <span class="c-amber">**FUEL BALANCE SYS**</span> | Fuel Balance System ausgefallen — manueller Ausgleich erforderlich |
+
+---
+
+## Fuel Balance System
+
+Überträgt automatisch Kraftstoff zwischen den Haupttanks, um Imbalance zu korrigieren.
+
+- Rate: **135 L/min** (≈ 107 kg/min)
+- 1000 kg Differenz ausgleichen: ca. **7 Minuten**
+- Schneller als Crossfeed-Methode
+- Arbeitet unabhängig vom Crossfeed-System
+
+---
+
+## FUEL UNUSABLE CTR
+
+<span class="c-amber">**FUEL UNUSABLE CTR**</span> — Kraftstoff im Centertank kann nicht mehr zur Triebwerksversorgung genutzt werden.
+
+**Ursache:** Das Flugzeug ist außerhalb des CG-Envelopes — der verbleibende Centertank-Kraftstoff liegt hinter dem zulässigen Schwerpunkt.
+
+**Konsequenz:** Kraftstoff ist physisch vorhanden, aber gesperrt. Die angezeigte Gesamtmenge täuscht — tatsächlich verfügbare Menge entspricht nur den Haupttanks.
+
+> [!warning] Planung
+> Landedistanz und Alternates auf Basis der **Haupttank-Menge** planen — nicht Gesamtmenge.
