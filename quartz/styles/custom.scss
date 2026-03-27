@@ -635,41 +635,58 @@ main td {
 
 /* ── Flowchart ──────────────────────────────────────────────────────── */
 .flow {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
   overflow-x: auto;
   font-size: 0.85rem;
   font-family: var(--bodyFont);
   margin: 1.2em 0;
 }
 .flow-row {
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
   gap: 8px;
 }
 .flow-col {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
 }
 .flow-node {
   padding: 5px 12px;
   border: 1.5px solid var(--lightgray);
   border-radius: 5px;
   background: var(--light);
-  color: var(--dark);
+  color: var(--dark) !important;
   white-space: nowrap;
+  display: inline-block;
 }
-.flow-node.fn-start  { background: rgba(62,95,168,0.15); border-color: #3E5FA8; font-weight: 600; }
-.flow-node.fn-q      { background: rgba(138,127,107,0.18); border-color: #8A7F6B; }
-.flow-node.fn-action { background: rgba(62,95,168,0.08); border-color: #3E5FA8; }
-.flow-node.fn-result { background: rgba(62,95,168,0.12); border-color: #3E5FA8; font-style: italic; }
-.flow-arrow { color: var(--gray); user-select: none; white-space: nowrap; }
-.flow-vline { width: 1.5px; min-height: 20px; background: var(--gray); margin-left: 16px; }
-.flow-label { font-size: 0.72rem; color: var(--gray); font-weight: 700; margin-left: 18px; line-height: 1; }
+.flow-node.fn-start  { background: rgba(62,95,168,0.2)  !important; border-color: #3E5FA8 !important; font-weight: 600; }
+.flow-node.fn-q      { background: rgba(138,127,107,0.22) !important; border-color: #8A7F6B !important; }
+.flow-node.fn-action { background: rgba(62,95,168,0.1)  !important; border-color: #3E5FA8 !important; }
+.flow-node.fn-result { background: rgba(62,95,168,0.14) !important; border-color: #3E5FA8 !important; font-style: italic; }
+.flow-arrow { color: var(--gray) !important; user-select: none; white-space: nowrap; display: inline-block; }
+.flow-vline { width: 1.5px; min-height: 20px; background: var(--gray); margin-left: 16px; display: block; }
+.flow-label { font-size: 0.72rem; color: var(--gray) !important; font-weight: 700; margin-left: 18px; line-height: 1; display: block; }
+
+/* Mobile: alles vertikal stapeln */
+@media (max-width: 700px) {
+  .flow-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .flow-arrow {
+    transform: rotate(90deg);
+    margin-left: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
 
 /* ── Mermaid: text color fix (dark mode) ────────────────────────────── */
 /* base.scss sets color: var(--darkgray) on <text> elements globally.    */
