@@ -35,13 +35,29 @@
 
 **Ventilation Isolation (CARGO FIRE ARM):**
 
-- Beide Lower Recirculation Fans — **OFF**
-- Packs — **Minimum Airflow** (nur Druckhaltung)
-- Fwd + Aft Outflow Valves — **50/50 Split**
-- Equipment Cooling (betroffene Seite) — **Override**
-- Zonal Dryer Fans, IFE Cooling, NGS, Cargo Heat — **OFF**
-- *Nur AFT:* Bulk Cargo Ventilation, Lav/Galley Vent Fan, Door 4 Galley Chiller — **OFF**
-- *Nur FWD:* Miscellaneous Equipment Cooling Fan — **OFF**
+<div class="checklist">
+
+<div class="cl-item"><strong>Lower Recirculation Fans (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>Packs</strong><span class="cl-dots"></span><strong>MINIMUM AIRFLOW</strong></div>
+<div class="cl-sub">Nur Druckhaltung</div>
+<div class="cl-item"><strong>Fwd + Aft Outflow Valves</strong><span class="cl-dots"></span><strong>50/50 SPLIT</strong></div>
+<div class="cl-item"><strong>Equipment Cooling (affected side)</strong><span class="cl-dots"></span><strong>OVERRIDE</strong></div>
+<div class="cl-item"><strong>Zonal Dryer Fans</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>IFE Cooling</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>NGS</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>Cargo Heat</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+
+<div class="cl-variant">AFT Cargo only</div>
+<div class="cl-item cl-indent"><strong>Bulk Cargo Ventilation</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item cl-indent"><strong>Lav / Galley Vent Fan</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item cl-indent"><strong>Door 4 Galley Chiller Units</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-variant-end">END AFT Cargo only</div>
+
+<div class="cl-variant">FWD Cargo only</div>
+<div class="cl-item cl-indent"><strong>Miscellaneous Equipment Cooling Fan</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-variant-end">END FWD Cargo only</div>
+
+</div>
 
 ---
 
