@@ -683,6 +683,10 @@ main td {
   .flow-arrow {
     display: none !important;
   }
+  .flow-node {
+    white-space: normal !important;
+    max-width: calc(100vw - 3rem);
+  }
 }
 
 /* ── Mermaid: text color fix (dark mode) ────────────────────────────── */
