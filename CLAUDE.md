@@ -109,9 +109,22 @@ Current structure:
 - New Non-Normals go under the appropriate Non-Normals section
 - Also update the corresponding `index.md` with a `## [[link]]` entry
 
+### Consistency Rule — ALWAYS enforce after structural changes
+After **any** of the following actions, verify `book.md` is consistent with all `index.md` files:
+- Adding a new page
+- Renaming or deleting a page
+- Moving a page to a different section
+- Reordering pages in any `index.md`
+
+**Checklist:**
+1. Every linked page in `book.md` must exist as a `.md` file
+2. Order in `book.md` must match the order in the corresponding section `index.md`
+3. No page present in an `index.md` (and as a real file) may be missing from `book.md`
+4. Deleted or renamed pages must be removed/updated in `book.md` immediately
+
 ## CSS Architecture — Snippets vs. custom.scss
 
-`quartz sync` runs `sync-snippets.sh` before every commit. This script merges all Obsidian CSS snippets directly into `custom.scss`, overwriting the `/* AUTO-SYNC START */` … `/* AUTO-SYNC END */` block.
+`sync-snippets.sh` runs automatically on **both** `npx quartz build` and `npx quartz sync`. It merges all Obsidian CSS snippets directly into `custom.scss`, overwriting the `/* AUTO-SYNC START */` … `/* AUTO-SYNC END */` block.
 
 **Rule: never edit callout/snippet styles in `custom.scss` directly — always edit the source snippet file.**
 
@@ -129,6 +142,6 @@ Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/
 ## Deployment
 
 ```bash
-npx quartz sync --no-pull   # commit + push to GitHub (triggers Netlify deploy)
-npx quartz build --serve    # local preview at http://localhost:8080
+npx quartz build --serve    # sync-snippets.sh läuft automatisch → local preview at http://localhost:8080
+npx quartz sync --no-pull   # sync-snippets.sh läuft erneut → commit + push to GitHub (triggers Netlify deploy)
 ```

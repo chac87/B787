@@ -238,6 +238,13 @@ export async function handleBuild(argv) {
   }
 
   console.log(`\n${styleText(["bgGreen", "black"], ` Quartz v${version} `)} \n`)
+
+  try {
+    execSync("bash ./sync-snippets.sh", { stdio: "inherit" })
+  } catch (e) {
+    console.warn("sync-snippets.sh konnte nicht ausgeführt werden:", e.message)
+  }
+
   const ctx = await esbuild.context({
     entryPoints: [fp],
     outfile: cacheFile,

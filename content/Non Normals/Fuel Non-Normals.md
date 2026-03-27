@@ -16,27 +16,43 @@ tags: [non-normal, fuel]
 > - FUEL QTY LOW message
 > - INSUFFICIENT FUEL message
 
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryTextColor': '#1E2A44', 'lineColor': '#8A7F6B', 'edgeLabelBackground': '#F1EDE3'}}}%%
-flowchart LR
-    A["FUEL LEAK SUSPECTED"] --> B{"Unexp. fuel xfer?"}
-    B -->|YES| C["FUEL TRANSFER NNC"]
-    B -->|NO| D{"Engine or Main Tank?"}
-    D -->|NO| E["Check center tank"]
-    D -->|YES| F["Shut down engine"] --> G{"Main tank level stable?"}
-    G -->|YES| H["Engine leak — Eng stays off"]
-    G -->|NO| I["Main tank leak — Eng may restart"]
-
-    classDef decision fill:#e8e0d0,stroke:#8A7F6B,color:#1E2A44
-    classDef action fill:#f1ede3,stroke:#3E5FA8,color:#1E2A44
-    classDef result fill:#dce8f0,stroke:#3E5FA8,color:#1E2A44
-    classDef start fill:#d4e0f5,stroke:#3E5FA8,color:#1E2A44
-
-    class B,D,G decision
-    class C,E,F action
-    class H,I result
-    class A start
-```
+<div class="flow">
+  <div class="flow-node fn-start">FUEL LEAK SUSPECTED</div>
+  <div class="flow-vline"></div>
+  <div class="flow-col">
+    <div class="flow-row">
+      <div class="flow-node fn-q">Unexpected fuel transfer?</div>
+      <span class="flow-arrow">──YES──▶</span>
+      <div class="flow-node fn-action">FUEL TRANSFER NNC</div>
+    </div>
+    <div class="flow-vline"></div>
+    <span class="flow-label">NO</span>
+    <div class="flow-vline"></div>
+  </div>
+  <div class="flow-col">
+    <div class="flow-row">
+      <div class="flow-node fn-q">Leak in Engine or Main Tank?</div>
+      <span class="flow-arrow">──NO──▶</span>
+      <div class="flow-node fn-action">Check center tank</div>
+    </div>
+    <div class="flow-vline"></div>
+    <span class="flow-label">YES</span>
+    <div class="flow-vline"></div>
+  </div>
+  <div class="flow-node fn-action">Shut down engine</div>
+  <div class="flow-vline"></div>
+  <div class="flow-col">
+    <div class="flow-row">
+      <div class="flow-node fn-q">Main tank fuel level stable?</div>
+      <span class="flow-arrow">──YES──▶</span>
+      <div class="flow-node fn-result">Engine leak — engine stays shut down</div>
+    </div>
+    <div class="flow-vline"></div>
+    <span class="flow-label">NO</span>
+    <div class="flow-vline"></div>
+    <div class="flow-node fn-result">Main tank leak — engine may be restarted</div>
+  </div>
+</div>
 
 ---
 

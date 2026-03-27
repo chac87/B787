@@ -633,6 +633,44 @@ main td {
 }
 /* AUTO-SYNC END */
 
+/* ── Flowchart ──────────────────────────────────────────────────────── */
+.flow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  font-family: var(--bodyFont);
+  margin: 1.2em 0;
+}
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.flow-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+.flow-node {
+  padding: 5px 12px;
+  border: 1.5px solid var(--lightgray);
+  border-radius: 5px;
+  background: var(--light);
+  color: var(--dark);
+  white-space: nowrap;
+}
+.flow-node.fn-start  { background: rgba(62,95,168,0.15); border-color: #3E5FA8; font-weight: 600; }
+.flow-node.fn-q      { background: rgba(138,127,107,0.18); border-color: #8A7F6B; }
+.flow-node.fn-action { background: rgba(62,95,168,0.08); border-color: #3E5FA8; }
+.flow-node.fn-result { background: rgba(62,95,168,0.12); border-color: #3E5FA8; font-style: italic; }
+.flow-arrow { color: var(--gray); user-select: none; white-space: nowrap; }
+.flow-vline { width: 1.5px; min-height: 20px; background: var(--gray); margin-left: 16px; }
+.flow-label { font-size: 0.72rem; color: var(--gray); font-weight: 700; margin-left: 18px; line-height: 1; }
+
 /* ── Mermaid: text color fix (dark mode) ────────────────────────────── */
 /* base.scss sets color: var(--darkgray) on <text> elements globally.    */
 /* In dark mode --darkgray is #E2E8F0 (light). Override for Mermaid SVG. */
