@@ -14,7 +14,7 @@ Beide Checklisten sind im **Non-Normal Menu → Unannunciated Checklists** zu fi
 
 ## Smoke, Fire or Fumes
 
-> [!info] Immer zuerst diese Checklist starten
+**Immer zuerst diese Checklist starten**
 
 **Ziel:** Zündquelle identifizieren und Strom entziehen — eine Systemgruppe nach der anderen.
 
@@ -25,7 +25,7 @@ Beide Checklisten sind im **Non-Normal Menu → Unannunciated Checklists** zu fi
 
 ## Smoke or Fumes Removal
 
-> [!info] Nur wenn von der ersten Checklist angewiesen
+**Nur wenn von der ersten Checklist angewiesen**
 
 **Ziel:** Rauch durch Ventilation nach außen abführen — sucht **keine** Ursache.
 
