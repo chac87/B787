@@ -1,5 +1,4 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import style from "./styles/custom.scss" // Wir nutzen dein globales CSS
 
 export default (() => {
   const FloatingHome: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
@@ -12,6 +11,6 @@ export default (() => {
       </a>
     )
   }
-  
+
   return FloatingHome
 }) satisfies QuartzComponentConstructor
