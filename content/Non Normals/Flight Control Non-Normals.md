@@ -60,7 +60,7 @@ Wenn Flap/Slat-Elektronik komplett ausgefallen ist.
 > [!warning] Nur bei NNC-Anweisung
 > Alternate Mode nur bei: <span class="c-amber">**AIRSPEED UNRELIABLE**</span> oder <span class="c-amber">**FLAP/SLAT CONTROL**</span>
 
-**Flap/Slat Control NNC:** Extension dauert ca. 3 min — Anflug entsprechend früh planen. VREF 20. Flap Lever bleibt UP (per Checklist — er ist ohnehin inoperativ).
+**Flap/Slat Control NNC:** Extension dauert ca. 3 min — Anflug entsprechend früh planen. vREF 20. Flap Lever bleibt UP (per Checklist — er ist ohnehin inoperativ).
 
 ---
 

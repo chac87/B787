@@ -23,7 +23,7 @@ tags: [non-normal, maneuvers]
 >
 > ##### Follow the planned lateral path unless visual contact with conflicting traffic requires other action.
 
-<div class="cl-note">FD stays ON during the maneuver — strictly follow the RA command</div>
+<div class="cl-note">FD stays ON during the maneuver — strictly follow RA command</div>
 
 > [!info] RA Command satisfied when BOTH…
 > - **RA Region** reached AND

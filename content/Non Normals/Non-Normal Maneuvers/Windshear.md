@@ -11,7 +11,7 @@ tags: [non-normal, maneuvers]
 > - Full rated T/O Thrust
 > - Use longest RWY
 > - Flaps 20, if possible (alternatively 15, 17 or 18)
-> - Use increased V_R (Topas Tool)
+> - Use increased vR (Topas Tool)
 
 ## PWS & Reactive Windshear
 
@@ -26,25 +26,25 @@ tags: [non-normal, maneuvers]
 
 ## Response by Flight Phase
 
-| Flight Phase | PWS Caution | PWS Warning | Immediate W/S Alert / GPWS |
-|:---|:---|:---|:---|
-| **Before Takeoff** | Maneuver as rqrd to avoid | Delay T/O | n/a |
-| **THR advanced – V1** | Maneuver as rqrd to avoid | RTO | RTO — or rotate at VR and perform Escape Maneuver when airborne |
-| **V1 – Rotation** | Maneuver as rqrd to avoid | Windshear Escape Maneuver | Initiate normal rotation ≥ 2000 ft before RWY end; ensure max thrust set |
-| **Inflight** | Maneuver as rqrd to avoid | Windshear Escape Maneuver | Windshear Escape Maneuver |
-| **During Approach** | Maneuver as rqrd to avoid | Escape Maneuver or normal Go-Around | Windshear Escape Maneuver |
+| Flight Phase          | PWS Caution               | PWS Warning                         | Immediate W/S Alert / GPWS                                                |
+| :-------------------- | :------------------------ | :---------------------------------- | :------------------------------------------------------------------------ |
+| **Before Takeoff**    | Maneuver as rqrd to avoid | Delay T/O                           | n/a                                                                       |
+| **THR advanced – v1** | Maneuver as rqrd to avoid | RTO                                 | RTO — or rotate at VR and perform Escape Maneuver when airborne           |
+| **v1 – Rotation**     | Maneuver as rqrd to avoid | Windshear Escape Maneuver           | Initiate normal rotation ≥ 2.000 ft before RWY end; ensure max thrust set |
+| **Inflight**          | Maneuver as rqrd to avoid | Windshear Escape Maneuver           | Windshear Escape Maneuver                                                 |
+| **During Approach**   | Maneuver as rqrd to avoid | Escape Maneuver or normal Go-Around | Windshear Escape Maneuver                                                 |
 
 ## Recognition in Flight
 
-> [!info]- Unacceptable Flight Path Deviations below 1000 ft AGL
+> [!info]- Unacceptable Flight Path Deviations below 1.000 ft AGL
 > Any of the following in excess of:
 > - **15 kts** IAS deviation
-> - **500 FPM** vertical speed deviation
+> - **500 ft/min** vertical speed deviation
 > - **5°** pitch attitude deviation
 > - **1 dot** displacement on glideslope
 > - Unusual thrust lever position for a significant period of time
 >
-> **Or:** W/S alert *"Windshear – Windshear – Windshear"* (< 1500 ft RA)
+> **Or:** W/S alert *"Windshear – Windshear – Windshear"* (< 1.500 ft RA)
 
 ## Windshear Escape Maneuver
 

@@ -111,8 +111,6 @@ tags: [non-normal, fuel]
 
 > Wenn <span class="c-amber">**FUEL AUTO JETTISON**</span> erscheint: Das System hat den Jettison automatisch gestartet, weil das Landegewicht überschritten wird. Checklist wie gewohnt — nur FUEL TO REMAIN prüfen/anpassen.
 
----
-
 ## Fuel Imbalance
 
 <span class="c-amber">**FUEL IMBALANCE**</span> — Differenz zwischen Main Tank 1 und 2 zu groß.
@@ -140,8 +138,8 @@ tags: [non-normal, fuel]
 
 Überträgt automatisch Kraftstoff zwischen den Haupttanks, um Imbalance zu korrigieren.
 
-- Rate: **135 L/min** (≈ 107 kg/min)
-- 1000 kg Differenz ausgleichen: ca. **7 Minuten**
+- Rate: **135 l/min** (≈ 107 kg/min)
+- 1.000 kg Differenz ausgleichen: ca. **7 min**
 - Schneller als Crossfeed-Methode
 - Arbeitet unabhängig vom Crossfeed-System
 
