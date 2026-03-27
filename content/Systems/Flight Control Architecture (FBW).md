@@ -13,16 +13,6 @@
 
 ---
 
-## Fly-by-Wire
-
-| Mode | Signal | Autopilot | Protections | Aktivierung |
-|:---|:---:|:---:|:---:|:---|
-| **Normal** | PFC | ✓ | Full | Standardzustand — alle 3 PFCs parallel |
-| **Secondary** | PFC | ✗ | Load factor only | IRS/ADRS- oder Flap/Slat-Datenverlust |
-| **Direct** | ACE | ✗ | None | Alle PFCs ausgefallen oder PFC Disc. Switch |
-
----
-
 ## Protections
 
 ### Pitch & Roll
