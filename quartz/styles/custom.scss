@@ -674,18 +674,18 @@ main td {
 .flow-vline { width: 1.5px; min-height: 20px; background: var(--gray); margin-left: 16px; display: block; }
 .flow-label { font-size: 0.72rem; color: var(--gray) !important; font-weight: 700; margin-left: 18px; line-height: 1; display: block; }
 
-/* Mobile: alles vertikal stapeln */
+/* Mobile: scale down to fit iPhone width */
 @media (max-width: 700px) {
+  .flow {
+    zoom: 0.6;
+  }
   .flow-row {
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
   }
   .flow-arrow {
-    display: none !important;
-  }
-  .flow-node {
-    white-space: normal !important;
-    max-width: calc(100vw - 3rem);
+    display: inline-block !important;
   }
 }
 
