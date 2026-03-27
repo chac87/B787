@@ -256,6 +256,11 @@ a {
   font-variant-numeric: tabular-nums;
 }
 
+/* Hide hr inside collapsed callouts (border bleeds through height:0) */
+.callout.is-collapsed .callout-content hr {
+  border: none;
+}
+
 /* === snippet: global-hacks.css === */
 /* =========================================
    GLOBAL LAYOUT RULES (Web / PDF)
