@@ -40,8 +40,8 @@ Electric Motor Control Unit unterstützt nun Flaps **oder** Slats — sie werden
 
 | EICAS | Landung | Hinweis |
 |:---|:---|:---|
-| **FLAPS PRIMARY FAIL** | Flaps 20 | Langsame Extension → langsame Retraktion → Full Flap würde GA-Performance gefährden |
-| **SLATS PRIMARY FAIL** | Normal | Checklist Notes lesen, langsamere Extension einplanen — kein OPT-Eintrag unter NNC möglich |
+| <span class="c-amber">**FLAPS PRIMARY FAIL**</span> | Flaps 20 | Langsame Extension → langsame Retraktion → Full Flap würde GA-Performance gefährden |
+| <span class="c-amber">**SLATS PRIMARY FAIL**</span> | Normal | Checklist Notes lesen, langsamere Extension einplanen — kein OPT-Eintrag unter NNC möglich |
 
 ---
 
@@ -58,7 +58,7 @@ Wenn Flap/Slat-Elektronik komplett ausgefallen ist.
 - **Kein Closed-Loop** → keine Asymmetrie- oder Uncommanded Motion Protection
 
 > [!warning] Nur bei NNC-Anweisung
-> Alternate Mode nur bei: **AIRSPEED UNRELIABLE** oder **FLAP/SLAT CONTROL**
+> Alternate Mode nur bei: <span class="c-amber">**AIRSPEED UNRELIABLE**</span> oder <span class="c-amber">**FLAP/SLAT CONTROL**</span>
 
 **Flap/Slat Control NNC:** Extension dauert ca. 3 min — Anflug entsprechend früh planen. VREF 20. Flap Lever bleibt UP (per Checklist — er ist ohnehin inoperativ).
 
@@ -66,4 +66,4 @@ Wenn Flap/Slat-Elektronik komplett ausgefallen ist.
 
 ### Flaps / Slats Drive
 
-FLAPS DRIVE oder SLATS DRIVE → Antriebsmechanismus defekt — kann durch **keinen** Modus bewegt werden. Checklist bereitet auf Partial Flap/Slat Landing vor.
+<span class="c-amber">**FLAPS DRIVE**</span> oder <span class="c-amber">**SLATS DRIVE**</span> → Antriebsmechanismus defekt — kann durch **keinen** Modus bewegt werden. Checklist bereitet auf Partial Flap/Slat Landing vor.
