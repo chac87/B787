@@ -10,20 +10,20 @@
     right: 30px;              /* Abstand von rechts */
     z-index: 1000;            /* Über allem anderen liegen */
     
-    background-color: var(--lightgray);
+    background-color: #ffffff;
     color: var(--dark);
 
     width: 50px;
     height: 50px;
-    border-radius: 20%;       /* Kreisrund */
+    border-radius: 20%;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 4px 16px rgba(0,0,0,0.22);
-    transition: transform 0.2s ease, background-color 0.2s;
-    border: 1px solid var(--gray);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+    transition: transform 0.2s ease, box-shadow 0.2s;
+    border: none;
 }
 
 /* Hover Effekt (Macht ihn etwas größer) */
