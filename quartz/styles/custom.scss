@@ -681,10 +681,7 @@ main td {
     align-items: flex-start !important;
   }
   .flow-arrow {
-    transform: rotate(90deg);
-    margin-left: 12px;
-    margin-top: 2px;
-    margin-bottom: 2px;
+    display: none !important;
   }
 }
 
