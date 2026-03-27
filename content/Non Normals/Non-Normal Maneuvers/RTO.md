@@ -13,21 +13,6 @@ tags: [non-normal, maneuvers]
 > | **Threat** | Loss of directional control | Runway overrun · Tire blowout & Fire |
 > | **Key points** | Maintain centerline · Retard thrust levers immediately · Autobrakes not available below 85 kts — be prepared for asymmetric manual braking | Monitor autobrake & speedbrake closely (PM) · Maximum brakes — do not reduce prematurely · Consider 'GO' as potentially safer option · Know runway lighting and stopping distance remaining |
 
-> [!info]- RTO Decision Making
-> ##### Low Energy Regime — Stop for any of:
-> - Any Master Caution or Warning
-> - Slow acceleration
-> - Tire failure, noise, vibration
-> - Unsafe or unable to fly
->
-> ##### High Energy Regime (≥ 80 kts) — Stop only for:
-> - Fire or Fire Warning
-> - Engine Failure
-> - Predictive Windshear (< 100 kts)
-> - Unsafe or unable to fly
->
-> ---
-> **Technical notes:** Autobrakes armed at 85 kts (RTO mode) · Thrust levers in HOLD mode above 80 kts · ENG FAIL: time-critical warning from 65 kts to V₁ − 6 kts
 
 > [!proc]- RTO Maneuver
 > **CM1** "STOP"
