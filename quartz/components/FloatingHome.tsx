@@ -1,7 +1,7 @@
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 export default (() => {
-  const FloatingHome: QuartzComponent = ({ displayClass, cfg }: QuartzComponentProps) => {
+  const FloatingHome: QuartzComponent = ({ displayClass }: QuartzComponentProps) => {
     return (
       <a href="/" class={`floating-home ${displayClass ?? ""}`} aria-label="Home">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
