@@ -10,8 +10,8 @@
     right: 30px;              /* Abstand von rechts */
     z-index: 1000;            /* Über allem anderen liegen */
     
-    background-color: #ffffff;
-    color: var(--dark);
+    background-color: #3E5FA8;
+    color: #ffffff;
 
     width: 50px;
     height: 50px;
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 4px 20px rgba(0,0,0,0.35);
+    box-shadow: 0 4px 20px rgba(62,95,168,0.45);
     transition: transform 0.2s ease, box-shadow 0.2s;
     border: none;
 }
@@ -29,8 +29,8 @@
 /* Hover Effekt (Macht ihn etwas größer) */
 .floating-home:hover {
     transform: scale(1.1);
-    background-color: white;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    background-color: #2d4a8a;
+    box-shadow: 0 6px 20px rgba(62,95,168,0.55);
 }
 
 /* Home Button auf der Startseite selbst ausblenden */
