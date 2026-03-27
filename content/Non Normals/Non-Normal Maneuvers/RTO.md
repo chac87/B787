@@ -51,8 +51,6 @@ tags: [non-normal, maneuvers]
 >
 > **No evacuation required** → "CANCEL ALERT, CANCEL ALERT"
 
----
-
 ## Concept for another Takeoff
 
 *After RTO at low energy regime:*
