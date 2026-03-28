@@ -64,8 +64,6 @@
 > <div class="cl-item"><strong>GS >3.77° — disengage</strong><span class="cl-dots"></span><span>≤ 50 ft below DH / MDA</span></div>
 > <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><span>not below 1,000 ft AFE</span></div>
 
-> [!limit]- Communication Limitations
-
 > [!limit]- Engines, APU Limitations
 > <div class="cl-item"><strong>Engine oil — min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>
 > <div class="cl-item"><strong>T/O and G/A thrust — time limit</strong><span class="cl-dots"></span><span>10 minutes</span></div>
@@ -80,8 +78,6 @@
 > <div class="cl-item"><strong>Baro alt cold temperature correction</strong><span class="cl-dots"></span><span>required below published minimum temperature</span></div>
 > <div class="cl-item"><strong>RVSM</strong><span class="cl-dots"></span><span>not on ISFD alone</span></div>
 > <div class="cl-item"><strong>QFE</strong><span class="cl-dots"></span><span>must be set in FMS · no VNAV / LNAV with QFE</span></div>
-
-> [!limit]- Flight Management, Navigation Limitations
 
 > [!limit]- Fuel Limitations
 > <div class="cl-item"><strong>Density</strong><span class="cl-dots"></span><span>6.3 – 7.1 lb/gal</span></div>
