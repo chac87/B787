@@ -5,7 +5,7 @@
    FLOATING HOME BUTTON
    ========================================= */
 
-/* Container — pill shape */
+/* Container — vertical pill */
 .floating-home {
     position: fixed !important;
     bottom: 30px !important;
@@ -13,8 +13,9 @@
     z-index: 1000 !important;
 
     display: flex !important;
+    flex-direction: column !important;
     align-items: stretch !important;
-    height: 46px !important;
+    width: 46px !important;
 
     background-color: rgba(50, 87, 188, 0.82) !important;
     background: rgba(50, 87, 188, 0.82) !important;
@@ -44,19 +45,15 @@ body[data-slug="index"] .floating-home {
     display: none !important;
 }
 
-/* Left section — Home link */
+/* Top section — Home link */
 .floating-home__home {
     display: flex !important;
     align-items: center !important;
-    gap: 7px !important;
-    padding: 0 18px 0 16px !important;
+    justify-content: center !important;
+    height: 46px !important;
     color: #ffffff !important;
     text-decoration: none !important;
     background: none !important;
-    font-size: 0.875rem !important;
-    font-weight: 600 !important;
-    white-space: nowrap !important;
-    letter-spacing: 0.01em !important;
     transition: background 0.15s !important;
 }
 
@@ -68,20 +65,20 @@ body[data-slug="index"] .floating-home {
 
 /* Divider */
 .floating-home__divider {
-    width: 1px !important;
+    height: 1px !important;
+    width: auto !important;
     background: rgba(255, 255, 255, 0.25) !important;
-    margin: 9px 0 !important;
+    margin: 0 9px !important;
     flex-shrink: 0 !important;
 }
 
-/* Right section — Scroll to top + progress ring */
+/* Bottom section — Scroll to top + progress ring */
 .floating-home__top {
     position: relative !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    width: 46px !important;
-    flex-shrink: 0 !important;
+    height: 46px !important;
     background: none !important;
     border: none !important;
     color: #ffffff !important;
