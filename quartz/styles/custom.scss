@@ -4,51 +4,94 @@
 /* =========================================
    FLOATING HOME BUTTON
    ========================================= */
+
+/* Container — pill shape */
 .floating-home {
     position: fixed !important;
     bottom: 30px !important;
     right: 30px !important;
     z-index: 1000 !important;
 
-    background-color: #3257BC !important;
-    background: #3257BC !important;
-    color: #ffffff !important;
-
-    width: 50px !important;
-    height: 50px !important;
-    border-radius: 20% !important;
-    border: none !important;
-
     display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
+    align-items: stretch !important;
+    height: 46px !important;
 
-    box-shadow: 0 4px 20px rgba(50,87,188,0.45) !important;
-    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s, background-color 0.2s !important;
-    text-decoration: none !important;
+    background-color: rgba(50, 87, 188, 0.82) !important;
+    background: rgba(50, 87, 188, 0.82) !important;
+    color: #ffffff !important;
+    border-radius: 23px !important;
+    border: none !important;
+    overflow: hidden !important;
+
+    box-shadow: 0 4px 20px rgba(50,87,188,0.4) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s !important;
 
     /* Hidden by default — JS adds .is-visible after 150px scroll */
     opacity: 0 !important;
     pointer-events: none !important;
-    transform: scale(0.85) !important;
+    transform: scale(0.9) translateY(6px) !important;
 }
 
 .floating-home.is-visible {
     opacity: 1 !important;
     pointer-events: auto !important;
-    transform: scale(1) !important;
-}
-
-.floating-home:hover {
-    transform: scale(1.1) !important;
-    background-color: #05164D !important;
-    background: #05164D !important;
-    color: #ffffff !important;
-    box-shadow: 0 6px 20px rgba(50,87,188,0.55) !important;
+    transform: scale(1) translateY(0) !important;
 }
 
 body[data-slug="index"] .floating-home {
     display: none !important;
+}
+
+/* Left section — Home link */
+.floating-home__home {
+    display: flex !important;
+    align-items: center !important;
+    gap: 7px !important;
+    padding: 0 18px 0 16px !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    background: none !important;
+    font-size: 0.875rem !important;
+    font-weight: 600 !important;
+    white-space: nowrap !important;
+    letter-spacing: 0.01em !important;
+    transition: background 0.15s !important;
+}
+
+.floating-home__home:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Divider */
+.floating-home__divider {
+    width: 1px !important;
+    background: rgba(255, 255, 255, 0.25) !important;
+    margin: 9px 0 !important;
+    flex-shrink: 0 !important;
+}
+
+/* Right section — Scroll to top + progress ring */
+.floating-home__top {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 46px !important;
+    flex-shrink: 0 !important;
+    background: none !important;
+    border: none !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    transition: background 0.15s !important;
+}
+
+.floating-home__top:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
 }
 
 /* Progress ring SVG */
@@ -58,27 +101,25 @@ body[data-slug="index"] .floating-home {
     width: 100% !important;
     height: 100% !important;
     transform: rotate(-90deg) !important;
-    border-radius: inherit !important;
-    overflow: visible !important;
     pointer-events: none !important;
 }
 
 .floating-home .progress-ring__track {
     fill: none !important;
     stroke: rgba(255, 255, 255, 0.2) !important;
-    stroke-width: 3 !important;
+    stroke-width: 2.5 !important;
 }
 
 .floating-home .progress-ring__fill {
     fill: none !important;
     stroke: rgba(255, 255, 255, 0.9) !important;
-    stroke-width: 3 !important;
+    stroke-width: 2.5 !important;
     stroke-linecap: round !important;
     transition: stroke-dashoffset 0.1s linear !important;
 }
 
-/* Home icon sits above the ring */
-.floating-home .home-icon {
+/* Up-arrow icon above the ring */
+.floating-home__top > svg:last-child {
     position: relative !important;
     z-index: 1 !important;
 }
