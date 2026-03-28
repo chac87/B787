@@ -58,6 +58,8 @@ Folgefehler-Meldungen, die aus einem primären Fehler resultieren (z. B. PACK L 
 
 #### <span class="c-amber">Amber Advisories</span>
 - Routine crew awareness und mögliche corrective action
-- Indikation: Amber EICAS-Meldung (eingerückt), kein Aural, keine Master Lights
+- Indikation: Amber EICAS-Meldung, **kein Aural**, keine Master Lights
+- Erscheinen **unterhalb der Cautions**, nach rechts eingerückt
+- Weisen auf nicht-normale Betriebs-/Systemzustände hin, die routinemäßige Aufmerksamkeit erfordern
 
 #### White Memo Messages
