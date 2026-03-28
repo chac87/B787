@@ -1,20 +1,20 @@
 # Limitations
 
-> [!limit]- Weight Limitations
+> [!limit] Weight Limitations
 > <div class="cl-item"><strong>MTW</strong><span class="cl-dots"></span><span>254.692 t</span></div>
 > <div class="cl-item"><strong>MTOW</strong><span class="cl-dots"></span><span>254.011 t</span></div>
 > <div class="cl-item"><strong>MLAW</strong><span class="cl-dots"></span><span>192.776 t</span></div>
 > <div class="cl-item"><strong>MZFW</strong><span class="cl-dots"></span><span>181.436 t</span></div>
 > <div class="cl-item"><strong>Min. Flight Weight</strong><span class="cl-dots"></span><span>110.677 t</span></div>
 
-> [!limit]- Environmental Limitations
+> [!limit] Environmental Limitations
 > <div class="cl-item"><strong>Max. RWY slope</strong><span class="cl-dots"></span><span>±2 %</span></div>
 > <div class="cl-item"><strong>Max. Operating Altitude</strong><span class="cl-dots"></span><span>43.100 ft PA</span></div>
 > <div class="cl-item"><strong>Max. Takeoff and Landing Altitude</strong><span class="cl-dots"></span><span>14.000 ft PA</span></div>
 > <div class="cl-item"><strong>Max. precipitation depth (takeoff)</strong><span class="cl-dots"></span><span>Dry snow 100 mm · wet snow 30 mm · slush 15 mm · standing water 15 mm</span></div>
 > <div class="cl-item"><strong>Min. RWY width</strong><span class="cl-dots"></span><span>45 m</span></div>
 
-> [!limit]- Speed Limitations
+> [!limit] Speed Limitations
 > <div class="cl-item"><strong>v<sub>LO</sub> / v<sub>LE</sub></strong><span class="cl-dots"></span><span>270 kts / M .82</span></div>
 > <div class="cl-item"><strong>V<sub>MO</sub> / M<sub>MO</sub></strong><span class="cl-dots"></span><span>350 kts / M .90</span></div>
 > <div class="cl-item"><strong>Turbulence Penetration</strong><span class="cl-dots"></span><span>290 kts &lt; 25.000 ft · 310 kts / M .84 ≥ 25.000 ft</span></div>
@@ -34,16 +34,16 @@
 > <div class="cl-item"><strong>Engine Start — TW >5 kts + wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
 > <div class="cl-item"><strong>Engine Start — wind >55 kts</strong><span class="cl-dots"></span><span>idle only</span></div>
 
-> [!limit]- Door Limitations
+> [!limit] Door Limitations
 > <div class="cl-item"><strong>Door operation</strong><span class="cl-dots"></span><span>40 kts wind</span></div>
 > <div class="cl-item"><strong>Door opening</strong><span class="cl-dots"></span><span>65 kts wind</span></div>
 
-> [!limit]- Air System Limitations
+> [!limit] Air System Limitations
 > <div class="cl-item"><strong>Normal max. pressure</strong><span class="cl-dots"></span><span>9.4 psi</span></div>
 > <div class="cl-item"><strong>Max. pressure relief</strong><span class="cl-dots"></span><span>9.9 psi</span></div>
 > <div class="cl-item"><strong>Max. allowable cabin pressure diff.</strong><span class="cl-dots"></span><span>0.11 psi</span></div>
 
-> [!limit]- Anti-Ice Limitations
+> [!limit] Anti-Ice Limitations
 > <div class="cl-item"><strong>EAI — ground</strong><span class="cl-dots"></span><span>ON</span></div>
 > <div class="cl-item"><strong>EAI — flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
 > <div class="cl-item"><strong>EAI — not when</strong><span class="cl-dots"></span><span>OAT >10°C (ground) · TAT >15°C (flight) · OAT <−40°C</span></div>
@@ -52,7 +52,7 @@
 > <div class="cl-item"><strong>Ice Detection — flight</strong><span class="cl-dots"></span><span>TAT ≤15°C + visible moisture or clouds</span></div>
 > <div class="cl-item"><strong>Ice Detection — ground</strong><span class="cl-dots"></span><span>OAT ≤10°C + contaminated surface + visible moisture</span></div>
 
-> [!limit]- Autoflight Limitations
+> [!limit] Autoflight Limitations
 > <div class="cl-item"><strong>AP — min. engagement altitude after T/O</strong><span class="cl-dots"></span><span>200 ft AGL</span></div>
 > <div class="cl-item"><strong>Autoland — max. airport elevation</strong><span class="cl-dots"></span><span>8,400 ft MSL</span></div>
 > <div class="cl-item"><strong>Autoland — wind limits</strong><span class="cl-dots"></span><span>HW 25 kts · TW 15 kts · CW 25 kts</span></div>
@@ -64,22 +64,22 @@
 > <div class="cl-item"><strong>GS >3.77° — disengage</strong><span class="cl-dots"></span><span>≤ 50 ft below DH / MDA</span></div>
 > <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><span>not below 1,000 ft AFE</span></div>
 
-> [!limit]- Engines, APU Limitations
+> [!limit] Engines, APU Limitations
 > <div class="cl-item"><strong>Engine oil — min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>
 > <div class="cl-item"><strong>T/O and G/A thrust — time limit</strong><span class="cl-dots"></span><span>10 minutes</span></div>
 
-> [!limit]- Flight Controls Limitations
+> [!limit] Flight Controls Limitations
 > <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>Normal Mode only</span></div>
 > <div class="cl-item"><strong>Rapid alternating control inputs</strong><span class="cl-dots"></span><span>avoid</span></div>
 > <div class="cl-item"><strong>Max. flap extension altitude</strong><span class="cl-dots"></span><span>20,000 ft</span></div>
 
-> [!limit]- Flight Instruments, Display Limitations
+> [!limit] Flight Instruments, Display Limitations
 > <div class="cl-item"><strong>Altitude display before T/O</strong><span class="cl-dots"></span><span>≤ ±75 ft from field elevation</span></div>
 > <div class="cl-item"><strong>Baro alt cold temperature correction</strong><span class="cl-dots"></span><span>required below published minimum temperature</span></div>
 > <div class="cl-item"><strong>RVSM</strong><span class="cl-dots"></span><span>not on ISFD alone</span></div>
 > <div class="cl-item"><strong>QFE</strong><span class="cl-dots"></span><span>must be set in FMS · no VNAV / LNAV with QFE</span></div>
 
-> [!limit]- Fuel Limitations
+> [!limit] Fuel Limitations
 > <div class="cl-item"><strong>Density</strong><span class="cl-dots"></span><span>6.3 – 7.1 lb/gal</span></div>
 > <div class="cl-item"><strong>Max. fuel temperature — T/O</strong><span class="cl-dots"></span><span>+49°C</span></div>
 > <div class="cl-item"><strong>Min. fuel temperature — T/O</strong><span class="cl-dots"></span><span>−29°C</span></div>
@@ -102,12 +102,12 @@
 > | JP-5 | −46°C |
 > | TS-1 | −50 to −60°C |
 
-> [!limit]- Landing Gear Limitations
+> [!limit] Landing Gear Limitations
 > <div class="cl-item"><strong>Alternate Extension</strong><span class="cl-dots"></span><span>speedbrakes retracted</span></div>
 > <div class="cl-item"><strong>Brake Release</strong><span class="cl-dots"></span><span>not above 55% N1 (tailtipping)</span></div>
 > <div class="cl-item"><strong>Towing towbarless</strong><span class="cl-dots"></span><span>prohibited unless torque links disconnected</span></div>
 
-> [!limit]- Warning Systems
+> [!limit] Warning Systems
 > <div class="cl-item"><strong>TCAS RA</strong><span class="cl-dots"></span><span>deviation authorized and required</span></div>
 > <div class="cl-item"><strong>TA / Traffic Display</strong><span class="cl-dots"></span><span>no evasive maneuver based on TA alone</span></div>
 > <div class="cl-item"><strong>GPWS Terrain</strong><span class="cl-dots"></span><span>not for navigation</span></div>
