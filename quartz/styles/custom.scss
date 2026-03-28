@@ -170,52 +170,90 @@ a {
 }
 
 /* =========================================================
-   CALLOUT TYPES (Apple Colors)
+   CALLOUT TYPES (LHG Brand Colors)
    ========================================================= */
 
-/* PROCEDURE – Apple Blue (System Blue) */
-.callout.proc, 
+/* PROCEDURE – LHG Core Blue */
 .callout[data-callout="proc"] {
-  --accent: #007AFF;
+  --accent: #3257BC;
+  --color: #3257BC;
+  --border: rgba(50, 87, 188, 0.27);
+  --bg: rgba(50, 87, 188, 0.08);
+  background-color: rgba(50, 87, 188, 0.08) !important;
+  border-color: rgba(50, 87, 188, 0.27) !important;
+}
+.callout[data-callout="proc"] .callout-title {
+  color: #05164D;
 }
 
-/* WARNING – Apple Red (System Red) */
-.callout.warning, 
-.callout[data-callout="warning"] {
-  --accent: #FF3B30;
-}
-
-/* LIMITATION – Sky Blue */
-.callout.limit,
+/* LIMITATION – LHG Light Blue */
 .callout[data-callout="limit"] {
-  --accent: #bee3f8;
+  --accent: #5291ED;
+  --color: #5291ED;
+  --border: rgba(82, 145, 237, 0.27);
+  --bg: rgba(82, 145, 237, 0.08);
+  background-color: rgba(82, 145, 237, 0.08) !important;
+  border-color: rgba(82, 145, 237, 0.27) !important;
 }
-
 .callout[data-callout="limit"] .callout-title {
-  color: #3182ce;
+  color: #243F9B;
 }
 
-/* INFO – Apple Green (System Green) */
-.callout.info, 
+/* INFO – LHG Teal */
 .callout[data-callout="info"] {
-  --accent: #34C759;
+  --accent: #4B9DA1;
+  --color: #4B9DA1;
+  --border: rgba(75, 157, 161, 0.27);
+  --bg: rgba(75, 157, 161, 0.08);
+  background-color: rgba(75, 157, 161, 0.08) !important;
+  border-color: rgba(75, 157, 161, 0.27) !important;
+}
+.callout[data-callout="info"] .callout-title {
+  color: #1C4C5C;
+}
+
+/* WARNING – LHG Red */
+.callout[data-callout="warning"] {
+  --accent: #FF526B;
+  --color: #FF526B;
+  --border: rgba(255, 82, 107, 0.27);
+  --bg: rgba(255, 82, 107, 0.08);
+  background-color: rgba(255, 82, 107, 0.08) !important;
+  border-color: rgba(255, 82, 107, 0.27) !important;
+}
+.callout[data-callout="warning"] .callout-title {
+  color: #93030C;
 }
 
 /* =========================================================
-   DARK MODE SUPPORT (Wichtig für hochwertigen Look)
+   DARK MODE SUPPORT
+   Both OS dark mode + Quartz JS toggle ([saved-theme="dark"])
    ========================================================= */
 @media (prefers-color-scheme: dark) {
   .callout {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stärkerer Schatten im Darkmode */
-    background-color: color-mix(in srgb, var(--accent), transparent 85%); /* Etwas dunklerer Hintergrund */
-    border-color: color-mix(in srgb, var(--accent), transparent 60%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(var(--accent-rgb, 82, 145, 237), 0.15) !important;
+    border-color: rgba(var(--accent-rgb, 82, 145, 237), 0.4) !important;
   }
-  
-  .callout-title {
-    /* Im Darkmode ist die reine Akzentfarbe manchmal zu grell, 
-       wir hellen sie leicht auf oder lassen sie so */
-    color: color-mix(in srgb, var(--accent), white 10%);
-  }
+}
+body[saved-theme="dark"] .callout {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+body[saved-theme="dark"] .callout[data-callout="proc"] {
+  background-color: rgba(50, 87, 188, 0.18) !important;
+  border-color: rgba(50, 87, 188, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="limit"] {
+  background-color: rgba(82, 145, 237, 0.18) !important;
+  border-color: rgba(82, 145, 237, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="info"] {
+  background-color: rgba(75, 157, 161, 0.18) !important;
+  border-color: rgba(75, 157, 161, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="warning"] {
+  background-color: rgba(255, 82, 107, 0.18) !important;
+  border-color: rgba(255, 82, 107, 0.45) !important;
 }
 
 /* =========================================================
@@ -360,9 +398,9 @@ h6,
 .c-red   { color: #e74c3c }
 .c-amber { color: #f39c12 }
 .c-green { color: #2ecc71 }
-/* CM1 / PF — bold label in proc callouts → Apple Blue */
+/* CM1 / PF — bold label in proc callouts → LHG Core Blue */
 .callout[data-callout="proc"] p > strong:first-child {
-  color: #007AFF;
+  color: #3257BC;
 }
 
 /* Tight paragraph spacing in proc callouts (blank > lines create paragraphs) */
@@ -384,16 +422,16 @@ h6,
   cursor: default;
 }
 
-/* CM2 / PM — h6 lines in proc callouts → Dark Navy, right-aligned */
+/* CM2 / PM — h6 lines in proc callouts → LHG Core Blue Dark, right-aligned */
 .callout[data-callout="proc"] h6 {
-  color: #1C3A6E;
+  color: #05164D;
   font-weight: 400;
   font-size: 0.9em;
   text-align: right;
   margin: 0.1em 0;
 }
 .callout[data-callout="proc"] h6 strong {
-  color: #1C3A6E;
+  color: #05164D;
   font-weight: 700;
 }
 
