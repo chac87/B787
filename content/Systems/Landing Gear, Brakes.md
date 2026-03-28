@@ -153,6 +153,6 @@ Skala: **0.0 – 9.9**
 ---
 
 > [!limit] Limitations
-> <div class="cl-item"><strong>Alternate Extension</strong><span class="cl-dots"></span><span>Speedbrakes eingefahren</span></div>
-> <div class="cl-item"><strong>Brake Release</strong><span class="cl-dots"></span><span>nicht über 55% N1 (Tailtipper-Gefahr)</span></div>
-> <div class="cl-item"><strong>Schleppen towbarless</strong><span class="cl-dots"></span><span>verboten — außer Torque Links getrennt</span></div>
+> <div class="cl-item"><strong>Alternate Extension</strong><span class="cl-dots"></span><span>speedbrakes retracted</span></div>
+> <div class="cl-item"><strong>Brake Release</strong><span class="cl-dots"></span><span>not above 55% N1 (tailtipping)</span></div>
+> <div class="cl-item"><strong>Towing towbarless</strong><span class="cl-dots"></span><span>prohibited unless torque links disconnected</span></div>

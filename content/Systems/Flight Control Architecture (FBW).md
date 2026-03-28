@@ -43,6 +43,6 @@
 ---
 
 > [!limit] Limitations
-> <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>nur Normal Mode</span></div>
-> <div class="cl-item"><strong>Schnelle alternierende Steuereingaben</strong><span class="cl-dots"></span><span>vermeiden</span></div>
-> <div class="cl-item"><strong>Max. Klappenausfahrhöhe</strong><span class="cl-dots"></span><span>20.000 ft</span></div>
+> <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>Normal Mode only</span></div>
+> <div class="cl-item"><strong>Rapid alternating control inputs</strong><span class="cl-dots"></span><span>avoid</span></div>
+> <div class="cl-item"><strong>Max. flap extension altitude</strong><span class="cl-dots"></span><span>20,000 ft</span></div>

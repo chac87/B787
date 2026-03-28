@@ -124,10 +124,10 @@
 ---
 
 > [!limit] Limitations
-> <div class="cl-item"><strong>EAI — Boden</strong><span class="cl-dots"></span><span>ON</span></div>
-> <div class="cl-item"><strong>EAI — Flug</strong><span class="cl-dots"></span><span>ON oder AUTO</span></div>
-> <div class="cl-item"><strong>EAI — nicht wenn</strong><span class="cl-dots"></span><span>OAT >10°C (Boden) · TAT >15°C (Flug) · OAT <−40°C</span></div>
-> <div class="cl-item"><strong>WAI — Flug</strong><span class="cl-dots"></span><span>ON oder AUTO</span></div>
-> <div class="cl-item"><strong>WAI — nicht wenn</strong><span class="cl-dots"></span><span>TAT >15°C · OAT <−40°C</span></div>
-> <div class="cl-item"><strong>Eiserkennung — Flug</strong><span class="cl-dots"></span><span>TAT ≤15°C + sichtbare Feuchtigkeit oder Wolken</span></div>
-> <div class="cl-item"><strong>Eiserkennung — Boden</strong><span class="cl-dots"></span><span>OAT ≤10°C + kontaminierte Piste + sichtbare Feuchtigkeit</span></div>
+> <div class="cl-item"><strong>EAI — ground</strong><span class="cl-dots"></span><span>ON</span></div>
+> <div class="cl-item"><strong>EAI — flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
+> <div class="cl-item"><strong>EAI — not when</strong><span class="cl-dots"></span><span>OAT >10°C (ground) · TAT >15°C (flight) · OAT <−40°C</span></div>
+> <div class="cl-item"><strong>WAI — flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
+> <div class="cl-item"><strong>WAI — not when</strong><span class="cl-dots"></span><span>TAT >15°C · OAT <−40°C</span></div>
+> <div class="cl-item"><strong>Ice Detection — flight</strong><span class="cl-dots"></span><span>TAT ≤15°C + visible moisture or clouds</span></div>
+> <div class="cl-item"><strong>Ice Detection — ground</strong><span class="cl-dots"></span><span>OAT ≤10°C + contaminated surface + visible moisture</span></div>

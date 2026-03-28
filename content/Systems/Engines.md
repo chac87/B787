@@ -285,8 +285,8 @@ Quelle wird angezeigt: **N1**, **N2**, oder **BB** (Broadband = Durchschnitt wen
 ---
 
 > [!limit] Limitations
-> <div class="cl-item"><strong>Engine Oil — Mindesttemperatur für Start</strong><span class="cl-dots"></span><span>−40°C</span></div>
-> <div class="cl-item"><strong>T/O- und G/A-Schub — Zeitlimit</strong><span class="cl-dots"></span><span>10 Minuten</span></div>
-> <div class="cl-item"><strong>Engine Start — CW >40 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% vor Brake Release</span></div>
-> <div class="cl-item"><strong>Engine Start — TW >5 kts + Wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% vor Brake Release</span></div>
-> <div class="cl-item"><strong>Engine Start — Wind >55 kts</strong><span class="cl-dots"></span><span>nur Idle</span></div>
+> <div class="cl-item"><strong>Engine oil — min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>
+> <div class="cl-item"><strong>T/O and G/A thrust — time limit</strong><span class="cl-dots"></span><span>10 minutes</span></div>
+> <div class="cl-item"><strong>Engine Start — CW >40 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
+> <div class="cl-item"><strong>Engine Start — TW >5 kts + wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
+> <div class="cl-item"><strong>Engine Start — wind >55 kts</strong><span class="cl-dots"></span><span>idle only</span></div>
