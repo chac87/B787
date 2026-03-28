@@ -11,8 +11,6 @@
 
 ![[landing gear.png]]
 
----
-
 ## Geschwindigkeitsgrenzen
 
 | Limit | Wert |
@@ -20,13 +18,9 @@
 | vLE (Gear Extended) | 270 kts |
 | Empfohlen für Drag | max. 200 kts |
 
----
-
 ## Air/Ground Sensing
 
 Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-Aktivierung und andere bodenbezogene Systeme.
-
----
 
 ## Fahrwerksbetrieb
 
@@ -58,8 +52,6 @@ Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-A
 - GEAR DOOR wird angezeigt
 - Retraction danach möglich: wenn Center Hydraulic verfügbar → DN dann UP
 
----
-
 ## EICAS — Landing Gear
 
 | EICAS | Level | Bedeutung |
@@ -69,16 +61,12 @@ Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-A
 | <span class="c-amber">GEAR SIDE BRACE L / R</span> | <span class="c-amber">Caution</span> | Side Brace nicht verriegelt |
 | <span class="c-amber">GEAR DOOR</span> | <span class="c-amber">Advisory</span> | Gear-Türe nicht geschlossen |
 
----
-
 ## NWS — Nose Wheel Steering
 
 - **Tiller**: ± 70°
 - **Rudder**: ± 8°
 - Beide Eingaben werden **summiert** (max. 70°)
 - Betrieb via **Center Hydraulic System**
-
----
 
 ## Bremsen
 
@@ -134,8 +122,6 @@ Unter **30 kts**: halbe Bremskraft pro MLG, abwechselnd (Pair-Cycling). Pedal mu
 | <span class="c-amber">PARKING BRAKE SET</span> | <span class="c-amber">Memo</span> | Parkbremse gesetzt |
 | <span class="c-red">CONFIG PARKING BRAKE</span> | <span class="c-red">Warning</span> | Takeoff-Schub mit gesetzter Parkbremse |
 
----
-
 ## Brake Temperature
 
 Skala: **0.0 – 9.9**
@@ -149,8 +135,6 @@ Skala: **0.0 – 9.9**
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
 | <span class="c-amber">BRAKE TEMP</span> | <span class="c-amber">Advisory</span> | Mindestens eine Bremse ≥ 5.0 |
-
----
 
 ## Tire Pressure
 
