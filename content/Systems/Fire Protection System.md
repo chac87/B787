@@ -21,8 +21,8 @@
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
-| ENGINE FIRE L / R | <span class="c-red">Warning</span> | Feuer erkannt |
-| ENGINE OVERHEAT L / R | <span class="c-amber">Caution</span> | Überhitzung erkannt |
+| <span class="c-red">ENGINE FIRE L / R</span> | <span class="c-red">Warning</span> | Feuer erkannt |
+| <span class="c-amber">ENGINE OVERHEAT L / R</span> | <span class="c-amber">Caution</span> | Überhitzung erkannt |
 | DET FIRE ENG L / R | Advisory | Gesamtes Detektionssystem ausgefallen |
 | BOTTLE (1/2) DISCH ENG | Advisory | Flasche entleert oder Druck zu niedrig |
 
@@ -46,7 +46,7 @@
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
-| APU FIRE | <span class="c-red">Warning</span> | Feuer erkannt |
+| <span class="c-red">APU FIRE</span> | <span class="c-red">Warning</span> | Feuer erkannt |
 | DET FIRE APU | Advisory | Detektionssystem ausgefallen |
 
 ---
@@ -65,7 +65,7 @@
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
-| FIRE CARGO FWD / AFT | <span class="c-red">Warning</span> | Feuer erkannt |
+| <span class="c-red">FIRE CARGO FWD / AFT</span> | <span class="c-red">Warning</span> | Feuer erkannt |
 | DET FIRE CARGO FWD / AFT | Advisory | Detektionssystem ausgefallen |
 | BOTTLE DISCH CARGO | Advisory | Erste 2 Flaschen beginnen zu entleeren |
 
