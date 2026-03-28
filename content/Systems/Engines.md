@@ -281,3 +281,12 @@ Quelle wird angezeigt: **N1**, **N2**, oder **BB** (Broadband = Durchschnitt wen
 | T/O 65 kts bis 6 kts vor V1: Ist-Schub < Soll-Schub | **ENG FAIL** auf PFD + HUD · Voice „Engine Fail" · Master WARNING | <span class="c-red">Warning</span> |
 | Triebwerk sinkt unbeabsichtigt unter Idle | <span class="c-amber">ENG FAIL L / R</span> (EICAS) | <span class="c-amber">Caution</span> |
 | Schub weicht von Command ab und nähert sich nicht an (> 6 kts vor V1) | <span class="c-amber">ENG THRUST L / R</span> · Thrust-Arc amber · Master CAUTION | <span class="c-amber">Caution</span> |
+
+---
+
+> [!limit] Limitations
+> <div class="cl-item"><strong>Engine Oil — Mindesttemperatur für Start</strong><span class="cl-dots"></span><span>−40°C</span></div>
+> <div class="cl-item"><strong>T/O- und G/A-Schub — Zeitlimit</strong><span class="cl-dots"></span><span>10 Minuten</span></div>
+> <div class="cl-item"><strong>Engine Start — CW >40 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% vor Brake Release</span></div>
+> <div class="cl-item"><strong>Engine Start — TW >5 kts + Wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% vor Brake Release</span></div>
+> <div class="cl-item"><strong>Engine Start — Wind >55 kts</strong><span class="cl-dots"></span><span>nur Idle</span></div>

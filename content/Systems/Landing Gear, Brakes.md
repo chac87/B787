@@ -149,3 +149,10 @@ Skala: **0.0 – 9.9**
 
 > [!info] Un-annunciated Checklists
 > **GEAR LEVER LOCKED DOWN** — via Non-Normal Menu im ECL aufrufen
+
+---
+
+> [!limit] Limitations
+> <div class="cl-item"><strong>Alternate Extension</strong><span class="cl-dots"></span><span>Speedbrakes eingefahren</span></div>
+> <div class="cl-item"><strong>Brake Release</strong><span class="cl-dots"></span><span>nicht über 55% N1 (Tailtipper-Gefahr)</span></div>
+> <div class="cl-item"><strong>Schleppen towbarless</strong><span class="cl-dots"></span><span>verboten — außer Torque Links getrennt</span></div>

@@ -77,5 +77,19 @@ above 400 ft RA -> MCP speed blanks
 - AFDS kommandiert Pitch-up von 15° oder bleibt knapp unter dem Pitch Limit Indicator (PLI), je nachdem, welcher Wert niedriger ist.
 - Sobald die Steigrate zunimmt, wechselt der Modus von einer reinen Pitch-Führung zu einer Airspeed-Führung, um die bestmögliche Performance aus der Situation zu ziehen.
 ### Terminierung des Modus
-- TO/GA Pitch-Modus endet, wenn ein anderer vertikaler Modus (z. B. VNAV, FLCH oder V/S) gewählt wird oder wenn das Flugzeug die am MCP vorgewählte Höhe erreicht. 
+- TO/GA Pitch-Modus endet, wenn ein anderer vertikaler Modus (z. B. VNAV, FLCH oder V/S) gewählt wird oder wenn das Flugzeug die am MCP vorgewählte Höhe erreicht.
 - Beim Erreichen der Zielhöhe wechselt der AFDS automatisch in Altitude Hold (ALT).
+
+---
+
+> [!limit] Limitations
+> <div class="cl-item"><strong>AP — Mindesteinschalthöhe nach T/O</strong><span class="cl-dots"></span><span>200 ft AGL</span></div>
+> <div class="cl-item"><strong>Autoland — max. Platzhöhe</strong><span class="cl-dots"></span><span>8.400 ft MSL</span></div>
+> <div class="cl-item"><strong>Autoland — Windlimits</strong><span class="cl-dots"></span><span>HW 25 kts · TW 15 kts · CW 25 kts</span></div>
+> <div class="cl-item"><strong>Autoland — Gleitpfad</strong><span class="cl-dots"></span><span>2,5° – 3,25°</span></div>
+> <div class="cl-item"><strong>Autoland — Klappen</strong><span class="cl-dots"></span><span>20 · 25 · 30 (2-eng und OEI)</span></div>
+> <div class="cl-item"><strong>Autoland — Mindestanforderung</strong><span class="cl-dots"></span><span>LAND 2 oder LAND 3</span></div>
+> <div class="cl-item"><strong>Ohne LAND 2 / 3 — AP Abschaltung</strong><span class="cl-dots"></span><span>unter 135 ft</span></div>
+> <div class="cl-item"><strong>LAND 2 / 3 + GS >3,25° — AP Abschaltung</strong><span class="cl-dots"></span><span>unter 100 ft</span></div>
+> <div class="cl-item"><strong>GS >3,77° — AP Abschaltung</strong><span class="cl-dots"></span><span>≤ 50 ft unter DH / MDA</span></div>
+> <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><span>nicht unter 1.000 ft AFE</span></div>

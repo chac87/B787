@@ -39,3 +39,10 @@
 | **Flap/Slat Load Relief** | Klappen ausgefahren bei zu hoher SPD | Auto-Einfahren<br>Ausfahren bei SPD-Abnahme |
 | **Slat Autogap** | Hoher AOA | Slats automatisch T/O → LDG Position |
 | **Asymmetry/Skew Protection** | Ungleichmäßiges Aus-/Einfahren | Antrieb wird abgeschaltet |
+
+---
+
+> [!limit] Limitations
+> <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>nur Normal Mode</span></div>
+> <div class="cl-item"><strong>Schnelle alternierende Steuereingaben</strong><span class="cl-dots"></span><span>vermeiden</span></div>
+> <div class="cl-item"><strong>Max. Klappenausfahrhöhe</strong><span class="cl-dots"></span><span>20.000 ft</span></div>
