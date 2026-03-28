@@ -82,10 +82,57 @@
 
 ![[press ovhd.png]]
 
-- **CPCS** (Cabin Pressure Control System) reguliert vollautomatisch
-- **2 Outflow Valves** (FWD + AFT) steuern Kabinendruck — eines reicht für normalen Betrieb
+- **CPCS** (Cabin Pressure Control System) reguliert vollautomatisch via FMC-Daten + Umgebungsdruck
+- **2 Outflow Valves** (FWD + AFT) — Abfluss normalerweise gleichmäßig aufgeteilt · jedes Valve allein ausreichend
 - **Positive + Negative Relief Valves** schützen Struktur vor extremem Differential Pressure
-- Cruise: Kabinenhöhe normal **6.000 ft**, max. **8.000 ft**
+- Vollautomatischer Betrieb — keine Crew-Action außer FMC-Dateneingabe erforderlich
+
+### CPCS Automatikbetrieb
+
+| Phase | Kabinenhöhe |
+|:---|:---|
+| Takeoff | Kleine positive Druckbeaufschlagung vor Rotation |
+| Climb | Steigt auf Schedule (Climb Rate + FMC Cruise Alt) · bei VNAV off: konstant wenn Flugzeughöhe konstant |
+| Cruise | Normal ≤ **6.000 ft** · bei degradiertem Betrieb (Pack/CAC Ausfall) bis **8.000 ft** |
+| Descent | Sinkt auf knapp unter FMC Landing Alt · Baro-Korrektur via Captain Altimeter |
+| Touchdown | Beide Outflow Valves öffnen vollständig → Kabine depressuriert |
+
+**Default Cruise Alt** (FMC nicht verfügbar): **43.000 ft**
+
+**High Altitude Takeoff** (Field > 8.000 ft): Kabine sinkt während Climb auf Zielkabinenhöhe.
+**High Altitude Landing** (Dest > 8.000 ft): Kabinenhöhe steigt nach Takeoff auf 6.000 ft → bleibt dort → steigt rechtzeitig auf Zielflughöhe.
+
+### Loss of Landing Altitude
+
+FMC-Landehöhe nicht verfügbar + MAN nicht gesetzt → EICAS **LANDING ALTITUDE** (Advisory) → System nimmt **2.000 ft** als Landehöhe an.
+
+### Loss of Cabin Pressurization
+
+Bei Druckabfall: Outflow Valves schließen → Druck erhalten. Ventile bleiben geschlossen bis Kabinenhöhenlimit erreicht:
+
+| T/O-Landehöhe | Kabinenhöhenlimit |
+|:---|:---:|
+| < 9.500 ft | 11.500 ft |
+| 9.500 – 14.000 ft | 14.500 ft |
+
+Ab Erreichen des Limits: Outflow Valves öffnen vollständig für restlichen Flug.
+
+> [!warning] Outflow Valves während des Abstiegs nicht manuell schließen.
+
+CPCS verhindert Kabinenhöhe > **15.000 ft** bei jedem wahrscheinlichen Systemfehler.
+
+### Manueller Betrieb
+
+Aktivierung: **OUTFLOW VALVE Switches → MAN** + OUTFLOW VALVE MANUAL Switch halten (OPEN / CLOSE).
+
+- Ventilposition auf EICAS sichtbar
+- EICAS nicht verfügbar: Switch **30 Sekunden** halten → Ventil fährt von vollständig offen/geschlossen in gewünschte Position
+
+**LANDING ALTITUDE Selector** (MAN): Selector herausziehen → FMC-Landehöhe deaktiviert · Pressurization auf EICAS. Bereich: **−2.000 bis +14.000 ft**.
+
+| EICAS | Level | Bedeutung |
+|:---|:---:|:---|
+| <span class="c-amber">LANDING ALTITUDE</span> | <span class="c-amber">Advisory</span> | Landehöhe nicht vom FMC verfügbar — System nutzt 2.000 ft |
 
 ---
 
