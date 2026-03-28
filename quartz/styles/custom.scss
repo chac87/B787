@@ -5,37 +5,39 @@
    FLOATING HOME BUTTON
    ========================================= */
 .floating-home {
-    position: fixed;          /* Fixiert am Bildschirm */
-    bottom: 30px;             /* Abstand von unten */
-    right: 30px;              /* Abstand von rechts */
-    z-index: 1000;            /* Über allem anderen liegen */
-    
-    background-color: #3257BC;
-    color: #ffffff;
+    position: fixed !important;
+    bottom: 30px !important;
+    right: 30px !important;
+    z-index: 1000 !important;
 
-    width: 50px;
-    height: 50px;
-    border-radius: 20%;
+    background-color: #3257BC !important;
+    background: #3257BC !important;
+    color: #ffffff !important;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 20% !important;
+    border: none !important;
 
-    box-shadow: 0 4px 20px rgba(50,87,188,0.45);
-    transition: transform 0.2s ease, box-shadow 0.2s;
-    border: none;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    box-shadow: 0 4px 20px rgba(50,87,188,0.45) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s, background-color 0.2s !important;
+    text-decoration: none !important;
 }
 
-/* Hover Effekt (Macht ihn etwas größer) */
 .floating-home:hover {
-    transform: scale(1.1);
-    background-color: #05164D;
-    box-shadow: 0 6px 20px rgba(50,87,188,0.55);
+    transform: scale(1.1) !important;
+    background-color: #05164D !important;
+    background: #05164D !important;
+    color: #ffffff !important;
+    box-shadow: 0 6px 20px rgba(50,87,188,0.55) !important;
 }
 
-/* Home Button auf der Startseite selbst ausblenden */
 body[data-slug="index"] .floating-home {
-    display: none;
+    display: none !important;
 }
 
 /* =========================================
@@ -182,8 +184,9 @@ a {
   background-color: rgba(50, 87, 188, 0.08) !important;
   border-color: rgba(50, 87, 188, 0.27) !important;
 }
-.callout[data-callout="proc"] .callout-title {
-  color: #05164D;
+.callout[data-callout="proc"] .callout-title,
+.callout[data-callout="proc"] .callout-title-inner p {
+  color: #05164D !important;
 }
 
 /* LIMITATION – LHG Light Blue */
@@ -195,8 +198,9 @@ a {
   background-color: rgba(82, 145, 237, 0.08) !important;
   border-color: rgba(82, 145, 237, 0.27) !important;
 }
-.callout[data-callout="limit"] .callout-title {
-  color: #243F9B;
+.callout[data-callout="limit"] .callout-title,
+.callout[data-callout="limit"] .callout-title-inner p {
+  color: #243F9B !important;
 }
 
 /* INFO – LHG Teal */
@@ -208,8 +212,9 @@ a {
   background-color: rgba(75, 157, 161, 0.08) !important;
   border-color: rgba(75, 157, 161, 0.27) !important;
 }
-.callout[data-callout="info"] .callout-title {
-  color: #1C4C5C;
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="info"] .callout-title-inner p {
+  color: #1C4C5C !important;
 }
 
 /* WARNING – LHG Red */
@@ -221,8 +226,9 @@ a {
   background-color: rgba(255, 82, 107, 0.08) !important;
   border-color: rgba(255, 82, 107, 0.27) !important;
 }
-.callout[data-callout="warning"] .callout-title {
-  color: #93030C;
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="warning"] .callout-title-inner p {
+  color: #93030C !important;
 }
 
 /* =========================================================
