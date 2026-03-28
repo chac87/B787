@@ -102,8 +102,6 @@
 - **3 Geschwindigkeitsstufen** · Capt + FO unabhängig
 - Fahren automatisch in Stow-Position bei **OFF**
 
-> [!caution] Nicht auf trockener Scheibe betreiben — Kratzer möglich.
-
 - **Wascher**: Capt + FO je eigene Waschdüsen
 
 ---
