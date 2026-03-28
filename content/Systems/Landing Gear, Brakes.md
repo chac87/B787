@@ -2,16 +2,16 @@
 
 ## Übersicht
 
-| Komponente | Details |
-|:---|:---|
-| Main Landing Gear | 2 × MLG · je 4 Räder = 8 Haupträder gesamt |
-| Nose Landing Gear | 1 × NLG · 2 Räder |
-| Hydraulik | Center System — Extension, Retraction, Steering |
-| Bremsen | Elektromechanisch — 4 EBACs · 32 EBAs (Electric Brake Actuators) |
+| Komponente        | Details                                                          |
+| :---------------- | :--------------------------------------------------------------- |
+| Main Landing Gear | 2 × MLG · je 4 gears = 8 main gears gesamt                       |
+| Nose Landing Gear | 1 × NLG · 2 gears                                                |
+| Hydraulik         | Center System — Extension, Retraction, Steering                  |
+| Brakes            | Elektromechanisch — 4 EBACs · 32 EBAs (Electric Brake Actuators) |
 
 ![[landing gear.png]]
 
-## Geschwindigkeitsgrenzen
+## Speed Limits
 
 | Limit | Wert |
 |:---|:---:|
@@ -22,16 +22,16 @@
 
 Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-Aktivierung und andere bodenbezogene Systeme.
 
-## Fahrwerksbetrieb
+## Gear Operation
 
-**Hebel-Verriegelung:**
+**Lever-Verriegelung:**
 - Am Boden: Lever in **DN gelockt** — kann nicht auf UP gezogen werden
 - In der Luft: Air/Ground Sensing gibt Lever frei
 - **LOCK OVERRIDE Switch**: Ermöglicht UP am Boden (z. B. Maintenance)
 
-### Einfahren (Retraction)
+### Retraction
 
-**Early Doors:** Türen öffnen **1 Sekunde nach Lift-off**. Wenn kein UP-Kommando innerhalb von **30 Sekunden** → Türen schließen wieder. Bei Touch-and-Go: Early Doors erst nach **30 Sekunden am Boden** wieder aktiv.
+**Early Doors:** Gear doors öffnen **1 Sekunde nach Lift-off**. Wenn kein UP-Kommando innerhalb von **30 Sekunden** → Türen schließen wieder.
 
 **EICAS-Anzeige:**
 - Transit → Schraffur (in Bewegung)
@@ -39,7 +39,7 @@ Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-A
 - Doors geschlossen → blanks (erlischt)
 - Gear wird nach Einfahren + Türen geschlossen automatisch drucklos
 
-### Ausfahren (Extension)
+### Extension
 
 - **Free-fall** — Downlocks werden elektrisch gesichert
 - Trucks kippen in Flugposition während der Extension
@@ -68,7 +68,7 @@ Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-A
 - Beide Eingaben werden **summiert** (max. 70°)
 - Betrieb via **Center Hydraulic System**
 
-## Bremsen
+## Brakes
 
 Kohlefaser-Bremsscheiben. **Keine Vorderradbremsen.**
 
@@ -89,7 +89,7 @@ Schutz pro Rad: Touchdown Protection · Hydroplane Protection · Locked-Wheel Pr
 | **RTO** | > 85 kts + Thrust Levers Idle + am Boden |
 | **Landing** | Thrust Levers Idle + Wheel Spin-Up |
 
-**MAX AUTO:** Begrenzt auf Autobrake 4 bis **Pitch < 1°** (Tail-Strike-Schutz).
+**MAX AUTO:** Begrenzt auf Autobrake 4 bis **Pitch < 1°** (Tail-Strike-Avoidance).
 
 Bremsdruck wird **automatisch reduziert**, wenn Reverser und Spoiler zur Verzögerung beitragen.
 
@@ -122,7 +122,7 @@ Unter **30 kts**: halbe Bremskraft pro MLG, abwechselnd (Pair-Cycling). Pedal mu
 | <span class="c-amber">PARKING BRAKE SET</span> | <span class="c-amber">Memo</span> | Parkbremse gesetzt |
 | <span class="c-red">CONFIG PARKING BRAKE</span> | <span class="c-red">Warning</span> | Takeoff-Schub mit gesetzter Parkbremse |
 
-## Brake Temperature
+### Brake Temperature
 
 Skala: **0.0 – 9.9**
 

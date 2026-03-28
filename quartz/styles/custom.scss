@@ -406,10 +406,10 @@ h2,
 .markdown-rendered h2,
 .markdown-preview-view h2 {
     border-top: 1px solid var(--lightgray, var(--color-base-30, #cccccc));
-    border-left: 3px solid var(--secondary);
     padding-top: 0.5em;
     padding-left: 0.6em;
     margin-top: 1.5em;
+    box-shadow: inset 3px 0 0 var(--secondary);
 }
 
 /* === snippet: image-tweak.css === */
