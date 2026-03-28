@@ -706,8 +706,9 @@ main th {
     letter-spacing: 0.5px;
     padding: 10px 6px;
 
-    border-bottom: 2px solid var(--web-text-faint, #ccc) !important;
-    color: var(--web-text-muted, #666);
+    border-bottom: 2px solid var(--lightgray, #ccc) !important;
+    color: var(--darkgray) !important;
+    opacity: 0.6;
 
     text-align: center;
 }
@@ -724,11 +725,11 @@ main th:first-child {
 article td,
 main td {
     padding: 8px 6px;
-    border-bottom: 1px solid var(--web-border-muted, #eee);
+    border-bottom: 1px solid var(--lightgray, #eee);
 
     text-align: center;
     vertical-align: middle;
-    color: var(--web-text-normal, #333);
+    color: var(--darkgray) !important;
 }
 
 /* First column emphasized */
@@ -737,7 +738,7 @@ article td:first-child,
 main td:first-child {
     text-align: left;
     font-weight: 600;
-    color: var(--web-text-normal, #333);
+    color: var(--darkgray) !important;
 }
 
 /* Zebra striping */
