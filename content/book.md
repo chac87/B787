@@ -14,7 +14,7 @@
 [[Hydraulic System]]
 [[Landing Gear, Brakes]]
 [[Fire Protection System]]
-[[Integrated Surveillance Systems]]
+[[Systems/Warning Systems|Warning Systems]]
 [[Navigation]]
 [[Oxygen Systems]]
 [[Doors]]

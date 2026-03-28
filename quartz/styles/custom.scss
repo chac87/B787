@@ -24,8 +24,19 @@
     justify-content: center !important;
 
     box-shadow: 0 4px 20px rgba(50,87,188,0.45) !important;
-    transition: transform 0.2s ease, box-shadow 0.2s, background-color 0.2s !important;
+    transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s, background-color 0.2s !important;
     text-decoration: none !important;
+
+    /* Hidden by default — JS adds .is-visible after 150px scroll */
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transform: scale(0.85) !important;
+}
+
+.floating-home.is-visible {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: scale(1) !important;
 }
 
 .floating-home:hover {
@@ -38,6 +49,38 @@
 
 body[data-slug="index"] .floating-home {
     display: none !important;
+}
+
+/* Progress ring SVG */
+.floating-home .progress-ring {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: rotate(-90deg) !important;
+    border-radius: inherit !important;
+    overflow: visible !important;
+    pointer-events: none !important;
+}
+
+.floating-home .progress-ring__track {
+    fill: none !important;
+    stroke: rgba(255, 255, 255, 0.2) !important;
+    stroke-width: 3 !important;
+}
+
+.floating-home .progress-ring__fill {
+    fill: none !important;
+    stroke: rgba(255, 255, 255, 0.9) !important;
+    stroke-width: 3 !important;
+    stroke-linecap: round !important;
+    transition: stroke-dashoffset 0.1s linear !important;
+}
+
+/* Home icon sits above the ring */
+.floating-home .home-icon {
+    position: relative !important;
+    z-index: 1 !important;
 }
 
 /* =========================================
