@@ -23,8 +23,8 @@
 |:---|:---:|:---|
 | <span class="c-red">ENGINE FIRE L / R</span> | <span class="c-red">Warning</span> | Feuer erkannt |
 | <span class="c-amber">ENGINE OVERHEAT L / R</span> | <span class="c-amber">Caution</span> | Überhitzung erkannt |
-| DET FIRE ENG L / R | Advisory | Gesamtes Detektionssystem ausgefallen |
-| BOTTLE (1/2) DISCH ENG | Advisory | Flasche entleert oder Druck zu niedrig |
+| <span class="c-amber">DET FIRE ENG L / R</span> | <span class="c-amber">Advisory</span> | Gesamtes Detektionssystem ausgefallen |
+| <span class="c-amber">BOTTLE (1/2) DISCH ENG</span> | <span class="c-amber">Advisory</span> | Flasche entleert oder Druck zu niedrig |
 
 **Extinguishing:** 2 Flaschen — beide können in jedes Triebwerk entleert werden.
 
@@ -47,7 +47,7 @@
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
 | <span class="c-red">APU FIRE</span> | <span class="c-red">Warning</span> | Feuer erkannt |
-| DET FIRE APU | Advisory | Detektionssystem ausgefallen |
+| <span class="c-amber">DET FIRE APU</span> | <span class="c-amber">Advisory</span> | Detektionssystem ausgefallen |
 
 ---
 
@@ -66,8 +66,8 @@
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
 | <span class="c-red">FIRE CARGO FWD / AFT</span> | <span class="c-red">Warning</span> | Feuer erkannt |
-| DET FIRE CARGO FWD / AFT | Advisory | Detektionssystem ausgefallen |
-| BOTTLE DISCH CARGO | Advisory | Erste 2 Flaschen beginnen zu entleeren |
+| <span class="c-amber">DET FIRE CARGO FWD / AFT</span> | <span class="c-amber">Advisory</span> | Detektionssystem ausgefallen |
+| <span class="c-amber">BOTTLE DISCH CARGO</span> | <span class="c-amber">Advisory</span> | Erste 2 Flaschen beginnen zu entleeren |
 
 **Extinguishing — 7 Flaschen gesamt (Halon):**
 
@@ -134,6 +134,6 @@ Bei Raucherkennung:
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
-| SMOKE LAVATORY | Advisory | Rauch in Lavatory erkannt |
+| <span class="c-amber">SMOKE LAVATORY</span> | <span class="c-amber">Advisory</span> | Rauch in Lavatory erkannt |
 
 **Extinguishing:** 1 Flasche pro Lavatory — entleert automatisch in den Waste Container. **Keine Cockpit-Anzeige.**
