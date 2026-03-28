@@ -23,26 +23,26 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#F1EDE3",                          // Warmes Sand-Papier (statt kühles Weiß)
-          lightgray: "#E3DCCD",                      // Helles Leinen / Sandgrau für Linien
-          gray: "#8A7F6B",                           // Warmes Mittelgrau (mehr Braunanteil)
-          darkgray: "#3F3A33",                       // Weiches Espresso-Grau für Fließtext
-          dark: "#1E2A44",                           // Tiefes Navy mit weniger Sättigung
-          secondary: "#3E5FA8",                      // Gedämpftes LHG-Blau
-          tertiary: "#6B8FD6",                       // Entsättigtes Akzentblau
-          highlight: "rgba(62, 95, 168, 0.08)",
-          textHighlight: "rgba(181, 162, 117, 0.45)", // Wärmeres Sand-Gold
+          light: "#F1EDE3",                           // Warmes Sand-Papier
+          lightgray: "#E3DCCD",                       // Helles Leinen für Linien
+          gray: "#8A7F6B",                            // Warmes Mittelgrau
+          darkgray: "#3F3A33",                        // Espresso-Grau für Fließtext
+          dark: "#05164D",                            // LHG Core Blue Dark
+          secondary: "#3257BC",                       // LHG Core Blue
+          tertiary: "#5291ED",                        // LHG Light Blue
+          highlight: "rgba(50, 87, 188, 0.08)",       // LHG Core Blue tint
+          textHighlight: "rgba(181, 162, 117, 0.45)", // Sand-Gold
         },
         darkMode: {
-          light: "#070D1F",         // Stratosphäre bei Nacht (ganz tiefes Blau)
-          lightgray: "#1C2638",     // Cockpit-Panel Dunkelgrau
-          gray: "#8D9EB6",          // Instrumenten-Beleuchtung (gedimmt)
-          darkgray: "#E2E8F0",      // Helles Silber für Text
-          dark: "#FFFFFF",          // Reines Weiß für Überschriften
-          secondary: "#5291ED",     // LHG Light Blue: Leuchtendes Cyan-Blau für Links
-          tertiary: "#FF526B",      // LHG Red (heller): Akzente im Darkmode
-          highlight: "rgba(82, 145, 237, 0.15)", // Leuchtendes Blau transparent
-          textHighlight: "rgba(156, 143, 122, 0.4)", // LHG Sand
+          light: "#070D1F",                           // Stratosphäre bei Nacht
+          lightgray: "#1C2638",                       // Cockpit-Panel Dunkelgrau
+          gray: "#8D9EB6",                            // Instrumenten-Beleuchtung
+          darkgray: "#E2E8F0",                        // Helles Silber für Text
+          dark: "#FFFFFF",                            // Weiß für Überschriften
+          secondary: "#5291ED",                       // LHG Light Blue
+          tertiary: "#4B9DA1",                        // LHG Teal
+          highlight: "rgba(82, 145, 237, 0.15)",      // LHG Light Blue tint
+          textHighlight: "rgba(156, 143, 122, 0.4)",  // LHG Sand
         },
       },
     },

@@ -139,6 +139,43 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 
 Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/.obsidian/snippets/`
 
+## LHG Brand Color Guide
+
+This project uses the official **Lufthansa Group (LHG) brand color palette** throughout. Always apply these colors — never reintroduce Apple system colors or arbitrary hex values.
+
+### Color Palette
+
+| Name | Light (primary) | Dark (shade) | Usage |
+|---|---|---|---|
+| **LHG Core Blue** | `#3257BC` | `#05164D` | Links, `[!proc]` callout, primary accent, H2 bar |
+| **LHG Light Blue** | `#5291ED` | `#243F9B` | `[!limit]` callout, dark mode links |
+| **LHG Teal** | `#4B9DA1` | `#1C4C5C` | `[!info]` callout, dark mode tertiary |
+| **LHG Red** | `#FF526B` | `#93030C` | `[!warning]` callout title |
+| **LHG Purple** | `#C775B5` | `#841E45` | Reserved / future use |
+| **LHG Sand** | `#9C8F7A` | — | Text highlights |
+
+### Callout Type → Color Mapping
+
+| Callout | Color | Title text |
+|---|---|---|
+| `[!proc]` | LHG Core Blue `#3257BC` | `#05164D` |
+| `[!limit]` | LHG Light Blue `#5291ED` | `#243F9B` |
+| `[!info]` | LHG Teal `#4B9DA1` | `#1C4C5C` |
+| `[!warning]` | LHG Red `#FF526B` | `#93030C` |
+
+### Exceptions — do NOT change
+
+- `.c-red` (`#e74c3c`) and `.c-amber` (`#f39c12`) — EICAS indicator colors, always keep as-is
+- `quartz.config.ts` background/text colors (`light`, `lightgray`, `gray`, `darkgray`, `dark`) — these are the warm sand/navy page palette, not LHG brand colors
+
+### Speed Notation
+
+Always write speed designations with lowercase v and subscript: `v<sub>FE</sub>`, `v<sub>LO</sub>`, `v<sub>MO</sub>` etc. `M<sub>MO</sub>` keeps uppercase M.
+
+### Limitations Language
+
+All content in `content/Limitations.md` and `[!limit]` callouts in system notes must be in **English** (original PDF language). Never translate limitation text to German.
+
 ## Deployment
 
 ```bash

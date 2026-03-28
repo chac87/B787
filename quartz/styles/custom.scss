@@ -10,7 +10,7 @@
     right: 30px;              /* Abstand von rechts */
     z-index: 1000;            /* Über allem anderen liegen */
     
-    background-color: #3E5FA8;
+    background-color: #3257BC;
     color: #ffffff;
 
     width: 50px;
@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0 4px 20px rgba(62,95,168,0.45);
+    box-shadow: 0 4px 20px rgba(50,87,188,0.45);
     transition: transform 0.2s ease, box-shadow 0.2s;
     border: none;
 }
@@ -29,8 +29,8 @@
 /* Hover Effekt (Macht ihn etwas größer) */
 .floating-home:hover {
     transform: scale(1.1);
-    background-color: #2d4a8a;
-    box-shadow: 0 6px 20px rgba(62,95,168,0.55);
+    background-color: #05164D;
+    box-shadow: 0 6px 20px rgba(50,87,188,0.55);
 }
 
 /* Home Button auf der Startseite selbst ausblenden */
@@ -185,10 +185,14 @@ a {
   --accent: #FF3B30;
 }
 
-/* LIMITATION – Apple Orange/Yellow (System Orange) */
-.callout.limit, 
+/* LIMITATION – Sky Blue */
+.callout.limit,
 .callout[data-callout="limit"] {
-  --accent: #FF9500;
+  --accent: #bee3f8;
+}
+
+.callout[data-callout="limit"] .callout-title {
+  color: #3182ce;
 }
 
 /* INFO – Apple Green (System Green) */
