@@ -44,16 +44,13 @@
 > <div class="cl-item"><strong>Max. allowable cabin pressure diff.</strong><span class="cl-dots"></span><span>0.11 psi</span></div>
 
 > [!limit]- Anti-Ice Limitations
-> **Engine Anti-Ice (EAI)**
 > <div class="cl-item"><strong>EAI — Boden</strong><span class="cl-dots"></span><span>ON</span></div>
 > <div class="cl-item"><strong>EAI — Flug</strong><span class="cl-dots"></span><span>ON oder AUTO</span></div>
 > <div class="cl-item"><strong>EAI — nicht wenn</strong><span class="cl-dots"></span><span>OAT >10°C (Boden) · TAT >15°C (Flug) · OAT <−40°C</span></div>
-> **Wing Anti-Ice (WAI)**
 > <div class="cl-item"><strong>WAI — Flug</strong><span class="cl-dots"></span><span>ON oder AUTO</span></div>
 > <div class="cl-item"><strong>WAI — nicht wenn</strong><span class="cl-dots"></span><span>TAT >15°C · OAT <−40°C</span></div>
-> **Eiserkennungskriterien**
-> <div class="cl-item"><strong>Im Flug</strong><span class="cl-dots"></span><span>TAT ≤15°C + sichtbare Feuchtigkeit oder Wolken</span></div>
-> <div class="cl-item"><strong>Am Boden</strong><span class="cl-dots"></span><span>OAT ≤10°C + kontaminierte Piste + sichtbare Feuchtigkeit</span></div>
+> <div class="cl-item"><strong>Eiserkennung — Flug</strong><span class="cl-dots"></span><span>TAT ≤15°C + sichtbare Feuchtigkeit oder Wolken</span></div>
+> <div class="cl-item"><strong>Eiserkennung — Boden</strong><span class="cl-dots"></span><span>OAT ≤10°C + kontaminierte Piste + sichtbare Feuchtigkeit</span></div>
 
 > [!limit]- Autoflight Limitations
 > <div class="cl-item"><strong>AP — Mindesteinschalthöhe nach T/O</strong><span class="cl-dots"></span><span>200 ft AGL</span></div>
