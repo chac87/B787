@@ -5,6 +5,7 @@
 [[Systems/Electrical Power System|Electrical Power System]]
 [[Ventilation System]]
 [[Air Conditioning, Pressurization]]
+[[Systems/Anti-Ice, Rain|Anti-Ice, Rain]]
 [[Flight Control Architecture (FBW)]]
 [[Autoflight System (AFDS)]]
 [[Engines]]
