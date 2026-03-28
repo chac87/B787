@@ -39,6 +39,7 @@ tags: [non-normal, maneuvers]
 >
 > ##### After Stop
 > **CM1** Stow Reversers
+> 
 > **CM1** Set Parking Brake
 > ###### Inform ATC: "LH 420, stopping on the RWY…" **CM2**
 >

@@ -1,21 +1,75 @@
 # Fire Protection System
 
-## Cargo Fire Detection
+## Übersicht
 
-**Class C** — Frachtraum mit Smoke/Fire Detection, Built-in Extinguishing, Smoke Containment und Ventilation Control.
-
-**Detektoren:** Erkennen Rauch (LED dual-beam) **und** Überhitzung (> 100 °C). Normalerweise müssen **2 Detektoren** gleichzeitig ansprechen — bei Ausfall eines Detektors reicht einer.
-
-| EICAS Message | Level | Bedeutung |
-|:---|:---:|:---|
-| FIRE CARGO FWD / AFT | Warning | Feuer erkannt (bleibt solange Bedingung aktiv) |
-| DET FIRE CARGO FWD / AFT | Advisory | Gesamtes Detektorsystem ausgefallen |
+| Bereich | Detection | Extinguishing |
+|:---|:---:|:---:|
+| Engine | Fire + Overheat | 2 Flaschen (beide auf jedes Triebwerk) |
+| APU | Fire | 1 Flasche |
+| Cargo FWD / AFT | Smoke | 7 Flaschen (HRD + LRD) |
+| Main Wheel Well | Fire + Overheat | — |
+| Nose Wheel Well | — | — |
+| Lavatory | Smoke | 1 Flasche (auto, keine Cockpit-Anzeige) |
+| Overhead Crew Rest | Fire | — |
+| Overhead FA Rest | Fire | — |
 
 ---
 
-## Cargo Extinguishing
+## Engine Fire Protection
 
-**Flaschen — alle mit Halon:**
+**Detektion:** Mehrere Dual-Channel-Detektoren pro Nacelle. Normalerweise muss **1 Element pro Kanal** ansprechen. Bei Ausfall eines Kanals → automatisch Single-Channel-Betrieb.
+
+| EICAS | Level | Bedeutung |
+|:---|:---:|:---|
+| ENGINE FIRE L / R | Warning | Feuer erkannt |
+| ENGINE OVERHEAT L / R | Caution | Überhitzung erkannt |
+| DET FIRE ENG L / R | Advisory | Gesamtes Detektionssystem ausgefallen |
+| BOTTLE (1/2) DISCH ENG | Advisory | Flasche entleert oder Druck zu niedrig |
+
+**Extinguishing:** 2 Flaschen — beide können in jedes Triebwerk entleert werden.
+
+<div class="checklist">
+
+<div class="cl-item"><strong>Engine FIRE switch</strong><span class="cl-dots"></span><strong>PULL</strong></div>
+<div class="cl-sub">Trennt Treibstoff, Hydraulik, Electrics und Bleed vom Triebwerk</div>
+
+<div class="cl-item"><strong>Engine FIRE switch</strong><span class="cl-dots"></span><strong>ROTATE (Flasche 1)</strong></div>
+<div class="cl-sub">Dreht man in die andere Richtung → Flasche 2 in dasselbe Triebwerk</div>
+
+</div>
+
+---
+
+## APU Fire Protection
+
+**Detektion:** Dual-Channel. Bei Feuer am Boden: automatisches APU-Shutdown + automatische Flaschenentleerung.
+
+| EICAS | Level | Bedeutung |
+|:---|:---:|:---|
+| APU FIRE | Warning | Feuer erkannt |
+| DET FIRE APU | Advisory | Detektionssystem ausgefallen |
+
+---
+
+## Cargo Fire Protection
+
+**Class C** — Smoke Detection + Built-in Extinguishing + Ventilation Control.
+
+**Detektoren:** Normalerweise müssen **2 Detektoren gleichzeitig** ansprechen — bei Ausfall eines Detektors reicht einer.
+
+| Bereich | Anzahl Detektoren |
+|:---|:---:|
+| FWD Cargo | 18 |
+| AFT Cargo | 9 |
+| Bulk Cargo (Teil AFT) | 2 |
+
+| EICAS | Level | Bedeutung |
+|:---|:---:|:---|
+| FIRE CARGO FWD / AFT | Warning | Feuer erkannt |
+| DET FIRE CARGO FWD / AFT | Advisory | Detektionssystem ausgefallen |
+| BOTTLE DISCH CARGO | Advisory | Erste 2 Flaschen beginnen zu entleeren |
+
+**Extinguishing — 7 Flaschen gesamt (Halon):**
 
 | | HRD | LRD |
 |:---|:---:|:---:|
@@ -26,10 +80,10 @@
 
 **Ablauf im Flug (automatisch bei Feueralarm):**
 1. **Sofort** — 2 HRD-Flaschen werden ausgelöst
-2. **+ 15 min** — LRD-Flaschen entleeren sich langsam (3 % Halon-Konzentration bis zur Landung)
-3. **Landung < 15 min nach Alarm** — nur 1 LRD bei Aufsetzen
+2. **+ 15 min** — LRD-Flaschen entleeren sich langsam (bis zur Landung)
+3. **Landung < 15 min nach Alarm** — 1 LRD bei Aufsetzen
 
-**Am Boden (manuell via Checklist):** 2 HRD + 1 LRD, keine Zeitverzögerung.
+**Am Boden (manuell via CARGO FIRE DISCHARGE):** 3 Flaschen gleichzeitig, keine Zeitverzögerung.
 
 ---
 
@@ -63,5 +117,23 @@
 
 ## Main Wheel Well Fire Protection
 
-- Fire Detection vorhanden, **kein Löschsystem**
+- Fire + Overheat Detection vorhanden, **kein Löschsystem**
+- Nose Wheel Well: **weder Detection noch Extinguishing**
 - Bei Feuer: Gear Extension
+
+---
+
+## Lavatory Fire Protection
+
+**Detektion:** 1 Smoke Detector pro Lavatory.
+
+Bei Raucherkennung:
+- Akustischer Alarm in Lavatory + Kabine
+- Lavatory Call Light blinkt
+- Master Call Light am zuständigen FA-Station leuchtet
+
+| EICAS | Level | Bedeutung |
+|:---|:---:|:---|
+| SMOKE LAVATORY | Advisory | Rauch in Lavatory erkannt |
+
+**Extinguishing:** 1 Flasche pro Lavatory — entleert automatisch in den Waste Container. **Keine Cockpit-Anzeige.**
