@@ -4,7 +4,8 @@
 
 ![[air con ovhd.png]]
 
-- Kein Bleed Air — Außenluft wird durch **4 elektrische CACs** (Cabin Air Compressors) angesaugt
+- **Kein Bleed Air** — Außenluft wird durch **4 elektrische CACs** (Cabin Air Compressors) angesaugt
+- Einziges System mit Bleed Air: **Engine Anti-Ice (EAI)** — Packs und Wing Anti-Ice (WAI) sind vollständig elektrisch
 - 2 CACs pro Pack · 1 CAC reicht für vollen Pack-Betrieb
 - 2 identische Pack Control Systems — bei Ausfall eines Systems automatischer Wechsel
 - **7 Temperaturzonen**: Flight Deck + 6 Kabinenzonen (A/B enthalten Sub-Zonen A1/B1, nicht im Synoptic sichtbar)

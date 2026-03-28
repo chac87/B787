@@ -152,6 +152,42 @@ Zwei ATC-Transponder + TCAS — gesteuert über **ATP** (primär) oder **TCP** (
 
 ---
 
+## NAT — North Atlantic Tracks
+
+### Grundregeln
+
+- **MNPS-Luftraum** (NAT HLA): FL285–FL420, 30°W–60°N/70°N
+- Navigation: **Dual long-range INS/IRS oder GPS** erforderlich
+- Mach Number Technique: Assigned Mach beibehalten — keine Beschleunigung ohne ATC-Freigabe
+- **RCL (Random Contingency Level):** Maximaler FL-Offset bei Ausweichen ohne Freigabe: **±60 ft** über/unter assigned FL (d. h. max 1000 ft-Step auf nächsten freien FL innerhalb ±60 NM und in einem der festgelegten Offsets)
+
+> [!info] FL-Strategie NAT
+> Falls ein Höhenwechsel ohne Freigabe nötig ist: nächsten freien FL mindestens **1.000 ft** über oder unter dem assigned FL wählen — nie auf halbem Wege.
+
+### Kommunikationsausfall über dem Atlantik
+
+Bei Kommunikationsausfall im NAT-Luftraum:
+
+<div class="checklist">
+
+<div class="cl-item"><strong>Flugplan</strong><span class="cl-dots"></span><strong>ALS EINGEREICHT FLIEGEN</strong></div>
+<div class="cl-sub">Assigned Track und cleared altitude beibehalten</div>
+
+<div class="cl-item"><strong>Geschwindigkeit</strong><span class="cl-dots"></span><strong>ASSIGNED MACH BEIBEHALTEN</strong></div>
+<div class="cl-sub">Keine einseitige Mach-Änderung ohne ATC-Kontakt</div>
+
+<div class="cl-item"><strong>Höhe</strong><span class="cl-dots"></span><strong>CLEARED ALTITUDE BEIBEHALTEN</strong></div>
+<div class="cl-sub">Keine Höhenänderung ohne ATC-Freigabe — Ausnahme: Notfall</div>
+
+</div>
+
+### Visual Approach — US-Verfahren
+
+> [!info] Wake Turbulence Verantwortung (USA)
+> Bei einem **Visual Approach** in den USA ist **ATC für den Wake-Turbulence-Abstand verantwortlich**, solange das vorausfliegende Luftfahrzeug **nicht in Sicht** ist. Sobald der Pilot das vorausfliegende Flugzeug sieht und die Freigabe "Follow traffic" oder "Visual Approach" erhält, geht die Verantwortung auf den **Piloten** über.
+
+---
+
 ## Weather Radar
 
 - Steuerung via **TCP** (SYS POWER ON erforderlich, bevor EFIS WXR-Switch funktioniert)

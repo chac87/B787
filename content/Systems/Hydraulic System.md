@@ -33,4 +33,18 @@
 - Kann nicht wieder eingefahren werden
 - Siehe auch [[Electrical Power System#RAT|Electrical System - RAT]]
 
+## Total Hydraulic Loss
+
+Bei Ausfall **aller drei Hydrauliksysteme** (L + R + C) verbleiben folgende Steuerflächen:
+
+| System | Verbleibend |
+|:---|:---|
+| **Flaps / Slats** | Alternate Electric Drive (Motor Operated Valves) |
+| **Stabilizer** | Electric Stabilizer Trim (unabhängig von Hydraulik) |
+| **Spoiler** | 2 Spoiler-Paare (RAT/elektrisch versorgt) |
+| **Primäre Steuerflächen** | Eingeschränkt — Elevator, Aileron, Rudder via RAT-Druck |
+
+> [!warning] Total Hydraulic Loss
+> RAT liefert 3.000 psi für Center-System und elektrische Energie für Emergency-Systeme. Volle Steuerbarkeit ist stark eingeschränkt — Alternate Flaps/Slats und Electric Stabilizer sind die wichtigsten verbleibenden Konfigurations-Werkzeuge.
+
 Siehe auch [[Hydraulic Non-Normals]]

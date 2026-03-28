@@ -24,6 +24,10 @@
 
 **Abschalten:** Linke Tür schließen + RESET/TEST drücken → Sauerstoff aus · Mikrofon inaktiv · Boom-Mikrofon aktiv.
 
+**Maskenbeschlag (Fogging) entfernen:** Regler auf **EMGCY** stellen → 100 % Sauerstoff mit positivem Druck bläst die Maske frei. Danach zurück auf NORM/100% stellen.
+
+**O2-Druckanzeige:** SYS-Taste drücken → **STAT Synoptic** → Flight Deck O2 Pressure in PSI.
+
 > [!info] Preflight Check
 > Druckabfall beim Preflight-Check kann auf geschlossenes Shutoff-Valve hinweisen — dann kein Sauerstoff verfügbar.
 

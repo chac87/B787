@@ -32,6 +32,34 @@
 | **Roll/Yaw Asymmetry Comp.** | Asymmetrische Bedingungen (Normal mode) | Automatischer Ausgleich → reduzierte Pilotenbelastung |
 | **TCMA** | Asymm. Idle-Bedingung am GND | Auto-Shutdown des betroffenen Triebwerks |
 
+### Flap/Slat Positionen & Speed Selection
+
+| Flap Lever | Flaps | Slats |
+|:---:|:---:|:---|
+| 1 | 1° | Mid |
+| 5 | 5° | Mid |
+| 15 | 15° | Mid |
+| 20 | 20° | Mid |
+| **25** | **25°** | **Fully Extended** |
+| 30 | 30° | Fully Extended |
+
+> [!info] Flap 20 → 25: Slats auf "Fully"
+> Beim Wählen von Flap 25 fahren die Slats von **Mid** auf **Fully Extended** — einziger Schritt, bei dem Slats die vollausgefahrene Landeposition einnehmen.
+
+**Speed Selection:**
+
+<div class="checklist">
+
+<div class="cl-item"><strong>Flap-Stellung wählen</strong><span class="cl-dots"></span><strong>ZUERST</strong></div>
+<div class="cl-sub">Flap-Lever in gewünschte Position stellen</div>
+
+<div class="cl-item"><strong>Zielgeschwindigkeit einstellen</strong><span class="cl-dots"></span><strong>WENN POSITION IN MAGENTA ERSCHEINT</strong></div>
+<div class="cl-sub">Sobald die neue Flap-Position auf dem Speed Tape als Magenta-Dreieck angezeigt wird → Speed setzen</div>
+
+</div>
+
+---
+
 ### High Lift (Flaps & Slats)
 
 | Protection | Aktiviert bei | Wirkung |
