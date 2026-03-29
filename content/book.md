@@ -25,6 +25,7 @@
 [[Normal Ops/SOPs/CDU EFB Preflight - Capt and FO|CDU/EFB Preflight Procedure]]
 [[Normal Ops/SOPs/Preflight Procedure - First Officer|Preflight Procedure – First Officer]]
 [[Normal Ops/SOPs/Preflight Procedure - Captain|Preflight Procedure – Captain]]
+[[Normal Ops/SOPs/Before Start Procedure|Before Start Procedure]]
 [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]
 ### [[Normal Ops/Supplementary Procedures/index|Supplementary Procedures]]
 [[Low Visibility Operations]]
