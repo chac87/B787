@@ -11,3 +11,5 @@
 ## [[Operational/Medical|Medical]]
 
 ## [[Operational/Kabinenvorbereitung|Kabinenvorbereitung]]
+
+## [[Operational/Amber Landing Concept|Amber Landing Concept]]

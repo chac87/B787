@@ -8,6 +8,7 @@
 [[Operational/IDM|IDM]]
 [[Operational/Medical|Medical]]
 [[Operational/Kabinenvorbereitung|Kabinenvorbereitung]]
+[[Operational/Amber Landing Concept|Amber Landing Concept]]
 ## [[Systems/index|Systems]]
 [[Systems/Electrical Power System|Electrical Power System]]
 [[Ventilation System]]
