@@ -2,7 +2,7 @@
 
 ## Plan B Requirements
 
-| | No Threats | Threats |
+| | No Threats at Destination | Threats at Destination |
 |:---|:---:|:---:|
 | Safe LDG assured + No Threats at Plan B | ✓ | ✓ |
 | **Endurance at valid Plan B** | **30 min** | **45 min** |
