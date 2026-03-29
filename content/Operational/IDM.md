@@ -8,7 +8,7 @@
 | **Endurance at touchdown at valid Plan B** | **30 min** | **45 min** |
 
 > [!info] Threats (ETA +/- 1 h incl. PROB)
-> LVO · Undue delay expected · Ceiling < minimum + 200 ft · Visibility < minimum + 1.000 m · Wind incl. gusts > 30 kt · Crosswind incl. gusts > 20 kt · CB/TS, SN, FZ, SS/DS, WS, etc.
+> LVO<br>Undue delay expected<br>Ceiling < minimum + 200 ft<br>Visibility < minimum + 1.000 m<br>Wind incl. gusts > 30 kt<br>Crosswind incl. gusts > 20 kt<br>CB/TS, SN, FZ, SS/DS, WS, etc.
 
 ---
 
