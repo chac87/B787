@@ -1,6 +1,7 @@
 ## [[index|Inhaltsverzeichnis]]
 [[General Infos]]
 [[Limitations]]
+[[Operational]]
 ## [[Systems/index|Systems]]
 [[Systems/Electrical Power System|Electrical Power System]]
 [[Ventilation System]]
