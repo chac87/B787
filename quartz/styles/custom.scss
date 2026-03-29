@@ -60,9 +60,7 @@ body[data-slug="index"] .floating-home {
   body[data-slug="index"] article > p:first-child img {
     display: block;
     width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    object-position: center;
+    height: auto;
     border-radius: 12px;
   }
 
