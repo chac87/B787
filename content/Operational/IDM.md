@@ -2,10 +2,10 @@
 
 ## Plan B Requirements
 
-| | No Threats at Destination | Threats at Destination |
+| | No Threats | Threats |
 |:---|:---:|:---:|
-| Safe LDG assured (different airport or separate RWY; no Threats at Plan B) | ✓ | ✓ |
-| **Endurance at touchdown at valid Plan B** | **30 min** | **45 min** |
+| Safe LDG assured + No Threats at Plan B | ✓ | ✓ |
+| **Endurance at valid Plan B** | **30 min** | **45 min** |
 
 > [!info] Threats (ETA +/- 1 h incl. PROB)
 > LVO<br>Undue delay expected<br>Ceiling < minimum + 200 ft<br>Visibility < minimum + 1.000 m<br>Wind incl. gusts > 30 kt<br>Crosswind incl. gusts > 20 kt<br>CB/TS, SN, FZ, SS/DS, WS, etc.
@@ -14,44 +14,22 @@
 
 ## IDM in 3 Schritten
 
-### Schritt 1 — Validen Plan B finden
+**1. Validen Plan B finden**
+Runway ohne Threats — **nicht** die geplante Landing Runway (Plan A).
+Bei Threats: Runway ohne Threats am Alternate.
+Second RWY als Plan B: muss eine **separate** RWY sein (Alternate Fuel = Go Around + neuer Anflug).
 
-| No Threats at Destination | Threats at Destination |
-|:---|:---|
-| Runway ohne Threats, **nicht** die geplante Landing Runway (= Plan A) | Runway ohne Threats am **Alternate** |
+**2. Minimum Fuel am Plan B festlegen**
+No Threats → **30 min** · Threats → **45 min**
 
-> [!info] Second RWY als Plan B
-> Es muss eine **separate** RWY sein. Als Alternate Fuel wählt man Fuel für Go Around und neuen Anflug.
+**3. Fuel für den Weg zum Plan B bestimmen**
+- Plan B = Alternate → aus OFP
+- Plan B = andere Bahn an der Destination → sinnvoller Wert (z.B. 15 min acc. Extra Fuel Flow oder aus LoA)
 
----
+> [!info] Extra Fuel Flow (kg/h)
+> RR Trent 1000: **5.000 kg/h**<br>GE GEnx-1B: **4.800 kg/h**
 
-### Schritt 2 — Minimum Fuel am Plan B festlegen
-
-| No Threats | Threats |
-|:---:|:---:|
-| **30 min** | **45 min** |
-
----
-
-### Schritt 3 — Fuel für den Weg zum Plan B bestimmen
-
-**No Threats — Plan B ist eine andere Bahn an der Destination:**
-Sinnvoller Wert (z.B. 15 min acc. Extra Fuel Flow oder aus LoA) für eine Platzrunde.
-
-**No Threats / Threats — Plan B ist ein Alternate:**
-Aus OFP.
-
-> [!info] Umrechnung Extra Fuel Flow
-> **5,4 t/h = 90 kg/min**
-
----
-
-### Ergebnis
-
-| | Formel |
-|:---|:---|
-| **No Threats** | Minimum Fuel an Destination = Fuel zum validen Plan B + **30 min** |
-| **Threats** | Minimum Fuel an Destination = Fuel zum validen Plan B + **45 min** |
+**Ergebnis:** Minimum Fuel an Destination = Fuel zum validen Plan B + **30 / 45 min**
 
 ---
 
