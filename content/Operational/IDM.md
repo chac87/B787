@@ -1,5 +1,7 @@
 # IDM — In-flight Diversion Management
 
+![[idm.webp]]
+
 ## Plan B Requirements
 
 | | No Threats at Destination | Threats at Destination |
