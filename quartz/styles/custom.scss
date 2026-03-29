@@ -45,6 +45,29 @@ body[data-slug="index"] .floating-home {
     display: none !important;
 }
 
+/* =========================================
+   HERO IMAGE — Homepage only
+   ========================================= */
+
+body[data-slug="index"] article > p:first-child img {
+  display: block;
+  width: 100%;
+  height: 40vh;
+  max-height: 380px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 12px;
+  margin: 0 0 2rem 0 !important;
+}
+
+@media (max-width: 640px) {
+  body[data-slug="index"] article > p:first-child img {
+    height: auto;
+    max-height: none;
+    aspect-ratio: 16 / 9;
+  }
+}
+
 /* Top section — Home link */
 .floating-home__home {
     display: flex !important;

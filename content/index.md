@@ -1,6 +1,9 @@
 ---
 title: B787 Guide
 ---
+
+![[hero.webp]]
+
 # B787 Guide
 ## [[General Infos|General Infos]]
 ## [[Limitations|Limitations]]
