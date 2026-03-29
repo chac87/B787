@@ -16,7 +16,11 @@ An upset condition is any time the airplane is diverting from the intended state
 
 > [!warning] Stall Recognition
 > A stall can exist at **any attitude**. Recognize by:
-> · Stick shaker · Heavy buffet · Lack of pitch authority · Lack of roll control · Inability to stop a descent
+> Stick shaker
+> Heavy buffet
+> Lack of pitch authority
+> Lack of roll control
+> Inability to stop a descent
 >
 > **If stalled:** Apply and maintain nose down elevator until stick shaker stops — before starting upset recovery.
 
@@ -32,15 +36,15 @@ An upset condition is any time the airplane is diverting from the intended state
 > Disconnect A/T
 >
 > **Recover:**
-> · Apply nose down elevator — as much as needed to obtain a nose down pitch rate
-> · Apply nose down stabilizer trim\*
-> · Reduce thrust
-> · Roll (adjust bank angle) to obtain a nose down pitch rate\*
+> Apply nose down elevator — as much as needed to obtain a nose down pitch rate
+> Apply nose down stabilizer trim\*
+> Reduce thrust
+> Roll (adjust bank angle) to obtain a nose down pitch rate\*
 >
 > **Complete recovery (approaching horizon):**
-> · Roll wings level
-> · Check airspeed and adjust thrust
-> · Establish pitch attitude
+> Roll wings level
+> Check airspeed and adjust thrust
+> Establish pitch attitude
 >
 > ---
 >
@@ -63,14 +67,14 @@ An upset condition is any time the airplane is diverting from the intended state
 > Disconnect A/T
 >
 > **Recover:**
-> · Recover from stall, if needed
-> · Roll in the shortest direction to wings level
-> · If bank angle > 90°: **unload and roll\***
+> Recover from stall, if needed
+> Roll in the shortest direction to wings level
+> If bank angle > 90°: **unload and roll\***
 >
 > **Complete recovery:**
-> · Apply nose up elevator
-> · Apply nose up trim, if needed\*
-> · Adjust thrust and drag, if needed
+> Apply nose up elevator
+> Apply nose up trim, if needed\*
+> Adjust thrust and drag, if needed
 >
 > ---
 >
