@@ -7,6 +7,9 @@ role: Captain
 
 # Preflight Procedure – Captain
 
+> [!info]- Preflight Flow
+> ![[preflight flow.webp]]
+
 The captain normally does this procedure. The first officer may do this procedure if needed.
 
 <div class="checklist">
