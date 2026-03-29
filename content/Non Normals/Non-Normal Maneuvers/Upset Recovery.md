@@ -6,55 +6,77 @@ tags: [non-normal, maneuvers]
 # Upset Recovery
 
 ### Definition
-- Pitch > 25° nose up
-- Pitch < 10° nose down
-- Bank angle > 45°
+
+An upset condition is any time the airplane is diverting from the intended state. Classic thresholds:
+
+- Pitch attitude > **25°** nose up
+- Pitch attitude > **10°** nose down
+- Bank angle > **45°**
 - Airspeed inappropriate for the conditions
 
-> [!proc]- Upset Recovery - Nose High
-> >[!proc] Objective
-> >##### Lower the nose to the horizon
+> [!warning] Stall Recognition
+> A stall can exist at **any attitude**. Recognize by:
+> · Stick shaker · Heavy buffet · Lack of pitch authority · Lack of roll control · Inability to stop a descent
 >
-> "UPSET - I have Control"
-> Disengange AP, A/T
-> Apply Nose down elevator
-> Apply Nose down trim
-> Reduce Thrust
->    *If needed: Roll for nose down rate*
->
-> ---
->
-> ##### **Approaching horizon**
-> Roll wings level
-> Check Airspeed
-> Adjust thrust
-> Establish pitch attitude
->
-> ---
->
-> ##### <span class="cm2">PM</span>
-> Callout Attitude, airspeed, and altitude
-> Verify all required actions have been done
-> Callout Any continued deviation
+> **If stalled:** Apply and maintain nose down elevator until stick shaker stops — before starting upset recovery.
 
+---
 
-> [!proc]- Upset Recovery - Nose Low
-> >[!proc] Objective
-> >##### Raise the nose to the horizon without overstressing the airplane or stalling
+> [!proc]- Upset Recovery — Nose High
+> **PF**
 >
-> "UPSET - I have Control"
-> Disengange AP, A/T
-> Recover from stall
-> Roll wings level
+> Callout: *"UPSET — I have control"*
+> Recognize and confirm the developing situation
+>
+> Disengage AP
+> Disconnect A/T
+>
+> **Recover:**
+> · Apply nose down elevator — as much as needed to obtain a nose down pitch rate
+> · Apply nose down stabilizer trim\*
+> · Reduce thrust
+> · Roll (adjust bank angle) to obtain a nose down pitch rate\*
+>
+> **Complete recovery (approaching horizon):**
+> · Roll wings level
+> · Check airspeed and adjust thrust
+> · Establish pitch attitude
 >
 > ---
-> ##### **Complete Recovery**
-> Apply nose up elevator
->    *If needed: Nose up trim*
-> Adjust thrust and drag
+>
+> **PM**
+> Call out attitude, airspeed and altitude throughout the recovery
+> Verify all needed actions have been done
+> Call out any continued deviation
+
+> [!warning] \* Excessive use of pitch trim or rudder can aggravate an upset, result in loss of control, or result in high structural loads.
+
+---
+
+> [!proc]- Upset Recovery — Nose Low
+> **PF**
+>
+> Callout: *"UPSET — I have control"*
+> Recognize and confirm the developing situation
+>
+> Disengage AP
+> Disconnect A/T
+>
+> **Recover:**
+> · Recover from stall, if needed
+> · Roll in the shortest direction to wings level
+> · If bank angle > 90°: **unload and roll\***
+>
+> **Complete recovery:**
+> · Apply nose up elevator
+> · Apply nose up trim, if needed\*
+> · Adjust thrust and drag, if needed
 >
 > ---
->##### <span class="cm2">PM</span>
-> Callout Attitude, airspeed, and altitude
-> Verify all required actions have been done
-> Callout Any continued deviation
+>
+> **PM**
+> Call out attitude, airspeed and altitude throughout the recovery
+> Verify all needed actions have been done
+> Call out any continued deviation
+
+> [!warning] \* Excessive use of pitch trim or rudder can aggravate an upset, result in loss of control, or result in high structural loads.
