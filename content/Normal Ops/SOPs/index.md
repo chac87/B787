@@ -21,4 +21,6 @@ tags: [sop, normal-ops]
 
 ## [[Normal Ops/SOPs/Engine Start Procedure|Engine Start Procedure]]
 
+## [[Normal Ops/SOPs/Before Taxi Procedure|Before Taxi Procedure]]
+
 ## [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]
