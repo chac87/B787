@@ -8,15 +8,15 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 
 <div class="checklist">
 
-<div class="cl-item"><strong>RA — Resolution Advisory</strong><span class="cl-dots"></span><strong>15–35 sec to conflict</strong></div>
+<div class="cl-item"><strong>RA — Resolution Advisory</strong><span class="cl-dots"></span><strong>15 – 35 sec to conflict</strong></div>
 <div class="cl-sub">Red filled square on ND · red TRAFFIC message · PFD vertical guidance · voice alert</div>
 <div class="cl-sub">ADS-B: black directional chevron in red square</div>
 
-<div class="cl-item"><strong>TA — Traffic Advisory</strong><span class="cl-dots"></span><strong>20–48 sec to conflict</strong></div>
+<div class="cl-item"><strong>TA — Traffic Advisory</strong><span class="cl-dots"></span><strong>20 – 48 sec to conflict</strong></div>
 <div class="cl-sub">Amber filled circle on ND · amber TRAFFIC message · voice "TRAFFIC, TRAFFIC" (once)</div>
 <div class="cl-sub">ADS-B: black directional chevron in amber circle</div>
 
-<div class="cl-item"><strong>Proximate Traffic</strong><span class="cl-dots"></span><strong>&lt;6 NM and ±1,200 ft</strong></div>
+<div class="cl-item"><strong>Proximate Traffic</strong><span class="cl-dots"></span><strong>&lt;6 NM and ± 1.200 ft</strong></div>
 <div class="cl-sub">White filled diamond on ND (no alert) · ADS-B: filled white directional chevron</div>
 
 <div class="cl-item"><strong>Other Traffic</strong><span class="cl-dots"></span><strong>in ND range, no conflict</strong></div>
@@ -52,22 +52,22 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 
 <div class="checklist">
 
-<div class="cl-item"><strong>GPWS Warning</strong><span class="cl-dots"></span><span class="c-red">~20–30 sec to impact</span></div>
+<div class="cl-item"><strong>GPWS Warning</strong><span class="cl-dots"></span><span class="c-red">~ 20 – 30 sec to impact</span></div>
 <div class="cl-sub">PULL UP · OBSTACLE PULL UP · TERRAIN TERRAIN PULL UP</div>
 
-<div class="cl-item"><strong>GPWS Caution</strong><span class="cl-dots"></span><span class="c-amber">~40–60 sec to impact</span></div>
+<div class="cl-item"><strong>GPWS Caution</strong><span class="cl-dots"></span><span class="c-amber">~ 40 – 60 sec to impact</span></div>
 <div class="cl-sub">CAUTION TERRAIN · CAUTION OBSTACLE · SINK RATE · DON'T SINK · TOO LOW FLAPS · TOO LOW GEAR · TOO LOW TERRAIN · GLIDESLOPE · BANK ANGLE</div>
 
 </div>
 
 **EGPWS terrain display colors (airplane ≥500 ft above highest terrain):**
 
-| Color | Meaning |
-|:---|:---|
-| Solid green | Highest terrain band |
-| High-density dotted green | Intermediate terrain |
-| Low-density dotted green | Lowest terrain band |
-| Black | >2,000 ft below airplane |
+| Color                     | Meaning                   |
+| :------------------------ | :------------------------ |
+| Solid green               | Highest terrain band      |
+| High-density dotted green | Intermediate terrain      |
+| Low-density dotted green  | Lowest terrain band       |
+| Black                     | > 2.000 ft below airplane |
 
 **When airplane <500 ft above highest terrain** — display shifts to amber/red contours relative to airplane altitude.
 
@@ -83,13 +83,13 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 
 PWS uses weather radar to detect windshear conditions **ahead** of the airplane. GPWS provides reactive windshear alerts for downdrafts/tailwinds currently being encountered.
 
-| WXR Display | On Ground | In Air |
-|:---|:---|:---|
-| WXR selected | Scans; PWS alerts enabled | Scans <2,300 ft RA; PWS alerts <1,200 ft RA |
-| WXR not selected | Scans when thrust levers advanced for T/O; PWS enabled | Scans <2,300 ft RA; PWS alerts <1,200 ft RA |
+| WXR Display      | On Ground                                              | In Air                                        |
+| :--------------- | :----------------------------------------------------- | :-------------------------------------------- |
+| WXR selected     | Scans; PWS alerts enabled                              | Scans < 2.300 ft RA; PWS alerts < 1.200 ft RA |
+| WXR not selected | Scans when thrust levers advanced for T/O; PWS enabled | Scans < 2.300 ft RA; PWS alerts < 1.200 ft RA |
 
 > [!info] PWS Note
-> PWS alerts are enabled **12 seconds** after weather radar begins scanning for windshear.
+> PWS alerts are enabled **12 sec** after weather radar begins scanning for windshear.
 
 ---
 
@@ -102,4 +102,4 @@ Integrated into the two Integrated Surveillance System Processor Units (ISSPU). 
 ## WXR Weather Radar
 
 - Maximum range: 320 NM
-- PWS windshear scanning: below 2,300 ft RA
+- PWS windshear scanning: below 2.300 ft RA
