@@ -5,16 +5,11 @@ tags: [operational, taxi, takeoff, landing]
 
 # Taxi
 
-## Geschwindigkeit & Schub
+## Geschwindigkeit & Kurven
 
 - Zielgeschwindigkeit **< 20 kt** (max. 30 kt erlaubt)
 - Breakaway Thrust zum Anrollen, danach auf Idle
-- **Flight Path Acceleration Symbol** im HUD auf oder leicht über dem Airplane Symbol halten
-- Leicht beladenes Flugzeug: Geschwindigkeit ansteigen lassen, dann gezielt bremsen — nicht schleifen lassen
-
-## Kurven
-
-- Magic Number: **~8 kt** für eine saubere Kurve
+- Magic Number für Kurven: **~8 kt**
 - Flight Path Acceleration Symbol beim Einlenken beobachten — fällt es unter das Airplane Symbol, Thrust applizieren
 - Flugzeug dreht **75–100 ft hinter dem Piloten** — niemals Kurven abschneiden, Hauptfahrwerk überrollt sonst Taxiway-Lichter
 
