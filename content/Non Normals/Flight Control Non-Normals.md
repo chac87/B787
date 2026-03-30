@@ -20,7 +20,7 @@ tags: [non-normal, flight-controls]
 
 Normalbetrieb — Flaps und Slats gemeinsam über das Center Hydraulic System.
 
-![[Bilder/flaps-primary.png]]
+![[Bilder/flaps-primary.webp]]
 
 ---
 
@@ -32,7 +32,7 @@ Automatische Umschaltung bei:
 - Disagree-Bedingung oder uncommanded motion
 - Primary Control ausgefallen oder kann Zielposition nicht erreichen
 
-![[Bilder/flaps-secondary.png]]
+![[Bilder/flaps-secondary.webp]]
 
 Electric Motor Control Unit unterstützt nun Flaps **oder** Slats — sie werden unabhängig voneinander bewegt. Flap Lever bleibt in Benutzung.
 
@@ -49,7 +49,7 @@ Electric Motor Control Unit unterstützt nun Flaps **oder** Slats — sie werden
 
 Wenn Flap/Slat-Elektronik komplett ausgefallen ist.
 
-![[Bilder/flaps-alternate.png]]
+![[Bilder/flaps-alternate.webp]]
 
 - **ALTN FLAPS ARM** — schaltet Primary + Secondary aus, Flap Lever inoperativ
 - Alle Hydraulik bypassed — nur Electric Motors

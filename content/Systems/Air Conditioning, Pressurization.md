@@ -2,7 +2,7 @@
 
 ## Air Conditioning Packs
 
-![[air con ovhd.png]]
+![[air con ovhd.webp]]
 
 - **Kein Bleed Air** — Außenluft wird durch **4 elektrische CACs** (Cabin Air Compressors) angesaugt
 - Einziges System mit Bleed Air ist **Engine Anti-Ice (EAI)** — Packs und Wing Anti-Ice (WAI) sind vollständig elektrisch
@@ -42,7 +42,7 @@
 
 ## Air Distribution
 
-![[air recirculation.jpeg]]
+![[air recirculation.webp]]
 
 - **Flight Deck**: 100 % konditionierte Außenluft (bei einem Pack OFF + Lower Recirc Fan ON: auch etwas Rezirkulationsluft)
 - **Kabine**: Mix aus Außenluft + rezirkulierter Luft
@@ -76,7 +76,7 @@
 
 ## Pressurization
 
-![[press ovhd.png]]
+![[press ovhd.webp]]
 
 - **CPCS** (Cabin Pressure Control System) reguliert vollautomatisch via FMC-Daten + Umgebungsdruck
 - **2 Outflow Valves** (FWD + AFT) — Abfluss normalerweise gleichmäßig aufgeteilt · jedes Valve allein ausreichend

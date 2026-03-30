@@ -1,5 +1,5 @@
 # Autoflight System (AFDS)
-![[mcp.jpeg]]
+![[mcp.webp]]
 ## Mode Control Panel (MCP)
 - Dient zum armieren (arm) und Aktivieren (engage) der lateralen und vertikalen Modi.
 

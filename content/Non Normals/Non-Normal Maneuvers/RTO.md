@@ -5,7 +5,7 @@ tags: [non-normal, maneuvers]
 
 # RTO
 
-![[Bilder/RTO.png]]
+![[Bilder/RTO.webp]]
 
 > [!info]- Low Speed vs. High Speed RTO
 > | | Low Speed (< 80 kts) | High Speed (≥ 80 kts → V₁) |

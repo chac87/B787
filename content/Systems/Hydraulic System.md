@@ -1,5 +1,5 @@
 # Hydraulics
-![[hydraulic system.png]]![[hyd ovhd.png]]**Hydraulic System consists of:**
+![[hydraulic system.webp]]![[hyd ovhd.webp]]**Hydraulic System consists of:**
 - 2 EDP (ENG driven pumps)
 - 2 EMP (Electric motor pumps)
 - 2 Reservoirs

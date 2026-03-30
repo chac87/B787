@@ -5,8 +5,8 @@ tags: [systems, electrical]
 
 # Electrical Power System
 
-![[elec distr.png]]
-![[elec ovhd.png]]
+![[elec distr.webp]]
+![[elec ovhd.webp]]
 
 ## Power Sources
 

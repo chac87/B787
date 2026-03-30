@@ -1,3 +1,3 @@
 # FDZ
 
-![[fdz.png]]
+![[fdz.webp]]

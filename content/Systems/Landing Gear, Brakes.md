@@ -9,7 +9,7 @@
 | Hydraulik         | Center System — Extension, Retraction, Steering                  |
 | Brakes            | Elektromechanisch — 4 EBACs · 32 EBAs (Electric Brake Actuators) |
 
-![[landing gear.png]]
+![[landing gear.webp]]
 
 ## Speed Limits
 

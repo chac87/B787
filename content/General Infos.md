@@ -14,7 +14,7 @@
 > <div class="cl-item"><strong>Wheel base</strong><span class="cl-dots"></span><span>11,90 m</span></div>
 
 > [!info]- Antennas
-> ![[antennas.png]]
+> ![[antennas.webp]]
 
 > [!info]- EICAS / Procedures
 > <div class="cl-item"><strong>[] CHKL INCOMPLETE NORM</strong><span class="cl-dots"></span><span>Eine oder mehrere Schritte der Normal Checklist wurden noch nicht abgehakt — kein Non-Normal</span></div>
