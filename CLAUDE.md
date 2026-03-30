@@ -176,6 +176,18 @@ Always write speed designations with lowercase v and subscript: `v<sub>FE</sub>`
 
 All content in `content/Limitations.md` and `[!limit]` callouts in system notes must be in **English** (original PDF language). Never translate limitation text to German.
 
+## Images — Auto-Convert to WebP
+
+**Rule: never reference `.png`, `.jpg`, or `.jpeg` files directly in notes.** All images must be WebP.
+
+`convert-images.sh` runs automatically inside `sync-snippets.sh` before every `npx quartz build` and `npx quartz sync`. It:
+1. Finds any non-WebP files in `content/Bilder/`
+2. Converts them to WebP at quality 95 (`cwebp -q 95 -m 6`) — lossless-equivalent sharpness
+3. Updates all `![[...]]` references in the vault to the new `.webp` filename
+4. Deletes the original
+
+**If a user adds a new image to `content/Bilder/` and references it in a note as `![[name.png]]`:** do not manually rename the reference. The next build/sync will convert and fix it automatically. Only intervene if the user explicitly asks to run the conversion immediately — in that case run `bash convert-images.sh` from the repo root.
+
 ## Deployment
 
 ```bash

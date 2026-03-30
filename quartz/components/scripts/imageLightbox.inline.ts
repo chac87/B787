@@ -1,10 +1,4 @@
 // Create persistent elements once
-if (!document.getElementById("reading-progress")) {
-  const bar = document.createElement("div")
-  bar.id = "reading-progress"
-  document.body.appendChild(bar)
-}
-
 if (!document.getElementById("lightbox-overlay")) {
   const overlay = document.createElement("div")
   overlay.id = "lightbox-overlay"
@@ -38,20 +32,6 @@ function setupPage() {
     void (article as HTMLElement).offsetWidth
     article.classList.add("page-enter")
   }
-
-  // ── Reading progress bar ───────────────────────────────────────────────────
-  const bar = document.getElementById("reading-progress") as HTMLDivElement
-  bar.style.width = "0%"
-
-  const updateProgress = () => {
-    const docHeight =
-      document.documentElement.scrollHeight - document.documentElement.clientHeight
-    const pct = docHeight > 0 ? (window.scrollY / docHeight) * 100 : 0
-    bar.style.width = `${pct}%`
-  }
-
-  window.addEventListener("scroll", updateProgress, { passive: true })
-  window.addCleanup(() => window.removeEventListener("scroll", updateProgress))
 
   // ── Lightbox: attach to content images ────────────────────────────────────
   const overlay = document.getElementById("lightbox-overlay")!

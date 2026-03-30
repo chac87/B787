@@ -43,3 +43,7 @@ with open(target, 'w') as f:
 
 COUNT=$(ls "$SNIPPETS_DIR"/*.css 2>/dev/null | wc -l | tr -d ' ')
 echo "✓ $COUNT Snippets synchronisiert → $TARGET"
+
+# Auto-convert new images in Bilder/ to WebP
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+bash "$SCRIPT_DIR/convert-images.sh"
