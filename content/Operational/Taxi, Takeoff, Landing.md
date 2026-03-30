@@ -10,20 +10,13 @@ tags: [operational, taxi, takeoff, landing]
 - Zielgeschwindigkeit **< 20 kt** (max. 30 kt erlaubt)
 - Breakaway Thrust zum Anrollen, danach auf Idle
 - Magic Number für Kurven: **~8 kt**
-- Flight Path Acceleration Symbol beim Einlenken beobachten — fällt es unter das Airplane Symbol, Thrust applizieren
 - Flugzeug dreht **75–100 ft hinter dem Piloten** — niemals Kurven abschneiden, Hauptfahrwerk überrollt sonst Taxiway-Lichter
 
 | Variante | Bugrad → Hauptfahrwerk |
 |---|---|
-| 787-8 | 22,8 m |
 | 787-9 | 25,8 m |
-| 787-10 | 28,9 m |
 
 *Pilotensitz liegt 2,5 m (8,25 ft) vor dem Bugrad.*
-
-In engen Kurven kann Übersteuern notwendig sein bis nur noch Gras sichtbar ist — Taxiway-Randlichter können kurz unter der Nase verschwinden. Mentaler Fokus bleibt auf der **Hauptfahrwerksposition**, nicht auf dem Bugrad.
-
-Bei Gate-Einfahrten (Kurve > 90°): Die Taxi-Linie führt das **Hauptfahrwerk** — nicht das Bugrad.
 
 > [!warning] Stopp in der Kurve
 > Bugrad vor dem Stopp ausrichten. Zum Anrollen erst Fahrt aufbauen, bevor wieder eingelenkt wird.
@@ -43,7 +36,6 @@ Unter 30 kt reduziert das System Bremsdruck auf **50%** zum Schutz der Bremsen.
 ## Sitzposition
 
 - *Seat Pan Tilt Control* ganz nach vorne, dann *Recline Control* aufrecht
-- Höhe: Augen auf Mitte des HUD
 - Sitz so weit wie möglich nach vorne — solange EICAS-Oberkante und alle Displays sichtbar bleiben
 - Nicht nach Gefühl aus dem vorherigen Flugzeugtyp einstellen
 
@@ -54,30 +46,17 @@ Rolling Takeoff empfohlen: schnellere Freigabe der Runway, geringeres FOD-Risiko
 > [!info] Engine Surge
 > Entsteht, wenn der Lufteinlauf bei stehendem Flugzeug und Crosswind ungünstig angeströmt wird. Beim Rollen kein Problem — bei Crosswind **immer in Bewegung bleiben**.
 
-Bei Freigabe während des Einrollens: Taxi-Speed halten → Bugrad ausrichten → Tiller loslassen → Triebwerke kurz stabilisieren lassen:
-
-- **RR Trent 1000:** 20 TPR
-- **GE GEnx-1B:** 40% N1
-
-Dann TOGA.
-
 ## Takeoff Roll
 
 - Sitz auf der Centerline ausrichten — Knie des inneren Beins als Feinjustierung
 - Leichter Forward-Druck auf den Yoke bis **80 kt**, danach **neutral**
 
-> [!warning]
-> Forward-Druck bei v<sub>R</sub> nicht vergessen loszulassen — sonst beginnt die Rotation erst vom vorgedrückten Yoke auf Neutral. Das zerstört die Rotationsrate.
-
-Bei "rotate"-Call: gleichmäßige, kontinuierliche Pitchbewegung nach oben — **14° (–8) / 12° (–9)** — in **6–8 Sekunden**.
-
-**HUD-Technik:** Airplane Symbol als Visier auf die Runway-Centerline richten (nicht auf die sich bewegenden Lichter vor dir). Bei Rotation das Symbol zur gepunkteten TO/GA Reference Line ziehen. Sobald der Flight Director Guidance Cue erscheint → Focus auf Flight Path Vector, Cue folgen.
+Bei "rotate"-Call: gleichmäßige, kontinuierliche Pitchbewegung nach oben — **12°** — in **6–8 Sekunden**.
 
 ## Crosswind Takeoff
 
 - Häufiger Fehler: zu wenig Aileron in den Wind — die 787-Wingtips fliegen schon bei niedrigen Geschwindigkeiten
 - Yoke zentriert beginnen, dann zunehmend Aileron in den Wind um Wings Level zu halten
-- **HUD-Check:** Airplane Symbol nicht level mit der Horizon Line → mehr Aileron nötig
 
 ## Gear Up & Flap Retraction
 
@@ -98,26 +77,6 @@ Bei schwerer Beladung kann UP-Speed > 250 kt sein → Flap 1 muss **nicht** bis 
 
 # Landing
 
-## Approach Vorbereitung
-
-**Base:** Tailwind beim Final-Turn antizipieren — Overshoot ist häufig. ND Position Trend Vector nutzen um die Ausrichtung auf Final zu beurteilen, Bankwinkel feinjustieren.
-
-**On Final — Glideslope Reference Line:** Die gepunktete –3,00°-Linie auf die Touchdown Zone legen → auf Profil. Die Linie zeigt, wo man bei 3° Abstieg aus der aktuellen Position landen würde. FPV auf die Linie + Linie auf TDZ = perfekte Anfluggeometrie.
-
-## Stabilized Approach
-
-Stabilisierungsgates (Flight Safety Foundation-Kriterien, Basis für die meisten SOPs):
-
-- **1.000 ft** — IMC
-- **500 ft** — VMC
-
-Die 787 ist schlüpfrig — späte Geschwindigkeitsreduktion + leichter positiver Windshear kann Stabilisierung unmöglich machen. **Früh vorbereiten**, nicht auf Gear/Flaps als Bremse warten — Speedbrake ist effektiver.
-
-> [!warning]
-> Ein Go-Around ist jederzeit bis zum Reverser-Einsatz möglich und immer die richtige Entscheidung.
-
-**Smooth Control Inputs:** Kleine, schnelle, hektische Steuereingaben funktionieren auf einem FBW-Flugzeug nicht — Pilot Induced Turbulence. Bewusste, gleichmäßige Inputs.
-
 ## Crosswind Landing — 3 Techniken
 
 **1. Touchdown in Crab** — Kein Sideslip. Crab-Winkel halten bis nach dem Aufsetzen, dann Ruder/Querruder. Auf trockener Piste nicht empfohlen; auf sehr glatter Piste akzeptabel (weniger seitlicher Drift nach TD).
@@ -130,12 +89,6 @@ Die 787 ist schlüpfrig — späte Geschwindigkeitsreduktion + leichter positive
 > De-Crab zu früh → sofortiger Drift. Crab bis **~10 ft** halten. Erst Flare, dann Decrab.
 
 ## Final Approach & Flare
-
-**Aiming Point:** FPV auf die Touchdown Zone. Wenn die Zone beim Überqueren der Schwelle unter der Nase verschwindet → bei GPWS-Call **"fifty"**: Blick auf den Horizont heben. Bessere Sinkratenwahrnehmung → besserer Flare.
-
-> [!warning] Flare-Timing
-> GPWS "fifty" triggert bei unerfahrenen Piloten oft einen Pitch-Up-Move — **zu früh**. Flare beginnt bei **~30 ft**. Zu frühes Flaren → langes Floating.
-> **Jede Sekunde Floating = ~75 m (245 ft) Runway verbraucht.**
 
 Deviationen auf kurzer Final: kleine Korrekturen mit minimalen Inputs. Große Abweichung → Go-Around.
 
