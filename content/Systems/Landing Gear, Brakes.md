@@ -31,11 +31,11 @@ Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-A
 
 ### Retraction
 
-**Early Doors:** Gear doors öffnen **1 Sekunde nach Lift-off**. Wenn kein UP-Kommando innerhalb von **30 Sekunden** → Türen schließen wieder.
+**Early Doors:** Gear doors öffnen **1 sec nach Lift-off**. Wenn kein UP-Kommando innerhalb von **30 sec** → Türen schließen wieder.
 
 **EICAS-Anzeige:**
 - Transit → Schraffur (in Bewegung)
-- UP (nach ≈ 10 sek) → UP angezeigt
+- UP (nach ≈ 10 sec) → UP angezeigt
 - Doors geschlossen → blanks (erlischt)
 - Gear wird nach Einfahren + Türen geschlossen automatisch drucklos
 

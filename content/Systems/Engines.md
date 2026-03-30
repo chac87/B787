@@ -48,8 +48,6 @@ Solange die Bedingung besteht, können Secondary Indications nicht weggecleared 
 - N1/N2/EGT Redline-Überschreitung: Box bleibt rot → Cancel/Recall via Display-Switch
 - EGT-Amber-Inhibit: 5 min nach T/O oder G/A (10 min bei OEI)
 
----
-
 ## Electronic Engine Control (EEC)
 
 Jeder EEC hat volle Autorität über sein Triebwerk. Steuerbasis: N1 RPM. EEC-Eigenversorgung ab ausreichendem PMA-Output; Flugzeugstrom als Backup.
@@ -87,7 +85,7 @@ Schlägt RPM Limiting fehl → EEC kommandiert Fuel Shutoff.
 
 Beim Takeoff steigert EEC den Schub langsam, um Fanblattstress bei Seitenwind und niedriger Groundspeed zu minimieren.
 
-> [!info] Maximaler Takeoff-Schub kann bis **65 KIAS** nicht voll verfügbar sein. Nur am Boden im Normal Mode aktiv.
+> [!info] Maximaler Takeoff-Schub kann bis **65 kts** nicht voll verfügbar sein. Nur am Boden im Normal Mode aktiv.
 
 ### TCMA — Thrust Control Malfunction Accommodation
 
@@ -197,11 +195,11 @@ Load Shed immer während Engine Start.
 
 Aktiv immer wenn Triebwerk ≤ Idle mit FUEL CONTROL in RUN:
 
-| Ereignis | EEC-Reaktion |
-|:---|:---|
-| Flameout / Rollback | Beide Zünder an bis Idle erreicht |
-| Sub-idle Stall | Fuel 1 Sek. abschalten → reduzierter Schedule bis Idle |
-| Starker Regen/Hagel-Ingestion | Beide Zünder an bei Flameout |
+| Ereignis                      | EEC-Reaktion                                          |
+| :---------------------------- | :---------------------------------------------------- |
+| Flameout / Rollback           | Beide Zünder an bis Idle erreicht                     |
+| Sub-idle Stall                | Fuel 1 sec abschalten → reduzierter Schedule bis Idle |
+| Starker Regen/Hagel-Ingestion | Beide Zünder an bei Flameout                          |
 
 ---
 

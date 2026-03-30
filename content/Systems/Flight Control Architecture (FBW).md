@@ -17,12 +17,12 @@
 
 ### Pitch & Roll
 
-| Protection | Aktiviert bei | Wirkung |
-|:---|:---|:---|
-| **Stall Protection** | Annäherung an krit. AOA | Trim-Limit<br>Erhöhte Steuerhorn-Kraft |
-| **Overspeed Protection** | Annäherung an VMO / MMO | Trim-Limit<br>Gegendruck am Steuerhorn erforderlich |
-| **Tail Strike Protection** | T/O & LDG bei kritischem Pitch | Reduzierter Höhenruderausschlag |
-| **Bank Angle Protection** | > 35° Querneigung | Rückstellkraft<br>Auto. Rückroll auf < 30° |
+| Protection                 | Aktiviert bei                  | Wirkung                                             |
+| :------------------------- | :----------------------------- | :-------------------------------------------------- |
+| **Stall Protection**       | Annäherung an krit. AOA        | Trim-Limit<br>Erhöhte Steuerhorn-Kraft              |
+| **Overspeed Protection**   | Annäherung an VMO / MMO        | Trim-Limit<br>Gegendruck am Steuerhorn erforderlich |
+| **Tail Strike Protection** | T/O & LDG bei kritischem Pitch | Reduzierter Höhenruderausschlag                     |
+| **Bank Angle Protection**  | > 35° bank                     | Rückstellkraft<br>Auto. back roll auf < 30°         |
 
 ### Asymmetry & Engine
 
@@ -73,4 +73,4 @@
 > [!limit] Limitations
 > <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>Normal Mode only</span></div>
 > <div class="cl-item"><strong>Rapid alternating control inputs</strong><span class="cl-dots"></span><span>avoid</span></div>
-> <div class="cl-item"><strong>Max. flap extension altitude</strong><span class="cl-dots"></span><span>20,000 ft</span></div>
+> <div class="cl-item"><strong>Max. flap extension altitude</strong><span class="cl-dots"></span><span>20.000 ft</span></div>

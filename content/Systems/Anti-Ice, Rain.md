@@ -2,8 +2,8 @@
 
 ## Ice Detection
 
-- **2 Eisdetektoren** (Vibrating-Rod-Prinzip): messen TAT und Flüssigwassergehalt
-- Beheizt nach Engine Start · inhibiert < **75 kts** am Boden
+- **2 Ice Detectors** (Vibrating-Rod-Prinzip): messen TAT und Flüssigwassergehalt
+- Beheizt nach Engine Start · inhibited < **75 kts** am Boden
 - Erkennung löst automatisch WAI/EAI im AUTO-Modus aus
 
 | EICAS | Level | Bedeutung |
@@ -14,7 +14,7 @@
 
 ## Engine Anti-Ice
 
-- Enteist **Triebwerksinlets** mit Zapfluft (Hot-Air-Bleed) · Core + Cowl
+- Enteist **Engine Inlets** mit Hot-Air-Bleed · Core + Cowl
 - **L / R unabhängig**
 - **EAI**-Annunciation im EICAS erscheint, wenn N1 oberhalb Leerlauf
 
@@ -55,7 +55,7 @@
 
 **Symmetrieschutz**: Fällt eine Matte aus → gegenüberliegende Seite wird ebenfalls deaktiviert.
 
-**Load Shedding**: Bei hoher Strombelastung werden Matten kurzzeitig abgeschaltet — max. **30 Sek.** Unterbrechung pro Zyklus.
+**Load Shedding**: Bei hoher Strombelastung werden Matten kurzzeitig abgeschaltet — max. **30 sec** Unterbrechung pro Zyklus.
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|

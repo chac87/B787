@@ -60,7 +60,7 @@ Berechnet: Airspeed, Attitude, Heading, Position — für Displays, FMS, FBW, En
 ### IRU Alignment
 
 - Power-Up → Align Mode → EICAS Memo **IRU ALIGN MODE L+R**
-- Dauer: **7–10 min** (mittlere Breiten) · bis **17 min** (hohe Breiten)
+- Dauer: **7 – 10 min** (mittlere Breiten) · bis **17 min** (hohe Breiten)
 - Kein Bewegen des Flugzeugs bis Alignment abgeschlossen
 - GPS verfügbar → **keine manuelle Position erforderlich**; GPS nicht verfügbar → Position manuell eingeben (POS INIT)
 - Bei Flugunterbrechung: Automatic Realign Mode (Neuausrichtung bis Bewegung)
@@ -111,10 +111,10 @@ CDU active leg, Direct-to, DIVERT NOW, Nav Radio Autotuning, ND Map (center + ex
 - Autopilot engaged **oder** FD on + LOC/GS captured
 
 **ILS Tuning wieder freigegeben** wenn:
-- TO/GA gedrückt, **oder** AP disengaged + beide FDs off, **oder** APP mode deselected > 1500 ft RA
+- TO/GA gedrückt, **oder** AP disengaged + beide FDs off, **oder** APP mode deselected > 1.500 ft RA
 
 > [!caution] ILS Autotune — Inhibit nach Takeoff
-> ILS Autotune ist nach dem **ersten Takeoff 10 Minuten** inhibited (PFD-Überlastung vermeiden). Ein neu ausgeführter Approach im aktiven Flugplan überschreibt diesen Inhibit.
+> ILS Autotune ist nach dem **ersten Takeoff 10 min** inhibited (PFD-Überlastung vermeiden). Ein neu ausgeführter Approach im aktiven Flugplan überschreibt diesen Inhibit.
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
@@ -153,40 +153,11 @@ Zwei ATC-Transponder + TCAS — gesteuert über **ATP** (primär) oder **TCP** (
 ---
 
 ## NAT — North Atlantic Tracks
-
-### Grundregeln
-
-- **MNPS-Luftraum** (NAT HLA): FL285–FL420, 30°W–60°N/70°N
-- Navigation: **Dual long-range INS/IRS oder GPS** erforderlich
-- Mach Number Technique: Assigned Mach beibehalten — keine Beschleunigung ohne ATC-Freigabe
-- **RCL (Random Contingency Level):** Maximaler FL-Offset bei Ausweichen ohne Freigabe: **±60 ft** über/unter assigned FL (d. h. max 1000 ft-Step auf nächsten freien FL innerhalb ±60 NM und in einem der festgelegten Offsets)
-
-> [!info] FL-Strategie NAT
-> Falls ein Höhenwechsel ohne Freigabe nötig ist: nächsten freien FL mindestens **1.000 ft** über oder unter dem assigned FL wählen — nie auf halbem Wege.
-
-### Kommunikationsausfall über dem Atlantik
-
-Bei Kommunikationsausfall im NAT-Luftraum:
-
-<div class="checklist">
-
-<div class="cl-item"><strong>Flugplan</strong><span class="cl-dots"></span><strong>ALS EINGEREICHT FLIEGEN</strong></div>
-<div class="cl-sub">Assigned Track und cleared altitude beibehalten</div>
-
-<div class="cl-item"><strong>Geschwindigkeit</strong><span class="cl-dots"></span><strong>ASSIGNED MACH BEIBEHALTEN</strong></div>
-<div class="cl-sub">Keine einseitige Mach-Änderung ohne ATC-Kontakt</div>
-
-<div class="cl-item"><strong>Höhe</strong><span class="cl-dots"></span><strong>CLEARED ALTITUDE BEIBEHALTEN</strong></div>
-<div class="cl-sub">Keine Höhenänderung ohne ATC-Freigabe — Ausnahme: Notfall</div>
-
-</div>
-
 ### Visual Approach — US-Verfahren
 
 > [!info] Wake Turbulence Verantwortung (USA)
 > Bei einem **Visual Approach** in den USA ist **ATC für den Wake-Turbulence-Abstand verantwortlich**, solange das vorausfliegende Luftfahrzeug **nicht in Sicht** ist. Sobald der Pilot das vorausfliegende Flugzeug sieht und die Freigabe "Follow traffic" oder "Visual Approach" erhält, geht die Verantwortung auf den **Piloten** über.
 
----
 
 ## Weather Radar
 

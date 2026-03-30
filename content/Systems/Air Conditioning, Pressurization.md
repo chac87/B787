@@ -5,7 +5,7 @@
 ![[air con ovhd.png]]
 
 - **Kein Bleed Air** — Außenluft wird durch **4 elektrische CACs** (Cabin Air Compressors) angesaugt
-- Einziges System mit Bleed Air: **Engine Anti-Ice (EAI)** — Packs und Wing Anti-Ice (WAI) sind vollständig elektrisch
+- Einziges System mit Bleed Air ist **Engine Anti-Ice (EAI)** — Packs und Wing Anti-Ice (WAI) sind vollständig elektrisch
 - 2 CACs pro Pack · 1 CAC reicht für vollen Pack-Betrieb
 - 2 identische Pack Control Systems — bei Ausfall eines Systems automatischer Wechsel
 - **7 Temperaturzonen**: Flight Deck + 6 Kabinenzonen (A/B enthalten Sub-Zonen A1/B1, nicht im Synoptic sichtbar)
@@ -19,14 +19,9 @@
 - **APU als Stromquelle**: je 1 CAC pro Pack
 - **Kältebetrieb**: beide CACs pro Pack aktiv
 - **3-CAC-Betrieb**: automatisch aktiviert **2 min nach Engine Start** (beide Triebwerke)
-- Externe Konditionierungsluft: Packs + Lower Recirculation Fans vorher **OFF** schalten
+- External Air Conditioning: Packs + Lower Recirculation Fans vorher **OFF** schalten
 
-> [!caution] Packs und Lower Recirculation Fans müssen OFF sein, bevor externe Konditionierungsluft angeschlossen wird.
-
-**Engine Start:** Alle CACs während des Startvorgangs abgeschaltet · PACK L / PACK R inhibiert. Packs starten frühestens **2 min nach Einleitung des Engine Starts** neu.
-
-> [!info] PACK L/R kurz nach Engine Start (PCU Y201)
-> PACK-Meldungen können ca. 30 sek nach dem zweiten Triebwerk erscheinen und nach ≈20 sek verschwinden. Kein Fault. Erst wenn Meldung **> 1 min** bestehen bleibt → Fault.
+**Engine Start:** Alle CACs während des Startvorgangs abgeschaltet · PACK L / PACK R inhibited. Packs starten frühestens **2 min nach Einleitung des Engine Starts** neu.
 
 ### Pack Non-Normal / Standby Cooling
 
@@ -69,13 +64,13 @@
 
 ## Temperaturregelung
 
-- **CABIN TEMP Selector**: Masterzieltemperatur **18–29 °C**
-- Jede Kabinenzone: ± 3 °C Offset via Cabin Management System (innerhalb 18–29 °C)
-- **Flight Deck Temp Selector**: unabhängig, 18–29 °C
+- **CABIN TEMP Selector**: **18 – 29 °C**
+- Jede Kabinenzone: ± 3 °C Offset via Cabin Management System (innerhalb 18 – 29 °C)
+- **Flight Deck Temp Selector**: unabhängig, 18 – 29 °C
 - Kühlste Zone bestimmt Pack-Outlet-Temperatur · Trim Air erwärmt einzelne Zonen
-- Bei Ausfall des Temperaturselektors: Pack hält letzte eingestellte Temp oder **24 °C** (Durchschnitt)
+- Bei Ausfall des Temperature selectors: Pack hält letzte eingestellte Temp oder **24 °C** (Durchschnitt)
 
-**Loss of Trim Air (L oder R):** Alle Zonen werden auf Durchschnittszieltemperatur geregelt. FD-Temperatur bleibt 18–29 °C — kann aber unbequem werden. Workaround: CABIN TEMP Selector anpassen.
+**Loss of Trim Air (L oder R):** Alle Zonen werden auf Durchschnittszieltemperatur geregelt. FD-Temperatur bleibt 18 – 29 °C — kann aber unbequem werden. Workaround: CABIN TEMP Selector anpassen.
 
 ---
 
@@ -105,7 +100,7 @@
 
 ### Loss of Landing Altitude
 
-FMC-Landehöhe nicht verfügbar + MAN nicht gesetzt → EICAS **LANDING ALTITUDE** (Advisory) → System nimmt **2.000 ft** als Landehöhe an.
+FMC Landing Altitude nicht verfügbar + MAN nicht gesetzt → EICAS **LANDING ALTITUDE** (Advisory) → System nimmt **2.000 ft** als Landing Altitude an.
 
 ### Loss of Cabin Pressurization
 
@@ -118,18 +113,18 @@ Bei Druckabfall: Outflow Valves schließen → Druck erhalten. Ventile bleiben g
 
 Ab Erreichen des Limits: Outflow Valves öffnen vollständig für restlichen Flug.
 
-> [!warning] Outflow Valves während des Abstiegs nicht manuell schließen.
+> [!warning] Outflow Valves während descent nicht manuell schließen.
 
-CPCS verhindert Kabinenhöhe > **15.000 ft** bei jedem wahrscheinlichen Systemfehler.
+CPCS verhindert Cabin Altitude > **15.000 ft** bei jedem wahrscheinlichen Systemfehler.
 
 ### Manueller Betrieb
 
 Aktivierung: **OUTFLOW VALVE Switches → MAN** + OUTFLOW VALVE MANUAL Switch halten (OPEN / CLOSE).
 
 - Ventilposition auf EICAS sichtbar
-- EICAS nicht verfügbar: Switch **30 Sekunden** halten → Ventil fährt von vollständig offen/geschlossen in gewünschte Position
+- EICAS nicht verfügbar: Switch **30 sec** halten → Ventil fährt von vollständig offen/geschlossen in gewünschte Position
 
-**LANDING ALTITUDE Selector** (MAN): Selector herausziehen → FMC-Landehöhe deaktiviert · Pressurization auf EICAS. Bereich: **−2.000 bis +14.000 ft**.
+**LANDING ALTITUDE Selector** (MAN): Selector herausziehen → FMC Landing Altitude deaktiviert · Pressurization auf EICAS. Bereich: **−2.000 bis +14.000 ft**.
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|

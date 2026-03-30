@@ -2,14 +2,14 @@
 
 ## Übersicht
 
-| Tür | Anzahl | Betrieb |
-|:---|:---:|:---|
-| Passenger Entry Doors | 8 (1L–4R) | Manuell / Automatik (Slide armed) |
-| Flight Deck Door | 1 | Elektronisch gesichert + Deadbolt |
-| Flight Deck Overhead Door | 1 | Nur am Boden (depressurized) |
-| Cargo Door FWD / AFT | 2 | Elektrisch (extern) oder manuell |
-| Bulk Cargo Door | 1 | Manuell |
-| Equipment / E/E Access Doors | 3 | Manuell (kein Schloss) |
+| Tür                          |   Anzahl    | Betrieb                           |
+| :--------------------------- | :---------: | :-------------------------------- |
+| Passenger Entry Doors        | 8 (1L – 4R) | Manuell / Automatik (Slide armed) |
+| Flight Deck Door             |      1      | Elektronisch gesichert + Deadbolt |
+| Flight Deck Overhead Door    |      1      | Nur am Boden (depressurized)      |
+| Cargo Door FWD / AFT         |      2      | Elektrisch (extern) oder manuell  |
+| Bulk Cargo Door              |      1      | Manuell                           |
+| Equipment / E/E Access Doors |      3      | Manuell (kein Schloss)            |
 
 > [!caution] Windlimits
 > Entry- und Cargo-Türen: max. **40 kts** Betrieb · max. **65 kts** offen halten.
