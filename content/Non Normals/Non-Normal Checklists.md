@@ -5,6 +5,7 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-filter-bar">
   <button class="nn-filter-btn active" data-mode="alpha">Alphabetisch</button>
+  <button class="nn-filter-btn" data-mode="eicas">EICAS Messages</button>
   <button class="nn-filter-btn" data-mode="qa">Quick Action</button>
   <button class="nn-filter-btn" data-mode="unann">Unannunciated</button>
   <button class="nn-filter-btn" data-mode="cat">Kategorie</button>

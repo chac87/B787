@@ -174,6 +174,7 @@ function setupPage() {
           let visible = 0
           items.forEach(item => {
             const show = currentMode === "alpha" ? true
+              : currentMode === "eicas" ? item.dataset.unann === "false"
               : currentMode === "qa" ? item.dataset.qa === "true"
               : item.dataset.unann === "true"
             item.classList.toggle("hidden", !show)
