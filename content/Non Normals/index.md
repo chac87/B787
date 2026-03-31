@@ -6,7 +6,6 @@
 ## [[Memory Items]]
 ## [[Non Normals/Non-Normal Checklists|Non-Normal Checklists]]
 ## [[Non Normals/Non-Normal Maneuvers/index|Non-Normal Maneuvers]]
-## [[Non Normals/Overweight Landing|Overweight Landing]]
 ## [[Electrical Non-Normals]]
 ## [[Air, Pressurization Non-Normals]]
 ## [[Flight Control Non-Normals]]
