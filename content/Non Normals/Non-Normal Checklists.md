@@ -68,11 +68,11 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="B">
 <div class="nn-section-header">B</div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>[] BARO SET DISAGREE</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>BARO SET DISAGREE</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="false" data-cat="backcover"><span>Bomb On Board</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] BOTTLE 1, 2 DISCH ENG</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] BOTTLE DISCH APU</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] BOTTLE DISCH CARGO</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>BOTTLE 1, 2 DISCH ENG</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>BOTTLE DISCH APU</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>BOTTLE DISCH CARGO</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span>[] BRAKE TEMP</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span>[] BRAKES</span></div>
 </div>
@@ -84,29 +84,29 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="airsystems"><span>Cabin Temp Cold</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="airsystems"><span>Cabin Temp Hot</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>[] CABIN TEMPERATURE</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>[] CARGO A/C FWD</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>[] CARGO HEAT BULK</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>[] CARGO HEAT FWD</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>CARGO A/C FWD</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>CARGO HEAT BULK</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>CARGO HEAT FWD</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CHKL INCOMPLETE NORM</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CHKL NON-NORMAL</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG DOORS</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG FLAPS</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG GEAR</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG PARKING BRAKE</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG RUDDER</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG SPOILERS</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG STABILIZER</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>CONFIG DOORS</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>CONFIG FLAPS</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>CONFIG GEAR</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>CONFIG PARKING BRAKE</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>CONFIG RUDDER</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>CONFIG SPOILERS</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>CONFIG STABILIZER</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] CONFIG WARNING SYS</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>[] CREW OXYGEN LOW</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>CREW OXYGEN LOW</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] CRUISE FLAPS SYS</span></div>
 </div>
 
 <div class="nn-section" data-section="D">
 <div class="nn-section-header">D</div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="comms"><span>[] DATALINK LOST</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="comms"><span>[] DATALINK SYS</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="comms"><span>DATALINK LOST</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="comms"><span>DATALINK SYS</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] DET FIRE APU</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] DET FIRE CARGO AFT, FWD</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>DET FIRE CARGO AFT, FWD</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] DET FIRE ENG L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="misc"><span>Ditching</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>[] DOOR AFT, FWD CARGO</span></div>
@@ -243,9 +243,9 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] GND PROX SYS</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="navigation"><span>GPS Data Unreliable</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>[] GPS</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] GPWS FLAP OVRD</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] GPWS GEAR OVRD</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] GPWS TERR OVRD</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>GPWS FLAP OVRD</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>GPWS GEAR OVRD</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>GPWS TERR OVRD</span></div>
 </div>
 
 <div class="nn-section" data-section="H">
@@ -425,7 +425,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>WEATHER RADAR SYS</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="general"><span>Window Damage Fwd L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="general"><span>Window Damage Side L, R</span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span>[] WINDOW HEAT</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span>WINDOW HEAT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span>[] WINDOW HEAT L, R FWD</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span>[] WINDOW HEAT L, R SIDE</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] WINDSHEAR SYS</span></div>

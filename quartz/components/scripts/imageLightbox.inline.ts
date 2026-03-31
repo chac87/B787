@@ -162,7 +162,11 @@ function setupPage() {
             header.textContent = catNames[catKey]
             section.appendChild(header)
             items.sort((a, b) => (a.querySelector("span")?.textContent ?? "").localeCompare(b.querySelector("span")?.textContent ?? ""))
-            items.forEach(item => section.appendChild(item.cloneNode(true)))
+            items.forEach(item => {
+              const clone = item.cloneNode(true) as HTMLElement
+              clone.classList.remove("hidden")
+              section.appendChild(clone)
+            })
             catContainer.appendChild(section)
           })
         }
