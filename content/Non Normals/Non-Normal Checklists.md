@@ -58,6 +58,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] APU LIMIT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] APU SHUTDOWN</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>AURAL CANCELED</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] AUTO SPEEDBRAKE</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span>AUTOBRAKE</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span>AUTOPILOT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span>AUTOPILOT DISC</span></div>
