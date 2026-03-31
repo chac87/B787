@@ -118,4 +118,99 @@ function setupPage() {
   })
 }
 
+  // ── Non-Normal Checklist Filter ──────────────────────────────────────────
+  const filterBar = document.querySelector<HTMLElement>(".nn-filter-bar")
+  if (filterBar) {
+    const catBar = document.getElementById("nn-cat-bar")
+    const catContainer = document.getElementById("nn-cat-sections")
+
+    const catNames: Record<string, string> = {
+      fire: "Fire / Smoke", engine: "Engine / APU", electrical: "Electrical",
+      fuel: "Fuel", hydraulic: "Hydraulic", flightcontrols: "Flight Controls",
+      pressurization: "Press / Air / O₂", antiice: "Anti-Ice / Heat",
+      gear: "Gear / Brakes", navigation: "Nav / Comms / Warning",
+    }
+    const catOrder = ["fire","engine","electrical","fuel","hydraulic","flightcontrols","pressurization","antiice","gear","navigation"]
+
+    let currentMode = "alpha"
+    let currentCat: string | null = null
+
+    const applyFilter = () => {
+      const alphaSections = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-section[data-section]"))
+
+      // Update active button
+      document.querySelectorAll<HTMLElement>(".nn-filter-btn").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.mode === currentMode)
+      })
+
+      if (currentMode === "cat") {
+        catBar?.classList.add("visible")
+        alphaSections.forEach(s => { s.style.display = "none" })
+        if (catContainer) {
+          catContainer.style.display = ""
+          catContainer.innerHTML = ""
+          const allItems = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-item"))
+          catOrder.forEach(catKey => {
+            if (currentCat && currentCat !== catKey) return
+            const items = allItems.filter(i => i.dataset.cat === catKey)
+            if (!items.length) return
+            const section = document.createElement("div")
+            section.className = "nn-section"
+            const header = document.createElement("div")
+            header.className = "nn-section-header"
+            header.textContent = catNames[catKey]
+            section.appendChild(header)
+            items.sort((a, b) => (a.querySelector("span")?.textContent ?? "").localeCompare(b.querySelector("span")?.textContent ?? ""))
+            items.forEach(item => section.appendChild(item.cloneNode(true)))
+            catContainer.appendChild(section)
+          })
+        }
+      } else {
+        catBar?.classList.remove("visible")
+        if (catContainer) { catContainer.style.display = "none"; catContainer.innerHTML = "" }
+        alphaSections.forEach(section => {
+          const items = Array.from(section.querySelectorAll<HTMLElement>(".nn-item"))
+          let visible = 0
+          items.forEach(item => {
+            const show = currentMode === "alpha" ? true
+              : currentMode === "qa" ? item.dataset.qa === "true"
+              : item.dataset.unann === "true"
+            item.classList.toggle("hidden", !show)
+            if (show) visible++
+          })
+          section.style.display = visible === 0 ? "none" : ""
+        })
+      }
+    }
+
+    const onFilterClick = (e: MouseEvent) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>(".nn-filter-btn")
+      if (!btn) return
+      currentMode = btn.dataset.mode ?? "alpha"
+      if (currentMode !== "cat") currentCat = null
+      applyFilter()
+    }
+
+    const onCatClick = (e: MouseEvent) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>(".nn-cat-btn")
+      if (!btn) return
+      const key = btn.dataset.cat ?? ""
+      currentCat = currentCat === key ? null : key
+      document.querySelectorAll<HTMLElement>(".nn-cat-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.cat === currentCat)
+      })
+      applyFilter()
+    }
+
+    filterBar.addEventListener("click", onFilterClick)
+    window.addCleanup(() => filterBar.removeEventListener("click", onFilterClick))
+    if (catBar) {
+      catBar.addEventListener("click", onCatClick)
+      window.addCleanup(() => catBar.removeEventListener("click", onCatClick))
+    }
+
+    applyFilter()
+  }
+}
+
 document.addEventListener("nav", setupPage)
