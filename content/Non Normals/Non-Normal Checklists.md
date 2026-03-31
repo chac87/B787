@@ -26,11 +26,11 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="A">
 <div class="nn-section-header">A</div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>Aborted Engine Start L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>Aborted Engine Start L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>ADS-B OUT</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>AHRU ATT MODE L, R</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="navigation"><span>AIRSPEED LOW</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="navigation"><span>AIRSPEED UNRELIABLE</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="navigation"><span>AIRSPEED LOW</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="navigation"><span>AIRSPEED UNRELIABLE</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>Altimeter Error</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>ALTITUDE ALERT</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>ALTITUDE CALLOUTS</span></div>
@@ -60,7 +60,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-section" data-section="B">
 <div class="nn-section-header">B</div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>BARO SET DISAGREE</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>Bomb On Board</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>Bomb On Board</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>BOTTLE 1, 2 DISCH ENG</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>BOTTLE DISCH APU</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>BOTTLE DISCH CARGO</span></div>
@@ -70,8 +70,8 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="C">
 <div class="nn-section-header">C</div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="pressurization"><span>CABIN ALTITUDE</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="pressurization"><span>CABIN ALTITUDE AUTO</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="pressurization"><span>CABIN ALTITUDE</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="pressurization"><span>CABIN ALTITUDE AUTO</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="pressurization"><span>Cabin Temp Cold</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="pressurization"><span>Cabin Temp Hot</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="pressurization"><span>CABIN TEMPERATURE</span></div>
@@ -96,18 +96,18 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-section-header">D</div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>DATALINK LOST</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>DATALINK SYS</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>DET FIRE APU</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>DET FIRE APU</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>DET FIRE CARGO AFT, FWD</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>DET FIRE ENG L, R</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="gear"><span>Ditching</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>DET FIRE ENG L, R</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="gear"><span>Ditching</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>DOOR AFT, FWD CARGO</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>DOOR AFT, FWD E/E ACCESS</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>DOOR BULK CARGO</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>DOOR ENTRY 1–4L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>DOOR FD OVHD</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>DOORS</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>Dual Eng Fail/Stall</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>Dual Eng Fail/Stall (alternate)</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>Dual Eng Fail/Stall</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>Dual Eng Fail/Stall (alternate)</span></div>
 </div>
 
 <div class="nn-section" data-section="E">
@@ -131,7 +131,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="antiice"><span>ENG CORE ANTI-ICE L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="engine"><span>ENG EEC MODE L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="engine"><span>ENG FAIL L, R</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>ENG FAIL L+R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="engine"><span>ENG FAIL L+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fuel"><span>ENG FUEL FILTER L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="fuel"><span>ENG FUEL FILTER L+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="fuel"><span>ENG FUEL NOZZLE L, R</span></div>
@@ -164,8 +164,8 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="pressurization"><span>EQUIP COOLING FWD</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="pressurization"><span>EQUIP OVBD VLV AFT</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="pressurization"><span>EQUIP OVRD VLV AFT, FWD</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>EVAC COMMAND</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>Evacuation</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>EVAC COMMAND</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>Evacuation</span></div>
 </div>
 
 <div class="nn-section" data-section="F">
@@ -173,13 +173,13 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>FD DOOR AUTO UNLOCK</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>FD DOOR LOCK FAIL</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>FD DOOR OPEN</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>FIRE APU</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>FIRE APU</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>FIRE CARGO AFT</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>FIRE CARGO FWD</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>FIRE ENG L, R</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>Fire Eng on Ground L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>FIRE ENG L, R</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>Fire Eng on Ground L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="fire"><span>Fire Eng Tailpipe L, R</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>FIRE WHEEL WELL</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>FIRE WHEEL WELL</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="flightcontrols"><span>Flap Lever Inoperative</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="flightcontrols"><span>Flaps + Slats Fail</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>FLAPS DRIVE</span></div>
@@ -187,7 +187,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>FLAP/SLAT CONTROL</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>FLIGHT CONTROL MODE</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>FLIGHT CONTROLS</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="flightcontrols"><span>FLT CONTROLS LOCKED</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="flightcontrols"><span>FLT CONTROLS LOCKED</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>FMC HOLD AIRSPACE</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>FMC INTERCEPT HDG</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>FMC MESSAGE</span></div>
@@ -211,7 +211,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="fuel"><span>Fuel Leak</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="fuel"><span>FUEL LOW CENTER</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fuel"><span>FUEL PRESS ENG L, R</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="fuel"><span>FUEL PRESS ENG L+R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="fuel"><span>FUEL PRESS ENG L+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fuel"><span>FUEL PUMP CENTER L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fuel"><span>FUEL PUMP CTR L+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fuel"><span>FUEL PUMP L AFT, FWD</span></div>
@@ -279,7 +279,7 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="J">
 <div class="nn-section-header">J</div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="flightcontrols"><span>Jammed Flight Controls</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="flightcontrols"><span>Jammed Flight Controls</span></div>
 </div>
 
 <div class="nn-section" data-section="L">
@@ -321,7 +321,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="pressurization"><span>OUTFLOW VALVE AFT, FWD</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="engine"><span>OVERHEAT ENG L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="gear"><span>OVERHEAT WHEEL WELL</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="navigation"><span>OVERSPEED</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="navigation"><span>OVERSPEED</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="flightcontrols"><span>Overweight Landing</span></div>
 </div>
 
@@ -331,7 +331,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="pressurization"><span>PACK L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="pressurization"><span>PACK L+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="pressurization"><span>PACK MODE L, R</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="pressurization"><span>PASS OXYGEN ON</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="pressurization"><span>PASS OXYGEN ON</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>PFD UNRELIABLE CAPT, F/O</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>PILOT RESPONSE</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>PITCH DOWN AUTHORITY</span></div>
@@ -382,7 +382,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>STABILIZER</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>STABILIZER L2</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>STABILIZER R2</span></div>
-<div class="nn-item" data-qa="true" data-unann="false" data-cat="flightcontrols"><span>STALL PROTECTION</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="false" data-cat="flightcontrols"><span>STALL PROTECTION</span></div>
 </div>
 
 <div class="nn-section" data-section="T">
@@ -431,6 +431,26 @@ tags: [non-normal, reference, eicas, checklists]
 (function () {
   var currentMode = 'alpha';
   var currentCat = null;
+
+  function decorateItems() {
+    document.querySelectorAll('#nn-list .nn-item').forEach(function (item) {
+      if (item.dataset.nnDecorated) return;
+      item.dataset.nnDecorated = '1';
+      var nameSpan = item.querySelector('span');
+      if (!nameSpan) return;
+      // Prepend [] for EICAS-triggered (annunciated) items
+      if (item.dataset.unann === 'false') {
+        nameSpan.textContent = '[] ' + nameSpan.textContent;
+      }
+      // Append QA badge
+      if (item.dataset.qa === 'true') {
+        var badge = document.createElement('span');
+        badge.className = 'nn-qa-badge';
+        badge.textContent = 'QA';
+        item.appendChild(badge);
+      }
+    });
+  }
 
   var catNames = {
     fire: 'Fire / Smoke',
@@ -511,6 +531,7 @@ tags: [non-normal, reference, eicas, checklists]
     filterBar.dataset.nnInit = '1';
     currentMode = 'alpha';
     currentCat = null;
+    decorateItems();
 
     filterBar.addEventListener('click', function (e) {
       var btn = e.target.closest('.nn-filter-btn');
