@@ -1178,3 +1178,67 @@ body[saved-theme="dark"] {
     color: #5291ED;
   }
 }
+
+// ── NNC (Non-Normal Checklist) Procedure Format ──────────────────────────────
+// Reusable for all NNC checklists (Overweight Landing, Ditching, etc.)
+
+.nnc-condition {
+  background: var(--lightgray);
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 0 0 1.2em;
+  font-style: italic;
+  font-size: 0.88em;
+}
+
+.nnc-step {
+  font-weight: 700;
+  font-size: 0.95em;
+  margin: 1.2em 0 0.3em;
+}
+
+.nnc-decision {
+  position: relative;
+  padding-left: 1.5em;
+  margin: 0.25em 0;
+  font-size: 0.9em;
+
+  &::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    font-size: 0.6em;
+    top: 0.4em;
+  }
+}
+
+// Container for checklist items nested under a decision branch
+.nnc-cl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  margin: 0.3em 0 0 1.5em;
+}
+
+.nnc-note {
+  font-size: 0.85em;
+  font-style: italic;
+  opacity: 0.78;
+  margin: 0.2em 0 0.2em 1.5em;
+  line-height: 1.45;
+}
+
+.nnc-goto {
+  font-size: 0.88em;
+  font-weight: 600;
+  color: var(--secondary);
+  margin: 0.3em 0 0.8em 1.5em;
+}
+
+.nnc-complete {
+  font-weight: 700;
+  font-size: 0.95em;
+  margin-top: 1.4em;
+  padding-top: 0.6em;
+  border-top: 1.5px solid var(--darkgray);
+}
