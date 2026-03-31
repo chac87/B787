@@ -116,7 +116,6 @@ function setupPage() {
     document.removeEventListener("touchstart", onTouchStart)
     document.removeEventListener("touchend", onTouchEnd)
   })
-}
 
   // ── Non-Normal Checklist Filter ──────────────────────────────────────────
   const filterBar = document.querySelector<HTMLElement>(".nn-filter-bar")
@@ -214,3 +213,4 @@ function setupPage() {
 }
 
 document.addEventListener("nav", setupPage)
+
