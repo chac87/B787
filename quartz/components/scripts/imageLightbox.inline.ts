@@ -124,13 +124,14 @@ function setupPage() {
     const catContainer = document.getElementById("nn-cat-sections")
 
     const catNames: Record<string, string> = {
-      general: "Airplane General", airsystems: "Air Systems", antiice: "Anti-Ice / Rain",
-      autoflight: "Autoflight", comms: "Communications", electrical: "Electrical",
+      misc: "Misc", general: "General", airsystems: "Air Systems", antiice: "Anti-Ice / Rain",
+      autoflight: "Automatic Flight", comms: "Communications", electrical: "Electrical",
       engine: "Engines / APU", fire: "Fire Protection", flightcontrols: "Flight Controls",
-      navigation: "Flt Mgmt / Navigation", fuel: "Fuel", hydraulic: "Hydraulics",
-      gear: "Landing Gear", warnings: "Warning Systems",
+      flightinstruments: "Flight Instruments", navigation: "Flight Mgmt / Nav",
+      fuel: "Fuel", hydraulic: "Hydraulics", gear: "Landing Gear",
+      warnings: "Warning Systems", backcover: "Back Cover",
     }
-    const catOrder = ["general","airsystems","antiice","autoflight","comms","electrical","engine","fire","flightcontrols","navigation","fuel","hydraulic","gear","warnings"]
+    const catOrder = ["misc","general","airsystems","antiice","autoflight","comms","electrical","engine","fire","flightcontrols","flightinstruments","navigation","fuel","hydraulic","gear","warnings","backcover"]
 
     let currentMode = "alpha"
     let currentCat: string | null = null

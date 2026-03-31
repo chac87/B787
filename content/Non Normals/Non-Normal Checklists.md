@@ -10,20 +10,23 @@ tags: [non-normal, reference, eicas, checklists]
   <button class="nn-filter-btn" data-mode="cat">Kategorie</button>
 </div>
 <div class="nn-cat-bar" id="nn-cat-bar">
+  <button class="nn-cat-btn" data-cat="misc">Misc</button>
   <button class="nn-cat-btn" data-cat="general">General</button>
   <button class="nn-cat-btn" data-cat="airsystems">Air Systems</button>
-  <button class="nn-cat-btn" data-cat="antiice">Anti-Ice</button>
-  <button class="nn-cat-btn" data-cat="autoflight">Autoflight</button>
-  <button class="nn-cat-btn" data-cat="comms">Comms</button>
+  <button class="nn-cat-btn" data-cat="antiice">Anti-Ice / Rain</button>
+  <button class="nn-cat-btn" data-cat="autoflight">Automatic Flight</button>
+  <button class="nn-cat-btn" data-cat="comms">Communications</button>
   <button class="nn-cat-btn" data-cat="electrical">Electrical</button>
   <button class="nn-cat-btn" data-cat="engine">Engines / APU</button>
   <button class="nn-cat-btn" data-cat="fire">Fire Protection</button>
-  <button class="nn-cat-btn" data-cat="flightcontrols">Flight Ctrl</button>
-  <button class="nn-cat-btn" data-cat="navigation">Flt Mgmt / Nav</button>
+  <button class="nn-cat-btn" data-cat="flightcontrols">Flight Controls</button>
+  <button class="nn-cat-btn" data-cat="flightinstruments">Flight Instruments</button>
+  <button class="nn-cat-btn" data-cat="navigation">Flight Mgmt / Nav</button>
   <button class="nn-cat-btn" data-cat="fuel">Fuel</button>
   <button class="nn-cat-btn" data-cat="hydraulic">Hydraulics</button>
   <button class="nn-cat-btn" data-cat="gear">Landing Gear</button>
-  <button class="nn-cat-btn" data-cat="warnings">Warning Sys</button>
+  <button class="nn-cat-btn" data-cat="warnings">Warning Systems</button>
+  <button class="nn-cat-btn" data-cat="backcover">Back Cover</button>
 </div>
 
 <div id="nn-list">
@@ -35,10 +38,10 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] AHRU ATT MODE L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="warnings"><span>AIRSPEED LOW</span></div>
 <div class="nn-item" data-qa="true" data-unann="false" data-cat="warnings"><span>[] AIRSPEED UNRELIABLE</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>Altimeter Error</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="flightinstruments"><span>Altimeter Error</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="warnings"><span>[] ALTITUDE ALERT</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="warnings"><span>[] ALTITUDE CALLOUTS</span></div>
-<div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] ALTN ATTITUDE CAPT, FO</span></div>
+<div class="nn-item" data-qa="false" data-unann="false" data-cat="flightinstruments"><span>[] ALTN ATTITUDE CAPT, FO</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="antiice"><span>[] ANTI-ICE DET WING</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="antiice"><span>[] ANTI-ICE ENG L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="antiice"><span>[] ANTI-ICE LEAK ENG L, R</span></div>
@@ -64,7 +67,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-section" data-section="B">
 <div class="nn-section-header">B</div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] BARO SET DISAGREE</span></div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="general"><span>Bomb On Board</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="backcover"><span>Bomb On Board</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] BOTTLE 1, 2 DISCH ENG</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] BOTTLE DISCH APU</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] BOTTLE DISCH CARGO</span></div>
@@ -103,7 +106,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] DET FIRE APU</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] DET FIRE CARGO AFT, FWD</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] DET FIRE ENG L, R</span></div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="general"><span>Ditching</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="backcover"><span>Ditching</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="general"><span>[] DOOR AFT, FWD CARGO</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="general"><span>[] DOOR AFT, FWD E/E ACCESS</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="general"><span>[] DOOR BULK CARGO</span></div>
@@ -169,7 +172,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="airsystems"><span>[] EQUIP OVBD VLV AFT</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="airsystems"><span>EQUIP OVRD VLV AFT, FWD</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="general"><span>EVAC COMMAND</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="general"><span>Evacuation</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="backcover"><span>Evacuation</span><span class="nn-qa-badge">QA</span></div>
 </div>
 
 <div class="nn-section" data-section="F">
@@ -181,7 +184,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] FIRE CARGO AFT</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] FIRE CARGO FWD</span></div>
 <div class="nn-item" data-qa="true" data-unann="false" data-cat="fire"><span>[] FIRE ENG L, R</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="general"><span>Fire Eng on Ground L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="backcover"><span>Fire Eng on Ground L, R</span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="true" data-unann="true" data-cat="fire"><span>Fire Eng Tailpipe L, R</span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] FIRE WHEEL WELL</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="flightcontrols"><span>Flap Lever Inoperative</span></div>
@@ -250,8 +253,8 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="antiice"><span>[] HEAT PITOT L+C+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="antiice"><span>[] HEAT PITOT R</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="comms"><span>HF DATALINK</span></div>
-<div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] HUD SNGL OPERATION</span></div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>HUD SYS CAPT, F/O</span></div>
+<div class="nn-item" data-qa="false" data-unann="false" data-cat="flightinstruments"><span>[] HUD SNGL OPERATION</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="flightinstruments"><span>HUD SYS CAPT, F/O</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="hydraulic"><span>[] HYD OVERHEAT C1</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="hydraulic"><span>[] HYD OVERHEAT C2</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="hydraulic"><span>[] HYD OVERHEAT DEM L, R</span></div>
@@ -278,7 +281,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fuel"><span>[] INSUFFICIENT FUEL</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>IRU ATT MODE L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] IRU/AHRU MOTION</span></div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>ISFD Use</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="flightinstruments"><span>ISFD Use</span></div>
 </div>
 
 <div class="nn-section" data-section="J">
@@ -293,7 +296,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="airsystems"><span>[] LIQUID COOLING L</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="airsystems"><span>[] LIQUID COOLING R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] LNAV BANK ANGLE LIM</span></div>
-<div class="nn-item" data-qa="true" data-unann="true" data-cat="navigation"><span>Loss of All Displays</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-unann="true" data-cat="flightinstruments"><span>Loss of All Displays</span><span class="nn-qa-badge">QA</span></div>
 </div>
 
 <div class="nn-section" data-section="M">
@@ -336,7 +339,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="airsystems"><span>[] PACK L+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="airsystems"><span>[] PACK MODE L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="general"><span>PASS OXYGEN ON</span></div>
-<div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] PFD UNRELIABLE CAPT, F/O</span></div>
+<div class="nn-item" data-qa="false" data-unann="false" data-cat="flightinstruments"><span>[] PFD UNRELIABLE CAPT, F/O</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="warnings"><span>PILOT RESPONSE</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>[] PITCH DOWN AUTHORITY</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>[] PITCH UP AUTHORITY</span></div>
@@ -345,8 +348,8 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="R">
 <div class="nn-section-header">R</div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>Radio Alt Unreliable</span></div>
-<div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] RADIO ALTIMETER L+R</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="flightinstruments"><span>Radio Alt Unreliable</span></div>
+<div class="nn-item" data-qa="false" data-unann="false" data-cat="flightinstruments"><span>[] RADIO ALTIMETER L+R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="comms"><span>[] RADIO TRANSMIT CAPT, F/O, OBS</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="hydraulic"><span>RAT UNLOCKED</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="airsystems"><span>RECIRC FAN LWR, UPR OFF</span></div>
@@ -363,8 +366,8 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="comms"><span>SATCOM DATALINK</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="comms"><span>SATVOICE LOST</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>SGL SOURCE APPROACH</span></div>
-<div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] SGL SOURCE ATTITUDE</span></div>
-<div class="nn-item" data-qa="false" data-unann="false" data-cat="navigation"><span>[] SGL SOURCE RAD ALT</span></div>
+<div class="nn-item" data-qa="false" data-unann="false" data-cat="flightinstruments"><span>[] SGL SOURCE ATTITUDE</span></div>
+<div class="nn-item" data-qa="false" data-unann="false" data-cat="flightinstruments"><span>[] SGL SOURCE RAD ALT</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>SINGLE FMC</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="navigation"><span>SINGLE SOURCE F/D</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="flightcontrols"><span>[] SLATS DRIVE</span></div>
