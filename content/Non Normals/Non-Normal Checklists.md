@@ -106,7 +106,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] DET FIRE APU</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] DET FIRE CARGO AFT, FWD</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] DET FIRE ENG L, R</span></div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="backcover"><span>Ditching</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="misc"><span>Ditching</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="general"><span>[] DOOR AFT, FWD CARGO</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="general"><span>[] DOOR AFT, FWD E/E ACCESS</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="general"><span>[] DOOR BULK CARGO</span></div>
@@ -329,7 +329,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="engine"><span>[] OVERHEAT ENG L, R</span></div>
 <div class="nn-item" data-qa="false" data-unann="false" data-cat="fire"><span>[] OVERHEAT WHEEL WELL</span></div>
 <div class="nn-item" data-qa="false" data-unann="true" data-cat="warnings"><span>OVERSPEED</span></div>
-<div class="nn-item" data-qa="false" data-unann="true" data-cat="flightcontrols"><span>Overweight Landing</span></div>
+<div class="nn-item" data-qa="false" data-unann="true" data-cat="misc"><span>Overweight Landing</span></div>
 </div>
 
 <div class="nn-section" data-section="P">
