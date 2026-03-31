@@ -1242,3 +1242,55 @@ body[saved-theme="dark"] {
   padding-top: 0.6em;
   border-top: 1.5px solid var(--darkgray);
 }
+
+// Numbered checklist item (step number + dot-leader + action)
+.nnc-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 0.9em;
+  margin: 0.2em 0;
+
+  .nnc-num {
+    flex-shrink: 0;
+    min-width: 1.4em;
+    font-weight: 700;
+  }
+
+  strong:last-child {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cl-dots {
+    flex: 1;
+    border-bottom: 1.5px dotted var(--gray);
+    opacity: 0.45;
+    margin-bottom: 0.22em;
+    min-width: 0.5em;
+    flex-shrink: 2;
+  }
+}
+
+// Numbered plain-text step (no dot-leader, no action value)
+.nnc-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 0.9em;
+  margin: 0.2em 0;
+
+  .nnc-num {
+    flex-shrink: 0;
+    min-width: 1.4em;
+    font-weight: 700;
+  }
+}
+
+// Dashed separator line (memory items above / reference items below)
+.nnc-separator {
+  border: none;
+  border-top: 2.5px dashed var(--darkgray);
+  margin: 0.8em 0;
+  opacity: 0.55;
+}

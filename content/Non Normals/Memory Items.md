@@ -5,11 +5,9 @@
 - When all memory items are complete, the non-normal checklist has to be read.
 
 > [!warning]- Aborted Engine Start L, R
-> > [!proc] Condition
-> > Autostart did not start the engine
-> 
-> **PF** FUEL CONTROL switch...Confirm...CUTOFF  
-> START SELECTOR...NORM  
+> *Condition: On the ground, an aborted engine start is needed.*
+>
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><strong>CUTOFF</strong></div>
 
 > [!warning]- AIRSPEED UNRELIABLE
 > > [!proc] Condition

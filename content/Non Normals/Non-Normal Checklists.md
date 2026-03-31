@@ -34,7 +34,7 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="A">
 <div class="nn-section-header">A</div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span>Aborted Engine Start L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span><a href="/Non-Normals/Aborted-Engine-Start-L,-R">Aborted Engine Start L, R</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>[] ADS-B OUT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>[] AHRU ATT MODE L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>AIRSPEED LOW</span></div>
