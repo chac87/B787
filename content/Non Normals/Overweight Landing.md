@@ -1,11 +1,9 @@
 ---
-title: Abnormal/Emergency Procedures
+title: Overweight Landing
 tags: [non-normal]
 ---
 
-# Abnormal/Emergency Procedures
-
-## Overweight Landing
+# Overweight Landing
 
 > [!info]- Overweight Landing
 > Overweight landings may be safely accomplished using normal landing procedures and techniques. No adverse handling characteristics.
