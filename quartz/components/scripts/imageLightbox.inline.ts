@@ -173,9 +173,8 @@ function setupPage() {
           const items = Array.from(section.querySelectorAll<HTMLElement>(".nn-item"))
           let visible = 0
           items.forEach(item => {
-            const spanText = item.querySelector("span")?.textContent ?? ""
             const show = currentMode === "alpha" ? true
-              : currentMode === "eicas" ? spanText.startsWith("[] ")
+              : currentMode === "eicas" ? item.dataset.eicas === "true"
               : currentMode === "qa" ? item.dataset.qa === "true"
               : item.dataset.unann === "true"
             item.classList.toggle("hidden", !show)
