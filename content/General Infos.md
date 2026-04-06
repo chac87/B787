@@ -16,9 +16,6 @@
 > [!info]- Antennas
 > ![[antennas.webp]]
 
-> [!info]- EICAS / Procedures
-> <div class="cl-item"><strong>[] CHKL INCOMPLETE NORM</strong><span class="cl-dots"></span><span>Eine oder mehrere Schritte der Normal Checklist wurden noch nicht abgehakt — kein Non-Normal</span></div>
-> <div class="cl-item"><strong>Descent Briefing Timing</strong><span class="cl-dots"></span><span>Vor Erreichen der Reiseflughöhe beginnen · spätestens abgeschlossen bei 10.000 ft</span></div>
 
 > [!info]- ICAO Wake Turbulence
 > | Voraus | App Radar | App Non-Radar | T/O | T/O Inter |
