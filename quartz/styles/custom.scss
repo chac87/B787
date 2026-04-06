@@ -1333,6 +1333,45 @@ body[saved-theme="dark"] {
   text-align: right;
 }
 
+// Deferred items section divider
+.nnc-deferred-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin: 1.6em 0 1em;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gray);
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--gray);
+    opacity: 0.4;
+  }
+}
+
+// Deferred sub-checklist title
+.nnc-deferred-title {
+  font-weight: 700;
+  font-size: 0.95em;
+  margin: 1em 0 0.4em;
+}
+
+// Role badge (C = Captain, F/O = First Officer)
+.nnc-role {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--gray);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 0.5em;
+  opacity: 0.7;
+}
+
 // Dashed separator line (memory items above / reference items below)
 .nnc-separator {
   border: none;

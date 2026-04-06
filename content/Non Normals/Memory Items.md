@@ -68,9 +68,7 @@
 > > Fire is detected in the engine
 
 > [!warning]- STABILIZER
-> > [!proc] Condition
-> > One or more of these occur:
->> - Stabilizer movement without a signal to trim
->>- Stabilizer failed
+> *Condition: One of these occurs: stabilizer movement without a signal to trim, or the stabilizer is failed.*
 >
->asda
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>STAB cutout switches (both)</strong><span class="cl-dots"></span><strong>CUTOUT</strong></div>
+> <div class="nnc-text"><span class="nnc-num">2</span>Do not exceed the current airspeed.</div>

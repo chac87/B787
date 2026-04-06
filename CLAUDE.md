@@ -87,6 +87,7 @@ Defined in `quartz/styles/custom.scss`:
 | `.nnc-goto` | ▶▶ redirect line |
 | `.nnc-separator` | Dashed separator (memory / reference) |
 | `.nnc-confirm` | Intermediate confirm value before final action (e.g. "Confirm … CUTOFF") |
+| `.nnc-role` | Role badge after action value — `C` (Captain) or `F/O` (First Officer) |
 | `.nnc-complete` | Checklist complete — always `text-align: center` |
 
 ## Content Location

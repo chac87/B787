@@ -174,7 +174,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>[] EQUIP OVBD VLV AFT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span>EQUIP OVRD VLV AFT, FWD</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>EVAC COMMAND</span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="backcover"><span>Evacuation</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="backcover"><span><a href="/Non-Normals/Non-Normal-Checklists/Evacuation">Evacuation</a></span><span class="nn-qa-badge">QA</span></div>
 </div>
 
 <div class="nn-section" data-section="F">
@@ -187,7 +187,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE CARGO FWD</span></div>
 <div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE ENG L, R</span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="backcover"><span>Fire Eng on Ground L, R</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="fire"><span>Fire Eng Tailpipe L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/Fire-Eng-Tailpipe-L,-R">Fire Eng Tailpipe L, R</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE WHEEL WELL</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightcontrols"><span>Flap Lever Inoperative</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightcontrols"><span>Flaps + Slats Fail</span></div>
@@ -388,7 +388,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] SPOILERS</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] STAB GREENBAND</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>STABILIZER CUTOUT</span></div>
-<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] STABILIZER</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/STABILIZER">[] STABILIZER</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] STABILIZER L2</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] STABILIZER R2</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>[] STALL PROTECTION</span></div>
