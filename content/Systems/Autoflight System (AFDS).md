@@ -1,84 +1,109 @@
 # Autoflight System (AFDS)
 ![[mcp.webp]]
-## Mode Control Panel (MCP)
-- Dient zum armieren (arm) und Aktivieren (engage) der lateralen und vertikalen Modi.
 
-## Autopilot 
-- AP wird über die A/P engage switches aktiviert. 
-- Er kann über den Disconnect switch am Control Wheel, das Herunterziehen der A/P DISENGAGE bar am MCP oder durch manuelle Übersteuerung (override force) deaktiviert werden.
+## Mode Control Panel (MCP)
+Dient zum Armieren (arm) und Aktivieren (engage) der lateralen und vertikalen Modi.
+
+## Autopilot
+AP wird über die A/P engage switches aktiviert. Er kann über den Disconnect switch am Control Wheel, das Herunterziehen der A/P DISENGAGE bar am MCP oder durch manuelle Übersteuerung (override force) deaktiviert werden.
+
 ### Roll Modes (Lateral)
-- LNAV: Folgt der im FMS aktiven Route.
-- HDG SEL / TRK SEL: Das Flugzeug fliegt den im MCP-Fenster gewählten Steuerkurs oder Track.
-- HDG HOLD / TRK HOLD: Hält den aktuellen Kurs oder Track flügelgleich.
-- LOC / FAC / B/CRS: Dienen dem Erfassen und Verfolgen von lokalen Sendern (Localizer) oder Integrated Approach Navigation (IAN) Pfaden.
-- ROLLOUT: Sorgt nach dem Aufsetzen bei einer automatischen Landung für die Führung auf der Mittellinie.
-### Autoland Status: 
-- Das System zeigt den Status der Redundanz an: LAND 3 (fail operational), LAND 2 (fail passive) oder NO AUTOLAND.
-### Go-Around: 
-- Ein Druck auf den TO/GA-Schalter kommandiert einen climb mit 2.000 fpm im THR-Mode. 
-- Ein zweiter Druck aktiviert THR REF für vollen Schub.
+
+<div class="cl-item"><strong>LNAV</strong><span class="cl-dots"></span><span>Folgt der im FMS aktiven Route</span></div>
+<div class="cl-item"><strong>HDG SEL / TRK SEL</strong><span class="cl-dots"></span><span>Fliegt den im MCP-Fenster gewählten Steuerkurs oder Track</span></div>
+<div class="cl-item"><strong>HDG HOLD / TRK HOLD</strong><span class="cl-dots"></span><span>Hält den aktuellen Kurs oder Track flügelgleich</span></div>
+<div class="cl-item"><strong>LOC / FAC / B/CRS</strong><span class="cl-dots"></span><span>Erfassen und Verfolgen von Localizer oder IAN-Pfaden</span></div>
+<div class="cl-item"><strong>ROLLOUT</strong><span class="cl-dots"></span><span>Führung auf der Mittellinie nach dem Aufsetzen bei automatischer Landung</span></div>
+
+> [!info] Autoland Status
+> <div class="cl-item"><strong>LAND 3</strong><span class="cl-dots"></span><span>fail operational</span></div>
+> <div class="cl-item"><strong>LAND 2</strong><span class="cl-dots"></span><span>fail passive</span></div>
+> <div class="cl-item"><strong>NO AUTOLAND</strong><span class="cl-dots"></span><span>Autoland nicht verfügbar</span></div>
+
+> [!proc] Go-Around
+> <div class="cl-item"><strong>Erster Druck TO/GA</strong><span class="cl-dots"></span><span>Climb mit 2.000 fpm im THR-Mode</span></div>
+> <div class="cl-item"><strong>Zweiter Druck TO/GA</strong><span class="cl-dots"></span><span>THR REF — voller Schub</span></div>
+
 ### Pitch Modes (Vertikal)
-- TO/GA: Liefert Pitch Guidance für Start und Go Around. Am Boden wird initial ein Pitch von 8° Up angezeigt s. auch [[Autoflight System (AFDS)#TO/GA|TO/GA]].
-- VNAV: Koppelt die vertikale FMS-Führung (VNAV SPD, VNAV PTH, VNAV ALT). s. auch [[Autoflight System (AFDS)#VNAV|VNAV]]
-- FLCH SPD: Steigt oder sinkt direkt auf die gewählte Höhe und hält dabei die eingestellte Geschwindigkeit.
-- ALT HOLD: Hält die aktuelle Höhe bei Aktivierung des Schalters.
-- V/S & FPA: Steuert eine gewählte vertikale Geschwindigkeit oder einen Flugpfadwinkel.
-- G/S & G/P: Verfolgt den ILS-Gleitpfad oder den FMC-Gleitweg.
-- FLARE: Aktiviert sich bei einer automatischen Landung (Land 2/3) zwischen 60 und 40 Fuß RA für den Flare.
+
+<div class="cl-item"><strong>TO/GA</strong><span class="cl-dots"></span><span>Pitch Guidance für Start und Go-Around</span></div>
+<div class="cl-item"><strong>VNAV</strong><span class="cl-dots"></span><span>Koppelt die vertikale FMS-Führung (VNAV SPD / PTH / ALT)</span></div>
+<div class="cl-item"><strong>FLCH SPD</strong><span class="cl-dots"></span><span>Steigt oder sinkt auf gewählte Höhe bei eingestellter Geschwindigkeit</span></div>
+<div class="cl-item"><strong>ALT HOLD</strong><span class="cl-dots"></span><span>Hält die aktuelle Höhe bei Aktivierung</span></div>
+<div class="cl-item"><strong>V/S & FPA</strong><span class="cl-dots"></span><span>Steuert gewählte vertikale Geschwindigkeit oder Flugpfadwinkel</span></div>
+<div class="cl-item"><strong>G/S & G/P</strong><span class="cl-dots"></span><span>Verfolgt ILS-Gleitpfad oder FMC-Gleitweg</span></div>
+<div class="cl-item"><strong>FLARE</strong><span class="cl-dots"></span><span>Aktiviert bei Land 2/3 zwischen 60 und 40 ft RA für den Flare</span></div>
 
 ## Autothrottle
-- A/T Arm Switches: Schalten das System scharf. 
-### A/T Engagement:
-- Press TO/GA sw < 50 kts, with flaps extended
- - Press A/T sw > 400 ft
-- Select FLCH in-flight
-- Select VNAV in-flight
-- A/T Auto Engagement:
-	- AP or FD engaged in VNAV, FPA, V/S, ALT or G/S and:
-	- Speed < FMC calculated speed or Thrust below reference thrust
-### A/T Modes:
-- THR REF: Setzt den Schub auf das berechnete Limit (during Takeoff/Climb in VNAV or after second push during Go Around). 
-- THR: Passt den Schub an, um die vom Pitch-Modus geforderte Steig-/Sinkrate beizubehalten (during FLCH or Go Around).
-- SPD: Hält die am MCP oder FMC gewählte Geschwindigkeit (during level flight).
-- IDLE & HOLD: Im IDLE-Modus fahren die Schubhebel auf Leerlauf, gefolgt vom HOLD-Modus, in dem die Servos entkoppelt werden, um dem Piloten manuelles Eingreifen zu ermöglichen.
+A/T Arm Switches schalten das System scharf.
+
+> [!info] Manual Engagement
+> - Press TO/GA sw < 50 kts, with flaps extended
+> - Press A/T sw > 400 ft
+> - Select FLCH in-flight
+> - Select VNAV in-flight
+
+> [!info] Auto Engagement
+> AP or FD engaged in VNAV, FPA, V/S, ALT or G/S **and:**
+> - Speed < FMC calculated speed, or
+> - Thrust below reference thrust
+
+### A/T Modes
+
+<div class="cl-item"><strong>THR REF</strong><span class="cl-dots"></span><span>Setzt Schub auf berechnetes Limit — Takeoff/Climb in VNAV oder zweiter Druck GA</span></div>
+<div class="cl-item"><strong>THR</strong><span class="cl-dots"></span><span>Passt Schub an für geforderte Steig-/Sinkrate — FLCH oder Go-Around</span></div>
+<div class="cl-item"><strong>SPD</strong><span class="cl-dots"></span><span>Hält die am MCP oder FMC gewählte Geschwindigkeit — Levelflug</span></div>
+<div class="cl-item"><strong>IDLE & HOLD</strong><span class="cl-dots"></span><span>IDLE fährt Schubhebel auf Leerlauf · HOLD entkoppelt Servos für manuelles Eingreifen</span></div>
 
 ## VNAV
+
 ### Modes
-- **VNAV SPD**: Commands pitch, maintains FMC speed. Dieser mode ist typisch für den climb.
-- **VNAV PTH**: Commands pitch to maintain FMC altitude or calculated descent path. A/T manages speed.
-- **VNAV ALT**: Commands pitch to maintain MCD altitude (wenn die am MCP selected altitude restriktiver ist als das FMC-Profil).
-### Capture Criteria
-above 400 ft RA -> MCP speed blanks
-### Limitations
-- QFE: Use of VNAV prohibited with QFE use
-- no VNAV with triple FMC failure
-- Disengages with selection of other pitch modes (FLCH, V/S, FPA, ALT), pushing VNAV twice or disconnecting AP/FD.
+
+<div class="cl-item"><strong>VNAV SPD</strong><span class="cl-dots"></span><span>Commands pitch, maintains FMC speed — typisch für den Climb</span></div>
+<div class="cl-item"><strong>VNAV PTH</strong><span class="cl-dots"></span><span>Commands pitch to maintain FMC altitude or descent path — A/T manages speed</span></div>
+<div class="cl-item"><strong>VNAV ALT</strong><span class="cl-dots"></span><span>Commands pitch to maintain MCP altitude (wenn MCP-Altitude restriktiver als FMC-Profil)</span></div>
+
+> [!limit] Limitations & Capture
+> <div class="cl-item"><strong>Capture</strong><span class="cl-dots"></span><span>Above 400 ft RA → MCP speed blanks</span></div>
+> <div class="cl-item"><strong>QFE</strong><span class="cl-dots"></span><span>VNAV prohibited with QFE use</span></div>
+> <div class="cl-item"><strong>FMC failure</strong><span class="cl-dots"></span><span>No VNAV with triple FMC failure</span></div>
+> <div class="cl-item"><strong>Disengages with</strong><span class="cl-dots"></span><span>Selection of FLCH / V/S / FPA / ALT · zweimal VNAV drücken · AP/FD disconnect</span></div>
 
 ## TO/GA
- TO/GA (Takeoff/Go-Around) Pitch-Modus liefert die vertikale Führung für Takeoff und Go Around
-### TO/GA am Boden (Ground Operation)
-- Die Pitch-Bar auf dem PFD zeigt 8° Nose-up an.
-- Die eigentliche Pitch-Command wird erst beim Liftoff aktiv.
-### TO/GA after Takeoff
-- Normalfall: higher of V2 + 15 kts oder der zum Zeitpunkt der Rotation erreichten speed.
-- Speed Reset: Wenn die aktuelle speed für mehr als 5 Sekunden über diesem Zielwert bleibt, wird das target auf die aktuelle speed (begrenzt auf V2 + 25 Knoten) gesetzt.
-- MCP-Eingabe: Wird die speed im MCP manuell auf einen Wert über dem aktuellen Zielwert erhöht, folgt der FD diesem neuen Wert.
+TO/GA Pitch-Modus liefert die vertikale Führung für Takeoff und Go-Around.
+
+> [!proc] Am Boden (Ground Operation)
+> <div class="cl-item"><strong>Pitch-Bar (PFD)</strong><span class="cl-dots"></span><span>Zeigt 8° Nose-up an</span></div>
+> <div class="cl-item"><strong>Pitch-Command</strong><span class="cl-dots"></span><span>Wird erst beim Liftoff aktiv</span></div>
+
+> [!proc] After Takeoff (Normalfall)
+> <div class="cl-item"><strong>Target speed</strong><span class="cl-dots"></span><span>Higher of V2 + 15 kts oder der bei Rotation erreichten speed</span></div>
+> <div class="cl-item"><strong>Speed Reset</strong><span class="cl-dots"></span><span>Nach > 5 s über Zielwert → Target = actual speed (max. V2 + 25 kts)</span></div>
+> <div class="cl-item"><strong>MCP-Eingabe</strong><span class="cl-dots"></span><span>Speed über aktuellem Zielwert → FD folgt neuem MCP-Wert</span></div>
+
 ### TO/GA with Engine Failure
-- Before liftoff: higher of V2 oder actual vR.
-- After liftoff: 
-	- speed < V2 -> v2 wird kommandiert.
-	- speed zwischen V2 und V2 + 15 -> actual speed wird kommandiert.
-	- speed > V2 + 15 -> V2 + 15 wird kommandiert.
-### TO/GA during Go-Around
-- Erster Druck: AFDS erhöht den Pitch, um die actual speed oder die im MCP gewählte speed zu halten (maximal MCP-speed + 25 kts).
-- A/T liefert im initialen Modus (THR) genügend thrust für eine climb rate von 2.000 fpm.
-- Zweiter Druck: THR REF wird angelegt, max. thrust
-### TO/GA bei Windshear (Windshear Recovery)
-- AFDS kommandiert Pitch-up von 15° oder bleibt knapp unter dem Pitch Limit Indicator (PLI), je nachdem, welcher Wert niedriger ist.
-- Sobald die Steigrate zunimmt, wechselt der Modus von einer reinen Pitch-Führung zu einer Airspeed-Führung, um die bestmögliche Performance aus der Situation zu ziehen.
-### Terminierung des Modus
-- TO/GA Pitch-Modus endet, wenn ein anderer vertikaler Modus (z. B. VNAV, FLCH oder V/S) gewählt wird oder wenn das Flugzeug die am MCP vorgewählte Höhe erreicht.
-- Beim Erreichen der Zielhöhe wechselt der AFDS automatisch in Altitude Hold (ALT).
+
+<div class="cl-item"><strong>Before liftoff</strong><span class="cl-dots"></span><span>Higher of v<sub>2</sub> oder actual v<sub>R</sub></span></div>
+
+**After liftoff:**
+
+| Geschwindigkeit | Kommandiert |
+|---|---|
+| below v<sub>2</sub> | v<sub>2</sub> |
+| v<sub>2</sub> — v<sub>2</sub> + 15 | actual speed |
+| above v<sub>2</sub> + 15 | v<sub>2</sub> + 15 |
+
+> [!proc] During Go-Around
+> <div class="cl-item"><strong>Erster Druck</strong><span class="cl-dots"></span><span>AFDS erhöht Pitch für actual speed oder MCP-speed (max. MCP + 25 kts) · A/T THR liefert 2.000 fpm</span></div>
+> <div class="cl-item"><strong>Zweiter Druck</strong><span class="cl-dots"></span><span>THR REF — max. thrust</span></div>
+
+> [!info] Windshear Recovery
+> - AFDS kommandiert Pitch-up von 15° oder knapp unter PLI, je nachdem, welcher Wert niedriger ist.
+> - Sobald die Steigrate zunimmt, wechselt der Modus von Pitch-Führung zu Airspeed-Führung für bestmögliche Performance.
+
+> [!info] Terminierung
+> - TO/GA endet beim Wählen eines anderen vertikalen Modus (VNAV, FLCH, V/S) oder beim Erreichen der MCP-Zielhöhe.
+> - Beim Erreichen der Zielhöhe wechselt AFDS automatisch in Altitude Hold (ALT).
 
 ---
 
