@@ -24,29 +24,16 @@
 > | Flaps up | 4° | 70% N1 |
 
 > [!warning]- CABIN ALTITUDE
-> > [!proc] Condition
-> > Cabin altitude is excessive
+> *Condition: Cabin altitude is excessive.*
 >
-> 
-> **B** Don the oxygen masks  
-> **B** Establish crew communications  
-> **B** Check cabin altitude and rate  
-> 
-> ---
-> 
-> *If the cabin altitude is uncontrollable*  
-> ###### PASS OXYGEN switch...Push ON and hold for 1 sec **PM**  
-> **PF** Without delay, descend to lowest safe altitude or 10.000 ft, whichever is higher  
-> ###### Adivse the cabin **PM**  
-> ---
-> ##### **To descend:**  
-> - Thrust levers Idle  
-> - Extend Speedbrakes  
-> - Structural integrity in doubt? Limit airspeed, avoid high maneuvring loads  
-> - Descend at vMO/MMO. 
-> ---
-> *If flight deck or cabin temperature becomes too hot or too cold:*  
-> Consider CAB TEMP HOT/COLD checklist  
+> <div class="nnc-text"><span class="nnc-num">1</span>Don the oxygen masks.</div>
+> <div class="nnc-text"><span class="nnc-num">2</span>Establish crew communications.</div>
+> <div class="nnc-text"><span class="nnc-num">3</span>Check the cabin altitude and rate.</div>
+> <div class="nnc-text"><span class="nnc-num">4</span><strong>If</strong> the cabin altitude is uncontrollable:</div>
+> <div class="nnc-sub-item"><strong>PASS OXYGEN switch</strong><span class="cl-dots"></span><strong>Push to ON and hold for 1 second</strong></div>
+> <div class="nnc-sub"><strong>Without delay</strong>, descend to the lowest safe altitude or 10,000 feet, whichever is higher.</div>
+> <div class="nnc-box"><strong>To descend:</strong><ul><li>Move the thrust levers to idle</li><li>Extend the speedbrakes</li><li>If structural integrity is in doubt, limit airspeed and avoid high maneuvering loads</li><li>Descend at v<sub>MO</sub>/M<sub>MO</sub></li></ul></div>
+> <div class="nnc-sub">Advise the Cabin.</div>
 
 > [!warning]- DUAL ENG FAIL/STALL
 > > [!proc] Condition

@@ -1182,6 +1182,32 @@ body[saved-theme="dark"] {
 // ── NNC (Non-Normal Checklist) Procedure Format ──────────────────────────────
 // Reusable for all NNC checklists (Overweight Landing, Ditching, etc.)
 
+// Back-navigation for NNC leaf pages (not in linear book.md flow)
+.nnc-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  margin-bottom: 1.4em;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--secondary);
+  opacity: 0.65;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: var(--secondary);
+  }
+
+  &::before {
+    content: "←";
+    font-size: 1em;
+  }
+}
+
 .nnc-condition {
   background: var(--lightgray);
   padding: 6px 12px;
@@ -1241,6 +1267,7 @@ body[saved-theme="dark"] {
   margin-top: 1.4em;
   padding-top: 0.6em;
   border-top: 1.5px solid var(--darkgray);
+  text-align: center;
 }
 
 // Numbered checklist item (step number + dot-leader + action)
@@ -1293,4 +1320,63 @@ body[saved-theme="dark"] {
   border-top: 2.5px dashed var(--darkgray);
   margin: 0.8em 0;
   opacity: 0.55;
+}
+
+// Indented sub-step under a conditional branch (plain text)
+.nnc-sub {
+  margin-left: 2.2em;
+  font-size: 0.9em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  line-height: 1.4;
+}
+
+// Indented dot-leader item under a conditional branch
+.nnc-sub-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 0.9em;
+  margin: 0.2em 0 0.2em 2.2em;
+
+  strong:last-child {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cl-dots {
+    flex: 1;
+    border-bottom: 1.5px dotted var(--gray);
+    opacity: 0.45;
+    margin-bottom: 0.22em;
+    min-width: 0.5em;
+    flex-shrink: 2;
+  }
+}
+
+// Boxed info panel (e.g. "To descend:")
+.nnc-box {
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 0.4em 0 0.4em 2.2em;
+  font-size: 0.88em;
+
+  ul {
+    margin: 0.3em 0 0 1.2em;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.15em 0;
+  }
+}
+
+// Red italic caution (reference section)
+.nnc-caution {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #e74c3c;
+  margin: 0.4em 0 0.4em 0;
+  line-height: 1.45;
 }

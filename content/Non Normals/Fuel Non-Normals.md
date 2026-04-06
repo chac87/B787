@@ -62,7 +62,7 @@ tags: [non-normal, fuel]
 > - **Autoland** is required
 >
 > → Evaluate same or higher degree of safety
-> → s. auch [[Non Normals/Abnormal Emergency Procedures|Overweight Landing]]
+> → s. auch [[Non Normals/Non-Normal Checklists/Overweight Landing|Overweight Landing]]
 
 > [!info]- Requirements
 > **OM-A 8.3.15.1**
