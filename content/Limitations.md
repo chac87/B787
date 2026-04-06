@@ -106,9 +106,3 @@
 > <div class="cl-item"><strong>Alternate Extension</strong><span class="cl-dots"></span><span>speedbrakes retracted</span></div>
 > <div class="cl-item"><strong>Brake Release</strong><span class="cl-dots"></span><span>not above 55% N1 (tailtipping)</span></div>
 > <div class="cl-item"><strong>Towing towbarless</strong><span class="cl-dots"></span><span>prohibited unless torque links disconnected</span></div>
-
-> [!limit] Warning Systems
-> <div class="cl-item"><strong>TCAS RA</strong><span class="cl-dots"></span><span>deviation authorized and required</span></div>
-> <div class="cl-item"><strong>TA / Traffic Display</strong><span class="cl-dots"></span><span>no evasive maneuver based on TA alone</span></div>
-> <div class="cl-item"><strong>GPWS Terrain</strong><span class="cl-dots"></span><span>not for navigation</span></div>
-> <div class="cl-item"><strong>GPWS Terrain Display / Alerting</strong><span class="cl-dots"></span><span>prohibited within 15 NM of airport not in database</span></div>
