@@ -71,6 +71,23 @@ Defined in `quartz/styles/custom.scss`:
 | `.cl-caution` | Inline caution — small italic amber text, indented |
 | `.c-red` | Inline red span for labeled indicators (e.g. `<span class="c-red">OFF</span>`) |
 | `.c-green` | Inline green span for positive states (e.g. `<span class="c-green">illuminated</span>`) |
+| `.nnc-back` | ← Back-link on NNC leaf pages (always after H1) |
+| `.nnc-condition` | Gray condition banner at top of NNC |
+| `.nnc-step` | Bold numbered step header |
+| `.nnc-decision` | ◆ decision option (auto-prefixed) |
+| `.nnc-cl` | Container for items under a decision branch |
+| `.nnc-item` | Numbered dot-leader checklist item |
+| `.nnc-num` | Step number inside `.nnc-item` or `.nnc-text` |
+| `.nnc-text` | Numbered plain-text step (no dot-leader) |
+| `.nnc-sub` | Indented plain sub-step |
+| `.nnc-sub-item` | Indented dot-leader sub-item |
+| `.nnc-box` | Bordered info box |
+| `.nnc-note` | Italic gray note |
+| `.nnc-caution` | Italic red caution |
+| `.nnc-goto` | ▶▶ redirect line |
+| `.nnc-separator` | Dashed separator (memory / reference) |
+| `.nnc-confirm` | Intermediate confirm value before final action (e.g. "Confirm … CUTOFF") |
+| `.nnc-complete` | Checklist complete — always `text-align: center` |
 
 ## Content Location
 
@@ -187,6 +204,61 @@ All content in `content/Limitations.md` and `[!limit]` callouts in system notes 
 4. Deletes the original
 
 **If a user adds a new image to `content/Bilder/` and references it in a note as `![[name.png]]`:** do not manually rename the reference. The next build/sync will convert and fix it automatically. Only intervene if the user explicitly asks to run the conversion immediately — in that case run `bash convert-images.sh` from the repo root.
+
+## NNC (Non-Normal Checklist) Notes
+
+NNC detail notes are **leaf pages** — accessible only via links, not in the linear Prev/Next navigation.
+
+### File Location
+Always create in `content/Non Normals/Non-Normal Checklists/<Title>.md` (subfolder, not directly in `Non Normals/`).
+→ Breadcrumb will show: **Non Normals › Non-Normal Checklists › Title**
+
+### Workflow for every NNC
+1. Create `Non Normals/Non-Normal Checklists/<Title>.md`
+2. Add back-link directly after H1: `<a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>`
+3. Link item in `Non-Normal Checklists.md`: `<a href="/Non-Normals/Non-Normal-Checklists/<slug>">...</a>`
+4. If memory items exist (above dashed separator): update `[!warning]-` callout in `Memory Items.md` — memory items only, never reference items
+5. Add `[[Non Normals/Memory Items|s. auch Memory Items]]` at bottom if note has memory items
+6. **Do NOT add to `book.md`** — NNC notes must never appear in Prev/Next navigation
+7. **Do NOT add to `Non Normals/index.md`**
+
+### NNC CSS Classes (`quartz/styles/custom.scss`)
+
+| Class | Purpose |
+|---|---|
+| `.nnc-back` | ← Back link to Non-Normal Checklists (always first after H1) |
+| `.nnc-condition` | Gray italic condition banner |
+| `.nnc-step` | Bold step header (e.g. "1  Choose One:") |
+| `.nnc-decision` | ◆ diamond decision option (auto-prefix via CSS) |
+| `.nnc-cl` | Container for checklist items under a decision branch |
+| `.nnc-item` | Numbered item with dot-leader: `<span class="nnc-num">N</span><strong>Item</strong><span class="cl-dots"></span><strong>ACTION</strong>` |
+| `.nnc-text` | Numbered plain-text step (no dot-leader) |
+| `.nnc-sub` | Indented plain sub-step under a conditional branch |
+| `.nnc-sub-item` | Indented dot-leader item under a conditional branch |
+| `.nnc-box` | Bordered info box (e.g. "To descend:") |
+| `.nnc-note` | Italic note (gray) |
+| `.nnc-caution` | Italic caution (red, `#e74c3c`) |
+| `.nnc-goto` | ▶▶ Go to step N redirect |
+| `.nnc-separator` | Dashed line — memory items above / reference items below |
+| `.nnc-complete` | Final line ("■ ■ ■ ■" or "Checklist Complete") — **always `text-align: center`** |
+
+### NNC Legend
+| Symbol | Meaning |
+|---|---|
+| ◆ (vertical line) | Decision — read to first true statement |
+| ▶▶ Go to … | Redirect to another step or checklist |
+| --- dashed line | Separator: memory items above, reference items below |
+| — solid line | Task divider |
+| ⚠ | Precaution — read aloud "PRECAUTION" |
+| ■ ■ ■ ■ | Checklist complete |
+
+### Frontmatter
+```yaml
+---
+title: "<Title>"   # include [] prefix if EICAS-triggered
+tags: [non-normal, <category>]
+---
+```
 
 ## Deployment
 

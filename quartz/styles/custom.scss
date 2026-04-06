@@ -1314,6 +1314,25 @@ body[saved-theme="dark"] {
   }
 }
 
+// Intermediate confirm value (e.g. "Confirm … CUTOFF")
+.nnc-confirm {
+  font-size: 0.88em;
+  color: var(--gray);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-right: 0.4em;
+
+  &::after {
+    content: " …";
+  }
+}
+
+// When a confirm is present, fix action width so Confirm always aligns
+.nnc-item:has(.nnc-confirm) strong:last-child {
+  min-width: 4.5em;
+  text-align: right;
+}
+
 // Dashed separator line (memory items above / reference items below)
 .nnc-separator {
   border: none;

@@ -135,7 +135,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="electrical"><span>ELEC STANDBY SYS</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>[] ELT ON</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>EMER LIGHTS</span></div>
-<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG AUTOSTART L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-AUTOSTART-L,-R">[] ENG AUTOSTART L, R</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>ENG CONTROL L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG CORE ANTI-ICE L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG EEC MODE L, R</span></div>
@@ -162,7 +162,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG START CUTOUT L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG STARTERS L, R</span></div>
 <div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG SURGE L, R</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span>Eng Svr Damage/Sep L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R">Eng Svr Damage Sep L, R</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>ENG TBV OPEN L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG THRUST HIGH L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>ENG THRUST L, R</span></div>

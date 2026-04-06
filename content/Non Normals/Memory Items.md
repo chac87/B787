@@ -41,9 +41,9 @@
 >
 
 > [!warning]- ENG AUTOSTART L, R
-> > [!proc] Condition
-> > xxx
+> *Condition: Autostart did not start the engine.*
 >
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
 
 > [!warning]- ENG LIMIT EXCEED L, R
 > > [!proc] Condition
@@ -56,13 +56,12 @@
 >
 
 > [!warning]- ENG SVR DAMAGE/SEP L, R
-> > [!proc] Condition
-> > One or more of these occur:
->> - Airframe vibrations with abnormal engine indications
->>- Engine separation
+> *Condition: One or more of these occur: airframe vibrations with abnormal engine indications, or engine separation.*
 >
->
->
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
+> <div class="nnc-item"><span class="nnc-num">2</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Idle</strong></div>
+> <div class="nnc-item"><span class="nnc-num">3</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
+> <div class="nnc-item"><span class="nnc-num">4</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Pull</strong></div>
 
 > [!warning]- FIRE ENG L, R
 > > [!proc] Condition
