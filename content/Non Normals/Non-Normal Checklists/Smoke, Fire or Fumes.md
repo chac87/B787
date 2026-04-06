@@ -17,7 +17,7 @@ tags: [non-normal, fire]
 <div class="nnc-item"><span class="nnc-num">5</span><strong>RECIRC FANS switches (both)</strong><span class="cl-dots"></span><strong>Off</strong></div>
 
 <div class="nnc-text"><span class="nnc-num">6</span>Any time the smoke or fumes become the greatest threat:</div>
-<div class="nnc-goto">▶▶&ensp;Go to the Smoke or Fumes Removal checklist</div>
+<div class="nnc-goto">▶▶&ensp;<a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Go to the Smoke or Fumes Removal checklist</a></div>
 
 <div class="nnc-step">7&ensp;&ensp;Choose One:</div>
 
@@ -34,7 +34,7 @@ tags: [non-normal, fire]
 <div class="nnc-decision">Source is visually confirmed to be extinguished and smoke or fumes are <strong>decreasing:</strong></div>
 <div class="nnc-sub">Continue the flight at the captain's discretion.</div>
 <div class="nnc-sub">Restore unpowered items at the captain's discretion.</div>
-<div class="nnc-goto">▶▶&ensp;Go to the Smoke or Fumes Removal checklist, if needed</div>
+<div class="nnc-goto">▶▶&ensp;<a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Go to the Smoke or Fumes Removal checklist, if needed</a></div>
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
 <div class="nnc-decision">Smoke or fumes <strong>continue:</strong></div>
@@ -65,7 +65,7 @@ tags: [non-normal, fire]
 <div class="nnc-goto">▶▶&ensp;Go to step 19</div>
 
 <div class="nnc-decision">Smoke or fumes are <strong>decreasing:</strong></div>
-<div class="nnc-goto">▶▶&ensp;Go to the Smoke or Fumes Removal checklist, if needed</div>
+<div class="nnc-goto">▶▶&ensp;<a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Go to the Smoke or Fumes Removal checklist, if needed</a></div>
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
 <div class="nnc-text"><span class="nnc-num">19</span>Wait 2 minutes unless the smoke or fumes are increasing. This allows time for the smoke or fumes to clear.</div>
@@ -81,9 +81,9 @@ tags: [non-normal, fire]
   <div class="cl-item"><strong>R TRIM AIR switch</strong><span class="cl-dots"></span><strong>ON</strong></div>
 </div>
 <div class="nnc-sub">Consider an immediate landing.</div>
-<div class="nnc-goto">▶▶&ensp;Go to the Smoke or Fumes Removal checklist, if needed</div>
+<div class="nnc-goto">▶▶&ensp;<a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Go to the Smoke or Fumes Removal checklist, if needed</a></div>
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
 <div class="nnc-decision">Smoke or fumes are <strong>decreasing:</strong></div>
-<div class="nnc-goto">▶▶&ensp;Go to the Smoke or Fumes Removal checklist, if needed</div>
+<div class="nnc-goto">▶▶&ensp;<a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Go to the Smoke or Fumes Removal checklist, if needed</a></div>
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>

@@ -379,7 +379,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] SMOKE EQUIP CLG MISC</span></div>
 <div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/Smoke,-Fire-or-Fumes">Smoke, Fire or Fumes</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>SMOKE LAVATORY</span></div>
-<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="fire"><span>Smoke or Fumes Removal</span></div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Smoke or Fumes Removal</a></span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] SMOKE REST UPR DR 1</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] SMOKE REST UPR DR 4</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span>SPEEDBRAKE EXTENDED</span></div>
