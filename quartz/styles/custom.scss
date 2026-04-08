@@ -1249,9 +1249,13 @@ body[saved-theme="dark"] {
 .nnc-note {
   font-size: 0.85em;
   font-style: italic;
-  opacity: 0.78;
+  color: #2d7d32;
   margin: 0.2em 0 0.2em 1.5em;
   line-height: 1.45;
+}
+
+body[saved-theme="dark"] .nnc-note {
+  color: #81c784;
 }
 
 .nnc-goto {
