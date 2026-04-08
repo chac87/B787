@@ -32,9 +32,10 @@
 > <div class="nnc-sub">Advise the Cabin.</div>
 
 > [!warning]- DUAL ENG FAIL/STALL
-> > [!proc] Condition
-> > xxx
+> *Condition: Engine speed for both engines is below idle.*
 >
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switches (both)</strong><span class="cl-dots"></span><strong>CUTOFF, then RUN</strong></div>
+> <div class="nnc-item"><span class="nnc-num">2</span><strong>RAM AIR TURBINE switch</strong><span class="cl-dots"></span><strong>Push and hold for 1 second</strong></div>
 
 > [!warning]- ENG AUTOSTART L, R
 > *Condition: Autostart did not start the engine.*
@@ -42,14 +43,16 @@
 > <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
 
 > [!warning]- ENG LIMIT EXCEED L, R
-> > [!proc] Condition
-> > xxx
+> *Condition: An engine limit exceedance occurs.*
 >
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
+> <div class="nnc-item"><span class="nnc-num">2</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard until ENG LIMIT EXCEED message blanks or the thrust lever is at idle</strong></div>
 
 > [!warning]- ENG SURGE L, R
-> > [!proc] Condition
-> > Engine stall or surge detected
+> *Condition: An engine surge or stall that requires crew action is detected.*
 >
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
+> <div class="nnc-item"><span class="nnc-num">2</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard until the ENG SURGE message blanks or the thrust lever is at idle</strong></div>
 
 > [!warning]- ENG SVR DAMAGE/SEP L, R
 > *Condition: One or more of these occur: airframe vibrations with abnormal engine indications, or engine separation.*

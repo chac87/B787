@@ -115,8 +115,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>[] DOOR ENTRY 1–4L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>[] DOOR FD OVHD</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>DOORS</span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span>Dual Eng Fail/Stall</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span>Dual Eng Fail/Stall (alternate)</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Dual-Eng-Fail-Stall"><span>Dual Eng Fail/Stall</span></a></span><span class="nn-qa-badge">QA</span></div>
 </div>
 
 <div class="nn-section" data-section="E">
@@ -147,7 +146,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG FUEL VALVE L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>ENG ICA SYS L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="engine"><span>Eng In-Flight Start L, R</span></div>
-<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG LIMIT EXCEED L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-LIMIT-EXCEED-L,-R"><span>[] ENG LIMIT EXCEED L, R</span></a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG LIMIT PROT L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG OIL FILTER L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG OIL PRESS L, R</span></div>
@@ -161,8 +160,8 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>ENG SHUTDOWN L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG START CUTOUT L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG STARTERS L, R</span></div>
-<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG SURGE L, R</span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R">Eng Svr Damage Sep L, R</a></span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-SURGE-L,-R"><span>[] ENG SURGE L, R</span></a></span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>Eng Svr Damage/Sep L, R</span></a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>ENG TBV OPEN L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>[] ENG THRUST HIGH L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span>ENG THRUST L, R</span></div>
