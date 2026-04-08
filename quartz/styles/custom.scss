@@ -1143,10 +1143,38 @@ article table td:first-child:has(+ td .sop-value) {
   display: none;
 }
 
+.nn-badge-wrap {
+  display: flex;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
 .nn-qa-badge {
   font-size: 0.72em;
   font-weight: 600;
   background: #FF526B;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 6px;
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+}
+
+.nn-eicas-badge {
+  font-size: 0.72em;
+  font-weight: 600;
+  background: #3257BC;
+  color: #fff;
+  border-radius: 4px;
+  padding: 1px 6px;
+  flex-shrink: 0;
+  letter-spacing: 0.04em;
+}
+
+.nn-unann-badge {
+  font-size: 0.72em;
+  font-weight: 600;
+  background: #4B9DA1;
   color: #fff;
   border-radius: 4px;
   padding: 1px 6px;

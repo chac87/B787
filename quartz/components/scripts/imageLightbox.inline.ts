@@ -216,6 +216,31 @@ function setupPage() {
     }
 
     applyFilter()
+
+    // Inject EICAS / Unann badges and wrap all badges per item
+    const allNNItems = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-item"))
+    allNNItems.forEach(item => {
+      const wrap = document.createElement("div")
+      wrap.className = "nn-badge-wrap"
+
+      const existingQa = item.querySelector<HTMLElement>(".nn-qa-badge")
+      if (existingQa) wrap.appendChild(existingQa)
+
+      if (item.dataset.eicas === "true") {
+        const b = document.createElement("span")
+        b.className = "nn-eicas-badge"
+        b.textContent = "EICAS"
+        wrap.appendChild(b)
+      }
+      if (item.dataset.unann === "true") {
+        const b = document.createElement("span")
+        b.className = "nn-unann-badge"
+        b.textContent = "Unann"
+        wrap.appendChild(b)
+      }
+
+      if (wrap.children.length > 0) item.appendChild(wrap)
+    })
   }
 }
 
