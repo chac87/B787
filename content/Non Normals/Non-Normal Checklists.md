@@ -181,10 +181,10 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>[] FD DOOR AUTO UNLOCK</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>[] FD DOOR LOCK FAIL</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span>FD DOOR OPEN</span></div>
-<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE APU</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/FIRE-APU"><span>[] FIRE APU</span></a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE CARGO AFT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE CARGO FWD</span></div>
-<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE ENG L, R</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/FIRE-ENG-L,-R"><span>[] FIRE ENG L, R</span></a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="backcover"><span>Fire Eng on Ground L, R</span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/Fire-Eng-Tailpipe-L,-R">Fire Eng Tailpipe L, R</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span>[] FIRE WHEEL WELL</span></div>

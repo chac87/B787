@@ -63,8 +63,14 @@
 > <div class="nnc-item"><span class="nnc-num">4</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Pull</strong></div>
 
 > [!warning]- FIRE ENG L, R
-> > [!proc] Condition
-> > Fire is detected in the engine
+> *Condition: Fire is detected in the affected engine.*
+>
+> <div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
+> <div class="nnc-item"><span class="nnc-num">3</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Idle</strong></div>
+> <div class="nnc-item"><span class="nnc-num">4</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
+> <div class="nnc-item"><span class="nnc-num">5</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Pull</strong></div>
+> <div class="nnc-text"><span class="nnc-num">6</span><strong>If</strong> the FIRE ENG message stays shown:</div>
+> <div class="nnc-sub-item"><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong></div>
 
 > [!warning]- STABILIZER
 > *Condition: One of these occurs: stabilizer movement without a signal to trim, or the stabilizer is failed.*

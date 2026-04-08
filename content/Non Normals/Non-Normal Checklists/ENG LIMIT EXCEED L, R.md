@@ -26,7 +26,7 @@ tags: [non-normal, engine]
   <div class="cl-item"><strong>TRANSPONDER MODE selector</strong><span class="cl-dots"></span><strong>TA ONLY</strong></div>
   <div class="nnc-sub">Plan to land at the nearest suitable airport.</div>
   <div class="nnc-sub">Do <strong>not</strong> accomplish the following checklist:</div>
-  <div class="nnc-sub" style="padding-left: 2.8em;">• AUTOTHROTTLE</div>
+  <div class="nnc-sub cl-indent">• AUTOTHROTTLE</div>
   <div class="nnc-goto">▶▶&ensp;Go to step 7</div>
 </div>
 
@@ -60,13 +60,9 @@ tags: [non-normal, engine]
 
 <div class="nnc-complete">8&ensp;&ensp;Checklist Complete Except Deferred Items</div>
 
-<div class="nnc-separator"></div>
+<div class="nnc-deferred-header">DEFERRED ITEMS</div>
 
-<div class="nnc-complete" style="font-size: 0.8em; letter-spacing: 0.12em; font-weight: 600;">DEFERRED ITEMS</div>
-
-<div class="nnc-separator"></div>
-
-<div class="nnc-step">Descent Checklist</div>
+<div class="nnc-deferred-title">Descent Checklist</div>
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>Recall</strong><span class="cl-dots"></span><strong>Checked</strong></div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>Notes</strong><span class="cl-dots"></span><strong>Checked</strong></div>
@@ -74,11 +70,11 @@ tags: [non-normal, engine]
 <div class="nnc-item"><span class="nnc-num"></span><strong>Landing data</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 20___, Minimums___</strong></div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>Approach briefing</strong><span class="cl-dots"></span><strong>Completed</strong></div>
 
-<div class="nnc-step">Approach Checklist</div>
+<div class="nnc-deferred-title">Approach Checklist</div>
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>Altimeters</strong><span class="cl-dots"></span><strong>___</strong></div>
 
-<div class="nnc-step">Landing Checklist</div>
+<div class="nnc-deferred-title">Landing Checklist</div>
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>Speedbrake</strong><span class="cl-dots"></span><strong>ARMED</strong></div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>Landing gear</strong><span class="cl-dots"></span><strong>DOWN</strong></div>
