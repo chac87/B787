@@ -46,6 +46,8 @@ tags: [non-normal, warnings]
 <div class="nnc-sub">• Wind indications</div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
+<br>
+
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
 <div class="nnc-note"><strong>Note:</strong> WINDSHEAR, OVERSPEED, and AIRSPEED LOW alerts may show erroneously.</div>
 <div class="nnc-note">AOA SPD may be erratic during configuration changes, maneuvering, and speedbrake use.</div>
