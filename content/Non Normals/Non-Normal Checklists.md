@@ -38,7 +38,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>[] ADS-B OUT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span>[] AHRU ATT MODE L, R</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>AIRSPEED LOW</span></div>
-<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] AIRSPEED UNRELIABLE</span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="true" data-unann="false" data-cat="warnings"><span><a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE">[] AIRSPEED UNRELIABLE</a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightinstruments"><span>Altimeter Error</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] ALTITUDE ALERT</span></div>
 <div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span>[] ALTITUDE CALLOUTS</span></div>

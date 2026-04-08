@@ -10,18 +10,14 @@
 > <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><strong>CUTOFF</strong></div>
 
 > [!warning]- AIRSPEED UNRELIABLE
-> > [!proc] Condition
-> > Airspeed or Mach indications disagree with AOA calculated airspeed. Objective: identify a reliable airspeed indication.
+> *Condition: The airspeed or Mach indications disagree with AOA calculated airspeed.*
 >
-> **PF** Autopilot disconnect switch...PUSH
-> ###### A/T ARM switches (both)...OFF **PM**
-> ###### F/D switches (both)...OFF **PM**
-> **PF** Set the following gear up pitch attitude and thrust:
->
-> | | Pitch | Thrust |
-> |:---|:---:|:---:|
-> | Flaps extended | 10° | 85% N1 |
-> | Flaps up | 4° | 70% N1 |
+> <div class="nnc-item"><span class="nnc-num">1</span><strong>Autopilot disconnect switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
+> <div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+> <div class="nnc-item"><span class="nnc-num">3</span><strong>F/D switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+> <div class="nnc-text"><span class="nnc-num">4</span>Set the following gear up pitch attitude and thrust:</div>
+> <div class="nnc-sub-item"><strong>Flaps extended</strong><span class="cl-dots"></span><strong>10° and 85% N1</strong></div>
+> <div class="nnc-sub-item"><strong>Flaps up</strong><span class="cl-dots"></span><strong>4° and 70% N1</strong></div>
 
 > [!warning]- CABIN ALTITUDE
 > *Condition: Cabin altitude is excessive.*
