@@ -31,6 +31,7 @@ tags: [non-normal, airsystems]
 <div class="nnc-goto">▶▶&ensp;Go to step 7</div>
 
 <div class="nnc-decision">Cabin temperature is <strong>becoming warmer:</strong></div>
+<div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
 <div class="nnc-separator"></div>
 
@@ -57,6 +58,7 @@ tags: [non-normal, airsystems]
 <div class="nnc-decision">Cabin temperature is <strong>becoming warmer:</strong></div>
 <div class="nnc-note"><strong>Note:</strong> If a higher cruise altitude is needed due to range or other operational considerations, the crew may climb, then assess the cabin temperature at the new altitude.</div>
 <div class="nnc-note">If temperature control is restored, the flight deck temperature control and cabin temperature control may be selected to a warmer temperature.</div>
+<div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
 <div class="nnc-separator"></div>
 
