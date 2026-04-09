@@ -5,6 +5,8 @@ title: Systems
 
 ## [[Electrical Power System]]
 
+## [[Common Core System (CCS)]]
+
 ## [[Ventilation System]]
 
 ## [[Air Conditioning, Pressurization]]
