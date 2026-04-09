@@ -1177,14 +1177,20 @@ article table td:first-child:has(+ td .sop-value) {
 }
 
 // Name text coloring by EICAS level
-.nn-item[data-eicas-level="warning"] > span:first-child { color: #e74c3c; font-weight: 500; a { color: inherit; } }
-.nn-item[data-eicas-level="caution"] > span:first-child { color: #f39c12; font-weight: 500; a { color: inherit; } }
-.nn-item[data-eicas-level="advisory"] > span:first-child { color: #d4891a; font-weight: 500; a { color: inherit; } }
+.nn-item[data-eicas-level="warning"] > span:first-child { color: #e74c3c; font-weight: 500; }
+.nn-item[data-eicas-level="warning"] > span:first-child a { color: #e74c3c; }
+.nn-item[data-eicas-level="caution"] > span:first-child { color: #f39c12; font-weight: 500; }
+.nn-item[data-eicas-level="caution"] > span:first-child a { color: #f39c12; }
+.nn-item[data-eicas-level="advisory"] > span:first-child { color: #d4891a; font-weight: 500; }
+.nn-item[data-eicas-level="advisory"] > span:first-child a { color: #d4891a; }
 
 body[saved-theme="dark"] {
-  .nn-item[data-eicas-level="warning"] > span:first-child { color: #ff7b7b; }
-  .nn-item[data-eicas-level="caution"] > span:first-child { color: #f5c842; }
-  .nn-item[data-eicas-level="advisory"] > span:first-child { color: #e8a835; }
+  .nn-item[data-eicas-level="warning"] > span:first-child,
+  .nn-item[data-eicas-level="warning"] > span:first-child a { color: #ff7b7b; }
+  .nn-item[data-eicas-level="caution"] > span:first-child,
+  .nn-item[data-eicas-level="caution"] > span:first-child a { color: #f5c842; }
+  .nn-item[data-eicas-level="advisory"] > span:first-child,
+  .nn-item[data-eicas-level="advisory"] > span:first-child a { color: #e8a835; }
   .nn-eicas-badge[data-level="caution"] { color: #1a1a1a; }
 }
 
