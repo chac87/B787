@@ -25,4 +25,6 @@ tags: [sop, normal-ops]
 
 ## [[Normal Ops/SOPs/Before Takeoff Procedure|Before Takeoff Procedure]]
 
+## [[Normal Ops/SOPs/Takeoff Procedure|Takeoff Procedure]]
+
 ## [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]
