@@ -1192,17 +1192,18 @@ article table td:first-child:has(+ td .sop-value) {
 .nn-eicas-badge {
   font-size: 0.72em;
   font-weight: 600;
-  background: #3257BC;
-  color: #fff;
+  background: transparent;
+  border: 1.5px solid #3257BC;
+  color: #3257BC;
   border-radius: 4px;
   padding: 1px 6px;
   flex-shrink: 0;
   letter-spacing: 0.04em;
 
-  &[data-level="warning"] { background: #e74c3c; }
-  &[data-level="caution"] { background: #f39c12; color: #1a1a1a; }
-  &[data-level="advisory"] { background: #d4891a; color: #fff; }
-  &[data-level="memo"] { background: #666; color: #fff; }
+  &[data-level="warning"]  { border-color: #e74c3c; color: #e74c3c; }
+  &[data-level="caution"]  { border-color: #f39c12; color: #f39c12; }
+  &[data-level="advisory"] { border-color: #d4891a; color: #d4891a; }
+  &[data-level="memo"]     { border-color: #666;    color: #666; }
 }
 
 // NNC note page: H1 color by EICAS level (via cssclasses frontmatter → article class)
@@ -1232,7 +1233,9 @@ body[saved-theme="dark"] {
   .nn-item[data-eicas-level="caution"] > span:first-child a { color: #f5c842 !important; }
   .nn-item[data-eicas-level="advisory"] > span:first-child,
   .nn-item[data-eicas-level="advisory"] > span:first-child a { color: #e8a835 !important; }
-  .nn-eicas-badge[data-level="caution"] { color: #1a1a1a; }
+  .nn-eicas-badge[data-level="warning"]  { border-color: #ff7b7b; color: #ff7b7b; }
+  .nn-eicas-badge[data-level="caution"]  { border-color: #f5c842; color: #f5c842; }
+  .nn-eicas-badge[data-level="advisory"] { border-color: #e8a835; color: #e8a835; }
 }
 
 .nn-unann-badge {
