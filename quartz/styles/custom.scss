@@ -1109,12 +1109,11 @@ article table td:first-child:has(+ td .sop-value) {
 
 .nn-level-btn {
   border-radius: 20px;
-  padding: 3px 12px;
+  padding: 5px 14px;
   cursor: pointer;
-  font-size: 0.78em;
+  font-size: 0.82em;
   background: transparent;
   font-family: inherit;
-  font-weight: 600;
   transition: background 0.15s ease, color 0.15s ease;
 
   &[data-level="warning"]  { color: #e74c3c; border: 1.5px solid #e74c3c; }
