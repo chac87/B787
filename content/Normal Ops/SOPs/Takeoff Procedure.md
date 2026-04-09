@@ -82,5 +82,5 @@ role: Both
 
 | Item | Response | Who |
 |:---|:---|:---:|
-| **Landing gear** | UP | F/O |
-| **Flaps** | UP | F/O |
+| **Landing gear** | UP | PM |
+| **Flaps** | UP | PM |
