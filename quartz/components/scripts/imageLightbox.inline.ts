@@ -229,7 +229,13 @@ function setupPage() {
       if (item.dataset.eicas === "true") {
         const b = document.createElement("span")
         b.className = "nn-eicas-badge"
-        b.textContent = "EICAS"
+        const lvl = item.dataset.eicasLevel
+        if (lvl) {
+          b.dataset.level = lvl
+          b.textContent = "EICAS " + lvl.charAt(0).toUpperCase() + lvl.slice(1)
+        } else {
+          b.textContent = "EICAS"
+        }
         wrap.appendChild(b)
       }
       if (item.dataset.unann === "true") {

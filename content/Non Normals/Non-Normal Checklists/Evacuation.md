@@ -23,3 +23,35 @@ tags: [non-normal, backcover]
 <div class="nnc-sub-item"><strong>Related fire switch</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong><span class="nnc-role">F/O</span></div>
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
+
+---
+
+## Zusatzinformationen
+
+> [!info]- Wann eine Evacuation einleiten?
+> A number of Non-Normal situations can potentially lead to an evacuation. If a situation is time critical and potentially life threatening to passengers and crew, an evacuation can be the best solution. It must be considered, however, that **an evacuation itself is dangerous** and can lead to heavy injuries and fatalities.
+>
+> Consequently, the non-normal situation should be dealt with as follows:
+> - Stop the airplane, set the parking brake and alert the crew
+> - Perform the relevant Non-Normal Procedure (or parts thereof such as the Memory Items)
+> - After a quick assessment of the situation with the crew, the PIC decides if an immediate evacuation is necessary:
+>   - **If yes** → perform the Non-Normal Checklist "Evacuation"
+>   - **If no** → decide upon further action
+>
+> If an evacuation is planned and time permits, a thorough briefing and preparation of the crew and passengers improves the chances of a successful evacuation. Flight deck preparations should include a review of pertinent checklists and any other actions to be accomplished. Appropriate use of autobrakes should be discussed. If evacuating due to fire in windy conditions, consider positioning the airplane so the **fire is on the downwind side**.
+>
+> For unplanned evacuations, the captain needs to analyze the situation carefully before initiating an evacuation order. Quick actions in a calm and methodical manner improve the chances of a successful evacuation.
+
+> [!proc]- Method of Evacuation
+> If in doubt, the crew should consider an emergency evacuation using the escape slides.
+>
+> If there is a need to disembark passengers and the captain determines that the Evacuation NNC is not needed, the normal shutdown procedure should be completed before a controlled disembarkation occurs.
+
+> [!warning]- Discharging Fire Bottles During an Evacuation
+> The evacuation NNC specifies discharge of an engine or APU fire bottle if an engine or APU fire warning light is illuminated. However, evacuation situations can present possibilities regarding the potential for fire that are beyond the scope of the NNC and may not activate an engine or APU fire warning.
+>
+> The crew should consider the following when deciding whether to discharge a fire bottle into an engine and/or APU:
+> - If an **engine fire indication** exists or a fire is reported in or near an engine → discharge a fire bottle into the affected engine
+> - If an **APU fire indication** exists or a fire is reported in or near the APU → discharge the APU bottle
+> - The discharged halon agent is designed to extinguish a fire and has **very little or no fire prevention capability** in the engine nacelles — halon dissipates quickly into the atmosphere
+> - There is **no reason** to discharge the engine or APU fire bottles for evacuations not involving fire indications existing or reported in or near an engine or APU (e.g. cargo fire, security or bomb threat)
