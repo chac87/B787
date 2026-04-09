@@ -17,7 +17,8 @@
 > [!limit] Speed Limitations
 > <div class="cl-item"><strong>v<sub>LO</sub> / v<sub>LE</sub></strong><span class="cl-dots"></span><span>270 kts / M .82</span></div>
 > <div class="cl-item"><strong>V<sub>MO</sub> / M<sub>MO</sub></strong><span class="cl-dots"></span><span>350 kts / M .90</span></div>
-> <div class="cl-item"><strong>Turbulence Penetration</strong><span class="cl-dots"></span><span>290 kts &lt; 25.000 ft · 310 kts / M .84 ≥ 25.000 ft</span></div>
+> <div class="cl-item"><strong>Turbulence Penetration</strong><span class="cl-dots"></span><strong>290 kts</strong><span class="cl-note"> &lt; 25.000 ft</span></div>
+> <div class="cl-item cl-indent"><strong>≥ 25.000 ft</strong><span class="cl-dots"></span><strong>310 kts / M .84</strong></div>
 > <div class="cl-item"><strong>v<sub>FE</sub> Flaps 1</strong><span class="cl-dots"></span><span>260 kts</span></div>
 > <div class="cl-item"><strong>v<sub>FE</sub> Flaps 5</strong><span class="cl-dots"></span><span>240 kts</span></div>
 > <div class="cl-item"><strong>v<sub>FE</sub> Flaps 10</strong><span class="cl-dots"></span><span>230 kts</span></div>
