@@ -1,0 +1,10 @@
+---
+title: "[] DET FIRE APU"
+tags: [non-normal, fire]
+---
+
+# [] DET FIRE APU
+
+<a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
+
+<div class="nnc-condition">Condition: APU fire detection is failed.</div>
