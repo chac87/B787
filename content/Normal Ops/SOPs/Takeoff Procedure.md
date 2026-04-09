@@ -9,33 +9,49 @@ role: Both
 
 <div class="checklist">
 
-<div class="cl-sub">Before entering the departure runway, verify that the runway and runway entry point are correct. — C, F/O</div>
-<div class="cl-sub">Notify cabin crew to prepare for departure. Refer to FSM, Allgemeiner Teil 1.11.4 Cockpitansage zum Start. — C, F/O</div>
-<div class="cl-sub">Set the transponder mode selector to TA/RA. — F/O</div>
-<div class="cl-sub">When entering the departure runway, set the STROBE light switch to ON. Use other lights as needed. — F/O</div>
+<div class="cl-item"><strong>Runway and entry point</strong><span class="cl-dots"></span><strong>Verify — C, F/O</strong></div>
+<div class="cl-sub">Before entering the departure runway.</div>
 
-<div class="cl-sub">Set the weather radar/terrain display as needed. Select VSD on as needed. — PF, PM</div>
+<div class="cl-item"><strong>Cabin crew</strong><span class="cl-dots"></span><strong>Departure notification — C, F/O</strong></div>
+<div class="cl-sub">Refer to FSM, Allgemeiner Teil 1.11.4 Cockpitansage zum Start.</div>
 
-<div class="cl-sub">Verify that the brakes are released. Align the airplane with the runway. — C</div>
-<div class="cl-sub">Verify that the airplane heading agrees with the assigned runway heading. — C, F/O</div>
-<div class="cl-sub">When cleared for takeoff, set the LEFT and RIGHT LANDING light switches to ON. — F/O</div>
-<div class="cl-sub">Announce: "Takeoff" — C</div>
-<div class="cl-sub">If applicable: Announce: "You have control!" — C &nbsp;/&nbsp; "I have control!" — F/O</div>
+<div class="cl-item"><strong>Transponder mode selector</strong><span class="cl-dots"></span><strong>TA/RA — F/O</strong></div>
+
+<div class="cl-item"><strong>STROBE light switch</strong><span class="cl-dots"></span><strong>ON — F/O</strong></div>
+<div class="cl-sub">When entering the departure runway. Use other lights as needed.</div>
+
+<div class="cl-item"><strong>Weather radar/terrain display</strong><span class="cl-dots"></span><strong>Set as needed — PF, PM</strong></div>
+<div class="cl-sub">Select VSD on as needed.</div>
+
+<div class="cl-item"><strong>Brakes</strong><span class="cl-dots"></span><strong>Released — C</strong></div>
+<div class="cl-sub">Align the airplane with the runway.</div>
+
+<div class="cl-item"><strong>Runway heading</strong><span class="cl-dots"></span><strong>Verify — C, F/O</strong></div>
+
+<div class="cl-item"><strong>LANDING light switches (L, R)</strong><span class="cl-dots"></span><strong>ON — F/O</strong></div>
+<div class="cl-sub">When cleared for takeoff.</div>
+
+<div class="cl-item"><strong>Announce</strong><span class="cl-dots"></span><strong>"Takeoff" — C</strong></div>
+
+<div class="cl-item"><strong>If applicable: announce</strong><span class="cl-dots"></span><strong>"You have control!" — C</strong></div>
+<div class="cl-item cl-indent"><strong>Response</strong><span class="cl-dots"></span><strong>"I have control!" — F/O</strong></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
-<div class="cl-sub cl-indent">Advance the thrust levers to approximately 40% N1. — C</div>
+<div class="cl-item cl-indent"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>~40% N1 — C</strong></div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
-<div class="cl-sub cl-indent">Advance the thrust levers to approximately 20 TPR. — C</div>
+<div class="cl-item cl-indent"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>~20 TPR — C</strong></div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
 
-<div class="cl-sub">Allow the engines to stabilize. — C</div>
-<div class="cl-sub">Push the TO/GA switch. — C</div>
-<div class="cl-sub">Verify that the correct takeoff thrust is set. — C, F/O</div>
+<div class="cl-item"><strong>Engines</strong><span class="cl-dots"></span><strong>Allow to stabilize — C</strong></div>
+
+<div class="cl-item"><strong>TO/GA switch</strong><span class="cl-dots"></span><strong>Push — C</strong></div>
+
+<div class="cl-item"><strong>Takeoff thrust</strong><span class="cl-dots"></span><strong>Verify set — C, F/O</strong></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
-<div class="cl-sub cl-indent">Maximum takeoff thrust may not be available until 65 knots.</div>
+<div class="cl-note">Maximum takeoff thrust may not be available until 65 knots.</div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
 </div>
