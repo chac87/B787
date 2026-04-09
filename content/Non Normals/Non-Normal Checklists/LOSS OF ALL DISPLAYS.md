@@ -1,9 +1,9 @@
 ---
-title: "LOSS OF ALL DISPLAYS"
+title: "Loss of All Displays"
 tags: [non-normal, flightinstruments]
 ---
 
-# LOSS OF ALL DISPLAYS
+# Loss of All Displays
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
