@@ -1,9 +1,9 @@
 ---
-title: "CARGO A/C FWD"
+title: "CARGO A-C FWD"
 tags: [non-normal, airsystems]
 ---
 
-# CARGO A/C FWD
+# CARGO A-C FWD
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

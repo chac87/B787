@@ -1,9 +1,9 @@
 ---
-title: "HUD SYS CAPT, F/O"
+title: "HUD SYS CAPT, F-O"
 tags: [non-normal, flightinstruments]
 ---
 
-# HUD SYS CAPT, F/O
+# HUD SYS CAPT, F-O
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

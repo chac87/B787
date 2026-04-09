@@ -1,9 +1,9 @@
 ---
-title: "[] A/P BACKDRIVE COLUMN"
+title: "[] A-P BACKDRIVE COLUMN"
 tags: [non-normal, autoflight]
 ---
 
-# \[] A/P BACKDRIVE COLUMN
+# [] A-P BACKDRIVE COLUMN
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

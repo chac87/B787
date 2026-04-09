@@ -1,9 +1,9 @@
 ---
-title: "[] A/P BACKDRIVE WHEEL"
+title: "[] A-P BACKDRIVE WHEEL"
 tags: [non-normal, autoflight]
 ---
 
-# \[] A/P BACKDRIVE WHEEL
+# [] A-P BACKDRIVE WHEEL
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

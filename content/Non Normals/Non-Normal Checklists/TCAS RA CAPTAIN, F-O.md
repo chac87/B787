@@ -1,9 +1,9 @@
 ---
-title: "TCAS RA CAPTAIN, F/O"
+title: "TCAS RA CAPTAIN, F-O"
 tags: [non-normal, warnings]
 ---
 
-# TCAS RA CAPTAIN, F/O
+# TCAS RA CAPTAIN, F-O
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

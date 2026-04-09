@@ -1,9 +1,9 @@
 ---
-title: "SINGLE SOURCE F/D"
+title: "SINGLE SOURCE F-D"
 tags: [non-normal, navigation]
 ---
 
-# SINGLE SOURCE F/D
+# SINGLE SOURCE F-D
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

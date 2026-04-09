@@ -1,9 +1,9 @@
 ---
-title: "T/O THRUST DISAGREE"
+title: "T-O THRUST DISAGREE"
 tags: [non-normal, autoflight]
 ---
 
-# T/O THRUST DISAGREE
+# T-O THRUST DISAGREE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

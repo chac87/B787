@@ -1,9 +1,9 @@
 ---
-title: "[] PFD UNRELIABLE CAPT, F/O"
+title: "[] PFD UNRELIABLE CAPT, F-O"
 tags: [non-normal, flightinstruments]
 ---
 
-# \[] PFD UNRELIABLE CAPT, F/O
+# [] PFD UNRELIABLE CAPT, F-O
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
