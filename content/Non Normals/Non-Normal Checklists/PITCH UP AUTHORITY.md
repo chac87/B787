@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] PITCH UP AUTHORITY"
 tags: [non-normal, flightcontrols]
 ---

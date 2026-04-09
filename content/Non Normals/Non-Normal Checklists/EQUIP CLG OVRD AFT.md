@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] EQUIP CLG OVRD AFT"
 tags: [non-normal, airsystems]
 ---

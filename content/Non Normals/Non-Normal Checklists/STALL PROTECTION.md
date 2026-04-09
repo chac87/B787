@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] STALL PROTECTION"
 tags: [non-normal, flightcontrols]
 ---

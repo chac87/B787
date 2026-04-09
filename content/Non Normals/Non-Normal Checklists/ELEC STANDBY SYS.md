@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ELEC STANDBY SYS"
 tags: [non-normal, electrical]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "NO AUTOLAND GLS"
 tags: [non-normal, autoflight]
 ---

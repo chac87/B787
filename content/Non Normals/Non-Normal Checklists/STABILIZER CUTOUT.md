@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "STABILIZER CUTOUT"
 tags: [non-normal, flightcontrols]
 ---

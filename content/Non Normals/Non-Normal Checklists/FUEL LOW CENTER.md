@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "FUEL LOW CENTER"
 tags: [non-normal, fuel]
 ---

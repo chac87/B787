@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] GPS"
 tags: [non-normal, navigation]
 ---

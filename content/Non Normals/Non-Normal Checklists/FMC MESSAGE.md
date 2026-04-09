@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FMC MESSAGE"
 tags: [non-normal, navigation]
 ---

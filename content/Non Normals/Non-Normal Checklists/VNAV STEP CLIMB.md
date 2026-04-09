@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] VNAV STEP CLIMB"
 tags: [non-normal, navigation]
 ---

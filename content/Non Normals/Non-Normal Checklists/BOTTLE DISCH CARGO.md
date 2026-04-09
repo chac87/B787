@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "BOTTLE DISCH CARGO"
 tags: [non-normal, fire]
 ---

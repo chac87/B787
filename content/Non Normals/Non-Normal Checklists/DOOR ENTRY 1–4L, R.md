@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] DOOR ENTRY 1–4L, R"
 tags: [non-normal, general]
 ---

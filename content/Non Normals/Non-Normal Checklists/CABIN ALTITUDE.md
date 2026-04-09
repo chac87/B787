@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "[] CABIN ALTITUDE"
 tags: [non-normal, airsystems]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] TIRE PRESS"
 tags: [non-normal, gear]
 ---

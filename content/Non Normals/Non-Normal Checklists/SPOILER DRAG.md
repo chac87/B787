@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] SPOILER DRAG"
 tags: [non-normal, flightcontrols]
 ---

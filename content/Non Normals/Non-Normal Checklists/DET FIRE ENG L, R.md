@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] DET FIRE ENG L, R"
 tags: [non-normal, fire]
 ---

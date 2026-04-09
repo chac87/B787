@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ALTITUDE CALLOUTS"
 tags: [non-normal, warnings]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] SMOKE EQUIP CLG MISC"
 tags: [non-normal, fire]
 ---

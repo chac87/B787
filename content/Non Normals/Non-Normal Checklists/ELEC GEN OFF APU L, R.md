@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ELEC GEN OFF APU L, R"
 tags: [non-normal, electrical]
 ---

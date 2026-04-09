@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] MAIN BATTERY DISCH"
 tags: [non-normal, electrical]
 ---

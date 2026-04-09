@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ELEC IFE-SEATS OFF"
 tags: [non-normal, electrical]
 ---

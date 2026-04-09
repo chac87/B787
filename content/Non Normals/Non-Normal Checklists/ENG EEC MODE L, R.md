@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ENG EEC MODE L, R"
 tags: [non-normal, engine]
 ---

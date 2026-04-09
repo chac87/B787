@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL PUMP L AFT, FWD"
 tags: [non-normal, fuel]
 ---

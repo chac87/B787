@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "AUTOTHROTTLE DISC"
 tags: [non-normal, autoflight]
 ---

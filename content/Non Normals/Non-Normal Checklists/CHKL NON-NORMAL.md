@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] CHKL NON-NORMAL"
 tags: [non-normal, warnings]
 ---

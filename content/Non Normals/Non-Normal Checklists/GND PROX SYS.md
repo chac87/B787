@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] GND PROX SYS"
 tags: [non-normal, warnings]
 ---

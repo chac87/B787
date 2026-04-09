@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] GEAR SIDE BRACE L, R"
 tags: [non-normal, gear]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "[] FIRE APU"
 tags: [non-normal, fire]
 ---

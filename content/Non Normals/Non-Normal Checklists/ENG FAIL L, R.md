@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] ENG FAIL L, R"
 tags: [non-normal, engine]
 ---

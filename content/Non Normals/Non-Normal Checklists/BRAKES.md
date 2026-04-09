@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] BRAKES"
 tags: [non-normal, gear]
 ---

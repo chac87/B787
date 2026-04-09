@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "RAT UNLOCKED"
 tags: [non-normal, hydraulic]
 ---

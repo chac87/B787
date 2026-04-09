@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] NAV INERTIAL SYS"
 tags: [non-normal, navigation]
 ---

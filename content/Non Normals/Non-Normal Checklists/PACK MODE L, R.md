@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] PACK MODE L, R"
 tags: [non-normal, airsystems]
 ---

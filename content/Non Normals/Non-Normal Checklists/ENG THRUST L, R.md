@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "ENG THRUST L, R"
 tags: [non-normal, engine]
 ---

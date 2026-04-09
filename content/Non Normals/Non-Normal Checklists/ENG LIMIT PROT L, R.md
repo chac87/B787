@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] ENG LIMIT PROT L, R"
 tags: [non-normal, engine]
 ---

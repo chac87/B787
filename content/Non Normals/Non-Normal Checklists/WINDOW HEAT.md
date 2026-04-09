@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "WINDOW HEAT"
 tags: [non-normal, antiice]
 ---

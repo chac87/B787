@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "TCAS RA CAPTAIN, F-O"
 tags: [non-normal, warnings]
 ---

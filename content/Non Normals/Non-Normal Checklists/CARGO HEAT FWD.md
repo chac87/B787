@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "CARGO HEAT FWD"
 tags: [non-normal, airsystems]
 ---

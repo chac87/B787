@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL CROSSFEED"
 tags: [non-normal, fuel]
 ---

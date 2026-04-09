@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "CONFIG GEAR"
 tags: [non-normal, warnings]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "HF DATALINK"
 tags: [non-normal, comms]
 ---

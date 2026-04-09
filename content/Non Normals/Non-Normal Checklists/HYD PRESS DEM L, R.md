@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] HYD PRESS DEM L, R"
 tags: [non-normal, hydraulic]
 ---

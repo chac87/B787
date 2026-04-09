@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "CONFIG STABILIZER"
 tags: [non-normal, warnings]
 ---

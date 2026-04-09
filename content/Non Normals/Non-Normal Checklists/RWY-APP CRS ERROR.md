@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] RWY-APP CRS ERROR"
 tags: [non-normal, navigation]
 ---

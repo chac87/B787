@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "TRANSPONDER"
 tags: [non-normal, navigation]
 ---

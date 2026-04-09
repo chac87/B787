@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] FUEL QTY LOW"
 tags: [non-normal, fuel]
 ---

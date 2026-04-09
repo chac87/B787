@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "FUEL IMBALANCE"
 tags: [non-normal, fuel]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "GPWS TERR OVRD"
 tags: [non-normal, warnings]
 ---

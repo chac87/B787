@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] ROLL RIGHT AUTHORITY"
 tags: [non-normal, flightcontrols]
 ---

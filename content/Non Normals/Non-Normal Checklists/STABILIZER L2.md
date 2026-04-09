@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] STABILIZER L2"
 tags: [non-normal, flightcontrols]
 ---

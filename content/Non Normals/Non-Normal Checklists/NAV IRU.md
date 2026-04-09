@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] NAV IRU"
 tags: [non-normal, navigation]
 ---

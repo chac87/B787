@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "VHF DATALINK"
 tags: [non-normal, comms]
 ---

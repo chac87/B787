@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] DET FIRE APU"
 tags: [non-normal, fire]
 ---

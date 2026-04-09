@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] IRU-AHRU MOTION"
 tags: [non-normal, navigation]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "AIRSPEED LOW"
 tags: [non-normal, warnings]
 ---

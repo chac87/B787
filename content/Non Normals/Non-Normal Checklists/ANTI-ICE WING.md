@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] ANTI-ICE WING"
 tags: [non-normal, antiice]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] FLAP-SLAT CONTROL"
 tags: [non-normal, flightcontrols]
 ---

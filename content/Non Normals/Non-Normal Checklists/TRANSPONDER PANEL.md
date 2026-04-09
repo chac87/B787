@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] TRANSPONDER PANEL"
 tags: [non-normal, navigation]
 ---

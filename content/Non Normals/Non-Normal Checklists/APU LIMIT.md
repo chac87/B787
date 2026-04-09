@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] APU LIMIT"
 tags: [non-normal, engine]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] THRUST ASYM PROT"
 tags: [non-normal, engine]
 ---

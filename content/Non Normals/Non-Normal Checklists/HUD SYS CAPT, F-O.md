@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "HUD SYS CAPT, F-O"
 tags: [non-normal, flightinstruments]
 ---

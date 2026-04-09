@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "NAV SINGLE GPS"
 tags: [non-normal, navigation]
 ---

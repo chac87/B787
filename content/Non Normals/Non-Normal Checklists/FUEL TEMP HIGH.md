@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL TEMP HIGH"
 tags: [non-normal, fuel]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] GEAR DOOR"
 tags: [non-normal, gear]
 ---

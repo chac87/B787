@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] DOOR AFT, FWD CARGO"
 tags: [non-normal, general]
 ---

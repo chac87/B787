@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL DISAGREE"
 tags: [non-normal, fuel]
 ---

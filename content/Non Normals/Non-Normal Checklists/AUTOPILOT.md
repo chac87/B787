@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "AUTOPILOT"
 tags: [non-normal, autoflight]
 ---

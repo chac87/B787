@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "PASS OXYGEN ON"
 tags: [non-normal, general]
 ---

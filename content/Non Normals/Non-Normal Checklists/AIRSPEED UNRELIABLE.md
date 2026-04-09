@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] AIRSPEED UNRELIABLE"
 tags: [non-normal, warnings]
 ---

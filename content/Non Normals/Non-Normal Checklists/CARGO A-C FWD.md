@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "CARGO A-C FWD"
 tags: [non-normal, airsystems]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ADS-B OUT"
 tags: [non-normal, navigation]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "FUEL PRESS ENG L+R"
 tags: [non-normal, fuel]
 ---

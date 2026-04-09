@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] AUTO SPEEDBRAKE"
 tags: [non-normal, flightcontrols]
 ---

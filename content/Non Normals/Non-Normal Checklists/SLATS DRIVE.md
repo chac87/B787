@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] SLATS DRIVE"
 tags: [non-normal, flightcontrols]
 ---

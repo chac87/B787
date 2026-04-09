@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ENG CORE ANTI-ICE L, R"
 tags: [non-normal, engine]
 ---

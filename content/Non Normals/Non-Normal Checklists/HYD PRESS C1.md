@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] HYD PRESS C1"
 tags: [non-normal, hydraulic]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL PUMP CTR L+R"
 tags: [non-normal, fuel]
 ---

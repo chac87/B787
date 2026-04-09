@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "CREW OXYGEN LOW"
 tags: [non-normal, general]
 ---

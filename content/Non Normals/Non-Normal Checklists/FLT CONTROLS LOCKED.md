@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "FLT CONTROLS LOCKED"
 tags: [non-normal, flightcontrols]
 ---

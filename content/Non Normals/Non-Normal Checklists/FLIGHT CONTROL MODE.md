@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] FLIGHT CONTROL MODE"
 tags: [non-normal, flightcontrols]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] SGL SOURCE ATTITUDE"
 tags: [non-normal, flightinstruments]
 ---

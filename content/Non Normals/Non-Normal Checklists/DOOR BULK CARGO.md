@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] DOOR BULK CARGO"
 tags: [non-normal, general]
 ---

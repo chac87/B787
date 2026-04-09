@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] TERR POS"
 tags: [non-normal, warnings]
 ---

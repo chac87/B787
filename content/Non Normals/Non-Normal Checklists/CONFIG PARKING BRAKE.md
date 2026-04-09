@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "CONFIG PARKING BRAKE"
 tags: [non-normal, warnings]
 ---

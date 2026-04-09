@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "CONFIG RUDDER"
 tags: [non-normal, warnings]
 ---

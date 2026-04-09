@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "OVERSPEED"
 tags: [non-normal, warnings]
 ---

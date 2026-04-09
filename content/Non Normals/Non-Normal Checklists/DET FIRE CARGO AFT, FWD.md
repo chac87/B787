@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "DET FIRE CARGO AFT, FWD"
 tags: [non-normal, fire]
 ---

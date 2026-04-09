@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "NO AUTOLAND"
 tags: [non-normal, autoflight]
 ---

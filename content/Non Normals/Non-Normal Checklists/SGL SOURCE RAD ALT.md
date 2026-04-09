@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] SGL SOURCE RAD ALT"
 tags: [non-normal, flightinstruments]
 ---

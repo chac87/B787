@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] HEAT PITOT L+C+R"
 tags: [non-normal, antiice]
 ---

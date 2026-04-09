@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] LIQUID COOLING R"
 tags: [non-normal, airsystems]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "NAV APPROACH ILS"
 tags: [non-normal, navigation]
 ---

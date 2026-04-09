@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ANTI-ICE ENG L, R"
 tags: [non-normal, antiice]
 ---

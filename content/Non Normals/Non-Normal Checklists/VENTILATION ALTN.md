@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "VENTILATION ALTN"
 tags: [non-normal, airsystems]
 ---

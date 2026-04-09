@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "DATALINK LOST"
 tags: [non-normal, comms]
 ---

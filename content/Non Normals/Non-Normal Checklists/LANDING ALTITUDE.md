@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] LANDING ALTITUDE"
 tags: [non-normal, airsystems]
 ---

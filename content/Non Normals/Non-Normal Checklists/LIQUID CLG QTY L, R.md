@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "LIQUID CLG QTY L, R"
 tags: [non-normal, airsystems]
 ---

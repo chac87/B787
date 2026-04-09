@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] CONFIG WARNING SYS"
 tags: [non-normal, warnings]
 ---

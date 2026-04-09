@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "EVAC COMMAND"
 tags: [non-normal, general]
 ---

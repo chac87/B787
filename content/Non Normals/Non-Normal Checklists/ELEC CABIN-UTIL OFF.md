@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ELEC CABIN-UTIL OFF"
 tags: [non-normal, electrical]
 ---

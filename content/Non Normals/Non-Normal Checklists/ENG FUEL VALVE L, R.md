@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ENG FUEL VALVE L, R"
 tags: [non-normal, engine]
 ---

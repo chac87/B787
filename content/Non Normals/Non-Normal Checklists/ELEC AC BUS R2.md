@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] ELEC AC BUS R2"
 tags: [non-normal, electrical]
 ---

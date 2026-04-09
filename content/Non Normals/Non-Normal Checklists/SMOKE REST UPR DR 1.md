@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] SMOKE REST UPR DR 1"
 tags: [non-normal, fire]
 ---

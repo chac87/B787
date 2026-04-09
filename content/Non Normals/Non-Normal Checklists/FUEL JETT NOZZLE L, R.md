@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL JETT NOZZLE L, R"
 tags: [non-normal, fuel]
 ---

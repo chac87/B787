@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] WINDSHEAR SYS"
 tags: [non-normal, warnings]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "CONFIG FLAPS"
 tags: [non-normal, warnings]
 ---

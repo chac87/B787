@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] RADIO ALTIMETER L+R"
 tags: [non-normal, flightinstruments]
 ---

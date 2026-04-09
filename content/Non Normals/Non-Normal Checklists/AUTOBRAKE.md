@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "AUTOBRAKE"
 tags: [non-normal, gear]
 ---

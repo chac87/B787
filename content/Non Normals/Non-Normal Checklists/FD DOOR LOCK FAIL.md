@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FD DOOR LOCK FAIL"
 tags: [non-normal, general]
 ---

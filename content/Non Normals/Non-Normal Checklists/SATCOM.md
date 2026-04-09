@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "SATCOM"
 tags: [non-normal, comms]
 ---

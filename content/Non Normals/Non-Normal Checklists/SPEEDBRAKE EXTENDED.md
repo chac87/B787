@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "SPEEDBRAKE EXTENDED"
 tags: [non-normal, flightcontrols]
 ---

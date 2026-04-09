@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "AUTOPILOT DISC"
 tags: [non-normal, autoflight]
 ---

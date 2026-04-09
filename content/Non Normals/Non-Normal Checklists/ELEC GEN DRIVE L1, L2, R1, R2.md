@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ELEC GEN DRIVE L1, L2, R1, R2"
 tags: [non-normal, electrical]
 ---

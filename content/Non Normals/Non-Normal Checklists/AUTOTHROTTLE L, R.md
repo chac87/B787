@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] AUTOTHROTTLE L, R"
 tags: [non-normal, autoflight]
 ---

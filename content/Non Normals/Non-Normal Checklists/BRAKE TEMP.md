@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] BRAKE TEMP"
 tags: [non-normal, gear]
 ---

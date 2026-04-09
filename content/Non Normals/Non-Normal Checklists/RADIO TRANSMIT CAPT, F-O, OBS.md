@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] RADIO TRANSMIT CAPT, F-O, OBS"
 tags: [non-normal, comms]
 ---

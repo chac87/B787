@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "[] FIRE CARGO FWD"
 tags: [non-normal, fire]
 ---

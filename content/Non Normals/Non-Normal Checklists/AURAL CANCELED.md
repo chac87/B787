@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "AURAL CANCELED"
 tags: [non-normal, warnings]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] TAIL STRIKE"
 tags: [non-normal, warnings]
 ---

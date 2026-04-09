@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] ENG TURB DAMAGE L, R"
 tags: [non-normal, engine]
 ---

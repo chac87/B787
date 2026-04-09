@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL JETTISON MAIN"
 tags: [non-normal, fuel]
 ---

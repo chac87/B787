@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "FMC INTERCEPT HDG"
 tags: [non-normal, navigation]
 ---

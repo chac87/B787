@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] HUD SNGL OPERATION"
 tags: [non-normal, flightinstruments]
 ---

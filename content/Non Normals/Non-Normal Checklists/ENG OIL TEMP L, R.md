@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ENG OIL TEMP L, R"
 tags: [non-normal, engine]
 ---

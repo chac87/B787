@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "[] FD DOOR AUTO UNLOCK"
 tags: [non-normal, general]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "SATCOM DATALINK"
 tags: [non-normal, comms]
 ---

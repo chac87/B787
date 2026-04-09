@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] CABIN TEMPERATURE"
 tags: [non-normal, airsystems]
 ---

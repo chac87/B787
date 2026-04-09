@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "CONFIG SPOILERS"
 tags: [non-normal, warnings]
 ---

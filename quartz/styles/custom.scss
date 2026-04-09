@@ -1176,6 +1176,17 @@ article table td:first-child:has(+ td .sop-value) {
   &[data-level="memo"] { background: #666; color: #fff; }
 }
 
+// NNC note page: H1 color by EICAS level (via cssclasses frontmatter → article class)
+article.eicas-warning h1 { color: #e74c3c !important; }
+article.eicas-caution h1  { color: #f39c12 !important; }
+article.eicas-advisory h1 { color: #d4891a !important; }
+
+body[saved-theme="dark"] {
+  article.eicas-warning h1  { color: #ff7b7b !important; }
+  article.eicas-caution h1  { color: #f5c842 !important; }
+  article.eicas-advisory h1 { color: #e8a835 !important; }
+}
+
 // Name text coloring by EICAS level
 // !important required to override the global a { color: var(--secondary) !important; } rule
 .nn-item[data-eicas-level="warning"] > span:first-child { color: #e74c3c !important; font-weight: 500; }

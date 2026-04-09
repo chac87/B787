@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ENG RPM LIMITED L, R"
 tags: [non-normal, engine]
 ---

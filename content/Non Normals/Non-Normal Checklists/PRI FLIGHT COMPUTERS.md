@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] PRI FLIGHT COMPUTERS"
 tags: [non-normal, flightcontrols]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "FD DOOR OPEN"
 tags: [non-normal, general]
 ---

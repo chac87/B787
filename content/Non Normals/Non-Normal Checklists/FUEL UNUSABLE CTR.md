@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL UNUSABLE CTR"
 tags: [non-normal, fuel]
 ---

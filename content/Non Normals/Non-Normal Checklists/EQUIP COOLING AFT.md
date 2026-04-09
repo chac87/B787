@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] EQUIP COOLING AFT"
 tags: [non-normal, airsystems]
 ---

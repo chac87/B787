@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ELEC BATTERY OFF"
 tags: [non-normal, electrical]
 ---

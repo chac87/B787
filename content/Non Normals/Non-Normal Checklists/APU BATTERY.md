@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] APU BATTERY"
 tags: [non-normal, electrical]
 ---

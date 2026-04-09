@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL VALVE APU"
 tags: [non-normal, fuel]
 ---

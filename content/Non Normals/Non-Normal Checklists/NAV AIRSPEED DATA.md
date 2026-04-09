@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] NAV AIRSPEED DATA"
 tags: [non-normal, navigation]
 ---

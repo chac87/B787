@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] WINDOW HEAT L, R SIDE"
 tags: [non-normal, antiice]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] GEAR CONTROL"
 tags: [non-normal, gear]
 ---

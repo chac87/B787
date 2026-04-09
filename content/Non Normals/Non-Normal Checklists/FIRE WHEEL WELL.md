@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "[] FIRE WHEEL WELL"
 tags: [non-normal, fire]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] SPOILERS"
 tags: [non-normal, flightcontrols]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ALTN ATTITUDE CAPT, FO"
 tags: [non-normal, flightinstruments]
 ---

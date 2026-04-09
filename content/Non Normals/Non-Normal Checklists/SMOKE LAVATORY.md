@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "SMOKE LAVATORY"
 tags: [non-normal, fire]
 ---

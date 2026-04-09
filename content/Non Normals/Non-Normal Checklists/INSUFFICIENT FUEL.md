@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] INSUFFICIENT FUEL"
 tags: [non-normal, navigation]
 ---

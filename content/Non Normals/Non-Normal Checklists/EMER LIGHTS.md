@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "EMER LIGHTS"
 tags: [non-normal, general]
 ---

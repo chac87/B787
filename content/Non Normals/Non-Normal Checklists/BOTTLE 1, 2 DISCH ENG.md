@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "BOTTLE 1, 2 DISCH ENG"
 tags: [non-normal, fire]
 ---

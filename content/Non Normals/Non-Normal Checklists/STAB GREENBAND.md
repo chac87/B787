@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] STAB GREENBAND"
 tags: [non-normal, flightcontrols]
 ---

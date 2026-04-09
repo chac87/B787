@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ENG CONTROL L, R"
 tags: [non-normal, engine]
 ---

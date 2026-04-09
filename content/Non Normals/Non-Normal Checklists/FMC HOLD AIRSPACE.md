@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "FMC HOLD AIRSPACE"
 tags: [non-normal, navigation]
 ---

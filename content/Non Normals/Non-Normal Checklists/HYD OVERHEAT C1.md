@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] HYD OVERHEAT C1"
 tags: [non-normal, hydraulic]
 ---

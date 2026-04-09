@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] CRUISE FLAPS SYS"
 tags: [non-normal, flightcontrols]
 ---

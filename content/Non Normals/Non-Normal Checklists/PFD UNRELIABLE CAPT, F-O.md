@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] PFD UNRELIABLE CAPT, F-O"
 tags: [non-normal, flightinstruments]
 ---

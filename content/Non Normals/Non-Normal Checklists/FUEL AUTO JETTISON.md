@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] FUEL AUTO JETTISON"
 tags: [non-normal, fuel]
 ---

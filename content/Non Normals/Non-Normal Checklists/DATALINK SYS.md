@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "DATALINK SYS"
 tags: [non-normal, comms]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ENG TBV OPEN L, R"
 tags: [non-normal, engine]
 ---

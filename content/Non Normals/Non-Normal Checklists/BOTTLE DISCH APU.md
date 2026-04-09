@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "BOTTLE DISCH APU"
 tags: [non-normal, fire]
 ---

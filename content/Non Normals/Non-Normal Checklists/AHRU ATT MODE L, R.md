@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] AHRU ATT MODE L, R"
 tags: [non-normal, navigation]
 ---

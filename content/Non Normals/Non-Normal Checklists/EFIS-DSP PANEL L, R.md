@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] EFIS-DSP PANEL L, R"
 tags: [non-normal, flightinstruments]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "HYD QTY LOW C, L, R"
 tags: [non-normal, hydraulic]
 ---

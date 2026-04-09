@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL TEMP LOW"
 tags: [non-normal, fuel]
 ---

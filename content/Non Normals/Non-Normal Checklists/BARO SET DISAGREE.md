@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "BARO SET DISAGREE"
 tags: [non-normal, flightinstruments]
 ---

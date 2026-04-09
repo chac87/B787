@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "SATVOICE LOST"
 tags: [non-normal, comms]
 ---

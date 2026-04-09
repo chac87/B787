@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "GPWS FLAP OVRD"
 tags: [non-normal, warnings]
 ---

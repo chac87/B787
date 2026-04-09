@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "RECIRC FAN LWR, UPR OFF"
 tags: [non-normal, airsystems]
 ---

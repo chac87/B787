@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "NAV APPROACH GLS"
 tags: [non-normal, navigation]
 ---

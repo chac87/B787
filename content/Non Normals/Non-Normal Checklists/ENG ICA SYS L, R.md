@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "ENG ICA SYS L, R"
 tags: [non-normal, engine]
 ---

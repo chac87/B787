@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-warning]
 title: "CONFIG DOORS"
 tags: [non-normal, warnings]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "CARGO HEAT BULK"
 tags: [non-normal, airsystems]
 ---

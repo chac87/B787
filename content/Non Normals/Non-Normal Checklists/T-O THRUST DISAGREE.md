@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "T-O THRUST DISAGREE"
 tags: [non-normal, autoflight]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] HYD PRESS PRI L, R"
 tags: [non-normal, hydraulic]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] ENG REV LIMITED L, R"
 tags: [non-normal, engine]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] FLAPS PRIMARY FAIL"
 tags: [non-normal, flightcontrols]
 ---

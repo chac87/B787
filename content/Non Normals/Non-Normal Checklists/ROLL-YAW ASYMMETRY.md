@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] ROLL-YAW ASYMMETRY"
 tags: [non-normal, flightcontrols]
 ---

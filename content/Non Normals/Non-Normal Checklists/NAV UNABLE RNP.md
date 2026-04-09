@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-caution]
 title: "[] NAV UNABLE RNP"
 tags: [non-normal, navigation]
 ---

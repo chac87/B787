@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] DOOR AFT, FWD E-E ACCESS"
 tags: [non-normal, general]
 ---

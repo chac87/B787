@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FUEL PUMP CENTER L, R"
 tags: [non-normal, fuel]
 ---

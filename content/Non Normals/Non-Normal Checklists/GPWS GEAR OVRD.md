@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "GPWS GEAR OVRD"
 tags: [non-normal, warnings]
 ---

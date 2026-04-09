@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] LNAV BANK ANGLE LIM"
 tags: [non-normal, navigation]
 ---

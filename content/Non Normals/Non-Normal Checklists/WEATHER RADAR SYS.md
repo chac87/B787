@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "WEATHER RADAR SYS"
 tags: [non-normal, navigation]
 ---

@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] APU SHUTDOWN"
 tags: [non-normal, engine]
 ---

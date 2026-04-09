@@ -1,4 +1,5 @@
 ---
+cssclasses: [eicas-advisory]
 title: "[] FMC PERF UNAVAIL"
 tags: [non-normal, navigation]
 ---
