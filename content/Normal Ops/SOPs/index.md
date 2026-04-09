@@ -27,4 +27,6 @@ tags: [sop, normal-ops]
 
 ## [[Normal Ops/SOPs/Takeoff Procedure|Takeoff Procedure]]
 
+## [[Normal Ops/SOPs/Climb and Cruise Procedure|Climb and Cruise Procedure]]
+
 ## [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]

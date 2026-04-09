@@ -33,6 +33,7 @@
 [[Normal Ops/SOPs/Before Taxi Procedure|Before Taxi Procedure]]
 [[Normal Ops/SOPs/Before Takeoff Procedure|Before Takeoff Procedure]]
 [[Normal Ops/SOPs/Takeoff Procedure|Takeoff Procedure]]
+[[Normal Ops/SOPs/Climb and Cruise Procedure|Climb and Cruise Procedure]]
 [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]
 ### [[Normal Ops/Supplementary Procedures/index|Supplementary Procedures]]
 [[Low Visibility Operations]]
