@@ -122,6 +122,7 @@ function setupPage() {
   if (filterBar) {
     const catBar = document.getElementById("nn-cat-bar")
     const catContainer = document.getElementById("nn-cat-sections")
+    const levelBar = document.getElementById("nn-eicas-level-bar")
 
     const catNames: Record<string, string> = {
       misc: "Misc", general: "General", airsystems: "Air Systems", antiice: "Anti-Ice / Rain",
@@ -135,6 +136,7 @@ function setupPage() {
 
     let currentMode = "alpha"
     let currentCat: string | null = null
+    let currentLevel: string | null = null
 
     const applyFilter = () => {
       const alphaSections = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-section[data-section]"))
@@ -143,6 +145,14 @@ function setupPage() {
       document.querySelectorAll<HTMLElement>(".nn-filter-btn").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.mode === currentMode)
       })
+
+      if (currentMode === "eicas") {
+        levelBar?.classList.add("visible")
+      } else {
+        levelBar?.classList.remove("visible")
+        currentLevel = null
+        document.querySelectorAll<HTMLElement>(".nn-level-btn").forEach(b => b.classList.remove("active"))
+      }
 
       if (currentMode === "cat") {
         catBar?.classList.add("visible")
@@ -178,7 +188,7 @@ function setupPage() {
           let visible = 0
           items.forEach(item => {
             const show = currentMode === "alpha" ? true
-              : currentMode === "eicas" ? item.dataset.eicas === "true"
+              : currentMode === "eicas" ? (item.dataset.eicas === "true" && (currentLevel === null || item.dataset.eicasLevel === currentLevel))
               : currentMode === "qa" ? item.dataset.qa === "true"
               : item.dataset.unann === "true"
             item.classList.toggle("hidden", !show)
@@ -197,6 +207,17 @@ function setupPage() {
       applyFilter()
     }
 
+    const onLevelClick = (e: MouseEvent) => {
+      const btn = (e.target as HTMLElement).closest<HTMLElement>(".nn-level-btn")
+      if (!btn) return
+      const key = btn.dataset.level ?? ""
+      currentLevel = currentLevel === key ? null : key
+      document.querySelectorAll<HTMLElement>(".nn-level-btn").forEach(b => {
+        b.classList.toggle("active", b.dataset.level === currentLevel)
+      })
+      applyFilter()
+    }
+
     const onCatClick = (e: MouseEvent) => {
       const btn = (e.target as HTMLElement).closest<HTMLElement>(".nn-cat-btn")
       if (!btn) return
@@ -210,6 +231,10 @@ function setupPage() {
 
     filterBar.addEventListener("click", onFilterClick)
     window.addCleanup(() => filterBar.removeEventListener("click", onFilterClick))
+    if (levelBar) {
+      levelBar.addEventListener("click", onLevelClick)
+      window.addCleanup(() => levelBar.removeEventListener("click", onLevelClick))
+    }
     if (catBar) {
       catBar.addEventListener("click", onCatClick)
       window.addCleanup(() => catBar.removeEventListener("click", onCatClick))

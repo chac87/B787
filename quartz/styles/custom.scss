@@ -1098,6 +1098,36 @@ article table td:first-child:has(+ td .sop-value) {
   }
 }
 
+.nn-eicas-level-bar {
+  display: none;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+
+  &.visible { display: flex; }
+}
+
+.nn-level-btn {
+  border-radius: 20px;
+  padding: 3px 12px;
+  cursor: pointer;
+  font-size: 0.78em;
+  background: transparent;
+  font-family: inherit;
+  font-weight: 600;
+  transition: background 0.15s ease, color 0.15s ease;
+
+  &[data-level="warning"]  { color: #e74c3c; border: 1.5px solid #e74c3c; }
+  &[data-level="caution"]  { color: #f39c12; border: 1.5px solid #f39c12; }
+  &[data-level="advisory"] { color: #d4891a; border: 1.5px solid #d4891a; }
+
+  &[data-level="warning"].active  { background: #e74c3c; color: #fff; }
+  &[data-level="caution"].active  { background: #f39c12; color: #1a1a1a; }
+  &[data-level="advisory"].active { background: #d4891a; color: #fff; }
+
+  &:hover:not(.active) { opacity: 0.75; }
+}
+
 .nn-cat-btn {
   border: 1.5px solid #5291ED;
   color: #5291ED;
@@ -1240,6 +1270,13 @@ body[saved-theme="dark"] {
     border-color: #5291ED;
     color: #5291ED;
   }
+
+  .nn-level-btn[data-level="warning"]          { color: #ff7b7b; border-color: #ff7b7b; }
+  .nn-level-btn[data-level="warning"].active   { background: #ff7b7b; color: #1a1a1a; }
+  .nn-level-btn[data-level="caution"]          { color: #f5c842; border-color: #f5c842; }
+  .nn-level-btn[data-level="caution"].active   { background: #f5c842; color: #1a1a1a; }
+  .nn-level-btn[data-level="advisory"]         { color: #e8a835; border-color: #e8a835; }
+  .nn-level-btn[data-level="advisory"].active  { background: #e8a835; color: #1a1a1a; }
 }
 
 // ── NNC (Non-Normal Checklist) Procedure Format ──────────────────────────────

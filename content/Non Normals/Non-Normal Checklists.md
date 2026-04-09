@@ -29,6 +29,11 @@ tags: [non-normal, reference, eicas, checklists]
   <button class="nn-cat-btn" data-cat="warnings">Warning Systems</button>
   <button class="nn-cat-btn" data-cat="backcover">Back Cover</button>
 </div>
+<div class="nn-eicas-level-bar" id="nn-eicas-level-bar">
+  <button class="nn-level-btn" data-level="warning">Warning</button>
+  <button class="nn-level-btn" data-level="caution">Caution</button>
+  <button class="nn-level-btn" data-level="advisory">Advisory</button>
+</div>
 
 <div id="nn-list">
 
