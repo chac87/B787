@@ -12,21 +12,21 @@ Engine warm up requirements:
 <div class="checklist">
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
-<div class="cl-sub cl-indent">Run the engines for at least 3 minutes</div>
+<div class="cl-item cl-indent"><strong>Engine run time</strong><span class="cl-dots"></span><strong>At least 3 minutes</strong></div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
-<div class="cl-sub cl-indent">Run the engines for at least 5 minutes</div>
+<div class="cl-item cl-indent"><strong>Engine run time</strong><span class="cl-dots"></span><strong>At least 5 minutes</strong></div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
 
-<div class="cl-sub">Use a thrust setting normally used for taxi operations</div>
+<div class="cl-item"><strong>Thrust setting</strong><span class="cl-dots"></span><strong>Normally used for taxi</strong></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
-<div class="cl-sub cl-indent">Engine oil temperature must be above the bottom of the temperature scale</div>
+<div class="cl-item cl-indent"><strong>Engine oil temperature</strong><span class="cl-dots"></span><strong>Above bottom of temperature scale</strong></div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
-<div class="cl-sub cl-indent">Engine oil temperature must be above the lower amber band before takeoff</div>
+<div class="cl-item cl-indent"><strong>Engine oil temperature</strong><span class="cl-dots"></span><strong>Above lower amber band</strong></div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
 
 </div>
@@ -35,9 +35,9 @@ Approaching Takeoff-RWY:
 
 <div class="checklist">
 
-<div class="cl-sub">Cabin Report receive — C, F/O</div>
-<div class="cl-sub">Departure Briefing confirm — C, F/O</div>
-<div class="cl-sub">TOPAS X-Check perform — C, F/O</div>
+<div class="cl-item"><strong>Cabin Report</strong><span class="cl-dots"></span><strong>Receive — C, F/O</strong></div>
+<div class="cl-item"><strong>Departure Briefing</strong><span class="cl-dots"></span><strong>Confirm — C, F/O</strong></div>
+<div class="cl-item"><strong>TOPAS X-Check</strong><span class="cl-dots"></span><strong>Perform — C, F/O</strong></div>
 
 </div>
 
