@@ -35,9 +35,9 @@ Approaching Takeoff-RWY:
 
 <div class="checklist">
 
-<div class="cl-sub">Cabin Report receive — C</div>
+<div class="cl-sub">Cabin Report receive — C, F/O</div>
 <div class="cl-sub">Departure Briefing confirm — C, F/O</div>
-<div class="cl-sub">TOPAS X-Check perform — F/O</div>
+<div class="cl-sub">TOPAS X-Check perform — C, F/O</div>
 
 </div>
 
