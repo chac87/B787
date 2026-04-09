@@ -23,4 +23,6 @@ tags: [sop, normal-ops]
 
 ## [[Normal Ops/SOPs/Before Taxi Procedure|Before Taxi Procedure]]
 
+## [[Normal Ops/SOPs/Before Takeoff Procedure|Before Takeoff Procedure]]
+
 ## [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]

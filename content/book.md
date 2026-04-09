@@ -31,6 +31,7 @@
 [[Normal Ops/SOPs/Pushback or Towing Procedure|Pushback or Towing Procedure]]
 [[Normal Ops/SOPs/Engine Start Procedure|Engine Start Procedure]]
 [[Normal Ops/SOPs/Before Taxi Procedure|Before Taxi Procedure]]
+[[Normal Ops/SOPs/Before Takeoff Procedure|Before Takeoff Procedure]]
 [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]
 ### [[Normal Ops/Supplementary Procedures/index|Supplementary Procedures]]
 [[Low Visibility Operations]]
