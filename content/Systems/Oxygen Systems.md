@@ -31,9 +31,6 @@
 > [!info] Preflight Check
 > Druckabfall beim Preflight-Check kann auf geschlossenes Shutoff-Valve hinweisen — dann kein Sauerstoff verfügbar.
 
-> [!info] Mikrofon-Test (ohne Maske zu entnehmen)
-> FLIGHT Interphone wählen · MIC-Switch halten · TEST-Button Maske + RESET/TEST-Switch Box gleichzeitig drücken → Sauerstoffgeräusch über Lautsprecher = Mikrofon OK.
-
 > [!info]- Flight Deck Oxygen Test (Preflight)
 > **Voraussetzung:** Maske verstaut, Maskentür geschlossen.
 >
