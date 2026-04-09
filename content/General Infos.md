@@ -17,19 +17,6 @@
 > ![[antennas.webp]]
 
 
-> [!info]- Display Color Philosophy
-> The use of colors allows pilots to instantly recognize the operational status of the airplane, enabling a priority of flight path control. Boeing utilizes colors in flight deck design that are consistent with industry standards and requirements.
->
-> | Color | Usage |
-> | :--- | :--- |
-> | **Red** | Highest priority safety information. Warning level alerts — require immediate awareness and corrective action. Keep-out zones and do-not-exceed limits. |
-> | **Amber** | Second priority safety information. Caution level alerts — require immediate crew awareness and subsequent response. Advisory level alerts — displayed in amber text with no aural; require crew awareness and may require a response. Also used for flags, non-normal sources, and regions of limited operation. |
-> | **Green** | Active, engaged, selected and tuned. Fly-to areas. |
-> | **White** | Real-time information, scales and values ready to be used. |
-> | **Magenta** | Target values and FMC-generated flight path. |
-> | **Cyan** | Inactive data, labels and background. |
-> | **Blue** | Informational purposes. |
-
 > [!info]- ICAO Wake Turbulence
 > | Voraus | App Radar | App Non-Radar | T/O | T/O Inter |
 > | :--- | :---: | :---: | :---: | :---: |

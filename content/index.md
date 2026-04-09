@@ -6,6 +6,7 @@ title: B787 Guide
 
 # B787 Guide
 ## [[General Infos|General Infos]]
+## [[Flight Deck Design|Flight Deck Design]]
 ## [[Limitations|Limitations]]
 ## [[Systems/index|Systems]]
 ## [[Normal Ops/index|Normals Ops - SOPs]]
