@@ -34,6 +34,21 @@
 > [!info] Mikrofon-Test (ohne Maske zu entnehmen)
 > FLIGHT Interphone wählen · MIC-Switch halten · TEST-Button Maske + RESET/TEST-Switch Box gleichzeitig drücken → Sauerstoffgeräusch über Lautsprecher = Mikrofon OK.
 
+> [!info]- Flight Deck Oxygen Test (Preflight)
+> **Voraussetzung:** Maske verstaut, Maskentür geschlossen.
+>
+> **Schritt 1 — Dichtheitsprüfung (Leakage Test):**
+> - RESET/TEST-Switch gedrückt halten
+> - Blinker wird ca. 1 Sek. gelb, kehrt dann auf schwarz zurück → kein Leck vorhanden
+>
+> **Schritt 2 — Sauerstofffluss-Test:**
+> - RESET/TEST-Switch drücken und gleichzeitig PRESS TO TEST am Regler drücken
+> - Blinker muss gelb werden und **gelb bleiben** → Sauerstoff fließt
+> - Optional: Sauerstoffgeräusch im Headset prüfen → Mikrofon OK
+> - Beide Tasten loslassen → Blinker kehrt auf schwarz zurück; bleibt er gelb → Systemleck prüfen
+>
+> **Abschluss:** Maskentüren geschlossen · linkes Türfähnchen eingezogen · Regler auf 100 % gestellt
+
 ---
 
 ## Passenger Cabin Oxygen System
