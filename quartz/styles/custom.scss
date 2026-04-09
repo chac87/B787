@@ -1177,9 +1177,9 @@ article table td:first-child:has(+ td .sop-value) {
 }
 
 // Name text coloring by EICAS level
-.nn-item[data-eicas-level="warning"] > span:first-child { color: #e74c3c; font-weight: 500; }
-.nn-item[data-eicas-level="caution"] > span:first-child { color: #f39c12; font-weight: 500; }
-.nn-item[data-eicas-level="advisory"] > span:first-child { color: #d4891a; font-weight: 500; }
+.nn-item[data-eicas-level="warning"] > span:first-child { color: #e74c3c; font-weight: 500; a { color: inherit; } }
+.nn-item[data-eicas-level="caution"] > span:first-child { color: #f39c12; font-weight: 500; a { color: inherit; } }
+.nn-item[data-eicas-level="advisory"] > span:first-child { color: #d4891a; font-weight: 500; a { color: inherit; } }
 
 body[saved-theme="dark"] {
   .nn-item[data-eicas-level="warning"] > span:first-child { color: #ff7b7b; }
