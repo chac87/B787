@@ -1,5 +1,4 @@
 ---
-cssclasses: [eicas-advisory]
 title: "LOSS OF ALL DISPLAYS"
 tags: [non-normal, flightinstruments]
 ---

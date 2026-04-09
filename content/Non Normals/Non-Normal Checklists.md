@@ -297,6 +297,7 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="L">
 <div class="nn-section-header">L</div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightinstruments"><span><a href="/Non-Normals/Non-Normal-Checklists/LOSS-OF-ALL-DISPLAYS">Loss of All Displays</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span><a href="/Non-Normals/Non-Normal-Checklists/LANDING-ALTITUDE">[] LANDING ALTITUDE</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span><a href="/Non-Normals/Non-Normal-Checklists/LIQUID-CLG-QTY-L,-R">LIQUID CLG QTY L, R</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span><a href="/Non-Normals/Non-Normal-Checklists/LIQUID-COOLING-L">[] LIQUID COOLING L</a></span></div>
