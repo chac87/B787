@@ -51,9 +51,9 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span><a href="/Non-Normals/Non-Normal-Checklists/ANTI-ICE-PACKS">ANTI-ICE PACKS</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span><a href="/Non-Normals/Non-Normal-Checklists/ANTI-ICE-WING">[] ANTI-ICE WING</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span><a href="/Non-Normals/Non-Normal-Checklists/ANTISKID">[] ANTISKID</a></span></div>
-<div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span><a href="/Non-Normals/Non-Normal-Checklists/A-P-BACKDRIVE-COLUMN">[] A/P BACKDRIVE COLUMN</a></span></div>
-<div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span><a href="/Non-Normals/Non-Normal-Checklists/A-P-BACKDRIVE-PEDAL">[] A/P BACKDRIVE PEDAL</a></span></div>
-<div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span><a href="/Non-Normals/Non-Normal-Checklists/A-P-BACKDRIVE-WHEEL">[] A/P BACKDRIVE WHEEL</a></span></div>
+<div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span><a href="/Non-Normals/Non-Normal-Checklists/A-P-BACKDRIVE-COLUMN"><span>[] A/P BACKDRIVE COLUMN</span></a></span></div>
+<div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span><a href="/Non-Normals/Non-Normal-Checklists/A-P-BACKDRIVE-PEDAL"><span>[] A/P BACKDRIVE PEDAL</span></a></span></div>
+<div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="autoflight"><span><a href="/Non-Normals/Non-Normal-Checklists/A-P-BACKDRIVE-WHEEL"><span>[] A/P BACKDRIVE WHEEL</span></a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="electrical"><span><a href="/Non-Normals/Non-Normal-Checklists/APU-BATTERY">[] APU BATTERY</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/APU-LIMIT">[] APU LIMIT</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/APU-SHUTDOWN">[] APU SHUTDOWN</a></span></div>
@@ -110,7 +110,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/DET-FIRE-ENG-L,-R">[] DET FIRE ENG L, R</a></span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="misc"><span><a href="/Non-Normals/Non-Normal-Checklists/Ditching">Ditching</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-AFT,-FWD-CARGO">[] DOOR AFT, FWD CARGO</a></span></div>
-<div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-AFT,-FWD-E-E-ACCESS">[] DOOR AFT, FWD E/E ACCESS</a></span></div>
+<div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-AFT,-FWD-E-E-ACCESS"><span>[] DOOR AFT, FWD E/E ACCESS</span></a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-BULK-CARGO">[] DOOR BULK CARGO</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-ENTRY-1–4L,-R">[] DOOR ENTRY 1–4L, R</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-FD-OVHD">[] DOOR FD OVHD</a></span></div>
@@ -120,7 +120,7 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="E">
 <div class="nn-section-header">E</div>
-<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="electrical"><span><a href="/Non-Normals/Non-Normal-Checklists/EFIS-DSP-PANEL-L,-R">[] EFIS/DSP PANEL L, R</a></span></div>
+<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="electrical"><span><a href="/Non-Normals/Non-Normal-Checklists/EFIS-DSP-PANEL-L,-R"><span>[] EFIS/DSP PANEL L, R</span></a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="electrical"><span><a href="/Non-Normals/Non-Normal-Checklists/ELEC-AC-BUS-L1">[] ELEC AC BUS L1</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="electrical"><span><a href="/Non-Normals/Non-Normal-Checklists/ELEC-AC-BUS-L2">[] ELEC AC BUS L2</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="electrical"><span><a href="/Non-Normals/Non-Normal-Checklists/ELEC-AC-BUS-R1">[] ELEC AC BUS R1</a></span></div>
@@ -192,7 +192,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightcontrols"><span>Flaps + Slats Fail</span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE">[] FLAPS DRIVE</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL">[] FLAPS PRIMARY FAIL</a></span></div>
-<div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL">[] FLAP/SLAT CONTROL</a></span></div>
+<div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL"><span>[] FLAP/SLAT CONTROL</span></a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/FLIGHT-CONTROL-MODE">[] FLIGHT CONTROL MODE</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/FLIGHT-CONTROLS">[] FLIGHT CONTROLS</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/FLT-CONTROLS-LOCKED">FLT CONTROLS LOCKED</a></span></div>
@@ -281,7 +281,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span><a href="/Non-Normals/Non-Normal-Checklists/ICING-ENG">ICING ENG</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span><a href="/Non-Normals/Non-Normal-Checklists/INSUFFICIENT-FUEL">[] INSUFFICIENT FUEL</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/IRU-ATT-MODE-L,-R">IRU ATT MODE L, R</a></span></div>
-<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/IRU-AHRU-MOTION">[] IRU/AHRU MOTION</a></span></div>
+<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/IRU-AHRU-MOTION"><span>[] IRU/AHRU MOTION</span></a></span></div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightinstruments"><span>ISFD Use</span></div>
 </div>
 
@@ -340,7 +340,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span><a href="/Non-Normals/Non-Normal-Checklists/PACK-L+R">[] PACK L+R</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span><a href="/Non-Normals/Non-Normal-Checklists/PACK-MODE-L,-R">[] PACK MODE L, R</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/PASS-OXYGEN-ON">PASS OXYGEN ON</a></span></div>
-<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightinstruments"><span><a href="/Non-Normals/Non-Normal-Checklists/PFD-UNRELIABLE-CAPT,-F-O">[] PFD UNRELIABLE CAPT, F/O</a></span></div>
+<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightinstruments"><span><a href="/Non-Normals/Non-Normal-Checklists/PFD-UNRELIABLE-CAPT,-F-O"><span>[] PFD UNRELIABLE CAPT, F/O</span></a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span><a href="/Non-Normals/Non-Normal-Checklists/PILOT-RESPONSE">PILOT RESPONSE</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/PITCH-DOWN-AUTHORITY">[] PITCH DOWN AUTHORITY</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/PITCH-UP-AUTHORITY">[] PITCH UP AUTHORITY</a></span></div>
@@ -351,14 +351,14 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-section-header">R</div>
 <div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightinstruments"><span>Radio Alt Unreliable</span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightinstruments"><span><a href="/Non-Normals/Non-Normal-Checklists/RADIO-ALTIMETER-L+R">[] RADIO ALTIMETER L+R</a></span></div>
-<div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="comms"><span><a href="/Non-Normals/Non-Normal-Checklists/RADIO-TRANSMIT-CAPT,-F-O,-OBS">[] RADIO TRANSMIT CAPT, F/O, OBS</a></span></div>
+<div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="comms"><span><a href="/Non-Normals/Non-Normal-Checklists/RADIO-TRANSMIT-CAPT,-F-O,-OBS"><span>[] RADIO TRANSMIT CAPT, F/O, OBS</span></a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="hydraulic"><span><a href="/Non-Normals/Non-Normal-Checklists/RAT-UNLOCKED">RAT UNLOCKED</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="airsystems"><span><a href="/Non-Normals/Non-Normal-Checklists/RECIRC-FAN-LWR,-UPR-OFF">RECIRC FAN LWR, UPR OFF</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/ROLL-LEFT-AUTHORITY">[] ROLL LEFT AUTHORITY</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/ROLL-RIGHT-AUTHORITY">[] ROLL RIGHT AUTHORITY</a></span></div>
-<div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/ROLL-YAW-ASYMMETRY">[] ROLL/YAW ASYMMETRY</a></span></div>
-<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/RWY-APP-CRS-ERROR">[] RWY/APP CRS ERROR</a></span></div>
-<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/RWY-APP-TUNE-ERROR">[] RWY/APP TUNE ERROR</a></span></div>
+<div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/ROLL-YAW-ASYMMETRY"><span>[] ROLL/YAW ASYMMETRY</span></a></span></div>
+<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/RWY-APP-CRS-ERROR"><span>[] RWY/APP CRS ERROR</span></a></span></div>
+<div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/RWY-APP-TUNE-ERROR"><span>[] RWY/APP TUNE ERROR</span></a></span></div>
 </div>
 
 <div class="nn-section" data-section="S">

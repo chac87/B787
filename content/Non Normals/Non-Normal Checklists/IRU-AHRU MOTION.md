@@ -3,7 +3,7 @@ title: "[] IRU/AHRU MOTION"
 tags: [non-normal, navigation]
 ---
 
-# [] IRU/AHRU MOTION
+# \[] IRU/AHRU MOTION
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

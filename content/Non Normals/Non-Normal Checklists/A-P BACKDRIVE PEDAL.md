@@ -3,7 +3,7 @@ title: "[] A/P BACKDRIVE PEDAL"
 tags: [non-normal, autoflight]
 ---
 
-# [] A/P BACKDRIVE PEDAL
+# \[] A/P BACKDRIVE PEDAL
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

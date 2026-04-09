@@ -3,7 +3,7 @@ title: "[] ROLL/YAW ASYMMETRY"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] ROLL/YAW ASYMMETRY
+# \[] ROLL/YAW ASYMMETRY
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
