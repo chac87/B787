@@ -3,15 +3,18 @@
 > [!info]- Display Color Philosophy
 > The use of colors allows pilots to instantly recognize the operational status of the airplane, enabling a priority of flight path control. Boeing utilizes colors in flight deck design that are consistent with industry standards and requirements.
 >
-> | Color | Usage |
-> | :--- | :--- |
-> | **Red** | Highest priority safety information. Warning level alerts — require immediate awareness and corrective action. Keep-out zones and do-not-exceed limits. |
-> | **Amber** | Second priority safety information. Caution level alerts — require immediate crew awareness and subsequent response. Advisory level alerts — displayed in amber text with no aural; require crew awareness and may require a response. Also used for flags, non-normal sources, and regions of limited operation. |
-> | **Green** | Active, engaged, selected and tuned. Fly-to areas. |
-> | **White** | Real-time information, scales and values ready to be used. |
-> | **Magenta** | Target values and FMC-generated flight path. |
-> | **Cyan** | Inactive data, labels and background. |
-> | **Blue** | Informational purposes. |
+> <table class="display-colors-table">
+> <thead><tr><th>Color</th><th>Usage</th></tr></thead>
+> <tbody>
+> <tr><td><strong style="color:#e74c3c">Red</strong></td><td>Highest priority safety information. Warning level alerts — require immediate awareness and corrective action. Keep-out zones and do-not-exceed limits.</td></tr>
+> <tr><td><strong style="color:#f39c12">Amber</strong></td><td>Second priority safety information. Caution level alerts — require immediate crew awareness and subsequent response. Advisory level alerts — displayed in amber text with no aural; require crew awareness and may require a response. Also used for flags, non-normal sources, and regions of limited operation.</td></tr>
+> <tr><td><strong style="color:#27ae60">Green</strong></td><td>Active, engaged, selected and tuned. Fly-to areas.</td></tr>
+> <tr><td><strong class="c-white-label">White</strong></td><td>Real-time information, scales and values ready to be used.</td></tr>
+> <tr><td><strong style="color:#c775b5">Magenta</strong></td><td>Target values and FMC-generated flight path.</td></tr>
+> <tr><td><strong style="color:#4B9DA1">Cyan</strong></td><td>Inactive data, labels and background.</td></tr>
+> <tr><td><strong style="color:#3257BC">Blue</strong></td><td>Informational purposes.</td></tr>
+> </tbody>
+> </table>
 
 > [!info]- Push Button Switches
 > Aircraft systems primarily use two types of push-button switches. Both are designed to draw the crew's attention to the system status and potential faults.
