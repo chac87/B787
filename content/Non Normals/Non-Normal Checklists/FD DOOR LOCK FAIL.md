@@ -4,7 +4,7 @@ title: "[] FD DOOR LOCK FAIL"
 tags: [non-normal, general]
 ---
 
-# [] FD DOOR LOCK FAIL
+# <span class="h1-bracket">[]</span> FD DOOR LOCK FAIL
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

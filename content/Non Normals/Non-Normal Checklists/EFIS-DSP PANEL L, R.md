@@ -4,7 +4,7 @@ title: "[] EFIS-DSP PANEL L, R"
 tags: [non-normal, flightinstruments]
 ---
 
-# [] EFIS-DSP PANEL L, R
+# <span class="h1-bracket">[]</span> EFIS-DSP PANEL L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

@@ -4,7 +4,7 @@ title: "[] ENG OIL TEMP L, R"
 tags: [non-normal, engine]
 ---
 
-# [] ENG OIL TEMP L, R
+# <span class="h1-bracket">[]</span> ENG OIL TEMP L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

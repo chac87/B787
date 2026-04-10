@@ -4,7 +4,7 @@ title: "[] STABILIZER L2"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] STABILIZER L2
+# <span class="h1-bracket">[]</span> STABILIZER L2
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

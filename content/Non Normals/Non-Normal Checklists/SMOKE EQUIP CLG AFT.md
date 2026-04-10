@@ -4,7 +4,7 @@ title: "[] SMOKE EQUIP CLG AFT"
 tags: [non-normal, fire]
 ---
 
-# [] SMOKE EQUIP CLG AFT
+# <span class="h1-bracket">[]</span> SMOKE EQUIP CLG AFT
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

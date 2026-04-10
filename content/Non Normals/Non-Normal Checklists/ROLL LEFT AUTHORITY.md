@@ -4,7 +4,7 @@ title: "[] ROLL LEFT AUTHORITY"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] ROLL LEFT AUTHORITY
+# <span class="h1-bracket">[]</span> ROLL LEFT AUTHORITY
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

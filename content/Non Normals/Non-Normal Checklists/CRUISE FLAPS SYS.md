@@ -4,7 +4,7 @@ title: "[] CRUISE FLAPS SYS"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] CRUISE FLAPS SYS
+# <span class="h1-bracket">[]</span> CRUISE FLAPS SYS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

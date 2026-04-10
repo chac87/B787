@@ -4,7 +4,7 @@ title: "[] LIQUID COOLING R"
 tags: [non-normal, airsystems]
 ---
 
-# [] LIQUID COOLING R
+# <span class="h1-bracket">[]</span> LIQUID COOLING R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

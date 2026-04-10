@@ -4,7 +4,7 @@ title: "[] MAIN BATTERY DISCH"
 tags: [non-normal, electrical]
 ---
 
-# [] MAIN BATTERY DISCH
+# <span class="h1-bracket">[]</span> MAIN BATTERY DISCH
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

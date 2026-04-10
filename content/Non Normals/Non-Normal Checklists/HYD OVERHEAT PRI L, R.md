@@ -4,7 +4,7 @@ title: "[] HYD OVERHEAT PRI L, R"
 tags: [non-normal, hydraulic]
 ---
 
-# [] HYD OVERHEAT PRI L, R
+# <span class="h1-bracket">[]</span> HYD OVERHEAT PRI L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

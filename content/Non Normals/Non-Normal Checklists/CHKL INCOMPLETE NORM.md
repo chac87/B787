@@ -4,7 +4,7 @@ title: "[] CHKL INCOMPLETE NORM"
 tags: [non-normal, warnings]
 ---
 
-# [] CHKL INCOMPLETE NORM
+# <span class="h1-bracket">[]</span> CHKL INCOMPLETE NORM
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

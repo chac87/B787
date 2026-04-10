@@ -4,7 +4,7 @@ title: "[] FUEL DISAGREE"
 tags: [non-normal, fuel]
 ---
 
-# [] FUEL DISAGREE
+# <span class="h1-bracket">[]</span> FUEL DISAGREE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

@@ -4,7 +4,7 @@ title: "[] NAV AIRSPEED DATA"
 tags: [non-normal, navigation]
 ---
 
-# [] NAV AIRSPEED DATA
+# <span class="h1-bracket">[]</span> NAV AIRSPEED DATA
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

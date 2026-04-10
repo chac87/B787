@@ -4,7 +4,7 @@ title: "[] FLAPS PRIMARY FAIL"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] FLAPS PRIMARY FAIL
+# <span class="h1-bracket">[]</span> FLAPS PRIMARY FAIL
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

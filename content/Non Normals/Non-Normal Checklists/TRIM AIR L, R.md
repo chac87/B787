@@ -4,7 +4,7 @@ title: "[] TRIM AIR L, R"
 tags: [non-normal, airsystems]
 ---
 
-# [] TRIM AIR L, R
+# <span class="h1-bracket">[]</span> TRIM AIR L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

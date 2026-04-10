@@ -4,7 +4,7 @@ title: "[] TERR POS"
 tags: [non-normal, warnings]
 ---
 
-# [] TERR POS
+# <span class="h1-bracket">[]</span> TERR POS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

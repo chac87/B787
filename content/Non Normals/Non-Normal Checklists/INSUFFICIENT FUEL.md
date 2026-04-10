@@ -4,7 +4,7 @@ title: "[] INSUFFICIENT FUEL"
 tags: [non-normal, navigation]
 ---
 
-# [] INSUFFICIENT FUEL
+# <span class="h1-bracket">[]</span> INSUFFICIENT FUEL
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

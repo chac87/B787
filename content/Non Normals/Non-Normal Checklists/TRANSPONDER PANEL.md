@@ -4,7 +4,7 @@ title: "[] TRANSPONDER PANEL"
 tags: [non-normal, navigation]
 ---
 
-# [] TRANSPONDER PANEL
+# <span class="h1-bracket">[]</span> TRANSPONDER PANEL
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

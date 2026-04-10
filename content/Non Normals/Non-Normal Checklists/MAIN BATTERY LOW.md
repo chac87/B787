@@ -4,7 +4,7 @@ title: "[] MAIN BATTERY LOW"
 tags: [non-normal, electrical]
 ---
 
-# [] MAIN BATTERY LOW
+# <span class="h1-bracket">[]</span> MAIN BATTERY LOW
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

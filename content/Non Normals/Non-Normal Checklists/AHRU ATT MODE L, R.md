@@ -4,7 +4,7 @@ title: "[] AHRU ATT MODE L, R"
 tags: [non-normal, navigation]
 ---
 
-# [] AHRU ATT MODE L, R
+# <span class="h1-bracket">[]</span> AHRU ATT MODE L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

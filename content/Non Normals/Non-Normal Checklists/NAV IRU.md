@@ -4,7 +4,7 @@ title: "[] NAV IRU"
 tags: [non-normal, navigation]
 ---
 
-# [] NAV IRU
+# <span class="h1-bracket">[]</span> NAV IRU
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

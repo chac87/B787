@@ -4,7 +4,7 @@ title: "[] ICE DETECTORS"
 tags: [non-normal, antiice]
 ---
 
-# [] ICE DETECTORS
+# <span class="h1-bracket">[]</span> ICE DETECTORS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

@@ -4,7 +4,7 @@ title: "[] PRI FLIGHT COMPUTERS"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] PRI FLIGHT COMPUTERS
+# <span class="h1-bracket">[]</span> PRI FLIGHT COMPUTERS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

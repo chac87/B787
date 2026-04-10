@@ -4,7 +4,7 @@ title: "[] ELEC AC BUS L2"
 tags: [non-normal, electrical]
 ---
 
-# [] ELEC AC BUS L2
+# <span class="h1-bracket">[]</span> ELEC AC BUS L2
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

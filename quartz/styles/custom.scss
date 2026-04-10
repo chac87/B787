@@ -1211,10 +1211,14 @@ article.eicas-warning h1 { color: #e74c3c !important; }
 article.eicas-caution h1  { color: #f39c12 !important; }
 article.eicas-advisory h1 { color: #d4891a !important; }
 
+// [] bracket prefix always in default text color, regardless of EICAS level
+article h1 .h1-bracket { color: var(--dark) !important; }
+
 body[saved-theme="dark"] {
   article.eicas-warning h1  { color: #ff7b7b !important; }
   article.eicas-caution h1  { color: #f5c842 !important; }
   article.eicas-advisory h1 { color: #e8a835 !important; }
+  article h1 .h1-bracket { color: var(--light) !important; }
 }
 
 // Name text coloring by EICAS level

@@ -4,7 +4,7 @@ title: "[] STALL PROTECTION"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] STALL PROTECTION
+# <span class="h1-bracket">[]</span> STALL PROTECTION
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

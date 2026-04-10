@@ -4,7 +4,7 @@ title: "[] SLATS DRIVE"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] SLATS DRIVE
+# <span class="h1-bracket">[]</span> SLATS DRIVE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

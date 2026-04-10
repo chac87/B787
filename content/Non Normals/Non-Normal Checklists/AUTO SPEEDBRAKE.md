@@ -4,7 +4,7 @@ title: "[] AUTO SPEEDBRAKE"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] AUTO SPEEDBRAKE
+# <span class="h1-bracket">[]</span> AUTO SPEEDBRAKE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

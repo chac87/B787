@@ -4,7 +4,7 @@ title: "[] WINDOW HEAT L, R SIDE"
 tags: [non-normal, antiice]
 ---
 
-# [] WINDOW HEAT L, R SIDE
+# <span class="h1-bracket">[]</span> WINDOW HEAT L, R SIDE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

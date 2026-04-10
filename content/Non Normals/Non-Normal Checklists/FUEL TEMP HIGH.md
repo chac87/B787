@@ -4,7 +4,7 @@ title: "[] FUEL TEMP HIGH"
 tags: [non-normal, fuel]
 ---
 
-# [] FUEL TEMP HIGH
+# <span class="h1-bracket">[]</span> FUEL TEMP HIGH
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

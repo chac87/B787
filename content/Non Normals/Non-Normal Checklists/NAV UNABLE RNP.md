@@ -4,7 +4,7 @@ title: "[] NAV UNABLE RNP"
 tags: [non-normal, navigation]
 ---
 
-# [] NAV UNABLE RNP
+# <span class="h1-bracket">[]</span> NAV UNABLE RNP
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

@@ -4,7 +4,7 @@ title: "[] ENG TURB DAMAGE L, R"
 tags: [non-normal, engine]
 ---
 
-# [] ENG TURB DAMAGE L, R
+# <span class="h1-bracket">[]</span> ENG TURB DAMAGE L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

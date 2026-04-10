@@ -4,7 +4,7 @@ title: "[] SGL SOURCE RAD ALT"
 tags: [non-normal, flightinstruments]
 ---
 
-# [] SGL SOURCE RAD ALT
+# <span class="h1-bracket">[]</span> SGL SOURCE RAD ALT
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

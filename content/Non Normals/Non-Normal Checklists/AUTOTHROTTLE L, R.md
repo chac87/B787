@@ -4,7 +4,7 @@ title: "[] AUTOTHROTTLE L, R"
 tags: [non-normal, autoflight]
 ---
 
-# [] AUTOTHROTTLE L, R
+# <span class="h1-bracket">[]</span> AUTOTHROTTLE L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

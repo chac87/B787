@@ -4,7 +4,7 @@ title: "[] ENG CORE ANTI-ICE L, R"
 tags: [non-normal, engine]
 ---
 
-# [] ENG CORE ANTI-ICE L, R
+# <span class="h1-bracket">[]</span> ENG CORE ANTI-ICE L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

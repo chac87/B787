@@ -4,7 +4,7 @@ title: "[] PITCH UP AUTHORITY"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] PITCH UP AUTHORITY
+# <span class="h1-bracket">[]</span> PITCH UP AUTHORITY
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

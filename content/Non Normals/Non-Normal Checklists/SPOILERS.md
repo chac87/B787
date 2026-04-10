@@ -4,7 +4,7 @@ title: "[] SPOILERS"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] SPOILERS
+# <span class="h1-bracket">[]</span> SPOILERS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

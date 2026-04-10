@@ -4,7 +4,7 @@ title: "[] RADIO TRANSMIT CAPT, F-O, OBS"
 tags: [non-normal, comms]
 ---
 
-# [] RADIO TRANSMIT CAPT, F-O, OBS
+# <span class="h1-bracket">[]</span> RADIO TRANSMIT CAPT, F-O, OBS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

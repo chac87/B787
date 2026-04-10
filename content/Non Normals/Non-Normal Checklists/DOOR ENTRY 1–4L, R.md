@@ -4,7 +4,7 @@ title: "[] DOOR ENTRY 1–4L, R"
 tags: [non-normal, general]
 ---
 
-# [] DOOR ENTRY 1–4L, R
+# <span class="h1-bracket">[]</span> DOOR ENTRY 1–4L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

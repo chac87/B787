@@ -4,7 +4,7 @@ title: "[] ELEC GEN OFF APU L, R"
 tags: [non-normal, electrical]
 ---
 
-# [] ELEC GEN OFF APU L, R
+# <span class="h1-bracket">[]</span> ELEC GEN OFF APU L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

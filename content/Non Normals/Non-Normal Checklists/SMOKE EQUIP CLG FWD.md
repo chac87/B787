@@ -4,7 +4,7 @@ title: "[] SMOKE EQUIP CLG FWD"
 tags: [non-normal, fire]
 ---
 
-# [] SMOKE EQUIP CLG FWD
+# <span class="h1-bracket">[]</span> SMOKE EQUIP CLG FWD
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

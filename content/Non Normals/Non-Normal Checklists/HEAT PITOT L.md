@@ -4,7 +4,7 @@ title: "[] HEAT PITOT L"
 tags: [non-normal, antiice]
 ---
 
-# [] HEAT PITOT L
+# <span class="h1-bracket">[]</span> HEAT PITOT L
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

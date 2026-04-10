@@ -4,7 +4,7 @@ title: "[] RADIO ALTIMETER L+R"
 tags: [non-normal, flightinstruments]
 ---
 
-# [] RADIO ALTIMETER L+R
+# <span class="h1-bracket">[]</span> RADIO ALTIMETER L+R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

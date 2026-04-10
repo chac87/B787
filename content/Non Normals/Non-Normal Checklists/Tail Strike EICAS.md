@@ -4,7 +4,7 @@ title: "[] TAIL STRIKE"
 tags: [non-normal, warnings]
 ---
 
-# [] TAIL STRIKE
+# <span class="h1-bracket">[]</span> TAIL STRIKE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

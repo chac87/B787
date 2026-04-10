@@ -4,7 +4,7 @@ title: "[] ADS-B OUT"
 tags: [non-normal, navigation]
 ---
 
-# [] ADS-B OUT
+# <span class="h1-bracket">[]</span> ADS-B OUT
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

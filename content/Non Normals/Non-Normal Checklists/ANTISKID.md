@@ -4,7 +4,7 @@ title: "[] ANTISKID"
 tags: [non-normal, gear]
 ---
 
-# [] ANTISKID
+# <span class="h1-bracket">[]</span> ANTISKID
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

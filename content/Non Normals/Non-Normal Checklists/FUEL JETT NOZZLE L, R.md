@@ -4,7 +4,7 @@ title: "[] FUEL JETT NOZZLE L, R"
 tags: [non-normal, fuel]
 ---
 
-# [] FUEL JETT NOZZLE L, R
+# <span class="h1-bracket">[]</span> FUEL JETT NOZZLE L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

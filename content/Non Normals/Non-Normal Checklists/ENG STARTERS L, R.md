@@ -4,7 +4,7 @@ title: "[] ENG STARTERS L, R"
 tags: [non-normal, engine]
 ---
 
-# [] ENG STARTERS L, R
+# <span class="h1-bracket">[]</span> ENG STARTERS L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

@@ -4,7 +4,7 @@ title: "[] FUEL JETTISON MAIN"
 tags: [non-normal, fuel]
 ---
 
-# [] FUEL JETTISON MAIN
+# <span class="h1-bracket">[]</span> FUEL JETTISON MAIN
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

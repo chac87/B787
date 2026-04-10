@@ -4,7 +4,7 @@ title: "[] ENG REV LIMITED L, R"
 tags: [non-normal, engine]
 ---
 
-# [] ENG REV LIMITED L, R
+# <span class="h1-bracket">[]</span> ENG REV LIMITED L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

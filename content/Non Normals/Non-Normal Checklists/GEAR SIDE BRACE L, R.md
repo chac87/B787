@@ -4,7 +4,7 @@ title: "[] GEAR SIDE BRACE L, R"
 tags: [non-normal, gear]
 ---
 
-# [] GEAR SIDE BRACE L, R
+# <span class="h1-bracket">[]</span> GEAR SIDE BRACE L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

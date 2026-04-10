@@ -4,7 +4,7 @@ title: "[] APU SHUTDOWN"
 tags: [non-normal, engine]
 ---
 
-# [] APU SHUTDOWN
+# <span class="h1-bracket">[]</span> APU SHUTDOWN
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

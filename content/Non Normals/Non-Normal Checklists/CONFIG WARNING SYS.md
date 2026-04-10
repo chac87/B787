@@ -4,7 +4,7 @@ title: "[] CONFIG WARNING SYS"
 tags: [non-normal, warnings]
 ---
 
-# [] CONFIG WARNING SYS
+# <span class="h1-bracket">[]</span> CONFIG WARNING SYS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

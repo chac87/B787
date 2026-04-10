@@ -4,7 +4,7 @@ title: "[] ELT ON"
 tags: [non-normal, general]
 ---
 
-# [] ELT ON
+# <span class="h1-bracket">[]</span> ELT ON
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

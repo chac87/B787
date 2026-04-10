@@ -4,7 +4,7 @@ title: "[] NAV AIR DATA SYS"
 tags: [non-normal, navigation]
 ---
 
-# [] NAV AIR DATA SYS
+# <span class="h1-bracket">[]</span> NAV AIR DATA SYS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

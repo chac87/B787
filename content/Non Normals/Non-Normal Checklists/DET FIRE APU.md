@@ -4,7 +4,7 @@ title: "[] DET FIRE APU"
 tags: [non-normal, fire]
 ---
 
-# [] DET FIRE APU
+# <span class="h1-bracket">[]</span> DET FIRE APU
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

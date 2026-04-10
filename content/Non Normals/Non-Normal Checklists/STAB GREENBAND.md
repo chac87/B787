@@ -4,7 +4,7 @@ title: "[] STAB GREENBAND"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] STAB GREENBAND
+# <span class="h1-bracket">[]</span> STAB GREENBAND
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

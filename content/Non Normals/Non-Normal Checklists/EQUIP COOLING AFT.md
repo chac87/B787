@@ -4,7 +4,7 @@ title: "[] EQUIP COOLING AFT"
 tags: [non-normal, airsystems]
 ---
 
-# [] EQUIP COOLING AFT
+# <span class="h1-bracket">[]</span> EQUIP COOLING AFT
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

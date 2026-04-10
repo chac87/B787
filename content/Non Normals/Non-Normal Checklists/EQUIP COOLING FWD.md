@@ -4,7 +4,7 @@ title: "[] EQUIP COOLING FWD"
 tags: [non-normal, airsystems]
 ---
 
-# [] EQUIP COOLING FWD
+# <span class="h1-bracket">[]</span> EQUIP COOLING FWD
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

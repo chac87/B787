@@ -4,7 +4,7 @@ title: "[] ALTN ATTITUDE CAPT, FO"
 tags: [non-normal, flightinstruments]
 ---
 
-# [] ALTN ATTITUDE CAPT, FO
+# <span class="h1-bracket">[]</span> ALTN ATTITUDE CAPT, FO
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

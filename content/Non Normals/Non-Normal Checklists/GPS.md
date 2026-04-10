@@ -4,7 +4,7 @@ title: "[] GPS"
 tags: [non-normal, navigation]
 ---
 
-# [] GPS
+# <span class="h1-bracket">[]</span> GPS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

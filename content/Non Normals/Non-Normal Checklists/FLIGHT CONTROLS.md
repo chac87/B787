@@ -4,7 +4,7 @@ title: "[] FLIGHT CONTROLS"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] FLIGHT CONTROLS
+# <span class="h1-bracket">[]</span> FLIGHT CONTROLS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

@@ -4,7 +4,7 @@ title: "[] LNAV BANK ANGLE LIM"
 tags: [non-normal, navigation]
 ---
 
-# [] LNAV BANK ANGLE LIM
+# <span class="h1-bracket">[]</span> LNAV BANK ANGLE LIM
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

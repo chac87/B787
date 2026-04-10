@@ -4,7 +4,7 @@ title: "[] SPOILER DRAG"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] SPOILER DRAG
+# <span class="h1-bracket">[]</span> SPOILER DRAG
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

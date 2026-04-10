@@ -4,7 +4,7 @@ title: "[] SMOKE EQUIP CLG MISC"
 tags: [non-normal, fire]
 ---
 
-# [] SMOKE EQUIP CLG MISC
+# <span class="h1-bracket">[]</span> SMOKE EQUIP CLG MISC
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

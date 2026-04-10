@@ -4,7 +4,7 @@ title: "[] EQUIP CLG OVRD AFT"
 tags: [non-normal, airsystems]
 ---
 
-# [] EQUIP CLG OVRD AFT
+# <span class="h1-bracket">[]</span> EQUIP CLG OVRD AFT
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

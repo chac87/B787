@@ -4,7 +4,7 @@ title: "[] CABIN ALTITUDE AUTO"
 tags: [non-normal, airsystems]
 ---
 
-# [] CABIN ALTITUDE AUTO
+# <span class="h1-bracket">[]</span> CABIN ALTITUDE AUTO
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

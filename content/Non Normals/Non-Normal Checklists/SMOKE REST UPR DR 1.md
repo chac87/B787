@@ -4,7 +4,7 @@ title: "[] SMOKE REST UPR DR 1"
 tags: [non-normal, fire]
 ---
 
-# [] SMOKE REST UPR DR 1
+# <span class="h1-bracket">[]</span> SMOKE REST UPR DR 1
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

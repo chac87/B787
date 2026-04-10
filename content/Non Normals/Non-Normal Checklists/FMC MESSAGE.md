@@ -4,7 +4,7 @@ title: "[] FMC MESSAGE"
 tags: [non-normal, navigation]
 ---
 
-# [] FMC MESSAGE
+# <span class="h1-bracket">[]</span> FMC MESSAGE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

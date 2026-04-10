@@ -4,7 +4,7 @@ title: "[] TIRE PRESS"
 tags: [non-normal, gear]
 ---
 
-# [] TIRE PRESS
+# <span class="h1-bracket">[]</span> TIRE PRESS
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

@@ -4,7 +4,7 @@ title: "[] VNAV STEP CLIMB"
 tags: [non-normal, navigation]
 ---
 
-# [] VNAV STEP CLIMB
+# <span class="h1-bracket">[]</span> VNAV STEP CLIMB
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

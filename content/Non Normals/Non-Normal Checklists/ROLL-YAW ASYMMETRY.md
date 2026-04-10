@@ -4,7 +4,7 @@ title: "[] ROLL-YAW ASYMMETRY"
 tags: [non-normal, flightcontrols]
 ---
 
-# [] ROLL-YAW ASYMMETRY
+# <span class="h1-bracket">[]</span> ROLL-YAW ASYMMETRY
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
