@@ -53,6 +53,7 @@ role: Both
 | 18 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/After Landing Procedure\|After Landing Procedure]] | **C:** "AFTER LANDING Items" | — |
 | 19 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/Shutdown Procedure\|Shutdown Procedure]] | **C:** "SHUTDOWN Items" | **C→F/O:** SHUTDOWN |
 | 20 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/Secure Procedure\|Secure Procedure]] | **C:** "SECURE Items" | **C→F/O:** SECURE |
+| 21 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/Electrical Power Down\|Electrical Power Down]] | — | — |
 
 ---
 

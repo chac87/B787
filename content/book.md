@@ -45,6 +45,7 @@
 [[Normal Ops/SOPs/After Landing Procedure|After Landing Procedure]]
 [[Normal Ops/SOPs/Shutdown Procedure|Shutdown Procedure]]
 [[Normal Ops/SOPs/Secure Procedure|Secure Procedure]]
+[[Normal Ops/SOPs/Electrical Power Down|Electrical Power Down]]
 ### [[Normal Ops/Supplementary Procedures/index|Supplementary Procedures]]
 [[Low Visibility Operations]]
 [[Adverse Weather]]

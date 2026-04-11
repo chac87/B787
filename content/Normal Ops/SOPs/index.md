@@ -50,3 +50,5 @@ tags: [sop, normal-ops]
 ## [[Normal Ops/SOPs/Shutdown Procedure|Shutdown Procedure]]
 
 ## [[Normal Ops/SOPs/Secure Procedure|Secure Procedure]]
+
+## [[Normal Ops/SOPs/Electrical Power Down|Electrical Power Down]]
