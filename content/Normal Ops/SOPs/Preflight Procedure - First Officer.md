@@ -43,6 +43,8 @@ The first officer normally does this procedure. The captain may do this procedur
 
 <div class="cl-item"><strong>L WIPER selector</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 
+<hr class="cl-sep">
+
 <div class="cl-item"><strong>TOWING POWER panel lights</strong><span class="cl-dots"></span><strong>Off</strong></div>
 
 <div class="cl-item"><strong>FLIGHT DECK DOOR POWER switch</strong><span class="cl-dots"></span><strong>ON</strong></div>
@@ -80,6 +82,8 @@ The first officer normally does this procedure. The captain may do this procedur
 <div class="cl-item cl-indent"><strong>MASTER BRIGHTNESS control</strong><span class="cl-dots"></span><strong>As needed</strong></div>
 <div class="cl-item cl-indent"><strong>GLARESHIELD PANEL light control</strong><span class="cl-dots"></span><strong>Mid position</strong></div>
 <div class="cl-item cl-indent"><strong>LANDING light switches</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+
+<hr class="cl-sep">
 
 <div class="cl-item"><strong>GROUND TEST selector</strong><span class="cl-dots"></span><strong>NORM</strong></div>
 
@@ -126,6 +130,8 @@ The first officer normally does this procedure. The captain may do this procedur
 <div class="cl-item cl-indent"><strong>RUNWAY TURNOFF light switches</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 <div class="cl-item cl-indent"><strong>TAXI light switch</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 <div class="cl-item cl-indent"><strong>STROBE light switch</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+
+<hr class="cl-sep">
 
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
 <div class="cl-item cl-indent"><strong>BROADBAND COMM switch</strong><span class="cl-dots"></span><strong>As needed</strong></div>
@@ -178,6 +184,8 @@ The first officer normally does this procedure. The captain may do this procedur
 
 <div class="cl-item"><strong>R HUD BRIGHTNESS control</strong><span class="cl-dots"></span><strong>In</strong></div>
 
+<hr class="cl-sep">
+
 <div class="cl-item"><strong>FLIGHT DIRECTOR switch</strong><span class="cl-dots"></span><strong>ON</strong></div>
 
 <div class="cl-item"><strong>Display select panel</strong><span class="cl-dots"></span><strong>Set</strong></div>
@@ -204,6 +212,8 @@ The first officer normally does this procedure. The captain may do this procedur
 <div class="cl-sub">Verify that the weather radar indications are not shown on the ND or PFD mini-map.</div>
 
 <div class="cl-item"><strong>ND TFC and TERR switches</strong><span class="cl-dots"></span><strong>As needed</strong></div>
+
+<hr class="cl-sep">
 
 <div class="cl-item"><strong>Oxygen</strong><span class="cl-dots"></span><strong>Test and set</strong></div>
 <div class="cl-item cl-indent"><strong>Oxygen mask</strong><span class="cl-dots"></span><strong>Stowed and doors closed</strong></div>
@@ -253,6 +263,8 @@ The first officer normally does this procedure. The captain may do this procedur
 <div class="cl-item cl-indent"><strong>RESETS</strong><span class="cl-dots"></span><strong>Select</strong></div>
 <div class="cl-sub cl-indent">Verify that the AIRLINE DATABASE is correct.</div>
 <div class="cl-item cl-indent"><strong>RESET ALL</strong><span class="cl-dots"></span><strong>Select</strong></div>
+
+<hr class="cl-sep">
 
 <div class="cl-item"><strong>Left tuning and control panel</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-sub">Verify that the OFF light is extinguished.</div>

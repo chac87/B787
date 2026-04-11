@@ -63,6 +63,7 @@ Defined in `quartz/styles/custom.scss`:
 | `.cl-sub` | Indented sub-step (0.875em font, 1.4em left margin) |
 | `.sop-badge` | Colored pill — **only for non-checklist use** (e.g. summary tables) |
 | `.sop-value` | Monospace action value — **only for non-checklist use** |
+| `.cl-sep` | Thin horizontal rule — panel section separator inside a checklist |
 | `.cl-indent` | Adds one extra indent level — combine with `cl-item` or `cl-sub` for items nested under a panel header |
 | `.cl-variant` | Dark blue bar opening an aircraft-specific section (e.g. `B787 (-ABPF to -ABPU)`) |
 | `.cl-variant-end` | Gray bar closing a variant section — **always required** after the last item of every `cl-variant` block (e.g. `END B787 (-ABPF to -ABPU)`) |

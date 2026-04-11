@@ -1,5 +1,7 @@
 # Flight Deck Design
 
+![[displays.webp]]
+
 > [!info]- Display Color Philosophy
 > The use of colors allows pilots to instantly recognize the operational status of the airplane, enabling a priority of flight path control. Boeing utilizes colors in flight deck design that are consistent with industry standards and requirements.
 >
@@ -15,6 +17,31 @@
 > <tr><td><strong style="color:#3257BC">Blue</strong></td><td>Informational purposes.</td></tr>
 > </tbody>
 > </table>
+
+> [!info]- EICAS Alert Levels
+> ![[alerts.webp]]
+>
+> ### <span class="c-red">Red Warnings</span>
+> - Immediate crew awareness and corrective action
+> - Indikation: Rote EICAS-Meldung, Master WARNING lights, Fire Bell oder Siren
+> - Können **nicht** mit dem Cancel/Recall Switch ausgeblendet werden
+>
+> ### Time Critical Warnings
+> - Immediate crew awareness and corrective action
+> - Erscheinen meist nicht als EICAS-Textmeldung, sondern direkt im primären Sichtfeld (PFD/HUD) oder als Aural (Master WARNING lights, Voice Alerts z.B. „PULL UP", Stick Shaker oder rote PFD-Anzeigen z.B. WINDSHEAR)
+>
+> ### <span class="c-amber">Amber Cautions</span>
+> - Immediate crew awareness und mögliche corrective action
+> - Indikation: Bernsteinfarbene EICAS-Meldung, Master CAUTION lights, Beeper
+> - Können mit dem Cancel/Recall Switch ausgeblendet werden
+>
+> ### <span class="c-amber">Amber Advisories</span>
+> - Routine crew awareness und mögliche corrective action
+> - Indikation: Amber EICAS-Meldung (eingerückt), kein Aural, keine Master Lights
+>
+> ### White Memo Messages
+> - Routine crew awareness, keine action erforderlich
+> - Indikation: Weiße EICAS-Meldung (eingerückt), kein Aural, keine Master Lights
 
 > [!info]- Push Button Switches
 > Aircraft systems primarily use two types of push-button switches. Both are designed to draw the crew's attention to the system status and potential faults.

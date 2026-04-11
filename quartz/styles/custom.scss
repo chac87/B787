@@ -805,6 +805,17 @@ main table {
     width: 100%;
 }
 
+/* Italic notes inside SOP tables — green, matches QRH app style */
+article table td em,
+article table td p em {
+  color: #2d7d32;
+  font-style: italic;
+}
+body[saved-theme="dark"] article table td em,
+body[saved-theme="dark"] article table td p em {
+  color: #a5d6a7;
+}
+
 /* Gleichmäßige Spaltenbreite */
 table th,
 table td,
@@ -993,6 +1004,18 @@ article table td:last-child:has(.sop-value) {
   font-size: 0.875em;
   opacity: 0.75;
   line-height: 1.5;
+}
+
+// Panel section separator — horizontal rule between checklist panel sections
+.cl-sep {
+  border: none;
+  border-top: 4px solid var(--lightgray);
+  margin: 1.1em 0 0.8em 0;
+  opacity: 1;
+}
+[saved-theme="dark"] .cl-sep {
+  border-color: var(--darkgray);
+  opacity: 0.7;
 }
 
 // Adds one extra indent level — combine with cl-item or cl-sub
