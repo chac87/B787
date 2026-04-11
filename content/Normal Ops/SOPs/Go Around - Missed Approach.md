@@ -1,41 +1,50 @@
 ---
 title: Go Around – Missed Approach
-tags: [sop, go-around, normal-ops]
+tags: [sop, go-around, normal-ops, captain, first-officer]
+section: 2-1-14
+role: Both
 ---
 
 # Go Around – Missed Approach
 
-<div class="cl-warning">Warning: TO/GA function is inhibited close to the ground and after touchdown. If the thrust levers do not respond when TO/GA is pushed, or if the go-around is initiated after touchdown, advance the thrust levers manually to go-around thrust.</div>
+| PF | PM |
+|:---|:---|
+| Push the TO/GA switch.<br>Call "GO AROUND" | |
+| Verify that the thrust increases. | |
 
-> [!proc]- Go Around Maneuver
-> **PF** Push the TO/GA switch. Call "GO AROUND"
->
-> **PF** Verify that the thrust increases.
->
-> **PF** Call "FLAPS 20" or "FLAPS__" as needed.
-> ###### Set the flap lever as directed. Call "FLAPS__" **PM**
-> **PF** Verify the rotation to go-around attitude.
-> ###### Verify that the thrust is sufficient for the go-around or adjust as needed. **PM**
-> ###### "Thrust Set" – Announce **PM**
-> ###### Verify a positive rate of climb and call "POSITIVE RATE." **PM**
-> **PF** Verify a positive rate of climb on the altimeter and call "GEAR UP."
-> ###### Set the landing gear lever to UP. Call "GEAR UP" **PM**
-> **PF** Above 400 feet radio altitude; verify or select a roll mode.
-> ###### Verify that the missed approach altitude is set. **PM**
-> **PF** Verify that the missed approach route is tracked.
->
-> **PF** At acceleration height, set speed to the maneuver speed for the planned flap setting.
->
-> **PF** Call "FLAPS__" according to the flap retraction schedule.
-> ###### Set the flap lever as directed. Call "FLAPS__" **PM**
-> **PF** After flaps are set to the planned flap setting and at or above the flap maneuvering speed, select FLCH or VNAV as needed.
->
-> **PF** Verify that climb thrust is set.
->
-> **PF** Verify that the missed approach altitude is captured.
->
-> **PF** Call "AFTER TAKEOFF CHECKLIST."
-> ###### Do the AFTER TAKEOFF checklist. **PM**
+> [!warning] Warning
+> TO/GA function is inhibited close to the ground and after touchdown. If the thrust levers do not respond when TO/GA is pushed, or if the go-around is initiated after touchdown, advance the thrust levers manually to go-around thrust.
+
+| PF | PM |
+|:---|:---|
+| Call "FLAPS 20" or "FLAPS ___" as needed. | Set the flap lever as directed.<br>Call "FLAPS ___" |
+| Verify the rotation to go-around attitude. | |
+| | Verify that the thrust is sufficient for the go-around or adjust as needed.<br>**"Thrust Set"** · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · **Announce** |
+| | Verify a positive rate of climb on the altimeter and call "POSITIVE RATE." |
+| Verify a positive rate of climb on the altimeter and call "GEAR UP." | |
+| | Set the landing gear lever to UP.<br>Call "GEAR UP" |
+| Above 400 feet radio altitude, verify or select a roll mode. | Verify that the missed approach altitude is set. |
+| Verify that the missed approach route is tracked. | |
+| At acceleration height, set speed to the maneuver speed for the planned flap setting. | |
+| Call "FLAPS ___" according to the flap retraction schedule. | Set the flap lever as directed.<br>Call "FLAPS ___" |
+| After flaps are set to the planned flap setting and at or above the flap maneuvering speed, select FLCH or VNAV as needed. | |
+| Verify that climb thrust is set. | |
+| Verify that the missed approach altitude is captured. | |
+| Call "AFTER TAKEOFF CHECKLIST." | Do the AFTER TAKEOFF checklist. |
+
+---
+
+## AFTER TAKEOFF
+
+<div class="checklist">
+
+<div class="cl-item"><strong>Landing gear</strong><span class="cl-dots"></span><strong>UP</strong> <span class="nnc-role">PM</span></div>
+
+<div class="cl-item"><strong>Flaps</strong><span class="cl-dots"></span><strong>UP</strong> <span class="nnc-role">PM</span></div>
+
+</div>
+
+---
 
 ## TO/GA Switch
 
@@ -74,11 +83,11 @@ tags: [sop, go-around, normal-ops]
 
 If a go-around is initiated from a high flare, after a bounce, or as a balked landing, the following rules apply:
 
-> [!caution]- Rules at Speed Below VREF
-> - **Kein Config-Change** mit Speed < VREF
-> - Pitch darf mit Speed < VREF initially **nicht > 8° sein**
+> [!caution]- Rules at Speed Below v<sub>REF</sub>
+> - **Kein Config-Change** mit Speed < v<sub>REF</sub>
+> - Pitch darf mit Speed < v<sub>REF</sub> initial **nicht > 8° sein**
 > - **Aufsetzen im G/A ist wahrscheinlich** und darf keine Hemmschwelle sein
-> - Ziel ist **kontrollierte Pitch bis Speed wieder > VREF** und clear of Ground
+> - Ziel ist **kontrollierte Pitch bis Speed wieder > v<sub>REF</sub>** und clear of Ground
 
 ## Rejected Landing vs. Balked Landing
 
@@ -97,9 +106,9 @@ A **Rejected Landing** is initiated before touchdown (e.g. runway incursion, ATC
 >
 > **PF** Manually advance thrust.
 >
-> **PF** Control pitch below VREF to < 8°.
+> **PF** Control pitch below v<sub>REF</sub> to < 8°.
 >
-> **PF** Rotate at or above VREF to 15° of pitch.
+> **PF** Rotate at or above v<sub>REF</sub> to 15° of pitch.
 >
 > *When airborne with positive rate of climb:*
 >

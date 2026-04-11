@@ -805,17 +805,6 @@ main table {
     width: 100%;
 }
 
-/* Italic notes inside SOP tables — green, matches QRH app style */
-article table td em,
-article table td p em {
-  color: #2d7d32;
-  font-style: italic;
-}
-body[saved-theme="dark"] article table td em,
-body[saved-theme="dark"] article table td p em {
-  color: #a5d6a7;
-}
-
 /* Gleichmäßige Spaltenbreite */
 table th,
 table td,

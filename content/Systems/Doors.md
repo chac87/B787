@@ -11,6 +11,8 @@
 | Bulk Cargo Door              |      1      | Manuell                           |
 | Equipment / E/E Access Doors |      3      | Manuell (kein Schloss)            |
 
+![[door synoptics.webp]]
+
 > [!caution] Windlimits
 > Entry- und Cargo-Türen: max. **40 kts** Betrieb · max. **65 kts** offen halten.
 
