@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Landing Procedure – Instrument Approach Using IAN
-
 IAN should be used only for approaches that have one of the following features:
 - a published GP angle on the LEGS page for the final approach segment
 - a RWxx waypoint at the approach end of the runway
@@ -36,7 +35,10 @@ This procedure is not authorized using QFE.
 | Perform Flaps and Gear extension on Schedule. | |
 | Set the speedbrake lever to ARMED. | |
 | Set the missed approach altitude on the MCP. | |
-| Call "LANDING CHECKLIST." | Do the LANDING checklist. |
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+</div>
+
 | At the final approach fix, verify the crossing altitude. | |
 | Monitor the approach. | |
 | If suitable visual reference is established at DA(H), MDA(H), or the missed approach point, disengage the autopilot in accordance with regulatory requirements.<br>Maintain the glide path to landing. | |

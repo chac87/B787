@@ -7,6 +7,11 @@ role: Both
 
 # Before Start Procedure
 
+<div class="sop-entry-tags" style="margin:0.75em 0 1.5em 0;">
+<span class="sop-tag-items">C: "BEFORE START Items"</span>
+<span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
+</div>
+
 Start the Before Start Procedure after papers are on board.
 
 <div class="checklist">
@@ -96,9 +101,10 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 
 </div>
 
-Call "BEFORE START CHECKLIST." — C
-
-Do the BEFORE START checklist. — F/O
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-items">C: "BEFORE START Items"</span>
+<span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
+</div>
 
 ---
 

@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Takeoff Procedure
-
 <div class="checklist">
 
 <div class="cl-item"><strong>Runway and entry point</strong><span class="cl-dots"></span><strong>Verify — C, F/O</strong></div>
@@ -74,7 +73,9 @@ role: Both
 | | Set the flap lever as directed.<br>Call "FLAPS ___" |
 | Engage the autopilot when above the minimum altitude for autopilot engagement. | |
 | | After flap retraction is complete, set the ENGINE ANTI-ICE selectors to AUTO. |
-| Call "AFTER TAKEOFF CHECKLIST." | Do the AFTER TAKEOFF checklist. |
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
+</div>
 
 ---
 

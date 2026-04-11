@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Approach Procedure
-
 The Approach Procedure is normally started at transition level.
 
 Complete the Approach Procedure before:
@@ -25,7 +24,9 @@ Complete the Approach Procedure before:
 | Update the arrival and approach, as needed. | |
 | Select VSD on as needed. | |
 | Update the approach briefing as needed. | |
-| Call "APPROACH CHECKLIST." | Do the APPROACH checklist. |
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-cl">PF → PM: "APPROACH CL"</span>
+</div>
 
 > [!info]- Flap Extension Schedule
 > | Current Flap Position | At Speed Tape "Display" | Select Flaps | Command Speed for Selected Flaps |

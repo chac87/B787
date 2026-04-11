@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Descent Procedure
-
 Start the Descent Procedure before the airplane descends below the cruise altitude for arrival at destination. Complete the Descent Procedure by 10,000 feet MSL.
 
 | PF | PM |
@@ -18,10 +17,13 @@ Start the Descent Procedure before the airplane descends below the cruise altitu
 | Set the RADIO/BARO minimums as needed for the approach. | |
 | | Set the NAV RADIO page for the approach. |
 | Do the approach briefing.<br>For Approach Briefing, refer to Approach Briefing (FCTM). | |
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-items">PF: "DESCENT Items / Flaps ___ / Autobrake ___"</span>
+<span class="sop-tag-cl">PF → PM: "DESCENT CL"</span>
+</div>
+
 | "DESCENT Items", "Flaps ___", "Autobrake ___" announce | Enter v<sub>REF</sub> and flap setting on the Approach REF page.<br>Set the AUTOBRAKES selector to the needed brake setting.<br>Check correct approach and missed approach entries.<br>Insert Transition Level on VNAV DESCENT FORECAST page. |
 | Verify v<sub>REF</sub> on the APPROACH REF page. | |
-| Call "DESCENT CHECKLIST." | Do the DESCENT checklist. |
-
 > [!info] Approach Briefing
 > Approach briefing must include a reminder that go-arounds on or near the ground require go-around thrust to be set manually and that a flap configuration warning can sound.
 

@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Shutdown Procedure
-
 Start the Shutdown Procedure after taxi is complete.
 
 <div class="checklist">
@@ -81,6 +80,11 @@ After wheel chocks are in place:
 <div class="cl-item"><strong>Parking brake</strong><span class="cl-dots"></span><strong>Release</strong> <span class="nnc-role">C</span></div>
 
 <div class="cl-item"><strong>APU selector</strong><span class="cl-dots"></span><strong>As needed</strong> <span class="nnc-role">F/O</span></div>
+
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-items">C: "SHUTDOWN Items"</span>
+<span class="sop-tag-cl">C → F/O: "SHUTDOWN CL"</span>
+</div>
 
 <div class="cl-item"><strong>Call "SHUTDOWN CHECKLIST."</strong><span class="cl-dots"></span><strong></strong> <span class="nnc-role">C</span></div>
 <div class="cl-item"><strong>Do the SHUTDOWN checklist.</strong><span class="cl-dots"></span><strong></strong> <span class="nnc-role">F/O</span></div>

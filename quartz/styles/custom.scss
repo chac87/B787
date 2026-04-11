@@ -953,6 +953,98 @@ article table td:last-child:has(.sop-value) {
 }
 
 /* =========================================
+   SOP FLOW TIMELINE
+   ========================================= */
+
+.sop-flow {
+  margin: 1.5em 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sop-phase-bar {
+  color: #fff;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4em 1em;
+  margin: 0;
+}
+
+.sop-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 0.55em 1em;
+  border-bottom: 1px solid var(--lightgray);
+  flex-wrap: wrap;
+}
+.sop-entry:last-child { border-bottom: none; }
+
+.sop-entry-name {
+  flex: 1;
+  font-weight: 600;
+  min-width: 160px;
+  padding-top: 0.1em;
+}
+
+.sop-entry-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: flex-end;
+}
+
+.sop-entry-tags {
+  display: flex;
+  gap: 0.4em;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.sop-tag-items {
+  font-size: 0.8em;
+  font-weight: 700;
+  background: rgba(75,157,161,0.12);
+  color: #1C4C5C;
+  border: 1px solid rgba(75,157,161,0.45);
+  border-radius: 5px;
+  padding: 0.3em 0.8em;
+  white-space: nowrap;
+}
+
+.sop-tag-cl {
+  font-size: 0.8em;
+  font-weight: 700;
+  background: rgba(50,87,188,0.10);
+  color: #05164D;
+  border: 1px solid rgba(50,87,188,0.38);
+  border-radius: 5px;
+  padding: 0.3em 0.8em;
+  white-space: nowrap;
+}
+
+.sop-trigger {
+  font-size: 0.68em;
+  color: var(--gray);
+  font-style: italic;
+  text-align: right;
+}
+
+[saved-theme="dark"] .sop-tag-items {
+  background: rgba(75,157,161,0.18);
+  color: #a5d6d9;
+  border-color: rgba(75,157,161,0.4);
+}
+[saved-theme="dark"] .sop-tag-cl {
+  background: rgba(82,145,237,0.18);
+  color: #9ab8f0;
+  border-color: rgba(82,145,237,0.4);
+}
+
+/* =========================================
    SOP CHECKLIST (Dot-Leader Format)
    ========================================= */
 .checklist {

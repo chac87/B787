@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Landing Procedure ILS or GLS
-
 > [!info]- Flap Extension Schedule
 > | Current Flap Position | At Speed Tape "Display" | Select Flaps | Command Speed for Selected Flaps |
 > |:---:|:---:|:---:|:---|
@@ -28,7 +27,9 @@ role: Both
 | Perform Flaps and Gear extension on Schedule. | |
 | Set the speedbrake lever to ARMED. | |
 | Set the missed approach altitude on the MCP. | |
-| Call "LANDING CHECKLIST." | Do the LANDING checklist. |
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+</div>
 
 > [!warning] Warning
 > Interference with the glideslope signal can result in erroneous AFDS pitch guidance indicated by FMA mode degradation, the AUTOPILOT caution message, and removal of the F/D pitch bar. If this occurs, do a go-around unless suitable visual references can be established and maintained.

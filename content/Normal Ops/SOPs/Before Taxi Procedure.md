@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Before Taxi Procedure
-
 <div class="checklist">
 
 <div class="cl-sub">Call "BEFORE TAXI Items – FLAPS ___" — C</div>
@@ -41,9 +40,10 @@ role: Both
 
 Update changes to the taxi briefing, as needed. — C or PF
 
-Call "BEFORE TAXI CHECKLIST." — C
-
-Do the BEFORE TAXI checklist. — F/O
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-items">C: "BEFORE TAXI Items – FLAPS ___"</span>
+<span class="sop-tag-cl">C → F/O: "BEFORE TAXI CL"</span>
+</div>
 
 ---
 

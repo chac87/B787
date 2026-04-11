@@ -7,96 +7,206 @@ role: Both
 
 # SOP Overview & Quick Reference
 
----
-
-## Flugphasen
-
-<div style="display:flex;flex-wrap:wrap;gap:0.5em;margin:1em 0;">
-<span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND PREP</span>
-<span style="align-self:center;">→</span>
-<span class="sop-badge" style="background:#3257BC;color:#fff;">DEPARTURE</span>
-<span style="align-self:center;">→</span>
-<span class="sop-badge" style="background:#4B9DA1;color:#fff;">CLIMB / CRUISE</span>
-<span style="align-self:center;">→</span>
-<span class="sop-badge" style="background:#4B9DA1;color:#fff;">DESCENT / ARRIVAL</span>
-<span style="align-self:center;">→</span>
-<span class="sop-badge" style="background:#5291ED;color:#fff;">LANDING</span>
-<span style="align-self:center;">→</span>
-<span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span>
+<div style="display:flex;flex-wrap:wrap;gap:0.5em;margin:1em 0 0.25em 0;">
+<span class="sop-badge" style="background:#3257BC;color:#fff;border-color:#3257BC">ON GROUND</span>
+<span style="align-self:center;color:var(--gray)">→</span>
+<span class="sop-badge" style="background:#4B9DA1;color:#fff;border-color:#4B9DA1">IN FLIGHT</span>
 </div>
 
----
+<p style="font-size:0.8em;color:var(--gray);font-style:italic;margin:0.25em 0 1.5em 0;">C kündigt Items und Checklisten an · F/O führt Checklisten aus · PF/PM wechselt mit dem Leg</p>
 
-## SOP-Sequenz
+<div class="sop-flow">
 
-| # | Phase | SOP | Items-Callout | Checklist |
-|:---:|:---|:---|:---|:---|
-| 1 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Electrical Power Up\|Electrical Power Up]] | — | — |
-| 2 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | <a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer">Prelim. Preflight – FO</a> | — | — |
-| 3 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | <a href="/Normal-Ops/SOPs/CDU-EFB-Preflight---Capt-and-FO">CDU/EFB Preflight – C & FO</a> | — | — |
-| 4 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Preflight Procedure - First Officer\|Preflight – First Officer]] | — | — |
-| 5 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Preflight Procedure - Captain\|Preflight – Captain]] | — | — |
-| 6 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Before Start Procedure\|Before Start Procedure]] | **C:** "BEFORE START Items" | **C→F/O:** BEFORE START |
-| 7 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Pushback or Towing Procedure\|Pushback or Towing Procedure]] | — | — |
-| 8 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Engine Start Procedure\|Engine Start Procedure]] | — | — |
-| 9 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Before Taxi Procedure\|Before Taxi Procedure]] | **C:** "BEFORE TAXI Items – FLAPS ___" | **C→F/O:** BEFORE TAXI |
-| 10 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Before Takeoff Procedure\|Before Takeoff Procedure]] | — | **C→F/O:** BEFORE TAKEOFF |
-| 11 | <span class="sop-badge" style="background:#3257BC;color:#fff;">DEPARTURE</span> | [[Normal Ops/SOPs/Takeoff Procedure\|Takeoff Procedure]] | — | **PF→PM:** AFTER TAKEOFF |
-| 12 | <span class="sop-badge" style="background:#4B9DA1;color:#fff;">CRUISE</span> | [[Normal Ops/SOPs/Climb and Cruise Procedure\|Climb and Cruise Procedure]] | — | — |
-| 13 | <span class="sop-badge" style="background:#4B9DA1;color:#fff;">DESCENT</span> | [[Normal Ops/SOPs/Descent Procedure\|Descent Procedure]] | **PF:** "DESCENT Items / Flaps ___ / Autobrake ___" | **PF→PM:** DESCENT |
-| 14 | <span class="sop-badge" style="background:#4B9DA1;color:#fff;">ARRIVAL</span> | [[Normal Ops/SOPs/Approach Procedure\|Approach Procedure]] | — | **PF→PM:** APPROACH |
-| 15 | <span class="sop-badge" style="background:#5291ED;color:#fff;">LANDING</span> | [[Normal Ops/SOPs/Landing Procedure ILS or GLS\|Landing Procedure ILS or GLS]] | — | **PF→PM:** LANDING |
-| 15a | <span class="sop-badge" style="background:#5291ED;color:#fff;">LANDING</span> | [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using IAN\|Landing – Instrument Approach (IAN)]] | — | **PF→PM:** LANDING |
-| 15b | <span class="sop-badge" style="background:#5291ED;color:#fff;">LANDING</span> | [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using VNAV\|Landing – Instrument Approach (VNAV)]] | — | **PF→PM:** LANDING |
-| 16 | <span class="sop-badge" style="background:#FF526B;color:#fff;">GO-AROUND</span> | [[Normal Ops/SOPs/Go Around - Missed Approach\|Go Around – Missed Approach]] | **PM:** "Thrust Set" | **PF→PM:** AFTER TAKEOFF |
-| 17 | <span class="sop-badge" style="background:#5291ED;color:#fff;">LANDING</span> | [[Normal Ops/SOPs/Landing Roll Procedure\|Landing Roll Procedure]] | — | — |
-| 18 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/After Landing Procedure\|After Landing Procedure]] | **C:** "AFTER LANDING Items" | — |
-| 19 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/Shutdown Procedure\|Shutdown Procedure]] | **C:** "SHUTDOWN Items" | **C→F/O:** SHUTDOWN |
-| 20 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/Secure Procedure\|Secure Procedure]] | **C:** "SECURE Items" | **C→F/O:** SECURE |
-| 21 | <span class="sop-badge" style="background:#9C8F7A;color:#fff;">PARKING</span> | [[Normal Ops/SOPs/Electrical Power Down\|Electrical Power Down]] | — | — |
+<div class="sop-phase-bar" style="background:#3257BC">On Ground</div>
 
----
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Electrical-Power-Up">Electrical Power Up</a></div>
+</div>
 
-## Items-Callouts
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer">Preliminary Preflight – F/O</a></div>
+</div>
 
-| Items | Wer | Trigger-Bedingung |
-|:---|:---:|:---|
-| **"BEFORE START Items"** | C | Hydraulic pressurization clearance obtained |
-| **"BEFORE TAXI Items – FLAPS ___"** | C | Engines stabilized, generators online |
-| **"DESCENT Items / Flaps ___ / Autobrake ___"** | PF | Descent initiated, landing prep begins |
-| **"AFTER LANDING Items"** | C | Clear of active runway |
-| **"SHUTDOWN Items"** | C | Taxi complete, parking brake set |
-| **"SECURE Items"** | C | All passengers have exited the airplane |
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/CDU-EFB-Preflight---Capt-and-FO">CDU/EFB Preflight – C & F/O</a></div>
+</div>
 
-*Während Go-Around: PM kündigt **"Thrust Set"** an, wenn Schub ausreichend für den Go-Around.*
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preflight-Procedure---First-Officer">Preflight Procedure – F/O</a></div>
+</div>
 
----
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preflight-Procedure---Captain">Preflight Procedure – Captain</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">C → F/O: "PREFLIGHT CL"</span>
+</div>
+<div class="sop-trigger">Captain's preflight complete</div>
+</div>
+</div>
 
-## Checklisten
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Before-Start-Procedure">Before Start Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">C: "BEFORE START Items"</span>
+<span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
+</div>
+<div class="sop-trigger">Hydraulic pressurization clearance obtained</div>
+</div>
+</div>
 
-| Checklist | Wer ruft auf | Wer führt aus | Trigger-Bedingung |
-|:---|:---:|:---:|:---|
-| **PREFLIGHT** | C | F/O | Captain's preflight complete |
-| **BEFORE START** | C | F/O | Before Start Items complete, performance data set |
-| **BEFORE TAXI** | C | F/O | Before Taxi Items complete |
-| **BEFORE TAKEOFF** | C | F/O | Approaching takeoff runway |
-| **AFTER TAKEOFF** | PF | PM | Flaps retracted to UP (Takeoff oder Go-Around) |
-| **DESCENT** | PF | PM | Descent initiated, approach briefing complete |
-| **APPROACH** | PF | PM | Below transition level |
-| **LANDING** | PF | PM | Localizer captured, speedbrake ARMED |
-| **SHUTDOWN** | C | F/O | Shutdown Items completed |
-| **SECURE** | C | F/O | All passengers exited |
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Pushback-or-Towing-Procedure">Pushback or Towing Procedure</a></div>
+</div>
 
----
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Engine-Start-Procedure">Engine Start Procedure</a></div>
+</div>
 
-## Rollenverteilung
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Before-Taxi-Procedure">Before Taxi Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">C: "BEFORE TAXI Items – FLAPS ___"</span>
+<span class="sop-tag-cl">C → F/O: "BEFORE TAXI CL"</span>
+</div>
+<div class="sop-trigger">Engines stabilized, generators online</div>
+</div>
+</div>
 
-| Aufgabe | Immer Captain (C) | Immer F/O | PF / PM (wechselnd) |
-|:---|:---:|:---:|:---:|
-| Items-Callouts ankündigen | ✓ | — | — |
-| Checklisten aufrufen (Cruise/Arrival) | — | — | PF ruft auf |
-| Checklisten ausführen | — | ✓ (am Boden) | PM führt aus (im Flug) |
-| Parking Brake setzen | ✓ | — | — |
-| Electrical Power / Hydraulics setzen | — | ✓ | — |
-| Speedbrake ARMED setzen | — | — | PF |
-| Go-Around einleiten (TOGA) | — | — | PF |
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Before-Takeoff-Procedure">Before Takeoff Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">C → F/O: "BEFORE TAKEOFF CL"</span>
+</div>
+<div class="sop-trigger">Approaching takeoff runway</div>
+</div>
+</div>
+
+<div class="sop-phase-bar" style="background:#4B9DA1">In Flight</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Takeoff-Procedure">Takeoff Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
+</div>
+<div class="sop-trigger">Flaps retracted to UP</div>
+</div>
+</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Climb-and-Cruise-Procedure">Climb and Cruise Procedure</a></div>
+</div>
+
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Descent-Procedure">Descent Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">PF: "DESCENT Items / Flaps ___ / Autobrake ___"</span>
+<span class="sop-tag-cl">PF → PM: "DESCENT CL"</span>
+</div>
+<div class="sop-trigger">Descent initiated, approach briefing complete</div>
+</div>
+</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Approach-Procedure">Approach Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PF → PM: "APPROACH CL"</span>
+</div>
+<div class="sop-trigger">Below transition level</div>
+</div>
+</div>
+
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Landing-Procedure-ILS-or-GLS">Landing Procedure ILS or GLS</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+</div>
+<div class="sop-trigger">Localizer captured, speedbrake ARMED</div>
+</div>
+</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Landing-Procedure---Instrument-Approach-Using-IAN">Landing – Instrument Approach (IAN)</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+</div>
+<div class="sop-trigger">Localizer captured, speedbrake ARMED</div>
+</div>
+</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Landing-Procedure---Instrument-Approach-Using-VNAV">Landing – Instrument Approach (VNAV)</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+</div>
+<div class="sop-trigger">Localizer captured, speedbrake ARMED</div>
+</div>
+</div>
+
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Go-Around---Missed-Approach">Go Around – Missed Approach</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">PM: "Thrust Set"</span>
+<span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
+</div>
+<div class="sop-trigger">MA altitude captured, flaps retracted to UP</div>
+</div>
+</div>
+
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Landing-Roll-Procedure">Landing Roll Procedure</a></div>
+</div>
+
+<div class="sop-phase-bar" style="background:#3257BC">On Ground</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/After-Landing-Procedure">After Landing Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">C: "AFTER LANDING Items"</span>
+</div>
+<div class="sop-trigger">Clear of active runway</div>
+</div>
+</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Shutdown-Procedure">Shutdown Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">C: "SHUTDOWN Items"</span>
+<span class="sop-tag-cl">C → F/O: "SHUTDOWN CL"</span>
+</div>
+<div class="sop-trigger">Shutdown Items completed</div>
+</div>
+</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Secure-Procedure">Secure Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">C: "SECURE Items"</span>
+<span class="sop-tag-cl">C → F/O: "SECURE CL"</span>
+</div>
+<div class="sop-trigger">All passengers have exited</div>
+</div>
+</div>
+
+<div class="sop-entry">
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Electrical-Power-Down">Electrical Power Down</a></div>
+</div>
+
+</div>

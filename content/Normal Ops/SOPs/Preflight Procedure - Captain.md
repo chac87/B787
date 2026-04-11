@@ -6,7 +6,6 @@ role: Captain
 ---
 
 # Preflight Procedure – Captain
-
 > [!info]- Preflight Flow
 > ![[preflight flow.webp]]
 
@@ -135,7 +134,9 @@ The captain normally does this procedure. The first officer may do this procedur
 
 </div>
 
-Call "PREFLIGHT CHECKLIST."
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-cl">C → F/O: "PREFLIGHT CL"</span>
+</div>
 
 ---
 

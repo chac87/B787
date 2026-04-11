@@ -6,6 +6,9 @@ role: Both
 ---
 
 # After Landing Procedure
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-items">C: "AFTER LANDING Items"</span>
+</div>
 
 Start the After Landing Procedure when clear of the active runway.
 

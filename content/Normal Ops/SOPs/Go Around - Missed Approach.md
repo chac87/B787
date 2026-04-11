@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Go Around – Missed Approach
-
 | PF | PM |
 |:---|:---|
 | Push the TO/GA switch.<br>Call "GO AROUND" | |
@@ -30,7 +29,10 @@ role: Both
 | After flaps are set to the planned flap setting and at or above the flap maneuvering speed, select FLCH or VNAV as needed. | |
 | Verify that climb thrust is set. | |
 | Verify that the missed approach altitude is captured. | |
-| Call "AFTER TAKEOFF CHECKLIST." | Do the AFTER TAKEOFF checklist. |
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-items">PM: "Thrust Set"</span>
+<span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
+</div>
 
 ---
 

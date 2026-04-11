@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Before Takeoff Procedure
-
 Engine warm up requirements:
 
 <div class="checklist">
@@ -41,9 +40,9 @@ Approaching Takeoff-RWY:
 
 </div>
 
-Call "BEFORE TAKEOFF CHECKLIST." — C
-
-Do the BEFORE TAKEOFF checklist. — F/O
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-cl">C → F/O: "BEFORE TAKEOFF CL"</span>
+</div>
 
 ---
 

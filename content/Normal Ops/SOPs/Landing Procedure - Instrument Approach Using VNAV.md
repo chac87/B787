@@ -6,7 +6,6 @@ role: Both
 ---
 
 # Landing Procedure – Instrument Approach Using VNAV
-
 VNAV should be used only for approaches that have one of the following features:
 - a published GP angle on the LEGS page for the final approach segment
 - an RWxx waypoint at the approach end of the runway
@@ -41,7 +40,10 @@ This procedure is not authorized using QFE.
 | Approximately 2 NM before the final approach fix and after ALT, VNAV PTH, or VNAV ALT is annunciated:<br>- Set DA(H) or MDA(H) on the MCP<br>- Select or verify VNAV<br>- Select or verify speed intervention | |
 | Perform Flaps and Gear extension on Schedule. | |
 | Set the speedbrake lever to ARMED. | |
-| Call "LANDING CHECKLIST." | Do the LANDING checklist. |
+<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+</div>
+
 | At the final approach fix, verify the crossing altitude. | |
 | Monitor the approach. | |
 | When at least 300 feet below the missed approach altitude, set the missed approach altitude on the MCP. | |
