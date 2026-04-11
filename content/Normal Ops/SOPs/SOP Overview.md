@@ -7,14 +7,6 @@ role: Both
 
 # SOP Overview & Quick Reference
 
-> [!info]- Lerntipp
-> **Dreischritt zum Lernen:**
-> 1. **Items-Trigger** auswendig lernen — wer kündigt an, bei welcher Bedingung?
-> 2. **Procedures** verstehen — was passiert in welcher Reihenfolge, welche Rolle macht was?
-> 3. **Checklisten-Items** auswendig lernen — was steht auf der Challenge-and-Response-Liste?
->
-> **Rollen-Asymmetrie:** Der Captain kündigt Items und Checklisten immer an. Der F/O führt die Checklisten aus. PF/PM wechselt mit dem Leg.
-
 ---
 
 ## Flugphasen
@@ -40,8 +32,8 @@ role: Both
 | # | Phase | SOP | Items-Callout | Checklist |
 |:---:|:---|:---|:---|:---|
 | 1 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Electrical Power Up\|Electrical Power Up]] | — | — |
-| 2 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Preliminary Preflight - First Officer\|Preliminary Preflight – F/O]] | — | — |
-| 3 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/CDU EFB Preflight - Capt and FO\|CDU/EFB Preflight – C & F/O]] | — | — |
+| 2 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | <a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer">Prelim. Preflight – FO</a> | — | — |
+| 3 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | <a href="/Normal-Ops/SOPs/CDU-EFB-Preflight---Capt-and-FO">CDU/EFB Preflight – C & FO</a> | — | — |
 | 4 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Preflight Procedure - First Officer\|Preflight – First Officer]] | — | — |
 | 5 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Preflight Procedure - Captain\|Preflight – Captain]] | — | — |
 | 6 | <span class="sop-badge" style="background:#3257BC;color:#fff;">GROUND</span> | [[Normal Ops/SOPs/Before Start Procedure\|Before Start Procedure]] | **C:** "BEFORE START Items" | **C→F/O:** BEFORE START |
@@ -83,6 +75,7 @@ role: Both
 
 | Checklist | Wer ruft auf | Wer führt aus | Trigger-Bedingung |
 |:---|:---:|:---:|:---|
+| **PREFLIGHT** | C | F/O | Captain's preflight complete |
 | **BEFORE START** | C | F/O | Before Start Items complete, performance data set |
 | **BEFORE TAXI** | C | F/O | Before Taxi Items complete |
 | **BEFORE TAKEOFF** | C | F/O | Approaching takeoff runway |
@@ -90,7 +83,7 @@ role: Both
 | **DESCENT** | PF | PM | Descent initiated, approach briefing complete |
 | **APPROACH** | PF | PM | Below transition level |
 | **LANDING** | PF | PM | Localizer captured, speedbrake ARMED |
-| **SHUTDOWN** | C | F/O | Wheel chocks in place |
+| **SHUTDOWN** | C | F/O | Shutdown Items completed |
 | **SECURE** | C | F/O | All passengers exited |
 
 ---

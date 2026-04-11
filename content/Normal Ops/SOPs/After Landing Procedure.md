@@ -31,13 +31,24 @@ Engine cooldown recommendations:
 
 - Use a thrust setting no higher than that normally used for all engine taxi operations
 
-| C | F/O |
-|:---|:---|
-| The captain positions or verifies that the SPEEDBRAKE lever is DOWN. | |
-| | Set the APU selector to START, then ON, as needed. |
-| | Set the ENGINE ANTI-ICE selectors to ON, if needed. |
-| | Set the exterior lights as needed. |
-| Set the weather radar to off. | |
-| | Set the AUTOBRAKE selector OFF. |
-| | Set the flap lever to UP. |
-| | Set the transponder mode selector to XPDR. |
+<div class="checklist">
+
+<div class="cl-item"><strong>SPEEDBRAKE lever</strong><span class="cl-dots"></span><strong>DOWN</strong> <span class="nnc-role">C</span></div>
+
+<div class="cl-item"><strong>APU selector</strong><span class="cl-dots"></span><strong>START, then ON</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-sub">As needed.</div>
+
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-sub">If needed.</div>
+
+<div class="cl-item"><strong>Exterior lights</strong><span class="cl-dots"></span><strong>As needed</strong> <span class="nnc-role">F/O</span></div>
+
+<div class="cl-item"><strong>Weather radar</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">C</span></div>
+
+<div class="cl-item"><strong>AUTOBRAKE selector</strong><span class="cl-dots"></span><strong>OFF</strong> <span class="nnc-role">F/O</span></div>
+
+<div class="cl-item"><strong>Flap lever</strong><span class="cl-dots"></span><strong>UP</strong> <span class="nnc-role">F/O</span></div>
+
+<div class="cl-item"><strong>Transponder mode selector</strong><span class="cl-dots"></span><strong>XPDR</strong> <span class="nnc-role">F/O</span></div>
+
+</div>
