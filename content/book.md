@@ -22,6 +22,7 @@
 [[Doors]]
 ## [[Normal Ops/index|Normal Ops, SOPs]]
 ### [[Normal Ops/SOPs/index|Standard Operating Procedures]]
+[[Normal Ops/SOPs/SOP Overview|SOP Overview & Quick Reference]]
 [[Normal Ops/SOPs/Electrical Power Up|Electrical Power Up]]
 [[Normal Ops/SOPs/Preliminary Preflight - First Officer|Preliminary Preflight Procedure]]
 [[Normal Ops/SOPs/CDU EFB Preflight - Capt and FO|CDU/EFB Preflight Procedure]]
