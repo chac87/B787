@@ -24,15 +24,15 @@ role: Both
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer">Preliminary Preflight – F/O</a></div>
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer"><span>Preliminary Preflight – F/O</span></a></div>
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/CDU-EFB-Preflight---Capt-and-FO">CDU/EFB Preflight – C & F/O</a></div>
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/CDU-EFB-Preflight---Capt-and-FO"><span>CDU/EFB Preflight – C & F/O</span></a></div>
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preflight-Procedure---First-Officer">Preflight Procedure – F/O</a></div>
+<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preflight-Procedure---First-Officer"><span>Preflight Procedure – F/O</span></a></div>
 </div>
 
 <div class="sop-entry">
@@ -41,7 +41,7 @@ role: Both
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">C → F/O: "PREFLIGHT CL"</span>
 </div>
-<div class="sop-trigger">Captain's preflight complete</div>
+<div class="sop-trigger">Preflight Items completed</div>
 </div>
 </div>
 
@@ -49,10 +49,15 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Before-Start-Procedure">Before Start Procedure</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-items">C: "BEFORE START Items"</span>
-<span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
+<span class="sop-trigger" style="margin:0;">Startup Clearance received</span>
 </div>
-<div class="sop-trigger">Hydraulic pressurization clearance obtained</div>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
+<span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
+<span class="sop-trigger" style="margin:0;">Before Start Items completed</span>
+</div>
+</div>
 </div>
 </div>
 
@@ -62,16 +67,24 @@ role: Both
 
 <div class="sop-entry">
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Engine-Start-Procedure">Engine Start Procedure</a></div>
+<div class="sop-entry-right">
+<div class="sop-entry-tags">
+<span class="sop-tag-items">C: "ENGINE START"</span>
+</div>
+<div class="sop-trigger">Ready for engine start</div>
+</div>
 </div>
 
 <div class="sop-entry">
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Before-Taxi-Procedure">Before Taxi Procedure</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-items">C: "BEFORE TAXI Items – FLAPS ___"</span>
+<span class="sop-trigger" style="margin:0;">Engines stabilized at idle</span>
+</div>
 <span class="sop-tag-cl">C → F/O: "BEFORE TAXI CL"</span>
 </div>
-<div class="sop-trigger">Engines stabilized, generators online</div>
 </div>
 </div>
 
@@ -81,7 +94,7 @@ role: Both
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">C → F/O: "BEFORE TAKEOFF CL"</span>
 </div>
-<div class="sop-trigger">Approaching takeoff runway</div>
+<div class="sop-trigger">Before Takeoff Items completed</div>
 </div>
 </div>
 
@@ -93,7 +106,7 @@ role: Both
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
 </div>
-<div class="sop-trigger">Flaps retracted to UP</div>
+<div class="sop-trigger">After Flap Retraction is complete</div>
 </div>
 </div>
 
@@ -106,10 +119,15 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Descent-Procedure">Descent Procedure</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-items">PF: "DESCENT Items / Flaps ___ / Autobrake ___"</span>
-<span class="sop-tag-cl">PF → PM: "DESCENT CL"</span>
+<span class="sop-trigger" style="margin:0;">Before starting descent, to be completed latest before 10.000 ft MSL</span>
 </div>
-<div class="sop-trigger">Descent initiated, approach briefing complete</div>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
+<span class="sop-tag-cl">PF → PM: "DESCENT CL"</span>
+<span class="sop-trigger" style="margin:0;">Descent items completed</span>
+</div>
+</div>
 </div>
 </div>
 
@@ -117,9 +135,11 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Approach-Procedure">Approach Procedure</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-cl">PF → PM: "APPROACH CL"</span>
+<span class="sop-trigger" style="margin:0;">At Transition Level or when cleared to a QNH based altitude</span>
 </div>
-<div class="sop-trigger">Below transition level</div>
+</div>
 </div>
 </div>
 
@@ -128,9 +148,11 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Landing-Procedure-ILS-or-GLS">Landing Procedure ILS or GLS</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+<span class="sop-trigger" style="margin:0;">Landing Configuration achieved</span>
 </div>
-<div class="sop-trigger">Localizer captured, speedbrake ARMED</div>
+</div>
 </div>
 </div>
 
@@ -138,9 +160,11 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Landing-Procedure---Instrument-Approach-Using-IAN">Landing – Instrument Approach (IAN)</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+<span class="sop-trigger" style="margin:0;">Landing Configuration achieved</span>
 </div>
-<div class="sop-trigger">Localizer captured, speedbrake ARMED</div>
+</div>
 </div>
 </div>
 
@@ -148,9 +172,11 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Landing-Procedure---Instrument-Approach-Using-VNAV">Landing – Instrument Approach (VNAV)</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
+<span class="sop-trigger" style="margin:0;">Landing Configuration achieved</span>
 </div>
-<div class="sop-trigger">Localizer captured, speedbrake ARMED</div>
+</div>
 </div>
 </div>
 
@@ -159,7 +185,6 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Go-Around---Missed-Approach">Go Around – Missed Approach</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
-<span class="sop-tag-items">PM: "Thrust Set"</span>
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
 </div>
 <div class="sop-trigger">MA altitude captured, flaps retracted to UP</div>
@@ -177,9 +202,9 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/After-Landing-Procedure">After Landing Procedure</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
-<span class="sop-tag-items">C: "AFTER LANDING Items"</span>
+<span class="sop-tag-items">PF: "AFTER LANDING Items"</span>
 </div>
-<div class="sop-trigger">Clear of active runway</div>
+<div class="sop-trigger">When clear of active runway</div>
 </div>
 </div>
 
@@ -187,10 +212,15 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Shutdown-Procedure">Shutdown Procedure</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
-<span class="sop-tag-items">C: "SHUTDOWN Items"</span>
-<span class="sop-tag-cl">C → F/O: "SHUTDOWN CL"</span>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
+<span class="sop-tag-items">PF: "SHUTDOWN Items"</span>
+<span class="sop-trigger" style="margin:0;">Parking brake set</span>
 </div>
-<div class="sop-trigger">Shutdown Items completed</div>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
+<span class="sop-tag-cl">PF → PM: "SHUTDOWN CL"</span>
+<span class="sop-trigger" style="margin:0;">When all doors in park and all items done</span>
+</div>
+</div>
 </div>
 </div>
 
@@ -198,10 +228,12 @@ role: Both
 <div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Secure-Procedure">Secure Procedure</a></div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
-<span class="sop-tag-items">C: "SECURE Items"</span>
-<span class="sop-tag-cl">C → F/O: "SECURE CL"</span>
+<div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
+<span class="sop-tag-items">PF: "SECURE Items"</span>
+<span class="sop-trigger" style="margin:0;">Secure procedure required</span>
 </div>
-<div class="sop-trigger">All passengers have exited</div>
+<span class="sop-tag-cl">PF → PM: "SECURE CL"</span>
+</div>
 </div>
 </div>
 

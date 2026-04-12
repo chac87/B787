@@ -30,10 +30,10 @@ role: Both
 <div class="cl-item"><strong>LANDING light switches (L, R)</strong><span class="cl-dots"></span><strong>ON — F/O</strong></div>
 <div class="cl-sub">When cleared for takeoff.</div>
 
-<div class="cl-item"><strong>Announce</strong><span class="cl-dots"></span><strong>"Takeoff" — C</strong></div>
+<div class="cl-item"><strong>Announce</strong><span class="cl-dots"></span><span class="sop-tag-items">C: "Takeoff"</span></div>
 
-<div class="cl-item"><strong>If applicable: announce</strong><span class="cl-dots"></span><strong>"You have control!" — C</strong></div>
-<div class="cl-item cl-indent"><strong>Response</strong><span class="cl-dots"></span><strong>"I have control!" — F/O</strong></div>
+<div class="cl-item"><strong>If applicable: announce</strong><span class="cl-dots"></span><span class="sop-tag-items">C: "You have control!"</span></div>
+<div class="cl-item cl-indent"><strong>Response</strong><span class="cl-dots"></span><span class="sop-tag-items">F/O: "I have control!"</span></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
 <div class="cl-item cl-indent"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>~40% N1 — C</strong></div>
@@ -57,20 +57,20 @@ role: Both
 
 | PF | PM |
 |:---|:---|
-| | Monitor the engine instruments during the takeoff. Call out any abnormal indications.<br>Adjust takeoff thrust before 80 knots as needed.<br>During strong headwinds, if the thrust levers do not advance to the planned takeoff thrust, manually advance the thrust levers before 80 knots.<br>Call "THRUST SET". |
+| | Monitor the engine instruments during the takeoff. Call out any abnormal indications.<br>Adjust takeoff thrust before 80 knots as needed.<br>During strong headwinds, if the thrust levers do not advance to the planned takeoff thrust, manually advance the thrust levers before 80 knots.<br><span class="sop-tag-items">PM: "THRUST SET"</span> <span style="font-size:0.8em;color:var(--gray);font-style:italic;">before passing 65 kts</span> |
 | After takeoff thrust is set, the captain's hand must be on the thrust levers until V1. | |
 | Monitor airspeed.<br>Maintain light forward pressure on the control column. | Monitor airspeed and call out any abnormal indications. |
-| Verify 80 knots and call "CHECK." | Call "80 KNOTS." |
-| Verify V1 speed. | Verify the automatic V1 callout or call "V1." |
-| At V<sub>R</sub>, rotate toward 15° pitch attitude.<br>After liftoff, follow F/D commands. | At V<sub>R</sub> call "ROTATE."<br>Monitor airspeed and vertical speed. |
+| Verify 80 knots and <span class="sop-tag-items">PF: "CHECK"</span> | <span class="sop-tag-items">PM: "80 KNOTS"</span> |
+| Verify V1 speed. | Verify the automatic V1 callout or <span class="sop-tag-items">PM: "V1"</span> |
+| At V<sub>R</sub>, rotate toward 15° pitch attitude.<br>After liftoff, follow F/D commands. | At V<sub>R</sub> <span class="sop-tag-items">PM: "ROTATE"</span><br>Monitor airspeed and vertical speed. |
 | Establish a positive rate of climb. | |
-| | Verify a positive rate of climb on the altimeter and call "POSITIVE RATE." |
-| Verify a positive rate of climb on the altimeter and call "GEAR UP." | |
-| | Set the landing gear lever to UP.<br>Call "GEAR UP" |
+| | Verify a positive rate of climb on the altimeter and <span class="sop-tag-items">PM: "POSITIVE RATE"</span> |
+| Verify a positive rate of climb on the altimeter and <span class="sop-tag-items">PF: "GEAR UP"</span> | |
+| | Set the landing gear lever to UP.<br><span class="sop-tag-items">PM: "GEAR UP"</span> |
 | Above 400 feet radio altitude, call for a roll mode as needed. | Select or verify the roll mode.<br>Verify VNAV engaged. |
 | Verify that climb thrust is set. | |
-| Verify acceleration at the acceleration height.<br>Call "FLAPS ___" according to the flap retraction schedule. | |
-| | Set the flap lever as directed.<br>Call "FLAPS ___" |
+| Verify acceleration at the acceleration height.<br><span class="sop-tag-items">PF: "FLAPS ___"</span> according to the flap retraction schedule. | |
+| | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
 | Engage the autopilot when above the minimum altitude for autopilot engagement. | |
 | | After flap retraction is complete, set the ENGINE ANTI-ICE selectors to AUTO. |
 <div class="sop-entry-tags">

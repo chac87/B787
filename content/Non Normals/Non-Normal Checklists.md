@@ -240,10 +240,10 @@ tags: [non-normal, reference, eicas, checklists]
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span><a href="/Non-Normals/Non-Normal-Checklists/GEAR-DISAGREE"><span class="nn-bracket">[]</span> GEAR DISAGREE</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span><a href="/Non-Normals/Non-Normal-Checklists/GEAR-DOOR"><span class="nn-bracket">[]</span> GEAR DOOR</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span><a href="/Non-Normals/Non-Normal-Checklists/GEAR-DRAG-BRACE-L,-R"><span class="nn-bracket">[]</span> GEAR DRAG BRACE L, R</a></span></div>
-<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="gear"><span>Gear Lever Locked Down</span></div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="gear"><span><a href="/Non-Normals/Non-Normal-Checklists/Gear-Lever-Locked-Down">Gear Lever Locked Down</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="gear"><span><a href="/Non-Normals/Non-Normal-Checklists/GEAR-SIDE-BRACE-L,-R"><span class="nn-bracket">[]</span> GEAR SIDE BRACE L, R</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span><a href="/Non-Normals/Non-Normal-Checklists/GND-PROX-SYS"><span class="nn-bracket">[]</span> GND PROX SYS</a></span></div>
-<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="navigation"><span>GPS Data Unreliable</span></div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/GPS-Data-Unreliable">GPS Data Unreliable</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/GPS"><span class="nn-bracket">[]</span> GPS</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span><a href="/Non-Normals/Non-Normal-Checklists/GPWS-FLAP-OVRD">GPWS FLAP OVRD</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="warnings"><span><a href="/Non-Normals/Non-Normal-Checklists/GPWS-GEAR-OVRD">GPWS GEAR OVRD</a></span></div>
@@ -279,7 +279,7 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="I">
 <div class="nn-section-header">I</div>
-<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="antiice"><span>Ice Crystal Icing</span></div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="antiice"><span><a href="/Non-Normals/Non-Normal-Checklists/Ice-Crystal-Icing">Ice Crystal Icing</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span><a href="/Non-Normals/Non-Normal-Checklists/ICE-DETECTORS"><span class="nn-bracket">[]</span> ICE DETECTORS</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="antiice"><span><a href="/Non-Normals/Non-Normal-Checklists/ICING-ENG">ICING ENG</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span><a href="/Non-Normals/Non-Normal-Checklists/INSUFFICIENT-FUEL"><span class="nn-bracket">[]</span> INSUFFICIENT FUEL</a></span></div>
@@ -290,7 +290,7 @@ tags: [non-normal, reference, eicas, checklists]
 
 <div class="nn-section" data-section="J">
 <div class="nn-section-header">J</div>
-<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightcontrols"><span>Jammed Flight Controls</span></div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="flightcontrols"><span><a href="/Non-Normals/Non-Normal-Checklists/Jammed-Flight-Controls">Jammed Flight Controls</a></span></div>
 </div>
 
 <div class="nn-section" data-section="L">

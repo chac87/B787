@@ -17,8 +17,8 @@ role: Both
 | | Set the seatbelt signs as needed. |
 | <span class="nnc-note">Note: In case of passenger-upgrade or re-seating of passengers, refer to Passenger-Upgrade on Board.</span> | |
 | When climbing above transition altitude, set the altimeters to standard.<br><span class="nnc-note">Note: Pilot Monitoring sets standby altimeter.</span> | |
-| Call "Altimeters" | |
-| | Call "STD" |
-| Call "STD" | |
+| <span class="sop-tag-items">PF: "Altimeters"</span> | |
+| | <span class="sop-tag-items">PM: "STD"</span> |
+| <span class="sop-tag-items">PF: "STD"</span> | |
 | | If the FUEL IN CENTER message shows, set both CENTER FUEL PUMP switches to ON.<br>When the FUEL LOW CENTER message shows, set both CENTER FUEL PUMP switches to OFF. |
 | | Before the top of descent, modify the active route as needed for the arrival and approach. |
