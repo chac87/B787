@@ -8,7 +8,7 @@ role: Both
 # Go Around – Missed Approach
 | PF | PM |
 |:---|:---|
-| Push the TO/GA switch.<br>Call "GO AROUND" | |
+| Push the TO/GA switch.<br><span class="sop-tag-items">PF: "GO AROUND"</span> | |
 | Verify that the thrust increases. | |
 
 > [!warning] Warning
@@ -16,21 +16,21 @@ role: Both
 
 | PF | PM |
 |:---|:---|
-| Call "FLAPS 20" or "FLAPS ___" as needed. | Set the flap lever as directed.<br>Call "FLAPS ___" |
+| <span class="sop-tag-items">PF: "FLAPS 20"</span> or <span class="sop-tag-items">PF: "FLAPS ___"</span><br>as needed. | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
 | Verify the rotation to go-around attitude. | |
-| | Verify that the thrust is sufficient for the go-around or adjust as needed.<br>**"Thrust Set"** · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · · **Announce** |
-| | Verify a positive rate of climb on the altimeter and call "POSITIVE RATE." |
-| Verify a positive rate of climb on the altimeter and call "GEAR UP." | |
-| | Set the landing gear lever to UP.<br>Call "GEAR UP" |
+| | Verify that the thrust is sufficient for the go-around or adjust as needed.<br><span class="sop-tag-items">PM: "Thrust Set"</span> |
+| | Verify a positive rate of climb on the altimeter.<br><span class="sop-tag-items">PM: "POSITIVE RATE"</span> |
+| Verify a positive rate of climb on the altimeter.<br><span class="sop-tag-items">PF: "GEAR UP"</span> | |
+| | Set the landing gear lever to UP.<br><span class="sop-tag-items">PM: "GEAR UP"</span> |
 | Above 400 feet radio altitude, verify or select a roll mode. | Verify that the missed approach altitude is set. |
 | Verify that the missed approach route is tracked. | |
 | At acceleration height, set speed to the maneuver speed for the planned flap setting. | |
-| Call "FLAPS ___" according to the flap retraction schedule. | Set the flap lever as directed.<br>Call "FLAPS ___" |
+| <span class="sop-tag-items">PF: "FLAPS ___"</span><br>according to the flap retraction schedule. | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
 | After flaps are set to the planned flap setting and at or above the flap maneuvering speed, select FLCH or VNAV as needed. | |
 | Verify that climb thrust is set. | |
 | Verify that the missed approach altitude is captured. | |
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
-<span class="sop-tag-items">PM: "Thrust Set"</span>
+
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
 </div>
 

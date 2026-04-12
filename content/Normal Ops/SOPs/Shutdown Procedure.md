@@ -13,7 +13,8 @@ Start the Shutdown Procedure after taxi is complete.
 <div class="cl-item"><strong>Parking brake</strong><span class="cl-dots"></span><strong>Set</strong> <span class="nnc-role">C</span></div>
 <div class="cl-sub">Verify that the PARKING BRAKE SET message is shown.</div>
 
-<div class="cl-item"><strong>"SHUTDOWN Items"</strong><span class="cl-dots"></span><strong>Announce</strong> <span class="nnc-role">C</span></div>
+<span class="sop-tag-items">C: "SHUTDOWN Items"</span>
+
 
 <div class="cl-item"><strong>Cabin Crew</strong><span class="cl-dots"></span><strong>Advise</strong> <span class="nnc-role">F/O</span></div>
 <div class="cl-note">If pushback or towing is needed, delay callout until final parking.</div>
@@ -81,13 +82,9 @@ After wheel chocks are in place:
 
 <div class="cl-item"><strong>APU selector</strong><span class="cl-dots"></span><strong>As needed</strong> <span class="nnc-role">F/O</span></div>
 
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
-<span class="sop-tag-items">C: "SHUTDOWN Items"</span>
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">C → F/O: "SHUTDOWN CL"</span>
 </div>
-
-<div class="cl-item"><strong>Call "SHUTDOWN CHECKLIST."</strong><span class="cl-dots"></span><strong></strong> <span class="nnc-role">C</span></div>
-<div class="cl-item"><strong>Do the SHUTDOWN checklist.</strong><span class="cl-dots"></span><strong></strong> <span class="nnc-role">F/O</span></div>
 
 </div>
 

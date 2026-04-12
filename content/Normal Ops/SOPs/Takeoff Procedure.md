@@ -73,7 +73,7 @@ role: Both
 | | Set the flap lever as directed.<br>Call "FLAPS ___" |
 | Engage the autopilot when above the minimum altitude for autopilot engagement. | |
 | | After flap retraction is complete, set the ENGINE ANTI-ICE selectors to AUTO. |
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
 </div>
 

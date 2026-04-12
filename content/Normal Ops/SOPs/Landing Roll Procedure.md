@@ -9,7 +9,7 @@ role: Both
 
 | PF | PM |
 |:---|:---|
-| Verify that the thrust levers are closed.<br>Verify that the SPEEDBRAKE lever is UP. | Verify that the SPEEDBRAKE lever is UP.<br>Call "SPEEDBRAKES UP."<br>If the SPEEDBRAKE lever is not UP, call "NO SPEEDBRAKE." |
+| Verify that the thrust levers are closed.<br>Verify that the SPEEDBRAKE lever is UP. | Verify that the SPEEDBRAKE lever is UP.<br><span class="sop-tag-items">PM: "SPEEDBRAKES UP"</span><br>If the SPEEDBRAKE lever is not UP, <span class="sop-tag-items">PM: "NO SPEEDBRAKE"</span> |
 | Monitor the rollout progress. | |
 | Verify correct autobrake operation. | |
 
@@ -18,9 +18,9 @@ role: Both
 
 | PF | PM |
 |:---|:---|
-| Without delay, raise the reverse thrust levers to the interlocks and hold light pressure until the interlocks release.<br>Apply reverse thrust as needed. | Verify that the forward thrust levers are closed.<br>When both REV indications are green, call "REVERSERS NORMAL."<br>If there is no REV indication(s) or the indication(s) stays amber, call "NO REVERSER LEFT ENGINE" or "NO REVERSER RIGHT ENGINE", or "NO REVERSERS" |
-| By 60 KIAS, start movement of the reverse thrust levers to reach the reverse idle detent before taxi speed. | Call "60 KNOTS." |
+| Without delay, raise the reverse thrust levers to the interlocks and hold light pressure until the interlocks release.<br>Apply reverse thrust as needed. | Verify that the forward thrust levers are closed.<br>When both REV indications are green, <span class="sop-tag-items">PM: "REVERSERS NORMAL"</span><br>If there is no REV indication(s) or the indication(s) stays amber, <span class="sop-tag-items">PM: "NO REVERSER LEFT ENGINE"</span> or <span class="sop-tag-items">PM: "NO REVERSER RIGHT ENGINE"</span> or <span class="sop-tag-items">PM: "NO REVERSERS"</span> |
+| By 60 KIAS, start movement of the reverse thrust levers to reach the reverse idle detent before taxi speed. | <span class="sop-tag-items">PM: "60 KNOTS"</span> |
 | After the engines are at reverse idle, move the reverse thrust levers to full down. | |
 | Before taxi speed, disarm the autobrake. Use manual braking as needed. | |
 | Before turning off the runway, disconnect the autopilot. | |
-| If applicable:<br>**"You have control"** · · · · · · · · · · · · · · · · · · · · · · · · · · **Announce** | If applicable:<br>**"I have control"** · · · · · · · · · · · · · · · · · · · · · · · · · · · **Announce** |
+| If applicable:<br><span class="sop-tag-items">PF: "You have control"</span> | If applicable:<br><span class="sop-tag-items">PM: "I have control"</span> |

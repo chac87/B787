@@ -1001,29 +1001,36 @@ article table td:last-child:has(.sop-value) {
   display: flex;
   gap: 0.4em;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .sop-tag-items {
-  font-size: 0.8em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 600;
   background: rgba(75,157,161,0.12);
   color: #1C4C5C;
   border: 1px solid rgba(75,157,161,0.45);
   border-radius: 5px;
-  padding: 0.3em 0.8em;
+  padding: 0.25em 0.7em;
   white-space: nowrap;
+  display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
 }
 
 .sop-tag-cl {
-  font-size: 0.8em;
-  font-weight: 700;
+  font-size: 1em;
+  font-weight: 600;
   background: rgba(50,87,188,0.10);
   color: #05164D;
   border: 1px solid rgba(50,87,188,0.38);
   border-radius: 5px;
-  padding: 0.3em 0.8em;
+  padding: 0.25em 0.7em;
   white-space: nowrap;
+  display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
 }
 
 .sop-trigger {

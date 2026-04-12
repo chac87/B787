@@ -25,7 +25,7 @@ This procedure is not authorized using QFE.
 |:---|:---|
 | Initially<br>- If on radar vectors:<br>&nbsp;&nbsp;• HDG SEL<br>&nbsp;&nbsp;• Pitch mode (as needed)<br>- If enroute to a fix:<br>&nbsp;&nbsp;• LNAV or other roll mode<br>&nbsp;&nbsp;• VNAV or other pitch mode | |
 | | Verify that the cabin is secure. |
-| Call "FLAPS ___" according to the flap extension schedule. | Set the flap lever as directed.<br>Call "FLAPS ___" |
+| <span class="sop-tag-items">PF: "FLAPS ___"</span><br>according to the flap extension schedule. | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
 | The recommended roll modes for the final approach are:<br>- For an RNAV, GPS, VOR or NDB approach use LNAV<br>- For a B/CRS approach use LNAV or B/CRS<br>- For a LOC, SDF, LDA, ILS (G/S off), IGS (G/S off) approach use LNAV or LOC | |
 | When on the final approach course intercept heading for LOC, B/CRS, SDF, or LDA approaches:<br>- Verify that the localizer is tuned and identified<br>- Verify that the LOC pointer is shown | |
 | Arm the LNAV or LOC mode. | |
@@ -40,10 +40,13 @@ This procedure is not authorized using QFE.
 | Approximately 2 NM before the final approach fix and after ALT, VNAV PTH, or VNAV ALT is annunciated:<br>- Set DA(H) or MDA(H) on the MCP<br>- Select or verify VNAV<br>- Select or verify speed intervention | |
 | Perform Flaps and Gear extension on Schedule. | |
 | Set the speedbrake lever to ARMED. | |
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
 </div>
 
+| PF | PM |
+|:---|:---|
 | At the final approach fix, verify the crossing altitude. | |
 | Monitor the approach. | |
 | When at least 300 feet below the missed approach altitude, set the missed approach altitude on the MCP. | |

@@ -8,7 +8,7 @@ role: Both
 # Before Taxi Procedure
 <div class="checklist">
 
-<div class="cl-sub">Call "BEFORE TAXI Items – FLAPS ___" — C</div>
+<span class="sop-tag-items">C: "BEFORE TAXI Items – FLAPS ___"</span>
 <div class="cl-sub">Verify that all engine generator OFF lights are extinguished. — F/O</div>
 
 <div class="cl-item"><strong>APU selector</strong><span class="cl-dots"></span><strong>OFF — F/O</strong></div>
@@ -38,10 +38,9 @@ role: Both
 
 </div>
 
-Update changes to the taxi briefing, as needed. — C or PF
+<div class="cl-item"><strong>Taxi briefing</strong><span class="cl-dots"></span><strong>Update as needed — C or PF</strong></div>
 
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
-<span class="sop-tag-items">C: "BEFORE TAXI Items – FLAPS ___"</span>
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">C → F/O: "BEFORE TAXI CL"</span>
 </div>
 

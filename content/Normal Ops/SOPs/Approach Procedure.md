@@ -24,7 +24,8 @@ Complete the Approach Procedure before:
 | Update the arrival and approach, as needed. | |
 | Select VSD on as needed. | |
 | Update the approach briefing as needed. | |
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "APPROACH CL"</span>
 </div>
 

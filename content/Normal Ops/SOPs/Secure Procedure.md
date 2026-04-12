@@ -11,7 +11,8 @@ role: Both
 
 <div class="checklist">
 
-<div class="cl-item"><strong>"SECURE Items"</strong><span class="cl-dots"></span><strong>Announce</strong> <span class="nnc-role">C</span></div>
+<span class="sop-tag-items">C: "SECURE Items"</span>
+
 
 <div class="cl-item"><strong>IRS selectors</strong><span class="cl-dots"></span><strong>OFF</strong> <span class="nnc-role">F/O</span></div>
 
@@ -35,13 +36,10 @@ role: Both
 <div class="cl-sub">Refer to PeOM Aircraft EFB Shutdown (Pilots eOPS Manual).</div>
 <div class="cl-caution">Caution: The Power Electronics Cooling System (PECS) requires a cool-down period to prevent damaging the units and degrading the coolant. A wait of up to 22 minutes may be required before removing power. Refer to 2.2.6 Electrical Power Down for additional information.</div>
 
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
-<span class="sop-tag-items">C: "SECURE Items"</span>
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">C → F/O: "SECURE CL"</span>
 </div>
 
-<div class="cl-item"><strong>Call "SECURE CHECKLIST."</strong><span class="cl-dots"></span><strong></strong> <span class="nnc-role">C</span></div>
-<div class="cl-item"><strong>Do the SECURE checklist.</strong><span class="cl-dots"></span><strong></strong> <span class="nnc-role">F/O</span></div>
 
 </div>
 

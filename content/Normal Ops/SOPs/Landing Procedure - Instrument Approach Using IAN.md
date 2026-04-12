@@ -27,7 +27,7 @@ This procedure is not authorized using QFE.
 |:---|:---|
 | Initially<br>- If on radar vectors:<br>&nbsp;&nbsp;• HDG SEL<br>&nbsp;&nbsp;• Pitch mode (as needed)<br>- If enroute to a fix:<br>&nbsp;&nbsp;• LNAV or other roll mode<br>&nbsp;&nbsp;• VNAV or other pitch mode | |
 | | Verify that the cabin is secure. |
-| Call "FLAPS ___" according to the flap extension schedule. | Set the flap lever as directed.<br>Call "FLAPS ___" |
+| <span class="sop-tag-items">PF: "FLAPS ___"</span><br>according to the flap extension schedule. | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
 | When on localizer/final approach course intercept heading:<br>- Verify that the navigation radios are tuned and identified (as needed)<br>- Verify that the deviation pointers are shown | |
 | Arm the APP mode. | |
 | Use LNAV, HDG SEL, TRK SEL, HDG HOLD, or TRK HOLD to intercept the final approach course as needed. | |
@@ -35,10 +35,13 @@ This procedure is not authorized using QFE.
 | Perform Flaps and Gear extension on Schedule. | |
 | Set the speedbrake lever to ARMED. | |
 | Set the missed approach altitude on the MCP. | |
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
+
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
 </div>
 
+| PF | PM |
+|:---|:---|
 | At the final approach fix, verify the crossing altitude. | |
 | Monitor the approach. | |
 | If suitable visual reference is established at DA(H), MDA(H), or the missed approach point, disengage the autopilot in accordance with regulatory requirements.<br>Maintain the glide path to landing. | |

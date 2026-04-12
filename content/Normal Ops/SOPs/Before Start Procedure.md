@@ -7,11 +7,6 @@ role: Both
 
 # Before Start Procedure
 
-<div class="sop-entry-tags" style="margin:0.75em 0 1.5em 0;">
-<span class="sop-tag-items">C: "BEFORE START Items"</span>
-<span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
-</div>
-
 Start the Before Start Procedure after papers are on board.
 
 <div class="checklist">
@@ -62,7 +57,8 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 <div class="cl-sub">If pushback is needed:</div>
 <div class="cl-item cl-indent"><strong>Nose gear steering</strong><span class="cl-dots"></span><strong>Verify locked out — C</strong></div>
 
-<div class="cl-item"><strong>"BEFORE START Items"</strong><span class="cl-dots"></span><strong>Announce — C</strong></div>
+<span class="sop-tag-items">C: "BEFORE START Items"</span>
+
 
 <div class="cl-item"><strong>Passenger signs</strong><span class="cl-dots"></span><strong>ON — F/O</strong></div>
 
@@ -101,8 +97,7 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 
 </div>
 
-<div class="sop-entry-tags" style="margin:1em 0 1.2em 0;">
-<span class="sop-tag-items">C: "BEFORE START Items"</span>
+<div class="sop-entry-tags">
 <span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
 </div>
 
