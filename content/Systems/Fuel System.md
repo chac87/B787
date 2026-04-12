@@ -13,8 +13,8 @@
 - Time to dump to MIN FUEL: 1:26h
 
 > [!info] Un-annunciated Fuel Checklists
-> - FUEL LEAK
-> - FUEL JETTISON
+> - [[Non Normals/Fuel Non-Normals|Fuel Leak]]
+> - [[Non Normals/Fuel Non-Normals|Fuel Jettison]]
 
 ---
 

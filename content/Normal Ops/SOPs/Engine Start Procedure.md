@@ -10,7 +10,7 @@ role: Both
 <div class="checklist">
 
 <span class="sop-tag-items">C: "ENGINE START"</span>
-<div class="cl-sub">Select the secondary engine indications. — F/O</div>
+<div class="cl-item"><strong>Secondary engine indications</strong><span class="cl-dots"></span><strong>Select</strong> <span class="nnc-role">F/O</span></div>
 <div class="cl-sub">Crew action to correct for abnormal engine indications is not needed. Respond to any EICAS messages that show.</div>
 <div class="cl-note">The engines may not start if external power and the APU are both supplying electric power at the same time. One source must be selected off. The APU is the preferred electric power source for engine start.</div>
 <div class="cl-note">Do not make flap or primary flight control inputs on the ground until after the EICAS engine RUNNING indication appears and all four GEN CTRL OFF lights are extinguished. The electric spoilers are susceptible to nuisance failures if commanded to move during electrical power transfers.</div>
