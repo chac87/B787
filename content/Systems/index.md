@@ -13,7 +13,7 @@ title: Systems
 
 ## [[Anti-Ice, Rain]]
 
-## [[Flight Controls & Protections]]
+## [[Flight Controls]]
 
 ## [[Flight Envelope Protections]]
 

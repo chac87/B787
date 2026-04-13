@@ -1,4 +1,4 @@
-# Flight Controls & Protections
+# Flight Controls
 
 ## Overview & Architecture
 

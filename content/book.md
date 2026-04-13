@@ -8,7 +8,7 @@
 [[Ventilation System]]
 [[Air Conditioning, Pressurization]]
 [[Systems/Anti-Ice, Rain|Anti-Ice, Rain]]
-[[Systems/Flight Controls & Protections|Flight Controls & Protections]]
+[[Systems/Flight Controls|Flight Controls]]
 [[Systems/Flight Envelope Protections|Flight Envelope Protections]]
 [[Autoflight System (AFDS)]]
 [[Engines]]

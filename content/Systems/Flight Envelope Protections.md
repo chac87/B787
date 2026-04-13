@@ -5,7 +5,7 @@ tags: [systems, flight-controls, protections]
 
 # Flight Envelope Protections
 
-← [[Systems/Flight Controls & Protections|Flight Controls & Protections]]
+← [[Systems/Flight Controls|Flight Controls]]
 
 ## Pitch & Roll
 
