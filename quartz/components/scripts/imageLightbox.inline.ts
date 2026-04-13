@@ -1,6 +1,3 @@
-// Timestamp des letzten Lightbox-Opens — Guard gegen iOS Ghost-Click auf dem Overlay
-let openTimestamp = 0
-
 // ── Lightbox overlay — built once, persists across SPA navigations ────────────
 if (!document.getElementById("lightbox-overlay")) {
   const overlay = document.createElement("div")
@@ -16,11 +13,18 @@ if (!document.getElementById("lightbox-overlay")) {
     document.body.classList.remove("lightbox-open")
   }
 
-  // Close on backdrop click or close button.
-  // Guard: iOS feuert ~300 ms nach touchend einen Ghost-Click auf das Overlay → ignorieren.
-  overlay.addEventListener("click", (e) => {
-    if (Date.now() - openTimestamp < 400) return
-    if (e.target === overlay || (e.target as HTMLElement).id === "lightbox-close") close()
+  // Touch: schließen per touchend.
+  // Ghost-Click ist ein synthetisches click-Event, kein touchend → kann Lightbox nicht versehentlich schließen.
+  overlay.addEventListener("touchend", (e) => {
+    const t = e.target as HTMLElement
+    if (t === overlay || t.id === "lightbox-close") close()
+  }, { passive: true })
+
+  // Desktop-Maus: schließen per pointerup (kein ghost-click-Risiko).
+  overlay.addEventListener("pointerup", (e) => {
+    if (e.pointerType === "touch") return // wird von touchend behandelt
+    const t = e.target as HTMLElement
+    if (t === overlay || t.id === "lightbox-close") close()
   })
 
   // Close on Escape
@@ -39,64 +43,78 @@ function setupPage() {
   }
 
   // ── Image lightbox ─────────────────────────────────────────────────────────
+  const articleEl   = document.querySelector("article")
   const overlay     = document.getElementById("lightbox-overlay")!
   const lightboxImg = document.getElementById("lightbox-img") as HTMLImageElement
 
+  const open = (img: HTMLImageElement) => {
+    lightboxImg.src = img.src
+    lightboxImg.alt = img.alt
+    overlay.classList.add("open")
+    document.body.classList.add("lightbox-open")
+  }
+
+  // Cursor auf einzelnen Images setzen (nur visuell, kein Event-Listener mehr hier)
   document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
     img.style.cursor = "zoom-in"
+  })
 
-    const open = () => {
-      openTimestamp = Date.now()
-      lightboxImg.src = img.src
-      lightboxImg.alt = img.alt
-      overlay.classList.add("open")
-      document.body.classList.add("lightbox-open")
-    }
-
-    // Touch: touchstart/touchend für echtes iOS Safari.
-    // pointerup ist auf iOS auf nicht-interaktiven Elementen unzuverlässig.
-    // Kein e.preventDefault() → Browser-Scroll bleibt intakt; Ghost-Click wird
-    // stattdessen über openTimestamp im Overlay-Handler abgefangen.
+  if (articleEl) {
+    // ── Touch: Event-Delegation auf article ────────────────────────────────
+    // Robuster als per-Element-Listener auf iOS Safari (content-visibility, stacking).
     let tStartX = 0
     let tStartY = 0
+    let tapTarget: HTMLImageElement | null = null
+
     const onTouchStart = (e: TouchEvent) => {
-      tStartX = e.touches[0].clientX
-      tStartY = e.touches[0].clientY
+      const img = (e.target as Element).closest<HTMLImageElement>("img:not([alt*='clean'])")
+      tapTarget = img ?? null
+      if (img) {
+        tStartX = e.touches[0].clientX
+        tStartY = e.touches[0].clientY
+      }
     }
+
     const onTouchEnd = (e: TouchEvent) => {
+      if (!tapTarget) return
       const dx = Math.abs(e.changedTouches[0].clientX - tStartX)
       const dy = Math.abs(e.changedTouches[0].clientY - tStartY)
-      if (dx < 10 && dy < 10) open()
+      if (dx < 15 && dy < 15) open(tapTarget)
+      tapTarget = null
     }
-    img.addEventListener("touchstart", onTouchStart, { passive: true })
-    img.addEventListener("touchend",   onTouchEnd,   { passive: true })
+
+    articleEl.addEventListener("touchstart", onTouchStart, { passive: true })
+    articleEl.addEventListener("touchend",   onTouchEnd,   { passive: true })
     window.addCleanup(() => {
-      img.removeEventListener("touchstart", onTouchStart)
-      img.removeEventListener("touchend",   onTouchEnd)
+      articleEl.removeEventListener("touchstart", onTouchStart)
+      articleEl.removeEventListener("touchend",   onTouchEnd)
     })
 
-    // Maus: pointerdown/pointerup — Desktop Chrome + Safari.
-    // pointerType-Guard verhindert Doppel-Fire wenn touch-Events laufen.
+    // ── Desktop-Maus: Event-Delegation auf article ─────────────────────────
     let pStartX = 0
     let pStartY = 0
+    let pTarget: HTMLImageElement | null = null
+
     const onPointerDown = (e: PointerEvent) => {
       if (e.pointerType === "touch") return
-      pStartX = e.clientX
-      pStartY = e.clientY
+      const img = (e.target as Element).closest<HTMLImageElement>("img:not([alt*='clean'])")
+      pTarget = img ?? null
+      if (img) { pStartX = e.clientX; pStartY = e.clientY }
     }
+
     const onPointerUp = (e: PointerEvent) => {
-      if (e.pointerType === "touch") return
-      const dx = Math.abs(e.clientX - pStartX)
-      const dy = Math.abs(e.clientY - pStartY)
-      if (dx < 10 && dy < 10) open()
+      if (e.pointerType === "touch" || !pTarget) return
+      if (Math.abs(e.clientX - pStartX) < 10 && Math.abs(e.clientY - pStartY) < 10) open(pTarget)
+      pTarget = null
     }
-    img.addEventListener("pointerdown", onPointerDown)
-    img.addEventListener("pointerup",   onPointerUp)
+
+    articleEl.addEventListener("pointerdown", onPointerDown)
+    articleEl.addEventListener("pointerup",   onPointerUp)
     window.addCleanup(() => {
-      img.removeEventListener("pointerdown", onPointerDown)
-      img.removeEventListener("pointerup",   onPointerUp)
+      articleEl.removeEventListener("pointerdown", onPointerDown)
+      articleEl.removeEventListener("pointerup",   onPointerUp)
     })
-  })
+  }
 
   // ── Non-Normal Checklist Filter ────────────────────────────────────────────
   const filterBar = document.querySelector<HTMLElement>(".nn-filter-bar")

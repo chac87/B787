@@ -1,3 +1,8 @@
+// iOS Safari: content-visibility: auto (base.scss) bricht Hit-Testing auf Images
+article img {
+  content-visibility: visible;
+}
+
 // ── Lightbox Overlay ────────────────────────────────────────────────────────
 
 #lightbox-overlay {
