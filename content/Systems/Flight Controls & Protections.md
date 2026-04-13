@@ -68,28 +68,15 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 
 ### Flap/Slat Modes
 
-<table>
-<thead>
-<tr><th>Mode</th><th>Drive</th><th>Control</th></tr>
-</thead>
-<tbody>
-<tr>
-  <td><strong>Primary</strong><br><img src="/Bilder/flap-normal.webp" style="width:55px;margin-top:6px;border-radius:4px"></td>
-  <td>Hydraulic (System C)</td>
-  <td>Slats + flaps together<br>Slat Autogap available</td>
-</tr>
-<tr>
-  <td><strong>Secondary</strong><br><img src="/Bilder/flaps-secondary.webp" style="width:55px;margin-top:6px;border-radius:4px"></td>
-  <td>Hydraulic or electric</td>
-  <td>Controlled separately — flaps limited to 20<br>Slats pre-gap only</td>
-</tr>
-<tr>
-  <td><strong>Alternate</strong><br><img src="/Bilder/flaps-alternate.webp" style="width:55px;margin-top:6px;border-radius:4px"></td>
-  <td>Electric</td>
-  <td>via Alternate Flap Selector<br>Slats max mid range — flaps max 20</td>
-</tr>
-</tbody>
-</table>
+<div class="fctl-modes-table">
+
+| Mode | Drive | Control |
+|:---|:---|:---|
+| **Primary**<br>![[flap normal.webp]] | Hydraulic (System C) | Slats + flaps together<br>Slat Autogap available |
+| **Secondary**<br>![[flaps secondary.webp]] | Hydraulic or electric | Controlled separately — flaps limited to 20<br>Slats pre-gap only |
+| **Alternate**<br>![[flaps alternate.webp]] | Electric | via Alternate Flap Selector<br>Slats max mid range — flaps max 20 |
+
+</div>
 
 ### Flap/Slat Positions & Speed Selection
 
