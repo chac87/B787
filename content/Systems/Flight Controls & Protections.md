@@ -77,6 +77,15 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 | **Secondary** | Hydraulic or electric | Controlled separately |
 | **Alternate** | Electric | via Alternate Flap Selector |
 
+> [!info]- Primary Mode
+> ![[flaps normal.webp]]
+
+> [!info]- Secondary Mode
+> ![[flaps secondary.webp]]
+
+> [!info]- Alternate Mode
+> ![[flaps alternate.webp]]
+
 ### Flap/Slat Positions & Speed Selection
 
 | Flap Lever | Flaps | Slats |
