@@ -54,14 +54,24 @@ function setupPage() {
     document.body.classList.add("lightbox-open")
   }
 
-  // Cursor auf einzelnen Images setzen (nur visuell, kein Event-Listener mehr hier)
-  document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
-    img.style.cursor = "zoom-in"
-  })
+  // cursor:zoom-in nur auf Nicht-Touch-Geräten — auf iOS muss CSS cursor:pointer
+  // erhalten bleiben, damit der native Scroll-Layer touchend nicht abbricht.
+  if (!("ontouchstart" in window)) {
+    document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
+      img.style.cursor = "zoom-in"
+    })
+  }
 
   if (articleEl) {
-    // ── Touch: Event-Delegation auf article ────────────────────────────────
-    // Robuster als per-Element-Listener auf iOS Safari (content-visibility, stacking).
+    // ── Click-Delegation (Desktop-Maus + iOS mit cursor:pointer) ───────────
+    const onArticleClick = (e: MouseEvent) => {
+      const img = (e.target as Element).closest<HTMLImageElement>("img:not([alt*='clean'])")
+      if (img) open(img)
+    }
+    articleEl.addEventListener("click", onArticleClick)
+    window.addCleanup(() => articleEl.removeEventListener("click", onArticleClick))
+
+    // ── Touch-Delegation (iOS Backup via touchend) ─────────────────────────
     let tStartX = 0
     let tStartY = 0
     let tapTarget: HTMLImageElement | null = null
@@ -88,31 +98,6 @@ function setupPage() {
     window.addCleanup(() => {
       articleEl.removeEventListener("touchstart", onTouchStart)
       articleEl.removeEventListener("touchend",   onTouchEnd)
-    })
-
-    // ── Desktop-Maus: Event-Delegation auf article ─────────────────────────
-    let pStartX = 0
-    let pStartY = 0
-    let pTarget: HTMLImageElement | null = null
-
-    const onPointerDown = (e: PointerEvent) => {
-      if (e.pointerType === "touch") return
-      const img = (e.target as Element).closest<HTMLImageElement>("img:not([alt*='clean'])")
-      pTarget = img ?? null
-      if (img) { pStartX = e.clientX; pStartY = e.clientY }
-    }
-
-    const onPointerUp = (e: PointerEvent) => {
-      if (e.pointerType === "touch" || !pTarget) return
-      if (Math.abs(e.clientX - pStartX) < 10 && Math.abs(e.clientY - pStartY) < 10) open(pTarget)
-      pTarget = null
-    }
-
-    articleEl.addEventListener("pointerdown", onPointerDown)
-    articleEl.addEventListener("pointerup",   onPointerUp)
-    window.addCleanup(() => {
-      articleEl.removeEventListener("pointerdown", onPointerDown)
-      articleEl.removeEventListener("pointerup",   onPointerUp)
     })
   }
 

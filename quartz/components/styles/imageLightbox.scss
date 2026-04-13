@@ -1,6 +1,8 @@
-// iOS Safari: content-visibility: auto (base.scss) bricht Hit-Testing auf Images
-article img {
+// iOS Safari: cursor:pointer markiert Element als "interaktiv" → nativer Scroll-Layer
+// bricht touchend nicht mehr ab. content-visibility:auto Fix bleibt ebenfalls.
+article img:not([alt*="clean"]) {
   content-visibility: visible;
+  cursor: pointer;
 }
 
 // ── Lightbox Overlay ────────────────────────────────────────────────────────
