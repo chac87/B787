@@ -1,3 +1,6 @@
+// Timestamp des letzten Lightbox-Opens — Guard gegen iOS Ghost-Click auf dem Overlay
+let openTimestamp = 0
+
 // ── Lightbox overlay — built once, persists across SPA navigations ────────────
 if (!document.getElementById("lightbox-overlay")) {
   const overlay = document.createElement("div")
@@ -13,8 +16,10 @@ if (!document.getElementById("lightbox-overlay")) {
     document.body.classList.remove("lightbox-open")
   }
 
-  // Close on backdrop click or close button
+  // Close on backdrop click or close button.
+  // Guard: iOS feuert ~300 ms nach touchend einen Ghost-Click auf das Overlay → ignorieren.
   overlay.addEventListener("click", (e) => {
+    if (Date.now() - openTimestamp < 400) return
     if (e.target === overlay || (e.target as HTMLElement).id === "lightbox-close") close()
   })
 
@@ -34,39 +39,62 @@ function setupPage() {
   }
 
   // ── Image lightbox ─────────────────────────────────────────────────────────
-  // Uses click only — browser synthesises click from tap on all platforms.
-  // touch-action: none (CSS) removes the iOS 300ms delay inside scroll containers.
-  const overlay  = document.getElementById("lightbox-overlay")!
+  const overlay     = document.getElementById("lightbox-overlay")!
   const lightboxImg = document.getElementById("lightbox-img") as HTMLImageElement
 
   document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
     img.style.cursor = "zoom-in"
 
     const open = () => {
+      openTimestamp = Date.now()
       lightboxImg.src = img.src
       lightboxImg.alt = img.alt
       overlay.classList.add("open")
       document.body.classList.add("lightbox-open")
     }
 
-    // Pointer Events API — vereinheitlicht Maus und Touch.
-    // pointercancel feuert wenn der Browser Scroll übernimmt → pointerup bleibt aus → kein false positive.
+    // Touch: touchstart/touchend für echtes iOS Safari.
+    // pointerup ist auf iOS auf nicht-interaktiven Elementen unzuverlässig.
+    // Kein e.preventDefault() → Browser-Scroll bleibt intakt; Ghost-Click wird
+    // stattdessen über openTimestamp im Overlay-Handler abgefangen.
+    let tStartX = 0
+    let tStartY = 0
+    const onTouchStart = (e: TouchEvent) => {
+      tStartX = e.touches[0].clientX
+      tStartY = e.touches[0].clientY
+    }
+    const onTouchEnd = (e: TouchEvent) => {
+      const dx = Math.abs(e.changedTouches[0].clientX - tStartX)
+      const dy = Math.abs(e.changedTouches[0].clientY - tStartY)
+      if (dx < 10 && dy < 10) open()
+    }
+    img.addEventListener("touchstart", onTouchStart, { passive: true })
+    img.addEventListener("touchend",   onTouchEnd,   { passive: true })
+    window.addCleanup(() => {
+      img.removeEventListener("touchstart", onTouchStart)
+      img.removeEventListener("touchend",   onTouchEnd)
+    })
+
+    // Maus: pointerdown/pointerup — Desktop Chrome + Safari.
+    // pointerType-Guard verhindert Doppel-Fire wenn touch-Events laufen.
     let pStartX = 0
     let pStartY = 0
     const onPointerDown = (e: PointerEvent) => {
+      if (e.pointerType === "touch") return
       pStartX = e.clientX
       pStartY = e.clientY
     }
     const onPointerUp = (e: PointerEvent) => {
+      if (e.pointerType === "touch") return
       const dx = Math.abs(e.clientX - pStartX)
       const dy = Math.abs(e.clientY - pStartY)
       if (dx < 10 && dy < 10) open()
     }
     img.addEventListener("pointerdown", onPointerDown)
-    img.addEventListener("pointerup", onPointerUp)
+    img.addEventListener("pointerup",   onPointerUp)
     window.addCleanup(() => {
       img.removeEventListener("pointerdown", onPointerDown)
-      img.removeEventListener("pointerup", onPointerUp)
+      img.removeEventListener("pointerup",   onPointerUp)
     })
   })
 
