@@ -62,7 +62,7 @@ function setupPage() {
     const onImgTouchEnd = (e: TouchEvent) => {
       const dx = Math.abs(e.changedTouches[0].clientX - imgTouchStartX)
       const dy = Math.abs(e.changedTouches[0].clientY - imgTouchStartY)
-      if (dx < 10 && dy < 10) {
+      if (dx < 15 && dy < 15) {
         e.preventDefault() // suppress subsequent click event
         openLightbox()
       }
