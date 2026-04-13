@@ -6,6 +6,10 @@ role: Both
 ---
 
 # Secure Procedure
+
+> [!info]- Flow
+> ![[securing flow.webp]]
+
 > [!info] Note
 > The SECURE PROCEDURE must not be performed before all passengers have exited the airplane.
 

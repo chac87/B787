@@ -6,6 +6,10 @@ role: Both
 ---
 
 # Shutdown Procedure
+
+> [!info]- Flow
+> ![[shutdown flow.webp]]
+
 Start the Shutdown Procedure after taxi is complete.
 
 <div class="checklist">

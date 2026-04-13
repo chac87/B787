@@ -102,4 +102,5 @@ Integrated into the two Integrated Surveillance System Processor Units (ISSPU). 
 ## WXR Weather Radar
 
 - Maximum range: 320 NM
+- Turbulence detection range: 40 NM
 - PWS windshear scanning: below 2.300 ft RA

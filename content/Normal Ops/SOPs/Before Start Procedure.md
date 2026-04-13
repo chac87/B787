@@ -7,6 +7,9 @@ role: Both
 
 # Before Start Procedure
 
+> [!info]- Flow
+> ![[before start flow.webp]]
+
 Start the Before Start Procedure after papers are on board.
 
 <div class="checklist">

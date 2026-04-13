@@ -11,7 +11,7 @@
 > <tr><td><strong style="color:#e74c3c">Red</strong></td><td>Highest priority safety information. Warning level alerts — require immediate awareness and corrective action. Keep-out zones and do-not-exceed limits.</td></tr>
 > <tr><td><strong style="color:#f39c12">Amber</strong></td><td>Second priority safety information. Caution level alerts — require immediate crew awareness and subsequent response. Advisory level alerts — displayed in amber text with no aural; require crew awareness and may require a response. Also used for flags, non-normal sources, and regions of limited operation.</td></tr>
 > <tr><td><strong style="color:#27ae60">Green</strong></td><td>Active, engaged, selected and tuned. Fly-to areas.</td></tr>
-> <tr><td><strong class="c-white-label">White</strong></td><td>Real-time information, scales and values ready to be used.</td></tr>
+> <tr><td><strong class="c-white-label">White</strong></td><td>Real-time information, scales and armed modes.</td></tr>
 > <tr><td><strong style="color:#c775b5">Magenta</strong></td><td>Target values and FMC-generated flight path.</td></tr>
 > <tr><td><strong style="color:#4B9DA1">Cyan</strong></td><td>Inactive data, labels and background.</td></tr>
 > <tr><td><strong style="color:#3257BC">Blue</strong></td><td>Informational purposes.</td></tr>

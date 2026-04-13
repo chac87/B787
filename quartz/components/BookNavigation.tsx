@@ -28,7 +28,7 @@ export default (() => {
     // NEU: HILFSFUNKTION
     // Macht aus "General Infos", "general-infos" oder "General_Infos" immer "generalinfos"
     // So findet das Skript die Datei garantiert, egal was Quartz oder Obsidian damit machen.
-    const simplify = (str: string) => str.toLowerCase().replace(/[-_ ]/g, "")
+    const simplify = (str: string) => str.toLowerCase().replace(/&/g, "and").replace(/[-_ ]/g, "")
 
     // 2. Obsidian-Links in echte Quartz-Slugs übersetzen
     const orderedSlugs = bookTargets.map(target => {

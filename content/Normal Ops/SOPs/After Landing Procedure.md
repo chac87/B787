@@ -6,6 +6,10 @@ role: Both
 ---
 
 # After Landing Procedure
+
+> [!info]- Flow
+> ![[after landing flow.webp]]
+
 Start the After Landing Procedure when clear of the active runway.
 
 <div class="checklist">

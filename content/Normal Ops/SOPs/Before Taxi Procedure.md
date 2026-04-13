@@ -6,6 +6,10 @@ role: Both
 ---
 
 # Before Taxi Procedure
+
+> [!info]- Flow
+> ![[before taxi flow.webp]]
+
 <div class="checklist">
 
 <span class="sop-tag-items">C: "BEFORE TAXI Items – FLAPS ___"</span>
