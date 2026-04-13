@@ -46,9 +46,6 @@ function setupPage() {
 
     let imgTouchStartX = 0
     let imgTouchStartY = 0
-    let lastTapTime = 0
-    let lastTapX = 0
-    let lastTapY = 0
 
     const openLightbox = () => {
       lightboxImg.src = img.src
@@ -63,28 +60,11 @@ function setupPage() {
     }
 
     const onImgTouchEnd = (e: TouchEvent) => {
-      const x = e.changedTouches[0].clientX
-      const y = e.changedTouches[0].clientY
-      const dx = Math.abs(x - imgTouchStartX)
-      const dy = Math.abs(y - imgTouchStartY)
-      if (dx > 15 || dy > 15) { lastTapTime = 0; return }
-
-      const now = Date.now()
-      const timeSince = now - lastTapTime
-      const doubleDx = Math.abs(x - lastTapX)
-      const doubleDy = Math.abs(y - lastTapY)
-
-      if (timeSince < 350 && doubleDx < 50 && doubleDy < 50) {
-        // Double tap → open lightbox
+      const dx = Math.abs(e.changedTouches[0].clientX - imgTouchStartX)
+      const dy = Math.abs(e.changedTouches[0].clientY - imgTouchStartY)
+      if (dx < 15 && dy < 15) {
         e.preventDefault()
-        e.stopPropagation()
         openLightbox()
-        lastTapTime = 0
-      } else {
-        // First tap → save state, let event through
-        lastTapTime = now
-        lastTapX = x
-        lastTapY = y
       }
     }
 
@@ -96,45 +76,6 @@ function setupPage() {
       img.removeEventListener("touchend", onImgTouchEnd)
       img.removeEventListener("click", openLightbox)
     })
-  })
-
-  // ── Keyboard arrow navigation ─────────────────────────────────────────────
-  const prevLink = document.querySelector<HTMLAnchorElement>(".nav-btn.prev")
-  const nextLink = document.querySelector<HTMLAnchorElement>(".nav-btn.next")
-
-  const onArrow = (e: KeyboardEvent) => {
-    if (document.body.classList.contains("lightbox-open")) return
-    const tag = (e.target as HTMLElement).tagName
-    if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return
-    if ((e.target as HTMLElement).isContentEditable) return
-    if (e.key === "ArrowLeft" && prevLink) prevLink.click()
-    else if (e.key === "ArrowRight" && nextLink) nextLink.click()
-  }
-
-  document.addEventListener("keydown", onArrow)
-  window.addCleanup(() => document.removeEventListener("keydown", onArrow))
-
-  // ── Swipe navigation ──────────────────────────────────────────────────────
-  let touchStartX = 0
-  const SWIPE_THRESHOLD = 50
-
-  const onTouchStart = (e: TouchEvent) => {
-    touchStartX = e.touches[0].clientX
-  }
-
-  const onTouchEnd = (e: TouchEvent) => {
-    if (document.body.classList.contains("lightbox-open")) return
-    const delta = e.changedTouches[0].clientX - touchStartX
-    if (Math.abs(delta) < SWIPE_THRESHOLD) return
-    if (delta > 0 && prevLink) prevLink.click()
-    else if (delta < 0 && nextLink) nextLink.click()
-  }
-
-  document.addEventListener("touchstart", onTouchStart, { passive: true })
-  document.addEventListener("touchend", onTouchEnd, { passive: true })
-  window.addCleanup(() => {
-    document.removeEventListener("touchstart", onTouchStart)
-    document.removeEventListener("touchend", onTouchEnd)
   })
 
   // ── Non-Normal Checklist Filter ──────────────────────────────────────────
@@ -161,7 +102,6 @@ function setupPage() {
     const applyFilter = () => {
       const alphaSections = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-section[data-section]"))
 
-      // Update active button
       document.querySelectorAll<HTMLElement>(".nn-filter-btn").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.mode === currentMode)
       })
@@ -296,4 +236,3 @@ function setupPage() {
 }
 
 document.addEventListener("nav", setupPage)
-
