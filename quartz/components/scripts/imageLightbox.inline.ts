@@ -49,8 +49,31 @@ function setupPage() {
       document.body.classList.add("lightbox-open")
     }
 
+    // Desktop: click
     img.addEventListener("click", open)
     window.addCleanup(() => img.removeEventListener("click", open))
+
+    // Mobile: touchend mit Tap-Erkennung (Δ < 10 px = Tap, kein Scroll)
+    let touchStartX = 0
+    let touchStartY = 0
+    const onTouchStart = (e: TouchEvent) => {
+      touchStartX = e.touches[0].clientX
+      touchStartY = e.touches[0].clientY
+    }
+    const onTouchEnd = (e: TouchEvent) => {
+      const dx = Math.abs(e.changedTouches[0].clientX - touchStartX)
+      const dy = Math.abs(e.changedTouches[0].clientY - touchStartY)
+      if (dx < 10 && dy < 10) {
+        e.preventDefault() // verhindert Ghost-Click (sonst doppeltes Feuern)
+        open()
+      }
+    }
+    img.addEventListener("touchstart", onTouchStart, { passive: true })
+    img.addEventListener("touchend", onTouchEnd)
+    window.addCleanup(() => {
+      img.removeEventListener("touchstart", onTouchStart)
+      img.removeEventListener("touchend", onTouchEnd)
+    })
   })
 
   // ── Non-Normal Checklist Filter ────────────────────────────────────────────
