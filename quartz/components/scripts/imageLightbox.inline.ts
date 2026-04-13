@@ -54,24 +54,18 @@ function setupPage() {
     document.body.classList.add("lightbox-open")
   }
 
-  // cursor:zoom-in nur auf Nicht-Touch-Geräten — auf iOS muss CSS cursor:pointer
-  // erhalten bleiben, damit der native Scroll-Layer touchend nicht abbricht.
-  if (!("ontouchstart" in window)) {
-    document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
-      img.style.cursor = "zoom-in"
-    })
-  }
+  // Direkter Click + Cursor pro Image.
+  // Safari iOS prüft ob das getippte Element selbst einen Handler hat — delegierte
+  // click-Handler auf article werden nicht berücksichtigt.
+  document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
+    if (!("ontouchstart" in window)) img.style.cursor = "zoom-in"
+    const onClick = () => open(img)
+    img.addEventListener("click", onClick)
+    window.addCleanup(() => img.removeEventListener("click", onClick))
+  })
 
   if (articleEl) {
-    // ── Click-Delegation (Desktop-Maus + iOS mit cursor:pointer) ───────────
-    const onArticleClick = (e: MouseEvent) => {
-      const img = (e.target as Element).closest<HTMLImageElement>("img:not([alt*='clean'])")
-      if (img) open(img)
-    }
-    articleEl.addEventListener("click", onArticleClick)
-    window.addCleanup(() => articleEl.removeEventListener("click", onArticleClick))
-
-    // ── Touch-Delegation (iOS Backup via touchend) ─────────────────────────
+    // ── Touch-Delegation auf document (Backup: Webapp-Modus / click-loses Szenario) ──
     let tStartX = 0
     let tStartY = 0
     let tapTarget: HTMLImageElement | null = null
