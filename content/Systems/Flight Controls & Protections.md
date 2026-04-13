@@ -75,7 +75,7 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 |:---|:---|:---|
 | **Primary** | Hydraulic (System C) | Slats + flaps together |
 | **Secondary** | Hydraulic or electric | Controlled separately |
-| **Alternate** | Electric | Manual selection via switch |
+| **Alternate** | Electric | via Alternate Flap Selector |
 
 ### Flap/Slat Positions & Speed Selection
 
@@ -90,18 +90,6 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 
 > [!info] Flap 20 → 25: Slats auf "Fully"
 > Beim Wählen von Flap 25 fahren die Slats von **Mid** auf **Fully Extended** — einziger Schritt, bei dem Slats die vollausgefahrene Landeposition einnehmen.
-
-**Speed Selection:**
-
-<div class="checklist">
-
-<div class="cl-item"><strong>Flap-Stellung wählen</strong><span class="cl-dots"></span><strong>ZUERST</strong></div>
-<div class="cl-sub">Flap-Lever in gewünschte Position stellen</div>
-
-<div class="cl-item"><strong>Zielgeschwindigkeit einstellen</strong><span class="cl-dots"></span><strong>WENN POSITION IN MAGENTA ERSCHEINT</strong></div>
-<div class="cl-sub">Sobald die neue Flap-Position auf dem Speed Tape als Magenta-Dreieck angezeigt wird → Speed setzen</div>
-
-</div>
 
 ### Spoilers
 
@@ -119,5 +107,4 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>Normal Mode only</span></div>
-> <div class="cl-item"><strong>Rapid alternating control inputs</strong><span class="cl-dots"></span><span>avoid</span></div>
 > <div class="cl-item"><strong>Max. flap extension altitude</strong><span class="cl-dots"></span><span>20.000 ft</span></div>
