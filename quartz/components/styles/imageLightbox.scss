@@ -1,8 +1,3 @@
-// Remove iOS 300 ms double-tap delay without disabling scroll
-article img:not([alt*="clean"]) {
-  touch-action: manipulation;
-}
-
 // ── Lightbox Overlay ────────────────────────────────────────────────────────
 
 #lightbox-overlay {

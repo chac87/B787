@@ -49,30 +49,24 @@ function setupPage() {
       document.body.classList.add("lightbox-open")
     }
 
-    // Desktop: click
-    img.addEventListener("click", open)
-    window.addCleanup(() => img.removeEventListener("click", open))
-
-    // Mobile: touchend mit Tap-Erkennung (Δ < 10 px = Tap, kein Scroll)
-    let touchStartX = 0
-    let touchStartY = 0
-    const onTouchStart = (e: TouchEvent) => {
-      touchStartX = e.touches[0].clientX
-      touchStartY = e.touches[0].clientY
+    // Pointer Events API — vereinheitlicht Maus und Touch.
+    // pointercancel feuert wenn der Browser Scroll übernimmt → pointerup bleibt aus → kein false positive.
+    let pStartX = 0
+    let pStartY = 0
+    const onPointerDown = (e: PointerEvent) => {
+      pStartX = e.clientX
+      pStartY = e.clientY
     }
-    const onTouchEnd = (e: TouchEvent) => {
-      const dx = Math.abs(e.changedTouches[0].clientX - touchStartX)
-      const dy = Math.abs(e.changedTouches[0].clientY - touchStartY)
-      if (dx < 10 && dy < 10) {
-        e.preventDefault() // verhindert Ghost-Click (sonst doppeltes Feuern)
-        open()
-      }
+    const onPointerUp = (e: PointerEvent) => {
+      const dx = Math.abs(e.clientX - pStartX)
+      const dy = Math.abs(e.clientY - pStartY)
+      if (dx < 10 && dy < 10) open()
     }
-    img.addEventListener("touchstart", onTouchStart, { passive: true })
-    img.addEventListener("touchend", onTouchEnd)
+    img.addEventListener("pointerdown", onPointerDown)
+    img.addEventListener("pointerup", onPointerUp)
     window.addCleanup(() => {
-      img.removeEventListener("touchstart", onTouchStart)
-      img.removeEventListener("touchend", onTouchEnd)
+      img.removeEventListener("pointerdown", onPointerDown)
+      img.removeEventListener("pointerup", onPointerUp)
     })
   })
 
