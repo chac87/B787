@@ -46,6 +46,9 @@ function setupPage() {
 
     let imgTouchStartX = 0
     let imgTouchStartY = 0
+    let lastTapTime = 0
+    let lastTapX = 0
+    let lastTapY = 0
 
     const openLightbox = () => {
       lightboxImg.src = img.src
@@ -60,12 +63,28 @@ function setupPage() {
     }
 
     const onImgTouchEnd = (e: TouchEvent) => {
-      const dx = Math.abs(e.changedTouches[0].clientX - imgTouchStartX)
-      const dy = Math.abs(e.changedTouches[0].clientY - imgTouchStartY)
-      if (dx < 50 && dy < 50) {
-        e.preventDefault()    // suppress subsequent click event
-        e.stopPropagation()   // prevent document swipe handler from navigating
+      const x = e.changedTouches[0].clientX
+      const y = e.changedTouches[0].clientY
+      const dx = Math.abs(x - imgTouchStartX)
+      const dy = Math.abs(y - imgTouchStartY)
+      if (dx > 15 || dy > 15) { lastTapTime = 0; return }
+
+      const now = Date.now()
+      const timeSince = now - lastTapTime
+      const doubleDx = Math.abs(x - lastTapX)
+      const doubleDy = Math.abs(y - lastTapY)
+
+      if (timeSince < 350 && doubleDx < 50 && doubleDy < 50) {
+        // Double tap → open lightbox
+        e.preventDefault()
+        e.stopPropagation()
         openLightbox()
+        lastTapTime = 0
+      } else {
+        // First tap → save state, let event through
+        lastTapTime = now
+        lastTapX = x
+        lastTapY = y
       }
     }
 
