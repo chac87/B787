@@ -1,4 +1,4 @@
-// Create persistent elements once
+// ── Lightbox overlay — built once, persists across SPA navigations ────────────
 if (!document.getElementById("lightbox-overlay")) {
   const overlay = document.createElement("div")
   overlay.id = "lightbox-overlay"
@@ -8,17 +8,17 @@ if (!document.getElementById("lightbox-overlay")) {
   `
   document.body.appendChild(overlay)
 
-  const closeBtn = document.getElementById("lightbox-close")!
-
   const close = () => {
     overlay.classList.remove("open")
     document.body.classList.remove("lightbox-open")
   }
 
+  // Close on backdrop click or close button
   overlay.addEventListener("click", (e) => {
-    if (e.target === overlay || e.target === closeBtn) close()
+    if (e.target === overlay || (e.target as HTMLElement).id === "lightbox-close") close()
   })
 
+  // Close on Escape
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") close()
   })
@@ -33,57 +33,32 @@ function setupPage() {
     article.classList.add("page-enter")
   }
 
-  // ── Lightbox: attach to content images ────────────────────────────────────
-  const overlay = document.getElementById("lightbox-overlay")!
+  // ── Image lightbox ─────────────────────────────────────────────────────────
+  // Uses click only — browser synthesises click from tap on all platforms.
+  // touch-action: none (CSS) removes the iOS 300ms delay inside scroll containers.
+  const overlay  = document.getElementById("lightbox-overlay")!
   const lightboxImg = document.getElementById("lightbox-img") as HTMLImageElement
 
-  const imgs = document.querySelectorAll<HTMLImageElement>(
-    "article img:not([alt*='clean'])"
-  )
-
-  imgs.forEach((img) => {
+  document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
     img.style.cursor = "zoom-in"
 
-    let imgTouchStartX = 0
-    let imgTouchStartY = 0
-
-    const openLightbox = () => {
+    const open = () => {
       lightboxImg.src = img.src
       lightboxImg.alt = img.alt
       overlay.classList.add("open")
       document.body.classList.add("lightbox-open")
     }
 
-    const onImgTouchStart = (e: TouchEvent) => {
-      imgTouchStartX = e.touches[0].clientX
-      imgTouchStartY = e.touches[0].clientY
-    }
-
-    const onImgTouchEnd = (e: TouchEvent) => {
-      const dx = Math.abs(e.changedTouches[0].clientX - imgTouchStartX)
-      const dy = Math.abs(e.changedTouches[0].clientY - imgTouchStartY)
-      if (dx < 15 && dy < 15) {
-        e.preventDefault()
-        openLightbox()
-      }
-    }
-
-    img.addEventListener("touchstart", onImgTouchStart, { passive: true })
-    img.addEventListener("touchend", onImgTouchEnd, { passive: false })
-    img.addEventListener("click", openLightbox)
-    window.addCleanup(() => {
-      img.removeEventListener("touchstart", onImgTouchStart)
-      img.removeEventListener("touchend", onImgTouchEnd)
-      img.removeEventListener("click", openLightbox)
-    })
+    img.addEventListener("click", open)
+    window.addCleanup(() => img.removeEventListener("click", open))
   })
 
-  // ── Non-Normal Checklist Filter ──────────────────────────────────────────
+  // ── Non-Normal Checklist Filter ────────────────────────────────────────────
   const filterBar = document.querySelector<HTMLElement>(".nn-filter-bar")
   if (filterBar) {
-    const catBar = document.getElementById("nn-cat-bar")
+    const catBar       = document.getElementById("nn-cat-bar")
     const catContainer = document.getElementById("nn-cat-sections")
-    const levelBar = document.getElementById("nn-eicas-level-bar")
+    const levelBar     = document.getElementById("nn-eicas-level-bar")
 
     const catNames: Record<string, string> = {
       misc: "Misc", general: "General", airsystems: "Air Systems", antiice: "Anti-Ice / Rain",
@@ -93,14 +68,20 @@ function setupPage() {
       fuel: "Fuel", hydraulic: "Hydraulics", gear: "Landing Gear",
       warnings: "Warning Systems", backcover: "Back Cover",
     }
-    const catOrder = ["misc","general","airsystems","antiice","autoflight","comms","electrical","engine","fire","flightcontrols","flightinstruments","navigation","fuel","hydraulic","gear","warnings","backcover"]
+    const catOrder = [
+      "misc","general","airsystems","antiice","autoflight","comms","electrical",
+      "engine","fire","flightcontrols","flightinstruments","navigation","fuel",
+      "hydraulic","gear","warnings","backcover",
+    ]
 
-    let currentMode = "alpha"
-    let currentCat: string | null = null
-    let currentLevel: string | null = null
+    let currentMode: string      = "alpha"
+    let currentCat:  string|null = null
+    let currentLevel: string|null = null
 
     const applyFilter = () => {
-      const alphaSections = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-section[data-section]"))
+      const alphaSections = Array.from(
+        document.querySelectorAll<HTMLElement>("#nn-list .nn-section[data-section]")
+      )
 
       document.querySelectorAll<HTMLElement>(".nn-filter-btn").forEach(btn => {
         btn.classList.toggle("active", btn.dataset.mode === currentMode)
@@ -131,7 +112,10 @@ function setupPage() {
             header.className = "nn-section-header"
             header.textContent = catNames[catKey]
             section.appendChild(header)
-            items.sort((a, b) => (a.querySelector("span")?.textContent ?? "").localeCompare(b.querySelector("span")?.textContent ?? ""))
+            items.sort((a, b) =>
+              (a.querySelector("span")?.textContent ?? "").localeCompare(
+               b.querySelector("span")?.textContent ?? "")
+            )
             items.forEach(item => {
               const clone = item.cloneNode(true) as HTMLElement
               clone.classList.remove("hidden")
@@ -147,10 +131,12 @@ function setupPage() {
           const items = Array.from(section.querySelectorAll<HTMLElement>(".nn-item"))
           let visible = 0
           items.forEach(item => {
-            const show = currentMode === "alpha" ? true
-              : currentMode === "eicas" ? (item.dataset.eicas === "true" && (currentLevel === null || item.dataset.eicasLevel === currentLevel))
-              : currentMode === "qa" ? item.dataset.qa === "true"
-              : item.dataset.unann === "true"
+            const show =
+              currentMode === "alpha"  ? true :
+              currentMode === "eicas"  ? (item.dataset.eicas === "true" &&
+                                          (currentLevel === null || item.dataset.eicasLevel === currentLevel)) :
+              currentMode === "qa"     ? item.dataset.qa === "true" :
+                                         item.dataset.unann === "true"
             item.classList.toggle("hidden", !show)
             if (show) visible++
           })
@@ -202,9 +188,8 @@ function setupPage() {
 
     applyFilter()
 
-    // Inject EICAS / Unann badges and wrap all badges per item
-    const allNNItems = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-item"))
-    allNNItems.forEach(item => {
+    // Inject EICAS / Unann badges
+    document.querySelectorAll<HTMLElement>("#nn-list .nn-item").forEach(item => {
       const wrap = document.createElement("div")
       wrap.className = "nn-badge-wrap"
 
