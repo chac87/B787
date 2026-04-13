@@ -93,11 +93,12 @@ function setupPage() {
       tapTarget = null
     }
 
-    articleEl.addEventListener("touchstart", onTouchStart, { passive: true })
-    articleEl.addEventListener("touchend",   onTouchEnd,   { passive: true })
+    // document-Ebene: zuverlässig in allen iOS-Modi (Safari, Chrome, Standalone-Webapp)
+    document.addEventListener("touchstart", onTouchStart, { passive: true })
+    document.addEventListener("touchend",   onTouchEnd,   { passive: true })
     window.addCleanup(() => {
-      articleEl.removeEventListener("touchstart", onTouchStart)
-      articleEl.removeEventListener("touchend",   onTouchEnd)
+      document.removeEventListener("touchstart", onTouchStart)
+      document.removeEventListener("touchend",   onTouchEnd)
     })
   }
 
