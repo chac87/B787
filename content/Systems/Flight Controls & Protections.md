@@ -67,15 +67,15 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 - **Primary mode:** Hydraulic (System C) — slats and flaps controlled together
 - If slats hydraulic control fails: flaps remain hydraulically driven, slats are powered electrically
 - **Alternate mode armed:** Slats extend to mid range position only
-- Slat Autogap available in primary mode only
+- **Slat Autogap** (primary mode only): At high AOA and speed < 225 kts, slats automatically extend from mid range to fully extended. Retract to mid range when AOA decreases.
 
 ### Flap/Slat Modes
 
 | Mode | Drive | Control |
 |:---|:---|:---|
 | **Primary** | Hydraulic (System C) | Slats + flaps together |
-| **Secondary** | Hydraulic or electric | Controlled separately |
-| **Alternate** | Electric | via Alternate Flap Selector |
+| **Secondary** | Hydraulic or electric | Controlled separately — flaps limited to 20<br>Slats pre-gap only |
+| **Alternate** | Electric | via Alternate Flap Selector<br>Slats max mid range — flaps max 20 |
 
 > [!info]- Primary Mode
 > ![[flap normal.webp]]

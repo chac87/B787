@@ -29,5 +29,5 @@ tags: [systems, flight-controls, protections]
 | Protection | Aktiviert bei | Wirkung |
 |:---|:---|:---|
 | **Flap/Slat Load Relief** | Klappen ausgefahren bei zu hoher SPD | Auto-Einfahren<br>Ausfahren bei SPD-Abnahme |
-| **Slat Autogap** | Hoher AOA (primary mode only) | Slats automatisch T/O → LDG Position |
+| **Slat Autogap** | Hoher AOA + SPD < 225 kts<br>(primary mode only) | Slats auto mid range → fully extended<br>Retract when AOA decreases |
 | **Asymmetry/Skew Protection** | Ungleichmäßiges Aus-/Einfahren | Antrieb wird abgeschaltet |
