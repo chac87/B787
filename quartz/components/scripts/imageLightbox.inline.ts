@@ -57,6 +57,7 @@ function setupPage() {
     const onImgTouchStart = (e: TouchEvent) => {
       imgTouchStartX = e.touches[0].clientX
       imgTouchStartY = e.touches[0].clientY
+      e.stopPropagation()
     }
 
     const onImgTouchEnd = (e: TouchEvent) => {
@@ -68,7 +69,7 @@ function setupPage() {
       }
     }
 
-    img.addEventListener("touchstart", onImgTouchStart, { passive: true })
+    img.addEventListener("touchstart", onImgTouchStart, { passive: false })
     img.addEventListener("touchend", onImgTouchEnd, { passive: false })
     img.addEventListener("click", openLightbox)
     window.addCleanup(() => {
