@@ -75,41 +75,41 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 
 ## GPWS / TAWS
 
-GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS, glideslope deviation, config) and **look-ahead terrain alerts** (EGPWS terrain database, estimated time-to-impact).
+![[gpws terr.webp|small]]
 
-**Immediate alert triggers:**
-- Altitude loss after T/O or G/A
-- Excessive descent rate
-- Excessive terrain closing rate
-- Unsafe terrain clearance — not in landing config
-- Excessive deviation below ILS glideslope or IAN glide path
-- Windshear
+GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS, glideslope deviation, config) and **look-ahead terrain alerts** (EGPWS terrain database, estimated time-to-impact).
 
 > [!warning] Note
 > Obstacles or terrain ahead may exceed available climb performance. A GPWS caution or warning does **not** guarantee obstacle or terrain clearance.
 
+**Immediate alert triggers:** Altitude loss after T/O or G/A · Excessive descent rate · Excessive terrain closing rate · Unsafe terrain clearance (not in landing config) · Excessive deviation below ILS glideslope or IAN glide path · Windshear
+
 **Alert levels:**
 
-<div class="checklist">
+<div class="eicas-levels">
 
-<div class="cl-item"><strong>GPWS Warning</strong><span class="cl-dots"></span><span class="c-red">~ 20 – 30 sec to impact</span></div>
-<div class="cl-sub">PULL UP · OBSTACLE PULL UP · TERRAIN TERRAIN PULL UP</div>
+<div class="eicas-card eicas-card--red">
+<div class="eicas-card-title">GPWS Warning <span class="eicas-card-badge">~ 20 – 30 sec to impact</span></div>
+<div class="eicas-card-body">PULL UP · OBSTACLE PULL UP · TERRAIN TERRAIN PULL UP</div>
+</div>
 
-<div class="cl-item"><strong>GPWS Caution</strong><span class="cl-dots"></span><span class="c-amber">~ 40 – 60 sec to impact</span></div>
-<div class="cl-sub">CAUTION TERRAIN · CAUTION OBSTACLE · SINK RATE · DON'T SINK · TOO LOW FLAPS · TOO LOW GEAR · TOO LOW TERRAIN · GLIDESLOPE · BANK ANGLE</div>
+<div class="eicas-card eicas-card--amber">
+<div class="eicas-card-title">GPWS Caution <span class="eicas-card-badge">~ 40 – 60 sec to impact</span></div>
+<div class="eicas-card-body">CAUTION TERRAIN · CAUTION OBSTACLE · SINK RATE · DON'T SINK · TOO LOW FLAPS · TOO LOW GEAR · TOO LOW TERRAIN · GLIDESLOPE · BANK ANGLE</div>
+</div>
 
 </div>
 
-**EGPWS terrain display colors (airplane ≥500 ft above highest terrain):**
+**EGPWS terrain display** (airplane ≥ 500 ft above highest terrain):
 
-| Color                     | Meaning                   |
-| :------------------------ | :------------------------ |
-| Solid green               | Highest terrain band      |
-| High-density dotted green | Intermediate terrain      |
-| Low-density dotted green  | Lowest terrain band       |
-| Black                     | > 2.000 ft below airplane |
+<div style="display:flex;flex-direction:column;gap:0.35em;margin:0.6em 0 0.9em 0;font-size:0.9em">
+<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#27ae60;flex-shrink:0;display:inline-block"></span>Solid green — Highest terrain band</div>
+<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#82c983;flex-shrink:0;display:inline-block"></span>High-density dotted green — Intermediate terrain</div>
+<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#b8dfb9;flex-shrink:0;display:inline-block"></span>Low-density dotted green — Lowest terrain band</div>
+<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#444;border:1px solid #888;flex-shrink:0;display:inline-block"></span>Black — > 2.000 ft below airplane</div>
+</div>
 
-**When airplane <500 ft above highest terrain** — display shifts to amber/red contours relative to airplane altitude.
+When airplane **< 500 ft** above highest terrain — display shifts to amber/red contours relative to airplane altitude.
 
 *Terrain display correlated to GPS position (IRS as fallback). Terrain and WXR cannot be simultaneously displayed on the same ND/mini-map.*
 
