@@ -30,6 +30,7 @@ article img:not([alt*="clean"]) {
   }
 
   #lightbox-img {
+    width: min(90vw, 1200px);
     max-width: 90vw;
     max-height: 90vh;
     object-fit: contain;

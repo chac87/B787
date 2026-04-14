@@ -1,5 +1,45 @@
 # Warning Systems
 
+## EICAS Alert Levels
+
+![[alerts.webp|small]]
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--red">
+<div class="eicas-card-title">Time Critical Warning Alerts</div>
+<div class="eicas-card-body">Immediate action required · Not shown as EICAS text — aurals or PFD/HUD direct<br>Examples: PULL UP · ENG FAIL · WINDSHEAR · SPEEDBRAKE</div>
+</div>
+
+<div class="eicas-card eicas-card--red">
+<div class="eicas-card-title">Red Warnings <span class="eicas-card-badge">not cancelable</span></div>
+<div class="eicas-card-body">Immediate crew awareness and corrective action<br>Red EICAS message · Master WARNING lights · Fire bell or siren</div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+<div class="eicas-card-title">Amber Cautions <span class="eicas-card-badge">cancelable</span></div>
+<div class="eicas-card-body">Immediate crew awareness and possible corrective action<br>Amber EICAS message · Master CAUTION lights · Beeper</div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+<div class="eicas-card-title">Amber Advisories</div>
+<div class="eicas-card-body">Routine crew awareness and possible corrective action<br>Amber EICAS message (indented) · No aural · No master lights</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+<div class="eicas-card-title">White Communication Messages</div>
+<div class="eicas-card-body">Lower half of EICAS message area · Always start with a dot symbol<br>High/medium level: Hi-Lo chime · Low level: indented, no aural</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+<div class="eicas-card-title">White Memo Messages</div>
+<div class="eicas-card-body">Routine crew awareness · No action required<br>White EICAS message (indented) · No aural · No master lights</div>
+</div>
+
+</div>
+
+---
+
 ## TCAS
 
 TCAS interrogates transponders in nearby aircraft, tracks their positions, and predicts potential conflicts. It operates independently of ATC. Only aircraft with operating transponders are detected.
