@@ -89,9 +89,6 @@ Automatic isolation valves protect Center system fluid during a leak:
 - **Reserve Steering Isolation Valve (RSIV)** — isolates flow between C1 and C2 to preserve nose wheel steering
 - **Nose Gear Isolation Valve (NGIV)** — isolates nose gear actuation and steering
 
-> [!warning] OM-B — NGIV Failure (Bulletin DLH-10)
-> Boeing has identified that the NGIV can occasionally fail in the **closed** position. If this occurs during approach, it negatively affects primary mode operation of slats/flaps, normal nose gear extension, and nose wheel steering.
-
 ## Ram Air Turbine (RAT)
 
 The RAT is a small air-driven turbine providing emergency hydraulic pressure (**≥ 3.000 psi**) to **Center system primary flight controls only**, plus **10 kVA** of electrical power.
@@ -109,19 +106,4 @@ The RAT is a small air-driven turbine providing emergency hydraulic pressure (**
 Once deployed, the RAT can only be stowed on the ground.
 
 → See also [[Electrical Power System#RAT|Electrical System — RAT]]
-
-## Total Hydraulic Loss
-
-Upon loss of **all three systems** (L + R + C), the following remain available:
-
-| Function | Remaining Capability |
-|:---|:---|
-| **Primary flight controls** | Limited — elevator, aileron, rudder via RAT pressure (Center system only) |
-| **Spoilers** | 2 spoiler pairs (RAT/electrically powered) |
-| **Flaps / Slats** | Alternate electric drive (Motor Operated Valves) |
-| **Stabilizer** | Electric Stabilizer Trim (independent of hydraulics) |
-
-> [!warning] Total Hydraulic Loss
-> RAT provides 3.000 psi to the Center system and emergency electrical power. Full controllability is severely limited — Alternate Flaps/Slats and Electric Stabilizer Trim are the primary remaining configuration tools.
-
 → See also [[Non Normals/Hydraulic Non-Normals|Hydraulic Non-Normals]]
