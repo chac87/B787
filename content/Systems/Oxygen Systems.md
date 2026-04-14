@@ -13,6 +13,8 @@
 
 ## Flight Deck Oxygen System
 
+One oxygen cylinder, installed in the **lower equipment bay**.
+
 **Quick-Donning Diluter-Demand-Masken** an Capt-, FO- und Observer-Station.
 
 **Aktivierung:**
@@ -50,7 +52,8 @@
 
 ## Passenger Cabin Oxygen System
 
-- Versorgung über **Hochdruckzylinder** in den **PSUs** (Passenger Service Units, Deckeneinbau)
+- Gaseous oxygen cylinders in the **PSUs** (Passenger Service Units) — one above each seat group; also available at each **FA station** and in each **lavatory**
+- Each PSU has a controller that adjusts the oxygen flow
 - Masken fallen automatisch aus PSU, bevor Kabinenhöhe den größten der folgenden Werte erreicht:
   - **14.500 ft**, oder
   - Abflugsflugplatz + 1.500 ft, oder
