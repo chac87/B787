@@ -49,7 +49,9 @@ function setupPage() {
 
   const open = (img: HTMLImageElement) => {
     lightboxImg.src = img.src
-    lightboxImg.alt = img.alt
+    // Strip Obsidian modifier keywords (small, right, left, invert, clean) so
+    // image-tweak.css rules like img[alt*="small"] don't constrain the lightbox image.
+    lightboxImg.alt = img.alt.replace(/\b(small|right|left|invert|clean)\b/g, "").trim()
     overlay.classList.add("open")
     document.body.classList.add("lightbox-open")
   }
