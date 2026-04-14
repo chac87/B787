@@ -36,11 +36,6 @@ When icing conditions are sensed, the following systems activate automatically i
 
 **Leak detection**: Overheat sensors in the inlet area detect bleed air duct leaks.
 
-| EICAS | Level | Meaning |
-|:---|:---:|:---|
-| <span class="c-amber">EAI L / R</span> | <span class="c-amber">Advisory</span> | Engine Anti-Ice active (annunciation) |
-| <span class="c-amber">EAI VALVE L / R</span> | <span class="c-amber">Advisory</span> | EAI valve not in commanded position |
-
 ## Wing Anti-Ice
 
 - Electro-thermal heating mats on **4 leading-edge slats per wing**
@@ -59,18 +54,6 @@ When icing conditions are sensed, the following systems activate automatically i
 **Symmetry protection**: If one mat fails → opposite side is also deactivated.
 
 **Load shedding**: Mats are briefly shed during high electrical load — max. **30 sec** interruption per cycle.
-
-| EICAS | Level | Meaning |
-|:---|:---:|:---|
-| <span class="c-amber">WAI</span> | <span class="c-amber">Advisory</span> | Wing Anti-Ice active (annunciation) |
-| <span class="c-amber">WAI SYS</span> | <span class="c-amber">Advisory</span> | Wing Anti-Ice system fault |
-
-## Maneuver Margin Effects
-
-| Flap Configuration | Effect when Anti-Ice is active |
-|:---|:---|
-| **Flaps not UP** | Stick shaker speed increased · remains increased until: no ice detected **and** TAT > **10 °C**, or landing |
-| **Flaps UP** | No effect on maneuver margin |
 
 ## Pack Inlet Anti-Ice
 
