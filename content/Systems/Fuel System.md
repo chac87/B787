@@ -25,7 +25,7 @@
 > <div class="cl-item"><strong>Max. fuel temperature — in flight</strong><span class="cl-dots"></span><span>+ 65 °C (TS-1: + 57 °C at or above 35.000 ft)</span></div>
 > <div class="cl-item"><strong>Min. fuel temperature — in flight</strong><span class="cl-dots"></span><span>− 42 °C or 3 °C above freeze point (whichever is higher)</span></div>
 > <div class="cl-item"><strong>Tank capacity Main L / R</strong><span class="cl-dots"></span><span>17.777 kg each</span></div>
-> <div class="cl-item"><strong>Tank capacity Center</strong><span class="cl-dots"></span><span>71,946 kg</span></div>
+> <div class="cl-item"><strong>Tank capacity Center</strong><span class="cl-dots"></span><span>71.946 kg</span></div>
 > <div class="cl-item"><strong>Loading — main tanks full when center loaded</strong><span class="cl-dots"></span><span>Exception: center ≤ 10.000 kg if ZFW + center ≤ MZFW</span></div>
 > <div class="cl-item"><strong>Imbalance — total fuel > 30.980 kg</strong><span class="cl-dots"></span><span>≤ 680 kg</span></div>
 > <div class="cl-item"><strong>Imbalance — total fuel ≤ 19.005 kg</strong><span class="cl-dots"></span><span>≤ 1.133 kg</span></div>

@@ -22,7 +22,7 @@ tags: [non-normal, fuel]
 
 <div class="nnc-text"><span class="nnc-num">7</span>Record the main and center tank fuel quantities and the current time.</div>
 <div class="nnc-text"><span class="nnc-num">8</span>Start a timer.</div>
-<div class="nnc-text"><span class="nnc-num">9</span>An unexpected center tank transfer is confirmed when both of the following are true: Either left or right main tank quantity is above 16,300 kgs and that quantity stays the same or increases in 7 minutes. The center tank quantity is above 2,500 kgs.</div>
+<div class="nnc-text"><span class="nnc-num">9</span>An unexpected center tank transfer is confirmed when both of the following are true: Either left or right main tank quantity is above 16.300 kgs and that quantity stays the same or increases in 7 minutes. The center tank quantity is above 2.500 kgs.</div>
 <div class="nnc-text"><span class="nnc-num">10</span>Wait 7 minutes.</div>
 <div class="nnc-text"><span class="nnc-num">11</span>Leave the timer running.</div>
 

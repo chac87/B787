@@ -19,7 +19,7 @@ Complete the Approach Procedure before:
 | PF | PM |
 |:---|:---|
 | | During arrival and approach, verify the RNP as needed. |
-| | At or above 10,000 feet MSL, set the LEFT and RIGHT LANDING light switches to ON. |
+| | At or above 10.000 feet MSL, set the LEFT and RIGHT LANDING light switches to ON. |
 | When descending below the transition level, set the altimeters.<br><br>*Note: Pilot Monitoring sets standby altimeter.* | |
 | Update the arrival and approach, as needed. | |
 | Select VSD on as needed. | |

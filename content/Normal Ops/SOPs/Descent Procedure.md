@@ -6,7 +6,7 @@ role: Both
 ---
 
 # Descent Procedure
-Start the Descent Procedure before the airplane descends below the cruise altitude for arrival at destination. Complete the Descent Procedure by 10,000 feet MSL.
+Start the Descent Procedure before the airplane descends below the cruise altitude for arrival at destination. Complete the Descent Procedure by 10.000 feet MSL.
 
 | PF | PM |
 |:---|:---|

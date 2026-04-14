@@ -109,7 +109,7 @@ TO/GA Pitch-Modus liefert die vertikale Führung für Takeoff und Go-Around.
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>AP — min. engagement altitude after T/O</strong><span class="cl-dots"></span><span>200 ft AGL</span></div>
-> <div class="cl-item"><strong>Autoland — max. airport elevation</strong><span class="cl-dots"></span><span>8,400 ft MSL</span></div>
+> <div class="cl-item"><strong>Autoland — max. airport elevation</strong><span class="cl-dots"></span><span>8.400 ft MSL</span></div>
 > <div class="cl-item"><strong>Autoland — wind limits</strong><span class="cl-dots"></span><span>HW 25 kts · TW 15 kts · CW 25 kts</span></div>
 > <div class="cl-item"><strong>Autoland — glideslope</strong><span class="cl-dots"></span><span>2.5° – 3.25°</span></div>
 > <div class="cl-item"><strong>Autoland — flaps</strong><span class="cl-dots"></span><span>20 · 25 · 30 (2-eng and OEI)</span></div>
@@ -117,4 +117,4 @@ TO/GA Pitch-Modus liefert die vertikale Führung für Takeoff und Go-Around.
 > <div class="cl-item"><strong>Without LAND 2 / 3 — disengage</strong><span class="cl-dots"></span><span>below 135 ft</span></div>
 > <div class="cl-item"><strong>LAND 2 / 3 + GS >3.25° — disengage</strong><span class="cl-dots"></span><span>below 100 ft</span></div>
 > <div class="cl-item"><strong>GS >3.77° — disengage</strong><span class="cl-dots"></span><span>≤ 50 ft below DH / MDA</span></div>
-> <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><span>not below 1,000 ft AFE</span></div>
+> <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><span>not below 1.000 ft AFE</span></div>

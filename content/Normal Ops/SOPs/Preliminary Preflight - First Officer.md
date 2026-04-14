@@ -9,7 +9,7 @@ role: First Officer
 
 <div class="cl-note">The Preliminary Preflight Procedure assumes that the Electrical Power Up supplementary procedure is complete.</div>
 <div class="cl-note">Refer to PeOM Aircraft EFB Startup (Pilots eOPS Manual).</div>
-<div class="cl-note">If the CREW OXYGEN LOW alert message is shown, the flight crew oxygen pressure dropped below 1,200 PSI. Check if oxygen pressure is sufficient for the upcoming flight. Refer to 5-3-1-2 Flight Crew Oxygen Dispatch Pressure Required (column 2 Cylinders).</div>
+<div class="cl-note">If the CREW OXYGEN LOW alert message is shown, the flight crew oxygen pressure dropped below 1.200 PSI. Check if oxygen pressure is sufficient for the upcoming flight. Refer to 5-3-1-2 Flight Crew Oxygen Dispatch Pressure Required (column 2 Cylinders).</div>
 
 <div class="checklist">
 

@@ -48,7 +48,7 @@ tags: [non-normal, warnings]
 > **Improper Use of Flight Director** — FD provides accurate pitch guidance only **after** the airplane is airborne. With proper rotation rate, airplane reaches 35 ft at ~15° pitch. Aggressive rotation into the pitch bar at takeoff is not appropriate.
 
 > [!warning]- Landing Risk Factors
-> **Unstabilized Approach** — Biggest single cause of landing tail strikes. Stabilize all variables by **1,000 ft AFE (IMC)** / **500 ft AFE (VMC)**. If unstabilized at these gates, consider go-around.
+> **Unstabilized Approach** — Biggest single cause of landing tail strikes. Stabilize all variables by **1.000 ft AFE (IMC)** / **500 ft AFE (VMC)**. If unstabilized at these gates, consider go-around.
 > At touchdown, ground spoilers add nose-up pitch force, reducing pitch authority — a firm touchdown on the main gear is often preferable to a soft one with the nose rising rapidly.
 >
 > **Holding Off in the Flare** — Extended flare with airspeed loss results in a dropped-in touchdown. A smooth/soft landing is not essential, especially on a wet runway.

@@ -907,6 +907,26 @@ article.page-enter {
 }
 
 /* =========================================
+   IMAGE ROW — side-by-side thumbnails
+   ========================================= */
+
+.img-row {
+  display: flex;
+  gap: 0.75rem;
+  margin: 1rem 0;
+
+  img {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 50%;
+    height: auto;
+    border-radius: 6px;
+    cursor: zoom-in;
+    object-fit: cover;
+  }
+}
+
+/* =========================================
    SOP ACTION BADGES
    ========================================= */
 
