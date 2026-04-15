@@ -33,6 +33,8 @@ Unter 30 kt reduziert das System Bremsdruck auf **50%** zum Schutz der Bremsen.
 
 # Takeoff
 
+![[takeoff pattern.webp]]
+
 ## Sitzposition
 
 - *Seat Pan Tilt Control* ganz nach vorne, dann *Recline Control* aufrecht
@@ -76,6 +78,8 @@ Bei schwerer Beladung kann UP-Speed > 250 kt sein → Flap 1 muss **nicht** bis 
 ---
 
 # Landing
+
+![[landing pattern.webp]]
 
 ## Crosswind Landing — 3 Techniken
 

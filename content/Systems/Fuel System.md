@@ -1,22 +1,91 @@
+---
+title: Fuel System
+tags: [systems, fuel]
+---
+
 # Fuel System
-<div style="display:flex;gap:0.75rem;margin-bottom:1rem;align-items:flex-start">
-  <img src="/Bilder/fuel%20syn.webp" style="max-width:50%;border-radius:6px" />
-  <img src="/Bilder/fuel%20ovhd.webp" style="max-width:50%;border-radius:6px" />
+
+<div style="display:flex;gap:0.75rem;margin-bottom:1rem;align-items:flex-start;flex-wrap:wrap">
+  <img src="/Bilder/fuel%20syn.webp" style="max-width:50%;min-width:280px;flex:1;border-radius:6px" />
+  <img src="/Bilder/fuel%20ovhd.webp" style="max-width:50%;min-width:280px;flex:1;border-radius:6px" />
 </div>
 
 ![[fuel system.webp]]
 
-**Fuel System consists of:**
-- 2 Fuel tanks with 2 ELEC pumps each
-- CTR pumps
-- 1 DC pump
+<div class="eicas-levels">
 
-## Jettison
-- No dump with Flaps at 30
-- CTR tank pumps are used, therefore must be ON
-- Automatic mode dumps to MLW
-- Min. Dump Fuel is 3900 kg/main tank = 7800 kg total
-- Time to dump to MIN FUEL: 1:26h
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">System Architecture</div>
+  <div class="eicas-card-body">3 tanks: Left Main · Right Main · Center · Surge tanks outboard of each main tank · Refuel station outboard of left engine</div>
+</div>
+
+</div>
+
+## Fuel Pumps
+
+> [!info]- AC Pumps
+> - **2 AC-powered pumps** in each tank (L main, R main, Center) — 6 pumps total
+> - A single pump can supply sufficient fuel to operate **one engine under all conditions**
+> - Center tank pumps are **override/jettison pumps** with higher output pressure → center fuel is used before wing tank fuel
+> - When less than all generators are operating, pumps may be **load shed** automatically — indicated by PRESS light illuminated and `LOAD SHED` label on the fuel synoptic
+
+> [!info]- DC Pump
+> - **Left main tank only** — no controls or cockpit indicators, status visible on fuel synoptic only
+> - Runs automatically to supply APU fuel when AC power is unavailable and APU selector is ON
+
+
+> [!info] Center Tank Scavenge
+> Activates automatically when either main tank quantity is below ~16.000 kg **and** center tank pumps are OFF. Transfers remaining center tank fuel to the main tanks.
+> Inhibited if the engine is operating on suction feed.
+
+## APU Fuel Feed
+
+APU fuel is supplied from the **left fuel manifold**.
+
+<div class="checklist">
+
+<div class="cl-item"><strong>AC power available</strong><span class="cl-dots"></span><strong>Left aft AC pump runs automatically</strong></div>
+<div class="cl-sub">Runs regardless of fuel pump switch position · DC pump turns off</div>
+<div class="cl-item"><strong>AC power unavailable</strong><span class="cl-dots"></span><strong>DC pump runs automatically</strong></div>
+<div class="cl-sub">APU selector must be ON · any AC pump supplying the left manifold also works</div>
+
+</div>
+
+## Suction Feed
+
+Each engine can draw fuel from its corresponding main tank through a suction feed line, bypassing the pumps.
+
+> [!warning] Altitude Risk
+> As the aircraft climbs, dissolved air is released from fuel due to decreasing air pressure. This air may collect in the suction feed line and restrict fuel flow — at high altitude this can cause **thrust deterioration or engine flameout**.
+> The dissolved air eventually depletes after reaching cruise altitude. Depletion time depends on altitude, fuel temperature, and fuel type.
+
+**Crossfeed:** Opening the crossfeed valve provides pump pressure from one main tank to both engines — results in a progressive fuel imbalance with continued use.
+
+## Fuel Jettison
+
+- ARM switch → **ARMED** — system auto-sets TO REMAIN = MLW fuel quantity
+- Adjust TO REMAIN with selector if needed (pull and rotate)
+- NOZZLE switch(es) → **ON** — in flight only; nozzles inhibited on ground
+- Jettison stops automatically just above TO REMAIN quantity
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">Key Limits</div>
+  <div class="eicas-card-body">Min. fuel per main tank after jettison: <strong>3.900 kg</strong> (7.800 kg total) · Not permitted with Flaps 30 · Center tank pumps must be ON</div>
+</div>
+
+</div>
+
+→ [[Non Normals/Non-Normal Checklists/Fuel Jettison|NNC: Fuel Jettison]]
+
+## Nitrogen Generation System (NGS)
+
+Provides automatic, full-time flammability protection. Generates nitrogen-enriched air that displaces fuel vapors in all tanks, minimising flammability during flight and ground operations.
+
+No flight deck controls or indications — the system operates entirely automatically.
+
+---
 
 > [!info] Un-annunciated Fuel Checklists
 > - [[Non Normals/Non-Normal Checklists/Fuel Leak|Fuel Leak]]
@@ -46,4 +115,3 @@
 > | JP-8 | −47°C |
 > | JP-5 | −46°C |
 > | TS-1 | −50 to −60°C |
-
