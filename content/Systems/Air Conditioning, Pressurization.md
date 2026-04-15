@@ -5,25 +5,36 @@ tags: [systems, air-conditioning, pressurization]
 
 # Air Conditioning, Pressurization
 
-## Air Conditioning Packs
+## Air Conditioning
 
-<a class="img-lightbox" href="#ac-ovhd-full">
-  <img class="img-thumb" src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel">
-</a>
+<div class="img-row">
+  <a class="img-lightbox" href="#ac-ovhd-full">
+    <img class="img-thumb" src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel">
+  </a>
+  <a class="img-lightbox" href="#ac-syn-full">
+    <img class="img-thumb" src="/Bilder/air syn.webp" alt="Air Conditioning Synoptic">
+  </a>
+</div>
 <div class="img-lightbox-overlay" id="ac-ovhd-full">
   <a href="#"><img src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel"></a>
 </div>
+<div class="img-lightbox-overlay" id="ac-syn-full">
+  <a href="#"><img src="/Bilder/air syn.webp" alt="Air Conditioning Synoptic"></a>
+</div>
 
-Pack control, temperature regulation, recirculation, fault detection and overheat protection are fully automatic.
+### Packs
 
-<div class="cl-item"><strong>No bleed air</strong><span class="cl-dots"></span><span>Outside air drawn in by 4 electric CACs (Cabin Air Compressors)</span></div>
-<div class="cl-item"><strong>Bleed air exception</strong><span class="cl-dots"></span><span>Engine Anti-Ice (EAI) only — packs and Wing Anti-Ice (WAI) are fully electric</span></div>
-<div class="cl-item"><strong>CACs per pack</strong><span class="cl-dots"></span><span>2 · 1 sufficient for full pack operation</span></div>
-<div class="cl-item"><strong>Pack Control Systems</strong><span class="cl-dots"></span><span>2 identical — automatic switchover on failure of one system</span></div>
+Outside air enters through the CAC inlets, is compressed and sent warm to the packs. The packs cool the air and deliver it to the air distribution manifold. Recirculation fans mix filtered cabin air with fresh outside air to reduce the total outside air required.
+<div class="cl-item"><strong>4 CACs</strong><span class="cl-dots"></span><span>2 per pack · 1 sufficient for full pack operation</span></div>
+<div class="cl-item"><strong>2 Packs</strong><span class="cl-dots"></span><span>Cool compressed air and supply the distribution manifold</span></div>
+<div class="cl-item"><strong>3 Recirculation Fans</strong><span class="cl-dots"></span><span>Increase cabin airflow and reduce outside air consumption</span></div>
+<div class="cl-item"><strong>Trim Air</strong><span class="cl-dots"></span><span>Fine-tunes individual zone temperatures after pack outlet</span></div>
+
+<div class="cl-item"><strong>No bleed air</strong><span class="cl-dots"></span><span>Fully electric — Engine Anti-Ice (EAI) is the only system using bleed air</span></div>
 <div class="cl-item"><strong>Temperature zones</strong><span class="cl-dots"></span><span>7 — Flight Deck + 6 cabin zones (A/B include sub-zones A1/B1, not visible on synoptic)</span></div>
 <div class="cl-item"><strong>Deflector Doors</strong><span class="cl-dots"></span><span>Active on ground + landing (debris protection) · retraction possible at OAT &lt; 2°C or &gt; 35°C</span></div>
 
-### Pack Ground Operation
+#### Ground Operation
 
 <div class="cl-item"><strong>Normal</strong><span class="cl-dots"></span><span>Both packs AUTO</span></div>
 <div class="cl-item"><strong>APU as power source</strong><span class="cl-dots"></span><span>1 CAC per pack</span></div>
@@ -34,16 +45,16 @@ Pack control, temperature regulation, recirculation, fault detection and overhea
 > [!info] Engine Start
 > All CACs shut down during start sequence · PACK L / PACK R inhibited. Packs restart no earlier than **2 min after engine start initiation**.
 
-### Pack Non-Normal / Standby Cooling
+#### Non-Normal / Standby Cooling
 
 > [!info]- Pack Failure & Standby Cooling
-> **Pack failure:** Automatic shutdown on CAC surge, overheat, or severe fault → EICAS **PACK L / R** (Advisory). Reset possible with **AIR COND RESET Switch** at ≤ 34.000 ft.
+> **Pack failure:** Automatic shutdown on CAC surge, overheat, or severe fault → EICAS <span class="c-amber">**PACK L / R**</span> (Advisory). Reset possible with **AIR COND RESET Switch** at ≤ 34.000 ft.
 >
 > > [!info] Reset above 34.000 ft not recommended — CACs near surge margin. Reset may cause the operative pack to shut down.
 >
-> **Standby Cooling Mode:** Automatically activated on certain internal faults → EICAS **PACK MODE L / R** (Advisory) + AIR synoptic: **STBY COOLING** (amber). Reduced cooling capacity possible at low altitudes / high OAT.
+> **Standby Cooling Mode:** Automatically activated on certain internal faults → EICAS <span class="c-amber">**PACK MODE L / R**</span> (Advisory) + AIR synoptic: <span class="c-amber">**STBY COOLING**</span>. Reduced cooling capacity possible at low altitudes / high OAT.
 >
-> **Go-around with OEI + Slat Autogap:** Both packs may briefly load-shed → **PACK L+R** momentarily displayed. No crew action required.
+> **Go-around with OEI + Slat Autogap:** Both packs may briefly load-shed → <span class="c-amber">**PACK L+R**</span> momentarily displayed. No crew action required.
 >
 > | EICAS | Level | Meaning |
 > |:---|:---:|:---|
@@ -52,7 +63,7 @@ Pack control, temperature regulation, recirculation, fault detection and overhea
 
 ---
 
-## Air Distribution
+### Air Distribution
 
 <a class="img-lightbox" href="#air-recirc-full">
   <img class="img-thumb" src="/Bilder/air recirculation.webp" alt="Air Recirculation System">
@@ -73,22 +84,41 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 > [!info]- Alternate Ventilation System (AVS)
 > Used on failure of both packs. Switch → **ALTN** partially opens FWD + AFT Outflow Valves → fresh air is drawn into the distribution system. Effective in unpressurized flight only.
 
-| EICAS | Level | Meaning |
-|:---|:---:|:---|
-| <span class="c-amber">RECIRC FAN UPR / LWR OFF</span> | <span class="c-amber">Advisory</span> | Upper / Lower Recirculation Fan off |
-
 ---
 
-## Temperature Control
+### Temperature Control
 
 <div class="cl-item"><strong>CABIN TEMP Selector</strong><span class="cl-dots"></span><span>18 – 29 °C</span></div>
-<div class="cl-item"><strong>Zone offset</strong><span class="cl-dots"></span><span>± 3 °C per cabin zone via Cabin Management System (within 18 – 29 °C)</span></div>
+<div class="cl-item"><strong>Zone offset</strong><span class="cl-dots"></span><span>± 6 °C per cabin zone via Cabin Management System (within 18 – 29 °C)</span></div>
 <div class="cl-item"><strong>Flight Deck Temp Selector</strong><span class="cl-dots"></span><span>Independent · 18 – 29 °C</span></div>
 <div class="cl-item"><strong>Pack outlet temp</strong><span class="cl-dots"></span><span>Determined by coldest zone · Trim Air heats individual zones</span></div>
 <div class="cl-item"><strong>Selector failure</strong><span class="cl-dots"></span><span>Pack maintains last set temperature or 24 °C (average)</span></div>
 
 > [!info]- Loss of Trim Air (L or R)
 > All zones regulated to average target temperature. Flight deck temperature remains 18 – 29 °C — but may become uncomfortable. Workaround: adjust CABIN TEMP Selector.
+
+---
+
+### Cargo Heat
+
+#### Forward Cargo
+
+<div class="cl-item"><strong>AUTO target</strong><span class="cl-dots"></span><span>21 °C</span></div>
+<div class="cl-item"><strong>Heat source</strong><span class="cl-dots"></span><span>Warm air from forward equipment cooling system</span></div>
+<div class="cl-item"><strong>Cold weather</strong><span class="cl-dots"></span><span>Electric heater supplements when more heat is necessary</span></div>
+<div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Permitted — ventilation and heat supplied in AUTO</span></div>
+
+#### Bulk Cargo
+
+<div class="cl-item"><strong>AUTO target</strong><span class="cl-dots"></span><span>≈ 21 °C — maintained automatically</span></div>
+<div class="cl-item"><strong>Heat source</strong><span class="cl-dots"></span><span>Supply fan → electric heater → supply valve → compartment</span></div>
+<div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Permitted when switch in AUTO</span></div>
+
+#### Aft Cargo
+
+<div class="cl-item"><strong>Temperature control</strong><span class="cl-dots"></span><span>NOT controlled from flight deck — only kept above freezing</span></div>
+<div class="cl-item"><strong>Heat source</strong><span class="cl-dots"></span><span>Heated air below floor from aft equipment cooling system</span></div>
+<div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Not permitted</span></div>
 
 ---
 
@@ -154,6 +184,6 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 
 ---
 
-## Air Non-Normals
+### Non-Normals
 
 See [[Air, Pressurization Non-Normals]]

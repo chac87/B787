@@ -91,6 +91,48 @@ Defined in `quartz/styles/custom.scss`:
 | `.nnc-role` | Role badge after action value — `C` (Captain) or `F/O` (First Officer) |
 | `.nnc-complete` | Checklist complete — always `text-align: center` |
 
+## Alert / Info Cards
+
+Use the `.eicas-card` pattern whenever color helps group or rank content — not limited to EICAS. The left color bar and tinted background guide the reader's eye effectively for any categorized content (alert levels, status categories, procedure variants, system states, etc.).
+
+```html
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Title <span class="eicas-card-badge">optional badge</span></div>
+  <div class="eicas-card-body">Body text · use · dot · separators</div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Title</div>
+  <div class="eicas-card-body">Body text</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">Title</div>
+  <div class="eicas-card-body">Body text</div>
+</div>
+
+</div>
+```
+
+### Color modifiers
+
+| Modifier | Color | Semantic use |
+|---|---|---|
+| `.eicas-card--red` | `#e74c3c` | Critical / immediate action / warning |
+| `.eicas-card--amber` | `#f39c12` | Caution / awareness / secondary priority |
+| `.eicas-card--white` | `#888888` | Info / memo / low priority |
+
+### Rules
+- Always wrap cards in `<div class="eicas-levels">` (flex column with gap)
+- `.eicas-card-title` — bold, card color; use for the category name
+- `.eicas-card-body` — 0.875em neutral text; use `·` as item separator
+- `.eicas-card-badge` — optional uppercase outlined pill for metadata (e.g. "NOT CANCELABLE", "~ 20 sec", "CANCELABLE")
+- Dark mode handled automatically via `color-mix`
+- CSS defined in `quartz/styles/custom.scss` lines ~827–867
+- Use this pattern **instead of tables or callouts** when color encodes importance/rank across multiple items
+
 ## Content Location
 
 - Procedures live in `content/Normal Ops/SOPs/` or `content/Non Normals/`

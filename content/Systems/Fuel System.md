@@ -1,5 +1,11 @@
 # Fuel System
+<div style="display:flex;gap:0.75rem;margin-bottom:1rem;align-items:flex-start">
+  <img src="/Bilder/fuel%20syn.webp" style="max-width:50%;border-radius:6px" />
+  <img src="/Bilder/fuel%20ovhd.webp" style="max-width:50%;border-radius:6px" />
+</div>
+
 ![[fuel system.webp]]
+
 **Fuel System consists of:**
 - 2 Fuel tanks with 2 ELEC pumps each
 - CTR pumps

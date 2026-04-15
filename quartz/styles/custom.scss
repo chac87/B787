@@ -974,6 +974,23 @@ article.page-enter {
     cursor: zoom-in;
     object-fit: cover;
   }
+
+  a.img-lightbox {
+    flex: 1 1 0;
+    min-width: 0;
+    margin: 0;
+    text-align: center;
+
+    img.img-thumb {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      border-radius: 6px;
+      cursor: zoom-in;
+      object-fit: cover;
+      display: block;
+    }
+  }
 }
 
 /* =========================================
@@ -1004,9 +1021,15 @@ article.page-enter {
   justify-content: center;
   cursor: zoom-out;
 
+  a {
+    display: contents;
+  }
+
   img {
     max-width: 92vw;
     max-height: 90vh;
+    width: auto;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 8px 40px rgba(0,0,0,0.6);
   }
