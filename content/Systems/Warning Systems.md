@@ -48,18 +48,18 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 
 <div class="checklist">
 
-<div class="cl-item"><strong>RA — Resolution Advisory</strong><span class="cl-dots"></span><strong>15 – 35 sec to conflict</strong></div>
+<div class="cl-item"><strong><span style="color:#e74c3c;margin-right:0.35em">■</span>RA — Resolution Advisory</strong><span class="cl-dots"></span><strong>15 – 35 sec to conflict</strong></div>
 <div class="cl-sub">Red filled square on ND · red TRAFFIC message · PFD vertical guidance · voice alert</div>
 <div class="cl-sub">ADS-B: black directional chevron in red square</div>
 
-<div class="cl-item"><strong>TA — Traffic Advisory</strong><span class="cl-dots"></span><strong>20 – 48 sec to conflict</strong></div>
+<div class="cl-item"><strong><span style="color:#f39c12;margin-right:0.35em">●</span>TA — Traffic Advisory</strong><span class="cl-dots"></span><strong>20 – 48 sec to conflict</strong></div>
 <div class="cl-sub">Amber filled circle on ND · amber TRAFFIC message · voice "TRAFFIC, TRAFFIC" (once)</div>
 <div class="cl-sub">ADS-B: black directional chevron in amber circle</div>
 
-<div class="cl-item"><strong>Proximate Traffic</strong><span class="cl-dots"></span><strong>&lt;6 NM and ± 1.200 ft</strong></div>
+<div class="cl-item"><strong><span style="color:#aaa;margin-right:0.35em">◆</span>Proximate Traffic</strong><span class="cl-dots"></span><strong>&lt;6 NM and ± 1.200 ft</strong></div>
 <div class="cl-sub">White filled diamond on ND (no alert) · ADS-B: filled white directional chevron</div>
 
-<div class="cl-item"><strong>Other Traffic</strong><span class="cl-dots"></span><strong>in ND range, no conflict</strong></div>
+<div class="cl-item"><strong><span style="color:#aaa;margin-right:0.35em">◇</span>Other Traffic</strong><span class="cl-dots"></span><strong>in ND range, no conflict</strong></div>
 <div class="cl-sub">Hollow white diamond · ADS-B: hollow white directional chevron · upgrades to Proximate when &lt;6 NM and no altitude data</div>
 
 </div>
