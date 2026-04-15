@@ -66,6 +66,14 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 
 **Normal operation:** TA/RA selected on ATP. Select **TA ONLY** during engine-out operations (insufficient thrust to follow RA commands).
 
+**TCAS Modes** (vertical look-below / look-above):
+
+| Mode | Below | Above |
+|:---|:---:|:---:|
+| **ABOVE** | 2.700 ft | 9.900 ft |
+| **NORM** | 2.700 ft | 2.700 ft |
+| **BELOW** | 9.900 ft | 2.700 ft |
+
 > [!info] TCAS Non-Normal
 > <span class="c-amber">**TCAS OFF**</span> (advisory) — TCAS not operating; inhibited below 400 ft RA. Amber TCAS OFF on ND.
 >
