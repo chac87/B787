@@ -100,18 +100,6 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 
 </div>
 
-**EGPWS terrain display** (airplane ≥ 500 ft above highest terrain):
-
-<div style="display:flex;flex-direction:column;gap:0.35em;margin:0.6em 0 0.9em 0;font-size:0.9em">
-<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#27ae60;flex-shrink:0;display:inline-block"></span>Solid green — Highest terrain band</div>
-<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#82c983;flex-shrink:0;display:inline-block"></span>High-density dotted green — Intermediate terrain</div>
-<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#b8dfb9;flex-shrink:0;display:inline-block"></span>Low-density dotted green — Lowest terrain band</div>
-<div style="display:flex;align-items:center;gap:0.75em"><span style="width:13px;height:13px;border-radius:3px;background:#444;border:1px solid #888;flex-shrink:0;display:inline-block"></span>Black — > 2.000 ft below airplane</div>
-</div>
-
-When airplane **< 500 ft** above highest terrain — display shifts to amber/red contours relative to airplane altitude.
-
-*Terrain display correlated to GPS position (IRS as fallback). Terrain and WXR cannot be simultaneously displayed on the same ND/mini-map.*
 
 **Bank Angle:** Voice alert BANK ANGLE at 35°, 40°, 45°. At low altitude during T/O and landing: as low as 10°.
 
