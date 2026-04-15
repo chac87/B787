@@ -63,16 +63,16 @@ Each engine can draw fuel from its corresponding main tank through a suction fee
 
 ## Fuel Jettison
 
-- ARM switch → **ARMED** — system auto-sets TO REMAIN = MLW fuel quantity
-- Adjust TO REMAIN with selector if needed (pull and rotate)
-- NOZZLE switch(es) → **ON** — in flight only; nozzles inhibited on ground
-- Jettison stops automatically just above TO REMAIN quantity
+- **ARM switch → ARMED** — prepares the system; auto-sets TO REMAIN = MLW fuel quantity
+- **TO REMAIN selector** — pull and rotate to manually adjust the quantity to remain
+- **L / R NOZZLE → ON** — jettison starts; isolation valves open, fuel flows overboard
+- Jettison stops automatically when TOTAL FUEL = FUEL TO REMAIN (isolation valves close)
 
 <div class="eicas-levels">
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Key Limits</div>
-  <div class="eicas-card-body">Min. fuel per main tank after jettison: <strong>3.900 kg</strong> (7.800 kg total) · Not permitted with Flaps 30 · Center tank pumps must be ON</div>
+  <div class="eicas-card-body">Min. fuel per main tank after jettison: <strong>3.900 kg</strong> (7.800 kg total)<br>Not permitted with Flaps 30<br>Center tank pumps must be ON</div>
 </div>
 
 </div>
