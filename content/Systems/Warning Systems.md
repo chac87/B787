@@ -67,9 +67,11 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 **Normal operation:** TA/RA selected on ATP. Select **TA ONLY** during engine-out operations (insufficient thrust to follow RA commands).
 
 > [!info] TCAS Non-Normal
-> **TCAS OFF** (advisory) — TCAS not operating; inhibited below 400 ft RA. Amber TCAS OFF on ND.
-> **TCAS RA** (advisory) — RA guidance unavailable on respective PFD/HUD; ND traffic and voice unaffected.
-> **TCAS FAIL** — RA guidance and ND traffic both unavailable; no voice alerts. Amber TCAS FAIL on ND.
+> <span class="c-amber">**TCAS OFF**</span> (advisory) — TCAS not operating; inhibited below 400 ft RA. Amber TCAS OFF on ND.
+>
+> <span class="c-amber">**TCAS RA**</span> (advisory) — RA guidance unavailable on respective PFD/HUD; ND traffic and voice unaffected.
+>
+> <span class="c-amber">**TCAS FAIL**</span> — RA guidance and ND traffic both unavailable; no voice alerts. Amber TCAS FAIL on ND.
 
 ---
 
