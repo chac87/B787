@@ -38,8 +38,6 @@
 
 </div>
 
----
-
 ## TCAS
 
 TCAS interrogates transponders in nearby aircraft, tracks their positions, and predicts potential conflicts. It operates independently of ATC. Only aircraft with operating transponders are detected.
@@ -51,6 +49,8 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 <div class="cl-item"><strong><span style="color:#e74c3c;margin-right:0.35em">■</span>RA — Resolution Advisory</strong><span class="cl-dots"></span><strong>15 – 35 sec to conflict</strong></div>
 <div class="cl-sub">Red filled square on ND · red TRAFFIC message · PFD vertical guidance · voice alert</div>
 <div class="cl-sub">ADS-B: black directional chevron in red square</div>
+<div class="cl-sub">Fly out of the red area · pitch change only · continue FD roll commands unless traffic is visual and a different flight path is necessary</div>
+<div class="cl-sub">Downgrades to TA during a windshear alert</div>
 
 <div class="cl-item"><strong><span style="color:#f39c12;margin-right:0.35em">●</span>TA — Traffic Advisory</strong><span class="cl-dots"></span><strong>20 – 48 sec to conflict</strong></div>
 <div class="cl-sub">Amber filled circle on ND · amber TRAFFIC message · voice "TRAFFIC, TRAFFIC" (once)</div>
@@ -67,6 +67,8 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 
 </div>
 
+Vertical speed arrow shown on ND traffic symbol when climb/descent rate **> 500 ft/min**. No arrow when < 500 ft/min.
+
 **Normal operation:** TA/RA selected on ATP. Select **TA ONLY** during engine-out operations (insufficient thrust to follow RA commands).
 
 **TCAS Modes** (vertical look-below / look-above):
@@ -77,14 +79,17 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 | **NORM** | 2.700 ft | 2.700 ft |
 | **BELOW** | 9.900 ft | 2.700 ft |
 
+### TCAS Inhibit
+
+<img src="/Bilder/tcas inhibit climb.webp" alt="TCAS Inhibit Climb" style="max-width:200px">
+<img src="/Bilder/tcas inhibit descent.webp" alt="TCAS Inhibit Descent" style="max-width:200px">
+
 > [!info] TCAS Non-Normal
 > <span class="c-amber">**TCAS OFF**</span> (advisory) — TCAS not operating; inhibited below 400 ft RA. Amber TCAS OFF on ND.
 >
 > <span class="c-amber">**TCAS RA**</span> (advisory) — RA guidance unavailable on respective PFD/HUD; ND traffic and voice unaffected.
 >
 > <span class="c-amber">**TCAS FAIL**</span> — RA guidance and ND traffic both unavailable; no voice alerts. Amber TCAS FAIL on ND.
-
----
 
 ## GPWS / TAWS
 
@@ -113,8 +118,7 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 
 </div>
 
-
----
+An immediate windshear alert occurs if windshear conditions are sensed by the GPWS below **1.500 ft** radio altitude.
 
 ## PWS — Predictive Windshear System
 
@@ -133,16 +137,16 @@ PWS uses weather radar to detect windshear conditions **ahead** of the airplane.
 > [!info] PWS Note
 > PWS alerts are enabled **12 sec** after weather radar begins scanning for windshear.
 
----
-
 ## ATC Transponder
 
 Integrated into the two Integrated Surveillance System Processor Units (ISSPU). Two transponders, supporting Modes A, C, S and ADS-B Out.
-
----
 
 ## WXR Weather Radar
 
 - Maximum range: 320 NM
 - Turbulence detection range: 40 NM
 - PWS windshear scanning: below 2.300 ft RA
+
+---
+
+<a href="/Non-Normals/Non-Normal-Maneuvers" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.55em 1.1em;background:#3257BC;color:#fff;border-radius:6px;font-weight:600;font-size:0.9em;text-decoration:none">▶ Non-Normal Maneuvers — GPWS · TCAS · Windshear</a>
