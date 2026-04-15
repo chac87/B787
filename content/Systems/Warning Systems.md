@@ -82,7 +82,7 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 > [!warning] Note
 > Obstacles or terrain ahead may exceed available climb performance. A GPWS caution or warning does **not** guarantee obstacle or terrain clearance.
 
-**Immediate alert triggers:** Altitude loss after T/O or G/A · Excessive descent rate · Excessive terrain closing rate · Unsafe terrain clearance (not in landing config) · Excessive deviation below ILS glideslope or IAN glide path · Windshear
+**Immediate alert triggers:** Sink rate · Terrain closure rate · Altitude loss after takeoff · Unsafe terrain clearance · Below glideslope · Bank angle · Windshear
 
 **Alert levels:**
 
@@ -101,13 +101,14 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 </div>
 
 
-**Bank Angle:** Voice alert BANK ANGLE at 35°, 40°, 45°. At low altitude during T/O and landing: as low as 10°.
-
-**Approaching Minimums:** APPROACHING MINIMUMS called at 80 ft above Captain's MINS setting.
-
 ---
 
 ## PWS — Predictive Windshear System
+
+<div style="display:flex;gap:0.5em;margin-bottom:1em">
+![[pws1.webp|small]]
+![[pws2.webp|small]]
+</div>
 
 PWS uses weather radar to detect windshear conditions **ahead** of the airplane. GPWS provides reactive windshear alerts for downdrafts/tailwinds currently being encountered.
 
