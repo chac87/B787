@@ -106,8 +106,8 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 ## PWS — Predictive Windshear System
 
 <div style="display:flex;gap:0.5em;margin-bottom:1em">
-![[pws1.webp|small]]
-![[pws2.webp|small]]
+<img src="/Bilder/pws1.webp" alt="PWS 1" style="max-width:200px">
+<img src="/Bilder/pws2.webp" alt="PWS 2" style="max-width:200px">
 </div>
 
 PWS uses weather radar to detect windshear conditions **ahead** of the airplane. GPWS provides reactive windshear alerts for downdrafts/tailwinds currently being encountered.
