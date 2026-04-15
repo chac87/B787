@@ -83,8 +83,8 @@ Vertical speed arrow shown on ND traffic symbol when climb/descent rate **> 500 
 
 During a GPWS or PWS warning, TCAS automatically switches to TA only mode with aurals and alerts inhibited. New RAs are NOT given — old RAs become TAs.
 
-<img src="/Bilder/tcas inhibit climb.webp" alt="TCAS Inhibit Climb" style="max-width:400px">
-<img src="/Bilder/tcas inhibit descent.webp" alt="TCAS Inhibit Descent" style="max-width:400px">
+<img src="/Bilder/tcas inhibit climb.webp" alt="TCAS Inhibit Climb" style="max-width:600px">
+<img src="/Bilder/tcas inhibit descent.webp" alt="TCAS Inhibit Descent" style="max-width:600px">
 
 > [!info] TCAS Non-Normal
 > <span class="c-amber">**TCAS OFF**</span> (advisory) — TCAS not operating; inhibited below 400 ft RA. Amber TCAS OFF on ND.
