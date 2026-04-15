@@ -1,137 +1,159 @@
+---
+title: Air Conditioning, Pressurization
+tags: [systems, air-conditioning, pressurization]
+---
+
 # Air Conditioning, Pressurization
 
 ## Air Conditioning Packs
 
-![[air con ovhd.webp]]
+<a class="img-lightbox" href="#ac-ovhd-full">
+  <img class="img-thumb" src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel">
+</a>
+<div class="img-lightbox-overlay" id="ac-ovhd-full">
+  <a href="#"><img src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel"></a>
+</div>
 
-- **Kein Bleed Air** — Außenluft wird durch **4 elektrische CACs** (Cabin Air Compressors) angesaugt
-- Einziges System mit Bleed Air ist **Engine Anti-Ice (EAI)** — Packs und Wing Anti-Ice (WAI) sind vollständig elektrisch
-- 2 CACs pro Pack · 1 CAC reicht für vollen Pack-Betrieb
-- 2 identische Pack Control Systems — bei Ausfall eines Systems automatischer Wechsel
-- **7 Temperaturzonen**: Flight Deck + 6 Kabinenzonen (A/B enthalten Sub-Zonen A1/B1, nicht im Synoptic sichtbar)
-- Pack-Steuerung, Temperaturregelung, Rezirkulation, Fehlererkennung und Überhitzungsschutz: vollautomatisch
+Pack control, temperature regulation, recirculation, fault detection and overheat protection are fully automatic.
 
-**Deflector Doors** (CAC-Einlässe): aktiv bei Bodenoperationen + Landing — schützen vor Debris. Einfahren möglich bei OAT < 2°C oder > 35°C.
+<div class="cl-item"><strong>No bleed air</strong><span class="cl-dots"></span><span>Outside air drawn in by 4 electric CACs (Cabin Air Compressors)</span></div>
+<div class="cl-item"><strong>Bleed air exception</strong><span class="cl-dots"></span><span>Engine Anti-Ice (EAI) only — packs and Wing Anti-Ice (WAI) are fully electric</span></div>
+<div class="cl-item"><strong>CACs per pack</strong><span class="cl-dots"></span><span>2 · 1 sufficient for full pack operation</span></div>
+<div class="cl-item"><strong>Pack Control Systems</strong><span class="cl-dots"></span><span>2 identical — automatic switchover on failure of one system</span></div>
+<div class="cl-item"><strong>Temperature zones</strong><span class="cl-dots"></span><span>7 — Flight Deck + 6 cabin zones (A/B include sub-zones A1/B1, not visible on synoptic)</span></div>
+<div class="cl-item"><strong>Deflector Doors</strong><span class="cl-dots"></span><span>Active on ground + landing (debris protection) · retraction possible at OAT &lt; 2°C or &gt; 35°C</span></div>
 
 ### Pack Ground Operation
 
-- Beide Packs: **AUTO** für Bodenbetrieb
-- **APU als Stromquelle**: je 1 CAC pro Pack
-- **Kältebetrieb**: beide CACs pro Pack aktiv
-- **3-CAC-Betrieb**: automatisch aktiviert **2 min nach Engine Start** (beide Triebwerke)
-- External Air Conditioning: Packs + Lower Recirculation Fans vorher **OFF** schalten
+<div class="cl-item"><strong>Normal</strong><span class="cl-dots"></span><span>Both packs AUTO</span></div>
+<div class="cl-item"><strong>APU as power source</strong><span class="cl-dots"></span><span>1 CAC per pack</span></div>
+<div class="cl-item"><strong>Cold weather operation</strong><span class="cl-dots"></span><span>Both CACs per pack active</span></div>
+<div class="cl-item"><strong>3-CAC operation</strong><span class="cl-dots"></span><span>Automatically activated 2 min after engine start (both engines)</span></div>
+<div class="cl-item"><strong>External air conditioning</strong><span class="cl-dots"></span><span>Switch packs + lower recirculation fans OFF first</span></div>
 
-**Engine Start:** Alle CACs während des Startvorgangs abgeschaltet · PACK L / PACK R inhibited. Packs starten frühestens **2 min nach Einleitung des Engine Starts** neu.
+> [!info] Engine Start
+> All CACs shut down during start sequence · PACK L / PACK R inhibited. Packs restart no earlier than **2 min after engine start initiation**.
 
 ### Pack Non-Normal / Standby Cooling
 
-**Pack-Ausfall:** Automatisches Shutdown bei CAC-Surge, Überhitzung oder schwerem Fault → EICAS **PACK L / R** (Advisory). Reset möglich mit **AIR COND RESET Switch** bei ≤ 34.000 ft.
-
-> [!info] Reset oberhalb 34.000 ft nicht empfohlen — CACs nahe Surge-Margin. Reset kann operativen Pack zum Shutdown bringen.
-
-**Standby Cooling Mode:** Automatisch bei bestimmten internen Fehlern → EICAS **PACK MODE L / R** (Advisory) + AIR Synoptic: **STBY COOLING** (amber). Reduzierte Kühlkapazität bei niedrigen Höhen/hohen OAT möglich.
-
-**Go-Around mit OEI + Slat Autogap:** Beide Packs können kurzzeitig Load-Shed → **PACK L+R** erscheint momentan. Keine Crew-Action erforderlich.
-
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">PACK L / R</span> | <span class="c-amber">Advisory</span> | Pack ausgefallen (Surge, Überhitzung, Fault) |
-| <span class="c-amber">PACK MODE L / R</span> | <span class="c-amber">Advisory</span> | Pack im Standby Cooling Mode |
+> [!info]- Pack Failure & Standby Cooling
+> **Pack failure:** Automatic shutdown on CAC surge, overheat, or severe fault → EICAS **PACK L / R** (Advisory). Reset possible with **AIR COND RESET Switch** at ≤ 34.000 ft.
+>
+> > [!info] Reset above 34.000 ft not recommended — CACs near surge margin. Reset may cause the operative pack to shut down.
+>
+> **Standby Cooling Mode:** Automatically activated on certain internal faults → EICAS **PACK MODE L / R** (Advisory) + AIR synoptic: **STBY COOLING** (amber). Reduced cooling capacity possible at low altitudes / high OAT.
+>
+> **Go-around with OEI + Slat Autogap:** Both packs may briefly load-shed → **PACK L+R** momentarily displayed. No crew action required.
+>
+> | EICAS | Level | Meaning |
+> |:---|:---:|:---|
+> | <span class="c-amber">PACK L / R</span> | <span class="c-amber">Advisory</span> | Pack failed (surge, overheat, fault) |
+> | <span class="c-amber">PACK MODE L / R</span> | <span class="c-amber">Advisory</span> | Pack in Standby Cooling Mode |
 
 ---
 
 ## Air Distribution
 
-![[air recirculation.webp]]
+<a class="img-lightbox" href="#air-recirc-full">
+  <img class="img-thumb" src="/Bilder/air recirculation.webp" alt="Air Recirculation System">
+</a>
+<div class="img-lightbox-overlay" id="air-recirc-full">
+  <a href="#"><img src="/Bilder/air recirculation.webp" alt="Air Recirculation System"></a>
+</div>
 
-- **Flight Deck**: 100 % konditionierte Außenluft (bei einem Pack OFF + Lower Recirc Fan ON: auch etwas Rezirkulationsluft)
-- **Kabine**: Mix aus Außenluft + rezirkulierter Luft
-- Recirculation Fans filtern Kabinenluft (HEPA) und führen sie wieder zu
+The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + Lower Recirc Fan ON: some recirculated air is also supplied). The **cabin** receives a mix of outside air and recirculated air. Recirculation fans filter cabin air through HEPA filters and return it to the distribution system.
 
-> [!caution] Recirculation Fans müssen im Hitzebetrieb ON bleiben — ausser eine Non-Normal Checklist fordert OFF.
+> [!caution] Recirculation fans must remain ON during hot weather operations — unless a Non-Normal Checklist requires OFF.
 
-**Recirc Fans OFF** erhöht **nicht** den Frischluftanteil — reduziert nur den Gesamtluftdurchsatz.
+**Recirc Fans OFF** does **not** increase the fresh air ratio — it only reduces total airflow.
 
-**Zonal Dryer (FWD + AFT):** De-Humidifikation im Crown-Bereich — automatisch bei verfügbarer Stromversorgung.
+> [!info]- Zonal Dryer (FWD + AFT)
+> Dehumidification in the crown area — automatic when electrical power is available.
 
-**Alternate Ventilation System (AVS):** Bei Ausfall beider Packs — Switch → ALTN öffnet FWD + AFT Outflow Valves teilweise → Frischluft wird in Verteilsystem gezogen (nur unpressurized).
+> [!info]- Alternate Ventilation System (AVS)
+> Used on failure of both packs. Switch → **ALTN** partially opens FWD + AFT Outflow Valves → fresh air is drawn into the distribution system. Effective in unpressurized flight only.
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Meaning |
 |:---|:---:|:---|
-| <span class="c-amber">RECIRC FAN UPR / LWR OFF</span> | <span class="c-amber">Advisory</span> | Upper / Lower Recirculation Fan ausgeschaltet |
+| <span class="c-amber">RECIRC FAN UPR / LWR OFF</span> | <span class="c-amber">Advisory</span> | Upper / Lower Recirculation Fan off |
 
 ---
 
-## Temperaturregelung
+## Temperature Control
 
-- **CABIN TEMP Selector**: **18 – 29 °C**
-- Jede Kabinenzone: ± 3 °C Offset via Cabin Management System (innerhalb 18 – 29 °C)
-- **Flight Deck Temp Selector**: unabhängig, 18 – 29 °C
-- Kühlste Zone bestimmt Pack-Outlet-Temperatur · Trim Air erwärmt einzelne Zonen
-- Bei Ausfall des Temperature selectors: Pack hält letzte eingestellte Temp oder **24 °C** (Durchschnitt)
+<div class="cl-item"><strong>CABIN TEMP Selector</strong><span class="cl-dots"></span><span>18 – 29 °C</span></div>
+<div class="cl-item"><strong>Zone offset</strong><span class="cl-dots"></span><span>± 3 °C per cabin zone via Cabin Management System (within 18 – 29 °C)</span></div>
+<div class="cl-item"><strong>Flight Deck Temp Selector</strong><span class="cl-dots"></span><span>Independent · 18 – 29 °C</span></div>
+<div class="cl-item"><strong>Pack outlet temp</strong><span class="cl-dots"></span><span>Determined by coldest zone · Trim Air heats individual zones</span></div>
+<div class="cl-item"><strong>Selector failure</strong><span class="cl-dots"></span><span>Pack maintains last set temperature or 24 °C (average)</span></div>
 
-**Loss of Trim Air (L oder R):** Alle Zonen werden auf Durchschnittszieltemperatur geregelt. FD-Temperatur bleibt 18 – 29 °C — kann aber unbequem werden. Workaround: CABIN TEMP Selector anpassen.
+> [!info]- Loss of Trim Air (L or R)
+> All zones regulated to average target temperature. Flight deck temperature remains 18 – 29 °C — but may become uncomfortable. Workaround: adjust CABIN TEMP Selector.
 
 ---
 
 ## Pressurization
 
-![[press ovhd.webp]]
+<a class="img-lightbox" href="#press-ovhd-full">
+  <img class="img-thumb" src="/Bilder/press ovhd.webp" alt="Pressurization Overhead Panel">
+</a>
+<div class="img-lightbox-overlay" id="press-ovhd-full">
+  <a href="#"><img src="/Bilder/press ovhd.webp" alt="Pressurization Overhead Panel"></a>
+</div>
 
-- **CPCS** (Cabin Pressure Control System) reguliert vollautomatisch via FMC-Daten + Umgebungsdruck
-- **2 Outflow Valves** (FWD + AFT) — Abfluss normalerweise gleichmäßig aufgeteilt · jedes Valve allein ausreichend
-- **Positive + Negative Relief Valves** schützen Struktur vor extremem Differential Pressure
-- Vollautomatischer Betrieb — keine Crew-Action außer FMC-Dateneingabe erforderlich
+<div class="cl-item"><strong>CPCS</strong><span class="cl-dots"></span><span>Cabin Pressure Control System — fully automatic via FMC data + ambient pressure</span></div>
+<div class="cl-item"><strong>Outflow Valves</strong><span class="cl-dots"></span><span>2 (FWD + AFT) — outflow normally split equally · each valve alone is sufficient</span></div>
+<div class="cl-item"><strong>Relief Valves</strong><span class="cl-dots"></span><span>Positive + Negative — protect structure against extreme differential pressure</span></div>
+<div class="cl-item"><strong>Crew action</strong><span class="cl-dots"></span><span>None required beyond FMC data entry</span></div>
 
-### CPCS Automatikbetrieb
+### CPCS Automatic Operation
 
-| Phase | Kabinenhöhe |
+| Phase | Cabin Altitude |
 |:---|:---|
-| Takeoff | Kleine positive Druckbeaufschlagung vor Rotation |
-| Climb | Steigt auf Schedule (Climb Rate + FMC Cruise Alt) · bei VNAV off: konstant wenn Flugzeughöhe konstant |
-| Cruise | Normal ≤ **6.000 ft** · bei degradiertem Betrieb (Pack/CAC Ausfall) bis **8.000 ft** |
-| Descent | Sinkt auf knapp unter FMC Landing Alt · Baro-Korrektur via Captain Altimeter |
-| Touchdown | Beide Outflow Valves öffnen vollständig → Kabine depressuriert |
+| Takeoff | Small positive pressurization prior to rotation |
+| Climb | Climbs on schedule (climb rate + FMC cruise alt)<br>with VNAV off: constant when aircraft altitude is constant |
+| Cruise | Normal ≤ **6.000 ft**<br>Degraded operation (pack/CAC failure) up to **8.000 ft** |
+| Descent | Descends to slightly below FMC landing alt<br>Baro correction via Captain Altimeter |
+| Touchdown | Both Outflow Valves open fully → cabin depressurizes |
 
-**Default Cruise Alt** (FMC nicht verfügbar): **43.000 ft**
+> [!info] Special Cases
+> **High Altitude Takeoff** (field > 8.000 ft): Cabin descends to target cabin altitude during climb.
+>
+> **High Altitude Landing** (destination > 8.000 ft): Cabin altitude climbs to 6.000 ft after takeoff → holds → climbs to target landing altitude in time.
+>
+> **Default Cruise Alt** (FMC not available): **43.000 ft**
 
-**High Altitude Takeoff** (Field > 8.000 ft): Kabine sinkt während Climb auf Zielkabinenhöhe.
-**High Altitude Landing** (Dest > 8.000 ft): Kabinenhöhe steigt nach Takeoff auf 6.000 ft → bleibt dort → steigt rechtzeitig auf Zielflughöhe.
+> [!info] Loss of Landing Altitude
+> FMC Landing Altitude not available + MAN not set → EICAS <span class="c-amber">**LANDING ALTITUDE**</span> (Advisory) → system assumes **2.000 ft** as landing altitude.
 
-### Loss of Landing Altitude
+> [!info]- Loss of Cabin Pressurization
+> On pressure loss: Outflow Valves close → pressure maintained. Valves remain closed until cabin altitude limit is reached:
+>
+> | T/O – Landing Altitude | Cabin Altitude Limit |
+> |:---|:---:|
+> | < 9.500 ft | 11.500 ft |
+> | 9.500 – 14.000 ft | 14.500 ft |
+>
+> Once limit is reached: Outflow Valves open fully for the remainder of the flight.
+>
+> > [!warning] Do not manually close Outflow Valves during descent.
+>
+> CPCS prevents cabin altitude > **15.000 ft** for any probable system failure.
 
-FMC Landing Altitude nicht verfügbar + MAN nicht gesetzt → EICAS **LANDING ALTITUDE** (Advisory) → System nimmt **2.000 ft** als Landing Altitude an.
-
-### Loss of Cabin Pressurization
-
-Bei Druckabfall: Outflow Valves schließen → Druck erhalten. Ventile bleiben geschlossen bis Kabinenhöhenlimit erreicht:
-
-| T/O-Landehöhe | Kabinenhöhenlimit |
-|:---|:---:|
-| < 9.500 ft | 11.500 ft |
-| 9.500 – 14.000 ft | 14.500 ft |
-
-Ab Erreichen des Limits: Outflow Valves öffnen vollständig für restlichen Flug.
-
-> [!warning] Outflow Valves während descent nicht manuell schließen.
-
-CPCS verhindert Cabin Altitude > **15.000 ft** bei jedem wahrscheinlichen Systemfehler.
-
-### Manueller Betrieb
-
-Aktivierung: **OUTFLOW VALVE Switches → MAN** + OUTFLOW VALVE MANUAL Switch halten (OPEN / CLOSE).
-
-- Ventilposition auf EICAS sichtbar
-- EICAS nicht verfügbar: Switch **30 sec** halten → Ventil fährt von vollständig offen/geschlossen in gewünschte Position
-
-**LANDING ALTITUDE Selector** (MAN): Selector herausziehen → FMC Landing Altitude deaktiviert · Pressurization auf EICAS. Bereich: **−2.000 bis +14.000 ft**.
-
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">LANDING ALTITUDE</span> | <span class="c-amber">Advisory</span> | Landehöhe nicht vom FMC verfügbar — System nutzt 2.000 ft |
+> [!info]- Manual Operation
+> Activation: **OUTFLOW VALVE Switches → MAN** + hold OUTFLOW VALVE MANUAL Switch (OPEN / CLOSE).
+>
+> <div class="cl-item"><strong>Valve position</strong><span class="cl-dots"></span><span>Visible on EICAS</span></div>
+> <div class="cl-item"><strong>EICAS not available</strong><span class="cl-dots"></span><span>Hold switch 30 sec → valve travels from fully open/closed to desired position</span></div>
+>
+> **LANDING ALTITUDE Selector (MAN):** Pull selector → FMC Landing Altitude deactivated · pressurization shown on EICAS. Range: **−2.000 to +14.000 ft**.
+>
+> | EICAS | Level | Meaning |
+> |:---|:---:|:---|
+> | <span class="c-amber">LANDING ALTITUDE</span> | <span class="c-amber">Advisory</span> | Landing altitude not available from FMC — system uses 2.000 ft |
 
 ---
 
 ## Air Non-Normals
 
-s. [[Air, Pressurization Non-Normals]]
+See [[Air, Pressurization Non-Normals]]

@@ -977,6 +977,46 @@ article.page-enter {
 }
 
 /* =========================================
+   LIGHTBOX — click-to-expand thumbnail
+   ========================================= */
+
+.img-lightbox {
+  display: block;
+  margin: 1rem auto;
+  text-align: center;
+
+  img.img-thumb {
+    max-width: 220px;
+    height: auto;
+    border-radius: 6px;
+    cursor: zoom-in;
+    display: block;
+  }
+}
+
+.img-lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-out;
+
+  img {
+    max-width: 92vw;
+    max-height: 90vh;
+    border-radius: 8px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6);
+  }
+}
+
+.img-lightbox-overlay:target {
+  display: flex;
+}
+
+/* =========================================
    SOP ACTION BADGES
    ========================================= */
 

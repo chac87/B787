@@ -1,158 +1,146 @@
+---
+title: Landing Gear & Brakes
+tags: [systems, landing-gear]
+---
+
 # Landing Gear & Brakes
 
-## Übersicht
+## Overview
 
-| Komponente        | Details                                                          |
-| :---------------- | :--------------------------------------------------------------- |
-| Main Landing Gear | 2 × MLG · je 4 gears = 8 main gears gesamt                       |
-| Nose Landing Gear | 1 × NLG · 2 gears                                                |
-| Hydraulik         | Center System — Extension, Retraction, Steering                  |
-| Brakes            | Elektromechanisch — 4 EBACs · 32 EBAs (Electric Brake Actuators) |
+| Component         | Details                                                           |
+| :---------------- | :---------------------------------------------------------------- |
+| Main Landing Gear | 2 × MLG · 4 wheels each = 8 main wheels total                    |
+| Nose Landing Gear | 1 × NLG · 2 wheels                                               |
+| Hydraulics        | Center System — Extension, Retraction, Steering                  |
+| Brakes            | Electromechanical — 4 EBACs · 32 EBAs (Electric Brake Actuators) |
 
-![[landing gear.webp]]
-
-## Speed Limits
-
-| Limit | Wert |
-|:---|:---:|
-| vLE (Gear Extended) | 270 kts |
-| Empfohlen für Drag | max. 200 kts |
-
-## Air/Ground Sensing
-
-Je ein Sensor pro MLG-Beam — steuert Gear-Lever-Lock, Early Doors, Autobrake-Aktivierung und andere bodenbezogene Systeme.
+<a class="img-lightbox" href="#lg-full">
+  <img class="img-thumb" src="/Bilder/landing gear.webp" alt="Landing Gear Overview">
+</a>
+<div class="img-lightbox-overlay" id="lg-full">
+  <a href="#"><img src="/Bilder/landing gear.webp" alt="Landing Gear Overview"></a>
+</div>
 
 ## Gear Operation
 
-**Lever-Verriegelung:**
-- Am Boden: Lever in **DN gelockt** — kann nicht auf UP gezogen werden
-- In der Luft: Air/Ground Sensing gibt Lever frei
-- **LOCK OVERRIDE Switch**: Ermöglicht UP am Boden (z. B. Maintenance)
+> [!info]+ Gear Doors
+> <div class="cl-item"><strong>Open / Close</strong><span class="cl-dots"></span><span>Center Hydraulic System pressure</span></div>
+> <div class="cl-item"><strong>NLG & MLG Retraction</strong><span class="cl-dots"></span><span>Center Hydraulic System pressure</span></div>
 
-### Retraction
+> [!info]+ Lever & Gear Lock
+> <div class="cl-item"><strong>On Ground</strong><span class="cl-dots"></span><span>Lever locked in DN — cannot be moved to UP</span></div>
+> <div class="cl-item"><strong>In Flight</strong><span class="cl-dots"></span><span>Air/Ground Sensing releases lever lock</span></div>
+>
+> **LOCK OVERRIDE Switch** — Allows UP on ground (e.g. maintenance):
+> 1. Push and **hold** switch
+> 2. Lift gear lever to **UP**
 
-**Early Doors:** Gear doors öffnen **1 sec nach Lift-off**. Wenn kein UP-Kommando innerhalb von **30 sec** → Türen schließen wieder.
+> [!info]+ Retraction
+> <div class="cl-item"><strong>Transit</strong><span class="cl-dots"></span><span>Crosshatch on EICAS (gear in motion)</span></div>
+> <div class="cl-item"><strong>UP</strong><span class="cl-dots"></span><span>UP displayed after ≈ 10 sec</span></div>
+> <div class="cl-item"><strong>Doors closed</strong><span class="cl-dots"></span><span>EICAS indication blanks</span></div>
+> <div class="cl-item"><strong>Pressure relief</strong><span class="cl-dots"></span><span>Automatic after gear and doors up and locked</span></div>
+>
+> <div class="cl-item"><strong>Early Doors</strong><span class="cl-dots"></span><span>Gear doors open automatically <strong>1 sec after lift-off</strong>, prior to UP command</span></div>
+> <div class="cl-sub">No UP command within 30 sec → doors return to closed position</div>
 
-**EICAS-Anzeige:**
-- Transit → Schraffur (in Bewegung)
-- UP (nach ≈ 10 sec) → UP angezeigt
-- Doors geschlossen → blanks (erlischt)
-- Gear wird nach Einfahren + Türen geschlossen automatisch drucklos
+> [!info]+ Extension (Normal)
+> <div class="cl-item"><strong>Principle</strong><span class="cl-dots"></span><span>Free-fall — hydraulic pressure NOT required for extension</span></div>
+> <div class="cl-item"><strong>Downlocks</strong><span class="cl-dots"></span><span>Electrically secured</span></div>
+> <div class="cl-item"><strong>Trucks</strong><span class="cl-dots"></span><span>Pitch to flight position during extension</span></div>
 
-### Extension
-
-- **Free-fall** — Downlocks werden elektrisch gesichert
-- Trucks kippen in Flugposition während der Extension
-
-### Alternate Extension
-
-- Betrieb via **DC Electric Pump**
-- **ALTERNATE GEAR Switch** → DOWN
-- Gear-Lever-Position spielt keine Rolle
-- GEAR DOOR wird angezeigt
-- Retraction danach möglich: wenn Center Hydraulic verfügbar → DN dann UP
-
-## EICAS — Landing Gear
-
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">GEAR DISAGREE</span> | <span class="c-amber">Caution</span> | Gear nach Transit-Zeit nicht in Soll-Position |
-| <span class="c-amber">GEAR DRAG BRACE L / R</span> | <span class="c-amber">Caution</span> | Drag Brace nicht verriegelt |
-| <span class="c-amber">GEAR SIDE BRACE L / R</span> | <span class="c-amber">Caution</span> | Side Brace nicht verriegelt |
-| <span class="c-amber">GEAR DOOR</span> | <span class="c-amber">Advisory</span> | Gear-Türe nicht geschlossen |
+> [!info]+ Alternate Extension
+> Used when: **no Center Hydraulic pressure** available, or when the gear **does not extend correctly**.
+>
+> <div class="cl-item"><strong>System</strong><span class="cl-dots"></span><span>DC Electric Pump</span></div>
+> <div class="cl-item"><strong>ALTERNATE GEAR Switch</strong><span class="cl-dots"></span><span>DOWN</span></div>
+> <div class="cl-item"><strong>Gear Lever Position</strong><span class="cl-dots"></span><span>Irrelevant</span></div>
+> <div class="cl-item"><strong>EICAS</strong><span class="cl-dots"></span><span>GEAR DOOR displayed</span></div>
+> <div class="cl-item"><strong>Retraction after</strong><span class="cl-dots"></span><span>Center Hydraulic available → Lever DN then UP</span></div>
 
 ## NWS — Nose Wheel Steering
 
-- **Tiller**: ± 70°
-- **Rudder**: ± 8°
-- Beide Eingaben werden **summiert** (max. 70°)
-- Betrieb via **Center Hydraulic System**
+> [!info]+ NWS
+> <div class="cl-item"><strong>Tiller</strong><span class="cl-dots"></span><span>± 70°</span></div>
+> <div class="cl-item"><strong>Rudder Pedals</strong><span class="cl-dots"></span><span>± 8°</span></div>
+> <div class="cl-item"><strong>Combined Input</strong><span class="cl-dots"></span><span>Both inputs summed (max. 70°)</span></div>
+> <div class="cl-item"><strong>Power</strong><span class="cl-dots"></span><span>Center Hydraulic System</span></div>
 
 ## Brakes
 
-Kohlefaser-Bremsscheiben. **Keine Vorderradbremsen.**
+> [!info]+ Antiskid
+> Carbon fiber brake discs. **No nose wheel brakes.**
+>
+> <div class="cl-item"><strong>Touchdown Protection</strong><span class="cl-dots"></span><span>per wheel</span></div>
+> <div class="cl-item"><strong>Hydroplane Protection</strong><span class="cl-dots"></span><span>per wheel</span></div>
+> <div class="cl-item"><strong>Locked-Wheel Protection</strong><span class="cl-dots"></span><span>per wheel</span></div>
 
-### Antiskid
+> [!info]+ Autobrake
+> **Activation:**
+>
+> | Mode | Condition |
+> |:---|:---|
+> | **RTO** | > 85 kts + Thrust Levers Idle + on ground |
+> | **Landing** | Thrust Levers Idle + Wheel Spin-Up |
+>
+> <div class="cl-item"><strong>MAX AUTO</strong><span class="cl-dots"></span><span>Limited to Autobrake 4 until pitch &lt; 1° (tail-strike avoidance)</span></div>
+>
+> Brake pressure is **automatically reduced** when reversers and spoilers contribute to deceleration.
+>
+> **Deactivation:**
+>
+> | Trigger |
+> |:---|
+> | Brake pedal input |
+> | Thrust Lever advance |
+> | Speedbrake → DOWN Detent |
+> | DISARM / OFF Selector |
+> | Fault · Antiskid Fault · IRU data loss |
 
-Schutz pro Rad: Touchdown Protection · Hydroplane Protection · Locked-Wheel Protection
+> [!info]+ Taxi Brake Release
+> Below **30 kts**: half braking force per MLG, alternating (pair-cycling). Pedal must be **fully released** to switch to the next pair.
+>
+> During heavy braking / landing / RTO / parking: all brakes apply simultaneously.
 
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">ANTISKID</span> | <span class="c-amber">Advisory</span> | Antiskid-System ausgefallen |
+> [!info]+ Parking Brake
+> <div class="cl-item"><strong>Setting</strong><span class="cl-dots"></span><span>Hold brake pedals + Parking Brake Lever</span></div>
+> <div class="cl-item"><strong>Park-and-Adjust</strong><span class="cl-dots"></span><span>25% force on 2 of 4 EBAs per MLG — self-adjusts as brakes cool (≈ 60 min)</span></div>
+> <div class="cl-item"><strong>Without power</strong><span class="cl-dots"></span><span>Remains set even without electrical power</span></div>
+>
+> | EICAS | Level | Meaning |
+> |:---|:---:|:---|
+> | <span class="c-amber">PARKING BRAKE SET</span> | <span class="c-amber">Memo</span> | Parking brake set |
+> | <span class="c-red">CONFIG PARKING BRAKE</span> | <span class="c-red">Warning</span> | Takeoff thrust applied with parking brake set |
 
-### Autobrake
-
-**Aktivierung:**
-
-| Modus | Bedingung |
-|:---|:---|
-| **RTO** | > 85 kts + Thrust Levers Idle + am Boden |
-| **Landing** | Thrust Levers Idle + Wheel Spin-Up |
-
-**MAX AUTO:** Begrenzt auf Autobrake 4 bis **Pitch < 1°** (Tail-Strike-Avoidance).
-
-Bremsdruck wird **automatisch reduziert**, wenn Reverser und Spoiler zur Verzögerung beitragen.
-
-**Deaktivierung:**
-
-| Auslöser |
-|:---|
-| Pedal-Bremsung |
-| Thrust Lever Advance |
-| Speedbrake → DOWN Detent |
-| DISARM / OFF Selector |
-| Fault · Antiskid Fault · IRU-Datenverlust |
-
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">AUTOBRAKE</span> | <span class="c-amber">Advisory</span> | Autobrake-System ausgefallen oder deaktiviert |
-
-### Taxi Brake Release
-
-Unter **30 kts**: halbe Bremskraft pro MLG, abwechselnd (Pair-Cycling). Pedal muss **vollständig losgelassen** werden, um auf das nächste Paar umzuschalten. Bei schwerem Bremsen / Landing / RTO / Parking: alle Bremsen gleichzeitig.
-
-### Parking Brake
-
-- Setzen: Bremspedal halten + Parking Brake Lever
-- **Park-and-Adjust**: 25 % Kraft auf **2 von 4 EBAs** pro MLG — passt sich beim Abkühlen an (≈ 60 min)
-- Bleibt auch **ohne Strom** gesetzt
-
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">PARKING BRAKE SET</span> | <span class="c-amber">Memo</span> | Parkbremse gesetzt |
-| <span class="c-red">CONFIG PARKING BRAKE</span> | <span class="c-red">Warning</span> | Takeoff-Schub mit gesetzter Parkbremse |
-
-### Brake Temperature
-
-Skala: **0.0 – 9.9**
-
-| Bereich | Anzeige |
-|:---:|:---|
-| 0.0 – 2.9 | Weiß (normal) |
-| 3.0 – 4.9 | Weiß · heißeste Bremse als Vollbalken |
-| ≥ 5.0 | EICAS BRAKE TEMP — bleibt bis alle < 3.0 |
-
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">BRAKE TEMP</span> | <span class="c-amber">Advisory</span> | Mindestens eine Bremse ≥ 5.0 |
+> [!info]+ Brake Temperature
+> Scale: **0.0 – 9.9**
+>
+> | Range | Indication |
+> |:---:|:---|
+> | 0.0 – 2.9 | White (normal) |
+> | 3.0 – 4.9 | White · hottest brake shown as full bar |
+> | ≥ 5.0 | EICAS BRAKE TEMP — remains until all < 3.0 |
+>
+> | EICAS | Level | Meaning |
+> |:---|:---:|:---|
+> | <span class="c-amber">BRAKE TEMP</span> | <span class="c-amber">Advisory</span> | At least one brake ≥ 5.0 |
 
 ## Tire Pressure
 
-- Normaldruck: Anzeige weiß auf Synoptic
-- Außerhalb Normalbereich: **Amber** auf Synoptic
-
-| EICAS | Level | Bedeutung |
-|:---|:---:|:---|
-| <span class="c-amber">TIRE PRESS</span> | <span class="c-amber">Advisory</span> | Reifendruck außerhalb Normalbereich |
-
+> [!info]+ Tire Pressure
+> <div class="cl-item"><strong>Normal</strong><span class="cl-dots"></span><span>White on synoptic</span></div>
+> <div class="cl-item"><strong>Out of normal range</strong><span class="cl-dots"></span><span>Amber on synoptic</span></div>
+>
 ---
 
 > [!info] Un-annunciated Checklists
-> **GEAR LEVER LOCKED DOWN** — via Non-Normal Menu im ECL aufrufen
+> **GEAR LEVER LOCKED DOWN** — select via Non-Normal Menu in ECL
 
 ---
 
 > [!limit] Limitations
+> <div class="cl-item"><strong>v<sub>LE</sub> (Gear Extended)</strong><span class="cl-dots"></span><span>270 kts</span></div>
+> <div class="cl-item"><strong>Recommended max. for drag</strong><span class="cl-dots"></span><span>200 kts</span></div>
 > <div class="cl-item"><strong>Alternate Extension</strong><span class="cl-dots"></span><span>speedbrakes retracted</span></div>
 > <div class="cl-item"><strong>Brake Release</strong><span class="cl-dots"></span><span>not above 55% N1 (tailtipping)</span></div>
 > <div class="cl-item"><strong>Towing towbarless</strong><span class="cl-dots"></span><span>prohibited unless torque links disconnected</span></div>
