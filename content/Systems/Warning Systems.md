@@ -62,6 +62,9 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 <div class="cl-item"><strong><span style="color:#aaa;margin-right:0.35em">◇</span>Other Traffic</strong><span class="cl-dots"></span><strong>in ND range, no conflict</strong></div>
 <div class="cl-sub">Hollow white diamond · ADS-B: hollow white directional chevron · upgrades to Proximate when &lt;6 NM and no altitude data</div>
 
+<div class="cl-item"><strong><img src="/Bilder/tcas no bearing.webp" alt="clean" style="height:1.5em;width:auto;vertical-align:middle;margin:0 0.4em 0 0;display:inline;border-radius:2px">No Bearing Alert</strong><span class="cl-dots"></span><strong>bearing unavailable</strong></div>
+<div class="cl-sub">Traffic detected but azimuth unavailable — no directional symbol shown on ND</div>
+
 </div>
 
 **Normal operation:** TA/RA selected on ATP. Select **TA ONLY** during engine-out operations (insufficient thrust to follow RA commands).
