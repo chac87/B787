@@ -10,7 +10,7 @@
 [[Systems/Anti-Ice, Rain|Anti-Ice, Rain]]
 [[Systems/Flight Controls|Flight Controls]]
 [[Systems/Flight Envelope Protections|Flight Envelope Protections]]
-[[Autoflight System (AFDS)]]
+[[Systems/Automatic Flight|Automatic Flight]]
 [[Engines]]
 [[Systems/APU|APU]]
 [[Fuel System]]

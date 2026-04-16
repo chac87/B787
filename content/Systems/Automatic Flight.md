@@ -1,5 +1,5 @@
 ---
-title: Autoflight System (AFDS)
+title: Automatic Flight
 tags: [systems, autoflight, afds, mcp]
 ---
 
@@ -218,10 +218,11 @@ NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/G
 <div class="cl-sub">8° nose-up indication on the ground; pitch commands active after liftoff</div>
 
 <div class="cl-item"><strong>VNAV SPD</strong><span class="cl-dots"></span><strong>Pitch to maintain FMC speed</strong></div>
-<div class="cl-sub">Typically used during climb</div>
+<div class="cl-sub">Arms on VNAV switch push; activates at 400 ft above field elevation. Typically used during climb</div>
 
 <div class="cl-item"><strong>VNAV PTH</strong><span class="cl-dots"></span><strong>Pitch to maintain FMC altitude or descent path</strong></div>
 <div class="cl-sub">A/T manages speed. EICAS advisory FMC MESSAGE displays if MCP altitude remains at cruise altitude within 2 minutes of top of descent</div>
+<div class="cl-sub">For an early descent below the VNAV path, select FLCH, V/S, or FPA. If VNAV is armed and the airplane subsequently intercepts the VNAV path from below, VNAV reactivates in VNAV PTH</div>
 
 <div class="cl-item"><strong>VNAV ALT</strong><span class="cl-dots"></span><strong>Pitch to maintain MCP altitude — VNAV profile vs. MCP conflict</strong></div>
 <div class="cl-sub">Airplane levels off. To resume: change MCP altitude and push altitude selector, or select another pitch mode</div>
@@ -306,16 +307,6 @@ NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/G
 
 > [!info] After-Touchdown Inhibit
 > TO/GA switches are inhibited after touchdown or when below 2 ft RA for 3 or more seconds. Re-enabled above 5 ft RA if the landing is discontinued.
-
-## VNAV
-
-VNAV arms by pushing the VNAV switch and activates at 400 ft above field elevation. Armed state annunciates in small characters below the active pitch mode on both PFD and HUD.
-
-When an early descent below the VNAV path is desired, select FLCH, V/S, or FPA. If VNAV is armed and the airplane subsequently intercepts the VNAV descent path from below, VNAV reactivates in VNAV PTH.
-
-> [!limit] VNAV — Limitations
-> <div class="cl-item"><strong>QFE operations</strong><span class="cl-dots"></span><strong>VNAV prohibited</strong></div>
-> <div class="cl-item"><strong>Triple FMC failure</strong><span class="cl-dots"></span><strong>VNAV not available</strong></div>
 
 ## Autothrottle
 
@@ -416,3 +407,5 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 > <div class="cl-item"><strong>LAND 2 / 3 + GS >3.25° — disengage</strong><span class="cl-dots"></span><strong>below 100 ft</strong></div>
 > <div class="cl-item"><strong>GS >3.77° — disengage</strong><span class="cl-dots"></span><strong>≤ 50 ft below DH / MDA</strong></div>
 > <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><strong>not below 1.000 ft AFE</strong></div>
+> <div class="cl-item"><strong>VNAV — QFE operations</strong><span class="cl-dots"></span><strong>prohibited</strong></div>
+> <div class="cl-item"><strong>VNAV — triple FMC failure</strong><span class="cl-dots"></span><strong>not available</strong></div>

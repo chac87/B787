@@ -17,7 +17,7 @@ title: Systems
 
 ## [[Flight Envelope Protections]]
 
-## [[Autoflight System (AFDS)]]
+## [[Automatic Flight]]
 
 ## [[Engines]]
 
