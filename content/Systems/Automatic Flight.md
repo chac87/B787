@@ -3,7 +3,7 @@ title: Automatic Flight
 tags: [systems, autoflight, afds, mcp]
 ---
 
-# Autoflight System (AFDS)
+# Automatic Flight
 ![[mcp.webp]]
 
 <div style="display:flex;gap:0.75rem;margin-bottom:1rem;align-items:flex-start">
