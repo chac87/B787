@@ -8,18 +8,8 @@ tags: [systems, air-conditioning, pressurization]
 ## Air Conditioning
 
 <div class="img-row">
-  <a class="img-lightbox" href="#ac-ovhd-full">
-    <img class="img-thumb" src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel">
-  </a>
-  <a class="img-lightbox" href="#ac-syn-full">
-    <img class="img-thumb" src="/Bilder/air syn.webp" alt="Air Conditioning Synoptic">
-  </a>
-</div>
-<div class="img-lightbox-overlay" id="ac-ovhd-full">
-  <a href="#"><img src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel"></a>
-</div>
-<div class="img-lightbox-overlay" id="ac-syn-full">
-  <a href="#"><img src="/Bilder/air syn.webp" alt="Air Conditioning Synoptic"></a>
+  <img src="/Bilder/air con ovhd.webp" alt="Air Conditioning Overhead Panel">
+  <img src="/Bilder/air syn.webp" alt="Air Conditioning Synoptic">
 </div>
 
 ### Packs
@@ -65,12 +55,7 @@ Outside air enters through the CAC inlets, is compressed and sent warm to the pa
 
 ### Air Distribution
 
-<a class="img-lightbox" href="#air-recirc-full">
-  <img class="img-thumb" src="/Bilder/air recirculation.webp" alt="Air Recirculation System">
-</a>
-<div class="img-lightbox-overlay" id="air-recirc-full">
-  <a href="#"><img src="/Bilder/air recirculation.webp" alt="Air Recirculation System"></a>
-</div>
+![[air recirculation.webp]]
 
 The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + Lower Recirc Fan ON: some recirculated air is also supplied). The **cabin** receives a mix of outside air and recirculated air. Recirculation fans filter cabin air through HEPA filters and return it to the distribution system.
 
@@ -124,12 +109,7 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 
 ## Pressurization
 
-<a class="img-lightbox" href="#press-ovhd-full">
-  <img class="img-thumb" src="/Bilder/press ovhd.webp" alt="Pressurization Overhead Panel">
-</a>
-<div class="img-lightbox-overlay" id="press-ovhd-full">
-  <a href="#"><img src="/Bilder/press ovhd.webp" alt="Pressurization Overhead Panel"></a>
-</div>
+![[press ovhd.webp]]
 
 <div class="cl-item"><strong>CPCS</strong><span class="cl-dots"></span><span>Cabin Pressure Control System — fully automatic via FMC data + ambient pressure</span></div>
 <div class="cl-item"><strong>Outflow Valves</strong><span class="cl-dots"></span><span>2 (FWD + AFT) — outflow normally split equally · each valve alone is sufficient</span></div>

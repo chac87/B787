@@ -14,12 +14,7 @@ tags: [systems, landing-gear]
 | Hydraulics        | Center System — Extension, Retraction, Steering                  |
 | Brakes            | Electromechanical — 4 EBACs · 32 EBAs (Electric Brake Actuators) |
 
-<a class="img-lightbox" href="#lg-full">
-  <img class="img-thumb" src="/Bilder/landing gear.webp" alt="Landing Gear Overview">
-</a>
-<div class="img-lightbox-overlay" id="lg-full">
-  <a href="#"><img src="/Bilder/landing gear.webp" alt="Landing Gear Overview"></a>
-</div>
+![[landing gear.webp]]
 
 ## Gear Operation
 
