@@ -248,6 +248,8 @@ NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/G
 
 ## TO/GA
 
+<img src="/Bilder/takeoff%20fma.webp" style="max-width:320px;border-radius:6px;margin-bottom:0.75rem">
+
 > [!proc] On the Ground
 > TO/GA annunciates when either FD switch is positioned ON (both FDs previously OFF), or when a TO/GA switch is pushed above 80 KIAS. The PFD pitch bar and HUD cue show 8° nose-up. Pitch commands become active only after liftoff.
 >
