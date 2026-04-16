@@ -5,30 +5,26 @@ import fs from "fs"
 import path from "path"
 
 export default (() => {
-  const BookNavigation: QuartzComponent = ({ fileData, allFiles, displayClass }: QuartzComponentProps) => {
-    
-    // 1. Lade book.md
-    let bookTargets: string[] = []
-    try {
-      const bookPath = path.join(process.cwd(), "content", "book.md")
-      if (fs.existsSync(bookPath)) {
-        const bookContent = fs.readFileSync(bookPath, "utf8")
-        const linkRegex = /\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g
-        let match
-        while ((match = linkRegex.exec(bookContent)) !== null) {
-          bookTargets.push(match[1].trim())
-        }
+  // Read book.md once at module init — not on every page render (394 pages × 1 read = waste)
+  const simplify = (str: string) => str.toLowerCase().replace(/&/g, "and").replace(/[-_ ]/g, "")
+
+  const bookTargets: string[] = []
+  try {
+    const bookPath = path.join(process.cwd(), "content", "book.md")
+    if (fs.existsSync(bookPath)) {
+      const bookContent = fs.readFileSync(bookPath, "utf8")
+      const linkRegex = /\[\[([^\]|]+)(?:\|[^\]]+)?\]\]/g
+      let match
+      while ((match = linkRegex.exec(bookContent)) !== null) {
+        bookTargets.push(match[1].trim())
       }
-    } catch (e) {
-      console.error("Fehler beim Lesen der book.md:", e)
     }
+  } catch (e) {
+    console.error("Fehler beim Lesen der book.md:", e)
+  }
 
+  const BookNavigation: QuartzComponent = ({ fileData, allFiles, displayClass }: QuartzComponentProps) => {
     if (bookTargets.length === 0) return null
-
-    // NEU: HILFSFUNKTION
-    // Macht aus "General Infos", "general-infos" oder "General_Infos" immer "generalinfos"
-    // So findet das Skript die Datei garantiert, egal was Quartz oder Obsidian damit machen.
-    const simplify = (str: string) => str.toLowerCase().replace(/&/g, "and").replace(/[-_ ]/g, "")
 
     // 2. Obsidian-Links in echte Quartz-Slugs übersetzen
     const orderedSlugs = bookTargets.map(target => {

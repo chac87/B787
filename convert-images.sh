@@ -4,7 +4,10 @@
 # and updates all ![[...]] references in the Obsidian vault automatically.
 # Runs automatically via sync-snippets.sh before every quartz build/sync.
 
-BILDER="/Users/jonasvaupel/quartz/content/Bilder"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BILDER="$SCRIPT_DIR/content/Bilder"
+
+# Machine-specific: iCloud vault path — adjust per machine if needed
 VAULT="/Users/jonasvaupel/Library/Mobile Documents/iCloud~md~obsidian/Documents/787"
 
 converted=0

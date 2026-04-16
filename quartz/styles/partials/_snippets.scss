@@ -13,8 +13,7 @@
   --bg-opacity: 0.08;      /* Sehr zarter Hintergrund */
   --border-opacity: 0.2;   /* Subtiler Rahmen */
   
-  /* Apple System Font Stack für nativen Look */
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: inherit;
   
   /* Kein dicker linker Balken mehr, sondern feiner Rahmen rundherum */
   border-left: none; 
@@ -220,12 +219,6 @@ body[saved-theme="dark"] .callout[data-callout="warning"] {
    GLOBAL LAYOUT RULES (Web / PDF)
    ========================================= */
 
-/* ---------- Root Fallbacks ---------- */
-:root {
-    --web-text-normal: #111111;
-    --web-text-faint: #777777;
-}
-
 /* ============================================================
    UNIVERSAL ALIGNMENT HACK (Obsidian Editor + Reading + Web)
    Ziel: H5 = Zentriert, H6 = Rechtsbündig
@@ -298,7 +291,7 @@ h6,
    ========================================= */
 .callout-content hr {
     border: none;
-    border-top: 1px solid var(--web-text-faint, #777777);
+    border-top: 1px solid var(--lightgray);
     margin: 12px 0 !important;
     height: 0;
     opacity: 0.5;
@@ -482,30 +475,6 @@ img[alt*="small"] {
    TABLE STYLING – WEB / PANDOC / PDF
    ========================================= */
 
-/* ---------- Root Variables (Web-safe) ---------- */
-:root {
-    /* Light Mode */
-    --web-text-normal: #2c3e50;
-    --web-text-muted: #7f8c8d;
-    --web-text-faint: #bdc3c7;
-    --web-border-muted: #ecf0f1;
-
-    /* Zebra Striping */
-    --web-table-row-alt: rgba(0, 0, 0, 0.04);
-}
-
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --web-text-normal: #dcddde;
-        --web-text-muted: #999999;
-        --web-text-faint: #444444;
-        --web-border-muted: #333333;
-
-        --web-table-row-alt: rgba(255, 255, 255, 0.04);
-    }
-}
-
 /* =========================================
    TABLES INSIDE CALLOUTS / GENERIC CONTAINERS
    ========================================= */
@@ -576,22 +545,16 @@ main tr:nth-child(even) {
 /* === snippet: table-50-50.css === */
 /* =========================================
    TABLE 50 / 50 LAYOUT (Web / Pandoc / PDF)
+   Nur für Tabellen mit Klasse .table-50-50
    ========================================= */
 
-/* Basis: feste Tabellenaufteilung */
-table,
-article table,
-main table {
+.table-50-50 {
     table-layout: fixed;
     width: 100%;
 }
 
-/* Gleichmäßige Spaltenbreite */
-table th,
-table td,
-article th,
-article td,
-main th,
-main td {
+.table-50-50 th,
+.table-50-50 td {
     width: 50%;
 }
+
