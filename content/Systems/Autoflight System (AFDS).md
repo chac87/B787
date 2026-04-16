@@ -2,8 +2,8 @@
 ![[mcp.webp]]
 
 <div style="display:flex;gap:0.75rem;margin-bottom:1rem;align-items:flex-start">
-  <a href="/Bilder/takeoff%20modes.webp" target="_blank" style="flex:1;min-width:0"><img src="/Bilder/takeoff%20modes.webp" style="width:100%;border-radius:6px" /></a>
-  <a href="/Bilder/landing%20modes.webp" target="_blank" style="flex:1;min-width:0"><img src="/Bilder/landing%20modes.webp" style="width:100%;border-radius:6px" /></a>
+  <img src="/Bilder/takeoff%20modes.webp" style="flex:1;min-width:0;width:50%;border-radius:6px" />
+  <img src="/Bilder/landing%20modes.webp" style="flex:1;min-width:0;width:50%;border-radius:6px" />
 </div>
 
 ## Mode Control Panel (MCP)
