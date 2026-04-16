@@ -139,34 +139,50 @@ Automatic protection against ice crystal icing (ICI) · **above 30.000 ft** only
 
 ## Engine Start & Ignition
 
-**Autostart only**. 2 starter motors on the N2 accessory gearbox (electric).
+**Autostart only**. 2 engine starter generators on the N2 accessory gearbox (electric).
 
-**Power sources**: APU (normal) · Forward external power (alternate)
+**Power sources**: APU (normal) · Forward external power (alternate) · Generator on other engine
 
 **Simultaneous start**: only when APU running + **both** APU starter/generators available.
 
 Load shed always occurs during engine start.
 
-**Start sequence:** START Selector → START + FUEL CONTROL → RUN · EEC opens fuel valve + igniters at correct N2 RPM · EEC commands starter cutout at idle · Selector → NORM.
+### Start Sequence
 
-### Autostart Abort Conditions (Ground — no retry)
+<div class="checklist">
 
-> [!warning] Autostart Aborted — No Retry
-> <div class="checklist">
-> <div class="cl-item"><strong>Both starters failed</strong><span class="cl-dots"></span><strong>ABORT</strong></div>
-> <div class="cl-item"><strong>No N1 rotation</strong><span class="cl-dots"></span><strong>ABORT</strong></div>
-> <div class="cl-item"><strong>No oil pressure rise</strong><span class="cl-dots"></span><strong>ABORT</strong></div>
-> </div>
+<div class="cl-item"><strong>START Selector → START</strong><span class="cl-dots"></span><strong></strong></div>
+<div class="cl-sub">Engine starter generators are energized and turn the engine rotor</div>
 
-### Autostart Correction Conditions (Ground — max. 3 attempts)
+<div class="cl-item"><strong>FUEL CONTROL → RUN</strong><span class="cl-dots"></span><strong></strong></div>
+<div class="cl-sub">Spar fuel valve opens · Engine fuel valve stays closed until engine reaches specified speed</div>
 
-> [!info] Autostart Corrected — Max. 3 Attempts
-> <div class="checklist">
-> <div class="cl-item"><strong>Compressor stall · Hot start · Hung start</strong><span class="cl-dots"></span><strong>RETRY</strong></div>
-> <div class="cl-item"><strong>High residual EGT · No EGT rise</strong><span class="cl-dots"></span><strong>RETRY</strong></div>
-> <div class="cl-item"><strong>Loss of one starter</strong><span class="cl-dots"></span><strong>RETRY</strong></div>
-> <div class="cl-item"><strong>Start time exceeds starter duty cycle</strong><span class="cl-dots"></span><strong>RETRY</strong></div>
-> </div>
+<div class="cl-item"><strong>EEC: correct N2 RPM reached</strong><span class="cl-dots"></span><strong></strong></div>
+<div class="cl-sub">EEC energizes the igniters and opens the engine fuel valve → fuel flows into engine</div>
+
+<div class="cl-item"><strong>EEC: starter cutout speed reached</strong><span class="cl-dots"></span><strong></strong></div>
+<div class="cl-sub">Torque to rotor stops · START Selector returns to NORM automatically</div>
+
+<div class="cl-item"><strong>Engine at idle</strong><span class="cl-dots"></span><strong></strong></div>
+<div class="cl-sub">EEC de-energizes the ignition system</div>
+
+</div>
+
+### Engine Start Malfunctions
+
+<details><summary><strong>Hot Start</strong></summary>EGT exceeds the EGT start limit. The EEC tries 2 restarts (GE engines) or 1 restart (RR engines) before the start is stopped.</details>
+
+<details><summary><strong>Hung Start</strong></summary>N2 does not increase at a specified time during engine start. The EEC tries 2 restarts (GE engines) or 1 restart (RR engines) before the start is stopped.</details>
+
+<details><summary><strong>No N1 Rotation</strong></summary>N1 does not increase when N2 speed is sufficient to turn the N1 rotor. The EEC stops the start immediately — no retry.</details>
+
+<details><summary><strong>Compressor Stall</strong></summary>The EEC tries 2 restarts (GE engines) or 1 more restart (RR engines) before the start is stopped.</details>
+
+<details><summary><strong>No EGT Rise</strong></summary>EGT does not increase after the fuel control switch is set to RUN. The EEC tries 2 restarts (GE engines) or 1 restart (RR engines) before the start is stopped.</details>
+
+<details><summary><strong>Loss of Starter</strong></summary>If 1 starter is inoperative, the EEC uses the other starter automatically. If the second starter is also inoperative, the EEC stops the start.</details>
+
+<details><summary><strong>Low Oil Pressure</strong></summary>N2 is at a specified speed but oil pressure is below a specified limit. The EEC does not try to restart.</details>
 
 ### In-Flight Start
 
@@ -174,12 +190,13 @@ Load shed always occurs during engine start.
 - **X-START**: airspeed too low for windmilling → starter assist required
 - Autostart attempts continuously until pilot aborts (FUEL CONTROL → CUTOFF)
 - EGT may fluctuate significantly during windmilling start — normal
+- In-flight start sequence may take up to **2½ minutes** before engine reaches idle
 
 ### Engine Ignition
 
-- 2 igniters per engine · EEC selects igniter for successive ground starts automatically
-- **Both** igniters always used for in-flight starts
-- Power source: DC (normal) · Standby (backup)
+- 2 igniters per engine · Power source: DC (normal) · Standby (backup)
+- Ground normal start: 1 igniter · EEC alternates between igniters for successive starts
+- Ground restart or in-flight start: both igniters used
 
 ### Auto-Relight
 
