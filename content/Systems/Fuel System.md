@@ -63,6 +63,8 @@ Each engine can draw fuel from its corresponding main tank through a suction fee
 
 ## Fuel Jettison
 
+Pumps used: **L + R main tank boost pumps** and **center tank override/jettison pumps**.
+
 - **ARM switch → ARMED** — prepares the system; auto-sets TO REMAIN = MLW fuel quantity
 - **TO REMAIN selector** — pull and rotate to manually adjust the quantity to remain
 - **L / R NOZZLE → ON** — jettison starts; isolation valves open, fuel flows overboard

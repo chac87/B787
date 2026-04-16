@@ -59,10 +59,10 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 
 | Component | Quantity |
 |:---|:---:|
-| Outboard flaps | 2 |
-| Inboard flaps | 2 |
-| Krueger flap | 1 |
-| Slats | 6 |
+| Trailing Edge outboard flaps | 2 per wing |
+| Trailing Edge inboard flaps | 2 per wing |
+| Krueger flap | 1 per wing |
+| Leading Edge slats | 6 per wing |
 
 - If slats hydraulic control fails: flaps remain hydraulically driven, slats are powered electrically
 

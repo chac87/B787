@@ -1,15 +1,15 @@
 # Fire Protection System
 
-## Übersicht
+## Overview
 
-| Bereich | Detection | Extinguishing |
+| Area | Detection | Extinguishing |
 |:---|:---:|:---:|
-| Engine | Fire + Overheat | 2 Flaschen (beide auf jedes Triebwerk) |
-| APU | Fire | 1 Flasche |
-| Cargo FWD / AFT | Smoke | 7 Flaschen (HRD + LRD) |
+| Engine | Fire + Overheat | 2 bottles (both into either engine) |
+| APU | Fire | 1 bottle |
+| Cargo FWD / AFT | Smoke | 7 bottles (HRD + LRD) |
 | Main Wheel Well | Fire + Overheat | — |
 | Nose Wheel Well | — | — |
-| Lavatory | Smoke | 1 Flasche (auto, keine Cockpit-Anzeige) |
+| Lavatory | Smoke | 1 bottle (auto, no cockpit indication) |
 | Overhead Crew Rest | Fire | — |
 | Overhead FA Rest | Fire | — |
 
@@ -17,24 +17,24 @@
 
 ## Engine Fire Protection
 
-**Detektion:** Mehrere Dual-Channel-Detektoren pro Nacelle. Normalerweise muss **1 Element pro Kanal** ansprechen. Bei Ausfall eines Kanals → automatisch Single-Channel-Betrieb.
+**Detection:** Multiple dual-channel detectors per nacelle. Normally **1 element per channel** must trigger. Upon failure of one channel → automatic single-channel operation.
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Meaning |
 |:---|:---:|:---|
-| <span class="c-red">ENGINE FIRE L / R</span> | <span class="c-red">Warning</span> | Feuer erkannt |
-| <span class="c-amber">ENGINE OVERHEAT L / R</span> | <span class="c-amber">Caution</span> | Überhitzung erkannt |
-| <span class="c-amber">DET FIRE ENG L / R</span> | <span class="c-amber">Advisory</span> | Gesamtes Detektionssystem ausgefallen |
-| <span class="c-amber">BOTTLE (1/2) DISCH ENG</span> | <span class="c-amber">Advisory</span> | Flasche entleert oder Druck zu niedrig |
+| <span class="c-red">ENGINE FIRE L / R</span> | <span class="c-red">Warning</span> | Fire detected |
+| <span class="c-amber">ENGINE OVERHEAT L / R</span> | <span class="c-amber">Caution</span> | Overheat detected |
+| <span class="c-amber">DET FIRE ENG L / R</span> | <span class="c-amber">Advisory</span> | Entire detection system failed |
+| <span class="c-amber">BOTTLE (1/2) DISCH ENG</span> | <span class="c-amber">Advisory</span> | Bottle discharged or pressure too low |
 
-**Extinguishing:** 2 Flaschen — beide können in jedes Triebwerk entleert werden.
+**Extinguishing:** 2 bottles — both can be discharged into either engine.
 
 <div class="checklist">
 
 <div class="cl-item"><strong>Engine FIRE switch</strong><span class="cl-dots"></span><strong>PULL</strong></div>
-<div class="cl-sub">Trennt Treibstoff, Hydraulik, Electrics und Bleed vom Triebwerk</div>
+<div class="cl-sub">Isolates fuel, hydraulics, electrics, and bleed from the engine</div>
 
-<div class="cl-item"><strong>Engine FIRE switch</strong><span class="cl-dots"></span><strong>ROTATE (Flasche 1)</strong></div>
-<div class="cl-sub">Dreht man in die andere Richtung → Flasche 2 in dasselbe Triebwerk</div>
+<div class="cl-item"><strong>Engine FIRE switch</strong><span class="cl-dots"></span><strong>ROTATE (Bottle 1)</strong></div>
+<div class="cl-sub">Rotate in the opposite direction → Bottle 2 into the same engine</div>
 
 </div>
 
@@ -42,12 +42,12 @@
 
 ## APU Fire Protection
 
-**Detektion:** Dual-Channel. Bei Feuer am Boden: automatisches APU-Shutdown + automatische Flaschenentleerung.
+**Detection:** Dual-channel. On the ground: automatic APU shutdown + automatic bottle discharge.
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Meaning |
 |:---|:---:|:---|
-| <span class="c-red">APU FIRE</span> | <span class="c-red">Warning</span> | Feuer erkannt |
-| <span class="c-amber">DET FIRE APU</span> | <span class="c-amber">Advisory</span> | Detektionssystem ausgefallen |
+| <span class="c-red">APU FIRE</span> | <span class="c-red">Warning</span> | Fire detected |
+| <span class="c-amber">DET FIRE APU</span> | <span class="c-amber">Advisory</span> | Detection system failed |
 
 ---
 
@@ -55,35 +55,35 @@
 
 **Class C** — Smoke Detection + Built-in Extinguishing + Ventilation Control.
 
-**Detektoren:** Normalerweise müssen **2 Detektoren gleichzeitig** ansprechen — bei Ausfall eines Detektors reicht einer.
+**Detectors:** Normally **2 detectors must trigger simultaneously** — upon failure of one detector, one is sufficient.
 
-| Bereich | Anzahl Detektoren |
+| Area | Number of Detectors |
 |:---|:---:|
 | FWD Cargo | 18 |
 | AFT Cargo | 9 |
-| Bulk Cargo (Teil AFT) | 2 |
+| Bulk Cargo (part of AFT) | 2 |
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Meaning |
 |:---|:---:|:---|
-| <span class="c-red">FIRE CARGO FWD / AFT</span> | <span class="c-red">Warning</span> | Feuer erkannt |
-| <span class="c-amber">DET FIRE CARGO FWD / AFT</span> | <span class="c-amber">Advisory</span> | Detektionssystem ausgefallen |
-| <span class="c-amber">BOTTLE DISCH CARGO</span> | <span class="c-amber">Advisory</span> | Erste 2 Flaschen beginnen zu entleeren |
+| <span class="c-red">FIRE CARGO FWD / AFT</span> | <span class="c-red">Warning</span> | Fire detected |
+| <span class="c-amber">DET FIRE CARGO FWD / AFT</span> | <span class="c-amber">Advisory</span> | Detection system failed |
+| <span class="c-amber">BOTTLE DISCH CARGO</span> | <span class="c-amber">Advisory</span> | First 2 bottles begin to discharge |
 
-**Extinguishing — 7 Flaschen gesamt (Halon):**
+**Extinguishing — 7 bottles total (Halon):**
 
 | | HRD | LRD |
 |:---|:---:|:---:|
-| Alle 787 | 2 | – |
+| All 787 | 2 | – |
 | 180 min ETOPS | – | 3 |
 | 240 min ETOPS | – | 4 |
 | 330 min ETOPS | – | 5 |
 
-**Ablauf im Flug (automatisch bei Feueralarm):**
-1. **Sofort** — 2 HRD-Flaschen werden ausgelöst
-2. **+ 15 min** — LRD-Flaschen entleeren sich langsam (bis zur Landung)
-3. **Landung < 15 min nach Alarm** — 1 LRD bei Aufsetzen
+**In-flight sequence (automatic upon fire alarm):**
+1. **Immediately** — 2 HRD bottles are discharged
+2. **+ 15 min** — LRD bottles discharge slowly (until landing)
+3. **Landing < 15 min after alarm** — 1 LRD at touchdown
 
-**Am Boden (manuell via CARGO FIRE DISCHARGE):** 3 Flaschen gleichzeitig, keine Zeitverzögerung.
+**On the ground (manual via CARGO FIRE DISCHARGE):** 3 bottles simultaneously, no time delay.
 
 ---
 
@@ -93,7 +93,7 @@
 
 <div class="cl-item"><strong>Lower Recirculation Fans (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 <div class="cl-item"><strong>Packs</strong><span class="cl-dots"></span><strong>MINIMUM AIRFLOW</strong></div>
-<div class="cl-sub">Nur Druckhaltung</div>
+<div class="cl-sub">Pressurization only</div>
 <div class="cl-item"><strong>Fwd + Aft Outflow Valves</strong><span class="cl-dots"></span><strong>50/50 SPLIT</strong></div>
 <div class="cl-item"><strong>Equipment Cooling (affected side)</strong><span class="cl-dots"></span><strong>OVERRIDE</strong></div>
 <div class="cl-item"><strong>Zonal Dryer Fans</strong><span class="cl-dots"></span><strong>OFF</strong></div>
@@ -117,23 +117,23 @@
 
 ## Main Wheel Well Fire Protection
 
-- Fire + Overheat Detection vorhanden, **kein Löschsystem**
-- Nose Wheel Well: **weder Detection noch Extinguishing**
-- Bei Feuer: Gear Extension
+- Fire + Overheat detection present, **no extinguishing system**
+- Nose Wheel Well: **neither detection nor extinguishing**
+- In case of fire: Gear Extension
 
 ---
 
 ## Lavatory Fire Protection
 
-**Detektion:** 1 Smoke Detector pro Lavatory.
+**Detection:** 1 smoke detector per lavatory.
 
-Bei Raucherkennung:
-- Akustischer Alarm in Lavatory + Kabine
-- Lavatory Call Light blinkt
-- Master Call Light am zuständigen FA-Station leuchtet
+Upon smoke detection:
+- Audible alarm in lavatory + cabin
+- Lavatory Call Light flashes
+- Master Call Light at the responsible FA station illuminates
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Meaning |
 |:---|:---:|:---|
-| <span class="c-amber">SMOKE LAVATORY</span> | <span class="c-amber">Advisory</span> | Rauch in Lavatory erkannt |
+| <span class="c-amber">SMOKE LAVATORY</span> | <span class="c-amber">Advisory</span> | Smoke detected in lavatory |
 
-**Extinguishing:** 1 Flasche pro Lavatory — entleert automatisch in den Waste Container. **Keine Cockpit-Anzeige.**
+**Extinguishing:** 1 bottle per lavatory — discharges automatically into the waste container. **No cockpit indication.**
