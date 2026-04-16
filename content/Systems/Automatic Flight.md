@@ -36,41 +36,6 @@ Most modes are deselected by selecting another mode, or by disengaging the autop
 - **G/S and G/P** cannot be deselected by another mode — only by AP disengage + both FDs off, selecting go-around, or (above 1,500 ft RA) reselecting APP
 - **VNAV · LNAV · LOC · FAC · G/S · G/P** can be disarmed by pushing their switch a second time — except LNAV when automatically armed on go-around
 
-## AFDS Status Annunciation (ASA)
-
-Displayed just above the attitude indicator on the PFD and HUD.
-
-<div class="eicas-levels">
-
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">A/P</div>
-  <div class="eicas-card-body">One or more autopilots engaged</div>
-</div>
-
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">FLT DIR</div>
-  <div class="eicas-card-body">Flight director ON · autopilot not engaged</div>
-</div>
-
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">LAND 3</div>
-  <div class="eicas-card-body">Fail operational — a single fault cannot prevent automatic landing</div>
-</div>
-
-<div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">LAND 2</div>
-  <div class="eicas-card-body">Fail passive — a single fault cannot cause a significant flight path deviation</div>
-</div>
-
-<div class="eicas-card eicas-card--red">
-  <div class="eicas-card-title">NO AUTOLAND</div>
-  <div class="eicas-card-body">AFDS unable to make an automatic landing · does not necessarily indicate a system failure — may reflect insufficient lateral or vertical signal integrity</div>
-</div>
-
-</div>
-
-Changes in autoland status below 200 ft AGL are inhibited during ILS or GLS autoland when LAND 2 or LAND 3 is displayed. On an IAN approach with G/P engaged, NO AUTOLAND shows at 100 ft AGL if the autopilot is still engaged.
-
 ## Flight Mode Annunciations (FMA)
 
 FMAs display just above the ASA on the PFD and HUD, in three columns from left to right:
@@ -111,6 +76,41 @@ FMAs display just above the ASA on the PFD and HUD, in three columns from left t
 
 </div>
 
+## AFDS Status Annunciation (ASA)
+
+Displayed just above the attitude indicator on the PFD and HUD.
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">A/P</div>
+  <div class="eicas-card-body">One or more autopilots engaged</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">FLT DIR</div>
+  <div class="eicas-card-body">Flight director ON · autopilot not engaged</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">LAND 3</div>
+  <div class="eicas-card-body">Fail operational — a single fault cannot prevent automatic landing</div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">LAND 2</div>
+  <div class="eicas-card-body">Fail passive — a single fault cannot cause a significant flight path deviation</div>
+</div>
+
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">NO AUTOLAND</div>
+  <div class="eicas-card-body">AFDS unable to make an automatic landing · does not necessarily indicate a system failure — may reflect insufficient lateral or vertical signal integrity</div>
+</div>
+
+</div>
+
+Changes in autoland status below 200 ft AGL are inhibited during ILS or GLS autoland when LAND 2 or LAND 3 is displayed. On an IAN approach with G/P engaged, NO AUTOLAND shows at 100 ft AGL if the autopilot is still engaged.
+
 ## Autopilot
 
 ### Engagement & Disengagement
@@ -142,38 +142,6 @@ When the degradation clears, annunciations clear, the autopilot resumes the mode
 ### Flight Director Mode Degradation
 
 When a specific flight director mode degrades, the affected pitch or roll bar disappears and the HUD cue is removed. No auto-disconnect occurs. When the degradation clears, the bars return immediately.
-
-## ILS Signal Interference
-
-The AFDS monitors for ILS signal interference from service vehicles or other aircraft. When interference is detected, the autopilot disregards the ILS signal and holds attitude via inertial data. Most interferences are brief — the only indication is erratic raw ILS data movement. If the condition persists, full mode degradation annunciations apply.
-
-**Glideslope interference:** The AFDS limits descent to **3.25°** while in the attitude stabilizing mode, using inertial data for up to **15 seconds**. This prevents high sink rates during the stabilizing phase.
-
-**Localizer interference:** The AFDS uses inertial data for up to **20 seconds** to allow the signal error to resolve.
-
-### Approach Mode Degradation
-
-Persistent lateral or vertical signal degradation is detected on ILS/GLS approaches (localizer or glideslope) or IAN approaches (error in computed FAC or GP).
-
-**Indications when autopilot is engaged:**
-- Amber strikethrough on the affected roll or pitch FMA
-- EICAS advisory AUTOPILOT
-- FD pitch or roll bar biases out of view
-- HUD guidance cue biases out of view
-
-**NO AUTOLAND** additionally shows:
-- ILS/GLS above 1,500 ft, or any IAN approach → NO AUTOLAND on FMA
-- ILS/GLS between 1,500 and 200 ft → NO AUTOLAND on FMA **and** on the ASA (PFD + HUD)
-
-**Auto-disconnect** occurs when both conditions are met:
-- Airplane is above 500 ft AGL
-- Crew does not push TO/GA or disconnect within 10 seconds of AUTOPILOT + NO AUTOLAND showing
-
-Low speed and stall protections remain active; the autopilot does not disconnect for underspeed alone. Alerts on auto-disconnect are unchanged: AUTOPILOT DISC · master warning light · wailer.
-
-NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/GA is pushed.
-
-> [!info] NO AUTOLAND does not necessarily indicate an airplane system failure. It can appear when lateral or vertical signal integrity is insufficient for autoland positioning.
 
 ## Roll Modes
 
@@ -246,67 +214,6 @@ NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/G
 <div class="cl-sub">Arms below 1,500 ft RA. Activates between 60 and 40 ft RA. Deactivates at touchdown and smoothly lowers the nosewheel to the runway</div>
 
 </div>
-
-## TO/GA
-
-<img src="/Bilder/takeoff%20fma.webp" style="max-width:320px;border-radius:6px;margin-bottom:0.75rem">
-
-> [!proc] On the Ground
-> TO/GA annunciates when either FD switch is positioned ON (both FDs previously OFF), or when a TO/GA switch is pushed above 80 KIAS. The PFD pitch bar and HUD cue show 8° nose-up. Pitch commands become active only after liftoff.
->
-> **Push below 50 kts** (flaps out of up): A/T activates in **THR REF** at the selected thrust limit. If not pushed below 50 kts, the A/T is inhibited until reaching 400 ft.
->
-> **Push above 80 kts**: disarms LNAV and VNAV.
-
-> [!proc] In Flight — Takeoff Thrust Active
-> Push TO/GA while the takeoff thrust limit is still displayed (e.g. during initial climb):
-> - Removes climb derates and assumed temperature thrust reduction
-> - A/T activates in **THR REF**
-> - Disarms AFDS modes
-> - **50–400 ft RA**: selects TO/GA **roll mode only**
-> - **Above 400 ft RA**: selects TO/GA **roll and pitch modes**
-
-> [!proc] Speed Guidance After Liftoff — All Engines
-> Target speed = higher of **v<sub>2</sub> + 15 kts** or **v<sub>R</sub> + 15 kts** (airspeed at rotation with pitch > 2°).
-> If airspeed remains above target for more than 5 seconds → target resets to the lesser of actual speed or v<sub>2</sub> + 25 kts.
-> If the MCP IAS/MACH window is set above the current target → FD follows the new MCP value.
->
-> *Note: The AFDS uses the IAS/MACH window speed as V2.*
-
-**Speed Guidance After Liftoff — Engine Failure:**
-
-| Speed | Commanded |
-|---|---|
-| Below v<sub>2</sub> | v<sub>2</sub> |
-| v<sub>2</sub> — v<sub>2</sub> + 15 | Actual speed |
-| Above v<sub>2</sub> + 15 | v<sub>2</sub> + 15 |
-
-> [!proc] Go-Around
-> Push TO/GA with flaps out of up or glideslope/glidepath captured:
-> - A/T activates in **THR** with GA thrust limit displayed
-> - Disarms AFDS modes; selects TO/GA roll and pitch modes
-> - Arms or activates LNAV if an LNAV path is available
->
-> Commanded speed = higher of MCP IAS/MACH window or current airspeed, to a maximum of IAS/MACH window + 25 kts.
->
-> LNAV activates at 50 ft RA (FD only) or 200 ft RA (AP engaged).
-
-**Second Push during Go-Around:**
-
-| Condition | Result |
-|---|---|
-| LNAV armed · TO/GA roll+pitch active | A/T → **THR REF** (GA ref thrust) |
-| LNAV active · TO/GA pitch active | A/T → **THR REF** · roll remains LNAV |
-| HDG SEL/HOLD active · TO/GA pitch active | A/T → **THR REF** · TO/GA roll mode selected |
-
-> [!info] Windshear Recovery
-> AFDS commands pitch-up to 15° or just below the PLI, whichever is lower. Once climb rate improves, the mode transitions from pitch guidance to airspeed guidance.
-
-> [!info] Termination
-> TO/GA ends when another vertical mode is selected (VNAV, FLCH, V/S, FPA) or when the MCP target altitude is captured — AFDS transitions to ALT.
-
-> [!info] After-Touchdown Inhibit
-> TO/GA switches are inhibited after touchdown or when below 2 ft RA for 3 or more seconds. Re-enabled above 5 ft RA if the landing is discontinued.
 
 ## Autothrottle
 
@@ -393,6 +300,99 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 > - While lower RA < 1,500 ft: re-engagement only possible in **TO/GA** mode (push TO/GA switch)
 > - Once lower RA > 1,500 ft: normal re-engagement is available
 > - If RADIO ALTIMETER L+R advisory shows: accomplish the RADIO ALTIMETER L+R non-normal checklist
+
+## TO/GA
+
+<img src="/Bilder/takeoff%20fma.webp" style="max-width:320px;border-radius:6px;margin-bottom:0.75rem">
+
+> [!proc] On the Ground
+> TO/GA annunciates when either FD switch is positioned ON (both FDs previously OFF), or when a TO/GA switch is pushed above 80 KIAS. The PFD pitch bar and HUD cue show 8° nose-up. Pitch commands become active only after liftoff.
+>
+> **Push below 50 kts** (flaps out of up): A/T activates in **THR REF** at the selected thrust limit. If not pushed below 50 kts, the A/T is inhibited until reaching 400 ft.
+>
+> **Push above 80 kts**: disarms LNAV and VNAV.
+
+> [!proc] In Flight — Takeoff Thrust Active
+> Push TO/GA while the takeoff thrust limit is still displayed (e.g. during initial climb):
+> - Removes climb derates and assumed temperature thrust reduction
+> - A/T activates in **THR REF**
+> - Disarms AFDS modes
+> - **50–400 ft RA**: selects TO/GA **roll mode only**
+> - **Above 400 ft RA**: selects TO/GA **roll and pitch modes**
+
+> [!proc] Speed Guidance After Liftoff — All Engines
+> Target speed = higher of **v<sub>2</sub> + 15 kts** or **v<sub>R</sub> + 15 kts** (airspeed at rotation with pitch > 2°).
+> If airspeed remains above target for more than 5 seconds → target resets to the lesser of actual speed or v<sub>2</sub> + 25 kts.
+> If the MCP IAS/MACH window is set above the current target → FD follows the new MCP value.
+>
+> *Note: The AFDS uses the IAS/MACH window speed as V2.*
+
+**Speed Guidance After Liftoff — Engine Failure:**
+
+| Speed | Commanded |
+|---|---|
+| Below v<sub>2</sub> | v<sub>2</sub> |
+| v<sub>2</sub> — v<sub>2</sub> + 15 | Actual speed |
+| Above v<sub>2</sub> + 15 | v<sub>2</sub> + 15 |
+
+> [!proc] Go-Around
+> Push TO/GA with flaps out of up or glideslope/glidepath captured:
+> - A/T activates in **THR** with GA thrust limit displayed
+> - Disarms AFDS modes; selects TO/GA roll and pitch modes
+> - Arms or activates LNAV if an LNAV path is available
+>
+> Commanded speed = higher of MCP IAS/MACH window or current airspeed, to a maximum of IAS/MACH window + 25 kts.
+>
+> LNAV activates at 50 ft RA (FD only) or 200 ft RA (AP engaged).
+
+**Second Push during Go-Around:**
+
+| Condition | Result |
+|---|---|
+| LNAV armed · TO/GA roll+pitch active | A/T → **THR REF** (GA ref thrust) |
+| LNAV active · TO/GA pitch active | A/T → **THR REF** · roll remains LNAV |
+| HDG SEL/HOLD active · TO/GA pitch active | A/T → **THR REF** · TO/GA roll mode selected |
+
+> [!info] Windshear Recovery
+> AFDS commands pitch-up to 15° or just below the PLI, whichever is lower. Once climb rate improves, the mode transitions from pitch guidance to airspeed guidance.
+
+> [!info] Termination
+> TO/GA ends when another vertical mode is selected (VNAV, FLCH, V/S, FPA) or when the MCP target altitude is captured — AFDS transitions to ALT.
+
+> [!info] After-Touchdown Inhibit
+> TO/GA switches are inhibited after touchdown or when below 2 ft RA for 3 or more seconds. Re-enabled above 5 ft RA if the landing is discontinued.
+
+## ILS Signal Interference
+
+The AFDS monitors for ILS signal interference from service vehicles or other aircraft. When interference is detected, the autopilot disregards the ILS signal and holds attitude via inertial data. Most interferences are brief — the only indication is erratic raw ILS data movement. If the condition persists, full mode degradation annunciations apply.
+
+**Glideslope interference:** The AFDS limits descent to **3.25°** while in the attitude stabilizing mode, using inertial data for up to **15 seconds**. This prevents high sink rates during the stabilizing phase.
+
+**Localizer interference:** The AFDS uses inertial data for up to **20 seconds** to allow the signal error to resolve.
+
+### Approach Mode Degradation
+
+Persistent lateral or vertical signal degradation is detected on ILS/GLS approaches (localizer or glideslope) or IAN approaches (error in computed FAC or GP).
+
+**Indications when autopilot is engaged:**
+- Amber strikethrough on the affected roll or pitch FMA
+- EICAS advisory AUTOPILOT
+- FD pitch or roll bar biases out of view
+- HUD guidance cue biases out of view
+
+**NO AUTOLAND** additionally shows:
+- ILS/GLS above 1,500 ft, or any IAN approach → NO AUTOLAND on FMA
+- ILS/GLS between 1,500 and 200 ft → NO AUTOLAND on FMA **and** on the ASA (PFD + HUD)
+
+**Auto-disconnect** occurs when both conditions are met:
+- Airplane is above 500 ft AGL
+- Crew does not push TO/GA or disconnect within 10 seconds of AUTOPILOT + NO AUTOLAND showing
+
+Low speed and stall protections remain active; the autopilot does not disconnect for underspeed alone. Alerts on auto-disconnect are unchanged: AUTOPILOT DISC · master warning light · wailer.
+
+NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/GA is pushed.
+
+> [!info] NO AUTOLAND does not necessarily indicate an airplane system failure. It can appear when lateral or vertical signal integrity is insufficient for autoland positioning.
 
 ---
 
