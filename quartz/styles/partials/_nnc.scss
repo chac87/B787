@@ -1,0 +1,263 @@
+// ── NNC (Non-Normal Checklist) Procedure Format ──────────────────────────────
+// Reusable for all NNC checklists (Overweight Landing, Ditching, etc.)
+
+// Back-navigation for NNC leaf pages (not in linear book.md flow)
+.nnc-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35em;
+  margin-bottom: 1.4em;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--secondary);
+  opacity: 0.65;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: var(--secondary);
+  }
+
+  &::before {
+    content: "←";
+    font-size: 1em;
+  }
+}
+
+.nnc-condition {
+  background: var(--lightgray);
+  padding: 6px 12px;
+  border-radius: 6px;
+  margin: 0 0 1.2em;
+  font-style: italic;
+  font-size: 0.88em;
+}
+
+.nnc-step {
+  font-weight: 700;
+  font-size: 0.95em;
+  margin: 1.2em 0 0.3em;
+}
+
+.nnc-decision {
+  position: relative;
+  padding-left: 1.5em;
+  margin: 0.25em 0;
+  font-size: 0.9em;
+
+  &::before {
+    content: "◆";
+    position: absolute;
+    left: 0;
+    font-size: 0.6em;
+    top: 0.4em;
+  }
+}
+
+// Container for checklist items nested under a decision branch
+.nnc-cl {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  margin: 0.3em 0 0 1.5em;
+}
+
+.nnc-note {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #2d7d32;
+  margin: 0.2em 0 0.2em 1.5em;
+  line-height: 1.45;
+}
+
+body[saved-theme="dark"] .nnc-note {
+  color: #a5d6a7;
+}
+
+.nnc-goto {
+  font-size: 0.88em;
+  font-weight: 600;
+  color: var(--secondary);
+  margin: 0.3em 0 0.8em 1.5em;
+}
+
+.nnc-complete {
+  font-weight: 700;
+  font-size: 0.95em;
+  margin-top: 1.4em;
+  padding-top: 0.6em;
+  text-align: center;
+}
+
+// Numbered checklist item (step number + dot-leader + action)
+.nnc-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 0.9em;
+  margin: 0.2em 0;
+
+  .nnc-num {
+    flex-shrink: 0;
+    min-width: 1.4em;
+    font-weight: 700;
+  }
+
+  strong:last-child {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cl-dots {
+    flex: 1;
+    border-bottom: 1.5px dotted var(--gray);
+    opacity: 0.45;
+    margin-bottom: 0.22em;
+    min-width: 0.5em;
+    flex-shrink: 2;
+  }
+}
+
+// Numbered plain-text step (no dot-leader, no action value)
+.nnc-text {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 0.9em;
+  margin: 0.2em 0;
+
+  .nnc-num {
+    flex-shrink: 0;
+    min-width: 1.4em;
+    font-weight: 700;
+  }
+}
+
+// Intermediate confirm value (e.g. "Confirm … CUTOFF")
+.nnc-confirm {
+  font-size: 0.88em;
+  color: var(--gray);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-right: 0.4em;
+
+  &::after {
+    content: " …";
+  }
+}
+
+// When a confirm is present, fix action width so Confirm always aligns
+.nnc-item:has(.nnc-confirm) strong:last-child {
+  min-width: 4.5em;
+  text-align: right;
+}
+
+// Deferred items section divider
+.nnc-deferred-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  margin: 1.6em 0 1em;
+  font-size: 0.78em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--gray);
+
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: var(--gray);
+    opacity: 0.4;
+  }
+}
+
+// Deferred sub-checklist title
+.nnc-deferred-title {
+  font-weight: 700;
+  font-size: 0.95em;
+  margin: 1em 0 0.4em;
+}
+
+// Role badge (C = Captain, F/O = First Officer)
+.nnc-role {
+  font-size: 0.75em;
+  font-weight: 700;
+  color: var(--gray);
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 0.5em;
+  opacity: 0.7;
+}
+
+// Dashed separator line (memory items above / reference items below)
+.nnc-separator {
+  border: none;
+  border-top: 2.5px dashed var(--darkgray);
+  margin: 0.8em 0;
+  opacity: 0.55;
+}
+
+
+// Indented sub-step under a conditional branch (plain text)
+.nnc-sub {
+  margin-left: 2.2em;
+  font-size: 0.9em;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  line-height: 1.4;
+}
+
+// Indented dot-leader item under a conditional branch
+.nnc-sub-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+  font-size: 0.9em;
+  margin: 0.2em 0 0.2em 2.2em;
+
+  strong:last-child {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cl-dots {
+    flex: 1;
+    border-bottom: 1.5px dotted var(--gray);
+    opacity: 0.45;
+    margin-bottom: 0.22em;
+    min-width: 0.5em;
+    flex-shrink: 2;
+  }
+}
+
+// Boxed info panel (e.g. "To descend:")
+.nnc-box {
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  padding: 6px 12px;
+  margin: 0.4em 0 0.4em 2.2em;
+  font-size: 0.88em;
+
+  ul {
+    margin: 0.3em 0 0 1.2em;
+    padding: 0;
+  }
+
+  li {
+    margin: 0.15em 0;
+  }
+}
+
+// Red italic caution (reference section)
+.nnc-caution {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #e74c3c;
+  margin: 0.4em 0 0.4em 0;
+  line-height: 1.45;
+}

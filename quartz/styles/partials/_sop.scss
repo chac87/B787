@@ -1,0 +1,269 @@
+/* =========================================
+   SOP ACTION BADGES
+   ========================================= */
+
+.sop-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 10px;
+  border-radius: 20px;
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid;
+  white-space: nowrap;
+  font-family: var(--headerFont);
+  line-height: 1.8;
+}
+
+.sop-badge.perform  { background: rgba(192,57,43,0.08);  color: #c0392b; border-color: rgba(192,57,43,0.28); }
+.sop-badge.check    { background: rgba(41,128,185,0.08); color: #2471a3; border-color: rgba(41,128,185,0.28); }
+.sop-badge.set      { background: rgba(125,60,152,0.08); color: #7d3c98; border-color: rgba(125,60,152,0.28); }
+.sop-badge.verify   { background: rgba(30,132,73,0.08);  color: #1e8449; border-color: rgba(30,132,73,0.28); }
+.sop-badge.asneeded { background: rgba(185,119,14,0.08); color: #b9770e; border-color: rgba(185,119,14,0.28); }
+
+/* Table text in dark mode — snippet uses prefers-color-scheme which misses Quartz's JS toggle */
+[saved-theme="dark"] .callout-content td,
+[saved-theme="dark"] .callout-content th,
+[saved-theme="dark"] article td,
+[saved-theme="dark"] article th,
+[saved-theme="dark"] main td,
+[saved-theme="dark"] main th { color: var(--dark) !important; }
+
+[saved-theme="dark"] .sop-badge.perform  { background: rgba(192,57,43,0.15);  color: #f1948a; border-color: rgba(192,57,43,0.35); }
+[saved-theme="dark"] .sop-badge.check    { background: rgba(41,128,185,0.15); color: #7fb3d3; border-color: rgba(41,128,185,0.35); }
+[saved-theme="dark"] .sop-badge.set      { background: rgba(125,60,152,0.15); color: #c39bd3; border-color: rgba(125,60,152,0.35); }
+[saved-theme="dark"] .sop-badge.verify   { background: rgba(30,132,73,0.15);  color: #82e0aa; border-color: rgba(30,132,73,0.35); }
+[saved-theme="dark"] .sop-badge.asneeded { background: rgba(185,119,14,0.15); color: #f0b429; border-color: rgba(185,119,14,0.35); }
+
+/* Textwert ohne Badge (z.B. "OFF 30 sec then ON") */
+.sop-value {
+  font-weight: 600;
+  font-size: 0.82rem;
+  color: var(--secondary);
+  font-family: var(--codeFont);
+}
+
+/* SOP-Tabellen: rechte Spalte rechtsbündig + kein Umbruch */
+article table td:last-child:has(.sop-badge),
+article table td:last-child:has(.sop-value) {
+  text-align: right;
+  white-space: nowrap;
+  width: 20%;
+}
+
+/* Linke Spalte bekommt den Rest */
+article table td:first-child:has(+ td .sop-badge),
+article table td:first-child:has(+ td .sop-value) {
+  width: 80%;
+}
+
+/* =========================================
+   SOP FLOW TIMELINE
+   ========================================= */
+
+.sop-flow {
+  margin: 1.5em 0;
+  border: 1px solid var(--lightgray);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.sop-phase-bar {
+  color: #fff;
+  font-size: 0.68em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.4em 1em;
+  margin: 0;
+}
+
+.sop-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+  padding: 0.55em 1em;
+  border-bottom: 1px solid var(--lightgray);
+  flex-wrap: wrap;
+}
+.sop-entry:last-child { border-bottom: none; }
+
+.sop-entry-name {
+  flex: 1;
+  font-weight: 600;
+  min-width: 160px;
+  padding-top: 0.1em;
+}
+
+.sop-entry-right {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  align-items: flex-end;
+}
+
+.sop-entry-tags {
+  display: flex;
+  gap: 0.4em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.sop-tag-items {
+  font-size: 1em;
+  font-weight: 600;
+  background: rgba(75,157,161,0.12);
+  color: #1C4C5C;
+  border: 1px solid rgba(75,157,161,0.45);
+  border-radius: 5px;
+  padding: 0.25em 0.7em;
+  white-space: nowrap;
+  display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.sop-tag-cl {
+  font-size: 1em;
+  font-weight: 600;
+  background: rgba(50,87,188,0.10);
+  color: #05164D;
+  border: 1px solid rgba(50,87,188,0.38);
+  border-radius: 5px;
+  padding: 0.25em 0.7em;
+  white-space: nowrap;
+  display: inline-block;
+  align-self: flex-start;
+  width: fit-content;
+}
+
+.sop-trigger {
+  font-size: 0.68em;
+  color: var(--gray);
+  font-style: italic;
+  text-align: right;
+}
+
+[saved-theme="dark"] .sop-tag-items {
+  background: rgba(75,157,161,0.18);
+  color: #a5d6d9;
+  border-color: rgba(75,157,161,0.4);
+}
+[saved-theme="dark"] .sop-tag-cl {
+  background: rgba(82,145,237,0.18);
+  color: #9ab8f0;
+  border-color: rgba(82,145,237,0.4);
+}
+
+/* =========================================
+   SOP CHECKLIST (Dot-Leader Format)
+   ========================================= */
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  margin: 1.2em 0;
+}
+
+.cl-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4em;
+
+  // Item name: can wrap on small screens
+  strong:first-child {
+    flex-shrink: 1;
+  }
+
+  // Action (last bold): never wraps
+  strong:last-child {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .cl-dots {
+    flex: 1;
+    border-bottom: 1.5px dotted var(--gray);
+    opacity: 0.45;
+    margin-bottom: 0.22em;
+    min-width: 0.5em;
+    flex-shrink: 2; // dots compress before item name
+  }
+}
+
+.cl-sub {
+  margin-left: 1.4em;
+  font-size: 0.875em;
+  opacity: 0.75;
+  line-height: 1.5;
+}
+
+// Panel section separator — horizontal rule between checklist panel sections
+.cl-sep {
+  border: none;
+  border-top: 4px solid var(--lightgray);
+  margin: 1.1em 0 0.8em 0;
+  opacity: 1;
+}
+[saved-theme="dark"] .cl-sep {
+  border-color: var(--darkgray);
+  opacity: 0.7;
+}
+
+// Adds one extra indent level — combine with cl-item or cl-sub
+.cl-indent {
+  padding-left: 1.4em;
+}
+
+// Aircraft variant section header bar
+.cl-variant {
+  background-color: #1C3A6E;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 0.6em 0 0.15em 1.4em;
+  display: inline-block;
+}
+
+// Aircraft variant section end bar
+.cl-variant-end {
+  background-color: var(--lightgray);
+  color: var(--gray);
+  font-size: 0.7rem;
+  font-style: italic;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin: 0.15em 0 0.6em 1.4em;
+  display: inline-block;
+}
+
+// Inline annotations (no callouts)
+.cl-note {
+  font-size: 0.85em;
+  font-style: italic;
+  opacity: 0.75;
+  margin-left: 1.4em;
+  line-height: 1.4;
+}
+
+.cl-warning {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #e74c3c;
+  margin-left: 1.4em;
+  line-height: 1.4;
+}
+
+.cl-caution {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #f39c12;
+  margin-left: 1.4em;
+  line-height: 1.4;
+}

@@ -123,6 +123,34 @@ function setupPage() {
     let currentCat:  string|null = null
     let currentLevel: string|null = null
 
+    // Build category sections once; subsequent calls are no-ops (guard: data-built).
+    const buildCatSections = () => {
+      if (!catContainer || catContainer.dataset.built === "1") return
+      const allItems = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-item"))
+      catOrder.forEach(catKey => {
+        const items = allItems.filter(i => i.dataset.cat === catKey)
+        if (!items.length) return
+        const section = document.createElement("div")
+        section.className = "nn-section"
+        section.dataset.catKey = catKey
+        const header = document.createElement("div")
+        header.className = "nn-section-header"
+        header.textContent = catNames[catKey]
+        section.appendChild(header)
+        items
+          .sort((a, b) =>
+            (a.querySelector("span")?.textContent ?? "").localeCompare(
+             b.querySelector("span")?.textContent ?? ""))
+          .forEach(item => {
+            const clone = item.cloneNode(true) as HTMLElement
+            clone.classList.remove("hidden")
+            section.appendChild(clone)
+          })
+        catContainer.appendChild(section)
+      })
+      catContainer.dataset.built = "1"
+    }
+
     const applyFilter = () => {
       const alphaSections = Array.from(
         document.querySelectorAll<HTMLElement>("#nn-list .nn-section[data-section]")
@@ -144,34 +172,15 @@ function setupPage() {
         catBar?.classList.add("visible")
         alphaSections.forEach(s => { s.style.display = "none" })
         if (catContainer) {
+          buildCatSections()
           catContainer.style.display = ""
-          catContainer.innerHTML = ""
-          const allItems = Array.from(document.querySelectorAll<HTMLElement>("#nn-list .nn-item"))
-          catOrder.forEach(catKey => {
-            if (currentCat && currentCat !== catKey) return
-            const items = allItems.filter(i => i.dataset.cat === catKey)
-            if (!items.length) return
-            const section = document.createElement("div")
-            section.className = "nn-section"
-            const header = document.createElement("div")
-            header.className = "nn-section-header"
-            header.textContent = catNames[catKey]
-            section.appendChild(header)
-            items.sort((a, b) =>
-              (a.querySelector("span")?.textContent ?? "").localeCompare(
-               b.querySelector("span")?.textContent ?? "")
-            )
-            items.forEach(item => {
-              const clone = item.cloneNode(true) as HTMLElement
-              clone.classList.remove("hidden")
-              section.appendChild(clone)
-            })
-            catContainer.appendChild(section)
+          catContainer.querySelectorAll<HTMLElement>(".nn-section[data-cat-key]").forEach(sec => {
+            sec.classList.toggle("hidden", !!(currentCat && sec.dataset.catKey !== currentCat))
           })
         }
       } else {
         catBar?.classList.remove("visible")
-        if (catContainer) { catContainer.style.display = "none"; catContainer.innerHTML = "" }
+        if (catContainer) { catContainer.style.display = "none" }
         alphaSections.forEach(section => {
           const items = Array.from(section.querySelectorAll<HTMLElement>(".nn-item"))
           let visible = 0

@@ -1,0 +1,140 @@
+
+/* ── EICAS Alert Level Cards ────────────────────────────────────────── */
+.eicas-levels {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin: 1em 0;
+}
+
+.eicas-card {
+  border-left: 4px solid var(--card-color, #888);
+  border-radius: 0 6px 6px 0;
+  background: color-mix(in srgb, var(--card-color, #888), transparent 93%);
+  padding: 0.55em 0.9em;
+
+  .eicas-card-title {
+    font-weight: 700;
+    font-size: 0.95em;
+    color: var(--card-color, #888);
+    margin-bottom: 0.2em;
+  }
+
+  .eicas-card-body {
+    font-size: 0.875em;
+    line-height: 1.5;
+  }
+
+  .eicas-card-badge {
+    display: inline-block;
+    font-size: 0.7em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    border: 1.5px solid var(--card-color, #888);
+    color: var(--card-color, #888);
+    border-radius: 4px;
+    padding: 1px 6px;
+    margin-left: 0.5em;
+    vertical-align: middle;
+    opacity: 0.8;
+  }
+}
+
+.eicas-card--red   { --card-color: #e74c3c; }
+.eicas-card--amber { --card-color: #f39c12; }
+.eicas-card--white { --card-color: #888888; }
+
+[saved-theme="dark"] .eicas-card {
+  background: color-mix(in srgb, var(--card-color, #888), transparent 88%);
+}
+
+/* ── Flap/Slat Modes Table ──────────────────────────────────────────── */
+.fctl-modes-table td:first-child img {
+  width: 55px;
+  margin-top: 6px;
+  border-radius: 4px;
+  display: block;
+  touch-action: none;
+}
+
+/* ── Flowchart ──────────────────────────────────────────────────────── */
+.flow {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  font-family: var(--bodyFont);
+  margin: 1.2em 0;
+}
+.flow-row {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
+  gap: 8px;
+}
+.flow-col {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 0 !important;
+}
+.flow-node {
+  padding: 5px 12px;
+  border: 1.5px solid var(--lightgray);
+  border-radius: 5px;
+  background: var(--light);
+  color: var(--dark) !important;
+  white-space: nowrap;
+  display: inline-block;
+}
+.flow-node.fn-start  { background: rgba(62,95,168,0.2)  !important; border-color: #3E5FA8 !important; font-weight: 600; }
+.flow-node.fn-q      { background: rgba(138,127,107,0.22) !important; border-color: #8A7F6B !important; }
+.flow-node.fn-action { background: rgba(62,95,168,0.1)  !important; border-color: #3E5FA8 !important; }
+.flow-node.fn-result { background: rgba(62,95,168,0.14) !important; border-color: #3E5FA8 !important; font-style: italic; }
+.flow-arrow { color: var(--gray) !important; user-select: none; white-space: nowrap; display: inline-block; }
+.flow-vline { width: 1.5px; min-height: 20px; background: var(--gray); margin-left: 16px; display: block; }
+.flow-label { font-size: 0.72rem; color: var(--gray) !important; font-weight: 700; margin-left: 18px; line-height: 1; display: block; }
+
+/* Mobile: scale down to fit iPhone width */
+@media (max-width: 700px) {
+  .flow {
+    zoom: 0.6;
+  }
+  .flow-row {
+    flex-direction: row !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+  }
+  .flow-arrow {
+    display: inline-block !important;
+  }
+}
+
+/* ── Mermaid: text color fix (dark mode) ────────────────────────────── */
+/* base.scss sets color: var(--darkgray) on <text> elements globally.    */
+/* In dark mode --darkgray is #E2E8F0 (light). Override for Mermaid SVG. */
+pre:has(> code.mermaid) svg text,
+#mermaid-container svg text {
+  fill: #1E2A44 !important;
+  color: #1E2A44 !important;
+}
+
+/* ── Page Transition Fade ───────────────────────────────────────────────── */
+@keyframes pageFadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+article.page-enter {
+  animation: pageFadeIn 0.18s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  article.page-enter {
+    animation: none;
+  }
+}

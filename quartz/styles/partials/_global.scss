@@ -1,0 +1,55 @@
+/* =========================================
+   FOLD / EXPAND ICON
+   ========================================= */
+
+.callout.is-collapsible > .callout-title,
+.callout.is-collapsible > .callout-title * {
+  cursor: pointer !important;
+}
+
+.callout .fold-callout-icon {
+  background-color: var(--accent) !important;
+  opacity: 1 !important;
+}
+
+.callout .fold-callout-icon:hover {
+  opacity: 0.7 !important;
+}
+
+/* =========================================
+   CLEAN LINKS (Keine Unterstreichung)
+   ========================================= */
+
+/* 1. Alle Links im Text "nackt" machen */
+a,
+a.internal,
+a.external {
+    text-decoration: none !important;      /* Keine Linie */
+    background: none !important;           /* Kein Hintergrund-Balken */
+    border: none !important;
+    transition: color 0.2s ease;           /* Weicher Farbwechsel */
+    touch-action: manipulation;            /* Verhindert iOS Doppelklick-Delay */
+}
+
+/* 2. Nur die Farbe steuert jetzt die Interaktion */
+/* Normalzustand */
+a {
+    color: var(--secondary) !important;
+}
+
+/* Hover-Zustand (nur auf Geräten mit echter Maus) */
+@media (hover: hover) {
+  a:hover,
+  a.internal:hover,
+  a.external:hover {
+      color: var(--tertiary) !important;
+      background: transparent !important;
+  }
+}
+
+/* Heading anchor icon: nur bei echter Maus anzeigen, auf Touch komplett verstecken */
+@media (hover: none) {
+  a[role="anchor"] {
+    display: none !important;
+  }
+}

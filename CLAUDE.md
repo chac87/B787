@@ -183,11 +183,13 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 3. No page present in an `index.md` (and as a real file) may be missing from `book.md`
 4. Deleted or renamed pages must be removed/updated in `book.md` immediately
 
-## CSS Architecture — Snippets vs. custom.scss
+## CSS Architecture — Partials
 
-`sync-snippets.sh` runs automatically on **both** `npx quartz build` and `npx quartz sync`. It merges all Obsidian CSS snippets directly into `custom.scss`, overwriting the `/* AUTO-SYNC START */` … `/* AUTO-SYNC END */` block.
+`custom.scss` is a thin orchestrator (`@use` statements only). All styles live in `quartz/styles/partials/`.
 
-**Rule: never edit callout/snippet styles in `custom.scss` directly — always edit the source snippet file.**
+`sync-snippets.sh` runs automatically on **both** `npx quartz build` and `npx quartz sync`. It overwrites `_snippets.scss` completely — no marker logic.
+
+**Rule: never edit callout/snippet styles in the partials directly — always edit the source snippet file.**
 
 | What to change | Edit this file |
 |---|---|
@@ -196,7 +198,14 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 | Table in callout | `~/.../787/.obsidian/snippets/tabelle-in-callout.css` |
 | Table 50/50 | `~/.../787/.obsidian/snippets/table-50-50.css` |
 | Global hacks | `~/.../787/.obsidian/snippets/global-hacks.css` |
-| Everything else (checklist, layout, SOP classes) | `quartz/styles/custom.scss` directly |
+| Floating Home Button, Hero Image | `quartz/styles/partials/_floating-home.scss` |
+| Link colors, Fold/Expand icon | `quartz/styles/partials/_global.scss` |
+| EICAS Cards, Flowcharts, Page Transition | `quartz/styles/partials/_eicas.scss` |
+| Image Row, Lightbox | `quartz/styles/partials/_images.scss` |
+| SOP Checklist, Badges, Flow Timeline | `quartz/styles/partials/_sop.scss` |
+| NNC Filter UI | `quartz/styles/partials/_nnc-filter.scss` |
+| NNC Procedure CSS classes | `quartz/styles/partials/_nnc.scss` |
+| Auto-generated (never edit manually) | `quartz/styles/partials/_snippets.scss` |
 
 Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/.obsidian/snippets/`
 

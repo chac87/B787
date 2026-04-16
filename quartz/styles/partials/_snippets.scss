@@ -1,0 +1,597 @@
+
+/* === snippet: callouts.css === */
+/* =========================================================
+   APPLE-STYLE CALLOUT SYSTEM
+   Modern UI • Clean • Premium
+   ========================================================= */
+
+/* ---------- Base ---------- */
+
+.callout {
+  /* Standard-Werte (Fallback) */
+  --accent: #007AFF;       /* Apple Blue */
+  --bg-opacity: 0.08;      /* Sehr zarter Hintergrund */
+  --border-opacity: 0.2;   /* Subtiler Rahmen */
+  
+  /* Apple System Font Stack für nativen Look */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Kein dicker linker Balken mehr, sondern feiner Rahmen rundherum */
+  border-left: none; 
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Fallback */
+  border-color: color-mix(in srgb, var(--accent), transparent 70%); /* Modernes CSS für Border-Farbe */
+  
+  /* Hintergrund basierend auf der Akzentfarbe mit Transparenz */
+  background-color: color-mix(in srgb, var(--accent), transparent 92%);
+
+  /* Layout & Spacing */
+  padding: 8px 14px;
+  margin: 0.75em 0;
+  
+  /* Die "Apple-Kurve" */
+  border-radius: 12px;
+  
+  /* Subtiler Schatten für Tiefe (Elevation) */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  
+  font-size: 0.95rem;
+  line-height: 1.6; /* Etwas mehr Zeilenabstand für Lesbarkeit */
+}
+
+/* Text spacing */
+.callout > p,
+.callout > div > p {
+  margin: 0.5em 0;
+}
+
+.callout > p:first-child,
+.callout > div > p:first-child {
+  margin-top: 0;
+}
+
+.callout > p:last-child,
+.callout > div > p:last-child {
+  margin-bottom: 0;
+}
+
+/* ---------- Title ---------- */
+
+.callout-title {
+  display: flex; /* Flexbox für saubere Ausrichtung */
+  align-items: center;
+
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: -0.01em;
+
+  margin-bottom: 0.3em;
+  color: var(--accent); /* Titel in der Akzentfarbe */
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Optional: Wenn du Icons im Titel hast, gibt ihnen etwas Abstand */
+.callout-title .callout-icon {
+  margin-right: 0.5em;
+  display: inline-flex;
+}
+
+/* =========================================================
+   CALLOUT TYPES (LHG Brand Colors)
+   ========================================================= */
+
+/* PROCEDURE – LHG Core Blue */
+.callout[data-callout="proc"] {
+  --accent: #3257BC;
+  --color: #3257BC;
+  --border: rgba(50, 87, 188, 0.27);
+  --bg: rgba(50, 87, 188, 0.08);
+  background-color: rgba(50, 87, 188, 0.08) !important;
+  border-color: rgba(50, 87, 188, 0.27) !important;
+}
+.callout[data-callout="proc"] .callout-title,
+.callout[data-callout="proc"] .callout-title-inner p {
+  color: #05164D !important;
+}
+
+/* LIMITATION – LHG Light Blue */
+.callout[data-callout="limit"] {
+  --accent: #5291ED;
+  --color: #5291ED;
+  --border: rgba(82, 145, 237, 0.27);
+  --bg: rgba(82, 145, 237, 0.08);
+  background-color: rgba(82, 145, 237, 0.08) !important;
+  border-color: rgba(82, 145, 237, 0.27) !important;
+}
+.callout[data-callout="limit"] .callout-title,
+.callout[data-callout="limit"] .callout-title-inner p {
+  color: #243F9B !important;
+}
+
+/* INFO – LHG Teal */
+.callout[data-callout="info"] {
+  --accent: #4B9DA1;
+  --color: #4B9DA1;
+  --border: rgba(75, 157, 161, 0.27);
+  --bg: rgba(75, 157, 161, 0.08);
+  background-color: rgba(75, 157, 161, 0.08) !important;
+  border-color: rgba(75, 157, 161, 0.27) !important;
+}
+.callout[data-callout="info"] .callout-title,
+.callout[data-callout="info"] .callout-title-inner p {
+  color: #1C4C5C !important;
+}
+
+/* WARNING – LHG Red */
+.callout[data-callout="warning"] {
+  --accent: #FF526B;
+  --color: #FF526B;
+  --border: rgba(255, 82, 107, 0.27);
+  --bg: rgba(255, 82, 107, 0.08);
+  background-color: rgba(255, 82, 107, 0.08) !important;
+  border-color: rgba(255, 82, 107, 0.27) !important;
+}
+.callout[data-callout="warning"] .callout-title,
+.callout[data-callout="warning"] .callout-title-inner p {
+  color: #93030C !important;
+}
+
+/* =========================================================
+   DARK MODE SUPPORT
+   Both OS dark mode + Quartz JS toggle ([saved-theme="dark"])
+   ========================================================= */
+@media (prefers-color-scheme: dark) {
+  .callout {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    background-color: rgba(var(--accent-rgb, 82, 145, 237), 0.15) !important;
+    border-color: rgba(var(--accent-rgb, 82, 145, 237), 0.4) !important;
+  }
+}
+body[saved-theme="dark"] .callout {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+body[saved-theme="dark"] .callout[data-callout="proc"] {
+  background-color: rgba(50, 87, 188, 0.18) !important;
+  border-color: rgba(50, 87, 188, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="limit"] {
+  background-color: rgba(82, 145, 237, 0.18) !important;
+  border-color: rgba(82, 145, 237, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="info"] {
+  background-color: rgba(75, 157, 161, 0.18) !important;
+  border-color: rgba(75, 157, 161, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="warning"] {
+  background-color: rgba(255, 82, 107, 0.18) !important;
+  border-color: rgba(255, 82, 107, 0.45) !important;
+}
+
+/* =========================================================
+   PRINT / PDF OPTIMIZATION
+   ========================================================= */
+
+@media print {
+  .callout {
+    page-break-inside: avoid;
+    border: 2px solid var(--accent); /* Stärkerer Rahmen für Druck */
+    background: transparent !important; /* Tinte sparen, sauberer Druck */
+    box-shadow: none;
+    border-radius: 8px;
+  }
+  
+  .callout-title {
+    color: #000; /* Schwarz drucken für Kontrast */
+    text-decoration: underline solid var(--accent) 2px; /* Farbige Unterstreichung statt Farbe */
+  }
+}
+
+/* =========================================
+   LIMIT CALLOUT TABS – SAFE MODE
+   Gilt NUR für Limit-Callouts
+   ========================================= */
+
+.callout[data-callout="limit"] p {
+  margin: 0.25em 0;
+}
+
+.callout[data-callout="limit"] p > strong:first-child {
+  display: inline-block;
+  min-width: 200px;
+  margin-right: 12px;
+
+  font-weight: 600;
+  white-space: normal;
+  vertical-align: baseline;
+}
+
+.callout[data-callout="limit"] {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Hide hr inside collapsed callouts (border bleeds through height:0) */
+.callout.is-collapsed .callout-content hr {
+  border: none;
+}
+
+/* === snippet: global-hacks.css === */
+/* =========================================
+   GLOBAL LAYOUT RULES (Web / PDF)
+   ========================================= */
+
+/* ---------- Root Fallbacks ---------- */
+:root {
+    --web-text-normal: #111111;
+    --web-text-faint: #777777;
+}
+
+/* ============================================================
+   UNIVERSAL ALIGNMENT HACK (Obsidian Editor + Reading + Web)
+   Ziel: H5 = Zentriert, H6 = Rechtsbündig
+   Look: Exakt wie normaler Text (kein Fett, normale Größe)
+   ============================================================ */
+
+/* 1. RESET FÜR ALLE MODI (Editor, Preview, Web) */
+/* Wir fassen alle Selektoren zusammen, um Wiederholung zu vermeiden */
+h5, h6,
+.markdown-rendered h5,
+.markdown-rendered h6,
+.cm-s-obsidian .cm-header-5,  /* Obsidian Editor H5 */
+.cm-s-obsidian .cm-header-6   /* Obsidian Editor H6 */
+{
+    font-weight: normal !important;   /* Killt das Fett */
+    font-size: 1em !important;        /* Exakt so groß wie Fließtext */
+    line-height: 1.5 !important;      /* Normaler Zeilenabstand */
+    font-family: inherit !important;  /* Keine Überschriften-Schriftart */
+    color: var(--text-normal) !important;
+    margin: 0 !important;             /* Kein riesiger Abstand */
+    padding: 0 !important;
+    border: none !important;          /* Entfernt Unterstriche mancher Themes */
+}
+
+/* 2. ZENTRIERUNG (H5 / #####) */
+h5, 
+.markdown-rendered h5,
+.cm-s-obsidian .cm-header-5 {
+    text-align: center !important;
+    display: block; /* Wichtig für Zentrierung im Web */
+    width: 100%;
+}
+
+/* 3. RECHTSBÜNDIG (H6 / ######) */
+h6, 
+.markdown-rendered h6,
+.cm-s-obsidian .cm-header-6 {
+    text-align: right !important;
+    display: block;
+    width: 100%;
+    opacity: 0.8; /* Optional: Leicht ausgegraut für Metadaten */
+}
+/* =========================================
+   NO GAPS HACK (Callout Content)
+   ========================================= */
+
+/* Absätze */
+.callout-content p {
+    margin-bottom: 0 !important;
+}
+
+/* Listen */
+.callout-content ul,
+.callout-content ol {
+    margin-bottom: 0 !important;
+}
+
+/* Überschriften in Callouts */
+.callout-content h5,
+.callout-content h6 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    line-height: 1.2 !important;
+}
+
+/* =========================================
+   SEPARATOR (hr als Abstand / Linie)
+   ========================================= */
+.callout-content hr {
+    border: none;
+    border-top: 1px solid var(--web-text-faint, #777777);
+    margin: 12px 0 !important;
+    height: 0;
+    opacity: 0.5;
+}
+
+/* =========================================
+   TEXT COLOR
+   ========================================= */
+.c-red   { color: #e74c3c }
+.c-amber { color: #f39c12 }
+.c-green { color: #2ecc71 }
+/* CM1 / PF — bold label in proc callouts → LHG Core Blue */
+.callout[data-callout="proc"] p > strong:first-child {
+  color: #3257BC;
+}
+
+/* Tight paragraph spacing in proc callouts (blank > lines create paragraphs) */
+.callout[data-callout="proc"] p {
+  margin: 0.15em 0;
+}
+
+/* Italic-only paragraphs in proc callouts → centered note */
+.callout[data-callout="proc"] p > em:only-child {
+  display: block;
+  text-align: center;
+}
+
+/* Remove auto-anchor links from h6 inside proc callouts */
+.callout[data-callout="proc"] h6 a {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* CM2 / PM — h6 lines in proc callouts → LHG Core Blue Dark, right-aligned */
+.callout[data-callout="proc"] h6 {
+  color: #05164D;
+  font-weight: 400;
+  font-size: 0.9em;
+  text-align: right;
+  margin: 0.1em 0;
+}
+.callout[data-callout="proc"] h6 strong {
+  color: #05164D;
+  font-weight: 700;
+}
+
+/* Compact dot-leader rows inside callouts */
+.callout[data-callout="limit"] .cl-item,
+.callout[data-callout="info"] .cl-item {
+  margin: 0.15em 0;
+}
+
+/* =========================================
+   LINK CURSOR
+   ========================================= */
+a:hover {
+    cursor: pointer;
+}
+
+/* =========================================
+   H2 SEPARATOR LINE (Quartz + Obsidian)
+   ========================================= */
+h2,
+.markdown-rendered h2,
+.markdown-preview-view h2 {
+    border-top: 1px solid var(--lightgray, var(--color-base-30, #cccccc));
+    padding-top: 0.5em;
+    padding-left: 0.6em;
+    margin-top: 1.5em;
+    box-shadow: inset 3px 0 0 var(--secondary);
+}
+
+/* === snippet: image-tweak.css === */
+/* =========================================
+   IMAGE STYLING PACK (Web / Pandoc / PDF)
+   ========================================= */
+
+/* ---------- Root Fallbacks ---------- */
+:root {
+    --web-image-border: #cccccc;
+    --web-image-shadow: rgba(0, 0, 0, 0.15);
+}
+
+/* Dark Mode Fallback (Browser / PDF-kompatibel) */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --web-image-border: #444444;
+        --web-image-shadow: rgba(0, 0, 0, 0.4);
+    }
+}
+
+/* =========================================
+   STANDARD IMAGE LOOK (Card Design)
+   ========================================= */
+img,
+article img,
+main img {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px var(--web-image-shadow, rgba(0,0,0,0.15));
+    border: 1px solid var(--web-image-border, #cccccc);
+
+    display: block;
+    margin: 16px auto;
+
+    max-width: 100%;
+    height: auto;
+
+    transition: transform 0.2s ease;
+}
+
+/* Hover-Effekt (nur relevant im Browser) */
+img:hover,
+article img:hover,
+main img:hover {
+    transform: scale(1.01);
+}
+
+/* =========================================
+   IMAGE MODIFIERS (via alt-Text)
+   ========================================= */
+
+/* INVERT */
+img[alt*="invert"] {
+    filter: invert(1) hue-rotate(180deg);
+    mix-blend-mode: screen;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* CLEAN */
+img[alt*="clean"] {
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+}
+
+/* RIGHT FLOAT */
+img[alt*="right"] {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    max-width: 40%;
+    clear: right;
+}
+
+/* LEFT FLOAT */
+img[alt*="left"] {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    max-width: 40%;
+    clear: left;
+}
+
+/* SMALL */
+img[alt*="small"] {
+    max-width: 200px !important;
+}
+
+/* =========================================
+   MOBILE SAFETY
+   ========================================= */
+@media screen and (max-width: 600px) {
+    img[alt*="right"],
+    img[alt*="left"] {
+        float: none !important;
+        display: block !important;
+        margin: 10px auto !important;
+        max-width: 100% !important;
+    }
+}
+
+/* === snippet: tabelle-in-callout.css === */
+/* =========================================
+   TABLE STYLING – WEB / PANDOC / PDF
+   ========================================= */
+
+/* ---------- Root Variables (Web-safe) ---------- */
+:root {
+    /* Light Mode */
+    --web-text-normal: #2c3e50;
+    --web-text-muted: #7f8c8d;
+    --web-text-faint: #bdc3c7;
+    --web-border-muted: #ecf0f1;
+
+    /* Zebra Striping */
+    --web-table-row-alt: rgba(0, 0, 0, 0.04);
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --web-text-normal: #dcddde;
+        --web-text-muted: #999999;
+        --web-text-faint: #444444;
+        --web-border-muted: #333333;
+
+        --web-table-row-alt: rgba(255, 255, 255, 0.04);
+    }
+}
+
+/* =========================================
+   TABLES INSIDE CALLOUTS / GENERIC CONTAINERS
+   ========================================= */
+
+/* Base table */
+.callout-content table,
+article table,
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 !important;
+    font-size: 0.9em;
+    border: none !important;
+}
+
+/* Header cells */
+.callout-content th,
+article th,
+main th {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.85em;
+    letter-spacing: 0.5px;
+    padding: 10px 6px;
+
+    border-bottom: 2px solid var(--lightgray, #ccc) !important;
+    color: var(--darkgray) !important;
+    opacity: 0.6;
+
+    text-align: center;
+}
+
+/* First header column left-aligned */
+.callout-content th:first-child,
+article th:first-child,
+main th:first-child {
+    text-align: left;
+}
+
+/* Data cells */
+.callout-content td,
+article td,
+main td {
+    padding: 8px 6px;
+    border-bottom: 1px solid var(--lightgray, #eee);
+
+    text-align: center;
+    vertical-align: middle;
+    color: var(--darkgray) !important;
+}
+
+/* First column emphasized */
+.callout-content td:first-child,
+article td:first-child,
+main td:first-child {
+    text-align: left;
+    font-weight: 600;
+    color: var(--darkgray) !important;
+}
+
+/* Zebra striping */
+.callout-content tr:nth-child(even),
+article tr:nth-child(even),
+main tr:nth-child(even) {
+    background-color: var(--web-table-row-alt, rgba(0,0,0,0.04));
+}
+
+/* === snippet: table-50-50.css === */
+/* =========================================
+   TABLE 50 / 50 LAYOUT (Web / Pandoc / PDF)
+   ========================================= */
+
+/* Basis: feste Tabellenaufteilung */
+table,
+article table,
+main table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+/* Gleichmäßige Spaltenbreite */
+table th,
+table td,
+article th,
+article td,
+main th,
+main td {
+    width: 50%;
+}
