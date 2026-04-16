@@ -47,9 +47,7 @@ a {
   }
 }
 
-/* Heading anchor icon: nur bei echter Maus anzeigen, auf Touch komplett verstecken */
-@media (hover: none) {
-  a[role="anchor"] {
-    display: none !important;
-  }
+/* Heading anchor icon: immer verstecken */
+a[role="anchor"] {
+  display: none !important;
 }

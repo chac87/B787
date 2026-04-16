@@ -154,17 +154,33 @@ body[saved-theme="dark"] .callout[data-callout="proc"] {
   background-color: rgba(50, 87, 188, 0.18) !important;
   border-color: rgba(50, 87, 188, 0.45) !important;
 }
+body[saved-theme="dark"] .callout[data-callout="proc"] .callout-title,
+body[saved-theme="dark"] .callout[data-callout="proc"] .callout-title-inner p {
+  color: #3257BC !important;
+}
 body[saved-theme="dark"] .callout[data-callout="limit"] {
   background-color: rgba(82, 145, 237, 0.18) !important;
   border-color: rgba(82, 145, 237, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="limit"] .callout-title,
+body[saved-theme="dark"] .callout[data-callout="limit"] .callout-title-inner p {
+  color: #5291ED !important;
 }
 body[saved-theme="dark"] .callout[data-callout="info"] {
   background-color: rgba(75, 157, 161, 0.18) !important;
   border-color: rgba(75, 157, 161, 0.45) !important;
 }
+body[saved-theme="dark"] .callout[data-callout="info"] .callout-title,
+body[saved-theme="dark"] .callout[data-callout="info"] .callout-title-inner p {
+  color: #4B9DA1 !important;
+}
 body[saved-theme="dark"] .callout[data-callout="warning"] {
   background-color: rgba(255, 82, 107, 0.18) !important;
   border-color: rgba(255, 82, 107, 0.45) !important;
+}
+body[saved-theme="dark"] .callout[data-callout="warning"] .callout-title,
+body[saved-theme="dark"] .callout[data-callout="warning"] .callout-title-inner p {
+  color: #FF526B !important;
 }
 
 /* =========================================================
