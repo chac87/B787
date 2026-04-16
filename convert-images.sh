@@ -12,7 +12,7 @@ VAULT="/Users/jonasvaupel/Library/Mobile Documents/iCloud~md~obsidian/Documents/
 
 converted=0
 
-find "$BILDER" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \) | while read -r f; do
+while read -r f; do
   base="${f%.*}"
   ext="${f##*.}"
   webp="${base}.webp"
@@ -34,7 +34,7 @@ find "$BILDER" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \) | 
   else
     echo "  ✗ Fehler bei: $name" >&2
   fi
-done
+done < <(find "$BILDER" -type f \( -name "*.png" -o -name "*.jpg" -o -name "*.jpeg" \))
 
 [ $converted -gt 0 ] && echo "✓ $converted Bild(er) konvertiert → WebP"
 exit 0
