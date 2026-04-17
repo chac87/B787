@@ -38,6 +38,8 @@ Most modes are deselected by selecting another mode, or by disengaging the autop
 
 ## Flight Mode Annunciations (FMA)
 
+<img src="/Bilder/fma.webp" style="max-width:420px;border-radius:6px;margin-bottom:0.75rem">
+
 FMAs display just above the ASA on the PFD and HUD, in three columns from left to right:
 
 <div style="display:flex;border:1px solid var(--lightgray);border-radius:4px;overflow:hidden;margin:0.5rem 0 0.75rem">
@@ -303,7 +305,6 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 
 ## TO/GA
 
-<img src="/Bilder/takeoff%20fma.webp" style="max-width:320px;border-radius:6px;margin-bottom:0.75rem">
 
 > [!proc] On the Ground
 > TO/GA annunciates when either FD switch is positioned ON (both FDs previously OFF), or when a TO/GA switch is pushed above 80 KIAS. The PFD pitch bar and HUD cue show 8° nose-up. Pitch commands become active only after liftoff.
