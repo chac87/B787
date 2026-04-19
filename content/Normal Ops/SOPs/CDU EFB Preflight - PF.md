@@ -5,7 +5,7 @@ section: 2-1-2
 role: PF
 ---
 
-# CDU/EFB Preflight Procedure – PF
+# CDU-EFB Preflight Procedure – PF
 
 
 <div class="checklist">
