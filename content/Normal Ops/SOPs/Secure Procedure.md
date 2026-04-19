@@ -49,7 +49,7 @@ role: Both
 
 ---
 
-## SECURE
+## SECURE CHECKLIST
 
 <div class="checklist">
 

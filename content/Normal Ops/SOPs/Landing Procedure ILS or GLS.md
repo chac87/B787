@@ -42,7 +42,7 @@ role: Both
 
 ---
 
-## LANDING
+## LANDING CHECKLIST
 
 <div class="checklist">
 

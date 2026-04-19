@@ -189,16 +189,19 @@ When a specific flight director mode degrades, the affected pitch or roll bar di
 
 <div class="cl-item"><strong>VNAV SPD</strong><span class="cl-dots"></span><strong>Pitch to maintain FMC speed</strong></div>
 <div class="cl-sub">Arms on VNAV switch push; activates at 400 ft above field elevation. Typically used during climb</div>
+<div class="cl-sub">A/T operates in THR REF · THR · IDLE · HOLD as required by phase of flight</div>
 
 <div class="cl-item"><strong>VNAV PTH</strong><span class="cl-dots"></span><strong>Pitch to maintain FMC altitude or descent path</strong></div>
-<div class="cl-sub">A/T manages speed. EICAS advisory FMC MESSAGE displays if MCP altitude remains at cruise altitude within 2 minutes of top of descent</div>
+<div class="cl-sub">A/T maintains speed in SPD mode. EICAS advisory FMC MESSAGE displays if MCP altitude remains at cruise altitude within 2 minutes of top of descent</div>
 <div class="cl-sub">For an early descent below the VNAV path, select FLCH, V/S, or FPA. If VNAV is armed and the airplane subsequently intercepts the VNAV path from below, VNAV reactivates in VNAV PTH</div>
 
 <div class="cl-item"><strong>VNAV ALT</strong><span class="cl-dots"></span><strong>Pitch to maintain MCP altitude — VNAV profile vs. MCP conflict</strong></div>
 <div class="cl-sub">Airplane levels off. To resume: change MCP altitude and push altitude selector, or select another pitch mode</div>
 
 <div class="cl-item"><strong>FLCH SPD</strong><span class="cl-dots"></span><strong>Pitch to maintain MCP IAS/MACH</strong></div>
-<div class="cl-sub">Opens IAS/MACH window if blanked. A/T manages thrust</div>
+<div class="cl-sub">Opens IAS/MACH window if blanked. A/T manages thrust — FMA shows THR once thrust is set to reach the selected altitude in ~2 minutes</div>
+<div class="cl-sub">Climb (1.000–12.000 ft change): A/T advances thrust to current limit for ~2 min climb</div>
+<div class="cl-sub">Descent (2.000–16.000 ft change): A/T retards thrust to idle for ~2 min descent · smaller changes take less than 2 min</div>
 
 <div class="cl-item"><strong>V/S</strong><span class="cl-dots"></span><strong>Pitch to maintain set vertical speed</strong></div>
 <div class="cl-sub">VS/FPA switch opens the V/S window showing current vertical speed</div>

@@ -20,15 +20,24 @@ role: Both
 <div class="sop-phase-bar" style="background:#3257BC">On Ground</div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Electrical-Power-Up">Electrical Power Up</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Electrical-Power-Up">Electrical Power Up</a>
+<div class="sop-entry-mnemonic">BaPWiLAltE</div>
+</div>
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer"><span>Preliminary Preflight – F/O</span></a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer"><span>Preliminary Preflight – F/O</span></a>
+<div class="sop-entry-mnemonic">SIS(oho)E - MEFE - CBP</div>
+</div>
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/CDU-EFB-Preflight---Capt-and-FO"><span>CDU/EFB Preflight – C & F/O</span></a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/CDU-EFB-Preflight---PF"><span>CDU/EFB Preflight – PF</span></a>
+<div class="sop-entry-mnemonic">6R Flow</div>
+</div>
 </div>
 
 <div class="sop-entry">
@@ -46,7 +55,12 @@ role: Both
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Before-Start-Procedure">Before Start Procedure</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Before-Start-Procedure">Before Start Procedure</a>
+<div class="sop-entry-mnemonic">D-WPC-BDC</div>
+<div class="sop-entry-mnemonic">SHFBR</div>
+<div class="sop-entry-mnemonic">CM1: MCP, Trim</div>
+</div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
@@ -76,7 +90,10 @@ role: Both
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Before-Taxi-Procedure">Before Taxi Procedure</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Before-Taxi-Procedure">Before Taxi Procedure</a>
+<div class="sop-entry-mnemonic">AAFTER</div>
+</div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
@@ -101,7 +118,10 @@ role: Both
 <div class="sop-phase-bar" style="background:#4B9DA1">In Flight</div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Takeoff-Procedure">Takeoff Procedure</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Takeoff-Procedure">Takeoff Procedure</a>
+<div class="sop-entry-mnemonic">C-TSL</div>
+</div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
@@ -199,7 +219,11 @@ role: Both
 <div class="sop-phase-bar" style="background:#3257BC">On Ground</div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/After-Landing-Procedure">After Landing Procedure</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/After-Landing-Procedure">After Landing Procedure</a>
+<div class="sop-entry-mnemonic">CM1: SW</div>
+<div class="sop-entry-mnemonic">CM2: AAL-AFT</div>
+</div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <span class="sop-tag-items">PF: "AFTER LANDING Items"</span>
@@ -209,7 +233,11 @@ role: Both
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Shutdown-Procedure">Shutdown Procedure</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Shutdown-Procedure">Shutdown Procedure</a>
+<div class="sop-entry-mnemonic">CM1: PF-FS</div>
+<div class="sop-entry-mnemonic">CM2: CE-SHFB FT</div>
+</div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
@@ -225,7 +253,10 @@ role: Both
 </div>
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Secure-Procedure">Secure Procedure</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Secure-Procedure">Secure Procedure</a>
+<div class="sop-entry-mnemonic">IBFEPE</div>
+</div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">

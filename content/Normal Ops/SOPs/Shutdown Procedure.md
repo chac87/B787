@@ -94,7 +94,7 @@ After wheel chocks are in place:
 
 ---
 
-## SHUTDOWN
+## SHUTDOWN CHECKLIST
 
 <div class="checklist">
 

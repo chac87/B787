@@ -26,7 +26,7 @@ Start the Descent Procedure before the airplane descends below the cruise altitu
 
 ---
 
-## DESCENT
+## DESCENT CHECKLIST
 
 | Item | Response | Who |
 |:---|:---|:---:|

@@ -20,7 +20,7 @@ Start the Before Start Procedure after papers are on board.
 
 Do the CDU/EFB Preflight Procedure - Performance Data steps before completing this procedure.
 
-## Performance Data Coordination
+### Performance Data Coordination
 
 <table>
 <thead><tr><th>C</th><th>F/O</th></tr></thead>
@@ -106,7 +106,7 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 
 ---
 
-## BEFORE START
+## BEFORE START CHECKLIST
 
 | Item | Response | Who |
 |:---|:---|:---:|

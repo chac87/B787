@@ -1,11 +1,11 @@
 ---
-title: CDU/EFB Preflight Procedure – Captain and First Officer
-tags: [sop, preflight, amplified-procedures, captain, first-officer]
+title: CDU/EFB Preflight Procedure – PF
+tags: [sop, preflight, amplified-procedures, pf]
 section: 2-1-2
-role: Captain and First Officer
+role: PF
 ---
 
-# CDU/EFB Preflight Procedure – Captain and First Officer
+# CDU/EFB Preflight Procedure – PF
 
 
 <div class="checklist">

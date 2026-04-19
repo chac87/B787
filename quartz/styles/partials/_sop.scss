@@ -97,6 +97,14 @@ article table td:first-child:has(+ td .sop-value) {
   padding-top: 0.1em;
 }
 
+.sop-entry-mnemonic {
+  font-family: var(--codeFont);
+  font-size: 0.72em;
+  color: var(--dark);
+  margin-top: 0.12em;
+  letter-spacing: 0.03em;
+}
+
 .sop-entry-right {
   display: flex;
   flex-direction: column;
