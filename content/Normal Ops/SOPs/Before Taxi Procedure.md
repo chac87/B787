@@ -50,14 +50,16 @@ role: Both
 
 ---
 
-## BEFORE TAXI
+## BEFORE TAXI CHECKLIST
 
 | Item | Response | Who |
 |:---|:---|:---:|
 | **Anti-ice** | \_\_ | F/O |
 | **Recall** | Checked | F/O |
-| **Autobrake** | RTO | F/O |
+| <span class="c-green">**Autobrake**</span> | <span class="c-green">RTO</span> | F/O |
 | **Flight controls** | Checked | C |
 | **Ground personnel and equipment** | Clear | C, F/O |
 
 Both CM confirm hand signal given by GND crew.
+
+<div class="nnc-complete">Before Taxi Checklist complete</div>

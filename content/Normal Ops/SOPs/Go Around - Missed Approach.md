@@ -38,13 +38,12 @@ role: Both
 
 ## AFTER TAKEOFF CHECKLIST
 
-<div class="checklist">
+| Item | Response | Who |
+|:---|:---|:---:|
+| <span class="c-green">**Landing gear**</span> | <span class="c-green">UP</span> | PM |
+| <span class="c-green">**Flaps**</span> | <span class="c-green">UP</span> | PM |
 
-<div class="cl-item"><strong>Landing gear</strong><span class="cl-dots"></span><strong>UP</strong> <span class="nnc-role">PM</span></div>
-
-<div class="cl-item"><strong>Flaps</strong><span class="cl-dots"></span><strong>UP</strong> <span class="nnc-role">PM</span></div>
-
-</div>
+<div class="nnc-complete">After Takeoff Checklist complete</div>
 
 ---
 

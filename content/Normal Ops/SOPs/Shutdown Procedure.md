@@ -96,18 +96,13 @@ After wheel chocks are in place:
 
 ## SHUTDOWN CHECKLIST
 
-<div class="checklist">
+| Item | Response | Who |
+|:---|:---|:---:|
+| <span class="c-green">**Hydraulic panel**</span> | <span class="c-green">Set</span> | F/O |
+| <span class="c-green">**Fuel pumps**</span> | <span class="c-green">Off</span> | F/O |
+| <span class="c-green">**Flaps**</span> | <span class="c-green">UP</span> | F/O |
+| **Parking Brake** | — | C |
+| <span class="c-green">**FUEL CONTROL switches**</span> | <span class="c-green">CUTOFF</span> | C |
+| <span class="c-green">**Weather radar**</span> | <span class="c-green">Off</span> | C, F/O |
 
-<div class="cl-item"><strong>Hydraulic panel</strong><span class="cl-dots"></span><strong>Set</strong> <span class="nnc-role">F/O</span></div>
-
-<div class="cl-item"><strong>Fuel pumps</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">F/O</span></div>
-
-<div class="cl-item"><strong>Flaps</strong><span class="cl-dots"></span><strong>UP</strong> <span class="nnc-role">F/O</span></div>
-
-<div class="cl-item"><strong>Parking Brake</strong><span class="cl-dots"></span><strong>—</strong> <span class="nnc-role">C</span></div>
-
-<div class="cl-item"><strong>FUEL CONTROL switches</strong><span class="cl-dots"></span><strong>CUTOFF</strong> <span class="nnc-role">C</span></div>
-
-<div class="cl-item"><strong>Weather radar</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">C, F/O</span></div>
-
-</div>
+<div class="nnc-complete">Shutdown Checklist complete</div>

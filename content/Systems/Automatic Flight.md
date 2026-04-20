@@ -314,7 +314,7 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 >
 > **Push below 50 kts** (flaps out of up): A/T activates in **THR REF** at the selected thrust limit. If not pushed below 50 kts, the A/T is inhibited until reaching 400 ft.
 >
-> **Push above 80 kts**: disarms LNAV and VNAV.
+> **Push above 80 kts**: disarms LNAV and VNAV · does not remove thrust derate · Thrust FMA stays **HOLD**.
 
 > [!proc] In Flight — Takeoff Thrust Active
 > Push TO/GA while the takeoff thrust limit is still displayed (e.g. during initial climb):
@@ -341,11 +341,12 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 
 > [!proc] Go-Around
 > Push TO/GA with flaps out of up or glideslope/glidepath captured:
-> - A/T activates in **THR** with GA thrust limit displayed
+> - A/T activates in **THR** with GA thrust limit displayed — target: **2.000 fpm** climb rate
 > - Disarms AFDS modes; selects TO/GA roll and pitch modes
 > - Arms or activates LNAV if an LNAV path is available
+> - Initial pitch-up command: **15° or near the PLI**, whichever is less
 >
-> Commanded speed = higher of MCP IAS/MACH window or current airspeed, to a maximum of IAS/MACH window + 25 kts.
+> Commanded speed = higher of MCP IAS/MACH window or current airspeed, to a maximum of IAS/MACH window + 25 kts. Pitch and thrust adjust to maintain the 2.000 fpm climb rate.
 >
 > LNAV activates at 50 ft RA (FD only) or 200 ft RA (AP engaged).
 
@@ -356,6 +357,20 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 | LNAV armed · TO/GA roll+pitch active | A/T → **THR REF** (GA ref thrust) |
 | LNAV active · TO/GA pitch active | A/T → **THR REF** · roll remains LNAV |
 | HDG SEL/HOLD active · TO/GA pitch active | A/T → **THR REF** · TO/GA roll mode selected |
+
+<div class="eicas-levels" style="flex-direction:row;gap:0.75rem">
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Push TO/GA — During Approach</div>
+  <div class="eicas-card-body">AFDS commands initial pitch-up<br>FMAs: THR · TO/GA · TO/GA<br>A/T targets 2.000 fpm climb<br>Pitch holds current or selected speed<br>LNAV engages automatically if available</div>
+</div>
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Push TO/GA Again — During Missed Approach</div>
+  <div class="eicas-card-body">Thrust FMA → THR REF<br>A/T commands G/A thrust limit<br>Pitch holds current or selected speed<br>Engaged roll mode does not change</div>
+</div>
+
+</div>
 
 > [!info] Windshear Recovery
 > AFDS commands pitch-up to 15° or just below the PLI, whichever is lower. Once climb rate improves, the mode transitions from pitch guidance to airspeed guidance.
@@ -399,6 +414,59 @@ NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/G
 > [!info] NO AUTOLAND does not necessarily indicate an airplane system failure. It can appear when lateral or vertical signal integrity is insufficient for autoland positioning.
 
 ---
+
+## IAN Approaches
+
+Arm and engage via the APP switch — same as ILS. Supports VOR · NDB · RNAV · GPS · SDF · LDA · LOC · LOC BC approaches through a single procedure.
+
+<div class="eicas-levels" style="flex-direction:row;gap:0.75rem">
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Same as ILS</div>
+  <div class="eicas-card-body">APP switch arms and engages<br>Performance data on PFD<br>Barometric DA — Cat 1 equivalent<br>GLIDESLOPE alert active<br>FMC supplies course and glidepath</div>
+</div>
+
+<div class="eicas-card eicas-card--amber" style="flex:1">
+  <div class="eicas-card-title">Differences</div>
+  <div class="eicas-card-body">No autoland — manual landing only<br>QNH only — no QFE<br>No level-off at minimums<br>Scales from FMC, not ground navaids<br>Raw VOR data: check ND pointers</div>
+</div>
+
+</div>
+
+<div class="eicas-levels" style="flex-direction:row;gap:0.75rem">
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Non-ILS Approach <span class="eicas-card-badge">VOR · NDB · RNAV · GPS</span></div>
+  <div class="eicas-card-body">FMC supplies the correct course and glidepath to follow</div>
+</div>
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Localizer-Type Approach <span class="eicas-card-badge">SDF · LDA · LOC · LOC BC</span></div>
+  <div class="eicas-card-body">Nav aid must be tuned on the NAV RADIO page · Localizer signal gives the correct course · Frequency put into the ILS-GLS line · G/S is set to OFF</div>
+</div>
+
+</div>
+
+> [!warning] LEGS Page — Before Activating
+> A glidepath angle to the missed approach point must be visible. If missing, IAN cannot be used. Do not modify waypoints or altitudes — this deletes the glidepath.
+
+### IAN Pointers — Display Conditions
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-body">Less than 25 nm from MAP · Within 60° of final approach · Less than 6.000 ft above landing field elevation</div>
+</div>
+
+</div>
+
+> [!info] Autopilot Engaged on IAN
+> At **200 ft RA**: NO AUTOLAND appears on PFD.
+> At **50 ft RA**: roll and pitch modes become inoperative and are lined out on the PFD.
+
+---
+
+## Limitations
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>AP — min. engagement altitude after T/O</strong><span class="cl-dots"></span><strong>200 ft AGL</strong></div>

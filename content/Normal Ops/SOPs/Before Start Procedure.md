@@ -110,15 +110,13 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 
 | Item | Response | Who |
 |:---|:---|:---:|
-| **Flight deck door** | Closed and locked | F/O |
+| <span class="c-green">**Flight deck door**</span> | <span class="c-green">Closed and locked</span> | F/O |
 | **Passenger signs** | ON | F/O |
-| **MCP** | V2\_\_, HDG\_\_, ALTITUDE\_\_ | C |
-| **Takeoff speeds, Thrust** | V1\_\_, VR\_\_, V2\_\_, \_\_% | C, F/O |
+| **MCP**<br><small style="color:var(--gray)">C announces values from MCP, F/O x-checks V2 with FMC</small> | V2\_\_, HDG\_\_, ALTITUDE\_\_ | C |
+| **Takeoff speeds, Thrust**<br><small style="color:var(--gray)">C announces SPD values from FMC and Reference N1 from EICAS,<br>F/O x-checks with TOPAS (Speeds ±0 kt, N1 ±0.5%) and replies "checked"</small> | V1\_\_, VR\_\_, V2\_\_, \_\_% | C, F/O |
 | **CDU preflight** | Completed | C |
-| **Trim** | Units, 0 | C |
+| <span class="c-green">**Trim**</span> | <span class="c-green">Units, 0</span> | C |
 | **Taxi and takeoff briefing** | Completed | C |
-| **BEACON** | ON | F/O |
+| <span class="c-green">**BEACON**</span> | <span class="c-green">ON</span> | F/O |
 
-C announces values from MCP, F/O x-checks V2 with FMC.
-
-C announces SPD values from FMC and Reference N1 from EICAS, F/O x-checks with TOPAS (Speeds +/- 0 kt, N1 +/- 0.5%) and replies "checked".
+<div class="nnc-complete">Before Start Checklist complete</div>

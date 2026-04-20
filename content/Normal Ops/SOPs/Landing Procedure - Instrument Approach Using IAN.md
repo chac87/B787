@@ -50,12 +50,10 @@ This procedure is not authorized using QFE.
 
 ## LANDING CHECKLIST
 
-<div class="checklist">
+| Item | Response | Who |
+|:---|:---|:---:|
+| <span class="c-green">**Speedbrake**</span> | <span class="c-green">ARMED</span> | PF |
+| <span class="c-green">**Landing gear**</span> | <span class="c-green">DOWN</span> | B |
+| <span class="c-green">**Flaps**</span> | <span class="c-green">\_\_</span> | B |
 
-<div class="cl-item"><strong>Speedbrake</strong><span class="cl-dots"></span><strong>ARMED</strong> <span class="nnc-role">PF</span></div>
-
-<div class="cl-item"><strong>Landing gear</strong><span class="cl-dots"></span><strong>DOWN</strong> <span class="nnc-role">B</span></div>
-
-<div class="cl-item"><strong>Flaps</strong><span class="cl-dots"></span><strong>___</strong> <span class="nnc-role">B</span></div>
-
-</div>
+<div class="nnc-complete">Landing Checklist complete</div>

@@ -39,11 +39,10 @@ Complete the Approach Procedure before:
 
 ---
 
-## APPROACH
+## APPROACH CHECKLIST
 
-<div class="checklist">
+| Item | Response | Who |
+|:---|:---|:---:|
+| **Altimeters**<br><small style="color:var(--gray)">Both — PF and PM set and cross-check altimeters. PM sets standby altimeter.</small> | \_\_ | B |
 
-<div class="cl-item"><strong>Altimeters</strong><span class="cl-dots"></span><strong>___</strong> <span class="nnc-role">B</span></div>
-<div class="cl-sub">Both — PF and PM set and cross-check altimeters. PM sets standby altimeter.</div>
-
-</div>
+<div class="nnc-complete">Approach Checklist complete</div>

@@ -51,18 +51,12 @@ role: Both
 
 ## SECURE CHECKLIST
 
-<div class="checklist">
+| Item | Response | Who |
+|:---|:---|:---:|
+| **IRS** | Off | F/O |
+| **Battery** | Off | F/O |
+| **Emergency lights** | Off | F/O |
+| **Packs** | Off | F/O |
+| **RDC18**<br><small style="color:var(--gray)">B787 (-ABPF to -ABPU, -ABQA to -ABQG)</small> | SECURED | F/O |
 
-<div class="cl-item"><strong>IRS</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">F/O</span></div>
-
-<div class="cl-item"><strong>Battery</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">F/O</span></div>
-
-<div class="cl-item"><strong>Emergency lights</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">F/O</span></div>
-
-<div class="cl-item"><strong>Packs</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">F/O</span></div>
-
-<div class="cl-variant">B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
-<div class="cl-item cl-indent"><strong>RDC18</strong><span class="cl-dots"></span><strong>SECURED</strong> <span class="nnc-role">F/O</span></div>
-<div class="cl-variant-end">END B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
-
-</div>
+<div class="nnc-complete">Secure Checklist complete</div>

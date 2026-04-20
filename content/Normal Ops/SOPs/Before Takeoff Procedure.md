@@ -50,12 +50,11 @@ Approaching Takeoff-RWY:
 
 | Item | Response | Who |
 |:---|:---|:---:|
-| **Flaps** | \_\_ | C, F/O |
+| <span class="c-green">**Flaps**</span> | <span class="c-green">\_\_</span> | C, F/O |
 | **Cabin report** | Received | C |
 | **TOPAS X-Check** | RWY \_\_ performed | F/O |
 
-> [!info] TOPAS X-Check
-> TOPAS X-Check means either an automated comparison between calculated performance and aircraft parameters (s. eOps Manual) or if not available a thorough check by the crew that all inputs and outputs of TOPAS are still valid.
+<div class="nnc-complete">Before Takeoff Checklist complete</div>
 
 > [!warning] Caution
 > If there are any changes to the departure data (e.g. runway change, stronger tailwind), a new performance calculation has to be performed and if already completed the BEFORE TAKEOFF CHECKLIST has to be read again.

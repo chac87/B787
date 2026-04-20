@@ -83,5 +83,7 @@ role: Both
 
 | Item | Response | Who |
 |:---|:---|:---:|
-| **Landing gear** | UP | PM |
-| **Flaps** | UP | PM |
+| <span class="c-green">**Landing gear**</span> | <span class="c-green">UP</span> | PM |
+| <span class="c-green">**Flaps**</span> | <span class="c-green">UP</span> | PM |
+
+<div class="nnc-complete">After Takeoff Checklist complete</div>
