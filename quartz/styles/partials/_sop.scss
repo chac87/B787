@@ -220,6 +220,24 @@ article table td:first-child:has(+ td .sop-value) {
   border-color: var(--darkgray);
   opacity: 0.7;
 }
+.callout.is-collapsed .callout-content .cl-sep {
+  border: none;
+}
+
+// Section label inside a checklist — uppercase eyebrow header
+.cl-section {
+  font-size: 0.82em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--secondary);
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+}
+[saved-theme="dark"] .cl-section {
+  color: var(--secondary);
+  opacity: 0.85;
+}
 
 // Adds one extra indent level — combine with cl-item or cl-sub
 .cl-indent {
