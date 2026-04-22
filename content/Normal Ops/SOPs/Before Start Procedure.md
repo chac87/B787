@@ -49,7 +49,7 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 <div class="cl-item cl-indent"><strong>Initial altitude</strong><span class="cl-dots"></span><strong>Set</strong></div>
 
 <div class="cl-item"><strong>Taxi and Takeoff briefings</strong><span class="cl-dots"></span><strong>Complete — C, F/O</strong></div>
-<div class="cl-sub">The pilot flying will do the takeoff briefing, the captain the RTO briefing.</div>
+<div class="cl-sub">The pilot flying will do the takeoff briefing, the captain the RTO briefing. <a href="/Operational/Arrival-und-Departure-Briefing">→ Arrival und Departure Briefing</a></div>
 
 <div class="cl-item"><strong>Exterior doors</strong><span class="cl-dots"></span><strong>Verify closed — F/O</strong></div>
 

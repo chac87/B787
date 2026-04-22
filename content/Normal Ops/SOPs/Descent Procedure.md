@@ -18,7 +18,7 @@ Start the Descent Procedure before the airplane descends below the cruise altitu
 | Check landing performance.<br>Determine Ldg Flap and Autobrake Setting.<br><br>*Note: Due consideration shall be given to all operational circumstances (e.g. RWY, weather, noise abatement, fuel etc.). For details refer to FCTM Flap Configurations for Approach and Landing.*<br>*Flaps 25: When conditions permit, use flaps 25 to improve noise abatement, reduce flap wear/loads and save fuel.*<br>*Flaps 30: Shall be used for braking action less than good, contaminated RWY.* | |
 | Set the RADIO/BARO minimums as needed for the approach. | |
 | | Set the NAV RADIO page for the approach. |
-| Do the approach briefing.<br>For Approach Briefing, refer to Approach Briefing (FCTM).<br><span class="cl-note">Approach briefing must include a reminder that go-arounds on or near the ground require go-around thrust to be set manually and that a flap configuration warning can sound.</span> | |
+| Do the approach briefing. <a href="/Operational/Arrival-und-Departure-Briefing">→ Arrival und Departure Briefing</a><br><span class="cl-note">Approach briefing must include a reminder that go-arounds on or near the ground require go-around thrust to be set manually and that a flap configuration warning can sound.</span> | |
 | <span class="sop-tag-items">PF: "DESCENT Items / Flaps ___ / Autobrake ___"</span> | Enter v<sub>REF</sub> and flap setting on the Approach REF page.<br>Set the AUTOBRAKES selector to the needed brake setting.<br>Check correct approach and missed approach entries.<br>Insert Transition Level on VNAV DESCENT FORECAST page. |
 | Verify v<sub>REF</sub> on the APPROACH REF page. | |
 
