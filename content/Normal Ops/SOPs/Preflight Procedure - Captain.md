@@ -140,7 +140,7 @@ The captain normally does this procedure. The first officer may do this procedur
 
 ---
 
-## PREFLIGHT
+## PREFLIGHT CHECKLIST
 
 | Item | Response | Who |
 |:---|:---|:---:|
@@ -151,6 +151,6 @@ The captain normally does this procedure. The first officer may do this procedur
 | **FUEL CONTROL switches** | CUTOFF | C |
 | **Fuel quantity** | \_\_tons | C, F/O |
 
-The CM who has performed the exterior inspection will answer for Gear Pins and Covers.
+<small style="color:var(--gray)">The CM who has performed the exterior inspection will answer for Gear Pins and Covers. C reads QTY from EICAS, F/O announces fuel ordered.</small>
 
-C reads QTY from EICAS, F/O announces fuel ordered.
+<div class="nnc-complete">Preflight Checklist complete</div>

@@ -22,6 +22,7 @@
 [[Oxygen Systems]]
 [[Doors]]
 ## [[Normal Ops/index|Normal Ops, SOPs]]
+[[Normal Ops/Arrival und Departure Briefing|Arrival und Departure Briefing]]
 ### [[Normal Ops/SOPs/index|Standard Operating Procedures]]
 [[Normal Ops/SOPs/SOP Overview|SOP Overview & Quick Reference]]
 [[Normal Ops/SOPs/Electrical Power Up|Electrical Power Up]]
