@@ -11,5 +11,5 @@ title: B787 Guide
 ## [[Systems/index|Systems]]
 ## [[Normal Ops/index|Normals Ops - SOPs]]
 ## [[Non Normals/index|Non-Normals]]
-## [[Operational|Operational]]
+## [[Operational/index|Operational]]
 
