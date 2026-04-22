@@ -21,6 +21,8 @@ This procedure is not authorized using QFE.
 > | 5 | "5" | 20 | "20" |
 > | 20 | "20" | 25 or 30 | (v<sub>REF25</sub> or v<sub>REF30</sub>) + wind additives |
 
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | Initially<br>- If on radar vectors:<br>&nbsp;&nbsp;• HDG SEL<br>&nbsp;&nbsp;• Pitch mode (as needed)<br>- If enroute to a fix:<br>&nbsp;&nbsp;• LNAV or other roll mode<br>&nbsp;&nbsp;• VNAV or other pitch mode | |
@@ -30,8 +32,12 @@ This procedure is not authorized using QFE.
 | When on the final approach course intercept heading for LOC, B/CRS, SDF, or LDA approaches:<br>- Verify that the localizer is tuned and identified<br>- Verify that the LOC pointer is shown | |
 | Arm the LNAV or LOC mode. | |
 
+</div>
+
 > [!warning] Warning
 > When using LNAV to intercept the localizer, LNAV might parallel the localizer without capturing it. The airplane can then descend on the VNAV path with the localizer not captured.
+
+<div class="table-50-50">
 
 | PF | PM |
 |:---|:---|
@@ -41,9 +47,13 @@ This procedure is not authorized using QFE.
 | Perform Flaps and Gear extension on Schedule. | |
 | Set the speedbrake lever to ARMED. | |
 
+</div>
+
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
 </div>
+
+<div class="table-50-50">
 
 | PF | PM |
 |:---|:---|
@@ -51,6 +61,8 @@ This procedure is not authorized using QFE.
 | Monitor the approach. | |
 | When at least 300 feet below the missed approach altitude, set the missed approach altitude on the MCP. | |
 | If suitable visual reference is established at DA(H), MDA(H), or the missed approach point, disengage the autopilot in accordance with regulatory requirements.<br>Maintain the glide path to landing. | |
+
+</div>
 
 ---
 

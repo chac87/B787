@@ -23,6 +23,7 @@ Start the Shutdown Procedure after taxi is complete.
 <div class="cl-item"><strong>Cabin Crew</strong><span class="cl-dots"></span><strong>Advise</strong> <span class="nnc-role">F/O</span></div>
 <div class="cl-note">If pushback or towing is needed, delay callout until final parking.</div>
 <div class="cl-sub">Advise cabin crew. Verify door mode selector position status on EICAS Doors Synoptic Display.</div>
+<div class="cl-sub">F/O: <em>"Cabin Crew, all doors in Park!"</em></div>
 
 <div class="cl-item"><strong>Electrical power</strong><span class="cl-dots"></span><strong>Set</strong> <span class="nnc-role">F/O</span></div>
 <div class="cl-sub">If APU power is needed: Check that the APU RUNNING message is shown.</div>

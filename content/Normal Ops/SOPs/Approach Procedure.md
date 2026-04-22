@@ -16,6 +16,8 @@ Complete the Approach Procedure before:
 > [!info] Note
 > Do not manually build the approach or add waypoints to the selected FMC procedure. Add cold temperature corrections to waypoint altitude constraints as appropriate. For an instrument approach using IAN, select the G/S prompt OFF if flying an ILS approach where the G/S transmitter is inoperative or when the G/S data is unreliable.
 
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | | During arrival and approach, verify the RNP as needed. |
@@ -24,6 +26,8 @@ Complete the Approach Procedure before:
 | Update the arrival and approach, as needed. | |
 | Select VSD on as needed. | |
 | Update the approach briefing as needed. | |
+
+</div>
 
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "APPROACH CL"</span>

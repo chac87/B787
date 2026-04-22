@@ -55,13 +55,15 @@ role: Both
 
 </div>
 
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | | Monitor the engine instruments during the takeoff. Call out any abnormal indications.<br>Adjust takeoff thrust before 80 knots as needed.<br>During strong headwinds, if the thrust levers do not advance to the planned takeoff thrust, manually advance the thrust levers before 80 knots.<br><span class="sop-tag-items">PM: "THRUST SET"</span> <span style="font-size:0.8em;color:var(--gray);font-style:italic;">before passing 65 kts</span> |
-| After takeoff thrust is set, the captain's hand must be on the thrust levers until V1. | |
+| After takeoff thrust is set, the captain's hand must be on the thrust levers until v<sub>1</sub>. | |
 | Monitor airspeed.<br>Maintain light forward pressure on the control column. | Monitor airspeed and call out any abnormal indications. |
 | Verify 80 knots and <span class="sop-tag-items">PF: "CHECK"</span> | <span class="sop-tag-items">PM: "80 KNOTS"</span> |
-| Verify V1 speed. | Verify the automatic V1 callout or <span class="sop-tag-items">PM: "V1"</span> |
+| Verify v<sub>1</sub> speed. | Verify the automatic v<sub>1</sub> callout or <span class="sop-tag-items">PM: "V1"</span> |
 | At V<sub>R</sub>, rotate toward 15° pitch attitude.<br>After liftoff, follow F/D commands. | At V<sub>R</sub> <span class="sop-tag-items">PM: "ROTATE"</span><br>Monitor airspeed and vertical speed. |
 | Establish a positive rate of climb. | |
 | | Verify a positive rate of climb on the altimeter and <span class="sop-tag-items">PM: "POSITIVE RATE"</span> |
@@ -72,6 +74,8 @@ role: Both
 | Verify acceleration at the acceleration height.<br><span class="sop-tag-items">PF: "FLAPS ___"</span> according to the flap retraction schedule. | |
 | | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
 | Engage the autopilot when above the minimum altitude for autopilot engagement. | |
+
+</div>
 | | After flap retraction is complete, set the ENGINE ANTI-ICE selectors to AUTO. |
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>

@@ -512,22 +512,35 @@ article th,
 main th {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 0.85em;
+    font-size: 0.9em;
     letter-spacing: 0.5px;
-    padding: 10px 6px;
+    padding: 0.5em 0.6em;
 
-    border-bottom: 2px solid var(--lightgray, #ccc) !important;
-    color: var(--darkgray) !important;
-    opacity: 0.6;
+    background: rgba(50, 87, 188, 0.8);
+    color: #ffffff !important;
+    opacity: 1;
+    border-bottom: none !important;
 
     text-align: center;
 }
 
-/* First header column left-aligned */
-.callout-content th:first-child,
-article th:first-child,
-main th:first-child {
-    text-align: left;
+.callout-content thead tr th:first-child,
+article thead tr th:first-child,
+main thead tr th:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.callout-content thead tr th:last-child,
+article thead tr th:last-child,
+main thead tr th:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+[saved-theme="dark"] .callout-content th,
+[saved-theme="dark"] article th,
+[saved-theme="dark"] main th {
+    background: #243F9B;
+    color: #e8eaf0 !important;
 }
 
 /* Data cells */
@@ -564,13 +577,42 @@ main tr:nth-child(even) {
    Nur für Tabellen mit Klasse .table-50-50
    ========================================= */
 
-.table-50-50 {
+table.table-50-50,
+.table-50-50 table {
     table-layout: fixed;
     width: 100%;
 }
 
+table.table-50-50 th,
+table.table-50-50 td,
 .table-50-50 th,
 .table-50-50 td {
     width: 50%;
+}
+
+.table-50-50 th {
+    font-size: 1.05em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background: rgba(50, 87, 188, 0.8);
+    color: #ffffff !important;
+    opacity: 1 !important;
+    padding: 0.55em 0.6em;
+    text-align: center;
+    border-bottom: none !important;
+}
+
+[saved-theme="dark"] .table-50-50 th {
+    background: rgba(36, 63, 155, 0.8);
+    color: #e8eaf0 !important;
+}
+
+.table-50-50 td {
+    text-align: left;
+}
+
+.table-50-50 td:first-child {
+    font-weight: normal;
 }
 

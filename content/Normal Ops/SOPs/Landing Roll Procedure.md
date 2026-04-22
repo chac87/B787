@@ -7,14 +7,20 @@ role: Both
 
 # Landing Roll Procedure
 
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | Verify that the thrust levers are closed.<br>Verify that the SPEEDBRAKE lever is UP. | Verify that the SPEEDBRAKE lever is UP.<br><span class="sop-tag-items">PM: "SPEEDBRAKES UP"</span><br>If the SPEEDBRAKE lever is not UP, <span class="sop-tag-items">PM: "NO SPEEDBRAKE"</span> |
 | Monitor the rollout progress. | |
 | Verify correct autobrake operation. | |
 
+</div>
+
 > [!warning] Warning
 > After the reverse thrust levers are raised, a full stop landing must be made. If an engine remains in reverse, safe flight is not possible.
+
+<div class="table-50-50">
 
 | PF | PM |
 |:---|:---|
@@ -24,3 +30,5 @@ role: Both
 | Before taxi speed, disarm the autobrake. Use manual braking as needed. | |
 | Before turning off the runway, disconnect the autopilot. | |
 | If applicable:<br><span class="sop-tag-items">PF: "You have control"</span> | If applicable:<br><span class="sop-tag-items">PM: "I have control"</span> |
+
+</div>

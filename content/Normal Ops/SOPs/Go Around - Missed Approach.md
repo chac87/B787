@@ -6,13 +6,20 @@ role: Both
 ---
 
 # Go Around – Missed Approach
+
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | Push the TO/GA switch.<br><span class="sop-tag-items">PF: "GO AROUND"</span> | |
 | Verify that the thrust increases. | |
 
+</div>
+
 > [!warning] Warning
 > TO/GA function is inhibited close to the ground and after touchdown. If the thrust levers do not respond when TO/GA is pushed, or if the go-around is initiated after touchdown, advance the thrust levers manually to go-around thrust.
+
+<div class="table-50-50">
 
 | PF | PM |
 |:---|:---|
@@ -29,6 +36,8 @@ role: Both
 | After flaps are set to the planned flap setting and at or above the flap maneuvering speed, select FLCH or VNAV as needed. | |
 | Verify that climb thrust is set. | |
 | Verify that the missed approach altitude is captured. | |
+
+</div>
 
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>

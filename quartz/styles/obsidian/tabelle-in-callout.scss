@@ -58,10 +58,7 @@
     text-align: center;
 }
 
-/* Erste Spalte Header linksbündig */
-.callout-content th:first-child {
-    text-align: left;
-}
+/* Erste Spalte Header — kein separates Override, globale Zentrierung gilt */
 
 /* Die Datenzellen */
 .callout-content td {

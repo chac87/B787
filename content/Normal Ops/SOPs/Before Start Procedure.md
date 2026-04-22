@@ -22,7 +22,7 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 
 ### Performance Data Coordination
 
-<table>
+<table class="table-50-50">
 <thead><tr><th>C</th><th>F/O</th></tr></thead>
 <tbody>
 <tr><td>Announce ZFW from L/S</td><td></td></tr>

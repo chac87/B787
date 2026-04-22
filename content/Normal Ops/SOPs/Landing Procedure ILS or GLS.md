@@ -14,6 +14,8 @@ role: Both
 > | 5 | "5" | 20 | "20" |
 > | 20 | "20" | 25 or 30 | (v<sub>REF25</sub> or v<sub>REF30</sub>) + wind additives |
 
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | Initially<br>- If on radar vectors:<br>&nbsp;&nbsp;• HDG SEL<br>&nbsp;&nbsp;• Pitch mode (as needed)<br>- If enroute to a fix:<br>&nbsp;&nbsp;• LNAV or other roll mode<br>&nbsp;&nbsp;• VNAV or other pitch mode | |
@@ -28,6 +30,8 @@ role: Both
 | Set the speedbrake lever to ARMED. | |
 | Set the missed approach altitude on the MCP. | |
 
+</div>
+
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
 </div>
@@ -35,10 +39,14 @@ role: Both
 > [!warning] Warning
 > Interference with the glideslope signal can result in erroneous AFDS pitch guidance indicated by FMA mode degradation, the AUTOPILOT caution message, and removal of the F/D pitch bar. If this occurs, do a go-around unless suitable visual references can be established and maintained.
 
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | At the final approach fix (LOM, MKR, DME), verify the crossing altitude. | |
 | Monitor the approach.<br>Verify the autoland status at 500 feet AGL. | |
+
+</div>
 
 ---
 

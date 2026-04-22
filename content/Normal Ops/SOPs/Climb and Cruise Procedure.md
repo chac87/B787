@@ -10,6 +10,8 @@ role: Both
 > [!info] Note
 > If CLB or CLB1 is necessary for obstacle or ATC requirements manually select CLB2 after meeting the restriction whenever climb performance permits.
 
+<div class="table-50-50">
+
 | PF | PM |
 |:---|:---|
 | | During climb or cruise, verify the RNP as needed. |
@@ -22,3 +24,5 @@ role: Both
 | <span class="sop-tag-items">PF: "STD"</span> | |
 | | If the FUEL IN CENTER message shows, set both CENTER FUEL PUMP switches to ON.<br>When the FUEL LOW CENTER message shows, set both CENTER FUEL PUMP switches to OFF. |
 | | Before the top of descent, modify the active route as needed for the arrival and approach. |
+
+</div>
