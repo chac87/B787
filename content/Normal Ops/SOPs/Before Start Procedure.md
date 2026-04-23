@@ -22,14 +22,14 @@ Start the Before Start Procedure after papers are on board.
 ### Performance Data Coordination
 
 <table class="table-50-50">
-<thead><tr><th>C</th><th>F/O</th></tr></thead>
+<thead><tr><th>CP</th><th>F/O</th></tr></thead>
 <tbody>
 <tr><td>Announce ZFW from L/S</td><td></td></tr>
 <tr><td></td><td>Insert ZFW into PERF INIT Page<br>Announce GW minus Taxifuel</td></tr>
 <tr><td>Check/Confirm TOW with L/S<br>Announce TO CG from L/S</td><td></td></tr>
 <tr><td></td><td>Enter CG into T/O REF Page (THR LIM page 3)</td></tr>
 <tr><td colspan="2" style="text-align:center;font-style:italic">Perform T/O Performance Calculation</td></tr>
-<tr><td></td><td>Insert D-TO, TASS, Speeds, FLAPS into FMS<br>Insert Acc, EO Acc, THR Reduction as rqd</td></tr>
+<tr><td></td><td>Insert D-TO, TASS, Speeds, FLAPS into THRUST LIM page<br>Insert Acc, EO Acc, THR Reduction as rqd</td></tr>
 <tr><td>Crosscheck FMC and EICAS-FMC-Stabilizer Takeoff Setting with TOPAS</td><td></td></tr>
 </tbody>
 </table>

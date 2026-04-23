@@ -34,14 +34,6 @@ Complete the Approach Procedure before:
 <span class="sop-tag-cl">PF → PM: "APPROACH CL"</span>
 </div>
 
-> [!info]- Flap Extension Schedule
-> | Current Flap Position | At Speed Tape "Display" | Select Flaps | Command Speed for Selected Flaps |
-> |:---:|:---:|:---:|:---|
-> | UP | "UP" | 1 | "1" |
-> | 1 | "1" | 5 | "5" |
-> | 5 | "5" | 20 | "20" |
-> | 20 | "20" | 25 or 30 | (v<sub>REF25</sub> or v<sub>REF30</sub>) + wind additives |
-
 ---
 
 ## APPROACH CHECKLIST

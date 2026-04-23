@@ -24,6 +24,13 @@ Start the Descent Procedure before the airplane descends below the cruise altitu
 
 </div>
 
+<div class="eicas-levels" style="margin-top:0.5em">
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">v<sub>REF</sub> Increment</div>
+  <div class="eicas-card-body">min. v<sub>REF</sub> +5 kt<br>+ ½ HWC + full gust factor<br>max. v<sub>REF</sub> +15 kt</div>
+</div>
+</div>
+
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "DESCENT CL"</span>
 </div>

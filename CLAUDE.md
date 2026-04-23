@@ -319,3 +319,20 @@ tags: [non-normal, <category>]
 npx quartz build --serve    # sync-snippets.sh läuft automatisch → local preview at http://localhost:8080
 npx quartz sync --no-pull   # sync-snippets.sh läuft erneut → commit + push to GitHub (triggers Netlify deploy)
 ```
+
+## Deploy Safety — Both localhost AND Netlify Must Work
+
+**Rule: every change must be correct on both local dev and the Netlify deploy. Never ship something that only works locally.**
+
+### Known deploy traps in this project
+
+- **`sync-snippets.sh`** copies Obsidian snippets into `_snippets.scss` at build time. The iCloud snippets path is machine-local — it does not exist on Netlify. A missing guard previously caused `_snippets.scss` to be truncated to empty on every Netlify build, breaking all callout/color styles. The fix (a directory-existence guard in `sync-snippets.sh`) must not be removed.
+- **`_snippets.scss`** is tracked by git and contains all custom CSS (callouts, `.c-green`, `.c-red`, `.c-amber`, table styles). It must remain committed. Never add it to `.gitignore`.
+- **Any new script called at build time** (from `sync-snippets.sh`, `convert-images.sh`, or `handlers.js`) must guard against machine-local paths and tools (`cwebp`, iCloud paths, etc.) — either with an existence check or silent no-op.
+- **Local-only tools** (`cwebp`, etc.) must either be available on Netlify or the script must exit cleanly without them.
+
+### Checklist before pushing any infrastructure change
+
+1. Does it rely on a path that only exists on this Mac? → Add an existence guard.
+2. Does it overwrite a committed file unconditionally? → Guard with dir/file existence check first.
+3. Does it call an external tool that may not be on Netlify? → Suppress errors and exit 0.

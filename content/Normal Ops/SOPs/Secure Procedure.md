@@ -10,12 +10,11 @@ role: Both
 > [!info]- Flow
 > ![[securing flow.webp]]
 
-> [!info] Note
-> The SECURE PROCEDURE must not be performed before all passengers have exited the airplane.
-
 <div class="checklist">
 
-<span class="sop-tag-items">C: "SECURE Items"</span>
+<div class="cl-note" style="color:#2d7d32">The SECURE PROCEDURE must not be performed before all passengers have exited the airplane.</div>
+
+<span class="sop-tag-items">CP: "SECURE Items"</span>
 
 
 <div class="cl-item"><strong>IRS selectors</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>OFF</strong></div>
@@ -36,12 +35,12 @@ role: Both
 <div class="cl-note">Opening these specific CBs is a temporary measure to cope with the risk of unintended ELT activation. It does not compromise the general CB policy as outlined in the OM-B.</div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
 
-<div class="cl-item"><strong>Aircraft EFBs</strong> <span class="nnc-role">C, F/O</span><span class="cl-dots"></span><strong>Shutdown</strong></div>
+<div class="cl-item"><strong>Aircraft EFBs</strong> <span class="nnc-role">CP, F/O</span><span class="cl-dots"></span><strong>Shutdown</strong></div>
 <div class="cl-sub">Refer to PeOM Aircraft EFB Shutdown (Pilots eOPS Manual).</div>
 <div class="cl-caution">Caution: The Power Electronics Cooling System (PECS) requires a cool-down period to prevent damaging the units and degrading the coolant. A wait of up to 22 minutes may be required before removing power. Refer to 2.2.6 Electrical Power Down for additional information.</div>
 
 <div class="sop-entry-tags">
-<span class="sop-tag-cl">C → F/O: "SECURE CL"</span>
+<span class="sop-tag-cl">CP → F/O: "SECURE CL"</span>
 </div>
 
 

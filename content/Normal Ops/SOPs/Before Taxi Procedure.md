@@ -61,6 +61,6 @@ role: Both
 | **Flight controls** | Checked | CP |
 | **Ground personnel and equipment** | Clear | CP, F/O |
 
-Both CM confirm hand signal given by GND crew.
+<div class="cl-note">Both CM confirm hand signal given by GND crew.</div>
 
-<div class="nnc-complete">Before Taxi Checklist complete</div>
+<div style="text-align:center;margin-top:1.2em"><span class="sop-tag-cl">F/O: „Before Taxi Checklist complete."</span></div>
