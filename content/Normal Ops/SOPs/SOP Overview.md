@@ -50,22 +50,22 @@ role: Both
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">C → F/O: "PREFLIGHT CL"</span>
 </div>
-<div class="sop-trigger">Preflight Items completed</div>
+<div class="sop-trigger">Preflight Items completed, then Briefing</div>
 </div>
 </div>
 
 <div class="sop-entry">
 <div class="sop-entry-name">
 <a href="/Normal-Ops/SOPs/Before-Start-Procedure">Before Start Procedure</a>
-<div class="sop-entry-mnemonic">D-WPC-BDC</div>
+<div class="sop-entry-mnemonic">D-WPC-DC</div>
 <div class="sop-entry-mnemonic">SHFBR</div>
-<div class="sop-entry-mnemonic">CM1: MCP, Trim</div>
+<div class="sop-entry-mnemonic">CM1: MCP Final5, Trim</div>
 </div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-items">C: "BEFORE START Items"</span>
-<span class="sop-trigger" style="margin:0;">Startup Clearance received</span>
+<span class="sop-trigger" style="margin:0;">Doors armed, STEERING LOCKED OUT</span>
 </div>
 <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
 <span class="sop-tag-cl">C → F/O: "BEFORE START CL"</span>
@@ -136,7 +136,10 @@ role: Both
 
 
 <div class="sop-entry">
-<div class="sop-entry-name"><a href="/Normal-Ops/SOPs/Descent-Procedure">Descent Procedure</a></div>
+<div class="sop-entry-name">
+<a href="/Normal-Ops/SOPs/Descent-Procedure">Descent Procedure</a>
+<div class="sop-entry-mnemonic">RNLFM</div>
+</div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
 <div style="display:flex;flex-direction:column;align-items:flex-start;gap:0.25em;">
@@ -222,7 +225,7 @@ role: Both
 <div class="sop-entry-name">
 <a href="/Normal-Ops/SOPs/After-Landing-Procedure">After Landing Procedure</a>
 <div class="sop-entry-mnemonic">CM1: SW</div>
-<div class="sop-entry-mnemonic">CM2: AAL-AFT</div>
+<div class="sop-entry-mnemonic">CM2: AAL-WAFT</div>
 </div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">
