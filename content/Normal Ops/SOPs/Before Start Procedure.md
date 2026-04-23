@@ -18,7 +18,6 @@ Start the Before Start Procedure after papers are on board.
 
 </div>
 
-Do the CDU/EFB Preflight Procedure - Performance Data steps before completing this procedure.
 
 ### Performance Data Coordination
 
@@ -34,6 +33,16 @@ Do the CDU/EFB Preflight Procedure - Performance Data steps before completing th
 <tr><td>Crosscheck FMC and EICAS-FMC-Stabilizer Takeoff Setting with TOPAS</td><td></td></tr>
 </tbody>
 </table>
+
+> [!info]- Was sehe ich wo / gebe ich wo ein?
+> | Eingabe | FMC-Seite |
+> |:---|:---|
+> | ZFW | INDEX → PERF |
+> | CG | TAKEOFF REF |
+> | D-TO, TASS | THRUST LIM |
+> | Flaps, Speed | TAKEOFF REF |
+> | Acc. heights | TAKEOFF REF 2 |
+> | Extra Fuel & Time | PROG |
 
 <div class="checklist">
 
