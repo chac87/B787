@@ -14,7 +14,7 @@ Start the After Landing Procedure when clear of the active runway.
 
 <div class="checklist">
 
-<span class="sop-tag-items">C: "AFTER LANDING Items"</span>
+<span class="sop-tag-items">CP: "AFTER LANDING Items"</span>
 
 
 </div>
@@ -37,22 +37,22 @@ Engine cooldown recommendations:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>SPEEDBRAKE lever</strong><span class="cl-dots"></span><strong>DOWN</strong> <span class="nnc-role">C</span></div>
+<div class="cl-item"><strong>SPEEDBRAKE lever</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>DOWN</strong></div>
 
-<div class="cl-item"><strong>APU selector</strong><span class="cl-dots"></span><strong>START, then ON</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>APU selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>START, then ON</strong></div>
 <div class="cl-sub">As needed.</div>
 
-<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>ON</strong></div>
 <div class="cl-sub">If needed.</div>
 
-<div class="cl-item"><strong>Exterior lights</strong><span class="cl-dots"></span><strong>As needed</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>Exterior lights</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>As needed</strong></div>
 
-<div class="cl-item"><strong>Weather radar</strong><span class="cl-dots"></span><strong>Off</strong> <span class="nnc-role">C</span></div>
+<div class="cl-item"><strong>Weather radar</strong> <span class="nnc-role">B</span><span class="cl-dots"></span><strong>Off</strong></div>
 
-<div class="cl-item"><strong>AUTOBRAKE selector</strong><span class="cl-dots"></span><strong>OFF</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>AUTOBRAKE selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>OFF</strong></div>
 
-<div class="cl-item"><strong>Flap lever</strong><span class="cl-dots"></span><strong>UP</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>Flap lever</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>UP</strong></div>
 
-<div class="cl-item"><strong>Transponder mode selector</strong><span class="cl-dots"></span><strong>XPDR</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>Transponder mode selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>XPDR</strong></div>
 
 </div>

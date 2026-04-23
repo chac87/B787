@@ -29,7 +29,7 @@ role: Both
 <div class="sop-entry">
 <div class="sop-entry-name">
 <a href="/Normal-Ops/SOPs/Preliminary-Preflight---First-Officer"><span>Preliminary Preflight – F/O</span></a>
-<div class="sop-entry-mnemonic">SIS(oho)E - MEFE - CBP</div>
+<div class="sop-entry-mnemonic">SISTEMEDEP</div>
 </div>
 </div>
 

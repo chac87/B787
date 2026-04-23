@@ -26,8 +26,7 @@ role: Both
 | *Note: When using LNAV to intercept the final approach course, LNAV might parallel the localizer without capturing it.* | |
 | Use LNAV, HDG SEL/TRK SEL or HDG HOLD/TRK HOLD to intercept the final approach course, as needed. | |
 | Verify that the localizer is captured.<br>Verify final approach course heading. | |
-| Perform Flaps and Gear extension on Schedule. | |
-| Set the speedbrake lever to ARMED. | |
+| Flaps & Gear extension on schedule:<br><table style="width:100%;font-size:0.875em;margin-top:0.4em;border:none"><tr><td><strong>FLAPS 1</strong></td><td style="color:var(--gray)">at "UP"</td></tr><tr><td><strong>FLAPS 5</strong></td><td style="color:var(--gray)">at "1"</td></tr><tr><td style="color:var(--gray)">(FLAPS 15)</td><td style="color:var(--gray)">optional</td></tr><tr><td><strong>GEAR DOWN</strong></td><td style="color:var(--gray)">before Flaps 20</td></tr><tr><td><strong>FLAPS 20</strong></td><td style="color:var(--gray)">at "5"</td></tr><tr><td><strong>FLAPS 25</strong></td><td style="color:var(--gray)">at "20"</td></tr><tr><td style="color:var(--gray)">(FLAPS 30)</td><td style="color:var(--gray)">optional</td></tr><tr><td><strong>Arm Speedbrakes</strong></td><td style="color:var(--gray)">before FAF</td></tr></table> | |
 | Set the missed approach altitude on the MCP. | |
 
 </div>
@@ -58,4 +57,9 @@ role: Both
 | <span class="c-green">**Landing gear**</span> | <span class="c-green">DOWN</span> | B |
 | <span class="c-green">**Flaps**</span> | <span class="c-green">\_\_</span> | B |
 
-<div class="nnc-complete">Landing Checklist complete</div>
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PM: "Landing Checklist complete."</span>
+</div>
+<div class="sop-entry-tags" style="margin-top:0.5em">
+<span class="sop-tag-cl">PF: "Checklist complete."</span>
+</div>

@@ -61,7 +61,8 @@ The captain normally does this procedure. The first officer may do this procedur
 <div class="cl-item"><strong>PFD/MFD selector</strong><span class="cl-dots"></span><strong>NORM</strong></div>
 <div class="cl-note">Do the Initial Data and Navigation Data steps from the CDU/EFB Preflight Procedure and verify that the IRS alignment is complete before checking the flight instruments.</div>
 
-<div class="cl-item"><strong>Flight instruments</strong><span class="cl-dots"></span><strong>Check</strong></div>
+<div class="cl-item"><strong>Flight instruments</strong><span class="cl-dots"></span><strong>Heading__, Altimeter__, __</strong></div>
+<div class="cl-note">e.g. Heading 248, Altimeter Baro 1013, 360ft</div>
 <div class="cl-sub">Verify that the flight instrument indications are correct.</div>
 <div class="cl-sub">Verify that only these flags are shown:</div>
 <div class="cl-sub cl-indent">· TCAS OFF</div>
@@ -135,22 +136,31 @@ The captain normally does this procedure. The first officer may do this procedur
 </div>
 
 <div class="sop-entry-tags">
-<span class="sop-tag-cl">C → F/O: "PREFLIGHT CL"</span>
+<span class="sop-tag-cl">CP → F/O: "PREFLIGHT CL"</span>
 </div>
 
 ---
 
 ## PREFLIGHT CHECKLIST
 
-| Item | Response | Who |
-|:---|:---|:---:|
-| **Gear Pins and Covers** | Removed | PM |
-| **Oxygen** | Tested, 100 | All |
-| **Flight instruments** | Heading\_\_, Altimeter\_\_, \_\_ | C, F/O |
-| **Parking brake** | Set | C |
-| **FUEL CONTROL switches** | CUTOFF | C |
-| **Fuel quantity** | \_\_tons | C, F/O |
-
-<small style="color:var(--gray)">The CM who has performed the exterior inspection will answer for Gear Pins and Covers. C reads QTY from EICAS, F/O announces fuel ordered.</small>
+| Item                                                   | Response                                                                                          |   Who   |
+| :----------------------------------------------------- | :------------------------------------------------------------------------------------------------ | :-----: |
+| **Gear Pins and Covers**                               | Removed                                                                                           |   PM    |
+| **Oxygen**                                             | Tested, 100                                                                                       |   All   |
+| **Flight instruments**                                 | Heading\_\_, Altimeter\_\_, \_\_ <br><small>e.g. Heading 248, Altimeter Baro 1013, 360 ft</small> | CP, F/O |
+| **<span class="c-green">Parking brake</span>**         | <span class="c-green">Set</span>                                                                  |   CP    |
+| **<span class="c-green">FUEL CONTROL switches</span>** | <span class="c-green">CUTOFF</span>                                                               |   CP    |
+| **Fuel quantity**                                      | \_\_tons <br><small>CP reads QTY from EICAS, F/O announces fuel ordered.</small>                  | CP, F/O |
 
 <div class="nnc-complete">Preflight Checklist complete</div>
+
+---
+
+## Taxi and Takeoff Briefings
+
+<div class="checklist">
+
+<div class="cl-item"><strong>Taxi and Takeoff briefings</strong><span class="cl-dots"></span><strong>Complete — CP, F/O</strong></div>
+<div class="cl-sub">The pilot flying will do the takeoff briefing, the captain the RTO briefing. <a href="/Operational/Arrival-und-Departure-Briefing">→ Arrival und Departure Briefing</a></div>
+
+</div>

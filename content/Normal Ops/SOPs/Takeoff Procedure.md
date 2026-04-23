@@ -8,46 +8,46 @@ role: Both
 # Takeoff Procedure
 <div class="checklist">
 
-<div class="cl-item"><strong>Runway and entry point</strong><span class="cl-dots"></span><strong>Verify — C, F/O</strong></div>
+<div class="cl-item"><strong>Runway and entry point</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Verify</strong></div>
 <div class="cl-sub">Before entering the departure runway.</div>
 
-<div class="cl-item"><strong>Cabin crew</strong><span class="cl-dots"></span><strong>Departure notification — C, F/O</strong></div>
-<div class="cl-sub">Refer to FSM, Allgemeiner Teil 1.11.4 Cockpitansage zum Start.</div>
+<div class="cl-item"><strong>Cabin crew</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Departure notification</strong></div>
+<div class="cl-sub">"Cabin Crew, prepare for departure."</div>
 
-<div class="cl-item"><strong>Transponder mode selector</strong><span class="cl-dots"></span><strong>TA/RA — F/O</strong></div>
+<div class="cl-item"><strong>Transponder mode selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>TA/RA</strong></div>
 
-<div class="cl-item"><strong>STROBE light switch</strong><span class="cl-dots"></span><strong>ON — F/O</strong></div>
+<div class="cl-item"><strong>STROBE light switch</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>ON</strong></div>
 <div class="cl-sub">When entering the departure runway. Use other lights as needed.</div>
 
-<div class="cl-item"><strong>Weather radar/terrain display</strong><span class="cl-dots"></span><strong>Set as needed — PF, PM</strong></div>
+<div class="cl-item"><strong>Weather radar/terrain display</strong> <span class="nnc-role">PF</span> <span class="nnc-role">PM</span><span class="cl-dots"></span><strong>Set as needed</strong></div>
 <div class="cl-sub">Select VSD on as needed.</div>
 
-<div class="cl-item"><strong>Brakes</strong><span class="cl-dots"></span><strong>Released — C</strong></div>
+<div class="cl-item"><strong>Brakes</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Released</strong></div>
 <div class="cl-sub">Align the airplane with the runway.</div>
 
-<div class="cl-item"><strong>Runway heading</strong><span class="cl-dots"></span><strong>Verify — C, F/O</strong></div>
+<div class="cl-item"><strong>Runway heading</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Verify</strong></div>
 
-<div class="cl-item"><strong>LANDING light switches (L, R)</strong><span class="cl-dots"></span><strong>ON — F/O</strong></div>
+<div class="cl-item"><strong>LANDING light switches (L, R)</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>ON</strong></div>
 <div class="cl-sub">When cleared for takeoff.</div>
 
-<div class="cl-item"><strong>Announce</strong><span class="cl-dots"></span><span class="sop-tag-items">C: "Takeoff"</span></div>
+<div class="cl-item"><strong>Announce</strong><span class="cl-dots"></span><span class="sop-tag-items">CP: "Takeoff"</span></div>
 
-<div class="cl-item"><strong>If applicable: announce</strong><span class="cl-dots"></span><span class="sop-tag-items">C: "You have control!"</span></div>
+<div class="cl-item"><strong>If applicable: announce</strong><span class="cl-dots"></span><span class="sop-tag-items">CP: "You have control!"</span></div>
 <div class="cl-item cl-indent"><strong>Response</strong><span class="cl-dots"></span><span class="sop-tag-items">F/O: "I have control!"</span></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
-<div class="cl-item cl-indent"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>~40% N1 — C</strong></div>
+<div class="cl-item cl-indent"><strong>Thrust levers</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>~40% N1</strong></div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
-<div class="cl-item cl-indent"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>~20 TPR — C</strong></div>
+<div class="cl-item cl-indent"><strong>Thrust levers</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>~20 TPR</strong></div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
 
-<div class="cl-item"><strong>Engines</strong><span class="cl-dots"></span><strong>Allow to stabilize — C</strong></div>
+<div class="cl-item"><strong>Engines</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Allow to stabilize</strong></div>
 
-<div class="cl-item"><strong>TO/GA switch</strong><span class="cl-dots"></span><strong>Push — C</strong></div>
+<div class="cl-item"><strong>TO/GA switch</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Push</strong></div>
 
-<div class="cl-item"><strong>Takeoff thrust</strong><span class="cl-dots"></span><strong>Verify set — C, F/O</strong></div>
+<div class="cl-item"><strong>Takeoff thrust</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Verify set</strong></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
 <div class="cl-note">Maximum takeoff thrust may not be available until 65 knots.</div>
@@ -74,9 +74,9 @@ role: Both
 | Verify acceleration at the acceleration height.<br><span class="sop-tag-items">PF: "FLAPS ___"</span> according to the flap retraction schedule. | |
 | | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
 | Engage the autopilot when above the minimum altitude for autopilot engagement. | |
+| | After flap retraction is complete, set the ENGINE ANTI-ICE selectors to AUTO. |
 
 </div>
-| | After flap retraction is complete, set the ENGINE ANTI-ICE selectors to AUTO. |
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
 </div>
@@ -90,4 +90,7 @@ role: Both
 | <span class="c-green">**Landing gear**</span> | <span class="c-green">UP</span> | PM |
 | <span class="c-green">**Flaps**</span> | <span class="c-green">UP</span> | PM |
 
-<div class="nnc-complete">After Takeoff Checklist complete</div>
+
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PM: "After Takeoff Checklist complete."</span>
+</div>

@@ -52,7 +52,9 @@ role: Both
 | <span class="c-green">**Landing gear**</span> | <span class="c-green">UP</span> | PM |
 | <span class="c-green">**Flaps**</span> | <span class="c-green">UP</span> | PM |
 
-<div class="nnc-complete">After Takeoff Checklist complete</div>
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PM: "After Takeoff Checklist complete."</span>
+</div>
 
 ---
 

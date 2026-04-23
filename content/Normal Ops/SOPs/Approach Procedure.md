@@ -26,6 +26,7 @@ Complete the Approach Procedure before:
 | Update the arrival and approach, as needed. | |
 | Select VSD on as needed. | |
 | Update the approach briefing as needed. | |
+| Flaps & Gear extension on schedule:<br><table style="width:100%;font-size:0.875em;margin-top:0.4em;border:none"><tr><td><strong>FLAPS 1</strong></td><td style="color:var(--gray)">at "UP"</td></tr><tr><td><strong>FLAPS 5</strong></td><td style="color:var(--gray)">at "1"</td></tr><tr><td style="color:var(--gray)">(FLAPS 15)</td><td style="color:var(--gray)">optional</td></tr><tr><td><strong>GEAR DOWN</strong></td><td style="color:var(--gray)">before Flaps 20</td></tr><tr><td><strong>FLAPS 20</strong></td><td style="color:var(--gray)">at "5"</td></tr><tr><td><strong>FLAPS 25</strong></td><td style="color:var(--gray)">at "20"</td></tr><tr><td style="color:var(--gray)">(FLAPS 30)</td><td style="color:var(--gray)">optional</td></tr><tr><td><strong>Arm Speedbrakes</strong></td><td style="color:var(--gray)">before FAF</td></tr></table> | |
 
 </div>
 
@@ -49,4 +50,6 @@ Complete the Approach Procedure before:
 |:---|:---|:---:|
 | **Altimeters**<br><small style="color:var(--gray)">Both — PF and PM set and cross-check altimeters. PM sets standby altimeter.</small> | \_\_ | B |
 
-<div class="nnc-complete">Approach Checklist complete</div>
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">PM: "Approach Checklist complete."</span>
+</div>

@@ -34,14 +34,14 @@ Approaching Takeoff-RWY:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Cabin Report</strong><span class="cl-dots"></span><strong>Receive — C, F/O</strong></div>
-<div class="cl-item"><strong>Departure Briefing</strong><span class="cl-dots"></span><strong>Confirm — C, F/O</strong></div>
-<div class="cl-item"><strong>TOPAS X-Check</strong><span class="cl-dots"></span><strong>Perform — C, F/O</strong></div>
+<div class="cl-item"><strong>Departure Briefing</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Confirm</strong></div>
+<div class="cl-item"><strong>Cabin Report</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Receive</strong></div>
+<div class="cl-item"><strong>TOPAS X-Check</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Perform</strong></div>
 
 </div>
 
 <div class="sop-entry-tags">
-<span class="sop-tag-cl">C → F/O: "BEFORE TAKEOFF CL"</span>
+<span class="sop-tag-cl">CP → F/O: "BEFORE TAKEOFF CL"</span>
 </div>
 
 ---
@@ -50,11 +50,17 @@ Approaching Takeoff-RWY:
 
 | Item | Response | Who |
 |:---|:---|:---:|
-| <span class="c-green">**Flaps**</span> | <span class="c-green">\_\_</span> | C, F/O |
-| **Cabin report** | Received | C |
+| <span class="c-green">**Flaps**</span> | <span class="c-green">\_\_</span> | CP, F/O |
+| **Cabin report** | Received | CP |
 | **TOPAS X-Check** | RWY \_\_ performed | F/O |
 
-<div class="nnc-complete">Before Takeoff Checklist complete</div>
+<div class="sop-entry-tags">
+<span class="sop-tag-cl">F/O: "Before Takeoff Checklist Complete"</span>
+</div>
+
+<div class="sop-entry-tags" style="margin-top: 0.5em">
+<span class="sop-tag-cl">CP: "Checklist Complete"</span>
+</div>
 
 > [!warning] Caution
 > If there are any changes to the departure data (e.g. runway change, stronger tailwind), a new performance calculation has to be performed and if already completed the BEFORE TAKEOFF CHECKLIST has to be read again.

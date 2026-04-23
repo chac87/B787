@@ -11,7 +11,7 @@ tags: [sop, normal-ops]
 
 ## [[Normal Ops/SOPs/Preliminary Preflight - First Officer|Preliminary Preflight Procedure]]
 
-## [[Normal Ops/SOPs/CDU EFB Preflight - PF|CDU/EFB Preflight Procedure – PF]]
+## [[Normal Ops/SOPs/CDU Preflight Procedure - PF|CDU Preflight Procedure – PF]]
 
 ## [[Normal Ops/SOPs/Preflight Procedure - First Officer|Preflight Procedure – First Officer]]
 
