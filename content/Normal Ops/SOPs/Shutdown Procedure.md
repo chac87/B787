@@ -59,6 +59,8 @@ When Doors in PARK:
 
 <div class="checklist">
 
+<div class="cl-item"><strong>SYS DOOR page</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Check</strong></div>
+
 <div class="cl-item"><strong>SEATBELTS selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>OFF</strong></div>
 
 <div class="cl-item"><strong>HYDRAULIC panel</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Set</strong></div>

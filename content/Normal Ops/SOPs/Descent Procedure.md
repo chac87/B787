@@ -9,6 +9,25 @@ role: Both
 
 Start the Descent Procedure before the airplane descends below the cruise altitude for arrival at destination. Complete the Descent Procedure by 10.000 feet MSL.
 
+<div class="eicas-levels" style="flex-direction:row;gap:0.75rem;margin:0.5em 0 1em">
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Descent before Top of Descent</div>
+  <div class="eicas-card-body">VNAV SPD<br>THR<br>1.250 ft/min → HOLD<br>At Descent Path capture: VNAV PTH</div>
+</div>
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Descent at Top of Descent</div>
+  <div class="eicas-card-body">VNAV PTH</div>
+</div>
+
+<div class="eicas-card eicas-card--white" style="flex:1">
+  <div class="eicas-card-title">Descent after Top of Descent</div>
+  <div class="eicas-card-body">VNAV SPD<br>IDLE → HOLD<br>At Descent Path capture: VNAV PTH</div>
+</div>
+
+</div>
+
 <div class="table-50-50">
 
 | PF | PM |

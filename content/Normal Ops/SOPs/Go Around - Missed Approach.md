@@ -24,6 +24,7 @@ role: Both
 <tr><td></td><td>Verify a positive rate of climb on the altimeter.<br><span class="sop-tag-items">PM: "POSITIVE RATE"</span></td></tr>
 <tr><td>Verify a positive rate of climb on the altimeter.<br><span class="sop-tag-items">PF: "GEAR UP"</span></td><td></td></tr>
 <tr><td></td><td>Set the landing gear lever to UP.<br><span class="sop-tag-items">PM: "GEAR UP"</span></td></tr>
+<tr><td>Callout FMA.</td><td></td></tr>
 <tr><td>Above 400 feet radio altitude, verify or select a roll mode.</td><td>Verify that the missed approach altitude is set.</td></tr>
 <tr><td>Verify that the missed approach route is tracked.</td><td></td></tr>
 <tr><td>At acceleration height, set speed to the maneuver speed for the planned flap setting.</td><td></td></tr>

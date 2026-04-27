@@ -138,7 +138,7 @@ role: Both
 <div class="sop-entry">
 <div class="sop-entry-name">
 <a href="/Normal-Ops/SOPs/Descent-Procedure">Descent Procedure</a>
-<div class="sop-entry-mnemonic">RNPFM</div>
+<div class="sop-entry-mnemonic">RNP-FMB</div>
 </div>
 <div class="sop-entry-right">
 <div class="sop-entry-tags">

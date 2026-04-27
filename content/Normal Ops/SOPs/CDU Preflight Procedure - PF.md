@@ -31,6 +31,9 @@ role: PF
 <div class="cl-sub">Enter STAR, RWY (ohne Approach Procedure)</div>
 <div class="cl-sub"><strong>LEGS</strong></div>
 <div class="cl-sub">Enter/confirm constraints etc.</div>
+<div class="cl-sub">Climb/Descent Winds: COMM page</div>
+<div class="cl-sub">Cruise Winds: LEGS - RTE DATA</div>
+<div class="cl-sub">RTE COPY</div>
 <div class="cl-sub"><strong>NAV RAD</strong></div>
 <div class="cl-sub">Enter/confirm Nav Radios</div>
 <div class="cl-sub"><strong>FIX</strong></div>
