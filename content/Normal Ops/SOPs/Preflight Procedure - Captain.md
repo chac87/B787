@@ -152,7 +152,7 @@ The captain normally does this procedure. The first officer may do this procedur
 | **<span class="c-green">FUEL CONTROL switches</span>** | <span class="c-green">CUTOFF</span>                                                               |   CP    |
 | **Fuel quantity**                                      | \_\_tons <br><small>CP reads QTY from EICAS, F/O announces fuel ordered.</small>                  | CP, F/O |
 
-<div class="nnc-complete">Preflight Checklist complete</div>
+<div style="text-align:center;margin-top:1.2em"><span class="sop-tag-cl">F/O: "Preflight Checklist complete."</span></div>
 
 ---
 

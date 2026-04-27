@@ -94,3 +94,7 @@ role: Both
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PM: "After Takeoff Checklist complete."</span>
 </div>
+
+<h2 class="h2-no-collapse">Note</h2>
+
+After the After Takeoff Checklist: Check thrust reference mode on EICAS.

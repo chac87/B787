@@ -12,6 +12,8 @@ function setupH2Collapse() {
   article.querySelectorAll(".h2-collapse-btn").forEach((b) => b.remove())
 
   for (const h2 of Array.from(article.querySelectorAll("h2"))) {
+    if (h2.classList.contains("h2-no-collapse")) continue
+
     const siblings: Element[] = []
     let next = h2.nextElementSibling
     while (next && next.tagName !== "H2") {
