@@ -156,11 +156,9 @@ The captain normally does this procedure. The first officer may do this procedur
 
 ---
 
-## Taxi and Takeoff Briefings
+<div class="checklist h2-collapse-break">
 
-<div class="checklist">
-
-<div class="cl-item"><strong>Taxi and Takeoff briefings</strong><span class="cl-dots"></span><strong>Complete — CP, F/O</strong></div>
+<div class="cl-item"><strong>Taxi and Takeoff briefings</strong><span class="cl-dots"></span><strong>Complete</strong></div>
 <div class="cl-sub">The pilot flying will do the takeoff briefing, the captain the RTO briefing. <a href="/Operational/Arrival-und-Departure-Briefing">→ Arrival und Departure Briefing</a></div>
 
 </div>
