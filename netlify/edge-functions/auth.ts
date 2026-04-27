@@ -4,17 +4,13 @@ declare const Netlify: {
   }
 }
 
-type EdgeContext = {
-  next(): Response | Promise<Response>
-}
-
 const COOKIE_NAME = "lh787_auth"
 const SESSION_SECONDS = 60 * 60 * 24 * 30
 const LOGIN_PATH = "/__auth/login"
 const LOGOUT_PATH = "/__auth/logout"
 const encoder = new TextEncoder()
 
-export default async function authGate(request: Request, context: EdgeContext) {
+export default async function authGate(request: Request) {
   const url = new URL(request.url)
 
   if (url.pathname === LOGIN_PATH && request.method === "POST") {
@@ -26,7 +22,7 @@ export default async function authGate(request: Request, context: EdgeContext) {
   }
 
   if (await hasValidSession(request)) {
-    return context.next()
+    return
   }
 
   if (url.pathname === LOGIN_PATH) {
@@ -40,8 +36,8 @@ async function handleLogin(request: Request) {
   const form = await request.formData()
   const password = String(form.get("password") ?? "")
   const redirectTo = normalizeRedirect(String(form.get("redirect") ?? "/"))
-  const passwordHash = Netlify.env.get("SITE_PASSWORD_HASH")
-  const secret = Netlify.env.get("AUTH_COOKIE_SECRET")
+  const passwordHash = getEnv("SITE_PASSWORD_HASH")
+  const secret = getEnv("AUTH_COOKIE_SECRET")
 
   if (!passwordHash || !secret) {
     return serviceUnavailable()
@@ -61,11 +57,11 @@ async function handleLogin(request: Request) {
 }
 
 async function hasValidSession(request: Request) {
-  const secret = Netlify.env.get("AUTH_COOKIE_SECRET")
-  if (!secret) return false
-
   const cookie = parseCookies(request.headers.get("cookie")).get(COOKIE_NAME)
   if (!cookie) return false
+
+  const secret = getEnv("AUTH_COOKIE_SECRET")
+  if (!secret) return false
 
   const [expiresRaw, signature] = cookie.split(".")
   const expires = Number(expiresRaw)
@@ -228,6 +224,14 @@ function serviceUnavailable() {
       "Cache-Control": "no-store",
     },
   })
+}
+
+function getEnv(name: string) {
+  try {
+    return Netlify.env.get(name)
+  } catch {
+    return undefined
+  }
 }
 
 function redirectWithClearedCookie(origin: string) {
