@@ -50,7 +50,7 @@ async function handleLogin(request: Request) {
 
   const expires = Math.floor(Date.now() / 1000) + SESSION_SECONDS
   const signature = await hmacHex(secret, String(expires))
-  const response = Response.redirect(new URL(redirectTo, request.url), 303)
+  const response = Response.redirect(new URL(redirectTo, request.url).toString(), 303)
   response.headers.set("Set-Cookie", sessionCookie(`${expires}.${signature}`, expires, request.url))
   response.headers.set("Cache-Control", "no-store")
   return response
@@ -245,18 +245,20 @@ function redirectWithClearedCookie(origin: string) {
 }
 
 function sessionCookie(value: string, expires: number, requestUrl: string) {
-  const secure = new URL(requestUrl).protocol === "https:" ? "; Secure" : ""
-  return [
+  const attributes = [
     `${COOKIE_NAME}=${value}`,
     "Path=/",
     `Max-Age=${SESSION_SECONDS}`,
     `Expires=${new Date(expires * 1000).toUTCString()}`,
     "HttpOnly",
     "SameSite=Lax",
-    secure.trimStart(),
   ]
-    .filter(Boolean)
-    .join("; ")
+
+  if (new URL(requestUrl).protocol === "https:") {
+    attributes.push("Secure")
+  }
+
+  return attributes.join("; ")
 }
 
 function parseCookies(header: string | null) {
