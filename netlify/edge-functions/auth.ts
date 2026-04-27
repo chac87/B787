@@ -50,10 +50,9 @@ async function handleLogin(request: Request) {
 
   const expires = Math.floor(Date.now() / 1000) + SESSION_SECONDS
   const signature = await hmacHex(secret, String(expires))
-  const response = Response.redirect(new URL(redirectTo, request.url).toString(), 303)
-  response.headers.set("Set-Cookie", sessionCookie(`${expires}.${signature}`, expires, request.url))
-  response.headers.set("Cache-Control", "no-store")
-  return response
+  return redirectResponse(new URL(redirectTo, request.url).toString(), {
+    "Set-Cookie": sessionCookie(`${expires}.${signature}`, expires, request.url),
+  })
 }
 
 async function hasValidSession(request: Request) {
@@ -235,13 +234,20 @@ function getEnv(name: string) {
 }
 
 function redirectWithClearedCookie(origin: string) {
-  const response = Response.redirect(origin, 303)
-  response.headers.set(
-    "Set-Cookie",
-    `${COOKIE_NAME}=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax; Secure`,
-  )
-  response.headers.set("Cache-Control", "no-store")
-  return response
+  return redirectResponse(origin, {
+    "Set-Cookie": `${COOKIE_NAME}=; Path=/; Max-Age=0; HttpOnly; SameSite=Lax; Secure`,
+  })
+}
+
+function redirectResponse(location: string, extraHeaders: Record<string, string> = {}) {
+  return new Response(null, {
+    status: 303,
+    headers: {
+      Location: location,
+      "Cache-Control": "no-store",
+      ...extraHeaders,
+    },
+  })
 }
 
 function sessionCookie(value: string, expires: number, requestUrl: string) {
