@@ -13,7 +13,7 @@ title: B787 Guide
 ## [[Non Normals/index|Non-Normals]]
 ## [[Operational/index|Operational]]
 
-<div class="eicas-levels" style="margin: 0.75em 0 1em;">
+<div class="eicas-levels h2-collapse-break" style="margin: 0.75em 0 1em;">
   <div class="eicas-card eicas-card--amber">
     <div class="eicas-card-title">Hinweis</div>
     <div class="eicas-card-body">

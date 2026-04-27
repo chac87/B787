@@ -16,7 +16,11 @@ function setupH2Collapse() {
 
     const siblings: Element[] = []
     let next = h2.nextElementSibling
-    while (next && next.tagName !== "H2") {
+    while (
+      next &&
+      next.tagName !== "H2" &&
+      !next.classList.contains("h2-collapse-break")
+    ) {
       siblings.push(next)
       next = next.nextElementSibling
     }
