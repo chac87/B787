@@ -41,6 +41,7 @@
 [[Normal Ops/SOPs/Landing Procedure ILS or GLS|Landing Procedure ILS or GLS]]
 [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using IAN|Landing Procedure – Instrument Approach Using IAN]]
 [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using VNAV|Landing Procedure – Instrument Approach Using VNAV]]
+[[Normal Ops/SOPs/Training Pattern|Training Pattern]]
 [[Normal Ops/SOPs/Go Around - Missed Approach|Go Around – Missed Approach]]
 [[Normal Ops/SOPs/Landing Roll Procedure|Landing Roll Procedure]]
 [[Normal Ops/SOPs/After Landing Procedure|After Landing Procedure]]
