@@ -37,9 +37,13 @@ tags: [sop, normal-ops]
 
 ## [[Normal Ops/SOPs/Landing Procedure ILS or GLS|Landing Procedure ILS or GLS]]
 
+## [[Normal Ops/SOPs/Non Precision Approaches General|Non Precision Approaches General]]
+
 ## [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using IAN|Landing Procedure – Instrument Approach Using IAN]]
 
 ## [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using VNAV|Landing Procedure – Instrument Approach Using VNAV]]
+
+## [[Normal Ops/SOPs/Circling Approach|Circling Approach]]
 
 ## [[Normal Ops/SOPs/Training Pattern|Training Pattern]]
 

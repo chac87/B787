@@ -209,6 +209,33 @@ article table td:first-child:has(+ td .sop-value) {
   line-height: 1.5;
 }
 
+.descent-flow {
+  --flow-step: clamp(0.18rem, 0.8vw, 0.55rem);
+  margin: 0.75rem 0 1.25rem;
+  padding-left: 1.8rem;
+}
+
+.descent-flow > li {
+  padding-left: calc((var(--i, 1) - 1) * var(--flow-step));
+  margin: 0.25rem 0;
+}
+
+.descent-flow ul {
+  margin: 0.25rem 0 0.35rem;
+  padding-left: 1.1rem;
+}
+
+.descent-flow ul li {
+  margin: 0.12rem 0;
+}
+
+@media (max-width: 700px) {
+  .descent-flow {
+    --flow-step: clamp(0.08rem, 0.45vw, 0.22rem);
+    padding-left: 1.45rem;
+  }
+}
+
 // Panel section separator — horizontal rule between checklist panel sections
 .cl-sep {
   border: none;

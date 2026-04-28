@@ -11,8 +11,18 @@ function setupH2Collapse() {
   }
   article.querySelectorAll(".h2-collapse-btn").forEach((b) => b.remove())
 
+  const isHomeIndex = article.querySelector("h1")?.textContent?.trim() === "B787 Guide"
+
   for (const h2 of Array.from(article.querySelectorAll("h2"))) {
     if (h2.classList.contains("h2-no-collapse")) continue
+    const h2Link = h2.querySelector("a.internal") as HTMLAnchorElement | null
+    if (
+      isHomeIndex &&
+      h2.textContent?.trim() === "Operational" &&
+      h2Link?.getAttribute("href") === "/Operational/"
+    ) {
+      continue
+    }
 
     const siblings: Element[] = []
     let next = h2.nextElementSibling
