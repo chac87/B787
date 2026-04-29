@@ -1,17 +1,20 @@
 ---
-title: Landing Procedure – Instrument Approach Using VNAV
+title: Instrument Approach Using VNAV
 tags: [sop, landing, captain, first-officer]
 section: 2-1-14
 role: Both
 ---
 
-# Landing Procedure – Instrument Approach Using VNAV
+# Instrument Approach Using VNAV
+
+Refer to 2-1-3 Instrument Approach Using VNAV (OM-B).
+
 VNAV should be used only for approaches that have one of the following features:
 - a published GP angle on the LEGS page for the final approach segment
 - an RWxx waypoint at the approach end of the runway
 - a missed approach waypoint before the approach end of the runway, (for example, MXxx)
 
-This procedure is not authorized using QFE.
+<span class="c-red"><em>This procedure is not authorized using QFE.</em></span>
 
 > [!info]- Flap Extension Schedule
 > | Current Flap Position | At Speed Tape "Display" | Select Flaps | Command Speed for Selected Flaps |
@@ -21,46 +24,61 @@ This procedure is not authorized using QFE.
 > | 5 | "5" | 20 | "20" |
 > | 20 | "20" | 25 or 30 | (v<sub>REF25</sub> or v<sub>REF30</sub>) + wind additives |
 
-<div class="table-50-50">
-
-| PF | PM |
-|:---|:---|
-| Initially<br>- If on radar vectors:<br>&nbsp;&nbsp;• HDG SEL<br>&nbsp;&nbsp;• Pitch mode (as needed)<br>- If enroute to a fix:<br>&nbsp;&nbsp;• LNAV or other roll mode<br>&nbsp;&nbsp;• VNAV or other pitch mode | |
-| | Verify that the cabin is secure. |
-| <span class="sop-tag-items">PF: "FLAPS ___"</span><br>according to the flap extension schedule. | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |
-| The recommended roll modes for the final approach are:<br>- For an RNAV, GPS, VOR or NDB approach use LNAV<br>- For a B/CRS approach use LNAV or B/CRS<br>- For a LOC, SDF, LDA, ILS (G/S off), IGS (G/S off) approach use LNAV or LOC | |
-| When on the final approach course intercept heading for LOC, B/CRS, SDF, or LDA approaches:<br>- Verify that the localizer is tuned and identified<br>- Verify that the LOC pointer is shown | |
-| Arm the LNAV or LOC mode. | |
-
+<div class="eicas-levels">
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Approach Preparation</div>
+    <div class="eicas-card-body">Select approach from FMC arrivals page.<br>Tune and identify appropriate navaids.<br>Use FIX page for extra references.<br>Verify/enter RNP.<br>Set DA(H) or MDA(H) with baro minimums selector.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Radar Vectors</div>
+    <div class="eicas-card-body">Select a straight-in intercept course to the FAF for proper LNAV waypoint sequencing.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">RNP Source</div>
+    <div class="eicas-card-body">RNP may come from manual entry, FMC default, or navigation database.<br>Manual entry overrides all others.</div>
+  </div>
 </div>
 
-> [!warning] Warning
-> When using LNAV to intercept the localizer, LNAV might parallel the localizer without capturing it. The airplane can then descend on the VNAV path with the localizer not captured.
-
-<div class="table-50-50">
-
-| PF | PM |
-|:---|:---|
-| Use LNAV, HDG SEL, TRK SEL, HDG HOLD, or TRK HOLD to intercept the final approach course as needed. | |
-| Verify that LNAV is engaged or that the localizer is captured. | |
-| Approximately 2 NM before the final approach fix and after ALT, VNAV PTH, or VNAV ALT is annunciated:<br>- Set DA(H) or MDA(H) on the MCP<br>- Select or verify VNAV<br>- Select or verify speed intervention | |
-| Flaps & Gear extension on schedule:<br><table style="width:100%;font-size:0.875em;margin-top:0.4em;border:none"><tr><td><strong>FLAPS 1</strong></td><td style="color:var(--gray)">at "UP"</td></tr><tr><td><strong>FLAPS 5</strong></td><td style="color:var(--gray)">at "1"</td></tr><tr><td style="color:var(--gray)">(FLAPS 15)</td><td style="color:var(--gray)">optional</td></tr><tr><td><strong>GEAR DOWN</strong></td><td style="color:var(--gray)">before Flaps 20</td></tr><tr><td><strong>FLAPS 20</strong></td><td style="color:var(--gray)">at "5"</td></tr><tr><td><strong>Arm Speedbrakes</strong></td><td style="color:var(--gray)">before FAF</td></tr><tr><td><strong>FLAPS 25</strong></td><td style="color:var(--gray)">at "20"</td></tr><tr><td style="color:var(--gray)">(FLAPS 30)</td><td style="color:var(--gray)">optional</td></tr></table> | |
-
+<div class="eicas-levels">
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Recommended Roll Modes</div>
+    <div class="eicas-card-body">Any recommended roll mode from the procedure may be used.<br><table style="width:100%;font-size:0.9em;margin-top:0.45em;border:none"><tr><td><strong>RNAV / GPS / VOR / NDB</strong></td><td style="color:var(--gray)">LNAV</td></tr><tr><td><strong>B/CRS</strong></td><td style="color:var(--gray)">LNAV or B/CRS</td></tr><tr><td><strong>LOC / SDF / LDA / ILS G/S off / IGS G/S off</strong></td><td style="color:var(--gray)">LNAV or LOC</td></tr></table></div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Localizer-Based Approaches</div>
+    <div class="eicas-card-body">When on final approach course intercept heading for LOC, B/CRS, SDF, or LDA:<br>Verify localizer tuned and identified.<br>Verify LOC pointer shown.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Arm Mode</div>
+    <div class="eicas-card-body">Arm the LNAV or LOC mode.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Intercept</div>
+    <div class="eicas-card-body">Verify LNAV engaged or localizer captured.<br>Do not cross FAF or begin descent unless aircraft is on final approach course.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">~2 NM Before FAF</div>
+    <div class="eicas-card-body">After ALT, VNAV PTH, or VNAV ALT is annunciated, and FAF altitude protection is assured:<br>Set DA(H) or MDA(H) on MCP.<br>Select/verify VNAV.<br>Select/verify speed intervention.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">VNAV SPD / VNAV ALT</div>
+    <div class="eicas-card-body">VNAV SPD changes to VNAV PTH near FAF if on or below path.<br>If VNAV ALT engages beyond FAF, set DA(H) or MDA(H) and select altitude intervention without delay.</div>
+  </div>
 </div>
 
-<div class="sop-entry-tags">
-<span class="sop-tag-cl">PF → PM: "LANDING CL"</span>
-</div>
-
-<div class="table-50-50">
-
-| PF | PM |
-|:---|:---|
-| At the final approach fix, verify the crossing altitude. | |
-| Monitor the approach. | |
-| When at least 300 feet below the missed approach altitude, set the missed approach altitude on the MCP. | |
-| If suitable visual reference is established at DA(H), MDA(H), or the missed approach point, disengage the autopilot in accordance with regulatory requirements.<br>Maintain the glide path to landing. | |
-
+<div class="eicas-levels">
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">FAF</div>
+    <div class="eicas-card-body">Verify crossing altitude.<br>Monitor the approach.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">MCP Altitude</div>
+    <div class="eicas-card-body">When at least 300 ft below missed approach altitude, set missed approach altitude on the MCP.<br>Some missed approach altitudes may be lower than FAF crossing altitude.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">DA(H) / MDA(H) / MAP</div>
+    <div class="eicas-card-body">If suitable visual reference is established, disengage the autopilot in accordance with regulatory requirements.<br>Below DA/MDA, visual guidance is primary; VNAV PTH is reference only.<br>Maintain the descent path to landing.<br>After missed approach fix, VNAV path guidance transitions to level flight.</div>
+  </div>
 </div>
 
 ---

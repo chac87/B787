@@ -17,7 +17,6 @@ The circling approach may be flown following any instrument approach procedure.
 <div class="cl-item"><strong>Landing gear</strong><span class="cl-dots"></span><strong>Down</strong></div>
 <div class="cl-item"><strong>Flaps</strong><span class="cl-dots"></span><strong>20</strong></div>
 <div class="cl-item"><strong>Speed</strong><span class="cl-dots"></span><strong>Flaps 20 maneuver speed</strong></div>
-<div class="cl-item"><strong>Minima</strong><span class="cl-dots"></span><strong>Anticipated circling speed</strong></div>
 <div class="cl-item"><strong>Optional</strong><span class="cl-dots"></span><strong>Flaps 25 or 30</strong></div>
 </div>
 

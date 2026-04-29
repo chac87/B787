@@ -39,9 +39,11 @@ tags: [sop, normal-ops]
 
 ## [[Normal Ops/SOPs/Non Precision Approaches General|Non Precision Approaches General]]
 
-## [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using IAN|Landing Procedure – Instrument Approach Using IAN]]
+## [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using IAN|Instrument Approach Using IAN]]
 
-## [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using VNAV|Landing Procedure – Instrument Approach Using VNAV]]
+## [[Normal Ops/SOPs/Landing Procedure - Instrument Approach Using VNAV|Instrument Approach Using VNAV]]
+
+<h2><a href="/Normal-Ops/SOPs/Instrument-Approach-Using-VS-or-FPA">Instrument Approach Using V<span>/</span>S or FPA</a></h2>
 
 ## [[Normal Ops/SOPs/Circling Approach|Circling Approach]]
 

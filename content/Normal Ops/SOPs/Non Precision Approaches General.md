@@ -53,9 +53,12 @@ The autopilot should normally remain engaged until **suitable visual reference**
 
 ## IAN
 
-**IAN** provides ILS-like procedures, indications and alerting for suitable non-ILS approaches. It uses the **APP** switch and displays approach guidance similar to ILS.
+**IAN** provides ILS-like procedures, indications and alerting for suitable non-ILS approaches. It uses the **APP** switch and normally replaces LNAV/VNAV for suitable approaches because procedures are standardized.
 
 IAN does **not** support autoland.
+
+> [!warning] Barometric G/P
+> IAN G/P is barometric. Above-ISA temperatures can place the IAN path above PAPI/VASI; following the visual glide slope below the IAN path may trigger a **GLIDESLOPE** alert.
 
 **Guidance:**
 
@@ -70,29 +73,13 @@ IAN does **not** support autoland.
 - QFE operation not authorized
 - Appropriate RNP must be used
 - The approach must be selected from the FMC database
-- Waypoints from FAF to MAP must not be modified, except permitted cold-temperature corrections
+- Waypoints from FAF onward must not be modified, except permitted cold-temperature corrections up to and including MAP
 - For FMC-based approaches, the LEGS page must contain an appropriate vertical path / GP angle
 - IAN is recommended mainly for straight-in approaches
-- RNAV (RNP) AR is normally better flown using LNAV/VNAV, not IAN
-
-**Procedure Flow:**
-
-<ol class="descent-flow">
-  <li style="--i:1">Select approach in FMC</li>
-  <li style="--i:2">Verify final approach course and GP angle</li>
-  <li style="--i:3">Tune/identify raw data as required</li>
-  <li style="--i:4">Intercept heading established</li>
-  <li style="--i:5">Deviation pointers displayed</li>
-  <li style="--i:6">APP select</li>
-  <li style="--i:7">LOC/FAC capture</li>
-  <li style="--i:8">G/P alive</li>
-  <li style="--i:9">Configure</li>
-  <li style="--i:10">G/P capture</li>
-  <li style="--i:11">Set missed approach altitude</li>
-  <li style="--i:12">Landing checklist</li>
-  <li style="--i:13">FAF altitude crosscheck</li>
-  <li style="--i:14">DA/MDA/MAP: land or go-around</li>
-</ol>
+- For non-straight-in or RNAV (RNP) AR approaches, prefer LNAV/VNAV
+- If IAN is nevertheless used there, select APP only after LNAV is engaged and the aircraft is on path
+- Raw data monitoring is recommended when available
+- IAN deviation scales are RNP-based and do not become more sensitive like ILS
 
 **MCP Altitude Handling:**
 
@@ -103,6 +90,9 @@ IAN does **not** support autoland.
 
 **Minimums / AP Disconnect at DA(H), MDA(H), or MAP:**
 
+- Published VNAV DA(H), or authorized MDA(H) used as DA(H), may be used where approved
+- If using MDA(H), baro minimums may be set to **MDA(H) + 50 ft** to avoid descending below MDA(H) during missed approach
+
 - If suitable visual reference is established:
   - Disengage autopilot
   - Continue visually
@@ -112,7 +102,7 @@ IAN does **not** support autoland.
 
 ## VNAV
 
-A VNAV non-ILS approach uses an FMC-calculated vertical path and is flown in **VNAV PTH**.
+A VNAV non-ILS approach uses an FMC-calculated vertical path and is flown in **VNAV PTH**. Maximum use of the navigation database is recommended.
 
 The required vertical path should:
 
@@ -122,6 +112,19 @@ The required vertical path should:
 - Normally be based on a coded **GP angle**
 
 The VNAV glidepath must be shown on the final approach segment of the LEGS page.
+
+**Database Path Construction:**
+
+| Case | Use |
+|---|---|
+| GP angle on final approach segment | Fully compatible with VNAV and final step-down altitudes |
+| RWxx / MXxx / named MAP waypoint | Normally usable when it provides approx. 50 ft threshold crossing |
+
+If the RWxx altitude does not correspond to approx. 50 ft, it may be modified to approx. 50 ft. Threshold crossing altitude normally requires four digits, e.g. **0080** for 80 ft.
+
+Manually constructed or modified final paths require raw-data monitoring and compliance with each step-down fix. Use of DA(H) is not recommended for a manually constructed final approach.
+
+For cold-temperature corrections, VNAV PTH operates normally but follows the higher of the published GP-angle path or the geometric path defined by waypoint constraints.
 
 **Recommended Roll Modes:**
 
@@ -133,49 +136,14 @@ The VNAV glidepath must be shown on the final approach segment of the LEGS page.
 
 For localizer-based approaches, the localizer must be tuned and identified and the LOC pointer displayed before using LOC guidance.
 
-During a VNAV non-ILS approach with speed intervention, pitch mode remains **VNAV PTH** and the vertical path is maintained regardless of IAS/MACH selector changes.
+During a VNAV non-ILS approach with speed intervention, pitch mode remains **VNAV PTH** and the vertical path is maintained regardless of IAS/MACH selector changes. Speed intervention is recommended; adding speed constraints is normally unnecessary.
 
-**Procedure Flow:**
-
-<ol class="descent-flow">
-  <li style="--i:1">Select FMC approach</li>
-  <li style="--i:2">Verify VNAV glidepath on LEGS page</li>
-  <li style="--i:3">Tune/identify navaids as required</li>
-  <li style="--i:4">Arm LNAV or LOC as appropriate</li>
-  <li style="--i:5">Intercept final approach course</li>
-  <li style="--i:6">Verify LNAV engaged or LOC captured</li>
-  <li style="--i:7">~2 NM before FAF:
-    <ul>
-      <li>Verify AP engaged</li>
-      <li>Set DA(H) or MDA(H) on MCP</li>
-      <li>Select/verify VNAV</li>
-      <li>Select/verify speed intervention</li>
-    </ul>
-  </li>
-  <li style="--i:8">Approaching glidepath:
-    <ul>
-      <li>Gear down</li>
-      <li>Flaps 20</li>
-      <li>Speedbrake armed</li>
-    </ul>
-  </li>
-  <li style="--i:9">Final descent:
-    <ul>
-      <li>Select landing flaps</li>
-      <li>Landing checklist</li>
-    </ul>
-  </li>
-  <li style="--i:10">When >=300 ft below missed approach altitude:
-    <ul>
-      <li>Set missed approach altitude</li>
-    </ul>
-  </li>
-  <li style="--i:11">DA/MDA/MAP:
-    <ul>
-      <li>Land or go-around</li>
-    </ul>
-  </li>
-</ol>
+> [!info] Altitude Intervention
+> Use altitude intervention only if **VNAV ALT** occurs above path and descent must continue.
+>
+> In **VNAV PTH** or **VNAV SPD**, altitude intervention does not delete approach waypoint altitude constraints.
+>
+> In **VNAV ALT**, it may delete down-path constraints within 150 ft of current altitude.
 
 **MCP Altitude Handling:**
 
@@ -190,6 +158,11 @@ Before FAF - approximately **2 NM before FAF**:
 > Set missed approach altitude only when at least 300 ft below missed approach altitude.
 >
 > *Reason: Avoids unwanted **VNAV ALT**, avoids altitude capture interrupting the final descent, and keeps the aircraft on **VNAV PTH** until decision.*
+
+**Minimums / AP Disconnect at DA(H), MDA(H), or MAP:**
+
+- Published VNAV DA(H), or authorized MDA(H) used as DA(H), may be used where approved
+- If suitable visual reference is not maintained at or after DA(H)/MDA(H), execute immediate go-around
 
 ## IAN vs. VNAV
 
