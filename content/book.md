@@ -67,7 +67,7 @@
 [[Normal Ops/Supplementary Procedures/Warning Systems/Windshear|Windshear]]
 
 ## [[Non Normals/index|Non-Normals]]
-[[Non Normals/Non-Normal Philosophy|Non-Normal Philosophy]]
+[[Non Normals/Non-Normal Handling|Non-Normal Handling]]
 [[Non Normals/Memory Items|Memory Items]]
 [[Non Normals/Non-Normal Checklists|Non-Normal Checklists]]
 [[Non Normals/Non-Normal Maneuvers/index|Non-Normal Maneuvers]]

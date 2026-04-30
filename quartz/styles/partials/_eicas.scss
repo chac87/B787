@@ -49,6 +49,151 @@
   background: color-mix(in srgb, var(--card-color, #888), transparent 88%);
 }
 
+/* ── Non-Normal Handling Flow Components ────────────────────────────── */
+.nn-flow {
+  display: grid;
+  gap: 0.55rem;
+  margin: 1.2em 0;
+}
+
+.nn-flow-step {
+  --nn-flow-color: #888888;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  border-left: 4px solid var(--nn-flow-color);
+  border-radius: 0 7px 7px 0;
+  background: color-mix(in srgb, var(--nn-flow-color), transparent 93%);
+  padding: 0.65rem 0.9rem;
+}
+
+.nn-flow-step--red { --nn-flow-color: #e74c3c; }
+.nn-flow-step--amber { --nn-flow-color: #f39c12; }
+.nn-flow-step--white { --nn-flow-color: #888888; }
+.nn-flow-step--blue { --nn-flow-color: #3E5FA8; }
+
+.nn-flow-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 1.5px solid var(--nn-flow-color);
+  border-radius: 999px;
+  color: var(--nn-flow-color);
+  font-weight: 700;
+  font-size: 0.82rem;
+  line-height: 1;
+}
+
+.nn-flow-title {
+  color: var(--nn-flow-color);
+  font-weight: 700;
+  font-size: 0.98rem;
+  line-height: 1.25;
+  margin-bottom: 0.16rem;
+}
+
+.nn-flow-body {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.nn-decision {
+  display: grid;
+  gap: 0.65rem;
+  margin: 1.2em 0;
+}
+
+.nn-decision-question {
+  justify-self: center;
+  border: 1.5px solid #8A7F6B;
+  border-radius: 7px;
+  background: color-mix(in srgb, #8A7F6B, transparent 88%);
+  color: var(--dark);
+  font-weight: 700;
+  text-align: center;
+  padding: 0.45rem 0.9rem;
+  max-width: 100%;
+}
+
+.nn-decision-branches {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.nn-branch {
+  --nn-branch-color: #3E5FA8;
+  display: grid;
+  align-content: start;
+  gap: 0.45rem;
+  border-left: 4px solid var(--nn-branch-color);
+  border-radius: 0 7px 7px 0;
+  background: color-mix(in srgb, var(--nn-branch-color), transparent 93%);
+  padding: 0.65rem;
+  min-width: 0;
+}
+
+.nn-branch--yes { --nn-branch-color: #f39c12; }
+.nn-branch--no { --nn-branch-color: #3E5FA8; }
+
+.nn-branch-label {
+  justify-self: start;
+  border: 1.5px solid var(--nn-branch-color);
+  border-radius: 999px;
+  color: var(--nn-branch-color);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  line-height: 1;
+  padding: 0.18rem 0.55rem;
+}
+
+.nn-step-pill {
+  border: 1.5px solid color-mix(in srgb, var(--nn-branch-color), transparent 18%);
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--nn-branch-color), transparent 90%);
+  color: var(--dark);
+  font-weight: 650;
+  line-height: 1.35;
+  padding: 0.45rem 0.65rem;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.nn-step-pill--result {
+  font-style: italic;
+  background: color-mix(in srgb, var(--nn-branch-color), transparent 94%);
+}
+
+[saved-theme="dark"] .nn-flow-step,
+[saved-theme="dark"] .nn-branch {
+  background: color-mix(in srgb, var(--nn-flow-color, var(--nn-branch-color, #888)), transparent 88%);
+}
+
+[saved-theme="dark"] .nn-decision-question {
+  background: color-mix(in srgb, #8A7F6B, transparent 82%);
+}
+
+@media (max-width: 700px) {
+  .nn-flow-step {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.35rem;
+  }
+
+  .nn-flow-num {
+    width: 1.45rem;
+    height: 1.45rem;
+  }
+
+  .nn-decision-branches {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
 /* ── Flap/Slat Modes Table ──────────────────────────────────────────── */
 .fctl-modes-table td:first-child img {
   width: 55px;

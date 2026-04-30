@@ -16,13 +16,24 @@
 > [!info]- Antennas
 > ![[antennas.webp]]
 
-
 > [!info]- ICAO Wake Turbulence
 > | Voraus | App Radar | App Non-Radar | T/O | T/O Inter |
 > | :--- | :---: | :---: | :---: | :---: |
 > | Super (J) | 6 NM | 3 min | 3 min | 4 min |
 > | Heavy (H) | 5 NM | 2 min | 2 min | 3 min |
 > | Med/Light | 3 NM | 2 min | 2 min | 3 min |
+
+> [!info]- Manual Flying Pitch/Thrust
+> <div class="cl-section">Level Flight</div>
+> <div class="cl-item"><strong>UP speed</strong><span class="cl-dots"></span><strong>4° / 55% N1</strong></div>
+> <div class="cl-item"><strong>F1 speed</strong><span class="cl-dots"></span><strong>6° / 55% N1</strong></div>
+> <div class="cl-item"><strong>F5 speed</strong><span class="cl-dots"></span><strong>3° / 55% N1</strong></div>
+> <div class="cl-item"><strong>F10 speed</strong><span class="cl-dots"></span><strong>4° / 55% N1</strong></div>
+> <div class="cl-sep"></div>
+> <div class="cl-section">On Final (GW 190 t)</div>
+> <div class="cl-item"><strong>F10-18</strong><span class="cl-dots"></span><strong>0° / IDLE or close to IDLE</strong></div>
+> <div class="cl-item"><strong>Target speed</strong><span class="cl-dots"></span><strong>0.5-1° / 48% N1</strong></div>
+> <div class="cl-sub">F30: approx. 53% N1</div>
 
 > [!info]- Faustformeln
 > <div class="cl-section">Steigfluggeschwindigkeiten</div>

@@ -22,6 +22,36 @@ They are normally flown using **IAN**, **VNAV**, **V/S**, or **FPA** pitch modes
 > [!info] Core Concept
 > The preferred Boeing concept is a **CDFA - Continuous Descent Final Approach**, avoiding level-off at MDA whenever possible.
 
+<div class="eicas-levels">
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">QNH</div>
+    <div class="eicas-card-body">Always pre-select.<br>Always confirm with METAR / ATIS.<br><strong>NPA:</strong> Confirm with Tower.</div>
+  </div>
+</div>
+
+**Flight Path Tolerances**
+
+<div class="media-split">
+  <a class="img-lightbox" href="#flight-path-tolerances-lightbox">
+    <img class="img-thumb" src="/Bilder/Flight%20Path%20Tolerances.webp" alt="Flight Path Tolerances">
+  </a>
+  <div id="flight-path-tolerances-lightbox" class="img-lightbox-overlay">
+    <a href="#">
+      <img src="/Bilder/Flight%20Path%20Tolerances.webp" alt="Flight Path Tolerances">
+    </a>
+  </div>
+  <div class="eicas-levels">
+    <div class="eicas-card eicas-card--red">
+      <div class="eicas-card-title">FPA / V/S</div>
+      <div class="eicas-card-body"><strong>Never fly below</strong> stepdown fixes along the vertical path.</div>
+    </div>
+    <div class="eicas-card eicas-card--white">
+      <div class="eicas-card-title">VNAV PTH / IAN</div>
+      <div class="eicas-card-body">May fly below stepdown fixes along the vertical path.</div>
+    </div>
+  </div>
+</div>
+
 Non-ILS approaches should be flown with:
 
 - Maximum use of the FMC navigation database
@@ -30,14 +60,6 @@ Non-ILS approaches should be flown with:
 - Strict FMA monitoring
 - Stabilized approach criteria applied
 
-Use of the **autopilot** is preferred because it provides:
-
-- Autopilot alerts
-- Mode fail indications
-- More accurate course and glidepath tracking
-- Lower RNP limits
-- Reduced workload
-
 The autopilot should normally remain engaged until **suitable visual reference** is established.
 
 | Guidance Concept | Typical Modes | Notes |
@@ -45,11 +67,6 @@ The autopilot should normally remain engaged until **suitable visual reference**
 | IAN | FAC / G/P<br>LOC / G/P<br>B/CRS / G/P | ILS-like display and alerting for suitable non-ILS approaches |
 | VNAV | LNAV / VNAV PTH | FMC-calculated vertical path |
 | Selected guidance | HDG SEL, TRK SEL, V/S, FPA | Use when required by approach type, raw data, or procedure |
-
-> [!warning] Autopilot Limits
-> The autopilot must be disengaged before descending more than **50 ft below MDA**, unless coupled to an ILS glideslope/localizer or in go-around mode.
->
-> Without LAND 2 or LAND 3, autopilot must be disengaged below **200 ft AGL**.
 
 ## IAN
 
@@ -91,10 +108,9 @@ IAN does **not** support autoland.
 **Minimums / AP Disconnect at DA(H), MDA(H), or MAP:**
 
 - Published VNAV DA(H), or authorized MDA(H) used as DA(H), may be used where approved
-- If using MDA(H), baro minimums may be set to **MDA(H) + 50 ft** to avoid descending below MDA(H) during missed approach
 
 - If suitable visual reference is established:
-  - Disengage autopilot
+  - Disengage autopilot (latest at 135 ft AGL)
   - Continue visually
   - Maintain glidepath to landing
 - If not:
@@ -180,3 +196,12 @@ Before FAF - approximately **2 NM before FAF**:
 > **RNP AR / RF legs / complex geometry / short final / IAN unsuitable** -> use **LNAV/VNAV**.
 >
 > **No valid vertical path or VNAV/IAN not suitable** -> use **V/S** or **FPA CDFA**.
+
+**Summary:**
+
+| Item | Using IAN | Using VNAV | Using FPA/V/S |
+|---|---|---|---|
+| Set DA/MDA | Not required | approx. 2 NM before FAF | approx. 2 NM before FAF |
+| Set missed app alt | After glidepath capture | 300 ft below missed app alt | Between missed app alt - 300 ft and DA/MDA + 300 ft |
+| AP usage | Until MUH (135 ft AGL) | Until MUH (135 ft AGL) | Until DA/MDA |
+| FD usage | Until T/D | Until T/D | Until DA/MDA |

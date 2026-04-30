@@ -42,7 +42,11 @@ Use this technique when VNAV or IAN is not suitable, or when no valid vertical p
   </div>
   <div class="eicas-card eicas-card--white">
     <div class="eicas-card-title">~2 NM Before FAF</div>
-    <div class="eicas-card-body">Set MCP altitude to the first intermediate altitude constraint, or MDA(H) if no constraint exists.<br>If the constraint is not an even 100 ft increment, set the nearest 100 ft increment below it.</div>
+    <div class="eicas-card-body">Set MCP altitude to MDA.<br>Pre-Select FPA on MCP.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">0.3 NM Before FAF</div>
+    <div class="eicas-card-body">Select FPA, e.g. -3°.</div>
   </div>
   <div class="eicas-card eicas-card--white">
     <div class="eicas-card-title">Configure</div>
@@ -50,24 +54,10 @@ Use this technique when VNAV or IAN is not suitable, or when no valid vertical p
   </div>
 </div>
 
-> [!info] CDFA Technique
-> If the approach is flown as CDFA and constantly checked against a distance/altitude table, setting intermediate altitude constraints in the MCP may be omitted.
-
-> [!tip] Short Final / Low Drag
-> If the FAF is too close to permit a stabilized approach, configure and establish final approach pitch mode earlier. If conditions permit, low drag / noise abatement technique may be used.
-
 <div class="eicas-levels">
   <div class="eicas-card eicas-card--white">
     <div class="eicas-card-title">Final Descent</div>
-    <div class="eicas-card-body">At or after FAF, select <strong>V/S</strong> or <strong>FPA</strong> and descend to arrive at MDA(H) near the VDP.<br>Select landing flaps, slow to final approach speed, and do the Landing Checklist.</div>
-  </div>
-  <div class="eicas-card eicas-card--white">
-    <div class="eicas-card-title">V/S Initial Setting</div>
-    <div class="eicas-card-body">Use charted recommended vertical speed if available.<br>If unavailable, start with approximately <strong>-700 to -800 fpm</strong>.</div>
-  </div>
-  <div class="eicas-card eicas-card--white">
-    <div class="eicas-card-title">FPA Initial Setting</div>
-    <div class="eicas-card-body">Use charted descent angle / GP angle if available.<br>If unavailable, start with approximately <strong>-3.0°</strong>.</div>
+    <div class="eicas-card-body">Constantly check altitude against distance/altitude table.<br>Select landing flaps, slow to final approach speed, and do the Landing Checklist.</div>
   </div>
 </div>
 
@@ -77,12 +67,8 @@ Use this technique when VNAV or IAN is not suitable, or when no valid vertical p
     <div class="eicas-card-body">Approximately 300 ft above MDA(H), set missed approach altitude.<br>This preserves altitude range arc guidance and avoids altitude capture destabilizing the approach.</div>
   </div>
   <div class="eicas-card eicas-card--white">
-    <div class="eicas-card-title">MDA(H) / VDP</div>
-    <div class="eicas-card-body">Be prepared to land or go around at MDA(H) near the VDP.<br>A normal landing may not be possible from the published MAP on many approaches.</div>
-  </div>
-  <div class="eicas-card eicas-card--white">
-    <div class="eicas-card-title">Visual Reference</div>
-    <div class="eicas-card-body">Do not continue below MDA(H) unless the aircraft is positioned for a normal landing and suitable visual reference can be maintained.</div>
+    <div class="eicas-card-title">Leaving MDA(H)</div>
+    <div class="eicas-card-body">Be prepared to land or go around at MDA(H).<br>Latest time to disconnect AP.<br>Turn both F/Ds OFF, then place the PM F/D ON.</div>
   </div>
 </div>
 
@@ -94,14 +80,6 @@ Use this technique when VNAV or IAN is not suitable, or when no valid vertical p
 | Altitude range arc | Place arc at or near step-down fix or VDP; requires step-down fix or MDA(H) set in MCP |
 | 300 ft / NM | PM calls recommended altitudes, e.g. 900 ft at 3 NM, 600 ft at 2 NM |
 
-Small corrections to V/S or FPA should keep a constant-angle descent to minimums. Comply with all step-down fixes.
-
-> [!proc] Leaving MDA(H)
-> When suitable visual reference is established, maintain the descent path to the flare. Do not descend below the visual glide path.
->
-> Be prepared to disengage the autopilot in accordance with regulatory requirements. Turn both F/Ds **OFF**, then place the PM F/D **ON**. This removes unwanted PF commands while keeping PM go-around guidance available.
-
----
 
 ## LANDING CHECKLIST
 

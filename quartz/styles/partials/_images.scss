@@ -53,6 +53,43 @@
   }
 }
 
+.img-lightbox--full {
+  margin: 1rem 0;
+
+  img.img-thumb {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.media-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.9rem;
+  align-items: stretch;
+  margin: 1rem 0;
+
+  .img-lightbox {
+    margin: 0;
+  }
+
+  .img-lightbox img.img-thumb {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .eicas-levels {
+    margin: 0;
+    height: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .media-split {
+    grid-template-columns: 1fr;
+  }
+}
+
 .img-lightbox-overlay {
   display: none;
   position: fixed;

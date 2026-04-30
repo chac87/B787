@@ -5,11 +5,25 @@ tags: [sop, normal-ops]
 
 # Circling Approach
 
-<img src="/Bilder/circling.webp" alt="Circling Approach" style="width:100%;border-radius:6px">
+<a class="img-lightbox img-lightbox--full" href="#circling-lightbox">
+  <img class="img-thumb" src="/Bilder/circling.webp" alt="Circling Approach">
+</a>
+<div id="circling-lightbox" class="img-lightbox-overlay">
+  <a href="#">
+    <img src="/Bilder/circling.webp" alt="Circling Approach">
+  </a>
+</div>
 
 ## General
 
 The circling approach may be flown following any instrument approach procedure.
+
+<div class="eicas-levels">
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Circling Minima Cat D</div>
+    <div class="eicas-card-body"><strong>700 ft</strong> · <strong>3600 m</strong></div>
+  </div>
+</div>
 
 **Configuration**
 
@@ -36,11 +50,12 @@ The circling approach may be flown following any instrument approach procedure.
 
 **Base / Final**
 
-1. Before starting the turn to base, select landing flaps if not previously selected.
-2. Begin decelerating to approach speed plus wind additive.
-3. To avoid overshooting final, initially aim at the inside edge of the runway threshold.
-4. Do the Landing Checklist.
-5. Do not descend below MDA(H) until intercepting the visual descent profile to the landing runway.
+1. Timing without wind correction.
+2. Before starting the turn to base, select landing flaps if not previously selected.
+3. Begin decelerating to approach speed plus wind additive.
+4. To avoid overshooting final, initially aim at the inside edge of the runway threshold.
+5. Do the Landing Checklist.
+6. Do not descend below MDA(H) until intercepting the visual descent profile to the landing runway.
 
 > [!proc] Visual Descent
 > When intercepting the visual descent profile, disengage the autopilot and continue manually.

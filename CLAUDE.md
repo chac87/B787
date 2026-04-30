@@ -209,6 +209,52 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 
 Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/.obsidian/snippets/`
 
+## Image Lightbox Pattern
+
+For manually embedded images, use the robust hash-lightbox pattern instead of a plain `<img>`. This ensures the image opens large on click/tap, including pages where the JS-only image handler may not attach reliably.
+
+### Full-width thumbnail
+
+```html
+<a class="img-lightbox img-lightbox--full" href="#example-lightbox">
+  <img class="img-thumb" src="/Bilder/example.webp" alt="Example">
+</a>
+<div id="example-lightbox" class="img-lightbox-overlay">
+  <a href="#">
+    <img src="/Bilder/example.webp" alt="Example">
+  </a>
+</div>
+```
+
+### Split image + cards layout
+
+Use this when the thumbnail should take about half the width and explanatory cards should sit beside it on desktop. The `.media-split` CSS stacks automatically on mobile.
+
+```html
+<div class="media-split">
+  <a class="img-lightbox" href="#example-lightbox">
+    <img class="img-thumb" src="/Bilder/example.webp" alt="Example">
+  </a>
+  <div id="example-lightbox" class="img-lightbox-overlay">
+    <a href="#">
+      <img src="/Bilder/example.webp" alt="Example">
+    </a>
+  </div>
+  <div class="eicas-levels">
+    <div class="eicas-card eicas-card--white">
+      <div class="eicas-card-title">Title</div>
+      <div class="eicas-card-body">Body text</div>
+    </div>
+  </div>
+</div>
+```
+
+Rules:
+- Every lightbox `id` must be unique on the page.
+- Use URL-encoded spaces in `src`, e.g. `/Bilder/Flight%20Path%20Tolerances.webp`.
+- Prefer `.img-lightbox--full` for standalone 100%-width thumbnails.
+- Prefer `.media-split` for desktop 50/50 image-and-content layouts; it is mobile-friendly.
+
 ## LHG Brand Color Guide
 
 This project uses the official **Lufthansa Group (LHG) brand color palette** throughout. Always apply these colors — never reintroduce Apple system colors or arbitrary hex values.

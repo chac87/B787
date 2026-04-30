@@ -2,7 +2,7 @@
 
 
 # Non-Normals
-## [[Non-Normal Philosophy]]
+## [[Non-Normal Handling]]
 ## [[Memory Items]]
 ## [[Non Normals/Non-Normal Checklists|Non-Normal Checklists]]
 ## [[Non Normals/Non-Normal Maneuvers/index|Non-Normal Maneuvers]]

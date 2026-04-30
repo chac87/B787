@@ -78,7 +78,7 @@ Use of IAN is not recommended when an approach has a visual maneuver segment tha
   </div>
   <div class="eicas-card eicas-card--white">
     <div class="eicas-card-title">DA(H) / MDA(H) / MAP</div>
-    <div class="eicas-card-body">IAN does not support autoland. Be prepared to land manually or go around.<br>If suitable visual reference is established, disengage the autopilot in accordance with regulatory requirements.<br>Below DA/MDA, visual guidance is primary; G/P remains reference only. Maintain the glide path to landing.</div>
+    <div class="eicas-card-body">IAN does not support autoland. Be prepared to land manually or go around.<br>If suitable visual reference is established, disengage the autopilot latest at 135 ft AGL.<br>Below DA/MDA, visual guidance is primary; G/P remains reference only. Maintain the glide path to landing.</div>
   </div>
 </div>
 
