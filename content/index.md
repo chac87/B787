@@ -6,12 +6,12 @@ title: B787 Guide
 
 # B787 Guide
 ## [[General Infos|General Infos]]
-## [[Flight Deck Design|Flight Deck Design]]
 ## [[Limitations|Limitations]]
 ## [[Systems/index|Systems]]
 ## [[Normal Ops/index|Normals Ops - SOPs]]
 ## [[Non Normals/index|Non-Normals]]
 ## [[Operational/index|Operational]]
+## [[Performance|Performance]]
 
 
 <div class="eicas-levels h2-collapse-break" style="margin: 0.75em 0 1em;">

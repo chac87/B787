@@ -17,7 +17,7 @@
 > ![[antennas.webp]]
 
 > [!info]- ICAO Wake Turbulence
-> | Voraus | App Radar | App Non-Radar | T/O | T/O Inter |
+> | Preceding | App Radar | App Non-Radar | T/O | T/O Inter |
 > | :--- | :---: | :---: | :---: | :---: |
 > | Super (J) | 6 NM | 3 min | 3 min | 4 min |
 > | Heavy (H) | 5 NM | 2 min | 2 min | 3 min |
@@ -34,35 +34,35 @@
 > <div class="cl-item"><strong>F10-18</strong><span class="cl-dots"></span><strong>0° / IDLE or close to IDLE</strong></div>
 > <div class="cl-item"><strong>Target speed</strong><span class="cl-dots"></span><strong>0.5-1° / 48% N1</strong></div>
 > <div class="cl-sub">F30: approx. 53% N1</div>
+> <div class="cl-sep"></div>
+> <div class="cl-section">Engine Thrust (N1)</div>
+> <div class="cl-item"><strong>Per ±10 t gross weight</strong><span class="cl-dots"></span><strong>±1 % N1</strong></div>
+> <div class="cl-item"><strong>Per 1.000 ft pressure altitude</strong><span class="cl-dots"></span><strong>+0,5 % N1</strong></div>
 
-> [!info]- Faustformeln
-> <div class="cl-section">Steigfluggeschwindigkeiten</div>
+> [!info]- Rules of Thumb
+> <div class="cl-section">Climb Speeds</div>
 > <div class="cl-item"><strong>v<sub>x</sub> — Max Angle Climb</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 30 + 80 kts</strong></div>
 > <div class="cl-item"><strong>v<sub>y</sub> — Max Rate Climb</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 30 + 140 kts</strong></div>
 > <div class="cl-sub">Until intercepting M 0.84</div>
 > <div class="cl-sep"></div>
-> <div class="cl-section">Anfluggeschwindigkeit (v<sub>REF</sub> 30)</div>
-> <div class="cl-item"><strong>Basis bei 160 t</strong><span class="cl-dots"></span><strong>140 kts</strong></div>
-> <div class="cl-item"><strong>Pro ±10 t</strong><span class="cl-dots"></span><strong>±4 kts</strong></div>
-> <div class="cl-sub">Beispiel: 180 t (+20 t) → 140 + 8 = v<sub>REF</sub> 148 kts</div>
-> <div class="cl-sep"></div>
-> <div class="cl-section">Triebwerksleistung (N1)</div>
-> <div class="cl-item"><strong>Pro ±10 t Gewicht</strong><span class="cl-dots"></span><strong>±1 % N1</strong></div>
-> <div class="cl-item"><strong>Pro 1.000 ft Druckhöhe</strong><span class="cl-dots"></span><strong>+0,5 % N1</strong></div>
+> <div class="cl-section">Approach Speed (v<sub>REF</sub> 30)</div>
+> <div class="cl-item"><strong>Base at 160 t</strong><span class="cl-dots"></span><strong>140 kts</strong></div>
+> <div class="cl-item"><strong>Per ±10 t</strong><span class="cl-dots"></span><strong>±4 kts</strong></div>
+> <div class="cl-sub">Example: 180 t (+20 t) → 140 + 8 = v<sub>REF</sub> 148 kts</div>
 > <div class="cl-sep"></div>
 > <div class="cl-section">Driftdown Altitude</div>
 > <div class="cl-item"><strong>Driftdown Level</strong><span class="cl-dots"></span><strong>OPT ALT − 14.000 ft</strong></div>
-> <div class="cl-item"><strong>Basis bei 220 t</strong><span class="cl-dots"></span><strong>FL220</strong></div>
-> <div class="cl-item"><strong>Pro ±10 t</strong><span class="cl-dots"></span><strong>±1.000 ft</strong></div>
-> <div class="cl-sub">Bei LRC oder 310 kts: ca. 4.000–5.000 ft tiefer als Max Driftdown</div>
+> <div class="cl-item"><strong>Base at 220 t</strong><span class="cl-dots"></span><strong>FL220</strong></div>
+> <div class="cl-item"><strong>Per ±10 t</strong><span class="cl-dots"></span><strong>±1.000 ft</strong></div>
+> <div class="cl-sub">At LRC or 310 kts: approx. 4.000–5.000 ft below max driftdown altitude</div>
 > <div class="cl-sep"></div>
 > <div class="cl-section">Trip Fuel Penalties</div>
-> <div class="cl-item"><strong>2.000 ft über OPT ALT</strong><span class="cl-dots"></span><strong>+1 %</strong></div>
-> <div class="cl-item"><strong>4.000 ft unter OPT ALT</strong><span class="cl-dots"></span><strong>+2 %</strong></div>
-> <div class="cl-item"><strong>8.000 ft unter OPT ALT</strong><span class="cl-dots"></span><strong>+5 %</strong></div>
-> <div class="cl-item"><strong>Mach +0,01 schneller</strong><span class="cl-dots"></span><strong>+2 %</strong></div>
-> <div class="cl-item"><strong>ISA +10 °C wärmer</strong><span class="cl-dots"></span><strong>+1 %</strong></div>
+> <div class="cl-item"><strong>2.000 ft above OPT ALT</strong><span class="cl-dots"></span><strong>+1 %</strong></div>
+> <div class="cl-item"><strong>4.000 ft below OPT ALT</strong><span class="cl-dots"></span><strong>+2 %</strong></div>
+> <div class="cl-item"><strong>8.000 ft below OPT ALT</strong><span class="cl-dots"></span><strong>+5 %</strong></div>
+> <div class="cl-item"><strong>Mach +0.01 faster</strong><span class="cl-dots"></span><strong>+2 %</strong></div>
+> <div class="cl-item"><strong>ISA +10 °C warmer</strong><span class="cl-dots"></span><strong>+1 %</strong></div>
 > <div class="cl-sep"></div>
 > <div class="cl-section">Extra Fuel Flow (Standard)</div>
-> <div class="cl-item"><strong>Verbrauch</strong><span class="cl-dots"></span><strong>80 kg / min</strong></div>
-> <div class="cl-item"><strong>Stündlich</strong><span class="cl-dots"></span><strong>4,8 t / h</strong></div>
+> <div class="cl-item"><strong>Fuel Flow</strong><span class="cl-dots"></span><strong>80 kg / min</strong></div>
+> <div class="cl-item"><strong>Per hour</strong><span class="cl-dots"></span><strong>4,8 t / h</strong></div>
