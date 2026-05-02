@@ -204,7 +204,7 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 | Image Row, Lightbox | `quartz/styles/partials/_images.scss` |
 | SOP Checklist, Badges, Flow Timeline | `quartz/styles/partials/_sop.scss` |
 | NNC Filter UI | `quartz/styles/partials/_nnc-filter.scss` |
-| NNC Procedure CSS classes | `quartz/styles/partials/_nnc.scss` |
+| NNC Procedure CSS classes, Memory Item Blocks (`.mi-*`) | `quartz/styles/partials/_nnc.scss` |
 | Auto-generated (never edit manually) | `quartz/styles/partials/_snippets.scss` |
 
 Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/.obsidian/snippets/`

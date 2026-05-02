@@ -262,3 +262,176 @@ body[saved-theme="dark"] .nnc-note {
   margin: 0.4em 0 0.4em 0;
   line-height: 1.45;
 }
+
+// ── Registration variant selector ─────────────────────────────────────────────
+.reg-selector-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0.75em 0 1em;
+}
+
+.reg-btn {
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1.5px solid #3257BC;
+  color: #3257BC;
+  background: transparent;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+
+  &.active {
+    background: #3257BC;
+    color: #fff;
+  }
+}
+
+body[saved-theme="dark"] {
+  .reg-btn {
+    border-color: #5291ED;
+    color: #5291ED;
+
+    &.active {
+      background: #5291ED;
+      color: #05164D;
+    }
+  }
+}
+
+.reg-variant-block.hidden {
+  display: none;
+}
+
+// ── Memory Item Blocks (Boeing QRH style) ─────────────────────────────────────
+.mi-block {
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.75em 0;
+}
+
+.mi-title {
+  font-weight: 700;
+  font-size: 1.05em;
+  letter-spacing: 0.05em;
+  padding: 8px 14px;
+}
+
+.mi-condition {
+  font-size: 0.82em;
+  font-style: italic;
+  color: var(--gray);
+  padding: 4px 12px 6px;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.mi-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 12px;
+  border-top: 1px solid var(--lightgray);
+  font-size: 0.88em;
+}
+
+.mi-num {
+  min-width: 1.4em;
+  color: var(--gray);
+  font-size: 0.85em;
+  flex-shrink: 0;
+}
+
+.mi-item-name {
+  flex: 1;
+  font-weight: 600;
+}
+
+.mi-item-action {
+  font-weight: 700;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+
+.mi-role {
+  font-size: 0.75em;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #3a3a3a;
+  color: #fff;
+  flex-shrink: 0;
+  min-width: 2.2em;
+  text-align: center;
+}
+
+.mi-role--pm {
+  background: #3257BC;
+}
+
+.mi-role--both {
+  background: #4B9DA1;
+}
+
+.mi-subheader {
+  font-size: 0.85em;
+  font-weight: 700;
+  font-style: italic;
+  padding: 5px 12px 4px;
+  border-top: 1px solid var(--lightgray);
+  color: var(--darkgray);
+}
+
+.mi-sub {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 2.5em;
+  border-top: 1px solid var(--lightgray);
+  font-size: 0.88em;
+}
+
+.mi-note {
+  font-size: 0.82em;
+  font-style: italic;
+  color: var(--gray);
+  padding: 3px 12px 3px 3em;
+  border-top: 1px solid var(--lightgray);
+}
+
+.mi-block--amber {
+  border: 2px solid #f39c12;
+}
+
+.mi-block--amber .mi-title {
+  background-color: color-mix(in srgb, #f39c12 18%, transparent);
+  color: #966008;
+  border-bottom: 2px solid #f39c12;
+}
+
+.mi-block--red {
+  border: 2px solid #e74c3c;
+}
+
+.mi-block--red .mi-title {
+  background-color: color-mix(in srgb, #e74c3c 18%, transparent);
+  color: #a93226;
+  border-bottom: 2px solid #e74c3c;
+}
+
+body[saved-theme="dark"] {
+  .mi-block--amber .mi-title {
+    background-color: color-mix(in srgb, #f39c12 22%, transparent);
+    color: #f3b141;
+  }
+
+  .mi-block--red .mi-title {
+    background-color: color-mix(in srgb, #e74c3c 22%, transparent);
+    color: #e97268;
+  }
+
+  .mi-role {
+    background: #555;
+  }
+}
