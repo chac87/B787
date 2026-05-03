@@ -4,76 +4,242 @@
 - Both crew members do all memory items in their areas of responsibility without delay.
 - When all memory items are complete, the non-normal checklist has to be read.
 
-> [!warning]- Aborted Engine Start L, R
-> *Condition: On the ground, an aborted engine start is needed.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><strong>CUTOFF</strong></div>
+<div class="mi-block mi-block--amber">
+  <div class="mi-title">Aborted Engine Start L, R</div>
+  <div class="mi-condition">Condition: On the ground, an aborted engine start is needed.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">FUEL CONTROL switch (affected side)</span>
+    <span class="mi-item-action">CUTOFF</span>
+    <span class="mi-role">CP</span>
+  </div>
+</div>
 
-> [!warning]- AIRSPEED UNRELIABLE
-> *Condition: The airspeed or Mach indications disagree with AOA calculated airspeed.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>Autopilot disconnect switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
-> <div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
-> <div class="nnc-item"><span class="nnc-num">3</span><strong>F/D switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
-> <div class="nnc-text"><span class="nnc-num">4</span>Set the following gear up pitch attitude and thrust:</div>
-> <div class="nnc-sub-item"><strong>Flaps extended</strong><span class="cl-dots"></span><strong>10° and 85% N1</strong></div>
-> <div class="nnc-sub-item"><strong>Flaps up</strong><span class="cl-dots"></span><strong>4° and 70% N1</strong></div>
+<div class="mi-block mi-block--amber">
+  <div class="mi-title">AIRSPEED UNRELIABLE</div>
+  <div class="mi-condition">Condition: The airspeed or Mach indications disagree with AOA calculated airspeed.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">Autopilot disconnect switch</span>
+    <span class="mi-item-action">Push</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">A/T ARM switches (both)</span>
+    <span class="mi-item-action">OFF</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">3</span>
+    <span class="mi-item-name">F/D switches (both)</span>
+    <span class="mi-item-action">OFF</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-subheader">Set the following gear up pitch attitude and thrust:</div>
+  <div class="mi-sub">
+    <span class="mi-item-name">Flaps extended</span>
+    <span class="mi-item-action">10° and 85% N1</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-sub">
+    <span class="mi-item-name">Flaps up</span>
+    <span class="mi-item-action">4° and 70% N1</span>
+    <span class="mi-role">PF</span>
+  </div>
+</div>
 
-> [!warning]- CABIN ALTITUDE
-> *Condition: Cabin altitude is excessive.*
->
-> <div class="nnc-text"><span class="nnc-num">1</span>Don the oxygen masks.</div>
-> <div class="nnc-text"><span class="nnc-num">2</span>Establish crew communications.</div>
-> <div class="nnc-text"><span class="nnc-num">3</span>Check the cabin altitude and rate.</div>
-> <div class="nnc-text"><span class="nnc-num">4</span><strong>If</strong> the cabin altitude is uncontrollable:</div>
-> <div class="nnc-sub-item"><strong>PASS OXYGEN switch</strong><span class="cl-dots"></span><strong>Push to ON and hold for 1 second</strong></div>
-> <div class="nnc-sub"><strong>Without delay</strong>, descend to the lowest safe altitude or 10.000 feet, whichever is higher.</div>
-> <div class="nnc-box"><strong>To descend:</strong><ul><li>Move the thrust levers to idle</li><li>Extend the speedbrakes</li><li>If structural integrity is in doubt, limit airspeed and avoid high maneuvering loads</li><li>Descend at v<sub>MO</sub>/M<sub>MO</sub></li></ul></div>
-> <div class="nnc-sub">Advise the Cabin.</div>
+<div class="mi-block mi-block--red">
+  <div class="mi-title">CABIN ALTITUDE</div>
+  <div class="mi-condition">Condition: Cabin altitude is excessive.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">Don the oxygen masks</span>
+    <span class="mi-role mi-role--both">BOTH</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">Establish crew communications</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">3</span>
+    <span class="mi-item-name">Check the cabin altitude and rate</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-subheader">If the cabin altitude is uncontrollable:</div>
+  <div class="mi-item">
+    <span class="mi-num">4</span>
+    <span class="mi-item-name">PASS OXYGEN switch</span>
+    <span class="mi-item-action">Push to ON and hold for 1 second</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num"></span>
+    <span class="mi-item-name">Without delay, descend to lowest safe altitude or 10.000 ft, whichever is higher</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-subheader">To descend:</div>
+  <div class="mi-sub">
+    <span class="mi-item-name">Move the thrust levers to idle</span>
+  </div>
+  <div class="mi-sub">
+    <span class="mi-item-name">Extend the speedbrakes</span>
+  </div>
+  <div class="mi-sub">
+    <span class="mi-item-name">If structural integrity is in doubt, limit airspeed and avoid high maneuvering loads</span>
+  </div>
+  <div class="mi-sub">
+    <span class="mi-item-name">Descend at v<sub>MO</sub>/M<sub>MO</sub></span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num"></span>
+    <span class="mi-item-name">Advise the Cabin</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+</div>
 
-> [!warning]- DUAL ENG FAIL/STALL
-> *Condition: Engine speed for both engines is below idle.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switches (both)</strong><span class="cl-dots"></span><strong>CUTOFF, then RUN</strong></div>
-> <div class="nnc-item"><span class="nnc-num">2</span><strong>RAM AIR TURBINE switch</strong><span class="cl-dots"></span><strong>Push and hold for 1 second</strong></div>
+<div class="mi-block mi-block--red">
+  <div class="mi-title">DUAL ENG FAIL/STALL</div>
+  <div class="mi-condition">Condition: Engine speed for both engines is below idle.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">FUEL CONTROL switches (both)</span>
+    <span class="mi-item-action">CUTOFF, then RUN</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">RAM AIR TURBINE switch</span>
+    <span class="mi-item-action">Push and hold for 1 second</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+</div>
 
-> [!warning]- ENG AUTOSTART L, R
-> *Condition: Autostart did not start the engine.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
+<div class="mi-block mi-block--amber">
+  <div class="mi-title">ENG AUTOSTART L, R</div>
+  <div class="mi-condition">Condition: Autostart did not start the engine.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">FUEL CONTROL switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> CUTOFF</span>
+    <span class="mi-role">CP</span>
+  </div>
+</div>
 
-> [!warning]- ENG LIMIT EXCEED L, R
-> *Condition: An engine limit exceedance occurs.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
-> <div class="nnc-item"><span class="nnc-num">2</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard until ENG LIMIT EXCEED message blanks or the thrust lever is at idle</strong></div>
+<div class="mi-block mi-block--red">
+  <div class="mi-title">ENG LIMIT EXCEED L, R</div>
+  <div class="mi-condition">Condition: An engine limit exceedance occurs.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">A/T ARM switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> OFF</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">Thrust lever (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> Retard</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-note">until ENG LIMIT EXCEED message blanks or the thrust lever is at idle</div>
+</div>
 
-> [!warning]- ENG SURGE L, R
-> *Condition: An engine surge or stall that requires crew action is detected.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
-> <div class="nnc-item"><span class="nnc-num">2</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard until the ENG SURGE message blanks or the thrust lever is at idle</strong></div>
+<div class="mi-block mi-block--amber">
+  <div class="mi-title">ENG SURGE L, R</div>
+  <div class="mi-condition">Condition: An engine surge or stall that requires crew action is detected.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">A/T ARM switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> OFF</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">Thrust lever (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> Retard</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-note">until the ENG SURGE message blanks or the thrust lever is at idle</div>
+</div>
 
-> [!warning]- ENG SVR DAMAGE/SEP L, R
-> *Condition: One or more of these occur: airframe vibrations with abnormal engine indications, or engine separation.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
-> <div class="nnc-item"><span class="nnc-num">2</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Idle</strong></div>
-> <div class="nnc-item"><span class="nnc-num">3</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
-> <div class="nnc-item"><span class="nnc-num">4</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Pull</strong></div>
+<div class="mi-block mi-block--red">
+  <div class="mi-title">ENG SVR DAMAGE/SEP L, R</div>
+  <div class="mi-condition">Condition: One or more of these occur: airframe vibrations with abnormal engine indications, or engine separation.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">A/T ARM switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> OFF</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">Thrust lever (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> Idle</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">3</span>
+    <span class="mi-item-name">FUEL CONTROL switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> CUTOFF</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">4</span>
+    <span class="mi-item-name">Engine fire switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> Pull</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+</div>
 
-> [!warning]- FIRE ENG L, R
-> *Condition: Fire is detected in the affected engine.*
->
-> <div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
-> <div class="nnc-item"><span class="nnc-num">3</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Idle</strong></div>
-> <div class="nnc-item"><span class="nnc-num">4</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
-> <div class="nnc-item"><span class="nnc-num">5</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Pull</strong></div>
-> <div class="nnc-text"><span class="nnc-num">6</span><strong>If</strong> the FIRE ENG message stays shown:</div>
-> <div class="nnc-sub-item"><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong></div>
+<div class="mi-block mi-block--red">
+  <div class="mi-title">FIRE ENG L, R</div>
+  <div class="mi-condition">Condition: Fire is detected in the affected engine.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">A/T ARM switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> OFF</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">Thrust lever (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> Idle</span>
+    <span class="mi-role">PF</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">3</span>
+    <span class="mi-item-name">FUEL CONTROL switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> CUTOFF</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">4</span>
+    <span class="mi-item-name">Engine fire switch (affected side)</span>
+    <span class="mi-item-action"><span class="nnc-confirm">Confirm</span> Pull</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-subheader">If the FIRE ENG message stays shown:</div>
+  <div class="mi-item">
+    <span class="mi-num"></span>
+    <span class="mi-item-name">Engine fire switch (affected side)</span>
+    <span class="mi-item-action">Rotate to the stop and hold for 1 second</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+</div>
 
-> [!warning]- STABILIZER
-> *Condition: One of these occurs: stabilizer movement without a signal to trim, or the stabilizer is failed.*
->
-> <div class="nnc-item"><span class="nnc-num">1</span><strong>STAB cutout switches (both)</strong><span class="cl-dots"></span><strong>CUTOUT</strong></div>
-> <div class="nnc-text"><span class="nnc-num">2</span>Do not exceed the current airspeed.</div>
+<div class="mi-block mi-block--red">
+  <div class="mi-title">STABILIZER</div>
+  <div class="mi-condition">Condition: One of these occurs: stabilizer movement without a signal to trim, or the stabilizer is failed.</div>
+  <div class="mi-item">
+    <span class="mi-num">1</span>
+    <span class="mi-item-name">STAB cutout switches (both)</span>
+    <span class="mi-item-action">CUTOUT</span>
+    <span class="mi-role mi-role--pm">PM</span>
+  </div>
+  <div class="mi-item">
+    <span class="mi-num">2</span>
+    <span class="mi-item-name">Do not exceed the current airspeed</span>
+    <span class="mi-role">PF</span>
+  </div>
+</div>

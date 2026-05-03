@@ -45,7 +45,7 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
 > [!warning] Start NNC only when ready
 > PF calls the checklist when the flight path is under control and the aircraft is above **400 ft RA**.
 
-## Engine Failure Example
+## Example 1: Engine Failure 
 
 The example below shows the call structure, not a replacement for the actual checklist.
 
@@ -92,6 +92,95 @@ The example below shows the call structure, not a replacement for the actual che
 <div class="nnc-sub">PF places hand on the related component.</div>
 <div class="nnc-sub"><strong>PM:</strong> "Left confirmed."</div>
 <div class="nnc-sub"><strong>PF:</strong> "Off."</div>
+
+The following items always require a confirm step before action:
+
+<div class="eicas-levels">
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Confirm Required <span class="eicas-card-badge">BEFORE ACTION</span></div>
+  <div class="eicas-card-body">
+    Autothrottle arm switch<br>
+    Engine thrust lever<br>
+    Fuel control switch<br>
+    Engine or APU fire switch · Cargo fire arm switch<br>
+    Generator drive disconnect switch<br>
+    IRS selectors
+  </div>
+</div>
+</div>
+
+## Example 2: ENG SURGE L
+
+<div class="eicas-levels">
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Situation <span class="eicas-card-badge">EICAS CAUTION</span></div>
+  <div class="eicas-card-body">An engine surge occurs on the left engine · System generates amber <strong>ENG SURGE L</strong> · Caution beeper sounds · Master CAUTION lights illuminate</div>
+</div>
+</div>
+
+---
+
+<div class="nnc-step">1 &nbsp; Recognize & Fly</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT"</strong></div>
+<div class="nnc-sub">Reads the EICAS message aloud.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Confirmed"</strong></div>
+<div class="nnc-sub">Ensures the flight path is under control · verifies airplane is above 400 ft RA.</div>
+
+---
+
+<div class="nnc-step">2 &nbsp; Initiate Memory Items</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Memory Items"</strong></div>
+
+---
+
+<div class="nnc-step">3 &nbsp; Execute Memory Items — as Confirmed Items</div>
+
+> [!info] Confirmed Items
+> The A/T ARM switch and the thrust lever require verbal confirmation before being moved.
+> PM initiates the confirm for switches · PF initiates the confirm for the thrust lever.
+
+**Step 1 — Deactivate Autothrottle**
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>Left A/T ARM switch</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
+<div class="nnc-sub"><strong>PM</strong> (places hand on the left A/T ARM switch): &nbsp;"LEFT A/T ARM SWITCH – CONFIRM – OFF"</div>
+<div class="nnc-sub"><strong>PF</strong> (looks at the switch, verifies): &nbsp;"LEFT CONFIRMED"</div>
+<div class="nnc-sub"><strong>PM</strong> (moves the switch to OFF): &nbsp;"OFF"</div>
+
+**Step 2 — Reduce Thrust**
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>Left Thrust lever</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard</strong></div>
+<div class="nnc-sub"><strong>PF</strong> (places hand on the left thrust lever): &nbsp;"LEFT THRUST LEVER – CONFIRM – RETARD"</div>
+<div class="nnc-sub"><strong>PM</strong> (looks at the lever, verifies): &nbsp;"LEFT CONFIRMED"</div>
+<div class="nnc-sub"><strong>PF</strong> (slowly retards the lever until the ENG SURGE L message blanks or the lever is at idle): &nbsp;"RETARD"</div>
+
+---
+
+<div class="nnc-step">4 &nbsp; Call for Checklist</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"Memory Items Completed"</strong></div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT Checklist"</strong></div>
+
+---
+
+<div class="nnc-step">5 &nbsp; Read the NNC</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT Checklist"</strong></div>
+<div class="nnc-sub">Reads the checklist title aloud to confirm context.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>Verify Memory Items</strong></div>
+<div class="nnc-sub">Reads the memory items aloud as verification. PF does not need to respond if everything is correct.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>Read Reference Items</strong></div>
+<div class="nnc-sub">Reads and actions the remaining reference items.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"Checklist Complete Except Deferred Items"</strong></div>
+<div class="nnc-sub">This checklist has deferred items for the approach — the PM will return to them during descent.</div>
+
+---
 
 ## Core Terms
 

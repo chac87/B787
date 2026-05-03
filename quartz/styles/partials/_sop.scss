@@ -281,7 +281,7 @@ article table td:first-child:has(+ td .sop-value) {
   padding: 2px 8px;
   border-radius: 4px;
   margin: 0.6em 0 0.15em 0;
-  display: inline-block;
+  display: block;
 }
 
 // Aircraft variant section end bar
@@ -293,7 +293,7 @@ article table td:first-child:has(+ td .sop-value) {
   padding: 2px 8px;
   border-radius: 4px;
   margin: 0.15em 0 0.6em 0;
-  display: inline-block;
+  display: block;
 }
 
 // Inline annotations (no callouts)

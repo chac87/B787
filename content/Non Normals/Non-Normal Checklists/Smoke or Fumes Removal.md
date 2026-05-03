@@ -7,6 +7,8 @@ tags: [non-normal, fire]
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
+> [!info] This NNC can be applied at any altitude!
+
 <div class="nnc-condition">Condition: Smoke or fumes removal is needed.</div>
 
 <div class="nnc-text"><span class="nnc-num">1</span>Do this checklist <strong>only</strong> when directed by the <a href="/Non-Normals/Non-Normal-Checklists/Smoke,-Fire-or-Fumes">Smoke, Fire or Fumes checklist</a>.</div>
