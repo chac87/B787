@@ -5,7 +5,7 @@
 - When all memory items are complete, the non-normal checklist has to be read.
 
 <div class="mi-block mi-block--amber">
-  <div class="mi-title">Aborted Engine Start L, R</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/Aborted-Engine-Start-L,-R">Aborted Engine Start L, R</a></div>
   <div class="mi-condition">Condition: On the ground, an aborted engine start is needed.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -16,7 +16,7 @@
 </div>
 
 <div class="mi-block mi-block--amber">
-  <div class="mi-title">AIRSPEED UNRELIABLE</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE">AIRSPEED UNRELIABLE</a></div>
   <div class="mi-condition">Condition: The airspeed or Mach indications disagree with AOA calculated airspeed.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -50,7 +50,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title">CABIN ALTITUDE</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/CABIN-ALTITUDE">CABIN ALTITUDE</a></div>
   <div class="mi-condition">Condition: Cabin altitude is excessive.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -100,7 +100,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title">DUAL ENG FAIL/STALL</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/Dual-Eng-Fail-Stall"><span>DUAL ENG FAIL/STALL</span></a></div>
   <div class="mi-condition">Condition: Engine speed for both engines is below idle.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -117,7 +117,7 @@
 </div>
 
 <div class="mi-block mi-block--amber">
-  <div class="mi-title">ENG AUTOSTART L, R</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/ENG-AUTOSTART-L,-R">ENG AUTOSTART L, R</a></div>
   <div class="mi-condition">Condition: Autostart did not start the engine.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -128,7 +128,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title">ENG LIMIT EXCEED L, R</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/ENG-LIMIT-EXCEED-L,-R">ENG LIMIT EXCEED L, R</a></div>
   <div class="mi-condition">Condition: An engine limit exceedance occurs.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -146,7 +146,7 @@
 </div>
 
 <div class="mi-block mi-block--amber">
-  <div class="mi-title">ENG SURGE L, R</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/ENG-SURGE-L,-R">ENG SURGE L, R</a></div>
   <div class="mi-condition">Condition: An engine surge or stall that requires crew action is detected.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -164,7 +164,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title">ENG SVR DAMAGE/SEP L, R</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>ENG SVR DAMAGE/SEP L, R</span></a></div>
   <div class="mi-condition">Condition: One or more of these occur: airframe vibrations with abnormal engine indications, or engine separation.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -193,7 +193,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title">FIRE ENG L, R</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/FIRE-ENG-L,-R">FIRE ENG L, R</a></div>
   <div class="mi-condition">Condition: Fire is detected in the affected engine.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -229,7 +229,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title">STABILIZER</div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/STABILIZER">STABILIZER</a></div>
   <div class="mi-condition">Condition: One of these occurs: stabilizer movement without a signal to trim, or the stabilizer is failed.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>

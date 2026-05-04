@@ -22,13 +22,13 @@ tags: [non-normal, fire, engine]
   <div class="nnc-goto">▶▶&ensp;Go to step 2</div>
 </div>
 
-<div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
-<div class="nnc-item"><span class="nnc-num">3</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Idle</strong></div>
-<div class="nnc-item"><span class="nnc-num">4</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong></div>
-<div class="nnc-item"><span class="nnc-num">5</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Pull</strong></div>
+<div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong><span class="mi-role">PF</span></div>
+<div class="nnc-item"><span class="nnc-num">3</span><strong>Thrust lever (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Idle</strong><span class="mi-role">PF</span></div>
+<div class="nnc-item"><span class="nnc-num">4</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>CUTOFF</strong><span class="mi-role mi-role--pm">PM</span></div>
+<div class="nnc-item"><span class="nnc-num">5</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Pull</strong><span class="mi-role mi-role--pm">PM</span></div>
 
 <div class="nnc-text"><span class="nnc-num">6</span><strong>If</strong> the FIRE ENG message stays shown:</div>
-<div class="nnc-sub-item"><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong></div>
+<div class="nnc-sub-item"><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong><span class="mi-role mi-role--pm">PM</span></div>
 
 <div class="nnc-separator"></div>
 
@@ -63,14 +63,14 @@ tags: [non-normal, fire, engine]
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
-<div class="nnc-item"><span class="nnc-num">13</span><strong>Thrust levers (both)</strong><span class="cl-dots"></span><strong>Idle</strong><span class="nnc-role">C</span></div>
-<div class="nnc-item"><span class="nnc-num">14</span><strong>PARKING BRAKE</strong><span class="cl-dots"></span><strong>Set</strong><span class="nnc-role">C</span></div>
-<div class="nnc-text"><span class="nnc-num">15</span>Advise the cabin.<span class="nnc-role">C</span></div>
-<div class="nnc-item"><span class="nnc-num">16</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><strong>CUTOFF</strong><span class="nnc-role">C</span></div>
-<div class="nnc-item"><span class="nnc-num">17</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Pull</strong><span class="nnc-role">F/O</span></div>
+<div class="nnc-item"><span class="nnc-num">13</span><strong>Thrust levers (both)</strong><span class="cl-dots"></span><strong>Idle</strong><span class="mi-role">CP</span></div>
+<div class="nnc-item"><span class="nnc-num">14</span><strong>PARKING BRAKE</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role">CP</span></div>
+<div class="nnc-text"><span class="nnc-num">15</span>Advise the cabin.<span class="mi-role">CP</span></div>
+<div class="nnc-item"><span class="nnc-num">16</span><strong>FUEL CONTROL switch (affected side)</strong><span class="cl-dots"></span><strong>CUTOFF</strong><span class="mi-role">CP</span></div>
+<div class="nnc-item"><span class="nnc-num">17</span><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Pull</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 <div class="nnc-text"><span class="nnc-num">18</span><strong>If</strong> the FIRE ENG message stays shown:</div>
-<div class="nnc-sub-item"><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong><span class="nnc-role">F/O</span></div>
+<div class="nnc-sub-item"><strong>Engine fire switch (affected side)</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 <div class="nnc-step">19&ensp;&ensp;Choose One:</div>
 
@@ -85,8 +85,8 @@ tags: [non-normal, fire, engine]
   <div class="nnc-goto">▶▶&ensp;Go to step 20</div>
 </div>
 
-<div class="nnc-text"><span class="nnc-num">20</span>Advise the cabin.<span class="nnc-role">C</span></div>
-<div class="nnc-text"><span class="nnc-num">21</span>Advise ATC.<span class="nnc-role">F/O</span></div>
+<div class="nnc-text"><span class="nnc-num">20</span>Advise the cabin.<span class="mi-role">CP</span></div>
+<div class="nnc-text"><span class="nnc-num">21</span>Advise ATC.<span class="mi-role mi-role--pm">F/O</span></div>
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 

@@ -22,6 +22,7 @@ role: Both
 | | <span class="sop-tag-items">PM: "STD"</span> |
 | <span class="sop-tag-items">PF: "STD"</span> | |
 | | If the FUEL IN CENTER message shows, set both CENTER FUEL PUMP switches to ON.<br>When the FUEL LOW CENTER message shows, set both CENTER FUEL PUMP switches to OFF. |
+| Confirm/Set VNAV PTH for cruise. | |
 | | Before the top of descent, modify the active route as needed for the arrival and approach. |
 
 </div>

@@ -38,28 +38,28 @@ tags: [sop, supplementary, flight-management, navigation]
 <div class="nnc-note">• When GPS update is turned OFF after alignment the FMC position will still include past GPS data that was valid during inertial alignment.</div>
 <div class="nnc-note">• When FMC position is subsequently manually updated to the IRS position, GPS data will no longer affect the current and future FMC position.</div>
 
-<div class="cl-item"><strong>IRS selectors</strong><span class="cl-dots"></span><strong>OFF 30 seconds, then ON</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>IRS selectors</strong><span class="cl-dots"></span><strong>OFF 30 seconds, then ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="nnc-note"><strong>Note:</strong> Wait for additional 30 sec.</div>
 <div class="cl-sub">POS INIT page:</div>
 <div class="cl-sub">– Verify that the time is correct, otherwise call Maintenance</div>
 <div class="cl-sub">– Enter the present position on the SET INERTIAL POS line. Use the most accurate latitude and longitude. Do not use GPS POS or last position.</div>
 <div class="nnc-note"><strong>Note:</strong> Comparing the FMC position with the actual location of the gate or stand location will reveal if the FMC position is corrupted.</div>
 
-<div class="cl-item"><strong>GPS UPDATE</strong><span class="cl-dots"></span><strong>OFF</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>GPS UPDATE</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Refer to OM-B 2-2-11 Navaid Inhibit.</div>
 <div class="nnc-note"><strong>Note:</strong> Selecting GPS updating to OFF does not inhibit GPS, GPWS Look-Ahead terrain and time / date function.</div>
 
-<div class="cl-item"><strong>FMC position</strong><span class="cl-dots"></span><strong>update to IRS position</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>FMC position</strong><span class="cl-dots"></span><strong>update to IRS position</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Refer to OM-B 2-2-11 FMS Position Update.</div>
 
-<div class="cl-item"><strong>DME/VOR/LOC UPDATE</strong><span class="cl-dots"></span><strong>as required</strong> <span class="nnc-role">F/O</span></div>
+<div class="cl-item"><strong>DME/VOR/LOC UPDATE</strong><span class="cl-dots"></span><strong>as required</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Refer to OM-B 2-2-11 Navaid Inhibit.</div>
 
-<div class="cl-item"><strong>GND PROX TERR OVRD</strong><span class="cl-dots"></span><strong>OVRD</strong> <span class="nnc-role">PF</span></div>
+<div class="cl-item"><strong>GND PROX TERR OVRD</strong><span class="cl-dots"></span><strong>OVRD</strong><span class="mi-role">PF</span></div>
 <div class="cl-sub">On TCP/GPWS toggle TERR OVRD to OVRD (LSK 3R). This inhibits Look-Ahead obstacle and terrain alerts and display.</div>
 <div class="nnc-note"><strong>Note:</strong> TERR OVRD Message is shown on ND and Mini Map, GPWS TERR OVRD is shown on EICAS.</div>
 
-<div class="cl-item"><strong>ND drop-down menu POS</strong><span class="cl-dots"></span><strong>SELECT</strong> <span class="nnc-role">B</span></div>
+<div class="cl-item"><strong>ND drop-down menu POS</strong><span class="cl-dots"></span><strong>SELECT</strong><span class="mi-role mi-role--both">BOTH</span></div>
 <div class="cl-sub">When the POS on the ND drop-down menu is selected, the symbols for the GPS, IRS and radio positions relative to the FMC position are shown.</div>
 
 </div>
@@ -70,10 +70,10 @@ tags: [sop, supplementary, flight-management, navigation]
 
 <div class="cl-indent">
 
-<div class="cl-item"><strong>ND drop-down menu POS</strong><span class="cl-dots"></span><strong>SELECT</strong> <span class="nnc-role">B</span></div>
-<div class="cl-item"><strong>GPS UPDATE</strong><span class="cl-dots"></span><strong>OFF</strong> <span class="nnc-role">PM</span></div>
-<div class="cl-item"><strong>DME/VOR/LOC UPDATE</strong><span class="cl-dots"></span><strong>as required</strong> <span class="nnc-role">PM</span></div>
-<div class="cl-item"><strong>GND PROX TERR OVRD</strong><span class="cl-dots"></span><strong>OVRD</strong> <span class="nnc-role">PM</span></div>
+<div class="cl-item"><strong>ND drop-down menu POS</strong><span class="cl-dots"></span><strong>SELECT</strong><span class="mi-role mi-role--both">BOTH</span></div>
+<div class="cl-item"><strong>GPS UPDATE</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">PM</span></div>
+<div class="cl-item"><strong>DME/VOR/LOC UPDATE</strong><span class="cl-dots"></span><strong>as required</strong><span class="mi-role mi-role--pm">PM</span></div>
+<div class="cl-item"><strong>GND PROX TERR OVRD</strong><span class="cl-dots"></span><strong>OVRD</strong><span class="mi-role mi-role--pm">PM</span></div>
 
 </div>
 
@@ -87,9 +87,9 @@ tags: [sop, supplementary, flight-management, navigation]
 <div class="nnc-note">• GPS data, communication, and surveillance functions are usually recovered as soon as the aircraft leaves the area affected by interference. Some spoofing events can impact the user system for the remainder of the flight.</div>
 <div class="nnc-note">• If one GPS distance is greater than 0.1 or one GPS BRG / DIST is blank, this can be an indication that the GPS position is still affected by GPS interference.</div>
 
-<div class="cl-item"><strong>Airplane system Time / Date</strong><span class="cl-dots"></span><strong>CHECK</strong> <span class="nnc-role">B</span></div>
+<div class="cl-item"><strong>Airplane system Time / Date</strong><span class="cl-dots"></span><strong>CHECK</strong><span class="mi-role mi-role--both">BOTH</span></div>
 
-<div class="cl-item"><strong>GPS L and R BRG / DIST</strong><span class="cl-dots"></span><strong>CHECK</strong> <span class="nnc-role">B</span></div>
+<div class="cl-item"><strong>GPS L and R BRG / DIST</strong><span class="cl-dots"></span><strong>CHECK</strong><span class="mi-role mi-role--both">BOTH</span></div>
 <div class="cl-sub">Use CDU POS REF page 4/4 to check GPS Bearing and Distance.</div>
 <div class="nnc-note"><strong>Note:</strong> If time / date is incorrect or one GPS BRG / DIST is blank this can be an indication that the GPS / INR did not recover from GPS interference.</div>
 <div class="nnc-caution"><strong>Caution:</strong> Flight Crew cycling (pulling and resetting) of a circuit breaker is not recommended.</div>
@@ -102,9 +102,9 @@ tags: [sop, supplementary, flight-management, navigation]
 
 <div class="cl-indent">
 
-<div class="cl-item"><strong>GPS UPDATE</strong><span class="cl-dots"></span><strong>ON</strong> <span class="nnc-role">PM</span></div>
-<div class="cl-item"><strong>DME/VOR/LOC UPDATE</strong><span class="cl-dots"></span><strong>as required</strong> <span class="nnc-role">PM</span></div>
-<div class="cl-item"><strong>GND PROX TERR OVRD</strong><span class="cl-dots"></span><strong>NORM</strong> <span class="nnc-role">PM</span></div>
+<div class="cl-item"><strong>GPS UPDATE</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">PM</span></div>
+<div class="cl-item"><strong>DME/VOR/LOC UPDATE</strong><span class="cl-dots"></span><strong>as required</strong><span class="mi-role mi-role--pm">PM</span></div>
+<div class="cl-item"><strong>GND PROX TERR OVRD</strong><span class="cl-dots"></span><strong>NORM</strong><span class="mi-role mi-role--pm">PM</span></div>
 <div class="cl-sub">This enables Look-Ahead obstacle and terrain alerts and display.</div>
 
 </div>

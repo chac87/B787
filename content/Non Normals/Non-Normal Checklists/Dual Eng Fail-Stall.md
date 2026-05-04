@@ -14,6 +14,12 @@ tags: [non-normal, engine]
 
 <div class="nnc-separator"></div>
 
+<div class="reg-selector-bar">
+  <button class="reg-btn" data-variant="ABPF">−ABPF to −ABPU</button>
+  <button class="reg-btn" data-variant="ABPA">−ABPA to −ABPE</button>
+</div>
+
+<div class="reg-variant-block" data-variant="ABPF">
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
 
 <div class="nnc-text"><span class="nnc-num">3</span>Set airspeed above 250 knots.</div>
@@ -30,9 +36,9 @@ tags: [non-normal, engine]
 <div class="nnc-sub">• STABILIZER</div>
 
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
+</div>
 
-<br>
-
+<div class="reg-variant-block" data-variant="ABPA">
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
 
 <div class="nnc-text"><span class="nnc-num">3</span>Set airspeed above 270 knots.</div>
@@ -49,6 +55,7 @@ tags: [non-normal, engine]
 <div class="nnc-sub">• STABILIZER</div>
 
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
+</div>
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 

@@ -34,9 +34,9 @@ Approaching Takeoff-RWY:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Departure Briefing</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Confirm</strong></div>
-<div class="cl-item"><strong>Cabin Report</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Receive</strong></div>
-<div class="cl-item"><strong>TOPAS X-Check</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Perform</strong></div>
+<div class="cl-item"><strong>Departure Briefing</strong><span class="cl-dots"></span><strong>Confirm</strong><span class="mi-role mi-role--both">BOTH</span></div>
+<div class="cl-item"><strong>Cabin Report</strong><span class="cl-dots"></span><strong>Receive</strong><span class="mi-role mi-role--both">BOTH</span></div>
+<div class="cl-item"><strong>TOPAS X-Check</strong><span class="cl-dots"></span><strong>Perform</strong><span class="mi-role mi-role--both">BOTH</span></div>
 
 </div>
 

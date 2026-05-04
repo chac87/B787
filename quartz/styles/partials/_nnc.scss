@@ -317,6 +317,11 @@ body[saved-theme="dark"] {
   font-size: 1.05em;
   letter-spacing: 0.05em;
   padding: 8px 14px;
+
+  a {
+    text-decoration: none;
+    &:hover { text-decoration: underline; }
+  }
 }
 
 .mi-condition {
@@ -409,6 +414,7 @@ body[saved-theme="dark"] {
   background-color: color-mix(in srgb, #f39c12 18%, transparent);
   color: #966008;
   border-bottom: 2px solid #f39c12;
+
 }
 
 .mi-block--red {
@@ -419,6 +425,7 @@ body[saved-theme="dark"] {
   background-color: color-mix(in srgb, #e74c3c 18%, transparent);
   color: #a93226;
   border-bottom: 2px solid #e74c3c;
+
 }
 
 body[saved-theme="dark"] {

@@ -74,7 +74,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-section" data-section="B">
 <div class="nn-section-header">B</div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/BARO-SET-DISAGREE">BARO SET DISAGREE</a></span></div>
-<div class="nn-item" data-qa="false" data-eicas="false" data-unann="false" data-cat="backcover"><span>Bomb On Board</span></div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="backcover"><span>Bomb On Board</span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/BOTTLE-1,-2-DISCH-ENG">BOTTLE 1, 2 DISCH ENG</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/BOTTLE-DISCH-APU">BOTTLE DISCH APU</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/BOTTLE-DISCH-CARGO">BOTTLE DISCH CARGO</a></span></div>
@@ -120,7 +120,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-ENTRY-1–4L,-R"><span class="nn-bracket">[]</span> DOOR ENTRY 1–4L, R</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOOR-FD-OVHD"><span class="nn-bracket">[]</span> DOOR FD OVHD</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="general"><span><a href="/Non-Normals/Non-Normal-Checklists/DOORS">DOORS</a></span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Dual-Eng-Fail-Stall"><span>Dual Eng Fail/Stall</span></a></span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Dual-Eng-Fail-Stall"><span>Dual Eng Fail/Stall</span></a></span><span class="nn-qa-badge">QA</span></div>
 </div>
 
 <div class="nn-section" data-section="E">
@@ -164,7 +164,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-START-CUTOUT-L,-R"><span class="nn-bracket">[]</span> ENG START CUTOUT L, R</a></span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-STARTERS-L,-R"><span class="nn-bracket">[]</span> ENG STARTERS L, R</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="true" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-SURGE-L,-R"><span><span class="nn-bracket">[]</span> ENG SURGE L, R</span></a></span><span class="nn-qa-badge">QA</span></div>
-<div class="nn-item" data-qa="true" data-eicas="false" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>Eng Svr Damage/Sep L, R</span></a></span><span class="nn-qa-badge">QA</span></div>
+<div class="nn-item" data-qa="true" data-eicas="false" data-unann="true" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>Eng Svr Damage/Sep L, R</span></a></span><span class="nn-qa-badge">QA</span></div>
 <div class="nn-item" data-eicas-level="advisory" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-TBV-OPEN-L,-R">ENG TBV OPEN L, R</a></span></div>
 <div class="nn-item" data-eicas-level="warning" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-THRUST-HIGH-L,-R"><span class="nn-bracket">[]</span> ENG THRUST HIGH L, R</a></span></div>
 <div class="nn-item" data-eicas-level="caution" data-qa="false" data-eicas="true" data-unann="false" data-cat="engine"><span><a href="/Non-Normals/Non-Normal-Checklists/ENG-THRUST-L,-R">ENG THRUST L, R</a></span></div>
@@ -209,7 +209,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/FMC"><span class="nn-bracket">[]</span> FMC</a></span></div>
 <div data-eicas-level="caution" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span><a href="/Non-Normals/Non-Normal-Checklists/FUEL-AUTO-JETTISON"><span class="nn-bracket">[]</span> FUEL AUTO JETTISON</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span><a href="/Non-Normals/Non-Normal-Checklists/FUEL-BALANCE-SYS"><span class="nn-bracket">[]</span> FUEL BALANCE SYS</a></span></div>
-<div class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span>Fuel Center Transfer</span></div>
+<div class="nn-item" data-qa="false" data-eicas="true" data-unann="true" data-cat="fuel"><span>Fuel Center Transfer</span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span><a href="/Non-Normals/Non-Normal-Checklists/FUEL-CROSSFEED"><span class="nn-bracket">[]</span> FUEL CROSSFEED</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span><a href="/Non-Normals/Non-Normal-Checklists/FUEL-DISAGREE"><span class="nn-bracket">[]</span> FUEL DISAGREE</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fuel"><span><a href="/Non-Normals/Non-Normal-Checklists/FUEL-FLOW-ENG-L,-R"><span class="nn-bracket">[]</span> FUEL FLOW ENG L, R</a></span></div>

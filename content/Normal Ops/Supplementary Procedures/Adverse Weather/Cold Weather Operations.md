@@ -110,7 +110,7 @@ When engine anti-ice is needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON · F/O</strong></div>
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 </div>
 
@@ -120,7 +120,7 @@ When engine anti-ice is no longer needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>AUTO or OFF · F/O</strong></div>
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>AUTO or OFF</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 </div>
 
@@ -140,7 +140,7 @@ Call "FLAPS __" as needed.
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Flap lever</strong><span class="cl-dots"></span><strong>Set flaps, as needed · C</strong></div>
+<div class="cl-item"><strong>Flap lever</strong><span class="cl-dots"></span><strong>Set flaps, as needed</strong><span class="mi-role">CP</span></div>
 
 </div>
 
@@ -162,7 +162,7 @@ If OAT is at or below 3°C and at or above −7°C:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><strong>C</strong></div>
+<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><span class="mi-role">CP</span></div>
 <div class="cl-sub">Run-up to a minimum of 20 TPR (42% N1) for at least 30 seconds at intervals no greater than 60 minutes.</div>
 
 </div>
@@ -171,7 +171,7 @@ If OAT is below −7°C:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><strong>C</strong></div>
+<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><span class="mi-role">CP</span></div>
 <div class="cl-sub">Run-up to a minimum of 20 TPR (42% N1) for at least 30 seconds during 60 minutes.</div>
 <div class="cl-sub">If takeoff is not completed within 60 minutes after the first runup, manually de-ice the engines before takeoff.</div>
 
@@ -201,7 +201,7 @@ Do the following procedure:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><strong>C</strong></div>
+<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><span class="mi-role">CP</span></div>
 <div class="cl-note">Operation in icing conditions may result in engine vibration levels above the normal operating range during ice shedding.</div>
 <div class="cl-sub">Run-up at a minimum of 40% N1 for at least 5 seconds duration at intervals no greater than 60 minutes. If high engine vibration indications occur, a run-up to 50% N1 may be done.</div>
 
@@ -225,21 +225,21 @@ If de-icing / anti-icing is needed:
 <div class="checklist">
 
 <div class="cl-variant">B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
-<div class="cl-item"><strong>BROADBAND COMM switch</strong><span class="cl-dots"></span><strong>Off · F/O</strong></div>
+<div class="cl-item"><strong>BROADBAND COMM switch</strong><span class="cl-dots"></span><strong>Off</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
 
-<div class="cl-item"><strong>APU</strong><span class="cl-dots"></span><strong>As needed · F/O</strong></div>
+<div class="cl-item"><strong>APU</strong><span class="cl-dots"></span><strong>As needed</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">The APU should be shut down unless APU operation is necessary.</div>
 
-<div class="cl-item"><strong>Call "FLAPS UP"</strong><span class="cl-dots"></span><strong>C</strong></div>
+<div class="cl-item"><strong>Call "FLAPS UP"</strong><span class="cl-dots"></span><span class="mi-role">CP</span></div>
 
-<div class="cl-item"><strong>Flaps</strong><span class="cl-dots"></span><strong>UP · F/O</strong></div>
+<div class="cl-item"><strong>Flaps</strong><span class="cl-dots"></span><strong>UP</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Prevents ice and slush from accumulating in flap cavities during de-icing.</div>
 
-<div class="cl-item"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>Idle · C</strong></div>
+<div class="cl-item"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>Idle</strong><span class="mi-role">CP</span></div>
 <div class="cl-sub">Reduces the possibility of injury to personnel at inlet or exhaust areas.</div>
 
-<div class="cl-item"><strong>PACK switches</strong><span class="cl-dots"></span><strong>OFF · F/O</strong></div>
+<div class="cl-item"><strong>PACK switches</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 </div>
 
@@ -248,14 +248,14 @@ After de-icing / anti-icing is completed:
 <div class="checklist">
 
 <div class="cl-variant">B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
-<div class="cl-item"><strong>BROADBAND COMM switch</strong><span class="cl-dots"></span><strong>ON · F/O</strong></div>
+<div class="cl-item"><strong>BROADBAND COMM switch</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
 
-<div class="cl-item"><strong>APU</strong><span class="cl-dots"></span><strong>As needed · F/O</strong></div>
+<div class="cl-item"><strong>APU</strong><span class="cl-dots"></span><strong>As needed</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>PACK switches</strong><span class="cl-dots"></span><strong>AUTO · F/O</strong></div>
+<div class="cl-item"><strong>PACK switches</strong><span class="cl-dots"></span><strong>AUTO</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>Flight Controls</strong><span class="cl-dots"></span><strong>Check, as needed · C</strong></div>
+<div class="cl-item"><strong>Flight Controls</strong><span class="cl-dots"></span><strong>Check, as needed</strong><span class="mi-role">CP</span></div>
 
 </div>
 
@@ -269,12 +269,12 @@ Call "FLAPS ___" as needed. (PF)
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Flap lever</strong><span class="cl-dots"></span><strong>Set takeoff flaps, as needed · PM</strong></div>
+<div class="cl-item"><strong>Flap lever</strong><span class="cl-dots"></span><strong>Set takeoff flaps, as needed</strong><span class="mi-role mi-role--pm">PM</span></div>
 <div class="cl-sub">Extend the flaps to the takeoff setting at this time if they have been held because of slush, standing water, or icing conditions, or because of exterior de-icing/anti-icing.</div>
 
 <div class="cl-variant">B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
 
-<div class="cl-item"><strong>Engine oil temperature</strong><span class="cl-dots"></span><strong>Above amber limit · PF</strong></div>
+<div class="cl-item"><strong>Engine oil temperature</strong><span class="cl-dots"></span><strong>Above amber limit</strong><span class="mi-role">PF</span></div>
 <div class="cl-sub">Oil temperature must be above the amber limit before takeoff.</div>
 
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU, -ABQA to -ABQG)</div>
@@ -333,7 +333,7 @@ When manual use of engine anti-ice is needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON · PM</strong></div>
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">PM</span></div>
 
 </div>
 
@@ -343,7 +343,7 @@ When manual use of engine anti-ice is no longer needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>AUTO or OFF · PM</strong></div>
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>AUTO or OFF</strong><span class="mi-role mi-role--pm">PM</span></div>
 
 </div>
 
@@ -392,7 +392,7 @@ When manual use of wing anti-ice is needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>WING ANTI-ICE selector</strong><span class="cl-dots"></span><strong>ON · PM</strong></div>
+<div class="cl-item"><strong>WING ANTI-ICE selector</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">PM</span></div>
 
 </div>
 
@@ -402,7 +402,7 @@ When manual use of wing anti-ice is no longer needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>WING ANTI-ICE selector</strong><span class="cl-dots"></span><strong>AUTO or OFF · PM</strong></div>
+<div class="cl-item"><strong>WING ANTI-ICE selector</strong><span class="cl-dots"></span><strong>AUTO or OFF</strong><span class="mi-role mi-role--pm">PM</span></div>
 
 </div>
 
@@ -463,7 +463,7 @@ When engine anti-ice is needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON · F/O</strong></div>
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 </div>
 
@@ -473,7 +473,7 @@ When engine anti-ice is no longer needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>AUTO · F/O</strong></div>
+<div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>AUTO</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 </div>
 
@@ -483,7 +483,7 @@ In icing conditions with visible moisture (fog with visibility of one statute mi
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><strong>C</strong></div>
+<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><span class="mi-role">CP</span></div>
 <div class="cl-sub">Run-up to a minimum of 20 TPR (42% N1) for at least 30 seconds at intervals no greater than 60 minutes.</div>
 
 </div>
@@ -508,7 +508,7 @@ Do the following procedure:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><strong>C</strong></div>
+<div class="cl-item"><strong>Check that the area behind the airplane is clear</strong><span class="cl-dots"></span><span class="mi-role">CP</span></div>
 <div class="cl-note">Operation in icing conditions may result in engine vibration levels above the normal operating range during ice shedding.</div>
 <div class="cl-sub">Run-up at a minimum of 40% N1 for at least 5 seconds duration at intervals no greater than 60 minutes. If high engine vibration indications occur, a run-up to 50% N1 may be done.</div>
 
@@ -518,8 +518,8 @@ If taxi-in occurs when both of the following exist and an engine run-up is not d
 
 <div class="checklist">
 
-<div class="cl-item"><strong>OAT stays 3°C or below</strong><span class="cl-dots"></span><strong>F/O</strong></div>
-<div class="cl-item"><strong>Visible moisture (fog ≤ 1600 m, rain, snow, sleet, ice crystals)</strong><span class="cl-dots"></span><strong>F/O</strong></div>
+<div class="cl-item"><strong>OAT stays 3°C or below</strong><span class="cl-dots"></span><span class="mi-role mi-role--pm">F/O</span></div>
+<div class="cl-item"><strong>Visible moisture (fog ≤ 1600 m, rain, snow, sleet, ice crystals)</strong><span class="cl-dots"></span><span class="mi-role mi-role--pm">F/O</span></div>
 
 </div>
 
@@ -540,7 +540,7 @@ If the airplane will be attended:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>PACK switches</strong><span class="cl-dots"></span><strong>AUTO · F/O</strong></div>
+<div class="cl-item"><strong>PACK switches</strong><span class="cl-dots"></span><strong>AUTO</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Use normal air conditioning procedures, with all packs, trim air, and recirculation fans on, to provide cabin heating.</div>
 
 </div>
@@ -549,14 +549,14 @@ If the airplane will not be attended, or if staying overnight at off-line statio
 
 <div class="checklist">
 
-<div class="cl-item"><strong>OUTFLOW VALVE switches</strong><span class="cl-dots"></span><strong>MAN · F/O</strong></div>
+<div class="cl-item"><strong>OUTFLOW VALVE switches</strong><span class="cl-dots"></span><strong>MAN</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>OUTFLOW VALVE MANUAL switches</strong><span class="cl-dots"></span><strong>CLOSE · F/O</strong></div>
+<div class="cl-item"><strong>OUTFLOW VALVE MANUAL switches</strong><span class="cl-dots"></span><strong>CLOSE</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Position the outflow valves fully closed to inhibit the intake of snow or ice.</div>
 
-<div class="cl-item"><strong>Wheel chocks</strong><span class="cl-dots"></span><strong>Verify in place · C or F/O</strong></div>
+<div class="cl-item"><strong>Wheel chocks</strong><span class="cl-dots"></span><strong>Verify in place</strong><span class="mi-role mi-role--both">BOTH</span></div>
 
-<div class="cl-item"><strong>Parking brake</strong><span class="cl-dots"></span><strong>Released · C</strong></div>
+<div class="cl-item"><strong>Parking brake</strong><span class="cl-dots"></span><strong>Released</strong><span class="mi-role">CP</span></div>
 <div class="cl-sub">Reduces the possibility of frozen brakes.</div>
 
 </div>

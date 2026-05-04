@@ -14,7 +14,7 @@ Start the Before Start Procedure after papers are on board.
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Flight deck door</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Closed and locked</strong></div>
+<div class="cl-item"><strong>Flight deck door</strong><span class="cl-dots"></span><strong>Closed and locked</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 </div>
 
@@ -46,32 +46,32 @@ Start the Before Start Procedure after papers are on board.
 
 <div class="checklist">
 
-<div class="cl-item"><strong>CDU display</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>CDU display</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role mi-role--both">BOTH</span></div>
 <div class="cl-sub">Normally the PF selects the TAKEOFF REF page.</div>
 <div class="cl-sub">Normally the PM selects the LEGS page.</div>
 
-<div class="cl-item"><strong>MCP (Final 5)</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>MCP (Final 5)</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role">CP</span></div>
 <div class="cl-item cl-indent"><strong>V2</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-item cl-indent"><strong>HDG</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-item cl-indent"><strong>Altitude</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-item cl-indent"><strong>LNAV</strong><span class="cl-dots"></span><strong>Arm as needed</strong></div>
 <div class="cl-item cl-indent"><strong>VNAV</strong><span class="cl-dots"></span><strong>Arm</strong></div>
 
-<div class="cl-item"><strong>Exterior doors</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Verify closed</strong></div>
+<div class="cl-item"><strong>Exterior doors</strong><span class="cl-dots"></span><strong>Verify closed</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>Clearance</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Obtain</strong></div>
+<div class="cl-item"><strong>Clearance</strong><span class="cl-dots"></span><strong>Obtain</strong><span class="mi-role mi-role--both">BOTH</span></div>
 <div class="cl-sub">Hydraulic clearance from ground</div>
 <div class="cl-sub">Start clearance from ATC</div>
 
 <div class="cl-sub">If pushback is needed:</div>
-<div class="cl-item cl-indent"><strong>Nose gear steering</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Verify locked out</strong></div>
+<div class="cl-item cl-indent"><strong>Nose gear steering</strong><span class="cl-dots"></span><strong>Verify locked out</strong><span class="mi-role">CP</span></div>
 
 <span class="sop-tag-items">CP: "BEFORE START Items"</span>
 
 
-<div class="cl-item"><strong>Passenger signs</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>ON</strong></div>
+<div class="cl-item"><strong>Passenger signs</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>HYDRAULIC panel</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>HYDRAULIC panel</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-warning cl-indent">If the tow bar is connected, do not pressurize the hydraulic systems until the nose gear steering is locked out. Unwanted tow bar movement can occur.</div>
 <div class="cl-item cl-indent"><strong>RIGHT ELECTRIC DEMAND pump selector</strong><span class="cl-dots"></span><strong>AUTO</strong></div>
 <div class="cl-sub cl-indent">Verify that FAULT light is extinguished.</div>
@@ -80,33 +80,33 @@ Start the Before Start Procedure after papers are on board.
 <div class="cl-item cl-indent"><strong>LEFT ELECTRIC DEMAND pump selector</strong><span class="cl-dots"></span><strong>AUTO</strong></div>
 <div class="cl-sub cl-indent">Verify that the FAULT light is extinguished.</div>
 
-<div class="cl-item"><strong>Fuel panel</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>Fuel panel</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-item cl-indent"><strong>LEFT and RIGHT FUEL PUMP switches</strong><span class="cl-dots"></span><strong>ON</strong></div>
 <div class="cl-sub cl-indent">The PRESS lights are illuminated because of load shedding. If the APU is running, the left aft pump PRESS light is extinguished.</div>
 <div class="cl-sub cl-indent">If the FUEL IN CENTER message shows:</div>
 <div class="cl-item cl-indent"><strong>CENTER FUEL PUMP switches</strong><span class="cl-dots"></span><strong>ON — if fuel in center tank</strong></div>
 <div class="cl-sub cl-indent">Both PRESS lights illuminate until after engine start because of load shedding.</div>
 
-<div class="cl-item"><strong>BEACON light switch</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>ON</strong></div>
+<div class="cl-item"><strong>BEACON light switch</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>CANCEL/RECALL switch</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Push</strong></div>
+<div class="cl-item"><strong>CANCEL/RECALL switch</strong><span class="cl-dots"></span><strong>Push</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Verify that only the expected alert and memo messages are shown (HEFT):</div>
 <div class="cl-sub cl-indent">HYD PRESS SYS L+C+R</div>
 <div class="cl-sub cl-indent">ENG SHUTDOWN</div>
 <div class="cl-sub cl-indent">FUEL PRESS ENG L+R</div>
 <div class="cl-sub cl-indent">TCAS OFF</div>
 
-<div class="cl-item"><strong>CANCEL/RECALL switch</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Push</strong></div>
+<div class="cl-item"><strong>CANCEL/RECALL switch</strong><span class="cl-dots"></span><strong>Push</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">Verify that the messages cancel.</div>
 
-<div class="cl-item"><strong>Trim</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>Trim</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role">CP</span></div>
 <div class="cl-note cl-indent">If the target FMC stabilizer takeoff setting is close to the greenband limit, when setting the stabilizer position (STAB), approach the target takeoff STAB setting from the outside of the greenband towards the inside of the greenband. This minimizes nuisance CONFIG STABILIZER messages.</div>
 <div class="cl-sub cl-indent">Stabilizer trim – ___ UNITS</div>
 <div class="cl-sub cl-indent">Set the trim for takeoff.</div>
 <div class="cl-sub cl-indent">Verify that the trim is in the greenband.</div>
 <div class="cl-item cl-indent"><strong>Rudder trim</strong><span class="cl-dots"></span><strong>0 units</strong></div>
 
-<div class="cl-item"><strong>Mobiles</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Off</strong></div>
+<div class="cl-item"><strong>Mobiles</strong><span class="cl-dots"></span><strong>Off</strong><span class="mi-role mi-role--both">BOTH</span></div>
 
 
 </div>

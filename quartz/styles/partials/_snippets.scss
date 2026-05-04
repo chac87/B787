@@ -24,8 +24,8 @@
   background-color: color-mix(in srgb, var(--accent), transparent 92%);
 
   /* Layout & Spacing */
-  padding: 8px 14px;
-  margin: 0.75em 0;
+  padding: 4px 10px;
+  margin: 0.5em 0;
   
   /* Die "Apple-Kurve" */
   border-radius: 12px;
@@ -41,7 +41,7 @@
 /* Text spacing */
 .callout > p,
 .callout > div > p {
-  margin: 0.5em 0;
+  margin: 0.2em 0;
 }
 
 .callout > p:first-child,
@@ -64,7 +64,7 @@
   font-size: 0.95rem;
   letter-spacing: -0.01em;
 
-  margin-bottom: 0.3em;
+  margin-bottom: 0;
   color: var(--accent); /* Titel in der Akzentfarbe */
   opacity: 1;
   cursor: pointer;
@@ -228,6 +228,27 @@ body[saved-theme="dark"] .callout[data-callout="warning"] .callout-title-inner p
 /* Hide hr inside collapsed callouts (border bleeds through height:0) */
 .callout.is-collapsed .callout-content hr {
   border: none;
+}
+
+/* =========================================
+   COMPACT CALLOUTS — title-only (no body)
+   Icon left, plain inline text (not bold)
+   ========================================= */
+
+.callout:not(:has(.callout-content)) .callout-title {
+  letter-spacing: normal;
+  cursor: default;
+}
+
+.callout:not(:has(.callout-content)) .callout-title-inner,
+.callout:not(:has(.callout-content)) .callout-title-inner p {
+  font-weight: 400 !important;
+  color: var(--dark) !important;
+}
+
+body[saved-theme="dark"] .callout:not(:has(.callout-content)) .callout-title-inner,
+body[saved-theme="dark"] .callout:not(:has(.callout-content)) .callout-title-inner p {
+  color: var(--dark) !important;
 }
 
 /* === snippet: global-hacks.css === */

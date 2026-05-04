@@ -69,6 +69,9 @@
 [[Normal Ops/Supplementary Procedures/Flight Management, Navigation/GPS Signal Interference|GPS Signal Interference]]
 [[Normal Ops/Supplementary Procedures/Flight Management, Navigation/RNP Manual Entry|RNP Manual Entry]]
 [[Normal Ops/Supplementary Procedures/Flight Management, Navigation/Navaid Inhibit|Navaid Inhibit]]
+[[Normal Ops/Supplementary Procedures/Engines, APU|Engines, APU]]
+[[Normal Ops/Supplementary Procedures/Engines, APU/Ground Power Engine Start|Ground Power Engine Start]]
+[[Normal Ops/Supplementary Procedures/Engines, APU/Single Engine Taxi In (SETI)|Single Engine Taxi In (SETI)]]
 
 ## [[Non Normals/index|Non-Normals]]
 [[Non Normals/Non-Normal Handling|Non-Normal Handling]]

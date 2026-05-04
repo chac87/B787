@@ -14,18 +14,18 @@ Start the Shutdown Procedure after taxi is complete.
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Parking brake</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>Parking brake</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role">CP</span></div>
 <div class="cl-sub">Verify that the PARKING BRAKE SET message is shown.</div>
 
 <span class="sop-tag-items">CP: "SHUTDOWN Items"</span>
 
 
-<div class="cl-item"><strong>Cabin Crew</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Advise</strong></div>
+<div class="cl-item"><strong>Cabin Crew</strong><span class="cl-dots"></span><strong>Advise</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-note">If pushback or towing is needed, delay callout until final parking.</div>
 <div class="cl-sub">Advise cabin crew. Verify door mode selector position status on EICAS Doors Synoptic Display.</div>
 <div class="cl-sub">F/O: <em>"Cabin Crew, all doors in Park!"</em></div>
 
-<div class="cl-item"><strong>Electrical power</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>Electrical power</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">If APU power is needed: Check that the APU RUNNING message is shown.</div>
 <div class="cl-sub">If external power is needed: Verify that the FORWARD EXTERNAL POWER L AVAIL light is illuminated.</div>
 <div class="cl-indent cl-item"><strong>FORWARD EXTERNAL POWER L switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
@@ -34,7 +34,7 @@ Start the Shutdown Procedure after taxi is complete.
 <div class="cl-indent cl-item"><strong>FORWARD EXTERNAL POWER R switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
 <div class="cl-indent cl-sub">Verify that the ON light is illuminated.</div>
 
-<div class="cl-item"><strong>FUEL CONTROL switches</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>CUTOFF</strong></div>
+<div class="cl-item"><strong>FUEL CONTROL switches</strong><span class="cl-dots"></span><strong>CUTOFF</strong><span class="mi-role">CP</span></div>
 
 </div>
 
@@ -42,15 +42,15 @@ If towing is needed:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Ground handling personnel</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Establish communications</strong></div>
+<div class="cl-item"><strong>Ground handling personnel</strong><span class="cl-dots"></span><strong>Establish communications</strong><span class="mi-role">CP</span></div>
 
 <div class="cl-warning">Warning: If the nose gear steering is not locked out, any change to hydraulic power with the tow bar connected may cause unwanted tow bar movement.</div>
 
-<div class="cl-item"><strong>Nose gear steering</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Verify locked out</strong></div>
+<div class="cl-item"><strong>Nose gear steering</strong><span class="cl-dots"></span><strong>Verify locked out</strong><span class="mi-role">CP</span></div>
 <div class="cl-caution">Caution: Do not turn the nose wheel tiller during pushback or towing. This can damage the nose gear or the tow bar.</div>
 <div class="cl-caution">Caution: Do not use airplane brakes to stop the airplane during pushback or towing. This can damage the nose gear or the tow bar.</div>
 
-<div class="cl-item"><strong>Parking brake</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Set or release</strong></div>
+<div class="cl-item"><strong>Parking brake</strong><span class="cl-dots"></span><strong>Set or release</strong><span class="mi-role">CP</span></div>
 <div class="cl-sub">Set or release as directed by ground handling personnel.</div>
 
 </div>
@@ -59,24 +59,24 @@ When Doors in PARK:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>SYS DOOR page</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Check</strong></div>
+<div class="cl-item"><strong>SYS DOOR page</strong><span class="cl-dots"></span><strong>Check</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>SEATBELTS selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>SEATBELTS selector</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>HYDRAULIC panel</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item"><strong>HYDRAULIC panel</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-indent cl-item"><strong>LEFT ELECTRIC DEMAND pump selector</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 <div class="cl-indent cl-item"><strong>CENTER 1 and CENTER 2 ELECTRIC pump selectors</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 <div class="cl-indent cl-item"><strong>RIGHT ELECTRIC DEMAND pump selector</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 
-<div class="cl-item"><strong>FUEL PUMP switches</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>FUEL PUMP switches</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>BEACON light switch</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>BEACON light switch</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>FLIGHT DIRECTOR switches</strong> <span class="nnc-role">CP, F/O</span><span class="cl-dots"></span><strong>OFF</strong></div>
+<div class="cl-item"><strong>FLIGHT DIRECTOR switches</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--both">BOTH</span></div>
 
-<div class="cl-item"><strong>TRANSPONDER MODE selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>STANDBY</strong></div>
+<div class="cl-item"><strong>TRANSPONDER MODE selector</strong><span class="cl-dots"></span><strong>STANDBY</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>Status messages</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Check</strong></div>
+<div class="cl-item"><strong>Status messages</strong><span class="cl-dots"></span><strong>Check</strong><span class="mi-role">CP</span></div>
 <div class="cl-note">Disregard EICAS alert and status messages displayed during the PFC self-test after hydraulic shutdown. Wait approximately 3 minutes after HYD PRESS SYS L+C+R message is shown before recording status and alert messages in the eTLB.</div>
 
 </div>
@@ -85,9 +85,9 @@ After wheel chocks are in place:
 
 <div class="checklist">
 
-<div class="cl-item"><strong>Parking brake</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Release</strong></div>
+<div class="cl-item"><strong>Parking brake</strong><span class="cl-dots"></span><strong>Release</strong><span class="mi-role">CP</span></div>
 
-<div class="cl-item"><strong>APU selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>As needed</strong></div>
+<div class="cl-item"><strong>APU selector</strong><span class="cl-dots"></span><strong>As needed</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">CP → F/O: "SHUTDOWN CL"</span>

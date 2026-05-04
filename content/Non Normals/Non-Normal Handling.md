@@ -45,142 +45,55 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
 > [!warning] Start NNC only when ready
 > PF calls the checklist when the flight path is under control and the aircraft is above **400 ft RA**.
 
-## Example 1: Engine Failure 
-
-The example below shows the call structure, not a replacement for the actual checklist.
-
-<div class="checklist">
-<div class="cl-item"><strong>Any CM</strong><span class="cl-dots"></span><strong>"Engine Fail Left"</strong></div>
-<div class="cl-item"><strong>Other CM</strong><span class="cl-dots"></span><strong>Acknowledge</strong></div>
-<div class="cl-item"><strong>CM1</strong><span class="cl-dots"></span><strong>"Engine Fail Left"</strong></div>
-<div class="cl-sub">or: "Dann machen wir jetzt die Engine Fail Left Liste."</div>
-</div>
-
-<div class="nn-decision">
-  <div class="nn-decision-question">Memory Items?</div>
-  <div class="nn-decision-branches">
-    <div class="nn-branch nn-branch--yes">
-      <div class="nn-branch-label">YES</div>
-      <div class="nn-step-pill">PF: "Memory Items"</div>
-      <div class="nn-step-pill nn-step-pill--result">After memory items: applicable NNC</div>
-    </div>
-    <div class="nn-branch nn-branch--no">
-      <div class="nn-branch-label">NO</div>
-      <div class="nn-step-pill">PF: "Engine Fail Left Checklist"</div>
-    </div>
-  </div>
-</div>
-
 ## Confirm Step
 
-<div class="media-split">
-  <div class="eicas-levels">
-    <div class="eicas-card eicas-card--white">
-      <div class="eicas-card-title">Reference Items</div>
-      <div class="eicas-card-body">Used while reading the checklist. PF reads the item, places hand on the related component, PM confirms, then PF acts.</div>
-    </div>
-  </div>
-  <div class="eicas-levels">
-    <div class="eicas-card eicas-card--amber">
-      <div class="eicas-card-title">Memory Items</div>
-      <div class="eicas-card-body">PF calls "Memory Items". Critical actions are performed from memory, with confirm steps when required, then verified with the checklist.</div>
-    </div>
+The following items always require a confirm step before action (in-flight):
+
+<div class="eicas-levels">
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Confirm Required <span class="eicas-card-badge">BEFORE ACTION</span></div>
+  <div class="eicas-card-body">
+    Autothrottle arm switch <span class="mi-role">PF</span><br>
+    Engine thrust lever <span class="mi-role">PF</span><br>
+    Fuel control switch <span class="mi-role mi-role--pm">PM</span><br>
+    Engine or APU fire switch · Cargo fire arm switch <span class="mi-role mi-role--pm">PM</span><br>
+    Generator drive disconnect switch <span class="mi-role mi-role--pm">PM</span><br>
+    IRS selectors <span class="mi-role mi-role--pm">PM</span>
   </div>
 </div>
+</div>
+
+> [!info] Exceptions
+> - Confirm Steps do not apply to the Dual Eng Fail/Stall checklist.
+> - On the ground, confirmation is not required for NNC items.
+> - Stationary on ground: FUEL CONTROL switches → CP
+> - Autothrottle arm switch in manual flight: PF may delegate switching
 
 <div class="nnc-item"><span class="nnc-num">1</span><strong>Left A/T ARM switch</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
 <div class="nnc-sub">PF places hand on the related component.</div>
 <div class="nnc-sub"><strong>PM:</strong> "Left confirmed."</div>
 <div class="nnc-sub"><strong>PF:</strong> "Off."</div>
 
-The following items always require a confirm step before action:
+## Checklist Reading
+
+- Read the checklist title
+- Read white text
+- "Inhibited Checklists" do not need to be read
+- Green items do not need to be read
+- Timer starts automatically
+- "Precaution" must be read aloud
+- Item and Checklist override must be confirmed
 
 <div class="eicas-levels">
-<div class="eicas-card eicas-card--red">
-  <div class="eicas-card-title">Confirm Required <span class="eicas-card-badge">BEFORE ACTION</span></div>
-  <div class="eicas-card-body">
-    Autothrottle arm switch<br>
-    Engine thrust lever<br>
-    Fuel control switch<br>
-    Engine or APU fire switch · Cargo fire arm switch<br>
-    Generator drive disconnect switch<br>
-    IRS selectors
+  <div class="eicas-card eicas-card--amber">
+    <div class="eicas-card-title">Checklist title amber</div>
+    <div class="eicas-card-body">Condition still exists.</div>
+  </div>
+  <div class="eicas-card eicas-card--white">
+    <div class="eicas-card-title">Checklist title white</div>
+    <div class="eicas-card-body">Condition no longer exists.</div>
   </div>
 </div>
-</div>
-
-## Example 2: ENG SURGE L
-
-<div class="eicas-levels">
-<div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">Situation <span class="eicas-card-badge">EICAS CAUTION</span></div>
-  <div class="eicas-card-body">An engine surge occurs on the left engine · System generates amber <strong>ENG SURGE L</strong> · Caution beeper sounds · Master CAUTION lights illuminate</div>
-</div>
-</div>
-
----
-
-<div class="nnc-step">1 &nbsp; Recognize & Fly</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT"</strong></div>
-<div class="nnc-sub">Reads the EICAS message aloud.</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Confirmed"</strong></div>
-<div class="nnc-sub">Ensures the flight path is under control · verifies airplane is above 400 ft RA.</div>
-
----
-
-<div class="nnc-step">2 &nbsp; Initiate Memory Items</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Memory Items"</strong></div>
-
----
-
-<div class="nnc-step">3 &nbsp; Execute Memory Items — as Confirmed Items</div>
-
-> [!info] Confirmed Items
-> The A/T ARM switch and the thrust lever require verbal confirmation before being moved.
-> PM initiates the confirm for switches · PF initiates the confirm for the thrust lever.
-
-**Step 1 — Deactivate Autothrottle**
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>Left A/T ARM switch</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
-<div class="nnc-sub"><strong>PM</strong> (places hand on the left A/T ARM switch): &nbsp;"LEFT A/T ARM SWITCH – CONFIRM – OFF"</div>
-<div class="nnc-sub"><strong>PF</strong> (looks at the switch, verifies): &nbsp;"LEFT CONFIRMED"</div>
-<div class="nnc-sub"><strong>PM</strong> (moves the switch to OFF): &nbsp;"OFF"</div>
-
-**Step 2 — Reduce Thrust**
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>Left Thrust lever</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard</strong></div>
-<div class="nnc-sub"><strong>PF</strong> (places hand on the left thrust lever): &nbsp;"LEFT THRUST LEVER – CONFIRM – RETARD"</div>
-<div class="nnc-sub"><strong>PM</strong> (looks at the lever, verifies): &nbsp;"LEFT CONFIRMED"</div>
-<div class="nnc-sub"><strong>PF</strong> (slowly retards the lever until the ENG SURGE L message blanks or the lever is at idle): &nbsp;"RETARD"</div>
-
----
-
-<div class="nnc-step">4 &nbsp; Call for Checklist</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"Memory Items Completed"</strong></div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT Checklist"</strong></div>
-
----
-
-<div class="nnc-step">5 &nbsp; Read the NNC</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT Checklist"</strong></div>
-<div class="nnc-sub">Reads the checklist title aloud to confirm context.</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>Verify Memory Items</strong></div>
-<div class="nnc-sub">Reads the memory items aloud as verification. PF does not need to respond if everything is correct.</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>Read Reference Items</strong></div>
-<div class="nnc-sub">Reads and actions the remaining reference items.</div>
-
-<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"Checklist Complete Except Deferred Items"</strong></div>
-<div class="nnc-sub">This checklist has deferred items for the approach — the PM will return to them during descent.</div>
-
----
 
 ## Core Terms
 
@@ -214,3 +127,96 @@ The following items always require a confirm step before action:
     <div class="eicas-card-body">Secondary alerts caused by the primary failure, e.g. PACK L after a fire checklist. Do not accomplish separate checklists for consequential alerts unless directed.</div>
   </div>
 </div>
+
+## Example 1: Engine Failure
+
+The example below shows the call structure, not a replacement for the actual checklist.
+
+<div class="checklist">
+<div class="cl-item"><strong>Any CM</strong><span class="cl-dots"></span><strong>"Engine Fail Left"</strong></div>
+<div class="cl-item"><strong>Other CM</strong><span class="cl-dots"></span><strong>Acknowledge</strong></div>
+<div class="cl-item"><strong>CM1</strong><span class="cl-dots"></span><strong>"Engine Fail Left"</strong></div>
+<div class="cl-sub">or: "Dann machen wir jetzt die Engine Fail Left Liste."</div>
+</div>
+
+<div class="nn-decision">
+  <div class="nn-decision-question">Memory Items?</div>
+  <div class="nn-decision-branches">
+    <div class="nn-branch nn-branch--yes">
+      <div class="nn-branch-label">YES</div>
+      <div class="nn-step-pill">PF: "Memory Items"</div>
+      <div class="nn-step-pill nn-step-pill--result">After memory items: applicable NNC</div>
+    </div>
+    <div class="nn-branch nn-branch--no">
+      <div class="nn-branch-label">NO</div>
+      <div class="nn-step-pill">PF: "Engine Fail Left Checklist"</div>
+    </div>
+  </div>
+</div>
+
+## Example 2: ENG SURGE L
+
+<div class="eicas-levels">
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Situation <span class="eicas-card-badge">EICAS CAUTION</span></div>
+  <div class="eicas-card-body">An engine surge occurs on the left engine · System generates amber <strong>ENG SURGE L</strong> · Caution beeper sounds · Master CAUTION lights illuminate</div>
+</div>
+</div>
+
+---
+
+<div class="nnc-step">1 &nbsp; Recognize & Fly</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT"</strong></div>
+<div class="nnc-sub">Reads the EICAS message aloud.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Confirmed"</strong></div>
+<div class="nnc-sub">Ensures the flight path is under control · verifies airplane is above 400 ft RA.</div>
+
+---
+
+<div class="nnc-step">2 &nbsp; Initiate Memory Items</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Memory Items"</strong></div>
+
+---
+
+<div class="nnc-step">3 &nbsp; Execute Memory Items — as Confirmed Items</div>
+
+**Step 1 — Deactivate Autothrottle**
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>Left A/T ARM switch</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
+<div class="nnc-sub"><strong>PF</strong> (places hand on the left A/T ARM switch): &nbsp;"LEFT A/T ARM SWITCH – CONFIRM – OFF"</div>
+<div class="nnc-sub"><strong>PM</strong> (looks at the switch, verifies): &nbsp;"LEFT CONFIRMED"</div>
+<div class="nnc-sub"><strong>PF</strong> (moves the switch to OFF): &nbsp;"OFF"</div>
+
+**Step 2 — Reduce Thrust**
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>Left Thrust lever</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard</strong></div>
+<div class="nnc-sub"><strong>PF</strong> (places hand on the left thrust lever): &nbsp;"LEFT THRUST LEVER – CONFIRM – RETARD"</div>
+<div class="nnc-sub"><strong>PM</strong> (looks at the lever, verifies): &nbsp;"LEFT CONFIRMED"</div>
+<div class="nnc-sub"><strong>PF</strong> (slowly retards the lever until the ENG SURGE L message blanks or the lever is at idle): &nbsp;"RETARD"</div>
+
+---
+
+<div class="nnc-step">4 &nbsp; Call for Checklist</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT Checklist"</strong></div>
+
+---
+
+<div class="nnc-step">5 &nbsp; Read the NNC</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT Checklist"</strong></div>
+<div class="nnc-sub">Reads the checklist title aloud to confirm context.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>Verify Memory Items</strong></div>
+<div class="nnc-sub">Reads the memory items aloud as verification. PF does not need to respond if everything is correct.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>Read Reference Items</strong></div>
+<div class="nnc-sub">Reads and actions the remaining reference items.</div>
+
+<div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"Checklist Complete Except Deferred Items"</strong></div>
+<div class="nnc-sub">This checklist has deferred items for the approach — the PM will return to them during descent.</div>
+
+---

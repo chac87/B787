@@ -1,52 +1,52 @@
 # Ventilation System
 
-Das Ventilationssystem nutzt interne Kabinenluft zur Kühlung von elektronischen und elektrischen Komponenten. Die dabei erwärmte Luft wird für das Cargo Heat System verwendet oder overboard abgeführt. Zusätzliche Kühlung liefern zwei Flüssigkeitssysteme: PECS und ICS.
+The ventilation system uses recirculated cabin air to cool electronic and electrical components. The heated exhaust air is routed to the cargo heat system or discharged overboard. Two fluid cooling systems provide additional cooling: PECS and ICS.
 
 ## Equipment Cooling — FWD / AFT
 
-Beide Systeme sind identisch im Aufbau. Jeweils 2 Supply Fans (Primary + Backup) — Backup startet automatisch bei Primary-Ausfall.
+Both systems are identical in design. Each has 2 supply fans (primary + backup) — the backup starts automatically if the primary fails.
 
-| System | Kühlt | Abluft nach |
+| System | Cools | Exhaust to |
 |:---|:---|:---|
-| **FWD Equipment Cooling** | Flight Deck + FWD E/E Racks | Overboard Vent Valve oder FWD Cargo (bei Heizbedarf) |
-| **AFT Equipment Cooling** | AFT E/E Racks | Overboard Exhaust Valve oder AFT Cargo |
+| **FWD Equipment Cooling** | Flight deck + FWD E/E racks | Overboard vent valve or FWD cargo (if heating required) |
+| **AFT Equipment Cooling** | AFT E/E racks | Overboard exhaust valve or AFT cargo |
 
 ### Override Mode
 
-Automatische Aktivierung (FWD oder AFT) bei:
+Automatic activation (FWD or AFT) when:
 
-| Auslöser |
+| Condition |
 |:---|
-| EQUIP COOLING Switch → OVRD (manuell) |
-| Beide Supply Fans ausgefallen (im Flug) |
-| Beide Flow Sensors ausgefallen |
-| Niedriger Airflow erkannt (im Flug) |
-| Überhitzung erkannt (im Flug) |
-| Rauch im Equipment Cooling System / Cargo Area |
-| CARGO FIRE ARM Switch → ARMED |
-| *Zusätzlich AFT only:* Rauch im AFT Equipment Ventilation System |
+| EQUIP COOLING switch → OVRD (manual) |
+| Both supply fans failed (in flight) |
+| Both flow sensors failed |
+| Low airflow detected (in flight) |
+| Overheat detected (in flight) |
+| Smoke in the equipment cooling system / cargo area |
+| CARGO FIRE ARM switch → ARMED |
+| *Additionally AFT only:* Smoke in the AFT equipment ventilation system |
 
-**Override-Wirkung:** Cargo Heat + Overboard Vent Valves schließen · Fans aus · Override Valve öffnet. Cabin Differential Pressure drückt Luft in Gegenrichtung durch E/E Racks → Overboard Venturi.
+**Override effect:** Cargo heat + overboard vent valves close · fans off · override valve opens. Cabin differential pressure pushes air in reverse through E/E racks → overboard venturi.
 
-> [!info] Override-Kühlung ausreichend im Cruise. Nimmt ab beim Sinken (weniger ΔP).
+> [!info] Override cooling is sufficient in cruise. Effectiveness decreases during descent (less ΔP).
 
-**Im Flug:**
-- FWD OVRD: unterstützt **Rauchevakuierung vom Flight Deck**
-- AFT OVRD: unterstützt **Rauchevakuierung aus der Kabine**
+**In flight:**
+- FWD OVRD: assists **smoke removal from the flight deck**
+- AFT OVRD: assists **smoke removal from the cabin**
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Description |
 |:---|:---:|:---|
-| <span class="c-amber">EQUIP COOLING FWD</span> | <span class="c-amber">Advisory</span> | FWD Equipment Cooling inoperativ (am Boden + Horn im Wheel Well) |
-| <span class="c-amber">EQUIP COOLING AFT</span> | <span class="c-amber">Advisory</span> | AFT Equipment Cooling inoperativ (am Boden + Horn im Wheel Well) |
-| <span class="c-amber">EQUIP OVBD VLV AFT</span> | <span class="c-amber">Advisory</span> | AFT Overboard Valve offen — Druckbeaufschlagung kann Duct-Failure + Druckverlust verursachen |
+| <span class="c-amber">EQUIP COOLING FWD</span> | <span class="c-amber">Advisory</span> | FWD equipment cooling inoperative (on ground + horn in wheel well) |
+| <span class="c-amber">EQUIP COOLING AFT</span> | <span class="c-amber">Advisory</span> | AFT equipment cooling inoperative (on ground + horn in wheel well) |
+| <span class="c-amber">EQUIP OVBD VLV AFT</span> | <span class="c-amber">Advisory</span> | AFT overboard valve open — pressurization may cause duct failure + cabin pressure loss |
 
-> [!warning] Bei EQUIP OVBD VLV AFT: Kabine **nicht** druckbeaufschlagen — Duct-Versagen und Kabinendruck-Verlust möglich.
+> [!warning] With EQUIP OVBD VLV AFT: do **not** pressurize the cabin — duct failure and cabin pressure loss possible.
 
 ---
 
 ## Lavatory / Galley Ventilation
 
-Versorgt Lavatories und Galleys mit Belüftungsluft · steuert Rauch in Lavatories und optionalen Crew Rests. Auch sekundärer Heat Sink für PECS und Antrieb für Kabinen-Temperatursensoren.
+Supplies ventilation air to lavatories and galleys · controls smoke in lavatories and optional crew rests. Also serves as secondary heat sink for PECS and drives cabin temperature sensors.
 
 ---
 
@@ -54,16 +54,16 @@ Versorgt Lavatories und Galleys mit Belüftungsluft · steuert Rauch in Lavatori
 
 ### PECS — Power Electronics Cooling System
 
-Flüssigkeitskühlung für das Large Motor Power Distribution System (AFT E/E) und die ICS Motor Controllers.
+Liquid cooling for the large motor power distribution system (AFT E/E) and the ICS motor controllers.
 
-- 2 unabhängige Loops · je 1 Pump Package mit **2 redundanten Pumpen**
-- Kühlmitteltemperatur: **27 °C** (Normalbetrieb)
-- Status auf **STATUS Page** (Flüssigkeitsmenge + Status je Loop)
-- Bei nur einer externen FWD-Stromquelle: nur 1 Loop auf EICAS sichtbar
-- Keine Flight Deck Controls — vollautomatisch
+- 2 independent loops · each with 1 pump package with **2 redundant pumps**
+- Coolant temperature: **27 °C** (normal operation)
+- Status on **STATUS page** (fluid quantity + status per loop)
+- With only one external FWD power source: only 1 loop visible on EICAS
+- No flight deck controls — fully automatic
 
-> [!caution] PECS benötigt nach Pack- und Hydraulik-EMP-Shutdown eine **Abkühlphase**, um Restwärme aus den flüssigkeitsgekühlten LRUs abzuführen. Andernfalls drohen Schäden an den Komponenten und am Kühlmittel.
+> [!caution] PECS requires a **cooldown period** after pack and hydraulic EMP shutdown to dissipate residual heat from the liquid-cooled LRUs. Otherwise, damage to the components and coolant may occur.
 
 ### ICS — Integrated Cooling System
 
-Zentrales Kältesystem: kühlt **Galley Carts** + unterstützt Kühlung der **Recirculated Cabin Air** (Lower Recirculation Ducts). Integriert mit Air Conditioning + PECS zur Gesamtwärmelaststeuerung. Keine Flight Deck Controls.
+Central refrigeration system: cools **galley carts** + supports cooling of **recirculated cabin air** (lower recirculation ducts). Integrated with air conditioning + PECS for overall thermal load management. No flight deck controls.

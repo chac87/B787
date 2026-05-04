@@ -10,6 +10,11 @@ tags: [non-normal, warnings]
 
 <div class="nnc-condition">Condition: The airspeed or Mach indications disagree with AOA calculated airspeed.<br>Objective: To identify a reliable airspeed indication.</div>
 
+<div class="reg-selector-bar">
+  <button class="reg-btn" data-variant="ABPF">−ABPF to −ABPU</button>
+  <button class="reg-btn" data-variant="ABPA">−ABPA to −ABPE</button>
+</div>
+
 <div class="nnc-item"><span class="nnc-num">1</span><strong>Autopilot disconnect switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
 <div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
 <div class="nnc-item"><span class="nnc-num">3</span><strong>F/D switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
@@ -32,6 +37,7 @@ tags: [non-normal, warnings]
 <div class="nnc-item"><span class="nnc-num">8</span><strong>AIR DATA/ATT source selectors (both)</strong><span class="cl-dots"></span><strong>ALTN or AUTO</strong></div>
 <div class="nnc-sub">Select the position that gives the more accurate airspeed.</div>
 
+<div class="reg-variant-block" data-variant="ABPA">
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
 <div class="nnc-note"><strong>Note:</strong> WINDSHEAR, OVERSPEED, and AIRSPEED LOW alerts may show erroneously.</div>
 <div class="nnc-note">AOA SPD may be erratic during configuration changes, maneuvering, and speedbrake use.</div>
@@ -46,9 +52,9 @@ tags: [non-normal, warnings]
 <div class="nnc-sub">• Maximum N1</div>
 <div class="nnc-sub">• Wind indications</div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
+</div>
 
-<br>
-
+<div class="reg-variant-block" data-variant="ABPF">
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
 <div class="nnc-note"><strong>Note:</strong> WINDSHEAR, OVERSPEED, and AIRSPEED LOW alerts may show erroneously.</div>
 <div class="nnc-note">AOA SPD may be erratic during configuration changes, maneuvering, and speedbrake use.</div>
@@ -63,6 +69,7 @@ tags: [non-normal, warnings]
 <div class="nnc-sub">• Maximum TPR</div>
 <div class="nnc-sub">• Wind indications</div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
+</div>
 
 <div class="nnc-note"><strong>Note:</strong> If using GPS altitude, the altimeter cannot be used to accurately maintain ATC-assigned altitudes.</div>
 <div class="nnc-note">Transponder altitude and TCAS indications may be erroneous. Consider selecting ALT RPTG OFF on the TRANSPONDER MODE selector.</div>

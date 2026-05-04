@@ -8,26 +8,26 @@ role: Both
 # Takeoff Procedure
 <div class="checklist">
 
-<div class="cl-item"><strong>Runway and entry point</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Verify</strong></div>
+<div class="cl-item"><strong>Runway and entry point</strong><span class="cl-dots"></span><strong>Verify</strong><span class="mi-role mi-role--both">BOTH</span></div>
 <div class="cl-sub">Before entering the departure runway.</div>
 
-<div class="cl-item"><strong>Cabin crew</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Departure notification</strong></div>
+<div class="cl-item"><strong>Cabin crew</strong><span class="cl-dots"></span><strong>Departure notification</strong><span class="mi-role mi-role--both">BOTH</span></div>
 <div class="cl-sub">"Cabin Crew, prepare for departure."</div>
 
-<div class="cl-item"><strong>Transponder mode selector</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>TA/RA</strong></div>
+<div class="cl-item"><strong>Transponder mode selector</strong><span class="cl-dots"></span><strong>TA/RA</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-item"><strong>STROBE light switch</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>ON</strong></div>
+<div class="cl-item"><strong>STROBE light switch</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">When entering the departure runway. Use other lights as needed.</div>
 
-<div class="cl-item"><strong>Weather radar/terrain display</strong> <span class="nnc-role">PF</span> <span class="nnc-role">PM</span><span class="cl-dots"></span><strong>Set as needed</strong></div>
+<div class="cl-item"><strong>Weather radar/terrain display</strong><span class="cl-dots"></span><strong>Set as needed</strong><span class="mi-role mi-role--both">BOTH</span></div>
 <div class="cl-sub">Select VSD on as needed.</div>
 
-<div class="cl-item"><strong>Brakes</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Released</strong></div>
+<div class="cl-item"><strong>Brakes</strong><span class="cl-dots"></span><strong>Released</strong><span class="mi-role">CP</span></div>
 <div class="cl-sub">Align the airplane with the runway.</div>
 
-<div class="cl-item"><strong>Runway heading</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Verify</strong></div>
+<div class="cl-item"><strong>Runway heading</strong><span class="cl-dots"></span><strong>Verify</strong><span class="mi-role mi-role--both">BOTH</span></div>
 
-<div class="cl-item"><strong>LANDING light switches (L, R)</strong> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>ON</strong></div>
+<div class="cl-item"><strong>LANDING light switches (L, R)</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="cl-sub">When cleared for takeoff.</div>
 
 <div class="cl-item"><strong>Announce</strong><span class="cl-dots"></span><span class="sop-tag-items">CP: "Takeoff"</span></div>
@@ -36,18 +36,18 @@ role: Both
 <div class="cl-item cl-indent"><strong>Response</strong><span class="cl-dots"></span><span class="sop-tag-items">F/O: "I have control!"</span></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
-<div class="cl-item cl-indent"><strong>Thrust levers</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>~40% N1</strong></div>
+<div class="cl-item cl-indent"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>~40% N1</strong><span class="mi-role">CP</span></div>
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
 <div class="cl-variant">B787 (-ABPF to -ABPU)</div>
-<div class="cl-item cl-indent"><strong>Thrust levers</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>~20 TPR</strong></div>
+<div class="cl-item cl-indent"><strong>Thrust levers</strong><span class="cl-dots"></span><strong>~20 TPR</strong><span class="mi-role">CP</span></div>
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
 
-<div class="cl-item"><strong>Engines</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Allow to stabilize</strong></div>
+<div class="cl-item"><strong>Engines</strong><span class="cl-dots"></span><strong>Allow to stabilize</strong><span class="mi-role">CP</span></div>
 
-<div class="cl-item"><strong>TO/GA switch</strong> <span class="nnc-role">CP</span><span class="cl-dots"></span><strong>Push</strong></div>
+<div class="cl-item"><strong>TO/GA switch</strong><span class="cl-dots"></span><strong>Push</strong><span class="mi-role">CP</span></div>
 
-<div class="cl-item"><strong>Takeoff thrust</strong> <span class="nnc-role">CP</span> <span class="nnc-role">F/O</span><span class="cl-dots"></span><strong>Verify set</strong></div>
+<div class="cl-item"><strong>Takeoff thrust</strong><span class="cl-dots"></span><strong>Verify set</strong><span class="mi-role mi-role--both">BOTH</span></div>
 
 <div class="cl-variant">B787 (-ABPA to -ABPE)</div>
 <div class="cl-note">Maximum takeoff thrust may not be available until 65 knots.</div>
