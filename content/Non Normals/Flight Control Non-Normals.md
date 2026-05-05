@@ -14,8 +14,6 @@ tags: [non-normal, flight-controls]
 | **Flaps / Slats** | Together | Independent | Max Flaps 20 / Slats mid |
 | **Protections** | Full | Full | ✗ (open loop) |
 
----
-
 ### Primary Mode
 
 Normal operation — flaps and slats driven together via the center hydraulic system.
@@ -28,8 +26,6 @@ Normal operation — flaps and slats driven together via the center hydraulic sy
     <img src="/Bilder/flaps%20primary.webp" alt="Primary Flap Mode">
   </a>
 </div>
-
----
 
 ### Secondary Mode
 
@@ -54,10 +50,8 @@ EMCU now drives flaps **or** slats independently. Flap lever remains operative.
 
 | EICAS | Landing | Note |
 |:---|:---|:---|
-| <span class="c-amber">**FLAPS PRIMARY FAIL**</span> | Flaps 20 | Slow extension → slow retraction — full flap would compromise G/A performance |
-| <span class="c-amber">**SLATS PRIMARY FAIL**</span> | Normal | Read checklist notes, allow time for slower extension |
-
----
+| <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> | Flaps 20 | Slow extension → slow retraction — full flap would compromise G/A performance |
+| <a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> | Normal | Read checklist notes, allow time for slower extension |
 
 ### Alternate Mode
 
@@ -79,17 +73,13 @@ Activated when flap/slat electronics have completely failed.
 - **No closed-loop** → no asymmetry or uncommanded motion protection
 
 > [!warning] Only when directed by NNC
-> Alternate mode only for: <span class="c-amber">**AIRSPEED UNRELIABLE**</span> or <span class="c-amber">**FLAP/SLAT CONTROL**</span> NNC
+> Alternate mode only for: <a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE" style="color:#f39c12 !important"><strong>AIRSPEED UNRELIABLE</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL</strong></a> NNC
 
-**FLAP/SLAT CONTROL NNC:** Extension takes approx. 3 minutes — plan approach early. v<sub>REF</sub> 20. Flap lever stays UP (per checklist — it is inoperative regardless).
-
----
+<a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL NNC:</strong></a> Extension takes approx. 3 minutes — plan approach early. v<sub>REF</sub> 20. Flap lever stays UP (per checklist — it is inoperative regardless).
 
 ### Flaps / Slats Drive
 
-<span class="c-amber">**FLAPS DRIVE**</span> or <span class="c-amber">**SLATS DRIVE**</span> → drive mechanism failed — cannot be moved in **any** mode. Checklist prepares for partial flap/slat landing. See landing techniques in Device Malfunctions below.
-
----
+<a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a> → drive mechanism failed — cannot be moved in **any** mode. Checklist prepares for partial flap/slat landing. See landing techniques in Device Malfunctions below.
 
 ## Secondary and Direct Modes — Handling
 
@@ -98,8 +88,6 @@ No automatic envelope protection or load alleviation. No automatic pitch compens
 - **Pitch sensitivity** — highest with flaps up at higher speeds. Small and smooth control column inputs are sufficient.
 - **Pitch trim** — trim switches control the stabilizer directly. Use to maintain acceptable column forces and maneuvering capability.
 - With **flaps extended**: typical pitch sensitivity for approach and landing.
-
----
 
 ## Device Malfunctions
 
@@ -111,7 +99,7 @@ After takeoff: usually requires return for landing. Retract flaps only if needed
 
 ### Slats Drive Failure
 
-<span class="c-amber">**SLATS PRIMARY FAIL**</span> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <span class="c-amber">**SLATS DRIVE**</span> → SLATS DRIVE NNC (accommodates no leading edge slats on one side).
+<a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a> → <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important">SLATS DRIVE NNC</a> (accommodates no leading edge slats on one side).
 
 - Flap extension limited to **Flaps 20** if slats not fully extended
 - Flaps 1 is for leading edge devices only — if LEDs fail to extend, flap display expands
@@ -119,7 +107,7 @@ After takeoff: usually requires return for landing. Retract flaps only if needed
 
 ### Flap Drive Failure
 
-<span class="c-amber">**FLAPS PRIMARY FAIL**</span> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <span class="c-amber">**FLAPS DRIVE**</span> → FLAPS DRIVE NNC. Flap load relief not available in secondary mode.
+<a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a> → <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important">FLAPS DRIVE NNC</a>. Flap load relief not available in secondary mode.
 
 - Final: v<sub>REF</sub> + wind additive. If speed drops to v<sub>REF</sub>: 40° bank capability not available
 - Pitch attitude on final: several degrees **higher** than normal
@@ -131,6 +119,7 @@ After takeoff: usually requires return for landing. Retract flaps only if needed
 Flaps extend more slowly. **Delay setting the new command speed** until flaps reach the selected position — prevents inadvertent low airspeed if attention is diverted during extension.
 
 ### All Flaps and Slats Up Landing
+
 
 Extremely remote probability. Flaps + Slats Fail NNC available. Consider weight reduction (fuel burn or jettison) before approach. Autoland is not permitted.
 
@@ -160,11 +149,9 @@ Extremely remote probability. Flaps + Slats Fail NNC available. Consider weight 
 >
 > Apply **maximum reverse thrust immediately** at main gear touchdown — most effective at high speeds. Full reverse required for a longer duration. Autobrakes recommended; setting consistent with available runway length.
 
----
-
 ## Jammed Flight Controls
 
-May result from dirt, component failure, worn parts, improper lubrication, or foreign objects. Difficult to recognize, especially in a trimmed airplane.
+May result from dirt, component failure, worn parts, improper lubrication, or foreign objects. Difficult to recognize, especially in a trimmed airplane. → <a href="/Non-Normals/Non-Normal-Checklists/Jammed-Flight-Controls">Jammed Flight Controls NNC</a>
 
 **Signs of an elevator jam:**
 - Unexplained AP disengagement or inability to engage autopilot
@@ -199,11 +186,9 @@ May result from dirt, component failure, worn parts, improper lubrication, or fo
 > Control forces significantly greater than normal; flare response is slower. Maintain flight path with thrust and main electric trim.
 > **Avoid go-around if at all possible.** If unavoidable: advance thrust levers slowly and smoothly, maintain pitch with stabilizer and any available elevator.
 
----
-
 ## Inoperative Stabilizer
 
-**EICAS:** <span class="c-amber">**STABILIZER**</span>
+**EICAS:** <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER" style="color:#f39c12 !important"><strong>STABILIZER</strong></a>
 
 Unlike conventional aircraft, normal pitch trim remains available in normal flight control mode — however elevator authority is limited. The NNC specifies a maximum in-flight speed, adjusted approach speed, and landing configuration to ensure adequate elevator control.
 

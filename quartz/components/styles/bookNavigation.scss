@@ -47,15 +47,15 @@
 }
 
 .nav-label {
-  font-size: 0.75rem;    /* Kleinere Beschriftung */
-  color: var(--gray);
+  font-size: 0.75rem;
+  color: var(--dark);
   margin-bottom: 0.2rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
 .nav-title {
-  font-size: 0.95rem;    /* Kompakterer Titel */
+  font-size: 0.95rem;
   font-weight: 600;
-  color: var(--secondary);
+  color: var(--dark);
 }

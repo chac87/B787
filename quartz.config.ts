@@ -38,7 +38,7 @@ const config: QuartzConfig = {
           lightgray: "#1C2638",                       // Cockpit-Panel Dunkelgrau
           gray: "#8D9EB6",                            // Instrumenten-Beleuchtung
           darkgray: "#E2E8F0",                        // Helles Silber für Text
-          dark: "#FFFFFF",                            // Weiß für Überschriften
+          dark: "#EDF0FA",                            // Soft Blue-White für Überschriften
           secondary: "#5291ED",                       // LHG Light Blue
           tertiary: "#4B9DA1",                        // LHG Teal
           highlight: "rgba(82, 145, 237, 0.15)",      // LHG Light Blue tint

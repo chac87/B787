@@ -419,6 +419,17 @@ h2 a,
     color: var(--dark) !important;
 }
 
+/* =========================================
+   BREADCRUMB + BOOK NAVIGATION
+   ========================================= */
+.breadcrumb-container a {
+    color: var(--dark) !important;
+}
+
+.nav-btn {
+    color: var(--dark) !important;
+}
+
 /* === snippet: image-tweak.css === */
 /* =========================================
    IMAGE STYLING PACK (Web / Pandoc / PDF)
