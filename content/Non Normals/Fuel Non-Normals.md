@@ -54,103 +54,96 @@ tags: [non-normal, fuel]
   </div>
 </div>
 
+> [!info|no-title]
+> - If the engine is shut down during the NNC: Apply the driftdown procedure.
+> - Apply the Fuel Imbalance NNC when instructed in the Fuel Leak NNC.
 
 ## Fuel Jettison
 
-> [!caution] Fuel Jettison must be considered if…
+<a href="/Non-Normals/Non-Normal-Checklists/Fuel-Jettison">→ NNC: Fuel Jettison</a>
+
+> [!caution] Consider when…
 > - **Stopping distance or G/A performance** is a concern
 > - **Autoland** is required
+> - Landing at high gross weight with adequate time available
+> - Airplane performance appears to be critical
 >
-> → Evaluate same or higher degree of safety
-> → s. auch [[Non Normals/Non-Normal Checklists/Overweight Landing|Overweight Landing]]
+> → Evaluate same or higher degree of safety · See also [[Non Normals/Non-Normal Checklists/Overweight Landing|Overweight Landing]]
 
-> [!info]- Requirements
-> **OM-A 8.3.15.1**
-> - In close coordination with ATC
-> - \> 6000 ft AGL
-> - Not in holding pattern
-> - Clear of cities and towns
-> - Away from thunderstorms
-> - A flight report must be filed
->
-> **FCTM B787:** If adequate time is available — ensure adequate weather minimums
->
-> **OM-B 1-20-12-1:** Do not jettison fuel at Flaps 30
+> [!info]- General Considerations
+> Fuel jettison should be performed when adequate time is available to reduce landing weight. If weather is marginal: consider retaining a higher fuel target after jettison to keep alternate options available — or delay the jettison if necessary.
 
-> [!info]- System Notes
-> - Inhibited on GND
-> - Jettison rate: Main tanks **570 kg/min** · Center tank **1360 kg/min**
-> - At least **3900 kg** of fuel per main tank must remain
+> [!info]- Operational Prerequisites (OM-A 8.3.15.1)
+> - **ATC:** Coordinate with ATC before initiating
+> - **Altitude:** > 6.000 ft AGL — minimum 4.000 ft AGL for complete fuel evaporation
+> - Not in a holding pattern with other airplanes below
+> - **Drift:** Downwind drift may exceed 1 NM per 1.000 ft of drop
+> - Clear of cities and towns · Away from thunderstorms
+> - A flight report must be filed after landing
 
-### Unannunciated Checklist
+> [!info]- System Functions and Limitations
+> - ARM selected → FQMS automatically calculates FUEL TO REMAIN at MLW
+> - Manual override: PULL FUEL TO REMAIN selector ON, rotate to adjust
+> - Jettison rate: Center tank **1.360 kg/min** · Main tanks **570 kg/min**
+> - Minimum fuel: **3.900 kg** per main tank (hardwired — system stops automatically)
+> - Ground inhibited: nozzle valves cannot open on the ground
+> - **Flaps limit:** Not at settings on FUEL JETTISON panel placard — **Flaps 30 prohibited** (OM-B 1-20-12-1)
 
-<div class="checklist">
+> [!info]- FUEL AUTO JETTISON
+> The system automatically initiates jettison when the landing weight limit is exceeded. Perform the NNC as normal — only verify or adjust FUEL TO REMAIN.
 
-<div class="cl-item"><strong>FUEL JETTISON ARM switch</strong><span class="cl-dots"></span><strong>ARMED</strong></div>
-<div class="cl-sub">Do not jettison fuel at flap settings listed on the FUEL JETTISON control panel placard</div>
-
-<div class="cl-item"><strong>FUEL TO REMAIN selector</strong><span class="cl-dots"></span><strong>PULL ON, set manually</strong></div>
-<div class="cl-sub">Change FUEL TO REMAIN value if required before pulling selector</div>
-
-<div class="cl-item"><strong>FUEL JETTISON NOZZLE valve switches (both)</strong><span class="cl-dots"></span><strong>ON</strong></div>
-
-</div>
-
-**When fuel jettison is complete:**
-
-<div class="checklist">
-
-<div class="cl-item"><strong>FUEL JETTISON NOZZLE valve switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
-
-<div class="cl-item"><strong>FUEL TO REMAIN selector</strong><span class="cl-dots"></span><strong>OFF</strong></div>
-
-<div class="cl-item"><strong>FUEL JETTISON ARM switch</strong><span class="cl-dots"></span><strong>OFF</strong></div>
-
-</div>
-
-> Wenn <span class="c-amber">**FUEL AUTO JETTISON**</span> erscheint: Das System hat den Jettison automatisch gestartet, weil das Landegewicht überschritten wird. Checklist wie gewohnt — nur FUEL TO REMAIN prüfen/anpassen.
+> [!info]- CRM and Communication
+> - **ATC:** Always coordinate fuel jettison with ATC
+> - **Cabin:** During daylight, a large fuel plume will be visible from the wings. Inform the SCCM and make a PA announcement to reassure passengers **before** initiating jettison
 
 ## Fuel Imbalance
 
-<span class="c-amber">**FUEL IMBALANCE**</span> — Differenz zwischen Main Tank 1 und 2 zu groß.
+<span class="c-amber">**FUEL IMBALANCE**</span> — Difference between Main Tank 1 and 2 exceeds limit.
 
-**Ausgleichsmethoden (Reihenfolge nach Effektivität):**
+**Balancing Methods (in order of effectiveness):**
 
-| Methode | Kommentar |
+| Method | Comment |
 |:---|:---|
-| **Fuel Balance System** | Automatisch oder manuell — bevorzugte Methode |
-| **Crossfeed** | Beide Triebwerke aus demselben Tank — Imbalance wächst nicht weiter |
-| **Triebwerk drosseln** | Letztes Mittel — Performance-Einschränkung |
+| **Fuel Balance System** | Automatic or manual — preferred method |
+| **Crossfeed** | Both engines fed from the same tank — imbalance stops growing |
+| **Engine throttling** | Last resort — performance penalty |
 
-**EICAS-Meldungen:**
+**EICAS Messages:**
 
-| EICAS | Bedeutung |
+| EICAS | Meaning |
 |:---|:---|
-| <span class="c-amber">**FUEL IMBALANCE**</span> | Main-Tank-Differenz überschreitet Grenzwert |
-| <span class="c-amber">**FUEL DISAGREE**</span> | Angezeigter vs. berechneter Kraftstoff weicht ab — möglicher Leak |
-| <span class="c-amber">**FUEL QTY LOW**</span> | Haupttank unter Mindestmenge |
-| <span class="c-amber">**FUEL BALANCE SYS**</span> | Fuel Balance System ausgefallen — manueller Ausgleich erforderlich |
+| <span class="c-amber">**FUEL IMBALANCE**</span> | Main tank difference exceeds limit |
+| <span class="c-amber">**FUEL DISAGREE**</span> | Displayed vs. calculated fuel differs — possible leak |
+| <span class="c-amber">**FUEL QTY LOW**</span> | Main tank below minimum quantity |
+| <span class="c-amber">**FUEL BALANCE SYS**</span> | Fuel Balance System failed — manual balancing required |
+
+> [!info]- Totalizer vs. Calculated Fuel
+> **Totalizer fuel** is the actual sum of the fuel quantities present in the individual fuel tanks.
+>
+> **Calculated fuel** is derived by taking the initial totalizer value at the time of engine start and subtracting the amount of fuel that has been consumed.
+>
+> A discrepancy between the two indicates a possible fuel leak — triggering <a href="/Non-Normals/Non-Normal-Checklists/FUEL-DISAGREE"><span>**FUEL DISAGREE**</span></a>.
 
 ---
 
 ## Fuel Balance System
 
-Überträgt automatisch Kraftstoff zwischen den Haupttanks, um Imbalance zu korrigieren.
+Automatically transfers fuel between main tanks to correct imbalance.
 
 - Rate: **135 l/min** (≈ 107 kg/min)
-- 1.000 kg Differenz ausgleichen: ca. **7 min**
-- Schneller als Crossfeed-Methode
-- Arbeitet unabhängig vom Crossfeed-System
+- To correct a 1.000 kg imbalance: approx. **7 min**
+- Faster than crossfeed method
+- Operates independently of the crossfeed system
 
 ---
 
 ## FUEL UNUSABLE CTR
 
-<span class="c-amber">**FUEL UNUSABLE CTR**</span> — Kraftstoff im Centertank kann nicht mehr zur Triebwerksversorgung genutzt werden.
+<span class="c-amber">**FUEL UNUSABLE CTR**</span> — Fuel in the center tank can no longer be used for engine supply.
 
-**Ursache:** Das Flugzeug ist außerhalb des CG-Envelopes — der verbleibende Centertank-Kraftstoff liegt hinter dem zulässigen Schwerpunkt.
+**Cause:** The airplane is outside the CG envelope — remaining center tank fuel is behind the allowable center of gravity.
 
-**Konsequenz:** Kraftstoff ist physisch vorhanden, aber gesperrt. Die angezeigte Gesamtmenge täuscht — tatsächlich verfügbare Menge entspricht nur den Haupttanks.
+**Consequence:** Fuel is physically present but locked out. Total quantity shown is misleading — actually available fuel corresponds to main tanks only.
 
-> [!warning] Planung
-> Landedistanz und Alternates auf Basis der **Haupttank-Menge** planen — nicht Gesamtmenge.
+> [!warning] Planning
+> Plan landing distance and alternates based on **main tank quantity** — not total quantity.

@@ -36,9 +36,9 @@ role: Both
 <table><tbody>
 <tr><td><em>Note: When using LNAV to intercept the final approach course, LNAV might parallel the localizer without capturing it.</em></td><td></td></tr>
 <tr><td>Use LNAV, HDG SEL/TRK SEL or HDG HOLD/TRK HOLD to intercept the final approach course, as needed.</td><td></td></tr>
-<tr><td>Verify that the localizer is captured.<br>Verify final approach course heading.</td><td></td></tr>
+<tr><td>Verify that the localizer is captured.<br>Verify final approach course heading.</td><td><span class="sop-tag-items">PM: "Localizer alive."</span></td></tr>
 <tr><td>Flaps &amp; Gear extension on schedule:<br><table style="width:100%;font-size:0.875em;margin-top:0.4em;border:none"><tr><td><strong>FLAPS 1</strong></td><td style="color:var(--gray)">at "UP"</td></tr><tr><td><strong>FLAPS 5</strong></td><td style="color:var(--gray)">at "1"</td></tr><tr><td style="color:var(--gray)">(FLAPS 15)</td><td style="color:var(--gray)">optional</td></tr><tr><td><strong>GEAR DOWN</strong></td><td style="color:var(--gray)">before Flaps 20</td></tr><tr><td><strong>FLAPS 20</strong></td><td style="color:var(--gray)">at "5"</td></tr><tr><td><strong>Arm Speedbrakes</strong></td><td style="color:var(--gray)">before FAF</td></tr><tr><td><strong>FLAPS 25</strong></td><td style="color:var(--gray)">at "20"</td></tr><tr><td style="color:var(--gray)">(FLAPS 30)</td><td style="color:var(--gray)">optional</td></tr></table></td><td></td></tr>
-<tr><td>Set the missed approach altitude on the MCP.</td><td></td></tr>
+<tr><td>Set the missed approach altitude on the MCP.</td><td><span class="sop-tag-items">PM: "Glideslope alive."</span></td></tr>
 </tbody></table>
 </div>
 

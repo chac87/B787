@@ -59,7 +59,29 @@ Each engine can draw fuel from its corresponding main tank through a suction fee
 > As the aircraft climbs, dissolved air is released from fuel due to decreasing air pressure. This air may collect in the suction feed line and restrict fuel flow — at high altitude this can cause **thrust deterioration or engine flameout**.
 > The dissolved air eventually depletes after reaching cruise altitude. Depletion time depends on altitude, fuel temperature, and fuel type.
 
-**Crossfeed:** Opening the crossfeed valve provides pump pressure from one main tank to both engines — results in a progressive fuel imbalance with continued use.
+## Fuel Crossfeed vs. Fuel Balancing
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">Fuel Crossfeed</div>
+  <div class="eicas-card-body">Opens the crossfeed valve — connects the left and right fuel supply manifolds.<br>Pump pressure from one main tank feeds both engines (or the opposite engine).<br><strong>No fuel is transferred into the opposite tank.</strong></div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">Fuel Balance System</div>
+  <div class="eicas-card-body">Physically pumps fuel from the fuller main tank into the emptier one.<br>Uses the defuel/jettison valve (fuller tank) → inboard refuel valve (emptier tank).<br>Activated via the BALANCE switch — automatic or manual.</div>
+</div>
+
+</div>
+
+> [!info]- Manual Balancing — Practical Tip
+> If the Fuel Balance System is inhibited or unavailable, use the crossfeed valve to manually balance:
+> - Open the crossfeed valve
+> - Turn off the fuel pumps of the tank with the **lower** quantity
+> - Both engines are now fed from the fuller tank — quantities equalize over time
+>
+> Fuel flows exclusively to the engines — no transfer into the opposite tank occurs.
 
 ## Fuel Jettison
 

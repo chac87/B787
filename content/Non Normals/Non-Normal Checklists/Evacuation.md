@@ -7,6 +7,10 @@ tags: [non-normal, backcover]
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
+> [!warning] Always use QRH/Paper Checklist!
+
+&nbsp;
+
 <div class="nnc-condition">Condition: An evacuation is needed.</div>
 
 <div class="nnc-item"><span class="nnc-num">1</span><strong>PARKING BRAKE</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role">CP</span></div>
@@ -16,6 +20,7 @@ tags: [non-normal, backcover]
 <div class="nnc-sub">Move to OPEN until the outflow valve indications show at the 12 o'clock position to depressurize the airplane.</div>
 <div class="nnc-item"><span class="nnc-num">4</span><strong>FUEL CONTROL switches (both)</strong><span class="cl-dots"></span><strong>CUTOFF</strong><span class="mi-role">CP</span></div>
 <div class="nnc-text"><span class="nnc-num">5</span>Advise the cabin to evacuate.<span class="mi-role">CP</span></div>
+<div class="nnc-note"><strong>Note:</strong> 2x "Passenger Evacuation"</div>
 <div class="nnc-text"><span class="nnc-num">6</span>Advise ATC.<span class="mi-role mi-role--pm">F/O</span></div>
 <div class="nnc-item"><span class="nnc-num">7</span><strong>Engine fire switches (both)</strong><span class="cl-dots"></span><strong>Pull</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="nnc-item"><span class="nnc-num">8</span><strong>APU fire switch</strong><span class="cl-dots"></span><strong>Override and pull</strong><span class="mi-role mi-role--pm">F/O</span></div>
@@ -24,6 +29,8 @@ tags: [non-normal, backcover]
 <div class="nnc-sub-item"><strong>Related fire switch</strong><span class="cl-dots"></span><strong>Rotate to the stop and hold for 1 second</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
+
+<div class="nnc-note"><strong>Note:</strong> At any time, if evacuation not required: <em>"Cancel Alert, Cancel Alert."</em></div>
 
 ---
 

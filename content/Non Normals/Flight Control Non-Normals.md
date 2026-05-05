@@ -11,59 +11,200 @@ tags: [non-normal, flight-controls]
 |:---|:---:|:---:|:---:|
 | **Power** | Center Hydraulic | Hydraulic + Electric | Electric only |
 | **Flap Lever** | ✓ | ✓ | ✗ (inoperative) |
-| **Flaps/Slats** | Together | Independent | Max Flaps 20 / Slats mid |
+| **Flaps / Slats** | Together | Independent | Max Flaps 20 / Slats mid |
 | **Protections** | Full | Full | ✗ (open loop) |
 
 ---
 
 ### Primary Mode
 
-Normalbetrieb — Flaps und Slats gemeinsam über das Center Hydraulic System.
+Normal operation — flaps and slats driven together via the center hydraulic system.
 
-![[Bilder/flaps-primary.webp]]
+<a class="img-lightbox" href="#flaps-primary-lightbox" style="max-width: 380px">
+  <img class="img-thumb" src="/Bilder/flaps%20primary.webp" alt="Primary Flap Mode">
+</a>
+<div id="flaps-primary-lightbox" class="img-lightbox-overlay">
+  <a href="#">
+    <img src="/Bilder/flaps%20primary.webp" alt="Primary Flap Mode">
+  </a>
+</div>
 
 ---
 
 ### Secondary Mode
 
-Automatische Umschaltung bei:
-- Center Hydraulic System ausgefallen
-- Bewegung > 50 % langsamer als normal
-- Disagree-Bedingung oder uncommanded motion
-- Primary Control ausgefallen oder kann Zielposition nicht erreichen
+Automatic switchover when:
+- Center hydraulic system failed
+- Movement > 50% slower than normal
+- Disagree condition or uncommanded motion
+- Primary control failed or unable to reach target position
 
-![[Bilder/flaps-secondary.webp]]
+<a class="img-lightbox" href="#flaps-secondary-lightbox" style="max-width: 380px">
+  <img class="img-thumb" src="/Bilder/flaps%20secondary.webp" alt="Secondary Flap Mode">
+</a>
+<div id="flaps-secondary-lightbox" class="img-lightbox-overlay">
+  <a href="#">
+    <img src="/Bilder/flaps%20secondary.webp" alt="Secondary Flap Mode">
+  </a>
+</div>
 
-Electric Motor Control Unit unterstützt nun Flaps **oder** Slats — sie werden unabhängig voneinander bewegt. Flap Lever bleibt in Benutzung.
+EMCU now drives flaps **or** slats independently. Flap lever remains operative.
 
-**EICAS:** Caution + Expanded Flap/Slat Position Indication (Slat-Balken füllen sich nach oben, Flap-Balken nach unten)
+**EICAS:** Caution + expanded flap/slat position indication (slat bars fill upward, flap bars downward)
 
-| EICAS | Landung | Hinweis |
+| EICAS | Landing | Note |
 |:---|:---|:---|
-| <span class="c-amber">**FLAPS PRIMARY FAIL**</span> | Flaps 20 | Langsame Extension → langsame Retraktion → Full Flap würde GA-Performance gefährden |
-| <span class="c-amber">**SLATS PRIMARY FAIL**</span> | Normal | Checklist Notes lesen, langsamere Extension einplanen — kein OPT-Eintrag unter NNC möglich |
+| <span class="c-amber">**FLAPS PRIMARY FAIL**</span> | Flaps 20 | Slow extension → slow retraction — full flap would compromise G/A performance |
+| <span class="c-amber">**SLATS PRIMARY FAIL**</span> | Normal | Read checklist notes, allow time for slower extension |
 
 ---
 
 ### Alternate Mode
 
-Wenn Flap/Slat-Elektronik komplett ausgefallen ist.
+Activated when flap/slat electronics have completely failed.
 
-![[Bilder/flaps-alternate.webp]]
+<a class="img-lightbox" href="#flaps-alternate-lightbox" style="max-width: 380px">
+  <img class="img-thumb" src="/Bilder/flaps%20alternate.webp" alt="Alternate Flap Mode">
+</a>
+<div id="flaps-alternate-lightbox" class="img-lightbox-overlay">
+  <a href="#">
+    <img src="/Bilder/flaps%20alternate.webp" alt="Alternate Flap Mode">
+  </a>
+</div>
 
-- **ALTN FLAPS ARM** — schaltet Primary + Secondary aus, Flap Lever inoperativ
-- Alle Hydraulik bypassed — nur Electric Motors
-- Maximum: **Flaps 20**, Slats bis Mittelposition
-- Schalter: RET / OFF / EXT (nicht federbelastet)
-- **Kein Closed-Loop** → keine Asymmetrie- oder Uncommanded Motion Protection
+- **ALTN FLAPS ARM** — disables primary and secondary, flap lever inoperative
+- All hydraulics bypassed — electric motors only
+- Maximum: **Flaps 20**, slats to mid position
+- Switch: RET / OFF / EXT (not spring-loaded)
+- **No closed-loop** → no asymmetry or uncommanded motion protection
 
-> [!warning] Nur bei NNC-Anweisung
-> Alternate Mode nur bei: <span class="c-amber">**AIRSPEED UNRELIABLE**</span> oder <span class="c-amber">**FLAP/SLAT CONTROL**</span>
+> [!warning] Only when directed by NNC
+> Alternate mode only for: <span class="c-amber">**AIRSPEED UNRELIABLE**</span> or <span class="c-amber">**FLAP/SLAT CONTROL**</span> NNC
 
-**Flap/Slat Control NNC:** Extension dauert ca. 3 min — Anflug entsprechend früh planen. vREF 20. Flap Lever bleibt UP (per Checklist — er ist ohnehin inoperativ).
+**FLAP/SLAT CONTROL NNC:** Extension takes approx. 3 minutes — plan approach early. v<sub>REF</sub> 20. Flap lever stays UP (per checklist — it is inoperative regardless).
 
 ---
 
 ### Flaps / Slats Drive
 
-<span class="c-amber">**FLAPS DRIVE**</span> oder <span class="c-amber">**SLATS DRIVE**</span> → Antriebsmechanismus defekt — kann durch **keinen** Modus bewegt werden. Checklist bereitet auf Partial Flap/Slat Landing vor.
+<span class="c-amber">**FLAPS DRIVE**</span> or <span class="c-amber">**SLATS DRIVE**</span> → drive mechanism failed — cannot be moved in **any** mode. Checklist prepares for partial flap/slat landing. See landing techniques in Device Malfunctions below.
+
+---
+
+## Secondary and Direct Modes — Handling
+
+No automatic envelope protection or load alleviation. No automatic pitch compensation for configuration changes (flaps, gear, thrust).
+
+- **Pitch sensitivity** — highest with flaps up at higher speeds. Small and smooth control column inputs are sufficient.
+- **Pitch trim** — trim switches control the stabilizer directly. Use to maintain acceptable column forces and maneuvering capability.
+- With **flaps extended**: typical pitch sensitivity for approach and landing.
+
+---
+
+## Device Malfunctions
+
+### Flap Lever Inoperative
+
+No EICAS alert — unannunciated. Slats and flaps do not respond to the flap lever. Use the Flap Lever Inoperative NNC to extend/retract via the alternate flap system.
+
+After takeoff: usually requires return for landing. Retract flaps only if needed for performance, terrain clearance, or diversion.
+
+### Slats Drive Failure
+
+<span class="c-amber">**SLATS PRIMARY FAIL**</span> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <span class="c-amber">**SLATS DRIVE**</span> → SLATS DRIVE NNC (accommodates no leading edge slats on one side).
+
+- Flap extension limited to **Flaps 20** if slats not fully extended
+- Flaps 1 is for leading edge devices only — if LEDs fail to extend, flap display expands
+- Pitch attitude at touchdown is less than normal — fly onto runway, do not float
+
+### Flap Drive Failure
+
+<span class="c-amber">**FLAPS PRIMARY FAIL**</span> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <span class="c-amber">**FLAPS DRIVE**</span> → FLAPS DRIVE NNC. Flap load relief not available in secondary mode.
+
+- Final: v<sub>REF</sub> + wind additive. If speed drops to v<sub>REF</sub>: 40° bank capability not available
+- Pitch attitude on final: several degrees **higher** than normal
+- Do not allow airspeed below v<sub>REF</sub> during flare — risk of tail contact
+- Fly onto runway — do not float
+
+### Extension via Secondary or Alternate System
+
+Flaps extend more slowly. **Delay setting the new command speed** until flaps reach the selected position — prevents inadvertent low airspeed if attention is diverted during extension.
+
+### All Flaps and Slats Up Landing
+
+Extremely remote probability. Flaps + Slats Fail NNC available. Consider weight reduction (fuel burn or jettison) before approach. Autoland is not permitted.
+
+**Key numbers:**
+
+| Parameter | Value |
+|:---|:---|
+| Establish final | ~10 NM from runway |
+| Rate of descent | ~1.000 FPM |
+| Body attitude | ~4° higher than normal |
+| Aim point | **1.800 ft down the runway** (not threshold) |
+| Speedbrakes | Not below 800 ft |
+
+> [!info]- Approach Technique
+> Fly a wide pattern — higher maneuvering speed requires increased turning radius. Maintain no slower than flaps-up maneuvering speed until established on final. Maneuver with normal bank angles.
+>
+> Use ILS or GLS if available. Do not reduce to final approach speed until aligned. Before intercepting descent: reduce to command speed and hold until landing is assured.
+>
+> Final approach speed may be in the **amber band** — set A/T to OFF to prevent automatic activation. Brief PM for manual TO/GA thrust for any go-around.
+>
+> Go around if landing appears beyond the normal touchdown zone.
+
+> [!info]- Landing Technique
+> Flare only enough to reduce rate of descent — **do not float**. Floating wastes runway and risks a tail strike. Slight forward column pressure may be needed at the touchdown point and to lower the nose wheels.
+>
+> After nose wheels on runway: hold light forward pressure and expeditiously accomplish the landing roll procedure.
+>
+> Apply **maximum reverse thrust immediately** at main gear touchdown — most effective at high speeds. Full reverse required for a longer duration. Autobrakes recommended; setting consistent with available runway length.
+
+---
+
+## Jammed Flight Controls
+
+May result from dirt, component failure, worn parts, improper lubrication, or foreign objects. Difficult to recognize, especially in a trimmed airplane.
+
+**Signs of an elevator jam:**
+- Unexplained AP disengagement or inability to engage autopilot
+- Altitude undershoot / overshoot during autopilot level-off
+- Higher than normal control forces during speed or configuration changes
+
+> [!info]- Override Technique
+> Both pilots apply force in the **same direction** to attempt to clear the jam or activate an override feature. There is no concern about damaging the mechanism — apply maximum force if needed.
+>
+> If the jam does not clear: apply force individually to each control to identify the non-jammed side (greatest airplane response). The non-jammed pilot becomes PF for the remainder of the flight.
+>
+> In override: normal force + override force is required to move the surface. Response is slower but sufficient for control and landing. Note: override mechanisms spring-return to the jammed position when released.
+>
+> If the rudder is jammed: engage the autopilot to counter the jam effect.
+
+**Trim inputs to counter a jammed control:**
+
+| Jammed Control | Trim Input |
+|:---|:---|
+| Elevator | Stabilizer (select Direct mode for more authority if needed) |
+| Aileron | Rudder |
+| Spoiler | Rudder |
+
+**Approach and landing:**
+- Minimum crosswind runway. Complete preparations early.
+- No abrupt thrust, speedbrake, or configuration changes. Small bank angles.
+- Establish landing config, speed, and in-trim condition early on final.
+- Do not reduce thrust to idle until after touchdown.
+- Asymmetric braking and asymmetric thrust reverser may aid directional control.
+
+> [!warning] Elevator jam — Go-Around
+> Control forces significantly greater than normal; flare response is slower. Maintain flight path with thrust and main electric trim.
+> **Avoid go-around if at all possible.** If unavoidable: advance thrust levers slowly and smoothly, maintain pitch with stabilizer and any available elevator.
+
+---
+
+## Inoperative Stabilizer
+
+**EICAS:** <span class="c-amber">**STABILIZER**</span>
+
+Unlike conventional aircraft, normal pitch trim remains available in normal flight control mode — however elevator authority is limited. The NNC specifies a maximum in-flight speed, adjusted approach speed, and landing configuration to ensure adequate elevator control.
+
+**Uncommanded trim motion:** Hold control column firmly. If motion continues, displace column in the **opposite direction** to interrupt stabilizer trim commands.

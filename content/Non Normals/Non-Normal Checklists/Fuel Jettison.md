@@ -37,28 +37,4 @@ tags: [non-normal, fuel]
 
 <div class="nnc-complete">■ &nbsp; ■ &nbsp; ■ &nbsp; ■</div>
 
-> [!info]- Requirements (OM-A 8.3.15.1)
-> - In close coordination with ATC
-> - \> 6000 ft AGL
-> - Not in holding pattern
-> - Clear of cities and towns
-> - Away from thunderstorms
-> - A flight report must be filed
->
-> **FCTM B787:** If adequate time is available — ensure adequate weather minimums
->
-> **OM-B 1-20-12-1:** Do not jettison fuel at Flaps 30
-
-> [!info]- System Notes
-> - Inhibited on GND
-> - Jettison rate: Main tanks **570 kg/min** · Center tank **1360 kg/min**
-> - At least **3900 kg** of fuel per main tank must remain
-
-<div class="nnc-note">Wenn <span class="c-amber"><strong>FUEL AUTO JETTISON</strong></span> erscheint: Das System hat den Jettison automatisch gestartet, weil das Landegewicht überschritten wird. Checklist wie gewohnt — nur FUEL TO REMAIN prüfen/anpassen.</div>
-
-> [!caution] Fuel Jettison must be considered if…
-> - **Stopping distance or G/A performance** is a concern
-> - **Autoland** is required
->
-> → Evaluate same or higher degree of safety
-> → s. auch [[Non Normals/Non-Normal Checklists/Overweight Landing|Overweight Landing]]
+<div class="nnc-note">→ <a href="/Non-Normals/Fuel-Non-Normals">Fuel Non-Normals — Background, System Notes and CRM</a></div>

@@ -251,6 +251,15 @@ body[saved-theme="dark"] .callout:not(:has(.callout-content)) .callout-title-inn
   color: var(--dark) !important;
 }
 
+/* =========================================
+   NO-TITLE CALLOUTS — body only, no title bar
+   Usage: > [!info|no-title]
+   ========================================= */
+
+.callout[data-callout-metadata="no-title"] .callout-title {
+  display: none;
+}
+
 /* === snippet: global-hacks.css === */
 /* =========================================
    GLOBAL LAYOUT RULES (Web / PDF)
@@ -401,6 +410,13 @@ h2,
     padding-left: 0.6em;
     margin-top: 1.5em;
     box-shadow: inset 3px 0 0 var(--secondary);
+    color: var(--dark);
+}
+
+h2 a,
+.markdown-rendered h2 a,
+.markdown-preview-view h2 a {
+    color: var(--dark) !important;
 }
 
 /* === snippet: image-tweak.css === */

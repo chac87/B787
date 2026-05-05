@@ -37,7 +37,7 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
     <div class="nn-flow-num">5</div>
     <div class="nn-flow-copy">
       <div class="nn-flow-title">FORDEC</div>
-      <div class="nn-flow-body">Evaluate the need to land. Review options for diversion or continued flight.</div>
+      <div class="nn-flow-body">Evaluate the need to land. Review options for diversion or continued flight.<br>Use RCL, Notes, LAPA for Facts.</div>
     </div>
   </div>
 </div>
@@ -76,6 +76,7 @@ The following items always require a confirm step before action (in-flight):
 
 ## Checklist Reading
 
+- `[]` means: Notes or Procedural Steps in NNC
 - Read the checklist title
 - Read white text
 - "Inhibited Checklists" do not need to be read

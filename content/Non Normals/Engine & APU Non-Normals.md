@@ -5,7 +5,44 @@ tags: [non-normal, engine]
 
 # Engine & APU Non-Normals
 
-## Engine Inoperative Cruise / Driftdown
+## Engine Failure after v<sub>1</sub>
+
+<div class="eicas-levels">
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">John Cena</div>
+  <div class="eicas-card-body" style="line-height: 2.1">
+    <span><strong style="color: #3257BC">J</strong> — Just fly / Memory Items</span><br>
+    <span style="padding-left: 1.8em"><strong style="color: #3257BC">C</strong> — CON Thrust</span><br>
+    <span style="padding-left: 3.6em"><strong style="color: #3257BC">E</strong> — Eng Out on VNAV</span><br>
+    <span style="padding-left: 5.4em"><strong style="color: #3257BC">N</strong> — NNC</span><br>
+    <span style="padding-left: 7.2em"><strong style="color: #3257BC">A</strong> — After Take Off Checklist</span>
+  </div>
+</div>
+</div>
+
+---
+
+## Engine Fail vs. Severe Damage
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title"><span class="nn-bracket">[]</span> ENG FAIL L, R <span class="eicas-card-badge">EICAS CAUTION</span></div>
+  <div class="eicas-card-body">EICAS Caution triggers checklist.<br>No airframe vibrations.<br>Restart possible if conditions are met.<br><a href="/Non-Normals/Non-Normal-Checklists/ENG-FAIL-L,-R">→ NNC: ENG FAIL L, R</a></div>
+</div>
+
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Eng Svr Damage/Sep L, R <span class="eicas-card-badge">UN-ANNUNCIATED</span></div>
+  <div class="eicas-card-body">No EICAS message — crew decision.<br>Airframe vibrations with abnormal engine indications, or engine separation.<br>No restart.<br>First Memory Items or first Driftdown? No hard rule. Depends on the situation.<br><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a> · <a href="/Non-Normals/Memory-Items">→ Memory Items</a></div>
+</div>
+
+</div>
+
+> [!warning] Airframe vibrations? → **Always** Eng Svr Damage/Sep L, R
+
+---
+
+## OEI Cruise / Driftdown
 
 An engine failure at cruise altitude may require a driftdown to single-engine maximum altitude and diversion to an alternate. Engine inoperative cruise data and alternate options are available via the FMC.
 
@@ -35,9 +72,9 @@ An engine failure at cruise altitude may require a driftdown to single-engine ma
 
   <!-- FMC actions (top-right, from dot 2) -->
   <line x1="240" y1="70" x2="310" y2="12" style="stroke:var(--gray);stroke-width:1;opacity:0.55"/>
-  <text x="315" y="9"  font-size="10" fill="currentColor">· Select ENG OUT CRZ</text>
-  <text x="315" y="21" font-size="10" fill="currentColor">· Set EO altitude on MCP</text>
-  <text x="315" y="33" font-size="10" fill="currentColor">· VNAV SPD descent → EO airspeed</text>
+  <text x="315" y="9"  font-size="10" fill="currentColor">· VNAV: Select ENG OUT CRZ</text>
+  <text x="315" y="21" font-size="10" fill="currentColor">· MCP: Set altitude below ENG OUT CRZ</text>
+  <text x="315" y="33" font-size="10" fill="currentColor">· VNAV: EXEC</text>
 
   <!-- ATC (bottom-left, from dot 3) -->
   <line x1="375" y1="98" x2="245" y2="158" style="stroke:var(--gray);stroke-width:1;opacity:0.55"/>
@@ -59,12 +96,15 @@ An engine failure at cruise altitude may require a driftdown to single-engine ma
 
 <div class="checklist">
 
-<div class="cl-item"><strong>ACT CRZ page → ENG OUT</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub">Displays MOD CRZ calculated on EO MCT. Review the EO SPD line.</div>
+<div class="cl-item"><strong>VNAV ACT CRZ page → ENG OUT</strong><span class="cl-dots"></span><strong>Select</strong></div>
+<div class="cl-sub"><span class="c-amber">↓ unten — CDU</span></div>
+<div class="cl-sub">Displays MOD CRZ calculated on EO MCT on LSK 1L. Review the EO SPD line.</div>
 
-<div class="cl-item"><strong>MCP altitude window</strong><span class="cl-dots"></span><strong>Set EO cruise altitude</strong></div>
+<div class="cl-item"><strong>MCP altitude window</strong><span class="cl-dots"></span><strong>Set altitude below ENG OUT altitude</strong></div>
+<div class="cl-sub"><span class="c-green">↑ oben — MCP</span></div>
 
 <div class="cl-item"><strong>EO D/D page</strong><span class="cl-dots"></span><strong>Execute</strong></div>
+<div class="cl-sub"><span class="c-amber">↓ unten — CDU</span></div>
 <div class="cl-sub">Thrust reference → CON. Autothrottle maintains MCT. Airplane descends in VNAV SPD.</div>
 <div class="cl-sub">If excess airspeed cannot be controlled in near-level flight: FMC transitions to VNAV PTH (300 fpm descent) · autothrottle SPD mode controls airspeed.</div>
 
@@ -73,6 +113,8 @@ An engine failure at cruise altitude may require a driftdown to single-engine ma
 At altitude capture the **ENG OUT CRZ** page displays. Maintain MCT and driftdown altitude until EO SPD is established. Level-off cruise mode matches the mode used during driftdown.
 
 > [!info] If EO altitude is entered within 150 ft of computed maximum (or lower), the FMC commands ~1,250 fpm descent instead of the driftdown schedule.
+
+> [!info] When driftdown established: Consider higher speed and FLCH.
 
 ### EO Speed Modes
 
@@ -116,36 +158,47 @@ Three start methods are available in flight. The applicable method is determined
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Auto-Relight</div>
-  <div class="eicas-card-body">Activated automatically whenever an engine is at or below idle with FUEL CONTROL in RUN. No crew action required.</div>
+  <div class="eicas-card-body">Activated automatically whenever an engine is at or below idle with FUEL CONTROL in RUN.<br>No crew action required.</div>
 </div>
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Windmill Start</div>
-  <div class="eicas-card-body">Airspeed within the start envelope — ram air windmills the engine. X-START is blank. Set FUEL CONTROL to RUN; no starter required.</div>
+  <div class="eicas-card-body">Airspeed within the start envelope — ram air windmills the engine.<br>Restart Envelope is displayed on EICAS.<br>X-START is blank.<br>Set FUEL CONTROL to RUN; no starter required.</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Starter-Assisted Start <span class="eicas-card-badge">X-START</span></div>
-  <div class="eicas-card-body">Airspeed below windmilling start speed — starter required. Set START selector to START, then FUEL CONTROL to RUN.</div>
+  <div class="eicas-card-body">Airspeed below windmilling start speed — starter required.<br>Set START selector to START, then FUEL CONTROL to RUN.</div>
 </div>
 
 </div>
 
-> [!info] Autostart makes continuous attempts until the engine starts or the pilot aborts by setting FUEL CONTROL to CUTOFF (+ START to NORM if starter-assisted).
+> [!info] Restart included in <a href="/Non-Normals/Non-Normal-Checklists/ENG-FAIL-L,-R"><span>ENG FAIL NNC</span></a> or apply un-annunciated NNC <a href="/Non-Normals/Non-Normal-Checklists/Eng-In-Flight-Start-L,-R"><span>Eng In-Flight Start L, R</span></a>.
 
-See also [[Non Normals/Non-Normal Checklists/Eng In-Flight Start L, R|Eng In-Flight Start L, R]]
+After a successful in-flight engine restart, consider the following 3A:
+
+<div class="checklist">
+
+<div class="cl-item"><strong>APU</strong><span class="cl-dots"></span><strong>OFF?</strong></div>
+
+<div class="cl-item"><strong>A/T Arm Switch</strong><span class="cl-dots"></span><strong>Back ON?</strong></div>
+
+<div class="cl-item"><strong>All engines on VNAV</strong><span class="cl-dots"></span><strong>Set?</strong></div>
+
+</div>
 
 ---
 
-## Go-Around / Missed Approach — One Engine Inoperative
+## OEI – Go-Around
 
 Accomplished the same as a normal missed approach with the following differences:
 
 | Approach flap | Go-around flap |
-|:---:|:---:|
-| **20** | **5** |
-| **25 or 30** | **20** |
+| :-----------: | :------------: |
+|   **≤ 20**    |     **5**      |
+| **25 or 30**  |     **20**     |
 
-After TO/GA: AFDS commands a speed between command speed and command speed +15 kts. Rudder automatically compensates for differential thrust — no pilot input required. Select MCT when flaps are retracted to the desired setting.
-
-> [!info] Multi-autopilot go-around: yaw control reverts to the flight control system upon TO/GA initiation.
+- After TO/GA: AFDS commands a speed between command speed and command speed +15 kts.
+- Rudder automatically compensates for differential thrust — no pilot input required.
+- Select MCT (CON) when flaps are retracted to the desired setting.
+- G/A pitch ca. 8° until gear up — then follow F/D.

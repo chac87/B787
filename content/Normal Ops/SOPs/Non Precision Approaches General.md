@@ -68,6 +68,9 @@ The autopilot should normally remain engaged until **suitable visual reference**
 | VNAV | LNAV / VNAV PTH | FMC-calculated vertical path |
 | Selected guidance | HDG SEL, TRK SEL, V/S, FPA | Use when required by approach type, raw data, or procedure |
 
+> [!warning] On approach with RNP alerting requirement
+> <a href="/Non-Normals/Non-Normal-Checklists/NAV-UNABLE-RNP" style="color:#f39c12 !important"><strong>NAV UNABLE RNP</strong></a> → start a Go-Around unless suitable visual references can be established and maintained.
+
 ## IAN
 
 **IAN** provides ILS-like procedures, indications and alerting for suitable non-ILS approaches. It uses the **APP** switch and normally replaces LNAV/VNAV for suitable approaches because procedures are standardized.

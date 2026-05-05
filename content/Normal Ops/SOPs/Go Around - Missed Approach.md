@@ -5,7 +5,25 @@ section: 2-1-14
 role: Both
 ---
 
-# Go Around – Missed Approach
+# Go-Around – Missed Approach
+
+## Flap Setting
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">All Engines</div>
+  <div class="eicas-card-body">Flaps 25 / 30 → <strong>Flaps 20</strong><br>Flaps ≤ 20 → <strong>Keep Setting</strong></div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">OEI</div>
+  <div class="eicas-card-body">Flaps ≤ 20 → <strong>Flaps 5</strong><br>Flaps > 20 → <strong>Flaps 20</strong></div>
+</div>
+
+</div>
+
+<h2 class="h2-no-collapse">Procedure</h2>
 
 <div class="table-50-50">
 
@@ -39,8 +57,6 @@ role: Both
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
 </div>
 
----
-
 ## AFTER TAKEOFF CHECKLIST
 
 | Item | Response | Who |
@@ -52,9 +68,7 @@ role: Both
 <span class="sop-tag-cl">PM: "After Takeoff Checklist complete."</span>
 </div>
 
-<h2 class="h2-no-collapse">Note</h2>
-
-After the After Takeoff Checklist: Check thrust reference mode on EICAS.
+> [!info] After the After Takeoff Checklist: Check thrust reference mode on EICAS.
 
 ---
 
@@ -81,7 +95,11 @@ After the After Takeoff Checklist: Check thrust reference mode on EICAS.
 > It is generally recommended to fly an **automatic go-around** with the autopilot engaged.
 > If the autopilot was disconnected prior to the go-around, re-engage it as soon as the flight path is under control.
 
-## Go-Around above 1500 ft RA
+---
+
+## Special Situations
+
+### Go-Around above 1500 ft RA
 
 > [!info]- APP Button Deselect — Alternative to TOGA
 > Above **1500 ft radio altitude**, pushing **APP** releases both localizer and glideslope.
@@ -95,7 +113,7 @@ After the After Takeoff Checklist: Check thrust reference mode on EICAS.
 > Once a positive rate of climb is established, TOGA mode can be exited.
 > Example: go-around instructed at 1300 ft with a 2000 ft level-off — select **V/S** at positive rate to control the climb and avoid capturing 2000 ft at high rate (TCAS RA risk).
 
-## High Flare / Bounced Landing / Balked Landing
+### High Flare / Bounced Landing / Balked Landing
 
 If a go-around is initiated from a high flare, after a bounce, or as a balked landing, the following rules apply:
 
@@ -105,7 +123,7 @@ If a go-around is initiated from a high flare, after a bounce, or as a balked la
 > - **Aufsetzen im G/A ist wahrscheinlich** und darf keine Hemmschwelle sein
 > - Ziel ist **kontrollierte Pitch bis Speed wieder > v<sub>REF</sub>** und clear of Ground
 
-## Rejected Landing vs. Balked Landing
+### Rejected Landing vs. Balked Landing
 
 A **Rejected Landing** is initiated before touchdown (e.g. runway incursion, ATC instruction). A **Balked Landing** is initiated after touchdown has occurred (e.g. after a bounce).
 

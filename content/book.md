@@ -84,6 +84,7 @@
 [[Non Normals/Non-Normal Maneuvers/TCAS|TCAS]]
 [[Non Normals/Non-Normal Maneuvers/Upset Recovery|Upset Recovery]]
 [[Non Normals/Non-Normal Maneuvers/Windshear|Windshear]]
+[[Non Normals/Non-Normal Maneuvers/Rapid Descent|Rapid Descent]]
 [[Non Normals/Electrical Non-Normals|Electrical Non-Normals]]
 [[Non Normals/Air, Pressurization Non-Normals|Air, Pressurization Non-Normals]]
 [[Non Normals/Flight Control Non-Normals|Flight Control Non-Normals]]

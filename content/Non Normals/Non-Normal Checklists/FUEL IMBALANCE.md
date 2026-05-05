@@ -1,12 +1,14 @@
 ---
 cssclasses: [eicas-advisory]
-title: "FUEL IMBALANCE"
+title: "[] FUEL IMBALANCE"
 tags: [non-normal, fuel]
 ---
 
-# FUEL IMBALANCE
+# <span class="h1-bracket">[]</span> FUEL IMBALANCE
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
+
+> [!warning] Do not execute the FUEL IMBALANCE NNC during high workload (< FL100 or in pattern). Rather → CHKL OVRD.
 
 <div class="nnc-condition">Condition: There is a fuel imbalance between the main tanks.<br>Objective: To balance main tank fuel if imbalance is not caused by fuel leak.</div>
 
@@ -18,7 +20,7 @@ tags: [non-normal, fuel]
 
 <div class="nnc-decision">A fuel leak is <strong>suspected</strong>:</div>
 <div class="nnc-cl">
-  <div class="nnc-goto">▶▶&ensp;<a href="/Non-Normals/Non-Normal-Checklists/Fuel-Leak">Go to the Fuel Leak checklist</a></div>
+  <div class="nnc-goto">▶▶&ensp;<a href="/Non-Normals/Non-Normal-Checklists/Fuel-Leak"><span>Go to the Fuel Leak checklist</span></a></div>
   <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 </div>
 
