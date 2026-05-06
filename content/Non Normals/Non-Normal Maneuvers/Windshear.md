@@ -15,14 +15,14 @@ tags: [non-normal, maneuvers]
 
 ## PWS & Reactive Windshear
 
-> [!info]- System Overview
+> [!info] System Overview
 > | | PWS Caution | PWS Warning | Immediate W/S Alert (GPWS) |
 > |:---|:---|:---|:---|
 > | **Audio** | *"MONITOR RADAR DISPLAY"* | *"WINDSHEAR AHEAD"* / *"GO-AROUND, WINDSHEAR AHEAD"* | Siren + *"WINDSHEAR, WINDSHEAR, WINDSHEAR"* |
-> | **PWS Active** | < 1.200 ft RA | < 1.200 ft RA | — |
-> | **Reactive Active** | — | Rotation – 1.500 ft RA | Rotation – 1.500 ft RA |
->
-> *PWS only active when WXR selected for display*
+> | **PWS Alerts** | < 1.200 ft RA | < 1.200 ft RA | Rotation – 1.500 ft RA |
+
+
+→ [[Systems/Warning Systems|Warning Systems]] — PWS system architecture, sensor logic, and alert levels explained in detail.
 
 ## Response by Flight Phase
 

@@ -139,6 +139,10 @@ Use the `.eicas-card` pattern whenever color helps group or rank content — not
 - Content is a **symlink** to the Obsidian vault at `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787`
 - Editing files in `content/` directly edits the Obsidian vault
 
+## Markdown Rules
+
+- **No `---` separators in content files**: Never use `---` between or within sections. Frontmatter delimiters (`---` at the very top of the file) are the only exception. This applies to all content files — SOPs, Non-Normals, Systems, etc.
+
 ## book.md — Navigation Order
 
 `content/book.md` defines the linear reading order for the Prev/Next navigation buttons. **Every new page must be added here**, otherwise the navigation skips it.

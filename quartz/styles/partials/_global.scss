@@ -37,6 +37,14 @@ a {
     color: var(--secondary) !important;
 }
 
+/* Breadcrumb + book navigation: always dark */
+.breadcrumb-container a,
+.book-navigation .nav-btn,
+.book-navigation .nav-label,
+.book-navigation .nav-title {
+    color: var(--dark) !important;
+}
+
 /* Hover-Zustand (nur auf Geräten mit echter Maus) */
 @media (hover: hover) {
   a:hover,

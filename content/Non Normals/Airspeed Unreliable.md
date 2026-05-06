@@ -9,8 +9,6 @@ tags: [non-normal, warnings]
 
 > [!info] After NNC execution: If EICAS shows **NAV AIRDATA SYS** or **NAV AIRSPEED DATA** with GPS ALT or AOA SPD on PFD — follow the respective NNC instead of AIRSPEED UNRELIABLE.
 
----
-
 ## Memory Items — Pitch and Thrust
 
 | Configuration | Pitch Attitude | N1 |
@@ -24,14 +22,13 @@ tags: [non-normal, warnings]
 - Maintain current flap position until pitch/thrust are set and the airplane is stabilized.
 
 > [!info]- Memory Item Rationale
+
 > Calculated to work for all model/engine combinations, at all weights and altitudes.
 >
 > - Flaps extended: airspeed remains above stick shaker and below the flap placard limit.
 > - Flaps up: airspeed remains above stick shaker and below overspeed.
 >
 > Goal: maintain the airplane safely within the flight envelope — not to achieve a specific climb profile or level flight. Further flap changes require reference to OM-B 4-1-7 Flight With Unreliable Airspeed.
-
----
 
 ## Recognition
 
@@ -53,8 +50,6 @@ Familiarize with the normal pitch attitude and thrust for each phase of flight �
 
 - CAT II/III autoland is no longer possible.
 
----
-
 > [!info]- Causes and System Behavior
 > Unreliable airspeed can result from a **blocked or frozen pitot/static system** or a **severely damaged/missing radome**.
 >
@@ -62,8 +57,6 @@ Familiarize with the normal pitch attitude and thrust for each phase of flight �
 > - If both inlet and drain holes are blocked: trapped pressure reacts unpredictably — may increase (thermal expansion), decrease (contraction), or remain constant. This can manifest as increasing IAS in climb, decreasing IAS in descent, or unpredictable IAS in cruise.
 >
 > An unreliable airspeed may affect the normal pitch control law (which uses indicated airspeed). Air data anomalies cause the FCS to switch to secondary mode. Ground speed from the FMC and ATC radar can serve as a crosscheck.
-
----
 
 ## Phase Guidance
 
@@ -117,14 +110,17 @@ For extended flight — once the initial situation is stabilized — use the **Q
 
 </div>
 
----
+## Identification of Reliable Signals / Indications
 
-## AOA Speed
+During an airspeed unreliable event, altitude and vertical speed indications may also become unreliable. Therefore, rely on independent backup systems.
 
-Angle of Attack Speed (AOA SPD) is a backup airspeed indication based on angle of attack and inertial system inputs — displayed automatically when air data is unreliable. It is subject to variations during configuration changes, maneuvering, and speedbrake use.
+When the AIR DATA/ATT source selector is set to ALTN — or when the system automatically rejects invalid air data — the PFD and HUD provide the following reliable indications:
 
-- **Avoid:** abrupt control inputs, high maneuvering loads, in-flight speedbrake use.
-- When AOA SPD is active: **max speed reduced** to 300 kt / .85 M (normal: 360 kt / .90 M). OVERSPEED warnings are adjusted accordingly.
+**AOA SPD** — Backup airspeed calculated from Angle of Attack sensors combined with inertial data. Completely independent of the pitot-static system. Subject to variations during configuration changes, maneuvering, and speedbrake use — avoid abrupt control inputs, high maneuvering loads, and in-flight speedbrake use. When active: **max speed reduced to 300 kt / .85 M** (normal: 360 kt / .90 M). OVERSPEED warnings are adjusted accordingly. Simplified control laws active.
+
+**GPS ALT** — Reliable backup altitude provided automatically from GPS satellite data.
+
+**ISFD** — Independent source of attitude, airspeed, and altitude. Air data comes exclusively from the center pitot and static air data modules; attitude information from internal inertial sensors.
 
 > [!info]- AOA Speed Details
 > Simplified control laws are active when AOA SPD is displayed. Because accuracy is limited at high airspeeds, both max speed and OVERSPEED alert thresholds are reduced.
@@ -132,8 +128,6 @@ Angle of Attack Speed (AOA SPD) is a backup airspeed indication based on angle o
 > AOA SPD is activated automatically when NAV AIRSPEED DATA or NAV AIR DATA SYS is shown, or when both pilots manually select AIR DATA/ATT to ALTN.
 >
 > If an air data anomaly occurs at high airspeed: in addition to the AUTOPILOT DISC wailer, an OVERSPEED aural siren may occur until AOA SPD is reduced below the new limit.
-
----
 
 ## Altitude Unreliable
 
