@@ -1,169 +1,178 @@
 # Navigation
 
-## Übersicht
+## Overview
 
-| System | Anzahl | Tuning | Primäre Ausgabe |
+| System | Count | Tuning | Primary Output |
 |:---|:---:|:---:|:---|
-| GPS | 2 (L/R) | Automatisch | Position → IRS → FMC |
+| GPS | 2 (L/R) | Automatic | Position → IRS → FMC |
 | IRS (IRU + AHRU) | 2 IRU + 2 AHRU | — | Airspeed, Attitude, Heading, Position |
-| ADRS | 1 (L/C/R Pitot) | — | Höhe + Geschwindigkeit für alle Systeme |
-| VOR | 2 | FMC / manuell | Position updates, ND bearing |
-| DME | 2 | FMC / manuell | Distanz, FMC position updates |
-| ILS | 2 | FMC / manuell | LOC + GS Deviation |
-| ADF | 2 | Manuell (CDU) | Bearing auf ND/PFD |
+| ADRS | 1 (L/C/R Pitot) | — | Altitude + Airspeed for all systems |
+| VOR | 2 | FMC / manual | Position updates, ND bearing |
+| DME | 2 | FMC / manual | Distance, FMC position updates |
+| ILS | 2 | FMC / manual | LOC + GS Deviation |
+| ADF | 2 | Manual (CDU) | Bearing on ND/PFD |
 | Transponder | 2 | ATP / TCP | Mode S, ADS-B, TCAS |
-| Weather Radar | 1 | TCP | ND (MAP) + Mini-Map bis 320 NM |
+| Weather Radar | 1 | TCP | ND (MAP) + Mini-Map up to 320 NM |
 
----
+<a class="img-lightbox img-lightbox--full" href="#airspeed-indication-lightbox">
+  <img class="img-thumb" src="/Bilder/airspeed%20indication.webp" alt="Airspeed Indication — PFD source labels">
+</a>
+<div id="airspeed-indication-lightbox" class="img-lightbox-overlay">
+  <a href="#">
+    <img src="/Bilder/airspeed%20indication.webp" alt="Airspeed Indication — PFD source labels">
+  </a>
+</div>
 
 ## GPS
 
-L/R GPS-Empfänger arbeiten **unabhängig** — Position → IRS → hybrides GPS/Inertial → FMC.
+The L/R GPS receivers operate **independently** — position is passed to the IRS, which forms a hybrid GPS/inertial solution for the FMC.
 
-- Bei IRS-Ausfall: GPS liefert Position + Track **direkt** an FMC (kein EICAS-Hinweis)
-- GPS für **alle Approaches** nutzen, wenn FMC-Datenbank auf **WGS-84** referenziert
-- Inhibit via GPS NAV prompt auf POS REF page 3/4
+- IRS failure: GPS provides position and track **directly** to the FMC (no EICAS advisory)
+- Use GPS for **all approaches** when the FMC database is referenced to **WGS-84**
+- Inhibit via GPS NAV prompt on POS REF page 3/4
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Condition |
 |:---|:---:|:---|
-| <span class="c-amber">GPS</span> | <span class="c-amber">Advisory</span> | Beide GPS-Systeme ausgefallen |
-
----
+| GPS | Advisory | Both GPS systems have failed |
 
 ## ADRS — Air Data Reference System
 
-Versorgt alle Systeme mit **Höhe + Geschwindigkeit** aus L/C/R Pitot-Static. **Unabhängig vom IRS.**
+ADRS provides **altitude and airspeed** to all aircraft systems. It receives air data from the left, center, and right pitot and static systems and computes **trusted voted air data**, which is sent to the PFDs. Because both PFDs receive data from the same voted source, altitude and airspeed indications on both PFDs are always identical. ADRS is completely independent of the IRS.
 
-**Fallback-Hierarchie (AIR DATA/ATT switch AUTO):**
+When voted ADRS air data is invalid and the AIR DATA/ATT switch is in the AUTO position, backup airspeed (AOA SPD) and backup altitude (GPS ALT) are automatically provided by the IRS and GPS systems respectively.
 
-| Priorität | Quelle | Airspeed | Altitude |
+### AIR DATA/ATT Source Selector
+
+**AUTO** — Normal position:
+
+- ADRS provides air data to the PFD and HUD
+- Backup airspeed (AOA SPD), based on angle of attack and inertial data, is automatically provided when required
+- Backup altitude (GPS ALT), based on GPS data, is automatically provided when required
+- IRS provides attitude data to the PFD
+- Backup attitude from ISFD sources is automatically provided when required
+
+**ALTN** — Non-normal position:
+
+- Backup airspeed and altitude (AOA SPD / GPS ALT) are displayed on the on-side PFD
+- ISFD attitude is displayed on the on-side PFD
+
+### Fallback Hierarchy
+
+| Priority | Source | Airspeed | Altitude |
 |:---:|:---|:---:|:---:|
-| 1 | ADRS (voted) | normal | normal |
+| 1 | ADRS (voted) | Normal | Normal |
 | 2 | IRS + GPS (Backup) | AOA SPD | GPS ALT |
 | 3 | ISFD (Center Pitot) | ISFD SPD | ISFD ALT |
 
-ISFD ist vollständig unabhängig von IRU und AHRU.
+### ISFD — Integrated Standby Flight Display
 
----
+ISFD receives data exclusively from the **center pitot static system**. Its altitude, attitude, and airspeed indications are completely independent of both IRU and AHRU values. When both voted ADRS data and backup air data (AOA SPD / GPS ALT) are unavailable, ISFD altitude (**ISFD ALT**) and ISFD airspeed (**ISFD SPD**) are automatically displayed on the PFDs.
 
 ## IRS — Inertial Reference System
 
-Berechnet: Airspeed, Attitude, Heading, Position — für Displays, FMS, FBW, Engine Controls.
+Computes airspeed, attitude, heading, and position — for displays, FMS, fly-by-wire, and engine controls.
 
-**Komponenten:**
+**Components:**
 
-| Einheit | Anzahl | Funktion |
+| Unit | Count | Function |
 |:---|:---:|:---|
-| IRU (Inertial Reference Unit) | 2 | Hybrid GPS/Inertial Position + Navigation |
-| AHRU (Attitude & Heading Reference Unit) | 2 | Attitude, Heading, Rate — kein eigenständiges Position |
+| IRU (Inertial Reference Unit) | 2 | Hybrid GPS/Inertial position + navigation |
+| AHRU (Attitude & Heading Reference Unit) | 2 | Attitude, heading, rate — no independent position solution |
 
 ### IRU Alignment
 
-- Power-Up → Align Mode → EICAS Memo **IRU ALIGN MODE L+R**
-- Dauer: **7 – 10 min** (mittlere Breiten) · bis **17 min** (hohe Breiten)
-- Kein Bewegen des Flugzeugs bis Alignment abgeschlossen
-- GPS verfügbar → **keine manuelle Position erforderlich**; GPS nicht verfügbar → Position manuell eingeben (POS INIT)
-- Bei Flugunterbrechung: Automatic Realign Mode (Neuausrichtung bis Bewegung)
-- In-flight Realignment möglich: Attitude in Sekunden, volle Navigation in **≈ 10 min** (GPS erforderlich)
+- Power-Up → Align Mode → EICAS memo **IRU ALIGN MODE L+R**
+- Duration: **7 – 10 min** (mid-latitudes) · up to **17 min** (high latitudes)
+- Aircraft must not be moved until alignment is complete
+- GPS available → **no manual position entry required**; GPS unavailable → enter position manually (POS INIT)
+- During layover: Automatic Realign Mode (realignment continues until aircraft is moved)
+- In-flight realignment possible: attitude restored within seconds, full navigation in **≈ 10 min** (GPS required)
 
-> [!info] Empfehlung
-> Position update empfohlen, wenn Navigation Mode > **18 Stunden**
+> [!info] Recommendation
+> Position update recommended when in Navigation Mode for more than **18 hours**
 
 ### IRU Power
 
-- Initial Power-Up: Batterie-Bus + IRS Switches ON
-- Battery Switch OFF → Hot Battery Bus hält IRS weiter unter Strom
-- **ON BAT** Light leuchtet + Horn im Gear Well → Maintenance-Warnung
+- Initial power-up: Battery Bus + IRS switches ON
+- Battery switch OFF → Hot Battery Bus continues to power the IRS
+- **ON BAT** light illuminates + horn in gear well → maintenance warning
 
 ### IRS Failure — EICAS
 
-| EICAS | Level | Bedeutung | Konsequenz |
+| EICAS | Level | Condition | Consequence |
 |:---|:---:|:---|:---|
-| <span class="c-amber">NAV IRU</span> | <span class="c-amber">Advisory</span> | Beide IRUs ausgefallen | FMC nutzt AHRUs + GPS weiter |
-| <span class="c-amber">NAV INERTIAL SYS</span> | <span class="c-amber">Caution</span> | Beide IRUs **und** AHRUs ausgefallen | GPS (INRs) übernimmt — LNAV/VNAV nicht verfügbar |
+| NAV IRU | Advisory | Both IRUs have failed | FMC continues to use AHRUs + GPS |
+| <span class="c-amber">NAV INERTIAL SYS</span> | <span class="c-amber">Caution</span> | Both IRUs **and** AHRUs have failed | GPS (INRs) takes over — LNAV/VNAV unavailable |
 
-**Inoperativ nach IRS-Ausfall (NAV INERTIAL SYS):**
+**Inoperative after IRS failure (NAV INERTIAL SYS):**
 
-| Kategorie | Inoperativ |
+| Category | Inoperative |
 |:---|:---|
 | AFDS Modes | FPA, G/S, HDG HOLD/SEL\*, LNAV, LOC, TO/GA, TRK HOLD/SEL, VNAV |
 | Navigation | FMC Performance Predictions, FMC VNAV pages, ND Wind Arrow |
 | PFD | PFD Heading\* |
-| Sonstiges | Autobrake |
+| Other | Autobrake |
 
-\* *Operativ, wenn Standby Compass Heading auf POS INIT eingegeben wird.*
+\* *Operative if Standby Compass Heading is entered on POS INIT.*
 
-**Zusätzlich inoperativ nach IRS + GPS-Ausfall:**
+**Additionally inoperative after IRS + GPS failure:**
 CDU active leg, Direct-to, DIVERT NOW, Nav Radio Autotuning, ND Map (center + expanded)
-
----
 
 ## Radio Navigation
 
-| System | Tuning | Besonderheit |
+| System | Tuning | Notes |
 |:---|:---|:---|
-| VOR (2) | FMC automatisch / manuell | Bearing auf ND, Position updates via DME/VOR pair |
-| DME (2) | FMC automatisch / manuell | POS REF 2/4 zeigt genutzte DME-Stationen |
-| ILS (2) | FMC automatisch / manuell | Autotune ab 50 NM TOD oder 150 NM Runway Threshold |
-| ADF (2) | Manuell (CDU NAV RADIO) | Bearing auf PFD Mini-Map, cyan dargestellt |
+| VOR (2) | FMC automatic / manual | Bearing on ND, position updates via DME/VOR pair |
+| DME (2) | FMC automatic / manual | POS REF 2/4 shows active DME stations |
+| ILS (2) | FMC automatic / manual | Autotune from 50 NM TOD or 150 NM runway threshold |
+| ADF (2) | Manual (CDU NAV RADIO) | Bearing on PFD mini-map, displayed in cyan |
 
-**ILS Autotune Inhibit** — aktiv wenn:
-- Autopilot engaged **oder** FD on + LOC/GS captured
+**ILS Autotune Inhibit** — active when:
+- Autopilot engaged **or** FD on + LOC/GS captured
 
-**ILS Tuning wieder freigegeben** wenn:
-- TO/GA gedrückt, **oder** AP disengaged + beide FDs off, **oder** APP mode deselected > 1.500 ft RA
+**ILS Tuning re-enabled** when:
+- TO/GA pressed, **or** AP disengaged + both FDs off, **or** APP mode deselected above 1.500 ft RA
 
-> [!caution] ILS Autotune — Inhibit nach Takeoff
-> ILS Autotune ist nach dem **ersten Takeoff 10 min** inhibited (PFD-Überlastung vermeiden). Ein neu ausgeführter Approach im aktiven Flugplan überschreibt diesen Inhibit.
+> [!caution] ILS Autotune — Inhibit After Takeoff
+> ILS Autotune is inhibited for **10 minutes after the first takeoff** (to avoid PFD clutter). A newly executed approach in the active flight plan overrides this inhibit.
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Condition |
 |:---|:---:|:---|
-| <span class="c-amber">SINGLE SOURCE APPROACH</span> | <span class="c-amber">Caution</span> | Ein ILS-Empfänger ausgefallen — beide PFDs zeigen verbleibenden ILS |
+| <span class="c-amber">SINGLE SOURCE APPROACH</span> | <span class="c-amber">Caution</span> | One ILS receiver has failed — both PFDs show the remaining ILS |
 
-**Navaid Identifier Decoding:** Morse → Klartext auf PFD/ND. Kann fehlerhaft sein — bei Zweifeln immer **Morse-Audio** zur Verifikation nutzen.
-
----
+**Navaid Identifier Decoding:** Morse decoded to plain text on PFD/ND. Decoding can be erroneous — when in doubt, always verify using **Morse audio**.
 
 ## Transponder & ADS-B
 
-Zwei ATC-Transponder + TCAS — gesteuert über **ATP** (primär) oder **TCP** (Backup).
+Two ATC transponders + TCAS — controlled via **ATP** (primary) or **TCP** (backup).
 
 **Transponder Modes:**
 
 | ATP Selection | Transponder | TCAS | ADS-B Out | ADS-B In |
 |:---|:---:|:---:|:---:|:---:|
 | STBY | Off | Off | Off | (\*) |
-| ALT RPTG OFF | On (kein Mode C) | Off | On | Off |
+| ALT RPTG OFF | On (no Mode C) | Off | On | Off |
 | XPDR | On | Off | On | On |
 | TA ONLY | On | TA only | On | On |
 | TA/RA | On | TA/RA | On | On |
 
-(\*) *Optional per Software aktivierbar.*
+(\*) *Optionally enabled via software.*
 
 > [!info] Ground Tracking
-> TCAS-Modes **nicht** für Ground Tracking verwenden — nur Transponder-Modus (nicht STBY).
+> Do **not** use TCAS modes for ground tracking — use transponder mode only (not STBY).
 
-| EICAS | Level | Bedeutung |
+| EICAS | Level | Condition |
 |:---|:---:|:---|
-| <span class="c-amber">TRANSPONDER</span> | <span class="c-amber">Advisory</span> | Beide Transponder ausgefallen |
-| <span class="c-amber">TRANSPONDER PANEL</span> | <span class="c-amber">Advisory</span> | ATP ausgefallen — Transponder/TCAS via TCP setzen |
+| TRANSPONDER | Advisory | Both transponders have failed |
+| TRANSPONDER PANEL | Advisory | ATP has failed — set transponder/TCAS via TCP |
 
-**ATP Inoperativ:** ALERT/XPDR CTL page im TCP → MENU → ALERT/XPDR CTL ON (LSK 1R) → LSK 2R.
-
----
-
-## NAT — North Atlantic Tracks
-### Visual Approach — US-Verfahren
-
-> [!info] Wake Turbulence Verantwortung (USA)
-> Bei einem **Visual Approach** in den USA ist **ATC für den Wake-Turbulence-Abstand verantwortlich**, solange das vorausfliegende Luftfahrzeug **nicht in Sicht** ist. Sobald der Pilot das vorausfliegende Flugzeug sieht und die Freigabe "Follow traffic" oder "Visual Approach" erhält, geht die Verantwortung auf den **Piloten** über.
-
+**ATP Inoperative:** ALERT/XPDR CTL page on TCP → MENU → ALERT/XPDR CTL ON (LSK 1R) → LSK 2R.
 
 ## Weather Radar
 
-- Steuerung via **TCP** (SYS POWER ON erforderlich, bevor EFIS WXR-Switch funktioniert)
-- Anzeige auf **ND (MAP mode)** und **Mini-Map**
-- Max Darstellungsreichweite: **320 NM**
-- Self-Test: Power-Up, jeden Sweep, beim Unterschreiten von **2.300 ft AGL**
-- Turbulenz nur bei **ausreichend Niederschlag** erkennbar — **kein Clear-Air-Turbulence**-Nachweis
-- Integrierte **Predictive Windshear**-Warnung (PWS)
+- Controlled via **TCP** (SYS POWER ON required before the EFIS WXR switch is operational)
+- Display on **ND (MAP mode)** and **Mini-Map**
+- Maximum display range: **320 NM**
+- Self-test: at power-up, every sweep, and when descending below **2.300 ft AGL**
+- Turbulence detectable only with **sufficient precipitation** — **no Clear-Air-Turbulence** detection
+- Integrated **Predictive Windshear** warning (PWS)

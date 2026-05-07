@@ -5,11 +5,72 @@ tags: [non-normal, warnings]
 
 # Airspeed Unreliable
 
-<a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE">→ NNC: AIRSPEED UNRELIABLE</a>
+## Scenarios
 
-> [!info] After NNC execution: If EICAS shows **NAV AIRDATA SYS** or **NAV AIRSPEED DATA** with GPS ALT or AOA SPD on PFD — follow the respective NNC instead of AIRSPEED UNRELIABLE.
+Three distinct EICAS conditions can trigger an airspeed unreliable situation. Each has a different root cause, a different system response, and a different NNC.
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">[] NAV AIRSPEED DATA <span class="eicas-card-badge">ADVISORY</span></div>
+  <div class="eicas-card-body">
+    All 3 pitot systems inoperative or invalid → voted airspeed no longer available from ADRS<br>
+    AOA SPD displayed <strong>automatically on both PFDs</strong> · Altitude still supplied by ADRS (statics intact)<br>
+    Flight controls in Secondary Mode · AFDS not available<br>
+    ISFD airspeed may be unreliable — comes from Center Pitot
+  </div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">[] NAV AIR DATA SYS <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-body">
+    All 3 static systems inoperative or invalid → voted airspeed and altitude no longer available from ADRS<br>
+    AOA SPD and GPS ALT displayed <strong>automatically on both PFDs</strong><br>
+    Flight controls in Secondary Mode · AFDS not available<br>
+    ISFD airspeed and altitude may be unreliable — comes from Center Pitot and Center Static
+  </div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">[] AIRSPEED UNRELIABLE <span class="eicas-card-badge">ADVISORY</span></div>
+  <div class="eicas-card-body">
+    Voted airspeed conflicts with AOA SPD — system cannot determine which source is correct<br>
+    <strong>No automatic display of AOA SPD or GPS ALT</strong><br>
+    Pilots must identify the reliable indication · Memory Items required<br>
+    May be annunciated by EICAS or recognized and called out by the pilots
+  </div>
+</div>
+
+</div>
+
+> [!caution] Switching NNCs
+> If **NAV AIRSPEED DATA** or **NAV AIR DATA SYS** appears on EICAS while executing the AIRSPEED UNRELIABLE NNC — stop the current checklist immediately and proceed with the NNC for the newly indicated message.
+
+> [!info] Comparing Voted Airspeed vs AOA SPD
+> In the AIRSPEED UNRELIABLE scenario, AOA SPD is **not** displayed automatically. To compare both sources simultaneously: one pilot sets their **AIR DATA/ATT selector to ALTN** — that PFD now displays AOA SPD, while the other PFD continues to show voted airspeed from ADRS. Cross-check both against GPS groundspeed, pitch attitude, and ATC radar to identify the reliable indication.
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">[] NAV AIRSPEED DATA</div>
+  <div class="eicas-card-body"><a href="/Non-Normals/Non-Normal-Checklists/NAV-AIRSPEED-DATA">→ NNC: NAV AIRSPEED DATA</a></div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">[] NAV AIR DATA SYS</div>
+  <div class="eicas-card-body"><a href="/Non-Normals/Non-Normal-Checklists/NAV-AIR-DATA-SYS">→ NNC: NAV AIR DATA SYS</a></div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">[] AIRSPEED UNRELIABLE</div>
+  <div class="eicas-card-body"><a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE">→ NNC: AIRSPEED UNRELIABLE</a></div>
+</div>
+
+</div>
 
 ## Memory Items — Pitch and Thrust
+
+Applies to the **AIRSPEED UNRELIABLE** scenario. Set immediately — do not wait for NNC execution.
 
 | Configuration | Pitch Attitude | N1 |
 |:---|:---:|:---:|
@@ -22,7 +83,6 @@ tags: [non-normal, warnings]
 - Maintain current flap position until pitch/thrust are set and the airplane is stabilized.
 
 > [!info]- Memory Item Rationale
-
 > Calculated to work for all model/engine combinations, at all weights and altitudes.
 >
 > - Flaps extended: airspeed remains above stick shaker and below the flap placard limit.
@@ -61,6 +121,8 @@ Familiarize with the normal pitch attitude and thrust for each phase of flight �
 ## Phase Guidance
 
 For extended flight — once the initial situation is stabilized — use the **QRH Performance Inflight tables** for exact pitch attitudes and thrust settings (TPR) for each phase: climb (max climb thrust), cruise, descent (idle thrust), holding, and approach.
+
+→ [[Flight With Unreliable Airspeed]]
 
 ### Takeoff — at or after v<sub>1</sub>
 

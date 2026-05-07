@@ -12,6 +12,8 @@ title: Performance
 | Architecture | **Twin**-spool | **Three**-spool |
 | Primary engine indications | **N1**, EGT, N2 | **TPR**, N1, EGT |
 
+→ [[Flight With Unreliable Airspeed]] — QRH pitch and thrust tables for all flight phases
+
 ## Taxi for Aircraft with ICAO Code E
 
 - Taxiways are generally shown in grey
