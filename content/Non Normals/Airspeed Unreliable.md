@@ -7,12 +7,12 @@ tags: [non-normal, warnings]
 
 ## Scenarios
 
-Three distinct EICAS conditions can trigger an airspeed unreliable situation. Each has a different root cause, a different system response, and a different NNC.
+Three distinct EICAS conditions can trigger an airspeed unreliable situation. Each has a different root cause, a different system response, and a different NNC. → [[Systems/Navigation|Air Data System (ADRS, AOA SPD, ISFD)]]
 
 <div class="eicas-levels">
 
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">[] NAV AIRSPEED DATA <span class="eicas-card-badge">ADVISORY</span></div>
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/NAV-AIRSPEED-DATA">[] NAV AIRSPEED DATA</a> <span class="eicas-card-badge">ADVISORY</span></div>
   <div class="eicas-card-body">
     All 3 pitot systems inoperative or invalid → voted airspeed no longer available from ADRS<br>
     AOA SPD displayed <strong>automatically on both PFDs</strong> · Altitude still supplied by ADRS (statics intact)<br>
@@ -22,7 +22,7 @@ Three distinct EICAS conditions can trigger an airspeed unreliable situation. Ea
 </div>
 
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">[] NAV AIR DATA SYS <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/NAV-AIR-DATA-SYS">[] NAV AIR DATA SYS</a> <span class="eicas-card-badge">CAUTION</span></div>
   <div class="eicas-card-body">
     All 3 static systems inoperative or invalid → voted airspeed and altitude no longer available from ADRS<br>
     AOA SPD and GPS ALT displayed <strong>automatically on both PFDs</strong><br>
@@ -31,8 +31,8 @@ Three distinct EICAS conditions can trigger an airspeed unreliable situation. Ea
   </div>
 </div>
 
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">[] AIRSPEED UNRELIABLE <span class="eicas-card-badge">ADVISORY</span></div>
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE">[] AIRSPEED UNRELIABLE</a> <span class="eicas-card-badge">ADVISORY</span></div>
   <div class="eicas-card-body">
     Voted airspeed conflicts with AOA SPD — system cannot determine which source is correct<br>
     <strong>No automatic display of AOA SPD or GPS ALT</strong><br>
@@ -48,25 +48,6 @@ Three distinct EICAS conditions can trigger an airspeed unreliable situation. Ea
 
 > [!info] Comparing Voted Airspeed vs AOA SPD
 > In the AIRSPEED UNRELIABLE scenario, AOA SPD is **not** displayed automatically. To compare both sources simultaneously: one pilot sets their **AIR DATA/ATT selector to ALTN** — that PFD now displays AOA SPD, while the other PFD continues to show voted airspeed from ADRS. Cross-check both against GPS groundspeed, pitch attitude, and ATC radar to identify the reliable indication.
-
-<div class="eicas-levels">
-
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">[] NAV AIRSPEED DATA</div>
-  <div class="eicas-card-body"><a href="/Non-Normals/Non-Normal-Checklists/NAV-AIRSPEED-DATA">→ NNC: NAV AIRSPEED DATA</a></div>
-</div>
-
-<div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">[] NAV AIR DATA SYS</div>
-  <div class="eicas-card-body"><a href="/Non-Normals/Non-Normal-Checklists/NAV-AIR-DATA-SYS">→ NNC: NAV AIR DATA SYS</a></div>
-</div>
-
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">[] AIRSPEED UNRELIABLE</div>
-  <div class="eicas-card-body"><a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE">→ NNC: AIRSPEED UNRELIABLE</a></div>
-</div>
-
-</div>
 
 ## Memory Items — Pitch and Thrust
 
