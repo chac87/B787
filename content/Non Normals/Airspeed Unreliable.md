@@ -172,6 +172,3 @@ When the AIR DATA/ATT source selector is set to ALTN — or when the system auto
 >
 > If an air data anomaly occurs at high airspeed: in addition to the AUTOPILOT DISC wailer, an OVERSPEED aural siren may occur until AOA SPD is reduced below the new limit.
 
-## Altitude Unreliable
-
-> [!info] Altitude information transmitted to ATC by the transponder may be unreliable. ATC is **not** an independent source of barometric altitude and cannot be used to verify altitude during an unreliable event. Accomplish the appropriate air data system NNC if an EICAS message is shown.
