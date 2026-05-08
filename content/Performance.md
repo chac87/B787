@@ -48,7 +48,7 @@ title: Performance
 
 <img src="/Bilder/v1%20range.webp" alt="V1 Range" style="width:100%;border-radius:6px;display:block;">
 
-## v<sub>MCG</sub> Limitations
+## vMCG Limitations
 
 <img src="/Bilder/vmcg.webp" alt="vMCG" style="max-width:45%;border-radius:6px;display:block;margin-bottom:0.75rem;">
 
