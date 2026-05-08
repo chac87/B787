@@ -38,33 +38,26 @@ title: Performance
 - Active if speed drops below approx. v<sub>2</sub> or v<sub>REF</sub>
 - No negative effect on certified takeoff performance
 
-<a class="img-lightbox img-lightbox--full" href="#tap-indications-lightbox" style="max-width: 40%;">
-  <img class="img-thumb" src="/Bilder/tap%20indications.webp" alt="TAP Indications">
-</a>
-<div id="tap-indications-lightbox" class="img-lightbox-overlay">
-  <a href="#">
-    <img src="/Bilder/tap%20indications.webp" alt="TAP Indications">
-  </a>
-</div>
+<img src="/Bilder/tap%20indications.webp" alt="TAP Indications" style="max-width:40%;border-radius:6px;display:block;">
 
 ## Takeoff Distance
 
-<a class="img-lightbox img-lightbox--full" href="#to-distance-lightbox">
-  <img class="img-thumb" src="/Bilder/to%20distance.webp" alt="Takeoff Distance">
-</a>
-<div id="to-distance-lightbox" class="img-lightbox-overlay">
-  <a href="#">
-    <img src="/Bilder/to%20distance.webp" alt="Takeoff Distance">
-  </a>
-</div>
+<img src="/Bilder/to%20distance.webp" alt="Takeoff Distance" style="width:100%;border-radius:6px;display:block;">
 
 ## V1 Range
 
-<a class="img-lightbox img-lightbox--full" href="#v1-range-lightbox">
-  <img class="img-thumb" src="/Bilder/v1%20range.webp" alt="V1 Range">
-</a>
-<div id="v1-range-lightbox" class="img-lightbox-overlay">
-  <a href="#">
-    <img src="/Bilder/v1%20range.webp" alt="V1 Range">
-  </a>
-</div>
+<img src="/Bilder/v1%20range.webp" alt="V1 Range" style="width:100%;border-radius:6px;display:block;">
+
+## v<sub>MCG</sub> Limitations
+
+<img src="/Bilder/vmcg.webp" alt="vMCG" style="max-width:45%;border-radius:6px;display:block;margin-bottom:0.75rem;">
+
+- Deviation from centerline max. 30 ft
+- No X-Wind considered
+- v<sub>MCG</sub> depending on several factors: Aircraft Weight, CG, OAT, Pressure Altitude, Bleed Setting
+- Critical situations:
+  - TOGA Thrust at Takeoff
+  - Low v<sub>1</sub>
+  - Remarkable difference between v<sub>1</sub> and v<sub>R</sub>
+    - → Use high v<sub>1</sub> in case of X-Wind
+    - → Use Optimum Power for takeoff
