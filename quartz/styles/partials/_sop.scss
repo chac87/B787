@@ -489,3 +489,83 @@ article details > :not(summary) {
     }
   }
 }
+
+/* =========================================
+   ENGINE OUT SEGMENT TABLE + PROFILE
+   ========================================= */
+
+.eo-block {
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.eo-segment-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  table-layout: fixed;
+
+  th {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.4em 0.6em;
+    text-align: center;
+    font-weight: 600;
+    border: none;
+    border-right: 1px solid color-mix(in srgb, var(--light) 20%, transparent);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+
+    &:last-child { border-right: none; }
+  }
+
+  td {
+    border: none;
+    border-right: 1px solid var(--lightgray);
+    border-top: 1px solid var(--lightgray);
+    padding: 0.45em 0.6em;
+    text-align: center;
+    vertical-align: top;
+    color: var(--dark);
+    line-height: 1.5;
+
+    &:last-child { border-right: none; }
+  }
+
+  .seg-ep {
+    font-size: 0.78rem;
+    color: var(--darkgray);
+    font-style: italic;
+  }
+}
+
+.eo-profile-svg {
+  display: block;
+  width: 100%;
+  border-top: 1px solid var(--lightgray);
+}
+
+[saved-theme="dark"] {
+  .eo-block {
+    border-color: color-mix(in srgb, var(--darkgray) 60%, transparent);
+  }
+
+  .eo-segment-table {
+    td { color: var(--light); border-color: color-mix(in srgb, var(--darkgray) 60%, transparent); }
+    td:last-child { border-right: none; }
+    th { border-right-color: color-mix(in srgb, var(--light) 15%, transparent); }
+    .seg-ep { color: var(--gray); }
+  }
+
+  .eo-profile-svg {
+    border-top-color: color-mix(in srgb, var(--darkgray) 60%, transparent);
+    .eo-bg { fill: color-mix(in srgb, var(--dark) 60%, transparent); }
+    .eo-ground { stroke: #555; }
+    .eo-divider { stroke: #555; }
+    .eo-text-main { fill: #ccc !important; }
+    .eo-text-sub { fill: #888 !important; }
+  }
+}
