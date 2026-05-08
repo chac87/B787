@@ -562,10 +562,6 @@ article details > :not(summary) {
 
   .eo-profile-svg {
     border-top-color: color-mix(in srgb, var(--darkgray) 60%, transparent);
-    .eo-bg { fill: color-mix(in srgb, var(--dark) 60%, transparent); }
-    .eo-ground { stroke: #555; }
-    .eo-divider { stroke: #555; }
-    .eo-text-main { fill: #ccc !important; }
-    .eo-text-sub { fill: #888 !important; }
+    filter: brightness(0.75) contrast(1.1);
   }
 }
