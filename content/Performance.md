@@ -64,36 +64,42 @@ title: Performance
 
 ## Takeoff — Engine Out Performance
 
+<img src="/Bilder/to%20phases.webp" alt="Takeoff Phases — Engine Out" style="width:100%;border-radius:6px;display:block;margin-bottom:0.75rem;">
+
 <div class="eo-block">
 <table class="eo-segment-table">
   <thead>
     <tr>
-      <th>Final Segment</th>
-      <th>3. Segment</th>
-      <th>2. Segment</th>
       <th>1. Segment</th>
+      <th>2. Segment</th>
+      <th>3. Segment</th>
+      <th>Final Segment</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><span class="seg-ep">Until End of Takeoff<br>Flight Path (1.500 ft)</span></td>
-      <td><span class="seg-ep">Until Slats/Flaps retracted</span></td>
-      <td><span class="seg-ep">Until Acc. Alt<br>[min. 400 ft]<br>[LH: 1.500 ft]</span></td>
       <td><span class="seg-ep">Until Gear Up</span></td>
+      <td><span class="seg-ep">Until Acc. Alt<br>[min. 400 ft]<br>[LH: 1.500 ft]</span></td>
+      <td><span class="seg-ep">Until Slats/Flaps retracted</span></td>
+      <td><span class="seg-ep">Until End of Takeoff<br>Flight Path (1.500 ft)</span></td>
     </tr>
     <tr>
-      <td><strong>MCT</strong><br>Final CLB Speed</td>
+      <td><strong>TOGA / Derate / ATM</strong><br>V2</td>
+      <td><strong>TOGA / Derate / ATM</strong><br>V2</td>
       <td><strong>TOGA / Derate / ATM</strong></td>
-      <td><strong>TOGA / Derate / ATM</strong><br>V2</td>
-      <td><strong>TOGA / Derate / ATM</strong><br>V2</td>
+      <td><strong>MCT</strong><br>Final CLB Speed</td>
     </tr>
     <tr>
-      <td>min 1,2% climb (2-ENG)<br>min 1,7% climb (4-ENG)</td>
-      <td>Acceleration +1,2% climb (2-ENG)<br>Acceleration +1,7% climb (4-ENG)</td>
-      <td>min 2,4% climb (2-ENG)<br>min 3,0% climb (4-ENG)</td>
-      <td>min positive climb (2-ENG)<br>min 0,5% (4-ENG)</td>
+      <td>min positive climb</td>
+      <td>min 2,4% climb</td>
+      <td>Acceleration +1,2% climb</td>
+      <td>min 1,2% climb</td>
     </tr>
   </tbody>
 </table>
-<img src="/static/eo-profile.svg" class="eo-profile-svg" alt="Engine Out Performance Profile — flight path segments">
+<div class="eo-notes">
+  <span>Gross gradient min. 2,4%</span>
+  <span>Gross − Net gradient = 0,8%</span>
+  <span>Obstacle clearance min. 35 ft</span>
+</div>
 </div>

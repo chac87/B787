@@ -542,10 +542,15 @@ article details > :not(summary) {
   }
 }
 
-.eo-profile-svg {
-  display: block;
-  width: 100%;
+.eo-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25em 1.5em;
+  padding: 0.5em 0.8em;
+  font-size: 0.8rem;
+  color: var(--darkgray);
   border-top: 1px solid var(--lightgray);
+  font-style: italic;
 }
 
 [saved-theme="dark"] {
@@ -560,8 +565,8 @@ article details > :not(summary) {
     .seg-ep { color: var(--gray); }
   }
 
-  .eo-profile-svg {
+  .eo-notes {
+    color: var(--gray);
     border-top-color: color-mix(in srgb, var(--darkgray) 60%, transparent);
-    filter: brightness(0.75) contrast(1.1);
   }
 }
