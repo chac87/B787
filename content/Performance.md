@@ -44,7 +44,7 @@ title: Performance
 
 <img src="/Bilder/to%20distance.webp" alt="Takeoff Distance" style="width:100%;border-radius:6px;display:block;">
 
-## V1 Range
+## v1 Range
 
 <img src="/Bilder/v1%20range.webp" alt="V1 Range" style="width:100%;border-radius:6px;display:block;">
 
@@ -103,3 +103,23 @@ title: Performance
   <span>Obstacle clearance min. 35 ft</span>
 </div>
 </div>
+
+> [!warning] Attention
+> Gross gradient of 2,4% is a certification requirement — 3,3% is the gradient used for SID design. If a SID doesn't show a climb gradient, 3,3% is assumed.
+
+## EOSID lateral
+
+<img src="/Bilder/safe%20sector.webp" alt="Safe Sector" style="width:100%;border-radius:6px;display:block;margin-bottom:0.75rem;">
+
+
+- A bank angle of 15° is assumed until reaching acceleration altitude.
+- Thereafter, the bank angle is assumed to increase up to 25° with increasing speed.
+- A bank angle of 25° is assumed only after reaching final climb segment speed.
+- Overshooting the bank angle to 30° is acceptable.
+
+## Characteristic speeds
+
+<img src="/Bilder/characteristic%20speeds.webp" alt="Characteristic Speeds" style="width:100%;border-radius:6px;display:block;margin-bottom:0.75rem;">
+
+- 1.3g margin is a safety threshold ensuring the plane can maneuver or withstand turbulence up to 1.3 times the force of gravity before experiencing buffeting or stalling.
+- 1.3g is equivalent to a 40-degree bank turn.
