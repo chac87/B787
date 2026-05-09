@@ -193,7 +193,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/FIRE-ENG-L,-R">FIRE ENG L, R</a></div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/FIRE-ENG-L,-R">FIRE ENG L, R (IN-FLIGHT)</a></div>
   <div class="mi-condition">Condition: Fire is detected in the affected engine.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>

@@ -205,7 +205,7 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 | Floating Home Button, Hero Image | `quartz/styles/partials/_floating-home.scss` |
 | Link colors, Fold/Expand icon | `quartz/styles/partials/_global.scss` |
 | EICAS Cards, Flowcharts, Page Transition | `quartz/styles/partials/_eicas.scss` |
-| Image Row, Lightbox | `quartz/styles/partials/_images.scss` |
+| Image Row, `.media-split` | `quartz/styles/partials/_images.scss` |
 | SOP Checklist, Badges, Flow Timeline | `quartz/styles/partials/_sop.scss` |
 | NNC Filter UI | `quartz/styles/partials/_nnc-filter.scss` |
 | NNC Procedure CSS classes, Memory Item Blocks (`.mi-*`) | `quartz/styles/partials/_nnc.scss` |
@@ -215,35 +215,23 @@ Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/
 
 ## Image Lightbox Pattern
 
-For manually embedded images, use the robust hash-lightbox pattern instead of a plain `<img>`. This ensures the image opens large on click/tap, including pages where the JS-only image handler may not attach reliably.
+Use a plain `<img>` — the JS lightbox (`imageLightbox.inline.ts`) attaches click/tap handlers to all `article img` automatically. Never wrap images in `<a>` tags.
 
-### Full-width thumbnail
+### Full-width image
 
 ```html
-<a class="img-lightbox img-lightbox--full" href="#example-lightbox">
-  <img class="img-thumb" src="/Bilder/example.webp" alt="Example">
-</a>
-<div id="example-lightbox" class="img-lightbox-overlay">
-  <a href="#">
-    <img src="/Bilder/example.webp" alt="Example">
-  </a>
-</div>
+<img src="/Bilder/example.webp" alt="Example">
 ```
+
+`article img` already has `max-width: 100%; display: block; margin: auto` via `image-tweak.css`. No extra wrapper needed.
 
 ### Split image + cards layout
 
-Use this when the thumbnail should take about half the width and explanatory cards should sit beside it on desktop. The `.media-split` CSS stacks automatically on mobile.
+Use this when the image should take about half the width and explanatory cards should sit beside it on desktop. The `.media-split` CSS stacks automatically on mobile.
 
 ```html
 <div class="media-split">
-  <a class="img-lightbox" href="#example-lightbox">
-    <img class="img-thumb" src="/Bilder/example.webp" alt="Example">
-  </a>
-  <div id="example-lightbox" class="img-lightbox-overlay">
-    <a href="#">
-      <img src="/Bilder/example.webp" alt="Example">
-    </a>
-  </div>
+  <img src="/Bilder/example.webp" alt="Example">
   <div class="eicas-levels">
     <div class="eicas-card eicas-card--white">
       <div class="eicas-card-title">Title</div>
@@ -254,10 +242,9 @@ Use this when the thumbnail should take about half the width and explanatory car
 ```
 
 Rules:
-- Every lightbox `id` must be unique on the page.
 - Use URL-encoded spaces in `src`, e.g. `/Bilder/Flight%20Path%20Tolerances.webp`.
-- Prefer `.img-lightbox--full` for standalone 100%-width thumbnails.
-- Prefer `.media-split` for desktop 50/50 image-and-content layouts; it is mobile-friendly.
+- Never wrap `<img>` in `<a>` — the JS lightbox handles clicks on all bare images.
+- `.media-split` provides desktop 50/50 layout; it stacks to single column on mobile.
 
 ## LHG Brand Color Guide
 

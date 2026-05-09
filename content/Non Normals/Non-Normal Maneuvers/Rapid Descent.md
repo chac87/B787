@@ -24,14 +24,7 @@ If severe turbulence is encountered or expected: reduce to turbulent air penetra
 
 ## Technique
 
-<a class="img-lightbox img-lightbox--full" href="#rapid-descent-lightbox">
-  <img class="img-thumb" src="/Bilder/rapid%20descent.webp" alt="Rapid Descent">
-</a>
-<div id="rapid-descent-lightbox" class="img-lightbox-overlay">
-  <a href="#">
-    <img src="/Bilder/rapid%20descent.webp" alt="Rapid Descent">
-  </a>
-</div>
+<img src="/Bilder/rapid%20descent.webp" alt="Rapid Descent">
 
 > [!proc]- Autopilot — FLCH (Recommended)
 > FLCH provides airspeed and altitude protection with reduced crew workload. V/S or FPA mode is not recommended.

@@ -5,14 +5,7 @@ tags: [sop, normal-ops]
 
 # Circling Approach
 
-<a class="img-lightbox img-lightbox--full" href="#circling-lightbox">
-  <img class="img-thumb" src="/Bilder/circling.webp" alt="Circling Approach">
-</a>
-<div id="circling-lightbox" class="img-lightbox-overlay">
-  <a href="#">
-    <img src="/Bilder/circling.webp" alt="Circling Approach">
-  </a>
-</div>
+<img src="/Bilder/circling.webp" alt="Circling Approach">
 
 ## General
 

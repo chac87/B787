@@ -5,16 +5,9 @@ tags: [non-normal, maneuvers]
 
 # RTO
 
-![[Bilder/RTO.webp]]
+<img src="/Bilder/RTO.webp" alt="RTO">
 
-> [!info]- Low Speed vs. High Speed RTO
-> | | Low Speed (< 80 kts) | High Speed (≥ 80 kts → V₁) |
-> | :--- | :--- | :--- |
-> | **Threat** | Loss of directional control | Runway overrun · Tire blowout & Fire |
-> | **Key points** | Maintain centerline · Retard thrust levers immediately · Autobrakes not available below 85 kts — be prepared for asymmetric manual braking | Monitor autobrake & speedbrake closely (PM) · Maximum brakes — do not reduce prematurely · Consider 'GO' as potentially safer option · Know runway lighting and stopping distance remaining |
-
-
-> [!proc]- RTO Maneuver
+> [!proc] RTO Maneuver
 > **CM1** "STOP"
 >
 > **CM1** Close Thrust Levers
@@ -27,7 +20,7 @@ tags: [non-normal, maneuvers]
 > ###### Verify Reverse Thrust applied **CM2**
 > **CM1** Verify Speedbrakes extended
 > ###### "SPEEDBRAKES UP" ("NO SPEEDBRAKES") **CM2**
-> ###### "REVERSE NORMAL" ("NO REVERSE L/R ENGINE") **CM2**
+> ###### "REVERSERS NORMAL" ("NO REVERSERS L/R ENGINE") **CM2**
 > ###### Callout omitted items **CM2**
 > ---
 >
@@ -46,6 +39,12 @@ tags: [non-normal, maneuvers]
 > **CM1** "ATTENTION CREW ON STATION · ATTENTION CREW ON STATION"
 >
 > **CM1** Evaluate Situation → Start appropriate NNC
+
+> [!info]- Low Speed vs. High Speed RTO
+> | | Low Speed (< 80 kts) | High Speed (≥ 80 kts → V₁) |
+> | :--- | :--- | :--- |
+> | **Threat** | Loss of directional control | Runway overrun · Tire blowout & Fire |
+> | **Key points** | Maintain centerline · Retard thrust levers immediately · Autobrakes not available below 85 kts — be prepared for asymmetric manual braking | Monitor autobrake & speedbrake closely (PM) · Maximum brakes — do not reduce prematurely · Consider 'GO' as potentially safer option · Know runway lighting and stopping distance remaining |
 
 > [!caution] Evacuation Decision
 > **Grave and imminent danger** → EVACUATION CHECKLIST — always use QRH / Paper Checklist

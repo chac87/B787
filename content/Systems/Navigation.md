@@ -14,14 +14,7 @@
 | Transponder | 2 | ATP / TCP | Mode S, ADS-B, TCAS |
 | Weather Radar | 1 | TCP | ND (MAP) + Mini-Map up to 320 NM |
 
-<a class="img-lightbox img-lightbox--full" href="#airspeed-indication-lightbox">
-  <img class="img-thumb" src="/Bilder/airspeed%20indication.webp" alt="Airspeed Indication — PFD source labels">
-</a>
-<div id="airspeed-indication-lightbox" class="img-lightbox-overlay">
-  <a href="#">
-    <img src="/Bilder/airspeed%20indication.webp" alt="Airspeed Indication — PFD source labels">
-  </a>
-</div>
+<img src="/Bilder/airspeed%20indication.webp" alt="Airspeed Indication — PFD source labels">
 
 ## GPS
 

@@ -202,3 +202,7 @@ Accomplished the same as a normal missed approach with the following differences
 - Rudder automatically compensates for differential thrust — no pilot input required.
 - Select MCT (CON) when flaps are retracted to the desired setting.
 - G/A pitch ca. 8° until gear up — then follow F/D.
+
+## On Ground
+
+If an engine failure occurs on the ground, during the takeoff roll, or on final approach — and the crew decides to cope with the failure only after touchdown — consider, after stopping, securing the affected engine by applying the memory items of <a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>Eng Svr Damage/Sep L, R</span></a>.

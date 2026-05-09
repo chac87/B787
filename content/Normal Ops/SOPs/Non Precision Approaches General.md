@@ -32,14 +32,7 @@ They are normally flown using **IAN**, **VNAV**, **V/S**, or **FPA** pitch modes
 **Flight Path Tolerances**
 
 <div class="media-split">
-  <a class="img-lightbox" href="#flight-path-tolerances-lightbox">
-    <img class="img-thumb" src="/Bilder/Flight%20Path%20Tolerances.webp" alt="Flight Path Tolerances">
-  </a>
-  <div id="flight-path-tolerances-lightbox" class="img-lightbox-overlay">
-    <a href="#">
-      <img src="/Bilder/Flight%20Path%20Tolerances.webp" alt="Flight Path Tolerances">
-    </a>
-  </div>
+  <img src="/Bilder/Flight%20Path%20Tolerances.webp" alt="Flight Path Tolerances">
   <div class="eicas-levels">
     <div class="eicas-card eicas-card--red">
       <div class="eicas-card-title">FPA / V/S</div>
