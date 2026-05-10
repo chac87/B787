@@ -2,7 +2,7 @@
 
 ## EICAS Alert Levels
 
-![[alerts.webp|small]]
+<img src="/Bilder/alerts.webp" alt="EICAS Alert Levels">
 
 <div class="eicas-levels">
 
@@ -95,7 +95,7 @@ During a GPWS or PWS warning, TCAS automatically switches to TA only mode with a
 
 ## GPWS / TAWS
 
-![[gpws terr.webp|small]]
+<img src="/Bilder/gpws%20terr.webp" alt="GPWS Terrain Display">
 
 GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS, glideslope deviation, config) and **look-ahead terrain alerts** (EGPWS terrain database, estimated time-to-impact).
 

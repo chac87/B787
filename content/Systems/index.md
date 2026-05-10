@@ -33,7 +33,7 @@ title: Systems
 
 ## [[Fire Protection System]]
 
-## [[Warning Systems]]
+## [[Systems/Warning Systems|Warning Systems]]
 
 ## [[Navigation]]
 

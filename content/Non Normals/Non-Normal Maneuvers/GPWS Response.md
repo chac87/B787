@@ -24,6 +24,8 @@ tags: [non-normal, maneuvers]
 > **PF** Do not change Config
 > ###### Callout trend towards terrain **PM**
 > **PF** When clear of terrain: Decrease pitch and accelerate
+>
+> *PLI is helpful in judging maximum pitch attitude during recovery.*
 
 ### GPWS Caution
 - Correct the flight path or the airplane configuration.
