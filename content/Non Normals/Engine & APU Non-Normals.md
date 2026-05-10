@@ -5,7 +5,7 @@ tags: [non-normal, engine]
 
 # Engine & APU Non-Normals
 
-## Engine Failure after v<sub>1</sub>
+## Engine Failure after v1
 
 <div class="eicas-levels">
 <div class="eicas-card eicas-card--white">
@@ -205,4 +205,16 @@ Accomplished the same as a normal missed approach with the following differences
 
 ## On Ground
 
-If an engine failure occurs on the ground, during the takeoff roll, or on final approach — and the crew decides to cope with the failure only after touchdown — consider, after stopping, securing the affected engine by applying the memory items of <a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>Eng Svr Damage/Sep L, R</span></a>.
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title"><span class="nn-bracket">[]</span> FIRE ENG L, R <span class="eicas-card-badge">EICAS WARNING</span></div>
+  <div class="eicas-card-body">No memory items — work the NNC directly.<br>NNC triggered via EICAS. If EICAS does not display (e.g. externally observed fire) → apply QRH checklist.<br><a href="/Non-Normals/Non-Normal-Checklists/FIRE-ENG-L,-R"><span>→ NNC: FIRE ENG L, R</span></a></div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Engine Fail on Ground</div>
+  <div class="eicas-card-body">After stopping: apply memory items of Eng Svr Damage/Sep to secure the engine quickly — then work NNC.<br>Applies when failure on ground, in T/O roll, or on final with decision to cope after touchdown.<br><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a> · <a href="/Non-Normals/Memory-Items">→ Memory Items</a></div>
+</div>
+
+</div>

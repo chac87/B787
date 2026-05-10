@@ -28,7 +28,7 @@ Start the Descent Procedure before the airplane descends below the cruise altitu
 
 </div>
 
-<div class="table-50-50">
+<div class="data-table data-table--split">
 
 | PF | PM |
 |:---|:---|

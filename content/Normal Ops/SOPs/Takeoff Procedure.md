@@ -55,7 +55,7 @@ role: Both
 
 </div>
 
-<div class="table-50-50">
+<div class="data-table data-table--split">
 
 | PF | PM |
 |:---|:---|

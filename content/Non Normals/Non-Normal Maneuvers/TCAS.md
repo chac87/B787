@@ -25,6 +25,24 @@ tags: [non-normal, maneuvers]
 
 <div class="cl-note">FD stays ON during the maneuver — strictly follow RA command</div>
 
+<table class="data-table">
+  <thead>
+    <tr><th></th><th>Target</th><th>Time</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="data-table__row-label data-table__row-label--strong">RA</td>
+      <td>1.500 ft/min</td>
+      <td>5 sec</td>
+    </tr>
+    <tr>
+      <td class="data-table__row-label data-table__row-label--strong">Increase RA</td>
+      <td>2.500 ft/min</td>
+      <td>2,5 sec</td>
+    </tr>
+  </tbody>
+</table>
+
 > [!info] RA Command satisfied when BOTH…
 > - **RA Region** reached AND
 > - **V/S out of RED** (V/S pointer turns white)

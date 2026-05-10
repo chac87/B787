@@ -21,7 +21,7 @@ Start the Before Start Procedure after papers are on board.
 
 ### Performance Data Coordination
 
-<table class="table-50-50">
+<table class="data-table data-table--split">
 <thead><tr><th>CP</th><th>F/O</th></tr></thead>
 <tbody>
 <tr><td>Announce ZFW from L/S</td><td></td></tr>

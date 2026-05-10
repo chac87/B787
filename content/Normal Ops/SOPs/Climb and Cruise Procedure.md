@@ -10,7 +10,7 @@ role: Both
 > [!info] Note
 > If CLB or CLB1 is necessary for obstacle or ATC requirements manually select CLB2 after meeting the restriction whenever climb performance permits.
 
-<div class="table-50-50">
+<div class="data-table data-table--split">
 
 | PF | PM |
 |:---|:---|

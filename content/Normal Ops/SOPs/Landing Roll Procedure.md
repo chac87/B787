@@ -7,7 +7,7 @@ role: Both
 
 # Landing Roll Procedure
 
-<div class="table-50-50">
+<div class="data-table data-table--split">
 
 | PF | PM |
 |:---|:---|
@@ -20,7 +20,7 @@ role: Both
 > [!warning] Warning
 > After the reverse thrust levers are raised, a full stop landing must be made. If an engine remains in reverse, safe flight is not possible.
 
-<div class="table-50-50">
+<div class="data-table data-table--split">
 <table><tbody>
 <tr><td>Without delay, raise the reverse thrust levers to the interlocks and hold light pressure until the interlocks release.<br>Apply reverse thrust as needed.</td><td>Verify that the forward thrust levers are closed.<br>When both REV indications are green, <span class="sop-tag-items">PM: "REVERSERS NORMAL"</span><br>If there is no REV indication(s) or the indication(s) stays amber, <span class="sop-tag-items">PM: "NO REVERSER LEFT ENGINE"</span> or <span class="sop-tag-items">PM: "NO REVERSER RIGHT ENGINE"</span> or <span class="sop-tag-items">PM: "NO REVERSERS"</span></td></tr>
 <tr><td>By 60 KIAS, start movement of the reverse thrust levers to reach the reverse idle detent before taxi speed.</td><td><span class="sop-tag-items">PM: "60 KNOTS"</span></td></tr>

@@ -5,7 +5,7 @@
 > [!info]- Display Color Philosophy
 > The use of colors allows pilots to instantly recognize the operational status of the airplane, enabling a priority of flight path control. Boeing utilizes colors in flight deck design that are consistent with industry standards and requirements.
 >
-> <table class="display-colors-table">
+> <table class="data-table">
 > <thead><tr><th>Color</th><th>Usage</th></tr></thead>
 > <tbody>
 > <tr><td><strong style="color:#e74c3c">Red</strong></td><td>Highest priority safety information. Warning level alerts — require immediate awareness and corrective action. Keep-out zones and do-not-exceed limits.</td></tr>

@@ -1,5 +1,17 @@
 # Project Memory
 
+## Unified Table Pattern
+
+Use `.data-table` as the single visual table system.
+
+- Plain Markdown tables are styled automatically.
+- Raw HTML tables use `class="data-table"`.
+- Use `.data-table--split` for fixed 50/50 two-column layouts.
+- Use `.data-table--matrix` for wide, dense numeric/reference matrices.
+- Allowed matrix helpers: `.data-table__row-label`, `.data-table__row-label--strong`, `.data-table__group`, `.data-table__empty`, `.data-table__section-row`, `.data-table__section-title`.
+- Do not create new retired performance/prototype/50-50 table rules or classes.
+- Procedure steps stay in dot-leader checklist format; tables are only for comparison/reference data.
+
 ## Image Lightbox Pattern
 
 For manually embedded images, use the robust hash-lightbox pattern so click/tap opens the image large. This is more reliable than a plain `<img>`, especially for pages like Circling.

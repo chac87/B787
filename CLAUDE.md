@@ -199,8 +199,7 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 |---|---|
 | Callout styles (padding, title size, colors, dark mode) | `~/.../787/.obsidian/snippets/callouts.css` |
 | Image tweaks | `~/.../787/.obsidian/snippets/image-tweak.css` |
-| Table in callout | `~/.../787/.obsidian/snippets/tabelle-in-callout.css` |
-| Table 50/50 | `~/.../787/.obsidian/snippets/table-50-50.css` |
+| Unified table system (`.data-table`, global Markdown tables, table modifiers) | `~/.../787/.obsidian/snippets/tabelle-in-callout.css` |
 | Global hacks | `~/.../787/.obsidian/snippets/global-hacks.css` |
 | Floating Home Button, Hero Image | `quartz/styles/partials/_floating-home.scss` |
 | Link colors, Fold/Expand icon | `quartz/styles/partials/_global.scss` |
@@ -212,6 +211,18 @@ After **any** of the following actions, verify `book.md` is consistent with all 
 | Auto-generated (never edit manually) | `quartz/styles/partials/_snippets.scss` |
 
 Full snippet path: `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/.obsidian/snippets/`
+
+## Unified Table Pattern
+
+Use one visual table system everywhere: `.data-table`.
+
+- Markdown tables are styled automatically; prefer plain Markdown tables when possible.
+- Raw HTML tables must use `class="data-table"`.
+- Use `.data-table--split` only for PF/PM or CP/F/O two-column comparison layouts that require fixed 50/50 columns.
+- Use `.data-table--matrix` only for wide numeric/reference matrices that need compact cells and horizontal scrolling.
+- Use neutral helper classes only when a raw HTML matrix needs row semantics: `.data-table__row-label`, `.data-table__row-label--strong`, `.data-table__group`, `.data-table__empty`, `.data-table__section-row`, `.data-table__section-title`.
+- Do not reintroduce retired performance/prototype/50-50 table class names or styles.
+- Procedure steps still use the dot-leader checklist format, not tables. Use tables only for real comparison/reference data.
 
 ## Image Lightbox Pattern
 

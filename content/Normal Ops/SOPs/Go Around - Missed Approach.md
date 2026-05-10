@@ -25,7 +25,7 @@ role: Both
 
 <h2 class="h2-no-collapse">Procedure</h2>
 
-<div class="table-50-50">
+<div class="data-table data-table--split">
 
 | PF | PM |
 |:---|:---|
@@ -34,7 +34,7 @@ role: Both
 
 </div>
 
-<div class="table-50-50">
+<div class="data-table data-table--split">
 <table><tbody>
 <tr><td><span class="sop-tag-items">PF: "FLAPS 20"</span> or <span class="sop-tag-items">PF: "FLAPS ___"</span><br>as needed.</td><td>Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span></td></tr>
 <tr><td>Verify the rotation to go-around attitude.</td><td></td></tr>
