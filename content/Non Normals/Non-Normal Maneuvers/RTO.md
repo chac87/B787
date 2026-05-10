@@ -20,7 +20,7 @@ tags: [non-normal, maneuvers]
 > ###### Verify Reverse Thrust applied **CM2**
 > **CM1** Verify Speedbrakes extended
 > ###### "SPEEDBRAKES UP" ("NO SPEEDBRAKES") **CM2**
-> ###### "REVERSERS NORMAL" ("NO REVERSERS L/R ENGINE") **CM2**
+> ###### "REVERSERS NORMAL" ("NO REVERSER L/R ENGINE") **CM2**
 > ###### Callout omitted items **CM2**
 > ---
 >

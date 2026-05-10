@@ -9,7 +9,7 @@ tags: [non-normal, engine]
 
 <div class="eicas-levels">
 <div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">John Cena</div>
+  <div class="eicas-card-title">Engine Fail: JCENA</div>
   <div class="eicas-card-body" style="line-height: 2.1">
     <span><strong style="color: #3257BC">J</strong> — Just fly / Memory Items</span><br>
     <span style="padding-left: 1.8em"><strong style="color: #3257BC">C</strong> — CON Thrust</span><br>
@@ -18,6 +18,20 @@ tags: [non-normal, engine]
     <span style="padding-left: 7.2em"><strong style="color: #3257BC">A</strong> — After Take Off Checklist</span>
   </div>
 </div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Thrust Increase</div>
+  <div class="eicas-card-body"><strong>Criteria:</strong> Airborne AND IAS ≥ 140 kt.<br><strong>&lt; 400 ft:</strong> manual thrust — A/T in HOLD.<br><strong>&gt; 400 ft:</strong> A/T disconnect + manual thrust, or TO/GA switch.</div>
+</div>
+
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Severe Damage</div>
+  <div class="eicas-card-body">Gear up, 400 ft → Memory Items.<br><a href="/Non-Normals/Memory-Items">→ Memory Items</a> · <a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a></div>
+</div>
+</div>
+
+<div class="img-row">
+  <img src="/Bilder/thrust%20asymm%20rudder.webp" alt="Thrust Asymmetry – Rudder">
 </div>
 
 ---
@@ -39,6 +53,43 @@ tags: [non-normal, engine]
 </div>
 
 > [!warning] Airframe vibrations? → **Always** Eng Svr Damage/Sep L, R
+
+---
+
+## Dual Engine Failure
+
+Dual engine failure requires prompt action regardless of altitude or airspeed. Accomplish memory items and establish the appropriate airspeed to attempt an immediate windmill restart while engine RPM is still high.
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">DUAL ENG FAIL/STALL <span class="eicas-card-badge">MEMORY ITEMS</span></div>
+  <div class="eicas-card-body">Select via <strong>Unannunciated Checklists</strong> menu.<br>Memory items → establish restart airspeed → attempt windmill restart as soon as possible.<br><a href="/Non-Normals/Non-Normal-Checklists/Dual-Eng-Fail-Stall"><span>→ NNC: Dual Eng Fail/Stall</span></a> · <a href="/Non-Normals/Memory-Items"><span>→ Memory Items</span></a></div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Restart Window</div>
+  <div class="eicas-card-body">Set approx. <strong>270 kt</strong> as compromise between best glide and windmilling relight speed.<br><strong>RR:</strong> approx. 250 kt.<br>Below FL300, speeds above the cross-start envelope improve restart probability.</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">Fly First</div>
+  <div class="eicas-card-body">Descent? Offset? Turn? Speed?<br>At high altitude, descent may be required to improve windmill-start capability.</div>
+</div>
+
+</div>
+
+- **Best chance:** restart attempt immediately after recognizing the failure — use remaining high RPM.
+- **EICAS:** <span class="c-red">STABILIZER</span> with Master Warning on top is not relevant; <span class="c-amber">ENG FAIL L/R</span> may be on page 2.
+- **PM:** correct identification and checklist initiation is crucial for further actions.
+- **AUTOSTART shown:** do not interrupt restart attempts unless the engine is definitely damaged or not starting.
+- **Hung / stalled start:** stagnant RPM and/or increasing EGT. Do not interrupt a slow start if RPM is increasing and EGT is not near or rapidly approaching the limit.
+
+> [!warning] Fuel control switches
+> Cycling both switches resets both EECs. Further cycling does **not** aid or speed up the start. Cut off fuel only if engine damage is apparent or the engine does not start.
+
+> [!info] Electrical power restored
+> Do not confuse APU generator power with engine generator power at idle RPM — do not advance the thrust lever prematurely.
 
 ---
 
