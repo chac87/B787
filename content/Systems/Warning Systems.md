@@ -120,9 +120,10 @@ GPWS provides **immediate alerts** (based on radio altitude, baro altitude, ADRS
 
 </div>
 
-An immediate windshear alert occurs if windshear conditions are sensed by the GPWS below **1.500 ft** radio altitude.
+Reactive Windshear alert < 1.500 ft RA
+GPWS alert < 2.450 ft RA
 
-## PWS — Predictive Windshear System
+## PWS – Predictive Windshear System
 
 <div style="display:flex;gap:0.75em;margin-bottom:1em;width:80%;margin-left:auto;margin-right:auto">
 <img src="/Bilder/pws1.webp" alt="PWS 1" style="width:50%;object-fit:cover">

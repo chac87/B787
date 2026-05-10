@@ -2,6 +2,69 @@
 
 Non-normal handling follows one priority: **fly the aircraft first**, then analyze and act in a coordinated way.
 
+## TEM Prioritization
+
+<div class="nn-flow">
+
+<div style="margin:0.4rem 0 0.2rem;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#e74c3c;border-left:4px solid #e74c3c;padding-left:0.6em">RECOVER</div>
+
+<div class="nn-flow-step nn-flow-step--red" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Aviate — Flight path under control</div>
+    <div class="nn-flow-body">Upset / Stall / GPWS / Windshear / TCAS Recovery completed</div>
+  </div>
+</div>
+<div class="nn-flow-step nn-flow-step--red" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Aviate — Complete Memory Items</div>
+  </div>
+</div>
+<div class="nn-flow-step nn-flow-step--amber" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Navigate — Emergency Maneuver</div>
+    <div class="nn-flow-body">Driftdown, EO SID …</div>
+  </div>
+</div>
+<div class="nn-flow-step nn-flow-step--white" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Communicate — Declare an Emergency</div>
+    <div class="nn-flow-body">"MAYDAY, Callsign, Nature of emergency, Standby" · XPDR 7700</div>
+  </div>
+</div>
+
+<div style="margin:0.8rem 0 0.2rem;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3257BC;border-left:4px solid #3257BC;padding-left:0.6em">SECURE</div>
+
+<div class="nn-flow-step nn-flow-step--white" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Aviate — Complete Non-Normal Checklists</div>
+  </div>
+</div>
+<div class="nn-flow-step nn-flow-step--white" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Aviate — Complete Normal Checklist</div>
+  </div>
+</div>
+<div class="nn-flow-step nn-flow-step--blue" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Navigate — Decision Making Process</div>
+    <div class="nn-flow-body">Plan the diversion</div>
+  </div>
+</div>
+<div class="nn-flow-step nn-flow-step--white" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Communicate — Inform</div>
+    <div class="nn-flow-body">ATC · Company · Senior (Cabin) · Passengers</div>
+  </div>
+</div>
+<div class="nn-flow-step nn-flow-step--white" style="display:block">
+  <div class="nn-flow-copy">
+    <div class="nn-flow-title">Review</div>
+    <div class="nn-flow-body">Review your actions and consider new options</div>
+  </div>
+</div>
+
+</div>
+
 ## Non-Normal Handling Flow
 
 <div class="nn-flow">

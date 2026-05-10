@@ -7,12 +7,42 @@ tags: [non-normal, engine]
 
 ## Engine Failure after v1
 
+> [!info] Below 400 ft RA
+> No actions except to cancel any warning and raise the landing gear with a positive rate of climb. Maintain speed v<sub>2</sub> to v<sub>2</sub>+15 kt until acceleration height.
+> If time is available PM advises ATC: "MAYDAY, Callsign, engine failure, standby"
+
+<table class="data-table">
+<thead>
+<tr><th>Phase</th><th>Actions</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td rowspan="2"><strong>400 ft</strong></td>
+  <td>Engage roll mode (TRK HLD)</td>
+</tr>
+<tr>
+  <td style="text-align:center"><span class="c-red">Severe Damage, Fire?</span> → Memory Items immediately</td>
+</tr>
+<tr>
+  <td rowspan="2"><strong>Acceleration Height</strong></td>
+  <td>Verify VNAV acceleration<br>Intervene manually if required</td>
+</tr>
+<tr>
+  <td style="text-align:center;font-weight:normal">Retract flaps on schedule</td>
+</tr>
+<tr>
+  <td><strong>Flaps up</strong></td>
+  <td>Verify CON Thrust<br>Select and Execute ENG OUT<br>Complete the NNC<br>Complete the After T/O checklist</td>
+</tr>
+</tbody>
+</table>
+
 <div class="eicas-levels">
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Engine Fail: JCENA</div>
   <div class="eicas-card-body" style="line-height: 2.1">
     <span><strong style="color: #3257BC">J</strong> — Just fly / Memory Items</span><br>
-    <span style="padding-left: 1.8em"><strong style="color: #3257BC">C</strong> — CON Thrust</span><br>
+    <span style="padding-left: 1.8em"><strong style="color: #3257BC">C</strong> — Clean-Up and CON Thrust</span><br>
     <span style="padding-left: 3.6em"><strong style="color: #3257BC">E</strong> — Eng Out on VNAV</span><br>
     <span style="padding-left: 5.4em"><strong style="color: #3257BC">N</strong> — NNC</span><br>
     <span style="padding-left: 7.2em"><strong style="color: #3257BC">A</strong> — After Take Off Checklist</span>
@@ -24,10 +54,6 @@ tags: [non-normal, engine]
   <div class="eicas-card-body"><strong>Criteria:</strong> Airborne AND IAS ≥ 140 kt.<br><strong>&lt; 400 ft:</strong> manual thrust — A/T in HOLD.<br><strong>&gt; 400 ft:</strong> A/T disconnect + manual thrust, or TO/GA switch.</div>
 </div>
 
-<div class="eicas-card eicas-card--red">
-  <div class="eicas-card-title">Severe Damage</div>
-  <div class="eicas-card-body">Gear up, 400 ft → Memory Items.<br><a href="/Non-Normals/Memory-Items">→ Memory Items</a> · <a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a></div>
-</div>
 </div>
 
 <div class="img-row">
@@ -79,17 +105,57 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 
 </div>
 
+**Immediate Actions:**
+
+- **PM:** initiates DUAL ENG FAIL memory items
+- **PF:** promptly initiates adequate flightpath — with AP available: set lower altitude in MCP and select FLCH
+
+<div class="eicas-levels">
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Altitude available · Engine recoverable</div>
+  <div class="eicas-card-body">ex. dual engine stall at high altitude, volcanic ash<br>→ Increase speed above 250 kt — improves windmill restart probability</div>
+</div>
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Low altitude OR engine unrecoverable</div>
+  <div class="eicas-card-body">ex. fuel starvation, birdstrike on both engines<br>→ Decrease speed to top of amber band — maximizes glide</div>
+</div>
+</div>
+
+**ATC:** MAYDAY · Callsign · DUAL ENG FAIL · UNABLE TO MAINTAIN ALTITUDE — request initial vector towards nearest suitable airport.
+
+> [!info] When flightpath is under control
+> Complete the DUAL ENG FAIL checklist: **Unannunciated → ENG → DUAL ENG FAIL/STALL**
+
 - **Best chance:** restart attempt immediately after recognizing the failure — use remaining high RPM.
+- **Restart probability:** speeds above the cross-start envelope (250 kt) and altitudes below FL300 improve restart probability. Drift-down time can be used to assess landing/ditching options.
+- **Cabin:** all CACs are load shed → slow depressurisation. Monitor cabin altitude and don oxygen masks if necessary at high altitude.
 - **EICAS:** <span class="c-red">STABILIZER</span> with Master Warning on top is not relevant; <span class="c-amber">ENG FAIL L/R</span> may be on page 2.
 - **PM:** correct identification and checklist initiation is crucial for further actions.
 - **AUTOSTART shown:** do not interrupt restart attempts unless the engine is definitely damaged or not starting.
 - **Hung / stalled start:** stagnant RPM and/or increasing EGT. Do not interrupt a slow start if RPM is increasing and EGT is not near or rapidly approaching the limit.
+- **Remaining NNC:** complete including Fuel Jettison to decrease weight as required. Advise the cabin (NITS) to prepare for a possible ditching or emergency landing.
 
 > [!warning] Fuel control switches
 > Cycling both switches resets both EECs. Further cycling does **not** aid or speed up the start. Cut off fuel only if engine damage is apparent or the engine does not start.
 
 > [!info] Electrical power restored
 > Do not confuse APU generator power with engine generator power at idle RPM — do not advance the thrust lever prematurely.
+
+**If one engine relights:** Transition to single engine driftdown.
+- Select ENG OUT CRZ
+- Reset MCP altitude
+- Execute — verify VNAV automatic driftdown
+
+**If both engines relight (3A):**
+- APU shutdown
+- Autothrottle re-engage
+- All engine cruise on VNAV CRZ page
+
+> [!info] APU auto start
+> In flight, the APU automatically starts if **three or more engine generators go offline**. Once the auto-start condition is active, the APU can only be shut down by pulling the APU fire switch. After the condition clears, shut down normally: selector → ON, then OFF.
+
+> [!info] RAT automatic deployment
+> The RAT deploys automatically in flight if any of the following occur: both engines have failed · all three hydraulic system pressures are low · loss of all electrical power to captain's and first officer's flight instruments · loss of all four EMPs and a flight control fault occurs on approach · loss of all four EMPs and an engine fails on takeoff or landing.
 
 ---
 
