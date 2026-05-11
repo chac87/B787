@@ -10,10 +10,9 @@ tags: [non-normal, maneuvers]
 ## Setup
 
 - **Cabin pressure loss:** Don oxygen masks and establish crew communications at the first indication. Verify cabin pressure is uncontrollable before initiating descent.
+- Communication under oxygen masks: **PF: ACP → FLT**
 - **Structural damage suspected:** Limit airspeed to current speed or less. Avoid high maneuvering loads.
-- **PM:** Check lowest safe altitude, notify ATC, obtain QNH altimeter setting.
 - **Both pilots:** Verify all memory items are accomplished — call out any items not completed.
-- **PM:** Call out **2.000 ft** and **1.000 ft** above the level-off altitude.
 - Perform the maneuver deliberately and methodically. Do not be distracted from flying the airplane.
 - If icing conditions are entered: use anti-ice and thrust as required.
 - Rapid descents are normally made with **landing gear up**.
@@ -26,14 +25,30 @@ If severe turbulence is encountered or expected: reduce to turbulent air penetra
 
 <img src="/Bilder/rapid%20descent.webp" alt="Rapid Descent">
 
-> [!proc]- Autopilot — FLCH (Recommended)
-> FLCH provides airspeed and altitude protection with reduced crew workload. V/S or FPA mode is not recommended.
+- **C Pattern — twice:** first pass rough. Second pass: fine-tune each parameter
+
+
+
+> [!proc]- Autoflight — C-Pattern
+> 1. **MCP:** Set lower safe altitude
+> 2. **HDG/TRK SEL** — if offset or turn required
+> 3. Select **FLCH**
+> 4. Set speed as required
+> 5. Extend speedbrakes
+> 6. Close thrust levers — A/T stays connected
 >
-> Turn if required: **HDG/TRK SEL**. Set lower altitude → select **FLCH** → close thrust levers → extend speedbrakes. A/T stays connected.
+> ---
 >
-> IAS/MACH transitions to IAS at ~**310 KIAS** — reset to v<sub>MO</sub> manually if needed. Short-term v<sub>MO</sub>/M<sub>MO</sub> exceedances are acceptable — AP corrects automatically. Do not disengage unless clearly unacceptable. Document any exceedance in the logbook.
->
-> **Before level-off:** Set command speed to LRC or ~**300 kt**. Retract speedbrakes slowly near v<sub>MO</sub>/M<sub>MO</sub> to avoid momentary overspeed.
+> - FLCH provides airspeed and altitude protection with reduced crew workload. V/S or FPA not recommended.
+> - IAS/MACH transitions to IAS at ~**310 KIAS** — reset to v<sub>MO</sub> manually if needed.
+> - Short-term v<sub>MO</sub>/M<sub>MO</sub> exceedances acceptable — AP corrects automatically. Do not disengage unless clearly unacceptable. Document in logbook.
+
+> [!proc]- PM Sequence
+> 1. PA *"Emergency descent, Emergency descent"*
+> 2. Check lowest safe altitude
+> 3. Notify ATC · obtain QNH altimeter setting
+> 4. *(optional)* Seat Belt Signs **ON** · Exterior Lights **ON** · Squawk **7700**
+> 5. Call out **2.000 ft** and **1.000 ft** above level-off altitude
 
 > [!proc]- Manual Entry and Level Off
 > Disconnect autothrottle and retard thrust levers to idle. Smoothly extend speedbrakes. Disengage autopilot and smoothly lower the nose to initial descent attitude (approximately **10° nose down**).
@@ -44,6 +59,8 @@ If severe turbulence is encountered or expected: reduce to turbulent air penetra
 >
 > **Approaching level-off:** Smoothly adjust pitch to reduce rate of descent. Return speedbrake lever to the **down detent** when approaching the desired level-off altitude. After reaching level flight: add thrust to maintain LRC or 300 kt.
 
+> [!info] Level-off sequence
+> First reduce speed (set command speed to target), **then** retract speedbrakes — retracting too early risks momentary overspeed.
 ## Landing Gear Extended Descent
 
 Normally performed with gear up. However, if structural integrity is in doubt and airspeed must be limited, extending the landing gear may provide a more satisfactory rate of descent.

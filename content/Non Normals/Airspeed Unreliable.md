@@ -163,7 +163,9 @@ When the AIR DATA/ATT source selector is set to ALTN — or when the system auto
 
 **GPS ALT** — Reliable backup altitude provided automatically from GPS satellite data.
 
-**ISFD** — Independent source of attitude, airspeed, and altitude. Air data comes exclusively from the center pitot and static air data modules; attitude information from internal inertial sensors.
+**ISFD** — Independent source of attitude, airspeed, and altitude. Air data comes exclusively from the center pitot and static air data modules; attitude information from internal inertial sensors. **Not for troubleshooting** — shares Center Pitot and Center Static with the main system.
+
+**Additional cross-references (always reliable):** Ground speed (FMC / ATC radar) · Radio altitude · Pitch attitude and thrust setting
 
 > [!info]- AOA Speed Details
 > Simplified control laws are active when AOA SPD is displayed. Because accuracy is limited at high airspeeds, both max speed and OVERSPEED alert thresholds are reduced.

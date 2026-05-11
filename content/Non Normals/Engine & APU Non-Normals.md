@@ -7,32 +7,38 @@ tags: [non-normal, engine]
 
 ## Engine Failure after v1
 
+**Rotation:**
+- Slow rotation at **1.5°/sec** — avoid rapid pitch changes with asymmetric thrust
+- **1 eng att** pitch — very important for initial climb; applicable for 2nd segment (after gear up)
+- Airborne detected: Autobrake RTO → **OFF** (audible "klack")
+
 > [!info] Below 400 ft RA
 > No actions except to cancel any warning and raise the landing gear with a positive rate of climb. Maintain speed v<sub>2</sub> to v<sub>2</sub>+15 kt until acceleration height.
 > If time is available PM advises ATC: "MAYDAY, Callsign, engine failure, standby"
 
 <table class="data-table">
 <thead>
-<tr><th>Phase</th><th>Actions</th></tr>
+<tr><th>Phase</th><th style="text-align:left">Actions</th></tr>
 </thead>
 <tbody>
 <tr>
-  <td rowspan="2"><strong>400 ft</strong></td>
-  <td>Engage roll mode (TRK HLD)</td>
+  <td><strong>&lt; 400 ft</strong></td>
+  <td>AP available > <strong>200 ft</strong> AGL<br>PF: <em>"Set RWY TRK and push"</em> — Engage roll mode (TRK HLD)<br>if needed: Max Power (Target V/S ~400–500 ft/min (gross gradient 2.4% × 180 kt GS ≈ 432 ft/min))</td>
 </tr>
 <tr>
-  <td style="text-align:center"><span class="c-red">Severe Damage, Fire?</span> → Memory Items immediately</td>
+  <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))"><strong>> 400 ft</strong></td>
+  <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray)); text-align:center"><span class="c-red">Severe Damage, Fire?</span> → Memory Items immediately</td>
 </tr>
 <tr>
-  <td rowspan="2"><strong>Acceleration Height</strong></td>
-  <td>Verify VNAV acceleration<br>Intervene manually if required</td>
+  <td rowspan="2" style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))"><strong>Acceleration Height</strong></td>
+  <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))">Verify VNAV acceleration<br>Intervene manually if required</td>
 </tr>
 <tr>
-  <td style="text-align:center;font-weight:normal">Retract flaps on schedule</td>
+  <td style="text-align:center; font-weight:normal; color:inherit">Retract flaps on schedule</td>
 </tr>
 <tr>
-  <td><strong>Flaps up</strong></td>
-  <td>Verify CON Thrust<br>Select and Execute ENG OUT<br>Complete the NNC<br>Complete the After T/O checklist</td>
+  <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))"><strong>Flaps up</strong></td>
+  <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))">Verify CON Thrust<br>Select and Execute ENG OUT<br>Complete the NNC<br>Complete the After T/O checklist<br><em>After cleanup: FLCH recommended</em></td>
 </tr>
 </tbody>
 </table>
@@ -52,6 +58,16 @@ tags: [non-normal, engine]
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Thrust Increase</div>
   <div class="eicas-card-body"><strong>Criteria:</strong> Airborne AND IAS ≥ 140 kt.<br><strong>&lt; 400 ft:</strong> manual thrust — A/T in HOLD.<br><strong>&gt; 400 ft:</strong> A/T disconnect + manual thrust, or TO/GA switch.</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">TAP — Thrust Asymmetry Protection</div>
+  <div class="eicas-card-body">Speed below v<sub>2</sub>: automatically reduces thrust on the remaining operating engine. Thrust levers do not move.</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">TAMS — Thrust Asymmetry Minimum Speed</div>
+  <div class="eicas-card-body">Situational awareness of minimum control speed required for directional control during large thrust asymmetry. During T/O or G/A: always ≥ 10 kt above v<sub>MCA</sub>. Shown as red-striped band at bottom of the PFD speed tape.</div>
 </div>
 
 </div>
@@ -107,8 +123,11 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 
 **Immediate Actions:**
 
-- **PM:** initiates DUAL ENG FAIL memory items
-- **PF:** promptly initiates adequate flightpath — with AP available: set lower altitude in MCP and select FLCH
+- **CM1 = PF**
+- **CM1:** "I have control" "Dual Engine Fail - Memory Items". Promptly initiate adequate flightpath (AP available): set lower altitude in MCP and select FLCH.
+- **PM:** Apply Memory Items 
+- **When flightpath is under control:** PF: "DUAL ENG FAIL checklist"
+- **PM:** Unannunciated → ENG → DUAL ENG FAIL/STALL
 
 <div class="eicas-levels">
 <div class="eicas-card eicas-card--amber">
@@ -123,14 +142,12 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 
 **ATC:** MAYDAY · Callsign · DUAL ENG FAIL · UNABLE TO MAINTAIN ALTITUDE — request initial vector towards nearest suitable airport.
 
-> [!info] When flightpath is under control
-> Complete the DUAL ENG FAIL checklist: **Unannunciated → ENG → DUAL ENG FAIL/STALL**
-
 - **Best chance:** restart attempt immediately after recognizing the failure — use remaining high RPM.
 - **Restart probability:** speeds above the cross-start envelope (250 kt) and altitudes below FL300 improve restart probability. Drift-down time can be used to assess landing/ditching options.
 - **Cabin:** all CACs are load shed → slow depressurisation. Monitor cabin altitude and don oxygen masks if necessary at high altitude.
 - **EICAS:** <span class="c-red">STABILIZER</span> with Master Warning on top is not relevant; <span class="c-amber">ENG FAIL L/R</span> may be on page 2.
 - **PM:** correct identification and checklist initiation is crucial for further actions.
+- **Engine start confirmed:** <span class="c-green">RUNNING</span> in green on EICAS → engine start successful
 - **AUTOSTART shown:** do not interrupt restart attempts unless the engine is definitely damaged or not starting.
 - **Hung / stalled start:** stagnant RPM and/or increasing EGT. Do not interrupt a slow start if RPM is increasing and EGT is not near or rapidly approaching the limit.
 - **Remaining NNC:** complete including Fuel Jettison to decrease weight as required. Advise the cabin (NITS) to prepare for a possible ditching or emergency landing.
