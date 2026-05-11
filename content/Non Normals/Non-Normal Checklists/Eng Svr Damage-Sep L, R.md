@@ -3,7 +3,7 @@ title: Eng Svr Damage/Sep L, R
 tags: [non-normal, engine]
 ---
 
-# Eng Svr Damage-Sep L, R
+# Eng Svr Damage/Sep L, R
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

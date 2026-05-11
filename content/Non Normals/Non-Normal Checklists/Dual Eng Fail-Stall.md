@@ -3,7 +3,7 @@ title: "Dual Eng Fail-Stall"
 tags: [non-normal, engine]
 ---
 
-# Dual Eng Fail-Stall
+# Dual Eng Fail/Stall
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 

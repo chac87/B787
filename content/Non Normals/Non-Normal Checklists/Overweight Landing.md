@@ -39,6 +39,39 @@ tags: [non-normal]
 > - Plan for go-around or manual landing if autoland performance unsatisfactory
 > - Auto go-arounds can be initiated until just prior to touchdown, even if airplane touches down after initiation
 
+<div class="flow">
+
+  <div class="flow-node fn-start">Overweight Landing – Flap Selection</div>
+  <div class="flow-vline"></div>
+
+  <div class="flow-col">
+    <div class="flow-row">
+      <div class="flow-node fn-q">One engine inoperative or at reduced thrust?</div>
+      <span class="flow-arrow">──YES──▶</span>
+      <div class="flow-node fn-result">Flaps 20 · v<sub>REF</sub> 20<br>G/A: Flaps 5</div>
+    </div>
+    <div class="flow-vline"></div>
+    <span class="flow-label">NO – Both engines running</span>
+    <div class="flow-vline"></div>
+  </div>
+
+  <div class="flow-col">
+    <div class="flow-row">
+      <div class="flow-node fn-q">LAW > Approach or Landing Climb Limited Weight?</div>
+      <span class="flow-arrow">──YES──▶</span>
+      <div class="flow-node fn-result">Flaps 20 · v<sub>REF</sub> 20<br>G/A: Flaps 5</div>
+    </div>
+    <div class="flow-vline"></div>
+    <span class="flow-label">NO – LAW ≤ Limited Weight</span>
+    <div class="flow-vline"></div>
+  </div>
+
+  <div class="flow-node fn-result">Flaps 25 · v<sub>REF</sub> 25<br>G/A: Flaps 20</div>
+
+</div>
+
+<div class="nnc-note"><strong>LAPA:</strong> If LAW exceeds the G/A Climb Gradient Limited Weight — check EOSID or any safe visual flight path.</div>
+
 ## NNC: Overweight Landing
 
 <div class="nnc-condition">Condition: A landing at greater than maximum landing weight is needed.</div>

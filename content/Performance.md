@@ -123,3 +123,53 @@ title: Performance
 
 - 1.3g margin is a safety threshold ensuring the plane can maneuver or withstand turbulence up to 1.3 times the force of gravity before experiencing buffeting or stalling.
 - 1.3g is equivalent to a 40-degree bank turn.
+
+## LAPA
+
+### Go Around Gradients
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">Minimum</th>
+      <th colspan="3">Configuration</th>
+    </tr>
+    <tr>
+      <th>Gear</th>
+      <th>Flaps</th>
+      <th>Thrust</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>APPR CLB</strong></td>
+      <td>2,1%</td>
+      <td>up</td>
+      <td>Approach Position</td>
+      <td>1 Eng inop, G/A Thrust on remaining engines</td>
+    </tr>
+    <tr>
+      <td><strong>APPR CLB Low VIS</strong></td>
+      <td>2,5%</td>
+      <td>up</td>
+      <td>Approach Position</td>
+      <td>1 Eng inop, G/A Thrust on remaining engines</td>
+    </tr>
+    <tr>
+      <td><strong>LDG CLB</strong></td>
+      <td>3,2%</td>
+      <td>down</td>
+      <td>Landing Position</td>
+      <td>G/A Thrust on all engines</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="nnc-note">The approach climb gradient decreases slightly towards acceleration altitude. The <strong>G/A CLB Grad (avg.)</strong> used in LAPA reflects this average over the full climb profile rather than the initial peak gradient.</div>
+
+### Wind-Input
+
+- **Headwind:** Enter only part of HWC to cover changes
+- **Tailwind:** Enter 100 % of TWC (consider trends)
+- **v<sub>REF</sub> Increment:** ½ steady HWC + full gust factor (min. v<sub>REF</sub> +5 kt, max. v<sub>REF</sub> +15 kt)
