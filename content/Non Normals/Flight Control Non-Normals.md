@@ -18,7 +18,7 @@ tags: [non-normal, flight-controls]
 
 Normal operation — flaps and slats driven together via the center hydraulic system.
 
-<img src="/Bilder/flaps%20primary.webp" alt="Primary Flap Mode">
+<img src="/Bilder/flaps%20primary.webp" alt="Primary Flap Mode" style="width: 30%">
 
 ### Secondary Mode
 
@@ -28,7 +28,7 @@ Automatic switchover when:
 - Disagree condition or uncommanded motion
 - Primary control failed or unable to reach target position
 
-<img src="/Bilder/flaps%20secondary.webp" alt="Secondary Flap Mode">
+<img src="/Bilder/flaps%20secondary.webp" alt="Secondary Flap Mode" style="width: 30%">
 
 EMCU now drives flaps **or** slats independently. Flap lever remains operative.
 
@@ -43,7 +43,7 @@ EMCU now drives flaps **or** slats independently. Flap lever remains operative.
 
 Activated when flap/slat electronics have completely failed.
 
-<img src="/Bilder/flaps%20alternate.webp" alt="Alternate Flap Mode">
+<img src="/Bilder/flaps%20alternate.webp" alt="Alternate Flap Mode" style="width: 30%">
 
 - **ALTN FLAPS ARM** — disables primary and secondary, flap lever inoperative
 - All hydraulics bypassed — electric motors only

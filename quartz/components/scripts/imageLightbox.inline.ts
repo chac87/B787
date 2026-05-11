@@ -43,7 +43,6 @@ function setupPage() {
   }
 
   // ── Image lightbox ─────────────────────────────────────────────────────────
-  const articleEl   = document.querySelector("article")
   const overlay     = document.getElementById("lightbox-overlay")!
   const lightboxImg = document.getElementById("lightbox-img") as HTMLImageElement
 
@@ -56,47 +55,12 @@ function setupPage() {
     document.body.classList.add("lightbox-open")
   }
 
-  // Direkter Click + Cursor pro Image.
-  // Safari iOS prüft ob das getippte Element selbst einen Handler hat — delegierte
-  // click-Handler auf article werden nicht berücksichtigt.
   document.querySelectorAll<HTMLImageElement>("article img:not([alt*='clean'])").forEach((img) => {
-    if (!("ontouchstart" in window)) img.style.cursor = "zoom-in"
+    img.style.cursor = "zoom-in"
     const onClick = () => open(img)
     img.addEventListener("click", onClick)
     window.addCleanup(() => img.removeEventListener("click", onClick))
   })
-
-  if (articleEl) {
-    // ── Touch-Delegation auf document (Backup: Webapp-Modus / click-loses Szenario) ──
-    let tStartX = 0
-    let tStartY = 0
-    let tapTarget: HTMLImageElement | null = null
-
-    const onTouchStart = (e: TouchEvent) => {
-      const img = (e.target as Element).closest<HTMLImageElement>("img:not([alt*='clean'])")
-      tapTarget = img ?? null
-      if (img) {
-        tStartX = e.touches[0].clientX
-        tStartY = e.touches[0].clientY
-      }
-    }
-
-    const onTouchEnd = (e: TouchEvent) => {
-      if (!tapTarget) return
-      const dx = Math.abs(e.changedTouches[0].clientX - tStartX)
-      const dy = Math.abs(e.changedTouches[0].clientY - tStartY)
-      if (dx < 15 && dy < 15) open(tapTarget)
-      tapTarget = null
-    }
-
-    // document-Ebene: zuverlässig in allen iOS-Modi (Safari, Chrome, Standalone-Webapp)
-    document.addEventListener("touchstart", onTouchStart, { passive: true })
-    document.addEventListener("touchend",   onTouchEnd,   { passive: true })
-    window.addCleanup(() => {
-      document.removeEventListener("touchstart", onTouchStart)
-      document.removeEventListener("touchend",   onTouchEnd)
-    })
-  }
 
   // ── Non-Normal Checklist Filter ────────────────────────────────────────────
   const filterBar = document.querySelector<HTMLElement>(".nn-filter-bar")
