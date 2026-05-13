@@ -15,9 +15,9 @@ An upset condition is any time the airplane is diverting from the intended state
 - Airspeed inappropriate for the conditions
 
 > [!warning] Stall Recognition
-> A stall can exist at **any attitude**. Recognize by:<br>Stick shaker<br>Heavy buffet<br>Lack of pitch authority<br>Lack of roll control<br>Inability to stop a descent
+> A stall can exist at **any attitude**. Recognize by:<br>Stick shaker, Heavy buffet, Lack of pitch authority, Lack of roll control, Inability to stop a descent
 >
-> **If stalled:** Apply and maintain nose down elevator until stick shaker stops — before starting upset recovery.
+> **If stalled:** Apply and maintain nose down elevator until stick shaker stops – before starting upset recovery.
 
 ---
 
@@ -35,10 +35,6 @@ An upset condition is any time the airplane is diverting from the intended state
 > ---
 >
 > **PM**<br>Call out attitude, airspeed and altitude throughout the recovery<br>Verify all needed actions have been done<br>Call out any continued deviation
-
-> [!warning] \* Excessive use of pitch trim or rudder can aggravate an upset, result in loss of control, or result in high structural loads.
-
----
 
 > [!proc]- Upset Recovery — Nose Low
 > **PF**

@@ -60,15 +60,8 @@ Activated when flap/slat electronics have completely failed.
 
 <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a> → drive mechanism failed — cannot be moved in **any** mode. Checklist prepares for partial flap/slat landing. See landing techniques in Device Malfunctions below.
 
-## Secondary and Direct Modes — Handling
 
-No automatic envelope protection or load alleviation. No automatic pitch compensation for configuration changes (flaps, gear, thrust).
-
-- **Pitch sensitivity** — highest with flaps up at higher speeds. Small and smooth control column inputs are sufficient.
-- **Pitch trim** — trim switches control the stabilizer directly. Use to maintain acceptable column forces and maneuvering capability.
-- With **flaps extended**: typical pitch sensitivity for approach and landing.
-
-## Device Malfunctions
+## Slat/Flap Malfunctions
 
 ### Flap Lever Inoperative
 
@@ -167,8 +160,21 @@ May result from dirt, component failure, worn parts, improper lubrication, or fo
 
 ## Inoperative Stabilizer
 
-**EICAS:** <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER" style="color:#f39c12 !important"><strong>STABILIZER</strong></a>
+**EICAS:** <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER" style="color:#e74c3c !important"><strong>STABILIZER</strong></a> (warning) · <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-L2" style="color:#f39c12 !important"><strong>STABILIZER L2</strong></a> / <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-R2" style="color:#f39c12 !important"><strong>STABILIZER R2</strong></a> (advisory, one channel) · <span style="color:#f39c12"><strong>STABILIZER CUTOUT</strong></span> (advisory, both cutout)
 
-Unlike conventional aircraft, normal pitch trim remains available in normal flight control mode — however elevator authority is limited. The NNC specifies a maximum in-flight speed, adjusted approach speed, and landing configuration to ensure adequate elevator control.
+Two independent channels powered by the L2 and R2 AC buses. Commands from primary or alternate pitch trim switches move the stabilizer via an electric control unit.
+
+**Automatic shutdown** — if uncommanded motion is detected, the affected channel shuts down automatically:
+- One channel failed → <span style="color:#f39c12">**STABILIZER L2**</span> or <span style="color:#f39c12">**STABILIZER R2**</span> advisory; stabilizer remains operative on the remaining channel
+- Both channels failed in normal mode → <span style="color:#e74c3c">**STABILIZER**</span> warning; also shown if automatic shutdown fails to stop the motion
+- In secondary mode: <span style="color:#e74c3c">**STABILIZER**</span> warning is **inhibited**
+
+**Cutout switches** (aisle stand, L2 / R2) — both in CUTOUT:
+- Disables stabilizer → <span style="color:#f39c12">**STABILIZER CUTOUT**</span> advisory displayed
+- <span style="color:#e74c3c">**STABILIZER**</span> warning suppressed
+
+> [!info] If both channels already auto-shut down: placing cutout switches in CUTOUT will **not** clear the <span style="color:#e74c3c">**STABILIZER**</span> warning and will **not** trigger the <span style="color:#f39c12">**STABILIZER CUTOUT**</span> advisory.
+
+**Pitch trim after cutout** — in normal mode, pitch trim remains available through the elevators. Trim inputs change the trim reference speed; the elevators adjust pitch but the stabilizer does not move.
 
 **Uncommanded trim motion:** Hold control column firmly. If motion continues, displace column in the **opposite direction** to interrupt stabilizer trim commands.

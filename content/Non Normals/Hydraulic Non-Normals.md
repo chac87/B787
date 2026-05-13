@@ -90,17 +90,24 @@ Loss of any two hydraulic systems (L+C, L+R, or C+R) has two key consequences:
 
 ## Total Hydraulic Loss
 
-Upon loss of **all three systems** (L + R + C), the following remain available:
+<div class="eicas-levels">
 
-| Function                    | Remaining Capability                                                      |
-| :-------------------------- | :------------------------------------------------------------------------ |
-| **Primary flight controls** | Limited – elevator, aileron, rudder via RAT pressure (Center system only) |
-| **Spoilers**                | 2 spoiler pairs (RAT/electrically powered)                                |
-| **Flaps / Slats**           | Alternate electric drive (Motor Operated Valves)                          |
-| **Stabilizer**              | Electric Stabilizer Trim (independent of hydraulics)                      |
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">All 3 Systems Failed · RAT Pressurizes Center <span class="eicas-card-badge">3.000 psi · Emergency Power</span></div>
+  <div class="eicas-card-body">Elevator · aileron · rudder via Center (RAT) · 2 spoiler pairs (RAT/electric) · Alternate flaps/slats (electric MOV) · Stabilizer trim (electric)</div>
+</div>
 
-> [!warning] Total Hydraulic Loss
-> RAT provides 3.000 psi to the Center system and emergency electrical power. Full controllability is severely limited – Alternate Flaps/Slats and Electric Stabilizer Trim are the primary remaining configuration tools.
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">All Pressures Low · RAT Cannot Supply <span class="eicas-card-badge">Electric Only</span></div>
+  <div class="eicas-card-body"><strong>Pitch</strong> — stabilizer (electrically actuated) via primary or alternate pitch trim switches · <strong>Roll</strong> — 2 electric spoiler pairs via control wheel</div>
+</div>
+
+</div>
+
+> [!warning] Additional Loss of Flight Control Signaling
+> Direct wiring from flight deck to stabilizer and **one** electric spoiler pair remains active.
+> - **Roll**: control wheel (unchanged)
+> - **Pitch**: alternate pitch trim switches **only** — primary pitch trim switches unavailable
 
 ## RAT Automatic Deployment
 

@@ -19,9 +19,8 @@ tags: [non-normal, backcover]
 <div class="nnc-item"><span class="nnc-num">3</span><strong>OUTFLOW VALVE MANUAL switches (both)</strong><span class="cl-dots"></span><strong>Move to OPEN</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="nnc-sub">Move to OPEN until the outflow valve indications show at the 12 o'clock position to depressurize the airplane.</div>
 <div class="nnc-item"><span class="nnc-num">4</span><strong>FUEL CONTROL switches (both)</strong><span class="cl-dots"></span><strong>CUTOFF</strong><span class="mi-role">CP</span></div>
-<div class="nnc-text"><span class="nnc-num">5</span>Advise the cabin to evacuate.<span class="mi-role">CP</span></div>
-<div class="nnc-note"><strong>Note:</strong> 2x "Passenger Evacuation"</div>
-<div class="nnc-text"><span class="nnc-num">6</span>Advise ATC.<span class="mi-role mi-role--pm">F/O</span></div>
+<div class="nnc-item"><span class="nnc-num">5</span><strong>"Passenger Evacuation" 2x</strong><span class="cl-dots"></span><strong>Announce</strong><span class="mi-role">CP</span></div>
+<div class="nnc-item"><span class="nnc-num">6</span><strong>ATC</strong><span class="cl-dots"></span><strong>Advise</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="nnc-item"><span class="nnc-num">7</span><strong>Engine fire switches (both)</strong><span class="cl-dots"></span><strong>Pull</strong><span class="mi-role mi-role--pm">F/O</span></div>
 <div class="nnc-item"><span class="nnc-num">8</span><strong>APU fire switch</strong><span class="cl-dots"></span><strong>Override and pull</strong><span class="mi-role mi-role--pm">F/O</span></div>
 

@@ -17,7 +17,7 @@ Three distinct EICAS conditions can trigger an airspeed unreliable situation. Ea
     All 3 pitot systems inoperative or invalid → voted airspeed no longer available from ADRS<br>
     AOA SPD displayed <strong>automatically on both PFDs</strong> · Altitude still supplied by ADRS (statics intact)<br>
     Flight controls in Secondary Mode · AFDS not available<br>
-    ISFD airspeed may be unreliable — comes from Center Pitot
+    ISFD airspeed may be unreliable – comes from Center Pitot
   </div>
 </div>
 
@@ -27,14 +27,14 @@ Three distinct EICAS conditions can trigger an airspeed unreliable situation. Ea
     All 3 static systems inoperative or invalid → voted airspeed and altitude no longer available from ADRS<br>
     AOA SPD and GPS ALT displayed <strong>automatically on both PFDs</strong><br>
     Flight controls in Secondary Mode · AFDS not available<br>
-    ISFD airspeed and altitude may be unreliable — comes from Center Pitot and Center Static
+    ISFD airspeed and altitude may be unreliable – comes from Center Pitot and Center Static
   </div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE">[] AIRSPEED UNRELIABLE</a> <span class="eicas-card-badge">ADVISORY</span></div>
   <div class="eicas-card-body">
-    Voted airspeed conflicts with AOA SPD — system cannot determine which source is correct<br>
+    Voted airspeed conflicts with AOA SPD – system cannot determine which source is correct<br>
     <strong>No automatic display of AOA SPD or GPS ALT</strong><br>
     Pilots must identify the reliable indication · Memory Items required<br>
     May be annunciated by EICAS or recognized and called out by the pilots
@@ -44,14 +44,14 @@ Three distinct EICAS conditions can trigger an airspeed unreliable situation. Ea
 </div>
 
 > [!caution] Switching NNCs
-> If **NAV AIRSPEED DATA** or **NAV AIR DATA SYS** appears on EICAS while executing the AIRSPEED UNRELIABLE NNC — stop the current checklist immediately and proceed with the NNC for the newly indicated message.
+> If <a href="/Non-Normals/Non-Normal-Checklists/NAV-AIRSPEED-DATA" style="color:#f39c12 !important"><strong>NAV AIRSPEED DATA</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/NAV-AIR-DATA-SYS" style="color:#f39c12 !important"><strong>NAV AIR DATA SYS</strong></a> appears on EICAS while executing the <a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE" style="color:#f39c12 !important"><strong>AIRSPEED UNRELIABLE NNC</strong></a> – stop the current checklist immediately and proceed with the NNC for the newly indicated message.
 
 > [!info] Comparing Voted Airspeed vs AOA SPD
-> In the AIRSPEED UNRELIABLE scenario, AOA SPD is **not** displayed automatically. To compare both sources simultaneously: one pilot sets their **AIR DATA/ATT selector to ALTN** — that PFD now displays AOA SPD, while the other PFD continues to show voted airspeed from ADRS. Cross-check both against GPS groundspeed, pitch attitude, and ATC radar to identify the reliable indication.
+> In the AIRSPEED UNRELIABLE scenario, AOA SPD is **not** displayed automatically. To compare both sources simultaneously: one pilot sets their **AIR DATA/ATT selector to ALTN** – that PFD now displays AOA SPD, while the other PFD continues to show voted airspeed from ADRS. Cross-check both against GPS groundspeed, pitch attitude, and ATC radar to identify the reliable indication.
 
-## Memory Items — Pitch and Thrust
+## Memory Items – Pitch and Thrust
 
-Applies to the **AIRSPEED UNRELIABLE** scenario. Set immediately — do not wait for NNC execution.
+Applies to the **AIRSPEED UNRELIABLE** scenario. Set immediately – do not wait for NNC execution.
 
 | Configuration | Pitch Attitude | N1 |
 |:---|:---:|:---:|
@@ -60,7 +60,7 @@ Applies to the **AIRSPEED UNRELIABLE** scenario. Set immediately — do not wait
 
 - Flaps extended settings result in a **climb**.
 - Flaps up settings result in a slight climb (light/low) or slight descent (heavy/high altitude).
-- Settings are biased toward higher airspeed — high energy state is preferable.
+- Settings are biased toward higher airspeed – high energy state is preferable.
 - Maintain current flap position until pitch/thrust are set and the airplane is stabilized.
 
 > [!info]- Memory Item Rationale
@@ -69,15 +69,15 @@ Applies to the **AIRSPEED UNRELIABLE** scenario. Set immediately — do not wait
 > - Flaps extended: airspeed remains above stick shaker and below the flap placard limit.
 > - Flaps up: airspeed remains above stick shaker and below overspeed.
 >
-> Goal: maintain the airplane safely within the flight envelope — not to achieve a specific climb profile or level flight. Further flap changes require reference to OM-B 4-1-7 Flight With Unreliable Airspeed.
+> Goal: maintain the airplane safely within the flight envelope – not to achieve a specific climb profile or level flight. Further flap changes require reference to OM-B 4-1-7 Flight With Unreliable Airspeed.
 
 ## Recognition
 
-Airspeed unreliable is **initially unannunciated** — do not wait for an EICAS alert. React promptly as soon as the condition is suspected.
+Airspeed unreliable is **initially unannunciated** – do not wait for an EICAS alert. React promptly as soon as the condition is suspected.
 
 **Threats:** AP, A/T, and F/D are all lost → very high workload. **Risk of LOC-I.** Altitude and/or vertical speed indications may also become unreliable.
 
-Familiarize with the normal pitch attitude and thrust for each phase of flight — note them occasionally during normal operations. Any significant body attitude change without a corresponding airspeed change should prompt immediate suspicion.
+Familiarize with the normal pitch attitude and thrust for each phase of flight – note them occasionally during normal operations. Any significant body attitude change without a corresponding airspeed change should prompt immediate suspicion.
 
 **Immediate action:** Set memory item pitch and thrust for current configuration. When stabilized → AIRSPEED UNRELIABLE NNC. Alert ATC if unable to maintain assigned altitude.
 
@@ -87,25 +87,25 @@ Familiarize with the normal pitch attitude and thrust for each phase of flight �
 |:---|:---|
 | **First to recognize** | Call out: *"Airspeed unreliable"* |
 | **PM → ATC** | *"PAN PAN, [Callsign], unable to maintain altitude and airspeed"* |
-| **PF briefing** | Brief PM to **manually set TO/GA thrust** in the event of a go-around — A/T is unavailable |
+| **PF briefing** | Brief PM to **manually set TO/GA thrust** in the event of a go-around – A/T is unavailable |
 
 - CAT II/III autoland is no longer possible.
 
 > [!info]- Causes and System Behavior
 > Unreliable airspeed can result from a **blocked or frozen pitot/static system** or a **severely damaged/missing radome**.
 >
-> - If only the ram air inlet is blocked: pressure releases through drain holes — airspeed slowly drops to zero.
-> - If both inlet and drain holes are blocked: trapped pressure reacts unpredictably — may increase (thermal expansion), decrease (contraction), or remain constant. This can manifest as increasing IAS in climb, decreasing IAS in descent, or unpredictable IAS in cruise.
+> - If only the ram air inlet is blocked: pressure releases through drain holes – airspeed slowly drops to zero.
+> - If both inlet and drain holes are blocked: trapped pressure reacts unpredictably – may increase (thermal expansion), decrease (contraction), or remain constant. This can manifest as increasing IAS in climb, decreasing IAS in descent, or unpredictable IAS in cruise.
 >
 > An unreliable airspeed may affect the normal pitch control law (which uses indicated airspeed). Air data anomalies cause the FCS to switch to secondary mode. Ground speed from the FMC and ATC radar can serve as a crosscheck.
 
 ## Phase Guidance
 
-For extended flight — once the initial situation is stabilized — use the **QRH Performance Inflight tables** for exact pitch attitudes and thrust settings (TPR) for each phase: climb (max climb thrust), cruise, descent (idle thrust), holding, and approach.
+For extended flight – once the initial situation is stabilized – use the **QRH Performance Inflight tables** for exact pitch attitudes and thrust settings (TPR) for each phase: climb (max climb thrust), cruise, descent (idle thrust), holding, and approach.
 
 → [[Flight With Unreliable Airspeed]]
 
-### Takeoff — at or after v<sub>1</sub>
+### Takeoff – at or after v<sub>1</sub>
 
 - Maintain takeoff thrust
 - Smoothly rotate towards 15° → establish normal takeoff pitch attitude
@@ -116,8 +116,8 @@ For extended flight — once the initial situation is stabilized — use the **Q
 
 ### Descent
 
-- Idle thrust to 10.000 ft — fly body attitude, check rate of descent against OM-B tables
-- At 2.000 ft above target altitude: reduce rate of descent to 1.000 FPM
+- Idle thrust to 10.000 ft – fly body attitude, check rate of descent against OM-B tables
+- At 2.000 ft above target altitude: reduce rate of descent to 1.000 ft/min
 - At level-off: set pitch and thrust for current configuration
 - Allow the airplane to stabilize before changing configuration or altitude
 
@@ -130,14 +130,14 @@ For extended flight — once the initial situation is stabilized — use the **Q
 
 ### Landing
 
-- Plan touchdown **1.000–1.500 ft beyond the threshold**
-- Fly onto the runway — do not float
+- Plan touchdown **1.000 – 1.500 ft beyond the threshold**
+- Fly onto the runway – do not float
 - Autobrake if available; maintain brake pressure until stop is assured
 - Expedite landing roll after touchdown
 
 ### Go-Around / Missed Approach
 
-> [!warning] Do NOT push TO/GA — in any go-around scenario with unreliable airspeed.
+> [!warning] Do NOT push TO/GA – in any go-around scenario with unreliable airspeed.
 
 <div class="eicas-levels">
 
@@ -157,13 +157,13 @@ For extended flight — once the initial situation is stabilized — use the **Q
 
 During an airspeed unreliable event, altitude and vertical speed indications may also become unreliable. Therefore, rely on independent backup systems.
 
-When the AIR DATA/ATT source selector is set to ALTN — or when the system automatically rejects invalid air data — the PFD and HUD provide the following reliable indications:
+When the AIR DATA/ATT source selector is set to ALTN – or when the system automatically rejects invalid air data – the PFD and HUD provide the following reliable indications:
 
-**AOA SPD** — Backup airspeed calculated from Angle of Attack sensors combined with inertial data. Completely independent of the pitot-static system. Subject to variations during configuration changes, maneuvering, and speedbrake use — avoid abrupt control inputs, high maneuvering loads, and in-flight speedbrake use. When active: **max speed reduced to 300 kt / .85 M** (normal: 360 kt / .90 M). OVERSPEED warnings are adjusted accordingly. Simplified control laws active.
+**AOA SPD** – Backup airspeed calculated from Angle of Attack sensors combined with inertial data. Completely independent of the pitot-static system. Subject to variations during configuration changes, maneuvering, and speedbrake use – avoid abrupt control inputs, high maneuvering loads, and in-flight speedbrake use. When active: **max speed reduced to 300 kt / .85 M** (normal: 360 kt / .90 M). OVERSPEED warnings are adjusted accordingly. Simplified control laws active.
 
-**GPS ALT** — Reliable backup altitude provided automatically from GPS satellite data.
+**GPS ALT** – Reliable backup altitude provided automatically from GPS satellite data.
 
-**ISFD** — Independent source of attitude, airspeed, and altitude. Air data comes exclusively from the center pitot and static air data modules; attitude information from internal inertial sensors. **Not for troubleshooting** — shares Center Pitot and Center Static with the main system.
+**ISFD** – Independent source of attitude, airspeed, and altitude. Air data comes exclusively from the center pitot and static air data modules; attitude information from internal inertial sensors. **Not for troubleshooting** – shares Center Pitot and Center Static with the main system.
 
 **Additional cross-references (always reliable):** Ground speed (FMC / ATC radar) · Radio altitude · Pitch attitude and thrust setting
 

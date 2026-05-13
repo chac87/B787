@@ -15,10 +15,10 @@ tags: [non-normal, warnings]
   <button class="reg-btn" data-variant="ABPA">−ABPA to −ABPE</button>
 </div>
 
-<div class="nnc-item"><span class="nnc-num">1</span><strong>Autopilot disconnect switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
-<div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
-<div class="nnc-item"><span class="nnc-num">3</span><strong>F/D switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong></div>
-<div class="nnc-text"><span class="nnc-num">4</span>Set the following gear up pitch attitude and thrust:</div>
+<div class="nnc-item"><span class="nnc-num">1</span><strong>Autopilot disconnect switch</strong><span class="cl-dots"></span><strong>Push</strong><span class="mi-role">PF</span></div>
+<div class="nnc-item"><span class="nnc-num">2</span><strong>A/T ARM switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">PM</span></div>
+<div class="nnc-item"><span class="nnc-num">3</span><strong>F/D switches (both)</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">PM</span></div>
+<div class="nnc-text"><span class="nnc-num">4</span>Set the following gear up pitch attitude and thrust:<span class="mi-role">PF</span></div>
 <div class="nnc-sub-item"><strong>Flaps extended</strong><span class="cl-dots"></span><strong>10° and 85% N1</strong></div>
 <div class="nnc-sub-item"><strong>Flaps up</strong><span class="cl-dots"></span><strong>4° and 70% N1</strong></div>
 

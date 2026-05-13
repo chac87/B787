@@ -26,18 +26,18 @@ tags: [systems, flight-controls, protections]
 
 ## High Lift (Flaps & Slats)
 
-| Protection | Triggered by | Effect |
-|:---|:---|:---|
-| **Flap/Slat Load Relief** | Flaps extended at excessive speed | Auto-retraction · Re-extension when speed decreases |
-| **Slat Autogap** | High AOA + speed < 240 / 225 kts<br>(Normal mode only) | Slats: mid → fully extended · Retract when AOA decreases |
-| **Asymmetry/Skew Protection** | Asymmetric extension / retraction | Drive system deactivated |
+| Protection                    | Triggered by                                     | Effect                                                   |
+| :---------------------------- | :----------------------------------------------- | :------------------------------------------------------- |
+| **Flap/Slat Load Relief**     | Flaps extended at excessive speed                | Auto-retraction · Re-extension when speed decreases      |
+| **Slat Autogap**              | High AOA + speed < 240 kts<br>(Normal mode only) | Slats: mid → fully extended · Retract when AOA decreases |
+| **Asymmetry/Skew Protection** | Asymmetric extension / retraction                | Drive system deactivated                                 |
 
 ## Stall Protection
 
 > [!info] Normal Flight Control Mode only
-> Does not automatically correct — enhances crew awareness and imposes increasing deterrents.
+> Does not automatically correct – enhances crew awareness and imposes increasing deterrents.
 >
-> **Amber band upper limit = Minimum Maneuvering Speed** — provides 1.3g maneuvering margin to stick shaker (or low-speed buffet at high altitude).
+> **Amber band upper limit = Minimum Maneuvering Speed** – provides 1.3g maneuvering margin to stick shaker (or low-speed buffet at high altitude).
 
 | Configuration | Protection |
 |:---|:---|
@@ -48,4 +48,4 @@ tags: [systems, flight-controls, protections]
 **A/T wake-up inhibited:** A/T OFF · pitch mode FLCH or TO/GA · < 400 ft RA after T/O · < 100 ft RA on approach
 
 > [!warning] HOLD Mode Trap
-> During VNAV SPD / FLCH SPD descent, the A/T may engage in **HOLD** mode — servos are inhibited, no stall protection. Only when stick shaker activates does the A/T override HOLD and command **THR** (climb thrust).
+> During VNAV SPD / FLCH SPD descent, the A/T may engage in **HOLD** mode – servos are inhibited, no stall protection. Only when stick shaker activates does the A/T override HOLD and command **THR** (climb thrust).

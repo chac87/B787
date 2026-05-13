@@ -10,7 +10,7 @@ tags: [non-normal, flightcontrols]
 
 <div class="nnc-condition">Condition: One of these occurs:<ul><li>Stabilizer movement without a signal to trim</li><li>The stabilizer is failed</li></ul></div>
 
-<div class="nnc-item"><span class="nnc-num">1</span><strong>STAB cutout switches (both)</strong><span class="cl-dots"></span><strong>CUTOUT</strong></div>
+<div class="nnc-item"><span class="nnc-num">1</span><strong>STAB cutout switches (both)</strong><span class="cl-dots"></span><strong>CUTOUT</strong><span class="mi-role mi-role--pm">PM</span></div>
 <div class="nnc-text"><span class="nnc-num">2</span>Do not exceed the current airspeed.</div>
 
 <div class="nnc-separator"></div>

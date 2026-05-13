@@ -8,9 +8,9 @@ tags: [non-normal]
 > [!warning] Priorität
 > Nicht auf Checklisten-Abschluss warten — **Land ASAP.** Zeit ist kritisch.
 
-Beide Checklisten ("Smoke, Fire or Fumes" und "Smoke or Fumes Removal") sind im **Non-Normal Menu → Unannunciated Checklists** zu finden.
+Beide Checklisten (<a href="/Non-Normals/Non-Normal-Checklists/Smoke,-Fire-or-Fumes">Smoke, Fire or Fumes</a> und <a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Smoke or Fumes Removal</a>) sind im **Non-Normal Menu → Unannunciated Checklists** zu finden.
 
-## Smoke, Fire or Fumes
+## <a href="/Non-Normals/Non-Normal-Checklists/Smoke,-Fire-or-Fumes">Smoke, Fire or Fumes</a>
 
 **Immer zuerst diese Checklist starten**
 
@@ -19,7 +19,7 @@ Beide Checklisten ("Smoke, Fire or Fumes" und "Smoke or Fumes Removal") sind im 
 > [!caution] Häufiger Fehler
 > Nicht zu schnell durch die Checklist arbeiten. Wenn eine Aktion den Rauch reduziert, das System **nicht wieder einschalten** — die Quelle ist gefunden.
 
-## Smoke or Fumes Removal
+## <a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Smoke or Fumes Removal</a>
 
 **Nur wenn von der ersten Checklist angewiesen!**
 
