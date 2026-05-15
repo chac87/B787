@@ -27,7 +27,7 @@ role: Both
 
 <div class="eicas-levels" style="margin:0.5em 0">
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">APP arm — Prerequisites</div>
+  <div class="eicas-card-title">APP arm – Prerequisites</div>
   <div class="eicas-card-body">ILS/GLS is tuned and identified<br>Inbound intercept heading<br>Both LOC and G/S pointers appear on PFD in the proper position<br>Clearance for the approach received</div>
 </div>
 </div>

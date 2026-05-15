@@ -124,12 +124,12 @@ tags: [non-normal, warnings]
 <div class="nnc-deferred-title">Descent Checklist</div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>Recall</strong><span class="cl-dots"></span><strong>Checked</strong></div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>Notes</strong><span class="cl-dots"></span><strong>Checked</strong></div>
-<div class="nnc-item"><span class="nnc-num"></span><strong>Autobrake</strong><span class="cl-dots"></span><strong>—</strong></div>
+<div class="nnc-item"><span class="nnc-num"></span><strong>Autobrake</strong><span class="cl-dots"></span><strong>–</strong></div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>Landing data</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 20 ___ Minimums ___</strong></div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>Approach briefing</strong><span class="cl-dots"></span><strong>Completed</strong></div>
 
 <div class="nnc-deferred-title">Approach Checklist</div>
-<div class="nnc-item"><span class="nnc-num"></span><strong>Altimeters</strong><span class="cl-dots"></span><strong>—</strong></div>
+<div class="nnc-item"><span class="nnc-num"></span><strong>Altimeters</strong><span class="cl-dots"></span><strong>–</strong></div>
 
 <div class="nnc-deferred-title">Alternate flaps extension</div>
 <div class="nnc-item"><span class="nnc-num"></span><strong>ALTN FLAPS ARM switch</strong><span class="cl-dots"></span><strong>ALTN</strong></div>

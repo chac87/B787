@@ -28,7 +28,7 @@
     <span class="mi-num">2</span>
     <span class="mi-item-name">A/T ARM switches (both)</span>
     <span class="mi-item-action">OFF</span>
-    <span class="mi-role">PF</span>
+    <span class="mi-role mi-role--pm">PM</span>
   </div>
   <div class="mi-item">
     <span class="mi-num">3</span>
@@ -75,7 +75,7 @@
     <span class="mi-role mi-role--pm">PM</span>
   </div>
   <div class="mi-item">
-    <span class="mi-num"></span>
+    <span class="mi-num">5</span>
     <span class="mi-item-name">Without delay, descend to lowest safe altitude or 10.000 ft, whichever is higher</span>
     <span class="mi-role">PF</span>
   </div>
@@ -93,8 +93,9 @@
     <span class="mi-item-name">Descend at v<sub>MO</sub>/M<sub>MO</sub></span>
   </div>
   <div class="mi-item">
-    <span class="mi-num"></span>
-    <span class="mi-item-name">Advise the Cabin</span>
+    <span class="mi-num">6</span>
+    <span class="mi-item-name">"EMERGENCY DESCENT" 2x</span>
+    <span class="mi-item-action">Announce</span>
     <span class="mi-role mi-role--pm">PM</span>
   </div>
 </div>

@@ -23,7 +23,7 @@ The captain normally does this procedure. The first officer may do this procedur
 <div class="cl-item cl-indent"><strong>ND mode selector</strong><span class="cl-dots"></span><strong>Select MAP</strong></div>
 <div class="cl-item cl-indent"><strong>ND mode select switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
 <div class="cl-item cl-indent"><strong>MENU</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">Map selections — As needed</div>
+<div class="cl-sub cl-indent">Map selections – As needed</div>
 <div class="cl-item cl-indent"><strong>ND CENTER switch</strong><span class="cl-dots"></span><strong>As needed</strong></div>
 <div class="cl-item cl-indent"><strong>ND range selector</strong><span class="cl-dots"></span><strong>0.5, 1, 2 or 5</strong></div>
 <div class="cl-sub cl-indent">Displays airport map.</div>
@@ -108,10 +108,10 @@ The captain normally does this procedure. The first officer may do this procedur
 
 <div class="cl-item"><strong>Left tuning and control panel</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-item cl-indent"><strong>WEATHER RADAR</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">GAIN and MODE — As needed</div>
+<div class="cl-sub cl-indent">GAIN and MODE – As needed</div>
 <div class="cl-item cl-indent"><strong>TRANSPONDER</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">CAPT TCAS Display — As needed</div>
-<div class="cl-sub cl-indent">TCAS ALT — As needed</div>
+<div class="cl-sub cl-indent">CAPT TCAS Display – As needed</div>
+<div class="cl-sub cl-indent">TCAS ALT – As needed</div>
 <div class="cl-item cl-indent"><strong>VHF</strong><span class="cl-dots"></span><strong>Select</strong></div>
 
 <div class="cl-item"><strong>Captain's audio control panel</strong><span class="cl-dots"></span><strong>As needed</strong></div>

@@ -17,7 +17,7 @@ tags: [operational]
 
 ## [[Operational/Use of Aerodromes|Use of Aerodromes]]
 
-## [[Operational/IDM|IDM — In-flight Diversion Management]]
+## [[Operational/IDM|IDM – In-flight Diversion Management]]
 
 ## [[Operational/FDZ|FDZ]]
 

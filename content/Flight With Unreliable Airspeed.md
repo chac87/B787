@@ -490,7 +490,7 @@ tags: [performance, non-normal]
 
 ## Final Approach (1.500 ft)
 
-**Gear Down — Set Thrust for 3° Glideslope**
+**Gear Down – Set Thrust for 3° Glideslope**
 
 <table class="data-table data-table--matrix">
   <thead>

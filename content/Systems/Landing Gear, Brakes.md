@@ -11,8 +11,8 @@ tags: [systems, landing-gear]
 | :---------------- | :---------------------------------------------------------------- |
 | Main Landing Gear | 2 × MLG · 4 wheels each = 8 main wheels total                    |
 | Nose Landing Gear | 1 × NLG · 2 wheels                                               |
-| Hydraulics        | Center System — Extension, Retraction, Steering                  |
-| Brakes            | Electromechanical — 4 EBACs · 32 EBAs (Electric Brake Actuators) |
+| Hydraulics        | Center System – Extension, Retraction, Steering                  |
+| Brakes            | Electromechanical – 4 EBACs · 32 EBAs (Electric Brake Actuators) |
 
 ![[landing gear.webp]]
 
@@ -23,10 +23,10 @@ tags: [systems, landing-gear]
 > <div class="cl-item"><strong>NLG & MLG Retraction</strong><span class="cl-dots"></span><span>Center Hydraulic System pressure</span></div>
 
 > [!info]+ Lever & Gear Lock
-> <div class="cl-item"><strong>On Ground</strong><span class="cl-dots"></span><span>Lever locked in DN — cannot be moved to UP</span></div>
+> <div class="cl-item"><strong>On Ground</strong><span class="cl-dots"></span><span>Lever locked in DN – cannot be moved to UP</span></div>
 > <div class="cl-item"><strong>In Flight</strong><span class="cl-dots"></span><span>Air/Ground Sensing releases lever lock</span></div>
 >
-> **LOCK OVERRIDE Switch** — Allows UP on ground (e.g. maintenance):
+> **LOCK OVERRIDE Switch** – Allows UP on ground (e.g. maintenance):
 > 1. Push and **hold** switch
 > 2. Lift gear lever to **UP**
 
@@ -40,7 +40,7 @@ tags: [systems, landing-gear]
 > <div class="cl-sub">No UP command within 30 sec → doors return to closed position</div>
 
 > [!info]+ Extension (Normal)
-> <div class="cl-item"><strong>Principle</strong><span class="cl-dots"></span><span>Free-fall — hydraulic pressure NOT required for extension</span></div>
+> <div class="cl-item"><strong>Principle</strong><span class="cl-dots"></span><span>Free-fall – hydraulic pressure NOT required for extension</span></div>
 > <div class="cl-item"><strong>Downlocks</strong><span class="cl-dots"></span><span>Electrically secured</span></div>
 > <div class="cl-item"><strong>Trucks</strong><span class="cl-dots"></span><span>Pitch to flight position during extension</span></div>
 
@@ -53,7 +53,7 @@ tags: [systems, landing-gear]
 > <div class="cl-item"><strong>EICAS</strong><span class="cl-dots"></span><span>GEAR DOOR displayed</span></div>
 > <div class="cl-item"><strong>Retraction after</strong><span class="cl-dots"></span><span>Center Hydraulic available → Lever DN then UP</span></div>
 
-## NWS — Nose Wheel Steering
+## NWS – Nose Wheel Steering
 
 > [!info]+ NWS
 > <div class="cl-item"><strong>Tiller</strong><span class="cl-dots"></span><span>± 70°</span></div>
@@ -99,7 +99,7 @@ tags: [systems, landing-gear]
 
 > [!info]+ Parking Brake
 > <div class="cl-item"><strong>Setting</strong><span class="cl-dots"></span><span>Hold brake pedals + Parking Brake Lever</span></div>
-> <div class="cl-item"><strong>Park-and-Adjust</strong><span class="cl-dots"></span><span>25% force on 2 of 4 EBAs per MLG — self-adjusts as brakes cool (≈ 60 min)</span></div>
+> <div class="cl-item"><strong>Park-and-Adjust</strong><span class="cl-dots"></span><span>25% force on 2 of 4 EBAs per MLG – self-adjusts as brakes cool (≈ 60 min)</span></div>
 > <div class="cl-item"><strong>Without power</strong><span class="cl-dots"></span><span>Remains set even without electrical power</span></div>
 >
 > | EICAS | Level | Meaning |
@@ -114,7 +114,7 @@ tags: [systems, landing-gear]
 > |:---:|:---|
 > | 0.0 – 2.9 | White (normal) |
 > | 3.0 – 4.9 | White · hottest brake shown as full bar |
-> | ≥ 5.0 | EICAS BRAKE TEMP — remains until all < 3.0 |
+> | ≥ 5.0 | EICAS BRAKE TEMP – remains until all < 3.0 |
 >
 > | EICAS | Level | Meaning |
 > |:---|:---:|:---|
@@ -129,7 +129,7 @@ tags: [systems, landing-gear]
 ---
 
 > [!info] Un-annunciated Checklists
-> **GEAR LEVER LOCKED DOWN** — select via Non-Normal Menu in ECL
+> **GEAR LEVER LOCKED DOWN** – select via Non-Normal Menu in ECL
 
 ---
 

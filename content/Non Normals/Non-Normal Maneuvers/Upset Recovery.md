@@ -21,14 +21,14 @@ An upset condition is any time the airplane is diverting from the intended state
 
 ---
 
-> [!proc]- Upset Recovery — Nose High
+> [!proc]- Upset Recovery – Nose High
 > **PF**
 >
-> Callout: *"UPSET — I have control"*<br>Recognize and confirm the developing situation
+> Callout: *"UPSET – I have control"*<br>Recognize and confirm the developing situation
 >
 > Disengage AP<br>Disconnect A/T
 >
-> **Recover:**<br>Apply nose down elevator — as much as needed to obtain a nose down pitch rate<br>Apply nose down stabilizer trim\*<br>Reduce thrust<br>Roll (adjust bank angle) to obtain a nose down pitch rate\*
+> **Recover:**<br>Apply nose down elevator – as much as needed to obtain a nose down pitch rate<br>Apply nose down stabilizer trim\*<br>Reduce thrust<br>Roll (adjust bank angle) to obtain a nose down pitch rate\*
 >
 > **Complete recovery (approaching horizon):**<br>Roll wings level<br>Check airspeed and adjust thrust<br>Establish pitch attitude
 >
@@ -36,10 +36,10 @@ An upset condition is any time the airplane is diverting from the intended state
 >
 > **PM**<br>Call out attitude, airspeed and altitude throughout the recovery<br>Verify all needed actions have been done<br>Call out any continued deviation
 
-> [!proc]- Upset Recovery — Nose Low
+> [!proc]- Upset Recovery – Nose Low
 > **PF**
 >
-> Callout: *"UPSET — I have control"*<br>Recognize and confirm the developing situation
+> Callout: *"UPSET – I have control"*<br>Recognize and confirm the developing situation
 >
 > Disengage AP<br>Disconnect A/T
 >
@@ -52,3 +52,26 @@ An upset condition is any time the airplane is diverting from the intended state
 > **PM**<br>Call out attitude, airspeed and altitude throughout the recovery<br>Verify all needed actions have been done<br>Call out any continued deviation
 
 > [!warning] \* Excessive use of pitch trim or rudder can aggravate an upset, result in loss of control, or result in high structural loads.
+
+<table class="data-table">
+  <tbody>
+    <tr>
+      <td colspan="2" style="background: color-mix(in srgb, var(--secondary) 15%, var(--lightgray)); font-weight: 700; text-align: center;">
+        <span style="float: left; opacity: 0.6;">1</span>PUSH TO UNLOAD
+      </td>
+    </tr>
+    <tr>
+      <td style="background: color-mix(in srgb, var(--secondary) 15%, var(--lightgray)); font-weight: 700;">
+        <span style="opacity: 0.6; margin-right: 1em;">2</span>ROLL
+      </td>
+      <td rowspan="2" style="vertical-align: middle; text-align: center; color: var(--darkgray);">
+        Thrust / Drag as required
+      </td>
+    </tr>
+    <tr>
+      <td style="background: color-mix(in srgb, var(--secondary) 15%, var(--lightgray)); font-weight: 700;">
+        <span style="opacity: 0.6; margin-right: 1em;">3</span>STABILIZE
+      </td>
+    </tr>
+  </tbody>
+</table>

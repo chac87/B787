@@ -48,12 +48,12 @@ Secondary indications appear automatically when any of the following conditions 
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Amber Band</div>
-  <div class="eicas-card-body">EGT max continuous · Oil Temp · Oil Press — amber on reaching</div>
+  <div class="eicas-card-body">EGT max continuous · Oil Temp · Oil Press – amber on reaching</div>
 </div>
 
 <div class="eicas-card eicas-card--red">
   <div class="eicas-card-title">Red Lines <span class="eicas-card-badge">LIMIT</span></div>
-  <div class="eicas-card-body">N1 · N2 · EGT · Oil Press · Oil Temp — red on reaching</div>
+  <div class="eicas-card-body">N1 · N2 · EGT · Oil Press · Oil Temp – red on reaching</div>
 </div>
 
 <div class="eicas-card eicas-card--red">
@@ -94,7 +94,7 @@ At takeoff the EEC increases thrust gradually to minimize fan blade stress at cr
 
 > [!info] Maximum takeoff thrust may not be fully available until **65 kts**. Active on ground in Normal mode only.
 
-### TCMA — Thrust Control Malfunction Accommodation
+### TCMA – Thrust Control Malfunction Accommodation
 
 Protection against asymmetric idle thrust **on the ground**. EEC shuts down engine when:
 - Aircraft on ground **and**
@@ -103,7 +103,7 @@ Protection against asymmetric idle thrust **on the ground**. EEC shuts down engi
 
 → <span class="c-amber">ENG FAIL L / R</span> (Caution) with aural beeper.
 
-### TAP — Thrust Asymmetry Protection
+### TAP – Thrust Asymmetry Protection
 
 Automatic thrust reduction of the operating engine following failure during T/O or G/A:
 
@@ -126,12 +126,12 @@ Automatic thrust reduction of the operating engine following failure during T/O 
 
 Approach idle is maintained for **5 seconds after touchdown** or when **thrust reversers deploy**.
 
-### ICA — Ice Crystal Anti-Ice Function
+### ICA – Ice Crystal Anti-Ice Function
 
 Automatic protection against ice crystal icing (ICI) · **above 30.000 ft** only:
 - Activates for min. **30 min**, then in 15-min increments
 - Terminates below **28.500 ft**
-- Display: **ICA** on N1 display · N1/N2/EGT may fluctuate — normal
+- Display: **ICA** on N1 display · N1/N2/EGT may fluctuate – normal
 - Each engine independent
 - After engine/EEC replacement: ICA may appear for up to **75 min** in any weather
 
@@ -174,7 +174,7 @@ Load shed always occurs during engine start.
 
 <details><summary><strong>Hung Start</strong></summary>N2 does not increase at a specified time during engine start. The EEC tries 2 restarts (GE engines) or 1 restart (RR engines) before the start is stopped.</details>
 
-<details><summary><strong>No N1 Rotation</strong></summary>N1 does not increase when N2 speed is sufficient to turn the N1 rotor. The EEC stops the start immediately — no retry.</details>
+<details><summary><strong>No N1 Rotation</strong></summary>N1 does not increase when N2 speed is sufficient to turn the N1 rotor. The EEC stops the start immediately – no retry.</details>
 
 <details><summary><strong>Compressor Stall</strong></summary>The EEC tries 2 restarts (GE engines) or 1 more restart (RR engines) before the start is stopped.</details>
 
@@ -189,7 +189,7 @@ Load shed always occurs during engine start.
 - EICAS shows start envelope (airspeed range per flight level)
 - **X-START**: airspeed too low for windmilling → starter assist required
 - Autostart attempts continuously until pilot aborts (FUEL CONTROL → CUTOFF)
-- EGT may fluctuate significantly during windmilling start — normal
+- EGT may fluctuate significantly during windmilling start – normal
 - In-flight start sequence may take up to **2½ minutes** before engine reaches idle
 
 ### Engine Ignition
@@ -222,7 +222,7 @@ Active whenever engine is ≤ idle with FUEL CONTROL in RUN:
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">ENG OIL FILTER L / R <span class="eicas-card-badge">ADVISORY</span></div>
-  <div class="eicas-card-body">Oil filter clogged — bypass active</div>
+  <div class="eicas-card-body">Oil filter clogged – bypass active</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
@@ -287,7 +287,7 @@ Hydraulically actuated fan-air reverser · available **on ground only**.
 
 Source displayed: **N1**, **N2**, or **BB** (broadband = average when source unknown).
 
-- No certified limit — no specific crew procedures based on vibration alone
+- No certified limit – no specific crew procedures based on vibration alone
 - At **4 units**: secondary display auto + inverted indication
 - N1 vibration usually felt · N2 vibration often not perceptible
 - Both typically respond to thrust lever adjustment
@@ -318,8 +318,8 @@ Source displayed: **N1**, **N2**, or **BB** (broadband = average when source unk
 ---
 
 > [!limit] Limitations
-> <div class="cl-item"><strong>Engine oil — min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>
-> <div class="cl-item"><strong>T/O and G/A thrust — time limit</strong><span class="cl-dots"></span><span>10 minutes</span></div>
-> <div class="cl-item"><strong>Engine Start — CW >40 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
-> <div class="cl-item"><strong>Engine Start — TW >5 kts + wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
-> <div class="cl-item"><strong>Engine Start — wind >55 kts</strong><span class="cl-dots"></span><span>idle only</span></div>
+> <div class="cl-item"><strong>Engine oil – min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>
+> <div class="cl-item"><strong>T/O and G/A thrust – time limit</strong><span class="cl-dots"></span><span>10 minutes</span></div>
+> <div class="cl-item"><strong>Engine Start – CW >40 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
+> <div class="cl-item"><strong>Engine Start – TW >5 kts + wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
+> <div class="cl-item"><strong>Engine Start – wind >55 kts</strong><span class="cl-dots"></span><span>idle only</span></div>

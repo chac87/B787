@@ -7,11 +7,11 @@
 | Engine | Fire + Overheat | 2 bottles (both into either engine) |
 | APU | Fire | 1 bottle |
 | Cargo FWD / AFT | Smoke | 7 bottles (HRD + LRD) |
-| Main Wheel Well | Fire + Overheat | — |
-| Nose Wheel Well | — | — |
+| Main Wheel Well | Fire + Overheat | – |
+| Nose Wheel Well | – | – |
 | Lavatory | Smoke | 1 bottle (auto, no cockpit indication) |
-| Overhead Crew Rest | Fire | — |
-| Overhead FA Rest | Fire | — |
+| Overhead Crew Rest | Fire | – |
+| Overhead FA Rest | Fire | – |
 
 ---
 
@@ -26,7 +26,7 @@
 | <span class="c-amber">DET FIRE ENG L / R</span> | <span class="c-amber">Advisory</span> | Entire detection system failed |
 | <span class="c-amber">BOTTLE (1/2) DISCH ENG</span> | <span class="c-amber">Advisory</span> | Bottle discharged or pressure too low |
 
-**Extinguishing:** 2 bottles — both can be discharged into either engine.
+**Extinguishing:** 2 bottles – both can be discharged into either engine.
 
 <div class="checklist">
 
@@ -53,9 +53,9 @@
 
 ## Cargo Fire Protection
 
-**Class C** — Smoke Detection + Built-in Extinguishing + Ventilation Control.
+**Class C** – Smoke Detection + Built-in Extinguishing + Ventilation Control.
 
-**Detectors:** Normally **2 detectors must trigger simultaneously** — upon failure of one detector, one is sufficient.
+**Detectors:** Normally **2 detectors must trigger simultaneously** – upon failure of one detector, one is sufficient.
 
 | Area | Number of Detectors |
 |:---|:---:|
@@ -69,7 +69,7 @@
 | <span class="c-amber">DET FIRE CARGO FWD / AFT</span> | <span class="c-amber">Advisory</span> | Detection system failed |
 | <span class="c-amber">BOTTLE DISCH CARGO</span> | <span class="c-amber">Advisory</span> | First 2 bottles begin to discharge |
 
-**Extinguishing — 7 bottles total (Halon):**
+**Extinguishing – 7 bottles total (Halon):**
 
 | | HRD | LRD |
 |:---|:---:|:---:|
@@ -79,9 +79,9 @@
 | 330 min ETOPS | – | 5 |
 
 **In-flight sequence (automatic upon fire alarm):**
-1. **Immediately** — 2 HRD bottles are discharged
-2. **+ 15 min** — LRD bottles discharge slowly (until landing)
-3. **Landing < 15 min after alarm** — 1 LRD at touchdown
+1. **Immediately** – 2 HRD bottles are discharged
+2. **+ 15 min** – LRD bottles discharge slowly (until landing)
+3. **Landing < 15 min after alarm** – 1 LRD at touchdown
 
 **On the ground (manual via CARGO FIRE DISCHARGE):** 3 bottles simultaneously, no time delay.
 
@@ -136,4 +136,4 @@ Upon smoke detection:
 |:---|:---:|:---|
 | <span class="c-amber">SMOKE LAVATORY</span> | <span class="c-amber">Advisory</span> | Smoke detected in lavatory |
 
-**Extinguishing:** 1 bottle per lavatory — discharges automatically into the waste container. **No cockpit indication.**
+**Extinguishing:** 1 bottle per lavatory – discharges automatically into the waste container. **No cockpit indication.**

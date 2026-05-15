@@ -21,16 +21,16 @@ To preserve safe landing capability during a Center System leak, HYDIF automatic
 
 | Quantity | Valve | Action |
 |:---|:---|:---|
-| ≤ **0.50** | Alternate Extend Isolation Valve (AEIV) | Closes — traps fluid in standpipe for alternate gear extension pump |
-| < **0.40** (airspeed > 60 kts) | Nose Gear Isolation Valve (NGIV) | Closes — preserves fluid for primary flight controls and main landing gear; isolates nose gear actuation and steering |
-| ≤ **0.25** | Reserve Steering Isolation Valve (RSIV) | Closes — reserves remaining fluid exclusively for nose wheel steering |
+| ≤ **0.50** | Alternate Extend Isolation Valve (AEIV) | Closes – traps fluid in standpipe for alternate gear extension pump |
+| < **0.40** (airspeed > 60 kts) | Nose Gear Isolation Valve (NGIV) | Closes – preserves fluid for primary flight controls and main landing gear; isolates nose gear actuation and steering |
+| ≤ **0.25** | Reserve Steering Isolation Valve (RSIV) | Closes – reserves remaining fluid exclusively for nose wheel steering |
 
 > [!info] Quantity Indication
 > EICAS displays **LO** next to the Center reservoir quantity when it drops below 0.40 (40 %).
 
 ## Single Failure
 
-In all cases some spoilers are inoperative — a **LAPA calculation is required**.
+In all cases some spoilers are inoperative – a **LAPA calculation is required**.
 
 <div class="eicas-levels">
 
@@ -75,9 +75,9 @@ Performed as a **Deferred Item** during the Approach Checklist.
 
 ### Manual Speedbrake Extension
 
-No automatic speedbrake deployment on touchdown — this increases the risk of bounce. A **detailed discussion during the approach briefing is required**.
+No automatic speedbrake deployment on touchdown – this increases the risk of bounce. A **detailed discussion during the approach briefing is required**.
 
-<div class="nnc-note">PF should decide whether landing is assured — extension by PF directly, or a clear command from PF to PM, is preferred.</div>
+<div class="nnc-note">PF should decide whether landing is assured – extension by PF directly, or a clear command from PF to PM, is preferred.</div>
 <div class="nnc-note">Speedbrakes are easier to handle from the CM1 side due to the control stand arrangement.</div>
 
 ## Dual System Loss
@@ -86,7 +86,7 @@ Loss of any two hydraulic systems (L+C, L+R, or C+R) has two key consequences:
 
 **Landing distance** is significantly increased due to reduced braking and flight control authority.
 
-**EICAS caution <a href="/Non-Normals/Non-Normal-Checklists/FLIGHT-CONTROLS"><span>FLIGHT CONTROLS</span></a>** is displayed — multiple ACE or hydraulic failures result in the loss of a significant number of control surfaces.
+**EICAS caution <a href="/Non-Normals/Non-Normal-Checklists/FLIGHT-CONTROLS"><span>FLIGHT CONTROLS</span></a>** is displayed – multiple ACE or hydraulic failures result in the loss of a significant number of control surfaces.
 
 ## Total Hydraulic Loss
 
@@ -99,7 +99,7 @@ Loss of any two hydraulic systems (L+C, L+R, or C+R) has two key consequences:
 
 <div class="eicas-card eicas-card--red">
   <div class="eicas-card-title">All Pressures Low · RAT Cannot Supply <span class="eicas-card-badge">Electric Only</span></div>
-  <div class="eicas-card-body"><strong>Pitch</strong> — stabilizer (electrically actuated) via primary or alternate pitch trim switches · <strong>Roll</strong> — 2 electric spoiler pairs via control wheel</div>
+  <div class="eicas-card-body"><strong>Pitch</strong> – stabilizer (electrically actuated) via primary or alternate pitch trim switches · <strong>Roll</strong> – 2 electric spoiler pairs via control wheel</div>
 </div>
 
 </div>
@@ -107,7 +107,7 @@ Loss of any two hydraulic systems (L+C, L+R, or C+R) has two key consequences:
 > [!warning] Additional Loss of Flight Control Signaling
 > Direct wiring from flight deck to stabilizer and **one** electric spoiler pair remains active.
 > - **Roll**: control wheel (unchanged)
-> - **Pitch**: alternate pitch trim switches **only** — primary pitch trim switches unavailable
+> - **Pitch**: alternate pitch trim switches **only** – primary pitch trim switches unavailable
 
 ## RAT Automatic Deployment
 

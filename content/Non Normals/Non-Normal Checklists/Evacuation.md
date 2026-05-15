@@ -60,5 +60,5 @@ tags: [non-normal, backcover]
 > The crew should consider the following when deciding whether to discharge a fire bottle into an engine and/or APU:
 > - If an **engine fire indication** exists or a fire is reported in or near an engine → discharge a fire bottle into the affected engine
 > - If an **APU fire indication** exists or a fire is reported in or near the APU → discharge the APU bottle
-> - The discharged halon agent is designed to extinguish a fire and has **very little or no fire prevention capability** in the engine nacelles — halon dissipates quickly into the atmosphere
+> - The discharged halon agent is designed to extinguish a fire and has **very little or no fire prevention capability** in the engine nacelles – halon dissipates quickly into the atmosphere
 > - There is **no reason** to discharge the engine or APU fire bottles for evacuations not involving fire indications existing or reported in or near an engine or APU (e.g. cargo fire, security or bomb threat)

@@ -8,15 +8,15 @@ tags: [non-normal, engine]
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
 > [!info] Background
-> **Start envelope** — shown on EICAS when an engine is not running in flight. Displays the valid airspeed range for an in-flight start at current FL. If above max start altitude, the max start altitude and its airspeed range are shown instead.
+> **Start envelope** – shown on EICAS when an engine is not running in flight. Displays the valid airspeed range for an in-flight start at current FL. If above max start altitude, the max start altitude and its airspeed range are shown instead.
 >
-> **Secondary engine indications** — auto-display when N2 is below idle with FUEL CONTROL in RUN, or when FUEL CONTROL is moved to CUTOFF.
+> **Secondary engine indications** – auto-display when N2 is below idle with FUEL CONTROL in RUN, or when FUEL CONTROL is moved to CUTOFF.
 >
-> **X-START** — shown below N2 when airspeed is below windmilling start speed.
+> **X-START** – shown below N2 when airspeed is below windmilling start speed.
 >
-> **Autostart** — makes continuous start attempts until the engine starts or the pilot aborts by setting FUEL CONTROL to CUTOFF (and positioning the START switch to NORM if it was a starter assisted attempt).
+> **Autostart** – makes continuous start attempts until the engine starts or the pilot aborts by setting FUEL CONTROL to CUTOFF (and positioning the START switch to NORM if it was a starter assisted attempt).
 >
-> **Auto-relight** — activated whenever an engine is at or below idle with FUEL CONTROL in RUN.
+> **Auto-relight** – activated whenever an engine is at or below idle with FUEL CONTROL in RUN.
 
 <div class="nnc-condition">Condition: An engine start is needed and both of these are true:<br>• There was no engine fire<br>• There is no abnormal airframe vibration</div>
 

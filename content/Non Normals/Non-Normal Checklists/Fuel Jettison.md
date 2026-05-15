@@ -37,4 +37,4 @@ tags: [non-normal, fuel]
 
 <div class="nnc-complete">■ &nbsp; ■ &nbsp; ■ &nbsp; ■</div>
 
-<div class="nnc-note">→ <a href="/Non-Normals/Fuel-Non-Normals">Fuel Non-Normals — Background, System Notes and CRM</a></div>
+<div class="nnc-note">→ <a href="/Non-Normals/Fuel-Non-Normals">Fuel Non-Normals – Background, System Notes and CRM</a></div>

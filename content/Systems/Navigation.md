@@ -5,8 +5,8 @@
 | System | Count | Tuning | Primary Output |
 |:---|:---:|:---:|:---|
 | GPS | 2 (L/R) | Automatic | Position → IRS → FMC |
-| IRS (IRU + AHRU) | 2 IRU + 2 AHRU | — | Airspeed, Attitude, Heading, Position |
-| ADRS | 1 (L/C/R Pitot) | — | Altitude + Airspeed for all systems |
+| IRS (IRU + AHRU) | 2 IRU + 2 AHRU | – | Airspeed, Attitude, Heading, Position |
+| ADRS | 1 (L/C/R Pitot) | – | Altitude + Airspeed for all systems |
 | VOR | 2 | FMC / manual | Position updates, ND bearing |
 | DME | 2 | FMC / manual | Distance, FMC position updates |
 | ILS | 2 | FMC / manual | LOC + GS Deviation |
@@ -14,11 +14,11 @@
 | Transponder | 2 | ATP / TCP | Mode S, ADS-B, TCAS |
 | Weather Radar | 1 | TCP | ND (MAP) + Mini-Map up to 320 NM |
 
-<img src="/Bilder/airspeed%20indication.webp" alt="Airspeed Indication — PFD source labels">
+<img src="/Bilder/airspeed%20indication.webp" alt="Airspeed Indication – PFD source labels">
 
 ## GPS
 
-The L/R GPS receivers operate **independently** — position is passed to the IRS, which forms a hybrid GPS/inertial solution for the FMC.
+The L/R GPS receivers operate **independently** – position is passed to the IRS, which forms a hybrid GPS/inertial solution for the FMC.
 
 - IRS failure: GPS provides position and track **directly** to the FMC (no EICAS advisory)
 - Use GPS for **all approaches** when the FMC database is referenced to **WGS-84**
@@ -28,7 +28,7 @@ The L/R GPS receivers operate **independently** — position is passed to the IR
 |:---|:---:|:---|
 | GPS | Advisory | Both GPS systems have failed |
 
-## ADRS — Air Data Reference System
+## ADRS – Air Data Reference System
 
 ADRS provides **altitude and airspeed** to all aircraft systems. It receives air data from the left, center, and right pitot and static systems and computes **trusted voted air data**, which is sent to the PFDs. Because both PFDs receive data from the same voted source, altitude and airspeed indications on both PFDs are always identical. ADRS is completely independent of the IRS.
 
@@ -36,7 +36,7 @@ When voted ADRS air data is invalid and the AIR DATA/ATT switch is in the AUTO p
 
 ### AIR DATA/ATT Source Selector
 
-**AUTO** — Normal position:
+**AUTO** – Normal position:
 
 - ADRS provides air data to the PFD and HUD
 - Backup airspeed (AOA SPD), based on angle of attack and inertial data, is automatically provided when required
@@ -44,7 +44,7 @@ When voted ADRS air data is invalid and the AIR DATA/ATT switch is in the AUTO p
 - IRS provides attitude data to the PFD
 - Backup attitude from ISFD sources is automatically provided when required
 
-**ALTN** — Non-normal position:
+**ALTN** – Non-normal position:
 
 - Backup airspeed and altitude (AOA SPD / GPS ALT) are displayed on the on-side PFD
 - ISFD attitude is displayed on the on-side PFD
@@ -57,20 +57,20 @@ When voted ADRS air data is invalid and the AIR DATA/ATT switch is in the AUTO p
 | 2 | IRS + GPS (Backup) | AOA SPD | GPS ALT |
 | 3 | ISFD (Center Pitot) | ISFD SPD | ISFD ALT |
 
-### ISFD — Integrated Standby Flight Display
+### ISFD – Integrated Standby Flight Display
 
 ISFD receives data exclusively from the **center pitot static system**. Its altitude, attitude, and airspeed indications are completely independent of both IRU and AHRU values. When both voted ADRS data and backup air data (AOA SPD / GPS ALT) are unavailable, ISFD altitude (**ISFD ALT**) and ISFD airspeed (**ISFD SPD**) are automatically displayed on the PFDs.
 
-## IRS — Inertial Reference System
+## IRS – Inertial Reference System
 
-Computes airspeed, attitude, heading, and position — for displays, FMS, fly-by-wire, and engine controls.
+Computes airspeed, attitude, heading, and position – for displays, FMS, fly-by-wire, and engine controls.
 
 **Components:**
 
 | Unit | Count | Function |
 |:---|:---:|:---|
 | IRU (Inertial Reference Unit) | 2 | Hybrid GPS/Inertial position + navigation |
-| AHRU (Attitude & Heading Reference Unit) | 2 | Attitude, heading, rate — no independent position solution |
+| AHRU (Attitude & Heading Reference Unit) | 2 | Attitude, heading, rate – no independent position solution |
 
 ### IRU Alignment
 
@@ -90,12 +90,12 @@ Computes airspeed, attitude, heading, and position — for displays, FMS, fly-by
 - Battery switch OFF → Hot Battery Bus continues to power the IRS
 - **ON BAT** light illuminates + horn in gear well → maintenance warning
 
-### IRS Failure — EICAS
+### IRS Failure – EICAS
 
 | EICAS | Level | Condition | Consequence |
 |:---|:---:|:---|:---|
 | NAV IRU | Advisory | Both IRUs have failed | FMC continues to use AHRUs + GPS |
-| <span class="c-amber">NAV INERTIAL SYS</span> | <span class="c-amber">Caution</span> | Both IRUs **and** AHRUs have failed | GPS (INRs) takes over — LNAV/VNAV unavailable |
+| <span class="c-amber">NAV INERTIAL SYS</span> | <span class="c-amber">Caution</span> | Both IRUs **and** AHRUs have failed | GPS (INRs) takes over – LNAV/VNAV unavailable |
 
 **Inoperative after IRS failure (NAV INERTIAL SYS):**
 
@@ -120,24 +120,24 @@ CDU active leg, Direct-to, DIVERT NOW, Nav Radio Autotuning, ND Map (center + ex
 | ILS (2) | FMC automatic / manual | Autotune from 50 NM TOD or 150 NM runway threshold |
 | ADF (2) | Manual (CDU NAV RADIO) | Bearing on PFD mini-map, displayed in cyan |
 
-**ILS Autotune Inhibit** — active when:
+**ILS Autotune Inhibit** – active when:
 - Autopilot engaged **or** FD on + LOC/GS captured
 
 **ILS Tuning re-enabled** when:
 - TO/GA pressed, **or** AP disengaged + both FDs off, **or** APP mode deselected above 1.500 ft RA
 
-> [!caution] ILS Autotune — Inhibit After Takeoff
+> [!caution] ILS Autotune – Inhibit After Takeoff
 > ILS Autotune is inhibited for **10 minutes after the first takeoff** (to avoid PFD clutter). A newly executed approach in the active flight plan overrides this inhibit.
 
 | EICAS | Level | Condition |
 |:---|:---:|:---|
-| <span class="c-amber">SINGLE SOURCE APPROACH</span> | <span class="c-amber">Caution</span> | One ILS receiver has failed — both PFDs show the remaining ILS |
+| <span class="c-amber">SINGLE SOURCE APPROACH</span> | <span class="c-amber">Caution</span> | One ILS receiver has failed – both PFDs show the remaining ILS |
 
-**Navaid Identifier Decoding:** Morse decoded to plain text on PFD/ND. Decoding can be erroneous — when in doubt, always verify using **Morse audio**.
+**Navaid Identifier Decoding:** Morse decoded to plain text on PFD/ND. Decoding can be erroneous – when in doubt, always verify using **Morse audio**.
 
 ## Transponder & ADS-B
 
-Two ATC transponders + TCAS — controlled via **ATP** (primary) or **TCP** (backup).
+Two ATC transponders + TCAS – controlled via **ATP** (primary) or **TCP** (backup).
 
 **Transponder Modes:**
 
@@ -152,12 +152,12 @@ Two ATC transponders + TCAS — controlled via **ATP** (primary) or **TCP** (bac
 (\*) *Optionally enabled via software.*
 
 > [!info] Ground Tracking
-> Do **not** use TCAS modes for ground tracking — use transponder mode only (not STBY).
+> Do **not** use TCAS modes for ground tracking – use transponder mode only (not STBY).
 
 | EICAS | Level | Condition |
 |:---|:---:|:---|
 | TRANSPONDER | Advisory | Both transponders have failed |
-| TRANSPONDER PANEL | Advisory | ATP has failed — set transponder/TCAS via TCP |
+| TRANSPONDER PANEL | Advisory | ATP has failed – set transponder/TCAS via TCP |
 
 **ATP Inoperative:** ALERT/XPDR CTL page on TCP → MENU → ALERT/XPDR CTL ON (LSK 1R) → LSK 2R.
 
@@ -167,5 +167,5 @@ Two ATC transponders + TCAS — controlled via **ATP** (primary) or **TCP** (bac
 - Display on **ND (MAP mode)** and **Mini-Map**
 - Maximum display range: **320 NM**
 - Self-test: at power-up, every sweep, and when descending below **2.300 ft AGL**
-- Turbulence detectable only with **sufficient precipitation** — **no Clear-Air-Turbulence** detection
+- Turbulence detectable only with **sufficient precipitation** – **no Clear-Air-Turbulence** detection
 - Integrated **Predictive Windshear** warning (PWS)

@@ -12,7 +12,7 @@ title: Performance
 | Architecture | **Twin**-spool | **Three**-spool |
 | Primary engine indications | **N1**, EGT, N2 | **TPR**, N1, EGT |
 
-→ [[Flight With Unreliable Airspeed]] — QRH pitch and thrust tables for all flight phases
+→ [[Flight With Unreliable Airspeed]] – QRH pitch and thrust tables for all flight phases
 
 ## Taxi for Aircraft with ICAO Code E
 
@@ -29,7 +29,7 @@ title: Performance
 >
 > AMM does not show brown TWYs.
 >
-> "Grey" does not automatically allow usage of TWY. (e.g. "N-SOUTH" in FRA — Wingspan MAX 52 m)
+> "Grey" does not automatically allow usage of TWY. (e.g. "N-SOUTH" in FRA – Wingspan MAX 52 m)
 
 ## Thrust Asymmetry Protection
 
@@ -64,7 +64,7 @@ title: Performance
 
 ## EOSID vertical
 
-<img src="/Bilder/to%20phases.webp" alt="Takeoff Phases — Engine Out" style="width:100%;border-radius:6px;display:block;margin-bottom:0.75rem;">
+<img src="/Bilder/to%20phases.webp" alt="Takeoff Phases – Engine Out" style="width:100%;border-radius:6px;display:block;margin-bottom:0.75rem;">
 
 <div class="eo-block">
 <table class="eo-segment-table">
@@ -105,7 +105,7 @@ title: Performance
 </div>
 
 > [!warning] Attention
-> Gross gradient of 2,4% is a certification requirement — 3,3% is the gradient used for SID design. If a SID doesn't show a climb gradient, 3,3% is assumed.
+> Gross gradient of 2,4% is a certification requirement – 3,3% is the gradient used for SID design. If a SID doesn't show a climb gradient, 3,3% is assumed.
 
 ## EOSID lateral
 

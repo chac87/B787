@@ -20,8 +20,8 @@ Outside air enters through the CAC inlets, is compressed and sent warm to the pa
 <div class="cl-item"><strong>3 Recirculation Fans</strong><span class="cl-dots"></span><span>Increase cabin airflow and reduce outside air consumption</span></div>
 <div class="cl-item"><strong>Trim Air</strong><span class="cl-dots"></span><span>Fine-tunes individual zone temperatures after pack outlet</span></div>
 
-<div class="cl-item"><strong>No bleed air</strong><span class="cl-dots"></span><span>Fully electric — Engine Anti-Ice (EAI) is the only system using bleed air</span></div>
-<div class="cl-item"><strong>Temperature zones</strong><span class="cl-dots"></span><span>7 — Flight Deck + 6 cabin zones (A/B include sub-zones A1/B1, not visible on synoptic)</span></div>
+<div class="cl-item"><strong>No bleed air</strong><span class="cl-dots"></span><span>Fully electric – Engine Anti-Ice (EAI) is the only system using bleed air</span></div>
+<div class="cl-item"><strong>Temperature zones</strong><span class="cl-dots"></span><span>7 – Flight Deck + 6 cabin zones (A/B include sub-zones A1/B1, not visible on synoptic)</span></div>
 <div class="cl-item"><strong>Deflector Doors</strong><span class="cl-dots"></span><span>Active on ground + landing (debris protection) · retraction possible at OAT &lt; 2°C or &gt; 35°C</span></div>
 
 #### Ground Operation
@@ -40,7 +40,7 @@ Outside air enters through the CAC inlets, is compressed and sent warm to the pa
 > [!info]- Pack Failure & Standby Cooling
 > **Pack failure:** Automatic shutdown on CAC surge, overheat, or severe fault → EICAS <span class="c-amber">**PACK L / R**</span> (Advisory). Reset possible with **AIR COND RESET Switch** at ≤ 34.000 ft.
 >
-> > [!info] Reset above 34.000 ft not recommended — CACs near surge margin. Reset may cause the operative pack to shut down.
+> > [!info] Reset above 34.000 ft not recommended – CACs near surge margin. Reset may cause the operative pack to shut down.
 >
 > **Standby Cooling Mode:** Automatically activated on certain internal faults → EICAS <span class="c-amber">**PACK MODE L / R**</span> (Advisory) + AIR synoptic: <span class="c-amber">**STBY COOLING**</span>. Reduced cooling capacity possible at low altitudes / high OAT.
 >
@@ -59,12 +59,12 @@ Outside air enters through the CAC inlets, is compressed and sent warm to the pa
 
 The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + Lower Recirc Fan ON: some recirculated air is also supplied). The **cabin** receives a mix of outside air and recirculated air. Recirculation fans filter cabin air through HEPA filters and return it to the distribution system.
 
-> [!caution] Recirculation fans must remain ON during hot weather operations — unless a Non-Normal Checklist requires OFF.
+> [!caution] Recirculation fans must remain ON during hot weather operations – unless a Non-Normal Checklist requires OFF.
 
-**Recirc Fans OFF** does **not** increase the fresh air ratio — it only reduces total airflow.
+**Recirc Fans OFF** does **not** increase the fresh air ratio – it only reduces total airflow.
 
 > [!info]- Zonal Dryer (FWD + AFT)
-> Dehumidification in the crown area — automatic when electrical power is available.
+> Dehumidification in the crown area – automatic when electrical power is available.
 
 > [!info]- Alternate Ventilation System (AVS)
 > Used on failure of both packs. Switch → **ALTN** partially opens FWD + AFT Outflow Valves → fresh air is drawn into the distribution system. Effective in unpressurized flight only.
@@ -80,7 +80,7 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 <div class="cl-item"><strong>Selector failure</strong><span class="cl-dots"></span><span>Pack maintains last set temperature or 24 °C (average)</span></div>
 
 > [!info]- Loss of Trim Air (L or R)
-> All zones regulated to average target temperature. Flight deck temperature remains 18 – 29 °C — but may become uncomfortable. Workaround: adjust CABIN TEMP Selector.
+> All zones regulated to average target temperature. Flight deck temperature remains 18 – 29 °C – but may become uncomfortable. Workaround: adjust CABIN TEMP Selector.
 
 ---
 
@@ -91,17 +91,17 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 <div class="cl-item"><strong>AUTO target</strong><span class="cl-dots"></span><span>21 °C</span></div>
 <div class="cl-item"><strong>Heat source</strong><span class="cl-dots"></span><span>Warm air from forward equipment cooling system</span></div>
 <div class="cl-item"><strong>Cold weather</strong><span class="cl-dots"></span><span>Electric heater supplements when more heat is necessary</span></div>
-<div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Permitted — ventilation and heat supplied in AUTO</span></div>
+<div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Permitted – ventilation and heat supplied in AUTO</span></div>
 
 #### Bulk Cargo
 
-<div class="cl-item"><strong>AUTO target</strong><span class="cl-dots"></span><span>≈ 21 °C — maintained automatically</span></div>
+<div class="cl-item"><strong>AUTO target</strong><span class="cl-dots"></span><span>≈ 21 °C – maintained automatically</span></div>
 <div class="cl-item"><strong>Heat source</strong><span class="cl-dots"></span><span>Supply fan → electric heater → supply valve → compartment</span></div>
 <div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Permitted when switch in AUTO</span></div>
 
 #### Aft Cargo
 
-<div class="cl-item"><strong>Temperature control</strong><span class="cl-dots"></span><span>NOT controlled from flight deck — only kept above freezing</span></div>
+<div class="cl-item"><strong>Temperature control</strong><span class="cl-dots"></span><span>NOT controlled from flight deck – only kept above freezing</span></div>
 <div class="cl-item"><strong>Heat source</strong><span class="cl-dots"></span><span>Heated air below floor from aft equipment cooling system</span></div>
 <div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Not permitted</span></div>
 
@@ -111,9 +111,9 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 
 ![[press ovhd.webp]]
 
-<div class="cl-item"><strong>CPCS</strong><span class="cl-dots"></span><span>Cabin Pressure Control System — fully automatic via FMC data + ambient pressure</span></div>
-<div class="cl-item"><strong>Outflow Valves</strong><span class="cl-dots"></span><span>2 (FWD + AFT) — outflow normally split equally · each valve alone is sufficient</span></div>
-<div class="cl-item"><strong>Relief Valves</strong><span class="cl-dots"></span><span>Positive + Negative — protect structure against extreme differential pressure</span></div>
+<div class="cl-item"><strong>CPCS</strong><span class="cl-dots"></span><span>Cabin Pressure Control System – fully automatic via FMC data + ambient pressure</span></div>
+<div class="cl-item"><strong>Outflow Valves</strong><span class="cl-dots"></span><span>2 (FWD + AFT) – outflow normally split equally · each valve alone is sufficient</span></div>
+<div class="cl-item"><strong>Relief Valves</strong><span class="cl-dots"></span><span>Positive + Negative – protect structure against extreme differential pressure</span></div>
 <div class="cl-item"><strong>Crew action</strong><span class="cl-dots"></span><span>None required beyond FMC data entry</span></div>
 
 ### CPCS Automatic Operation
@@ -160,7 +160,7 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 >
 > | EICAS | Level | Meaning |
 > |:---|:---:|:---|
-> | <span class="c-amber">LANDING ALTITUDE</span> | <span class="c-amber">Advisory</span> | Landing altitude not available from FMC — system uses 2.000 ft |
+> | <span class="c-amber">LANDING ALTITUDE</span> | <span class="c-amber">Advisory</span> | Landing altitude not available from FMC – system uses 2.000 ft |
 
 ---
 

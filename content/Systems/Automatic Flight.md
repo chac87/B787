@@ -13,7 +13,7 @@ tags: [systems, autoflight, afds, mcp]
 
 ## System Overview
 
-The AFDS consists of three autoflight computing systems and the MCP. The autopilot does not control flight control surfaces directly — all autopilot commands are routed through the Primary Flight Computers (PFCs), which generate surface commands via the fly-by-wire system. The autopilot controls the elevators, ailerons, flaperons, and spoilers; rudder commands are added only during an autopilot approach and landing. Nosewheel steering is controlled by the autopilot during rollout after an automatic landing.
+The AFDS consists of three autoflight computing systems and the MCP. The autopilot does not control flight control surfaces directly – all autopilot commands are routed through the Primary Flight Computers (PFCs), which generate surface commands via the fly-by-wire system. The autopilot controls the elevators, ailerons, flaperons, and spoilers; rudder commands are added only during an autopilot approach and landing. Nosewheel steering is controlled by the autopilot during rollout after an automatic landing.
 
 When the autopilot is engaged, the PFCs issue backdrive commands that physically move the column, wheel, and pedals, giving the crew visual and tactile feedback of automatic inputs.
 
@@ -23,18 +23,18 @@ The MCP selects and activates AFDS modes and sets target values: airspeed · alt
 
 ### Mode Activation
 
-**Activate only — single push:**
+**Activate only – single push:**
 ALT · FLCH SPD · FPA · HDG HOLD · HDG SEL · TRK HOLD · TRK SEL · V/S
 
-**Arm or activate — single push:**
+**Arm or activate – single push:**
 LNAV · VNAV · LOC/FAC · G/S (via APP) · G/P (via APP) · B/CRS (via LOC/FAC or APP)
 
 ### Mode Deselection
 
 Most modes are deselected by selecting another mode, or by disengaging the autopilot and turning both flight directors off.
 
-- **G/S and G/P** cannot be deselected by another mode — only by AP disengage + both FDs off, selecting go-around, or (above 1,500 ft RA) reselecting APP
-- **VNAV · LNAV · LOC · FAC · G/S · G/P** can be disarmed by pushing their switch a second time — except LNAV when automatically armed on go-around
+- **G/S and G/P** cannot be deselected by another mode – only by AP disengage + both FDs off, selecting go-around, or (above 1,500 ft RA) reselecting APP
+- **VNAV · LNAV · LOC · FAC · G/S · G/P** can be disarmed by pushing their switch a second time – except LNAV when automatically armed on go-around
 
 ## Flight Mode Annunciations (FMA)
 
@@ -57,10 +57,10 @@ FMAs display just above the ASA on the PFD and HUD, in three columns from left t
 </details>
 </div>
 
-- **Active / captured modes** — large green text at the top of the annunciator box
-- **Armed modes** (except TO/GA in flight) — small white text (PFD) / small green text (HUD) at the bottom of the box
+- **Active / captured modes** – large green text at the top of the annunciator box
+- **Armed modes** (except TO/GA in flight) – small white text (PFD) / small green text (HUD) at the bottom of the box
 - A **green box** frames the mode annunciation for 10 seconds when a mode first activates, and when a degradation clears
-- **Mode degradation** with autopilot engaged — amber strikethrough through the affected FMA on the PFD
+- **Mode degradation** with autopilot engaged – amber strikethrough through the affected FMA on the PFD
 
 ### Speed on Thrust vs. Speed on Pitch
 
@@ -96,17 +96,17 @@ Displayed just above the attitude indicator on the PFD and HUD.
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">LAND 3</div>
-  <div class="eicas-card-body">Fail operational — a single fault cannot prevent automatic landing</div>
+  <div class="eicas-card-body">Fail operational – a single fault cannot prevent automatic landing</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">LAND 2</div>
-  <div class="eicas-card-body">Fail passive — a single fault cannot cause a significant flight path deviation</div>
+  <div class="eicas-card-body">Fail passive – a single fault cannot cause a significant flight path deviation</div>
 </div>
 
 <div class="eicas-card eicas-card--red">
   <div class="eicas-card-title">NO AUTOLAND</div>
-  <div class="eicas-card-body">AFDS unable to make an automatic landing · does not necessarily indicate a system failure — may reflect insufficient lateral or vertical signal integrity</div>
+  <div class="eicas-card-body">AFDS unable to make an automatic landing · does not necessarily indicate a system failure – may reflect insufficient lateral or vertical signal integrity</div>
 </div>
 
 </div>
@@ -121,7 +121,7 @@ Engaged by pushing either MCP autopilot engage switch. Normal disengagement via 
 
 - MCP autopilot disengage bar (pull down)
 - Override force on the control column or control wheel
-- Rudder pedal override — **only when LAND 2 or LAND 3 is annunciated**
+- Rudder pedal override – **only when LAND 2 or LAND 3 is annunciated**
 
 The EICAS warning **AUTOPILOT DISC** displays on any manual or automatic disengagement. Re-engagement may be possible after some failures by pushing the engage switch.
 
@@ -135,7 +135,7 @@ When the autopilot detects a mode failure, it remains engaged in an **attitude s
 
 Behavior differs by altitude:
 
-**Above 500 ft RA:** If the crew does not respond within 10 seconds, the autopilot automatically disconnects — AUTOPILOT DISC + wailer. TO/GA is available; the autopilot can be re-engaged above 200 ft RA.
+**Above 500 ft RA:** If the crew does not respond within 10 seconds, the autopilot automatically disconnects – AUTOPILOT DISC + wailer. TO/GA is available; the autopilot can be re-engaged above 200 ft RA.
 
 **Below 500 ft RA:** The autopilot does not auto-disconnect. **NO AUTOLAND** is added to the indications on the PFD and HUD. TO/GA is available for a go-around.
 
@@ -195,11 +195,11 @@ When a specific flight director mode degrades, the affected pitch or roll bar di
 <div class="cl-sub">A/T maintains speed in SPD mode. EICAS advisory FMC MESSAGE displays if MCP altitude remains at cruise altitude within 2 minutes of top of descent</div>
 <div class="cl-sub">For an early descent below the VNAV path, select FLCH, V/S, or FPA. If VNAV is armed and the airplane subsequently intercepts the VNAV path from below, VNAV reactivates in VNAV PTH</div>
 
-<div class="cl-item"><strong>VNAV ALT</strong><span class="cl-dots"></span><strong>Pitch to maintain MCP altitude — VNAV profile vs. MCP conflict</strong></div>
+<div class="cl-item"><strong>VNAV ALT</strong><span class="cl-dots"></span><strong>Pitch to maintain MCP altitude – VNAV profile vs. MCP conflict</strong></div>
 <div class="cl-sub">Airplane levels off. To resume: change MCP altitude and push altitude selector, or select another pitch mode</div>
 
 <div class="cl-item"><strong>FLCH SPD</strong><span class="cl-dots"></span><strong>Pitch to maintain MCP IAS/MACH</strong></div>
-<div class="cl-sub">Opens IAS/MACH window if blanked. A/T manages thrust — FMA shows THR once thrust is set to reach the selected altitude in ~2 minutes</div>
+<div class="cl-sub">Opens IAS/MACH window if blanked. A/T manages thrust – FMA shows THR once thrust is set to reach the selected altitude in ~2 minutes</div>
 <div class="cl-sub">Climb (1.000–12.000 ft change): A/T advances thrust to current limit for ~2 min climb</div>
 <div class="cl-sub">Descent (2.000–16.000 ft change): A/T retards thrust to idle for ~2 min descent · smaller changes take less than 2 min</div>
 
@@ -242,7 +242,7 @@ The autothrottle is **OFF** when the A/T arm switches are OFF, **ARMED** when th
 <div class="cl-item"><strong>IDLE</strong><span class="cl-dots"></span><strong>Thrust levers retard to idle</strong></div>
 <div class="cl-sub">Followed by HOLD mode</div>
 
-<div class="cl-item"><strong>HOLD</strong><span class="cl-dots"></span><strong>Thrust lever servos inhibited — manual thrust control</strong></div>
+<div class="cl-item"><strong>HOLD</strong><span class="cl-dots"></span><strong>Thrust lever servos inhibited – manual thrust control</strong></div>
 <div class="cl-sub">A/T does not control thrust or speed. Levers can be repositioned manually</div>
 
 </div>
@@ -267,12 +267,12 @@ The mode engaged depends on the active pitch mode:
 
 | Pitch Mode | Phase | A/T activates in |
 |---|---|---|
-| VNAV SPD | Climb | **THR REF** — advances toward reference thrust |
-| FLCH SPD | Climb | **THR** — advances toward reference thrust |
-| TO/GA | Go-around | **THR** — advances toward reference thrust |
+| VNAV SPD | Climb | **THR REF** – advances toward reference thrust |
+| FLCH SPD | Climb | **THR** – advances toward reference thrust |
+| TO/GA | Go-around | **THR** – advances toward reference thrust |
 | ALT · V/S · FPA · G/S · G/P · VNAV ALT · VNAV PTH | Any | **SPD** |
 | AP disconnected, both FDs off | Any | **SPD** |
-| VNAV SPD · FLCH SPD | Descent, speed in amber band | **THR** — thrust reaches CLB limit at stick shaker |
+| VNAV SPD · FLCH SPD | Descent, speed in amber band | **THR** – thrust reaches CLB limit at stick shaker |
 
 **HOLD → THR transition:** If pitch mode is FLCH SPD, VNAV SPD, or VNAV PTH and the A/T is in HOLD mode, speed decreasing into the amber band causes the A/T to transition from HOLD to **THR**. Thrust advances so that CLB limit is reached at stick shaker activation.
 
@@ -280,7 +280,7 @@ The mode engaged depends on the active pitch mode:
 
 ### Thrust Lever Operation
 
-Thrust levers can be manually repositioned without disconnecting the A/T. After manual input, the A/T repositions the levers to comply with the active mode — except in **HOLD** mode, where servos are inhibited.
+Thrust levers can be manually repositioned without disconnecting the A/T. After manual input, the A/T repositions the levers to comply with the active mode – except in **HOLD** mode, where servos are inhibited.
 
 HOLD mode activates in FLCH SPD or VNAV SPD when:
 - The pilot overrides the thrust levers
@@ -316,7 +316,7 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 >
 > **Push above 80 kts**: disarms LNAV and VNAV · does not remove thrust derate · Thrust FMA stays **HOLD**.
 
-> [!proc] In Flight — Takeoff Thrust Active
+> [!proc] In Flight – Takeoff Thrust Active
 > Push TO/GA while the takeoff thrust limit is still displayed (e.g. during initial climb):
 > - Removes climb derates and assumed temperature thrust reduction
 > - A/T activates in **THR REF**
@@ -324,24 +324,24 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 > - **50 – 400 ft RA**: selects TO/GA **roll mode only**
 > - **Above 400 ft RA**: selects TO/GA **roll and pitch modes**
 
-> [!proc] Speed Guidance After Liftoff — All Engines
+> [!proc] Speed Guidance After Liftoff – All Engines
 > Target speed = higher of **v<sub>2</sub> + 15 kts** or **v<sub>R</sub> + 15 kts** (airspeed at rotation with pitch > 2°).
 > If airspeed remains above target for more than 5 seconds → target resets to the lesser of actual speed or v<sub>2</sub> + 25 kts.
 > If the MCP IAS/MACH window is set above the current target → FD follows the new MCP value.
 >
 > *Note: The AFDS uses the IAS/MACH window speed as V2.*
 
-**Speed Guidance After Liftoff — Engine Failure:**
+**Speed Guidance After Liftoff – Engine Failure:**
 
 | Speed | Commanded |
 |---|---|
 | Below v<sub>2</sub> | v<sub>2</sub> |
-| v<sub>2</sub> — v<sub>2</sub> + 15 | Actual speed |
+| v<sub>2</sub> – v<sub>2</sub> + 15 | Actual speed |
 | Above v<sub>2</sub> + 15 | v<sub>2</sub> + 15 |
 
 > [!proc] Go-Around
 > Push TO/GA with flaps out of up or glideslope/glidepath captured:
-> - A/T activates in **THR** with GA thrust limit displayed — target: **2.000 ft/min** climb rate
+> - A/T activates in **THR** with GA thrust limit displayed – target: **2.000 ft/min** climb rate
 > - Disarms AFDS modes; selects TO/GA roll and pitch modes
 > - Arms or activates LNAV if an LNAV path is available
 > - Initial pitch-up command: **15° or near the PLI**, whichever is less
@@ -361,12 +361,12 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 <div class="eicas-levels" style="flex-direction:row;gap:0.75rem">
 
 <div class="eicas-card eicas-card--white" style="flex:1">
-  <div class="eicas-card-title">Push TO/GA — During Approach</div>
+  <div class="eicas-card-title">Push TO/GA – During Approach</div>
   <div class="eicas-card-body">AFDS commands initial pitch-up<br>FMAs: THR · TO/GA · TO/GA<br>A/T targets 2.000 ft/min) climb<br>Pitch holds current or selected speed<br>LNAV engages automatically if available</div>
 </div>
 
 <div class="eicas-card eicas-card--white" style="flex:1">
-  <div class="eicas-card-title">Push TO/GA Again — During Missed Approach</div>
+  <div class="eicas-card-title">Push TO/GA Again – During Missed Approach</div>
   <div class="eicas-card-body">Thrust FMA → THR REF<br>A/T commands G/A thrust limit<br>Pitch holds current or selected speed<br>Engaged roll mode does not change</div>
 </div>
 
@@ -376,14 +376,14 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 > AFDS commands pitch-up to 15° or just below the PLI, whichever is lower. Once climb rate improves, the mode transitions from pitch guidance to airspeed guidance.
 
 > [!info] Termination
-> TO/GA ends when another vertical mode is selected (VNAV, FLCH, V/S, FPA) or when the MCP target altitude is captured — AFDS transitions to ALT.
+> TO/GA ends when another vertical mode is selected (VNAV, FLCH, V/S, FPA) or when the MCP target altitude is captured – AFDS transitions to ALT.
 
 > [!info] After-Touchdown Inhibit
 > TO/GA switches are inhibited after touchdown or when below 2 ft RA for 3 or more seconds. Re-enabled above 5 ft RA if the landing is discontinued.
 
 ## ILS Signal Interference
 
-The AFDS monitors for ILS signal interference from service vehicles or other aircraft. When interference is detected, the autopilot disregards the ILS signal and holds attitude via inertial data. Most interferences are brief — the only indication is erratic raw ILS data movement. If the condition persists, full mode degradation annunciations apply.
+The AFDS monitors for ILS signal interference from service vehicles or other aircraft. When interference is detected, the autopilot disregards the ILS signal and holds attitude via inertial data. Most interferences are brief – the only indication is erratic raw ILS data movement. If the condition persists, full mode degradation annunciations apply.
 
 **Glideslope interference:** The AFDS limits descent to **3.25°** while in the attitude stabilizing mode, using inertial data for up to **15 seconds**. This prevents high sink rates during the stabilizing phase.
 
@@ -416,15 +416,15 @@ NO AUTOLAND and ASA NO AUTOLAND clear when the autopilot is disconnected or TO/G
 ## Limitations
 
 > [!limit] Limitations
-> <div class="cl-item"><strong>AP — min. engagement altitude after T/O</strong><span class="cl-dots"></span><strong>200 ft AGL</strong></div>
-> <div class="cl-item"><strong>Autoland — max. airport elevation</strong><span class="cl-dots"></span><strong>8.400 ft MSL</strong></div>
-> <div class="cl-item"><strong>Autoland — wind limits</strong><span class="cl-dots"></span><strong>HW 25 kts · TW 15 kts · CW 25 kts</strong></div>
-> <div class="cl-item"><strong>Autoland — glideslope</strong><span class="cl-dots"></span><strong>2.5° – 3.25°</strong></div>
-> <div class="cl-item"><strong>Autoland — flaps</strong><span class="cl-dots"></span><strong>20 · 25 · 30 (2-eng and OEI)</strong></div>
-> <div class="cl-item"><strong>Autoland — requirement</strong><span class="cl-dots"></span><strong>LAND 2 or LAND 3</strong></div>
-> <div class="cl-item"><strong>Without LAND 2 / 3 — disengage</strong><span class="cl-dots"></span><strong>below 135 ft</strong></div>
-> <div class="cl-item"><strong>LAND 2 / 3 + GS >3.25° — disengage</strong><span class="cl-dots"></span><strong>below 100 ft</strong></div>
-> <div class="cl-item"><strong>GS >3.77° — disengage</strong><span class="cl-dots"></span><strong>≤ 50 ft below DH / MDA</strong></div>
+> <div class="cl-item"><strong>AP – min. engagement altitude after T/O</strong><span class="cl-dots"></span><strong>200 ft AGL</strong></div>
+> <div class="cl-item"><strong>Autoland – max. airport elevation</strong><span class="cl-dots"></span><strong>8.400 ft MSL</strong></div>
+> <div class="cl-item"><strong>Autoland – wind limits</strong><span class="cl-dots"></span><strong>HW 25 kts · TW 15 kts · CW 25 kts</strong></div>
+> <div class="cl-item"><strong>Autoland – glideslope</strong><span class="cl-dots"></span><strong>2.5° – 3.25°</strong></div>
+> <div class="cl-item"><strong>Autoland – flaps</strong><span class="cl-dots"></span><strong>20 · 25 · 30 (2-eng and OEI)</strong></div>
+> <div class="cl-item"><strong>Autoland – requirement</strong><span class="cl-dots"></span><strong>LAND 2 or LAND 3</strong></div>
+> <div class="cl-item"><strong>Without LAND 2 / 3 – disengage</strong><span class="cl-dots"></span><strong>below 135 ft</strong></div>
+> <div class="cl-item"><strong>LAND 2 / 3 + GS >3.25° – disengage</strong><span class="cl-dots"></span><strong>below 100 ft</strong></div>
+> <div class="cl-item"><strong>GS >3.77° – disengage</strong><span class="cl-dots"></span><strong>≤ 50 ft below DH / MDA</strong></div>
 > <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><strong>not below 1.000 ft AFE</strong></div>
-> <div class="cl-item"><strong>VNAV — QFE operations</strong><span class="cl-dots"></span><strong>prohibited</strong></div>
-> <div class="cl-item"><strong>VNAV — triple FMC failure</strong><span class="cl-dots"></span><strong>not available</strong></div>
+> <div class="cl-item"><strong>VNAV – QFE operations</strong><span class="cl-dots"></span><strong>prohibited</strong></div>
+> <div class="cl-item"><strong>VNAV – triple FMC failure</strong><span class="cl-dots"></span><strong>not available</strong></div>

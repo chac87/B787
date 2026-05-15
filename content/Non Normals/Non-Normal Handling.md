@@ -10,24 +10,24 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
 
 <div class="nn-flow-step nn-flow-step--red" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Aviate — Flight path under control</div>
+    <div class="nn-flow-title">Aviate – Flight path under control</div>
     <div class="nn-flow-body">Upset / Stall / GPWS / Windshear / TCAS Recovery completed</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--red" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Aviate — Complete Memory Items</div>
+    <div class="nn-flow-title">Aviate – Complete Memory Items</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--amber" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Navigate — Emergency Maneuver</div>
+    <div class="nn-flow-title">Navigate – Emergency Maneuver</div>
     <div class="nn-flow-body">Driftdown, EO SID …</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--white" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Communicate — Declare an Emergency</div>
+    <div class="nn-flow-title">Communicate – Declare an Emergency</div>
     <div class="nn-flow-body">"MAYDAY, Callsign, Nature of emergency, Standby" · XPDR 7700</div>
   </div>
 </div>
@@ -36,23 +36,23 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
 
 <div class="nn-flow-step nn-flow-step--white" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Aviate — Complete Non-Normal Checklists</div>
+    <div class="nn-flow-title">Aviate – Complete Non-Normal Checklists</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--white" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Aviate — Complete Normal Checklist</div>
+    <div class="nn-flow-title">Aviate – Complete Normal Checklist</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--blue" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Navigate — Decision Making Process</div>
+    <div class="nn-flow-title">Navigate – Decision Making Process</div>
     <div class="nn-flow-body">Plan the diversion</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--white" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Communicate — Inform</div>
+    <div class="nn-flow-title">Communicate – Inform</div>
     <div class="nn-flow-body">ATC · Company · Senior (Cabin) · Passengers</div>
   </div>
 </div>
@@ -245,16 +245,16 @@ The example below shows the call structure, not a replacement for the actual che
 
 ---
 
-<div class="nnc-step">3 &nbsp; Execute Memory Items — as Confirmed Items</div>
+<div class="nnc-step">3 &nbsp; Execute Memory Items – as Confirmed Items</div>
 
-**Step 1 — Deactivate Autothrottle**
+**Step 1 – Deactivate Autothrottle**
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>Left A/T ARM switch</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>
 <div class="nnc-sub"><strong>PF</strong> (places hand on the left A/T ARM switch): &nbsp;"LEFT A/T ARM SWITCH – CONFIRM – OFF"</div>
 <div class="nnc-sub"><strong>PM</strong> (looks at the switch, verifies): &nbsp;"LEFT CONFIRMED"</div>
 <div class="nnc-sub"><strong>PF</strong> (moves the switch to OFF): &nbsp;"OFF"</div>
 
-**Step 2 — Reduce Thrust**
+**Step 2 – Reduce Thrust**
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>Left Thrust lever</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>Retard</strong></div>
 <div class="nnc-sub"><strong>PF</strong> (places hand on the left thrust lever): &nbsp;"LEFT THRUST LEVER – CONFIRM – RETARD"</div>
@@ -281,6 +281,6 @@ The example below shows the call structure, not a replacement for the actual che
 <div class="nnc-sub">Reads and actions the remaining reference items.</div>
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"Checklist Complete Except Deferred Items"</strong></div>
-<div class="nnc-sub">This checklist has deferred items for the approach — the PM will return to them during descent.</div>
+<div class="nnc-sub">This checklist has deferred items for the approach – the PM will return to them during descent.</div>
 
 ---

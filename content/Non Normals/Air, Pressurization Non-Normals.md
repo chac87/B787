@@ -24,7 +24,7 @@ This advisory message shows if the pack is in the standby cooling mode. STBY COO
 
 ## <span class="c-amber">PACK L+R</span>
 
-The airplane will not stay pressurized if the 2 packs are off. You must descend to a safe altitude, or 10.000 feet. After 2 minutes, you can try to reset the packs — see <a href="/Non-Normals/Non-Normal-Checklists/PACK-L+R"><span>PACK L+R</span></a>.
+The airplane will not stay pressurized if the 2 packs are off. You must descend to a safe altitude, or 10.000 feet. After 2 minutes, you can try to reset the packs – see <a href="/Non-Normals/Non-Normal-Checklists/PACK-L+R"><span>PACK L+R</span></a>.
 
 If the system will not reset, continue to descend and level off at a safe altitude. When the airplane has depressurized, push the ventilation switch (AVS).
 

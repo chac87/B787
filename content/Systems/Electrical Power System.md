@@ -17,7 +17,7 @@ tags: [systems, electrical]
 > Beim Engine Start agieren beide als Starter Motors; nach dem Start liefern sie Strom für die Main AC Buses.
 
 > [!info]- 2 APU Starter/Generators (ASGs)
-> <div class="cl-item"><strong>Output</strong><span class="cl-dots"></span><span>235V AC — nur Strom, keine Bleed Air</span></div>
+> <div class="cl-item"><strong>Output</strong><span class="cl-dots"></span><span>235V AC – nur Strom, keine Bleed Air</span></div>
 > <div class="cl-item"><strong>Max. Altitude</strong><span class="cl-dots"></span><span>FL 431</span></div>
 > <div class="cl-item"><strong>APU Start max. Altitude</strong><span class="cl-dots"></span><span>14.000 ft (ohne AC/DC Pumpen)</span></div>
 > <div class="cl-item"><strong>Fuel Feed</strong><span class="cl-dots"></span><span>Left manifold via AC fuel pump, oder dedicated DC fuel pump (left main tank)</span></div>
@@ -37,8 +37,8 @@ tags: [systems, electrical]
 > - All other faults → auto shutdown
 
 > [!info]- External Power
-> <div class="cl-item"><strong>FWD System</strong><span class="cl-dots"></span><span>2 Receptacles — generelle Ground Operations</span></div>
-> <div class="cl-item"><strong>AFT System</strong><span class="cl-dots"></span><span>1 Receptacle — primär zur Unterstützung des FWD Systems</span></div>
+> <div class="cl-item"><strong>FWD System</strong><span class="cl-dots"></span><span>2 Receptacles – generelle Ground Operations</span></div>
+> <div class="cl-item"><strong>AFT System</strong><span class="cl-dots"></span><span>1 Receptacle – primär zur Unterstützung des FWD Systems</span></div>
 >
 > - **1 FWD Anschluss** aktiv → Ground Handling Mode
 > - **2 FWD Anschlüsse** aktiv → External Power On Mode (minimiert Load Shedding)
@@ -47,7 +47,7 @@ tags: [systems, electrical]
 
 > [!info]- Batteries
 > <div class="cl-item"><strong>Main Battery</strong><span class="cl-dots"></span><span>Airplane Power-up, APU Start, Towing, Electric Braking; Notstrom für Capt. Flight Instruments bis RAT Deployment</span></div>
-> <div class="cl-item"><strong>APU Battery</strong><span class="cl-dots"></span><span>APU Start am Boden, Navigation Lights — operates automatically</span></div>
+> <div class="cl-item"><strong>APU Battery</strong><span class="cl-dots"></span><span>APU Start am Boden, Navigation Lights – operates automatically</span></div>
 
 > [!info]- RAT (Ram Air Turbine)
 > <div class="cl-item"><strong>Funktion</strong><span class="cl-dots"></span><span>Emergency hydraulic and electric power</span></div>
@@ -71,7 +71,7 @@ tags: [systems, electrical]
 Systems that use electrical power: Main engine start, Pressurization / Air conditioning, Wing anti-ice, Horizontal stabilizer trim, 2 pairs of spoilers, Wheel brake systems.
 
 > [!info]- 235V AC System
-> <div class="cl-item"><strong>Main AC Buses</strong><span class="cl-dots"></span><span>4 Buses im Aft E/E Bay — verteilen den Hochspannungsstrom</span></div>
+> <div class="cl-item"><strong>Main AC Buses</strong><span class="cl-dots"></span><span>4 Buses im Aft E/E Bay – verteilen den Hochspannungsstrom</span></div>
 
 > [!info]- 115V AC & 28V DC Systems
 > <div class="cl-item"><strong>Quelle</strong><span class="cl-dots"></span><span>Power Conversion Devices aus dem 235V AC System (oder direkt External Power am Boden)</span></div>
@@ -79,7 +79,7 @@ Systems that use electrical power: Main engine start, Pressurization / Air condi
 
 > [!info]- Large Motor Power Distribution System
 > <div class="cl-item"><strong>Funktion</strong><span class="cl-dots"></span><span>Speist große Lasten über Motor Controllers (z.B. Startvorgänge)</span></div>
-> <div class="cl-item"><strong>Kühlung</strong><span class="cl-dots"></span><span>Power Electronics Cooling System (PECS) — aktiv sobald Triebwerke, APU oder FWD External Power laufen</span></div>
+> <div class="cl-item"><strong>Kühlung</strong><span class="cl-dots"></span><span>Power Electronics Cooling System (PECS) – aktiv sobald Triebwerke, APU oder FWD External Power laufen</span></div>
 
 ## Operation Modes
 

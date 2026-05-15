@@ -200,7 +200,7 @@ The first officer normally does this procedure. The captain may do this procedur
 <div class="cl-item cl-indent"><strong>ND mode selector</strong><span class="cl-dots"></span><strong>Select MAP</strong></div>
 <div class="cl-item cl-indent"><strong>ND mode select switch</strong><span class="cl-dots"></span><strong>Push</strong></div>
 <div class="cl-item cl-indent"><strong>MENU</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">Map selections — As needed</div>
+<div class="cl-sub cl-indent">Map selections – As needed</div>
 
 <div class="cl-item"><strong>ND CENTER switch</strong><span class="cl-dots"></span><strong>As needed</strong></div>
 
@@ -294,14 +294,14 @@ The first officer normally does this procedure. The captain may do this procedur
 <div class="cl-item"><strong>Right tuning and control panel</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-sub">Verify that the OFF light is extinguished.</div>
 <div class="cl-item cl-indent"><strong>VHF</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">R VHF — Set</div>
+<div class="cl-sub cl-indent">R VHF – Set</div>
 <div class="cl-item cl-indent"><strong>HF</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">R HF — Set</div>
+<div class="cl-sub cl-indent">R HF – Set</div>
 <div class="cl-item cl-indent"><strong>WEATHER RADAR</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">GAIN and MODE — As needed</div>
+<div class="cl-sub cl-indent">GAIN and MODE – As needed</div>
 <div class="cl-item cl-indent"><strong>TRANSPONDER</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub cl-indent">F/O TCAS Display — As needed</div>
-<div class="cl-sub cl-indent">TCAS ALT — As needed</div>
+<div class="cl-sub cl-indent">F/O TCAS Display – As needed</div>
+<div class="cl-sub cl-indent">TCAS ALT – As needed</div>
 <div class="cl-item cl-indent"><strong>VHF</strong><span class="cl-dots"></span><strong>Select</strong></div>
 
 <div class="cl-item"><strong>First officer's audio control panel</strong><span class="cl-dots"></span><strong>As needed</strong></div>

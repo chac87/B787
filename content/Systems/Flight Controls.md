@@ -40,7 +40,7 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 
 ## Roll Control
 
-- Control wheel commands a **roll maneuver rate** — not direct surface position
+- Control wheel commands a **roll maneuver rate** – not direct surface position
 - Bank angle protection > 35° → automatic back roll to < 30°
 - Ailerons are locked out at high speeds → roll control by flaperons and spoilers only
 
@@ -72,11 +72,18 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 
 | Mode | Drive | Control |
 |:---|:---|:---|
-| **Primary**<br>![[flap normal.webp]] | Hydraulic (System C) | Slats + flaps together<br>Slat Autogap available |
-| **Secondary**<br>![[flaps secondary.webp]] | Hydraulic or electric | Controlled separately — flaps limited to 20<br>Slats pre-gap only |
-| **Alternate**<br>![[flaps alternate.webp]] | Electric | via Alternate Flap Selector<br>Slats max mid range — flaps max 20 |
+| **Primary**<br>![[flaps primary.webp]] | Hydraulic (System C) | Slats + flaps together<br>Slat Autogap available |
+| **Secondary**<br>![[flaps secondary.webp]] | Hydraulic or electric | Controlled separately – flaps limited to 20<br>Slats pre-gap only |
+| **Alternate**<br>![[flaps alternate.webp]] | Electric | via Alternate Flap Selector<br>Slats max mid range – flaps max 20 |
 
 </div>
+
+### Automatic Features
+
+| | Primary mode | Secondary mode |
+|:---|:---|:---|
+| **Gap control** | **Slat Autogap** – AOA approaches stall + speed < 240 kt → slats drive to fully extended. Return to mid when AOA decreases. | **Slat Pre-gap** – flap lever out of UP + speed < 240 kt → slats proactively drive to fully extended. *(Electric motors too slow for reactive autogap.)* |
+| **Load relief** | **Flap Load Relief** – flap placard exceeded at flaps 15–30 → auto-retract to flaps 5. Re-extend when speed decreases. Lever does not move. <span class="c-amber">LOAD RELIEF</span> on EICAS. | **Slat Load Relief** – speed > 240 kt with slats extended → auto-retract to mid. Re-extend when speed drops. <span class="c-amber">LOAD RELIEF</span> on EICAS. |
 
 ### Flap/Slat Positions & Speed Selection
 
@@ -90,7 +97,7 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 | 30 | 30° | Fully Extended |
 
 > [!info] Flap 20 → 25: Slats auf "Fully"
-> Beim Wählen von Flap 25 fahren die Slats von **Mid** auf **Fully Extended** — einziger Schritt, bei dem Slats die vollausgefahrene Landeposition einnehmen.
+> Beim Wählen von Flap 25 fahren die Slats von **Mid** auf **Fully Extended** – einziger Schritt, bei dem Slats die vollausgefahrene Landeposition einnehmen.
 
 ### Spoilers
 

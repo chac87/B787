@@ -2,8 +2,8 @@
 
 > [!info]- General Infos
 > <div class="cl-item"><strong>Wake Turbulence Category</strong><span class="cl-dots"></span><span>H</span></div>
-> <div class="cl-item"><strong>ICAO Code Letter (Ground Maneuvering)</strong><span class="cl-dots"></span><span>E — Wingspan 52 m to &lt;65 m</span></div>
-> <div class="cl-item"><strong>ICAO Approach Category</strong><span class="cl-dots"></span><span>D — Airspeed on Final &gt;160 kts</span></div>
+> <div class="cl-item"><strong>ICAO Code Letter (Ground Maneuvering)</strong><span class="cl-dots"></span><span>E – Wingspan 52 m to &lt;65 m</span></div>
+> <div class="cl-item"><strong>ICAO Approach Category</strong><span class="cl-dots"></span><span>D – Airspeed on Final &gt;160 kts</span></div>
 > <div class="cl-item"><strong>Range</strong><span class="cl-dots"></span><span>8300 NM</span></div>
 > <div class="cl-item"><strong>Engines</strong><span class="cl-dots"></span><span>2 × GEnx-1B (320 kN) or 2 × RR Trent 1000 (320 kN)</span></div>
 
@@ -41,8 +41,8 @@
 
 > [!info]- Rules of Thumb
 > <div class="cl-section">Climb Speeds</div>
-> <div class="cl-item"><strong>v<sub>x</sub> — Max Angle Climb</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 30 + 80 kts</strong></div>
-> <div class="cl-item"><strong>v<sub>y</sub> — Max Rate Climb</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 30 + 140 kts</strong></div>
+> <div class="cl-item"><strong>v<sub>x</sub> – Max Angle Climb</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 30 + 80 kts</strong></div>
+> <div class="cl-item"><strong>v<sub>y</sub> – Max Rate Climb</strong><span class="cl-dots"></span><strong>v<sub>REF</sub> 30 + 140 kts</strong></div>
 > <div class="cl-sub">Until intercepting M 0.84</div>
 > <div class="cl-sep"></div>
 > <div class="cl-section">Approach Speed (v<sub>REF</sub> 30)</div>

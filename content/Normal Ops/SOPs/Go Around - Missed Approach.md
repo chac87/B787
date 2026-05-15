@@ -101,7 +101,7 @@ role: Both
 
 ### Go-Around above 1500 ft RA
 
-> [!info]- APP Button Deselect — Alternative to TOGA
+> [!info]- APP Button Deselect – Alternative to TOGA
 > Above **1500 ft radio altitude**, pushing **APP** releases both localizer and glideslope.
 > Depending on airline configuration, the autopilot reverts to **ATT** (attitude stabilized) or **HDG HOLD + V/S**.
 >
@@ -111,7 +111,7 @@ role: Both
 
 > [!info]- Exiting TOGA Mode at Positive Rate
 > Once a positive rate of climb is established, TOGA mode can be exited.
-> Example: go-around instructed at 1300 ft with a 2000 ft level-off — select **V/S** at positive rate to control the climb and avoid capturing 2000 ft at high rate (TCAS RA risk).
+> Example: go-around instructed at 1300 ft with a 2000 ft level-off – select **V/S** at positive rate to control the climb and avoid capturing 2000 ft at high rate (TCAS RA risk).
 
 ### High Flare / Bounced Landing / Balked Landing
 

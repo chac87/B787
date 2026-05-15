@@ -8,8 +8,8 @@ tags: [non-normal, engine]
 ## Engine Failure after v1
 
 **Rotation:**
-- Slow rotation at **1.5°/sec** — avoid rapid pitch changes with asymmetric thrust
-- **1 eng att** pitch — very important for initial climb; applicable for 2nd segment (after gear up)
+- Slow rotation at **1.5°/sec** – avoid rapid pitch changes with asymmetric thrust
+- **1 eng att** pitch – very important for initial climb; applicable for 2nd segment (after gear up)
 - Airborne detected: Autobrake RTO → **OFF** (audible "klack")
 
 > [!info] Below 400 ft RA
@@ -23,11 +23,11 @@ tags: [non-normal, engine]
 <tbody>
 <tr>
   <td><strong>&lt; 400 ft</strong></td>
-  <td>AP available > <strong>200 ft</strong> AGL<br>PF: <em>"Set RWY TRK and push"</em> — Engage roll mode (TRK HLD)<br>if needed: Max Power (Target V/S ~400–500 ft/min (gross gradient 2.4% × 180 kt GS ≈ 432 ft/min))</td>
+  <td>AP available > <strong>200 ft</strong> AGL<br>PF: <em>"Set RWY TRK and push"</em> – Engage roll mode (TRK HLD)<br>if needed: Max Power (Target V/S ~400–500 ft/min (gross gradient 2.4% × 180 kt GS ≈ 432 ft/min))</td>
 </tr>
 <tr>
   <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))"><strong>> 400 ft</strong></td>
-  <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray)); text-align:center"><span class="c-red">Severe Damage, Fire?</span> → Memory Items immediately</td>
+  <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray)); text-align:center"><span class="c-red">Fire, Severe Damage, Separation, ENG SURGE, LIMIT EXCEED?</span> → "Memory Items"</td>
 </tr>
 <tr>
   <td rowspan="2" style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))"><strong>Acceleration Height</strong></td>
@@ -47,26 +47,26 @@ tags: [non-normal, engine]
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Engine Fail: JCENA</div>
   <div class="eicas-card-body" style="line-height: 2.1">
-    <span><strong style="color: #3257BC">J</strong> — Just fly / Memory Items</span><br>
-    <span style="padding-left: 1.8em"><strong style="color: #3257BC">C</strong> — Clean-Up and CON Thrust</span><br>
-    <span style="padding-left: 3.6em"><strong style="color: #3257BC">E</strong> — Eng Out on VNAV</span><br>
-    <span style="padding-left: 5.4em"><strong style="color: #3257BC">N</strong> — NNC</span><br>
-    <span style="padding-left: 7.2em"><strong style="color: #3257BC">A</strong> — After Take Off Checklist</span>
+    <span><strong style="color: #3257BC">J</strong> – Just fly / Memory Items</span><br>
+    <span style="padding-left: 1.8em"><strong style="color: #3257BC">C</strong> – Clean-Up and CON Thrust</span><br>
+    <span style="padding-left: 3.6em"><strong style="color: #3257BC">E</strong> – Eng Out on VNAV</span><br>
+    <span style="padding-left: 5.4em"><strong style="color: #3257BC">N</strong> – NNC</span><br>
+    <span style="padding-left: 7.2em"><strong style="color: #3257BC">A</strong> – After Take Off Checklist</span>
   </div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Thrust Increase</div>
-  <div class="eicas-card-body"><strong>Criteria:</strong> Airborne AND IAS ≥ 140 kt.<br><strong>&lt; 400 ft:</strong> manual thrust — A/T in HOLD.<br><strong>&gt; 400 ft:</strong> A/T disconnect + manual thrust, or TO/GA switch.</div>
+  <div class="eicas-card-body"><strong>Criteria:</strong> Airborne AND IAS ≥ 140 kt.<br><strong>&lt; 400 ft:</strong> manual thrust – A/T in HOLD.<br><strong>&gt; 400 ft:</strong> A/T disconnect + manual thrust, or TO/GA switch.</div>
 </div>
 
 <div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">TAP — Thrust Asymmetry Protection</div>
+  <div class="eicas-card-title">TAP – Thrust Asymmetry Protection</div>
   <div class="eicas-card-body">Speed below v<sub>2</sub>: automatically reduces thrust on the remaining operating engine. Thrust levers do not move.</div>
 </div>
 
 <div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">TAMS — Thrust Asymmetry Minimum Speed</div>
+  <div class="eicas-card-title">TAMS – Thrust Asymmetry Minimum Speed</div>
   <div class="eicas-card-body">Situational awareness of minimum control speed required for directional control during large thrust asymmetry. During T/O or G/A: always ≥ 10 kt above v<sub>MCA</sub>. Shown as red-striped band at bottom of the PFD speed tape.</div>
 </div>
 
@@ -89,7 +89,7 @@ tags: [non-normal, engine]
 
 <div class="eicas-card eicas-card--red">
   <div class="eicas-card-title">Eng Svr Damage/Sep L, R <span class="eicas-card-badge">UN-ANNUNCIATED</span></div>
-  <div class="eicas-card-body">No EICAS message — crew decision.<br>Airframe vibrations with abnormal engine indications, or engine separation.<br>No restart.<br>First Memory Items or first Driftdown? No hard rule. Depends on the situation.<br><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a> · <a href="/Non-Normals/Memory-Items">→ Memory Items</a></div>
+  <div class="eicas-card-body">No EICAS message – crew decision.<br>Airframe vibrations with abnormal engine indications, or engine separation.<br>No restart.<br>First Memory Items or first Driftdown? No hard rule. Depends on the situation.<br><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a> · <a href="/Non-Normals/Memory-Items">→ Memory Items</a></div>
 </div>
 
 </div>
@@ -132,17 +132,17 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 <div class="eicas-levels">
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Altitude available · Engine recoverable</div>
-  <div class="eicas-card-body">ex. dual engine stall at high altitude, volcanic ash<br>→ Increase speed above 250 kt — improves windmill restart probability</div>
+  <div class="eicas-card-body">ex. dual engine stall at high altitude, volcanic ash<br>→ Increase speed above 250 kt – improves windmill restart probability</div>
 </div>
 <div class="eicas-card eicas-card--red">
   <div class="eicas-card-title">Low altitude OR engine unrecoverable</div>
-  <div class="eicas-card-body">ex. fuel starvation, birdstrike on both engines<br>→ Decrease speed to top of amber band — maximizes glide</div>
+  <div class="eicas-card-body">ex. fuel starvation, birdstrike on both engines<br>→ Decrease speed to top of amber band – maximizes glide</div>
 </div>
 </div>
 
-**ATC:** MAYDAY · Callsign · DUAL ENG FAIL · UNABLE TO MAINTAIN ALTITUDE — request initial vector towards nearest suitable airport.
+**ATC:** MAYDAY · Callsign · DUAL ENG FAIL · UNABLE TO MAINTAIN ALTITUDE – request initial vector towards nearest suitable airport.
 
-- **Best chance:** restart attempt immediately after recognizing the failure — use remaining high RPM.
+- **Best chance:** restart attempt immediately after recognizing the failure – use remaining high RPM.
 - **Restart probability:** speeds above the cross-start envelope (250 kt) and altitudes below FL300 improve restart probability. Drift-down time can be used to assess landing/ditching options.
 - **Cabin:** all CACs are load shed → slow depressurisation. Monitor cabin altitude and don oxygen masks if necessary at high altitude.
 - **EICAS:** <span class="c-red">STABILIZER</span> with Master Warning on top is not relevant; <span class="c-amber">ENG FAIL L/R</span> may be on page 2.
@@ -156,12 +156,12 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 > Cycling both switches resets both EECs. Further cycling does **not** aid or speed up the start. Cut off fuel only if engine damage is apparent or the engine does not start.
 
 > [!info] Electrical power restored
-> Do not confuse APU generator power with engine generator power at idle RPM — do not advance the thrust lever prematurely.
+> Do not confuse APU generator power with engine generator power at idle RPM – do not advance the thrust lever prematurely.
 
 **If one engine relights:** Transition to single engine driftdown.
 - Select ENG OUT CRZ
 - Reset MCP altitude
-- Execute — verify VNAV automatic driftdown
+- Execute – verify VNAV automatic driftdown
 
 **If both engines relight (3A):**
 - APU shutdown
@@ -231,14 +231,14 @@ An engine failure at cruise altitude may require a driftdown to single-engine ma
 <div class="checklist">
 
 <div class="cl-item"><strong>VNAV ACT CRZ page → ENG OUT</strong><span class="cl-dots"></span><strong>Select</strong></div>
-<div class="cl-sub"><span class="c-amber">↓ unten — CDU</span></div>
+<div class="cl-sub"><span class="c-amber">↓ unten – CDU</span></div>
 <div class="cl-sub">Displays MOD CRZ calculated on EO MCT on LSK 1L. Review the EO SPD line.</div>
 
 <div class="cl-item"><strong>MCP altitude window</strong><span class="cl-dots"></span><strong>Set altitude below ENG OUT altitude</strong></div>
-<div class="cl-sub"><span class="c-green">↑ oben — MCP</span></div>
+<div class="cl-sub"><span class="c-green">↑ oben – MCP</span></div>
 
 <div class="cl-item"><strong>EO D/D page</strong><span class="cl-dots"></span><strong>Execute</strong></div>
-<div class="cl-sub"><span class="c-amber">↓ unten — CDU</span></div>
+<div class="cl-sub"><span class="c-amber">↓ unten – CDU</span></div>
 <div class="cl-sub">Thrust reference → CON. Autothrottle maintains MCT. Airplane descends in VNAV SPD.</div>
 <div class="cl-sub">If excess airspeed cannot be controlled in near-level flight: FMC transitions to VNAV PTH (300 fpm descent) · autothrottle SPD mode controls airspeed.</div>
 
@@ -254,7 +254,7 @@ At altitude capture the **ENG OUT CRZ** page displays. Maintain MCT and driftdow
 
 | Speed | Effect | Use when |
 |:---|:---|:---|
-| **EO SPD** (default) | Higher driftdown altitude | Standard — minimum drag |
+| **EO SPD** (default) | Higher driftdown altitude | Standard – minimum drag |
 | **EO LRC** | Lower driftdown altitude | Best fuel economy |
 | **CO SPD** | Higher driftdown speed | Shorter flight time; specified in AMI |
 
@@ -297,12 +297,12 @@ Three start methods are available in flight. The applicable method is determined
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Windmill Start</div>
-  <div class="eicas-card-body">Airspeed within the start envelope — ram air windmills the engine.<br>Restart Envelope is displayed on EICAS.<br>X-START is blank.<br>Set FUEL CONTROL to RUN; no starter required.</div>
+  <div class="eicas-card-body">Airspeed within the start envelope – ram air windmills the engine.<br>Restart Envelope is displayed on EICAS.<br>X-START is blank.<br>Set FUEL CONTROL to RUN; no starter required.</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Starter-Assisted Start <span class="eicas-card-badge">X-START</span></div>
-  <div class="eicas-card-body">Airspeed below windmilling start speed — starter required.<br>Set START selector to START, then FUEL CONTROL to RUN.</div>
+  <div class="eicas-card-body">Airspeed below windmilling start speed – starter required.<br>Set START selector to START, then FUEL CONTROL to RUN.</div>
 </div>
 
 </div>
@@ -333,9 +333,9 @@ Accomplished the same as a normal missed approach with the following differences
 | **25 or 30**  |     **20**     |
 
 - After TO/GA: AFDS commands a speed between command speed and command speed +15 kts.
-- Rudder automatically compensates for differential thrust — no pilot input required.
+- Rudder automatically compensates for differential thrust – no pilot input required.
 - Select MCT (CON) when flaps are retracted to the desired setting.
-- G/A pitch ca. 8° until gear up — then follow F/D.
+- G/A pitch ca. 8° until gear up – then follow F/D.
 
 ## On Ground
 
@@ -343,12 +343,12 @@ Accomplished the same as a normal missed approach with the following differences
 
 <div class="eicas-card eicas-card--red">
   <div class="eicas-card-title"><span class="nn-bracket">[]</span> FIRE ENG L, R <span class="eicas-card-badge">EICAS WARNING</span></div>
-  <div class="eicas-card-body">No memory items — work the NNC directly.<br>NNC triggered via EICAS. If EICAS does not display (e.g. externally observed fire) → apply QRH checklist.<br><a href="/Non-Normals/Non-Normal-Checklists/FIRE-ENG-L,-R"><span>→ NNC: FIRE ENG L, R</span></a></div>
+  <div class="eicas-card-body">No memory items – work the NNC directly.<br>NNC triggered via EICAS. If EICAS does not display (e.g. externally observed fire) → apply QRH checklist.<br><a href="/Non-Normals/Non-Normal-Checklists/FIRE-ENG-L,-R"><span>→ NNC: FIRE ENG L, R</span></a></div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Engine Fail on Ground</div>
-  <div class="eicas-card-body">After stopping: apply memory items of Eng Svr Damage/Sep to secure the engine quickly — then work NNC.<br>Applies when failure on ground, in T/O roll, or on final with decision to cope after touchdown.<br><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a> · <a href="/Non-Normals/Memory-Items">→ Memory Items</a></div>
+  <div class="eicas-card-body">After stopping: apply memory items of Eng Svr Damage/Sep to secure the engine quickly – then work NNC.<br>Applies when failure on ground, in T/O roll, or on final with decision to cope after touchdown.<br><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>→ NNC: Eng Svr Damage/Sep L, R</span></a> · <a href="/Non-Normals/Memory-Items">→ Memory Items</a></div>
 </div>
 
 </div>

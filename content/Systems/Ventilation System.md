@@ -2,9 +2,9 @@
 
 The ventilation system uses recirculated cabin air to cool electronic and electrical components. The heated exhaust air is routed to the cargo heat system or discharged overboard. Two fluid cooling systems provide additional cooling: PECS and ICS.
 
-## Equipment Cooling — FWD / AFT
+## Equipment Cooling – FWD / AFT
 
-Both systems are identical in design. Each has 2 supply fans (primary + backup) — the backup starts automatically if the primary fails.
+Both systems are identical in design. Each has 2 supply fans (primary + backup) – the backup starts automatically if the primary fails.
 
 | System | Cools | Exhaust to |
 |:---|:---|:---|
@@ -38,9 +38,9 @@ Automatic activation (FWD or AFT) when:
 |:---|:---:|:---|
 | <span class="c-amber">EQUIP COOLING FWD</span> | <span class="c-amber">Advisory</span> | FWD equipment cooling inoperative (on ground + horn in wheel well) |
 | <span class="c-amber">EQUIP COOLING AFT</span> | <span class="c-amber">Advisory</span> | AFT equipment cooling inoperative (on ground + horn in wheel well) |
-| <span class="c-amber">EQUIP OVBD VLV AFT</span> | <span class="c-amber">Advisory</span> | AFT overboard valve open — pressurization may cause duct failure + cabin pressure loss |
+| <span class="c-amber">EQUIP OVBD VLV AFT</span> | <span class="c-amber">Advisory</span> | AFT overboard valve open – pressurization may cause duct failure + cabin pressure loss |
 
-> [!warning] With EQUIP OVBD VLV AFT: do **not** pressurize the cabin — duct failure and cabin pressure loss possible.
+> [!warning] With EQUIP OVBD VLV AFT: do **not** pressurize the cabin – duct failure and cabin pressure loss possible.
 
 ---
 
@@ -52,7 +52,7 @@ Supplies ventilation air to lavatories and galleys · controls smoke in lavatori
 
 ## Fluid Cooling Systems
 
-### PECS — Power Electronics Cooling System
+### PECS – Power Electronics Cooling System
 
 Liquid cooling for the large motor power distribution system (AFT E/E) and the ICS motor controllers.
 
@@ -60,10 +60,10 @@ Liquid cooling for the large motor power distribution system (AFT E/E) and the I
 - Coolant temperature: **27 °C** (normal operation)
 - Status on **STATUS page** (fluid quantity + status per loop)
 - With only one external FWD power source: only 1 loop visible on EICAS
-- No flight deck controls — fully automatic
+- No flight deck controls – fully automatic
 
 > [!caution] PECS requires a **cooldown period** after pack and hydraulic EMP shutdown to dissipate residual heat from the liquid-cooled LRUs. Otherwise, damage to the components and coolant may occur.
 
-### ICS — Integrated Cooling System
+### ICS – Integrated Cooling System
 
 Central refrigeration system: cools **galley carts** + supports cooling of **recirculated cabin air** (lower recirculation ducts). Integrated with air conditioning + PECS for overall thermal load management. No flight deck controls.

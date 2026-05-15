@@ -84,7 +84,7 @@ Start the Before Start Procedure after papers are on board.
 <div class="cl-item cl-indent"><strong>LEFT and RIGHT FUEL PUMP switches</strong><span class="cl-dots"></span><strong>ON</strong></div>
 <div class="cl-sub cl-indent">The PRESS lights are illuminated because of load shedding. If the APU is running, the left aft pump PRESS light is extinguished.</div>
 <div class="cl-sub cl-indent">If the FUEL IN CENTER message shows:</div>
-<div class="cl-item cl-indent"><strong>CENTER FUEL PUMP switches</strong><span class="cl-dots"></span><strong>ON — if fuel in center tank</strong></div>
+<div class="cl-item cl-indent"><strong>CENTER FUEL PUMP switches</strong><span class="cl-dots"></span><strong>ON – if fuel in center tank</strong></div>
 <div class="cl-sub cl-indent">Both PRESS lights illuminate until after engine start because of load shedding.</div>
 
 <div class="cl-item"><strong>BEACON light switch</strong><span class="cl-dots"></span><strong>ON</strong><span class="mi-role mi-role--pm">F/O</span></div>

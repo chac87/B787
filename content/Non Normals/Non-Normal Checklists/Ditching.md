@@ -57,7 +57,7 @@ tags: [non-normal, misc]
 > **Do not inflate life vests until after exiting the airplane.**
 
 > [!info]- Fuel Burn-Off
-> Consider burning off fuel prior to ditching if the situation permits — this provides greater buoyancy and a lower approach speed. However, **do not reduce fuel to a critical amount**, as ditching with engine thrust available improves ability to properly control touchdown.
+> Consider burning off fuel prior to ditching if the situation permits – this provides greater buoyancy and a lower approach speed. However, **do not reduce fuel to a critical amount**, as ditching with engine thrust available improves ability to properly control touchdown.
 >
 > **Note:** Fuel jettisoning may also be considered prior to ditching.
 

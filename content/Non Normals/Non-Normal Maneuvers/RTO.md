@@ -44,10 +44,10 @@ tags: [non-normal, maneuvers]
 > | | Low Speed (< 80 kts) | High Speed (≥ 80 kts → V₁) |
 > | :--- | :--- | :--- |
 > | **Threat** | Loss of directional control | Runway overrun · Tire blowout & Fire |
-> | **Key points** | Maintain centerline · Retard thrust levers immediately · Autobrakes not available below 85 kts — be prepared for asymmetric manual braking | Monitor autobrake & speedbrake closely (PM) · Maximum brakes — do not reduce prematurely · Consider 'GO' as potentially safer option · Know runway lighting and stopping distance remaining |
+> | **Key points** | Maintain centerline · Retard thrust levers immediately · Autobrakes not available below 85 kts – be prepared for asymmetric manual braking | Monitor autobrake & speedbrake closely (PM) · Maximum brakes – do not reduce prematurely · Consider 'GO' as potentially safer option · Know runway lighting and stopping distance remaining |
 
 > [!caution] Evacuation Decision
-> **Grave and imminent danger** → EVACUATION CHECKLIST — always use QRH / Paper Checklist
+> **Grave and imminent danger** → EVACUATION CHECKLIST – always use QRH / Paper Checklist
 >
 > **No evacuation required** → "CANCEL ALERT, CANCEL ALERT"
 
@@ -63,10 +63,10 @@ tags: [non-normal, maneuvers]
 
 <div class="cl-item"><strong>Passenger announcement</strong><span class="cl-dots"></span><strong>MAKE</strong></div>
 
-<div class="cl-item"><strong>FMS — Recheck</strong><span class="cl-dots"></span><strong>PERFORM</strong></div>
+<div class="cl-item"><strong>FMS – Recheck</strong><span class="cl-dots"></span><strong>PERFORM</strong></div>
 <div class="cl-sub">FOB & Endurance</div>
 <div class="cl-sub">Routing</div>
-<div class="cl-sub">Performance — check & re-insert</div>
+<div class="cl-sub">Performance – check & re-insert</div>
 <div class="cl-sub">Flaps setting</div>
 <div class="cl-sub">Brake temperature & cooling status</div>
 

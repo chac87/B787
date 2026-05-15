@@ -32,9 +32,9 @@
 > <div class="cl-item"><strong>Max. TWC contaminated</strong><span class="cl-dots"></span><span>5 kts</span></div>
 > <div class="cl-item"><strong>Max. CWC Takeoff dry</strong><span class="cl-dots"></span><span>33 kts</span></div>
 > <div class="cl-item"><strong>Max. CWC Landing dry</strong><span class="cl-dots"></span><span>35 kts</span></div>
-> <div class="cl-item"><strong>Engine Start — CW >40 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
-> <div class="cl-item"><strong>Engine Start — TW >5 kts + wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
-> <div class="cl-item"><strong>Engine Start — wind >55 kts</strong><span class="cl-dots"></span><span>idle only</span></div>
+> <div class="cl-item"><strong>Engine Start – CW >40 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
+> <div class="cl-item"><strong>Engine Start – TW >5 kts + wind >35 kts</strong><span class="cl-dots"></span><span>N1 ≥ 45% before brake release</span></div>
+> <div class="cl-item"><strong>Engine Start – wind >55 kts</strong><span class="cl-dots"></span><span>idle only</span></div>
 
 > [!limit] Door Limitations
 > <div class="cl-item"><strong>Door operation</strong><span class="cl-dots"></span><span>40 kts wind</span></div>
@@ -46,29 +46,29 @@
 > <div class="cl-item"><strong>Max. allowable cabin pressure diff.</strong><span class="cl-dots"></span><span>0.11 psi</span></div>
 
 > [!limit] Anti-Ice Limitations
-> <div class="cl-item"><strong>EAI — ground</strong><span class="cl-dots"></span><span>ON</span></div>
-> <div class="cl-item"><strong>EAI — flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
-> <div class="cl-item"><strong>EAI — not when</strong><span class="cl-dots"></span><span>OAT >10°C (ground) · TAT >15°C (flight) · OAT <−40°C</span></div>
-> <div class="cl-item"><strong>WAI — flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
-> <div class="cl-item"><strong>WAI — not when</strong><span class="cl-dots"></span><span>TAT >15°C · OAT <−40°C</span></div>
-> <div class="cl-item"><strong>Ice Detection — flight</strong><span class="cl-dots"></span><span>TAT ≤15°C + visible moisture or clouds</span></div>
-> <div class="cl-item"><strong>Ice Detection — ground</strong><span class="cl-dots"></span><span>OAT ≤10°C + contaminated surface + visible moisture</span></div>
+> <div class="cl-item"><strong>EAI – ground</strong><span class="cl-dots"></span><span>ON</span></div>
+> <div class="cl-item"><strong>EAI – flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
+> <div class="cl-item"><strong>EAI – not when</strong><span class="cl-dots"></span><span>OAT >10°C (ground) · TAT >15°C (flight) · OAT <−40°C</span></div>
+> <div class="cl-item"><strong>WAI – flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
+> <div class="cl-item"><strong>WAI – not when</strong><span class="cl-dots"></span><span>TAT >15°C · OAT <−40°C</span></div>
+> <div class="cl-item"><strong>Ice Detection – flight</strong><span class="cl-dots"></span><span>TAT ≤15°C + visible moisture or clouds</span></div>
+> <div class="cl-item"><strong>Ice Detection – ground</strong><span class="cl-dots"></span><span>OAT ≤10°C + contaminated surface + visible moisture</span></div>
 
 > [!limit] Autoflight Limitations
-> <div class="cl-item"><strong>AP — min. engagement altitude after T/O</strong><span class="cl-dots"></span><span>200 ft AGL</span></div>
-> <div class="cl-item"><strong>Autoland — max. airport elevation</strong><span class="cl-dots"></span><span>8.400 ft MSL</span></div>
-> <div class="cl-item"><strong>Autoland — wind limits</strong><span class="cl-dots"></span><span>HW 25 kts · TW 15 kts · CW 25 kts</span></div>
-> <div class="cl-item"><strong>Autoland — glideslope</strong><span class="cl-dots"></span><span>2.5° – 3.25°</span></div>
-> <div class="cl-item"><strong>Autoland — flaps</strong><span class="cl-dots"></span><span>20 · 25 · 30 (2-eng and OEI)</span></div>
-> <div class="cl-item"><strong>Autoland — requirement</strong><span class="cl-dots"></span><span>LAND 2 or LAND 3</span></div>
-> <div class="cl-item"><strong>Without LAND 2 / 3 — disengage</strong><span class="cl-dots"></span><span>below 135 ft</span></div>
-> <div class="cl-item"><strong>LAND 2 / 3 + GS >3.25° — disengage</strong><span class="cl-dots"></span><span>below 100 ft</span></div>
-> <div class="cl-item"><strong>GS >3.77° — disengage</strong><span class="cl-dots"></span><span>≤ 50 ft below DH / MDA</span></div>
+> <div class="cl-item"><strong>AP – min. engagement altitude after T/O</strong><span class="cl-dots"></span><span>200 ft AGL</span></div>
+> <div class="cl-item"><strong>Autoland – max. airport elevation</strong><span class="cl-dots"></span><span>8.400 ft MSL</span></div>
+> <div class="cl-item"><strong>Autoland – wind limits</strong><span class="cl-dots"></span><span>HW 25 kts · TW 15 kts · CW 25 kts</span></div>
+> <div class="cl-item"><strong>Autoland – glideslope</strong><span class="cl-dots"></span><span>2.5° – 3.25°</span></div>
+> <div class="cl-item"><strong>Autoland – flaps</strong><span class="cl-dots"></span><span>20 · 25 · 30 (2-eng and OEI)</span></div>
+> <div class="cl-item"><strong>Autoland – requirement</strong><span class="cl-dots"></span><span>LAND 2 or LAND 3</span></div>
+> <div class="cl-item"><strong>Without LAND 2 / 3 – disengage</strong><span class="cl-dots"></span><span>below 135 ft</span></div>
+> <div class="cl-item"><strong>LAND 2 / 3 + GS >3.25° – disengage</strong><span class="cl-dots"></span><span>below 100 ft</span></div>
+> <div class="cl-item"><strong>GS >3.77° – disengage</strong><span class="cl-dots"></span><span>≤ 50 ft below DH / MDA</span></div>
 > <div class="cl-item"><strong>FLCH</strong><span class="cl-dots"></span><span>not below 1.000 ft AFE</span></div>
 
 > [!limit] Engines, APU Limitations
-> <div class="cl-item"><strong>Engine oil — min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>
-> <div class="cl-item"><strong>T/O and G/A thrust — time limit</strong><span class="cl-dots"></span><span>10 minutes</span></div>
+> <div class="cl-item"><strong>Engine oil – min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>
+> <div class="cl-item"><strong>T/O and G/A thrust – time limit</strong><span class="cl-dots"></span><span>10 minutes</span></div>
 
 > [!limit] Flight Controls Limitations
 > <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>Normal Mode only</span></div>
@@ -83,15 +83,15 @@
 
 > [!limit] Fuel Limitations
 > <div class="cl-item"><strong>Density</strong><span class="cl-dots"></span><span>6.3 – 7.1 lb/gal</span></div>
-> <div class="cl-item"><strong>Max. fuel temperature — T/O</strong><span class="cl-dots"></span><span>+49°C</span></div>
-> <div class="cl-item"><strong>Min. fuel temperature — T/O</strong><span class="cl-dots"></span><span>−29°C</span></div>
-> <div class="cl-item"><strong>Max. fuel temperature — in flight</strong><span class="cl-dots"></span><span>+65°C (TS-1: +57°C at or above 35.000 ft)</span></div>
-> <div class="cl-item"><strong>Min. fuel temperature — in flight</strong><span class="cl-dots"></span><span>−42°C or 3°C above freeze point (whichever is higher)</span></div>
+> <div class="cl-item"><strong>Max. fuel temperature – T/O</strong><span class="cl-dots"></span><span>+49°C</span></div>
+> <div class="cl-item"><strong>Min. fuel temperature – T/O</strong><span class="cl-dots"></span><span>−29°C</span></div>
+> <div class="cl-item"><strong>Max. fuel temperature – in flight</strong><span class="cl-dots"></span><span>+65°C (TS-1: +57°C at or above 35.000 ft)</span></div>
+> <div class="cl-item"><strong>Min. fuel temperature – in flight</strong><span class="cl-dots"></span><span>−42°C or 3°C above freeze point (whichever is higher)</span></div>
 > <div class="cl-item"><strong>Tank capacity Main L / R</strong><span class="cl-dots"></span><span>17.777 kg each</span></div>
 > <div class="cl-item"><strong>Tank capacity Center</strong><span class="cl-dots"></span><span>71.946 kg</span></div>
-> <div class="cl-item"><strong>Loading — main tanks full when center loaded</strong><span class="cl-dots"></span><span>Exception: center ≤10.000 kg if ZFW + center ≤ MZFW</span></div>
-> <div class="cl-item"><strong>Imbalance — total fuel >30.980 kg</strong><span class="cl-dots"></span><span>≤ 680 kg</span></div>
-> <div class="cl-item"><strong>Imbalance — total fuel ≤19.005 kg</strong><span class="cl-dots"></span><span>≤ 1.133 kg</span></div>
+> <div class="cl-item"><strong>Loading – main tanks full when center loaded</strong><span class="cl-dots"></span><span>Exception: center ≤10.000 kg if ZFW + center ≤ MZFW</span></div>
+> <div class="cl-item"><strong>Imbalance – total fuel >30.980 kg</strong><span class="cl-dots"></span><span>≤ 680 kg</span></div>
+> <div class="cl-item"><strong>Imbalance – total fuel ≤19.005 kg</strong><span class="cl-dots"></span><span>≤ 1.133 kg</span></div>
 > <div class="cl-item"><strong>Center tank usage</strong><span class="cl-dots"></span><span>use center first when >7.300 kg · switch at FUEL LOW CENTER</span></div>
 > <div class="cl-item"><strong>Jettison</strong><span class="cl-dots"></span><span>not with Flaps 30</span></div>
 > <div class="cl-item"><strong>Kathon FP 1.5</strong><span class="cl-dots"></span><span>not permitted</span></div>

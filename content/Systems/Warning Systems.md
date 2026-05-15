@@ -8,7 +8,7 @@
 
 <div class="eicas-card eicas-card--red">
 <div class="eicas-card-title">Time Critical Warning Alerts</div>
-<div class="eicas-card-body">Immediate action required · Not shown as EICAS text — aurals or PFD/HUD direct<br>Examples: PULL UP · ENG FAIL · WINDSHEAR · SPEEDBRAKE</div>
+<div class="eicas-card-body">Immediate action required · Not shown as EICAS text – aurals or PFD/HUD direct<br>Examples: PULL UP · ENG FAIL · WINDSHEAR · SPEEDBRAKE</div>
 </div>
 
 <div class="eicas-card eicas-card--red">
@@ -46,13 +46,13 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 
 <div class="checklist">
 
-<div class="cl-item"><strong><span style="color:#e74c3c;margin-right:0.35em">■</span>RA — Resolution Advisory</strong><span class="cl-dots"></span><strong>15 – 35 sec to conflict</strong></div>
+<div class="cl-item"><strong><span style="color:#e74c3c;margin-right:0.35em">■</span>RA – Resolution Advisory</strong><span class="cl-dots"></span><strong>15 – 35 sec to conflict</strong></div>
 <div class="cl-sub">Red filled square on ND · red TRAFFIC message · PFD vertical guidance · voice alert</div>
 <div class="cl-sub">ADS-B: black directional chevron in red square</div>
 <div class="cl-sub">Fly out of the red area · pitch change only · continue FD roll commands unless traffic is visual and a different flight path is necessary</div>
 <div class="cl-sub">Downgrades to TA during a windshear alert</div>
 
-<div class="cl-item"><strong><span style="color:#f39c12;margin-right:0.35em">●</span>TA — Traffic Advisory</strong><span class="cl-dots"></span><strong>20 – 48 sec to conflict</strong></div>
+<div class="cl-item"><strong><span style="color:#f39c12;margin-right:0.35em">●</span>TA – Traffic Advisory</strong><span class="cl-dots"></span><strong>20 – 48 sec to conflict</strong></div>
 <div class="cl-sub">Amber filled circle on ND · amber TRAFFIC message · voice "TRAFFIC, TRAFFIC" (once)</div>
 <div class="cl-sub">ADS-B: black directional chevron in amber circle</div>
 
@@ -63,7 +63,7 @@ TCAS interrogates transponders in nearby aircraft, tracks their positions, and p
 <div class="cl-sub">Hollow white diamond · ADS-B: hollow white directional chevron · upgrades to Proximate when &lt;6 NM and no altitude data</div>
 
 <div class="cl-item"><strong><img src="/Bilder/tcas no bearing.webp" alt="clean" style="height:1.5em;width:auto;vertical-align:middle;margin:0 0.4em 0 0;display:inline;border-radius:2px">No Bearing Alert</strong><span class="cl-dots"></span><strong>bearing unavailable</strong></div>
-<div class="cl-sub">Traffic detected but azimuth unavailable — no directional symbol shown on ND</div>
+<div class="cl-sub">Traffic detected but azimuth unavailable – no directional symbol shown on ND</div>
 
 </div>
 
@@ -81,17 +81,17 @@ Vertical speed arrow shown on ND traffic symbol when climb/descent rate **> 500 
 
 ### TCAS Inhibit
 
-During a GPWS or PWS warning, TCAS automatically switches to TA only mode with aurals and alerts inhibited. New RAs are NOT given — old RAs become TAs.
+During a GPWS or PWS warning, TCAS automatically switches to TA only mode with aurals and alerts inhibited. New RAs are NOT given – old RAs become TAs.
 
 <img src="/Bilder/tcas inhibit climb.webp" alt="TCAS Inhibit Climb" style="max-width:600px">
 <img src="/Bilder/tcas inhibit descent.webp" alt="TCAS Inhibit Descent" style="max-width:600px">
 
 > [!info] TCAS Non-Normal
-> <span class="c-amber">**TCAS OFF**</span> (advisory) — TCAS not operating; inhibited below 400 ft RA. Amber TCAS OFF on ND.
+> <span class="c-amber">**TCAS OFF**</span> (advisory) – TCAS not operating; inhibited below 400 ft RA. Amber TCAS OFF on ND.
 >
-> <span class="c-amber">**TCAS RA**</span> (advisory) — RA guidance unavailable on respective PFD/HUD; ND traffic and voice unaffected.
+> <span class="c-amber">**TCAS RA**</span> (advisory) – RA guidance unavailable on respective PFD/HUD; ND traffic and voice unaffected.
 >
-> <span class="c-amber">**TCAS FAIL**</span> — RA guidance and ND traffic both unavailable; no voice alerts. Amber TCAS FAIL on ND.
+> <span class="c-amber">**TCAS FAIL**</span> – RA guidance and ND traffic both unavailable; no voice alerts. Amber TCAS FAIL on ND.
 
 ## GPWS / TAWS
 
@@ -152,4 +152,4 @@ Integrated into the two Integrated Surveillance System Processor Units (ISSPU). 
 
 ---
 
-<a href="/Non-Normals/Non-Normal-Maneuvers" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.55em 1.1em;background:#3257BC;color:#fff;border-radius:6px;font-weight:600;font-size:0.9em;text-decoration:none">▶ Non-Normal Maneuvers — GPWS · TCAS · Windshear</a>
+<a href="/Non-Normals/Non-Normal-Maneuvers" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.55em 1.1em;background:#3257BC;color:#fff;border-radius:6px;font-weight:600;font-size:0.9em;text-decoration:none">▶ Non-Normal Maneuvers – GPWS · TCAS · Windshear</a>

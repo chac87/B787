@@ -104,7 +104,7 @@ After wheel chocks are in place:
 | <span class="c-green">**Hydraulic panel**</span> | <span class="c-green">Set</span> | F/O |
 | <span class="c-green">**Fuel pumps**</span> | <span class="c-green">Off</span> | F/O |
 | <span class="c-green">**Flaps**</span> | <span class="c-green">UP</span> | F/O |
-| **Parking Brake** | — | CP |
+| **Parking Brake** | – | CP |
 | <span class="c-green">**FUEL CONTROL switches**</span> | <span class="c-green">CUTOFF</span> | CP |
 | <span class="c-green">**Weather radar**</span> | <span class="c-green">Off</span> | CP, F/O |
 

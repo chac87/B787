@@ -40,7 +40,7 @@ Complete the Approach Procedure before:
 
 | Item | Response | Who |
 |:---|:---|:---:|
-| **Altimeters**<br><small style="color:var(--gray)">Both — PF and PM set and cross-check altimeters. PM sets standby altimeter.</small> | \_\_ | B |
+| **Altimeters**<br><small style="color:var(--gray)">Both – PF and PM set and cross-check altimeters. PM sets standby altimeter.</small> | \_\_ | B |
 
 <div class="sop-entry-tags">
 <span class="sop-tag-cl">PM: "Approach Checklist complete."</span>

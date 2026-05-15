@@ -13,13 +13,13 @@ tags: [systems, hydraulics]
 
 ## System Architecture
 
-The 787 has three independent **5.000 psi** hydraulic systems — **Left (L)**, **Right (R)**, and **Center (C)**. They do not share fluid and are physically isolated for maximum survivability.
+The 787 has three independent **5.000 psi** hydraulic systems – **Left (L)**, **Right (R)**, and **Center (C)**. They do not share fluid and are physically isolated for maximum survivability.
 
-| System | Primary Sources | Powered Systems |
-|:---|:---|:---|
-| **Left** | 1 EDP + 1 EMP | Primary flight controls, L thrust reverser, L/R wing spoilers (partial) |
-| **Right** | 1 EDP + 1 EMP | Primary flight controls, R thrust reverser, L/R wing spoilers (partial) |
-| **Center** | 2 EMPs (C1, C2) | Primary flight controls, all wing spoilers, TE flaps, LE slats, landing gear, nose wheel steering |
+| System     | Primary Sources | Powered Systems                                                         |
+| :--------- | :-------------- | :---------------------------------------------------------------------- |
+| **Left**   | 1 EDP + 1 EMP   | Primary flight controls, L REV, L/R spoilers (partial)                  |
+| **Right**  | 1 EDP + 1 EMP   | Primary flight controls, R REV, L/R spoilers (partial)                  |
+| **Center** | 2 EMPs (C1, C2) | Primary flight controls, all wing spoilers, Flaps, Slats, LDG Gear, NWS |
 
 **Total system components:** 2 EDPs · 4 EMPs · 1 RAT · 4 Accumulators · 2 L/R Reservoirs (76 l each) · 1 Center Reservoir (170 l)
 
@@ -29,13 +29,13 @@ All pump sequencing is managed by the **Hydraulic Interface Function (HYDIF)**.
 
 ### Left & Right Systems
 
-**Primary — Engine-Driven Pumps (EDP)**
+**Primary – Engine-Driven Pumps (EDP)**
 Driven by the N2 rotor. Automatically depressurize when engine RPM drops below sub-idle to preserve windmill start capability.
 
-**Demand — Electric Motor-Driven Pumps (EMP)**
+**Demand – Electric Motor-Driven Pumps (EMP)**
 Back up the EDPs during high-load phases. In AUTO, they run when:
-- 2nd engine started — for 3 minutes
-- Takeoff thrust applied — until flaps retracted
+- 2nd engine started – for 3 minutes
+- Takeoff thrust applied – until flaps retracted
 - Thrust reverser operation
 - Descent: gear lever down or RA < 1.000 ft, until GS < 40 kts
 - Low system pressure
@@ -49,8 +49,8 @@ Back up the EDPs during high-load phases. In AUTO, they run when:
 **Primary pump** runs continuously after the 2nd engine is started.
 
 **Demand pump** runs automatically when:
-- 2nd engine started — for 3 minutes
-- Takeoff thrust applied — until RA > 2.000 ft
+- 2nd engine started – for 3 minutes
+- Takeoff thrust applied – until RA > 2.000 ft
 - Flap or slat movement
 - Descent: gear lever down and RA < 2.000 ft, until GS < 60 kts
 - Low system pressure
@@ -59,13 +59,13 @@ Back up the EDPs during high-load phases. In AUTO, they run when:
 
 Hydraulic pressure and quantity are shown on the **HYD** and **STAT** synoptics.
 
-**Pressure** — Normal operating pressure is **5.000 psi**. Low-pressure condition below 3.000 psi.
+**Pressure** – Normal operating pressure is **5.000 psi**. Low-pressure condition below 3.000 psi.
 
-**Quantity** — Displayed as a fraction of normal service level (1.00):
+**Quantity** – Displayed as a fraction of normal service level (1.00):
 
 | Indication | Threshold | Inhibit |
 |:---|:---|:---|
-| **LO** | < 0.40 | — |
+| **LO** | < 0.40 | – |
 | **RF** (Refill) | 0.40 – 0.75 | In flight |
 | **OF** (Overfill) | > 1.20 | In flight |
 
@@ -74,7 +74,7 @@ Hydraulic pressure and quantity are shown on the **HYD** and **STAT** synoptics.
 **Load Shedding**
 If electrical power is insufficient, demand pumps are load-shed. The label **LOAD SHED** appears next to the pump symbol on the HYD synoptic.
 
-**Fire Protection — Supply Shutoff Valve (SOV)**
+**Fire Protection – Supply Shutoff Valve (SOV)**
 Pulling an Engine Fire Switch closes the respective hydraulic SOV and depressurizes the associated EDP.
 
 **Priority Valves**
@@ -85,9 +85,9 @@ During a severe pressure drop, flow is automatically prioritised:
 
 **Center System Isolation**
 Automatic isolation valves protect Center system fluid during a leak:
-- **Alternate Extend Isolation Valve** — isolates the alternate gear extension system
-- **Reserve Steering Isolation Valve (RSIV)** — isolates flow between C1 and C2 to preserve nose wheel steering
-- **Nose Gear Isolation Valve (NGIV)** — isolates nose gear actuation and steering
+- **Alternate Extend Isolation Valve** – isolates the alternate gear extension system
+- **Reserve Steering Isolation Valve (RSIV)** – isolates flow between C1 and C2 to preserve nose wheel steering
+- **Nose Gear Isolation Valve (NGIV)** – isolates nose gear actuation and steering
 
 ## Ram Air Turbine (RAT)
 
@@ -99,11 +99,11 @@ The RAT is a small air-driven turbine providing emergency hydraulic pressure (**
 - Loss of all electrical power to CPT/FO instruments
 - Loss of all 4 EMPs combined with: engine failure on T/O or landing, or flight control fault on approach
 
-**Manual deployment** — guarded switch on the P5 overhead panel:
-- **UNLKD** light — RAT in transit / unstowed
-- **PRESS** light — Center flight control pressure ≥ 3.000 psi
+**Manual deployment** – guarded switch on the P5 overhead panel:
+- **UNLKD** light – RAT in transit / unstowed
+- **PRESS** light – Center flight control pressure ≥ 3.000 psi
 
 Once deployed, the RAT can only be stowed on the ground.
 
-→ See also [[Electrical Power System#RAT|Electrical System — RAT]]
+→ See also [[Electrical Power System#RAT|Electrical System – RAT]]
 → See also [[Non Normals/Hydraulic Non-Normals|Hydraulic Non-Normals]]

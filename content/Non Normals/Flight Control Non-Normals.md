@@ -5,6 +5,8 @@ tags: [non-normal, flight-controls]
 
 # Flight Control Non-Normals
 
+→ [[Systems/Flight Controls|Flight Controls (Systems)]]
+
 ## Flap / Slat System Modes
 
 | | Primary | Secondary | Alternate |
@@ -16,7 +18,7 @@ tags: [non-normal, flight-controls]
 
 ### Primary Mode
 
-Normal operation — flaps and slats driven together via the center hydraulic system.
+Normal operation – flaps and slats driven together via the center hydraulic system.
 
 <img src="/Bilder/flaps%20primary.webp" alt="Primary Flap Mode" style="width: 30%">
 
@@ -34,19 +36,14 @@ EMCU now drives flaps **or** slats independently. Flap lever remains operative.
 
 **EICAS:** Caution + expanded flap/slat position indication (slat bars fill upward, flap bars downward)
 
-| EICAS | Landing | Note |
-|:---|:---|:---|
-| <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> | Flaps 20 | Slow extension → slow retraction — full flap would compromise G/A performance |
-| <a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> | Normal | Read checklist notes, allow time for slower extension |
-
 ### Alternate Mode
 
 Activated when flap/slat electronics have completely failed.
 
 <img src="/Bilder/flaps%20alternate.webp" alt="Alternate Flap Mode" style="width: 30%">
 
-- **ALTN FLAPS ARM** — disables primary and secondary, flap lever inoperative
-- All hydraulics bypassed — electric motors only
+- **ALTN FLAPS ARM** – disables primary and secondary, flap lever inoperative
+- All hydraulics bypassed – electric motors only
 - Maximum: **Flaps 20**, slats to mid position
 - Switch: RET / OFF / EXT (not spring-loaded)
 - **No closed-loop** → no asymmetry or uncommanded motion protection
@@ -54,41 +51,77 @@ Activated when flap/slat electronics have completely failed.
 > [!warning] Only when directed by NNC
 > Alternate mode only for: <a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE" style="color:#f39c12 !important"><strong>AIRSPEED UNRELIABLE</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL</strong></a> NNC
 
-<a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL NNC:</strong></a> Extension takes approx. 3 minutes — plan approach early. v<sub>REF</sub> 20. Flap lever stays UP (per checklist — it is inoperative regardless).
-
-### Flaps / Slats Drive
-
-<a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a> → drive mechanism failed — cannot be moved in **any** mode. Checklist prepares for partial flap/slat landing. See landing techniques in Device Malfunctions below.
-
+<a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL NNC:</strong></a> Extension takes approx. 3 minutes – plan approach early. v<sub>REF</sub> 20. Flap lever stays UP (per checklist – it is inoperative regardless).
 
 ## Slat/Flap Malfunctions
 
-### Flap Lever Inoperative
+<div class="eicas-levels">
 
-No EICAS alert — unannunciated. Slats and flaps do not respond to the flap lever. Use the Flap Lever Inoperative NNC to extend/retract via the alternate flap system.
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/CRUISE-FLAPS-SYS" style="color:#888888 !important"><strong>CRUISE FLAPS SYS</strong></a> <span class="eicas-card-badge">ADVISORY</span></div>
+  <div class="eicas-card-body">Cruise flap system failed · Normal flaps available for landing</div>
+</div>
 
-After takeoff: usually requires return for landing. Retract flaps only if needed for performance, terrain clearance, or diversion.
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-body">Primary flap mode failed · Secondary mode · Flaps 20 · Slow extension/retraction</div>
+</div>
 
-### Slats Drive Failure
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-body">Primary slat mode failed · Secondary mode · Normal landing · Allow time for slower extension</div>
+</div>
 
-<a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a> → <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important">SLATS DRIVE NNC</a> (accommodates no leading edge slats on one side).
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-body">Drive mechanism failed · Flaps fixed in current position · <strong>DO NOT USE Alternate Mode</strong> · Max FL 200 · Higher fuel burn · Autoland not certified · Higher approach speed / LDG Dist.</div>
+</div>
 
-- Flap extension limited to **Flaps 20** if slats not fully extended
-- Flaps 1 is for leading edge devices only — if LEDs fail to extend, flap display expands
-- Pitch attitude at touchdown is less than normal — fly onto runway, do not float
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-body">Drive mechanism failed · Slats fixed in current position · Flap extension limited to Flaps 20 · v<sub>REF</sub> 30+30 · Pitch at touchdown lower than normal</div>
+</div>
 
-### Flap Drive Failure
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-body">Electronics failed · Alternate mode required · Extension ~3 min · v<sub>REF</sub> 20</div>
+</div>
 
-<a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> → secondary mode (electric drive). If secondary also fails or asymmetry exists: <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a> → <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important">FLAPS DRIVE NNC</a>. Flap load relief not available in secondary mode.
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/Flap-Lever-Inoperative" style="color:#f39c12 !important"><strong>Flap Lever Inoperative</strong></a> <span class="eicas-card-badge">UNANNUNCIATED</span></div>
+  <div class="eicas-card-body">Flaps/slats not responding to flap lever · Alternate mode required · After T/O: usually return for landing</div>
+</div>
+
+</div>
+
+**Escalation paths:**
+- <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> → secondary fails or asymmetry detected → <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a>
+- <a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> → secondary fails or asymmetry detected → <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a>
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Possible Threats</div>
+  <div class="eicas-card-body">Over-/underspeed when failure occurs · Landing distance · Less drag during approach · Unfamiliar pitch & power values · Non-normal go-around procedure · Higher fuel flow</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">Possible Specials</div>
+  <div class="eicas-card-body">Speed setting in secondary / alternate mode · Approach speed in amber band · v<sub>REF</sub> and flap setting on Approach REF page · No autoland certified below flaps 20</div>
+</div>
+
+</div>
+
+### Landing Technique – Flap Drive
 
 - Final: v<sub>REF</sub> + wind additive. If speed drops to v<sub>REF</sub>: 40° bank capability not available
 - Pitch attitude on final: several degrees **higher** than normal
-- Do not allow airspeed below v<sub>REF</sub> during flare — risk of tail contact
-- Fly onto runway — do not float
+- Do not allow airspeed below v<sub>REF</sub> during flare – risk of tail contact
+- Fly onto runway – do not float
 
-### Extension via Secondary or Alternate System
+### Slow Extension
 
-Flaps extend more slowly. **Delay setting the new command speed** until flaps reach the selected position — prevents inadvertent low airspeed if attention is diverted during extension.
+Flaps extend more slowly. **Delay setting the new command speed** until flaps reach the selected position – prevents inadvertent low airspeed if attention is diverted during extension.
 
 ### All Flaps and Slats Up Landing
 
@@ -106,20 +139,20 @@ Extremely remote probability. Flaps + Slats Fail NNC available. Consider weight 
 | Speedbrakes | Not below 800 ft |
 
 > [!info]- Approach Technique
-> Fly a wide pattern — higher maneuvering speed requires increased turning radius. Maintain no slower than flaps-up maneuvering speed until established on final. Maneuver with normal bank angles.
+> Fly a wide pattern – higher maneuvering speed requires increased turning radius. Maintain no slower than flaps-up maneuvering speed until established on final. Maneuver with normal bank angles.
 >
 > Use ILS or GLS if available. Do not reduce to final approach speed until aligned. Before intercepting descent: reduce to command speed and hold until landing is assured.
 >
-> Final approach speed may be in the **amber band** — set A/T to OFF to prevent automatic activation. Brief PM for manual TO/GA thrust for any go-around.
+> Final approach speed may be in the **amber band** – set A/T to OFF to prevent automatic activation. Brief PM for manual TO/GA thrust for any go-around.
 >
 > Go around if landing appears beyond the normal touchdown zone.
 
 > [!info]- Landing Technique
-> Flare only enough to reduce rate of descent — **do not float**. Floating wastes runway and risks a tail strike. Slight forward column pressure may be needed at the touchdown point and to lower the nose wheels.
+> Flare only enough to reduce rate of descent – **do not float**. Floating wastes runway and risks a tail strike. Slight forward column pressure may be needed at the touchdown point and to lower the nose wheels.
 >
 > After nose wheels on runway: hold light forward pressure and expeditiously accomplish the landing roll procedure.
 >
-> Apply **maximum reverse thrust immediately** at main gear touchdown — most effective at high speeds. Full reverse required for a longer duration. Autobrakes recommended; setting consistent with available runway length.
+> Apply **maximum reverse thrust immediately** at main gear touchdown – most effective at high speeds. Full reverse required for a longer duration. Autobrakes recommended; setting consistent with available runway length.
 
 ## Jammed Flight Controls
 
@@ -131,7 +164,7 @@ May result from dirt, component failure, worn parts, improper lubrication, or fo
 - Higher than normal control forces during speed or configuration changes
 
 > [!info]- Override Technique
-> Both pilots apply force in the **same direction** to attempt to clear the jam or activate an override feature. There is no concern about damaging the mechanism — apply maximum force if needed.
+> Both pilots apply force in the **same direction** to attempt to clear the jam or activate an override feature. There is no concern about damaging the mechanism – apply maximum force if needed.
 >
 > If the jam does not clear: apply force individually to each control to identify the non-jammed side (greatest airplane response). The non-jammed pilot becomes PF for the remainder of the flight.
 >
@@ -154,7 +187,7 @@ May result from dirt, component failure, worn parts, improper lubrication, or fo
 - Do not reduce thrust to idle until after touchdown.
 - Asymmetric braking and asymmetric thrust reverser may aid directional control.
 
-> [!warning] Elevator jam — Go-Around
+> [!warning] Elevator jam – Go-Around
 > Control forces significantly greater than normal; flare response is slower. Maintain flight path with thrust and main electric trim.
 > **Avoid go-around if at all possible.** If unavoidable: advance thrust levers slowly and smoothly, maintain pitch with stabilizer and any available elevator.
 
@@ -162,19 +195,32 @@ May result from dirt, component failure, worn parts, improper lubrication, or fo
 
 **EICAS:** <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER" style="color:#e74c3c !important"><strong>STABILIZER</strong></a> (warning) · <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-L2" style="color:#f39c12 !important"><strong>STABILIZER L2</strong></a> / <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-R2" style="color:#f39c12 !important"><strong>STABILIZER R2</strong></a> (advisory, one channel) · <span style="color:#f39c12"><strong>STABILIZER CUTOUT</strong></span> (advisory, both cutout)
 
-Two independent channels powered by the L2 and R2 AC buses. Commands from primary or alternate pitch trim switches move the stabilizer via an electric control unit.
+<div class="eicas-levels">
 
-**Automatic shutdown** — if uncommanded motion is detected, the affected channel shuts down automatically:
-- One channel failed → <span style="color:#f39c12">**STABILIZER L2**</span> or <span style="color:#f39c12">**STABILIZER R2**</span> advisory; stabilizer remains operative on the remaining channel
-- Both channels failed in normal mode → <span style="color:#e74c3c">**STABILIZER**</span> warning; also shown if automatic shutdown fails to stop the motion
-- In secondary mode: <span style="color:#e74c3c">**STABILIZER**</span> warning is **inhibited**
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">NOTIFY</div>
+  <div class="eicas-card-body">Manual: uncommanded pitch change · increased wheel force · and/or EICAS warning<br>Auto: EICAS warning</div>
+</div>
 
-**Cutout switches** (aisle stand, L2 / R2) — both in CUTOUT:
-- Disables stabilizer → <span style="color:#f39c12">**STABILIZER CUTOUT**</span> advisory displayed
-- <span style="color:#e74c3c">**STABILIZER**</span> warning suppressed
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">FLY</div>
+  <div class="eicas-card-body">Manual: keep normal pitch and power<br>Auto: monitor AP performance</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">ANALYZE</div>
+  <div class="eicas-card-body">Review all EICAS alerts to identify malfunctioning systems · CM1 identifies applicable checklist after coordinated analysis</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">ACTION</div>
+  <div class="eicas-card-body">PF: "Memory Items" → STAB cutout switches CUTOUT<br>Pitch trim via elevator – elevator authority reduced<br>Flaps 20 for landing · Reduced max airspeed for sufficient elevator authority</div>
+</div>
+
+</div>
+
+- **Auto-shutdown** – one channel: <span style="color:#f39c12">**STABILIZER L2/R2**</span> advisory, other channel operative · both channels or motion not stopped: <span style="color:#e74c3c">**STABILIZER**</span> warning · secondary mode: <span style="color:#e74c3c">**STABILIZER**</span> warning inhibited
+- **Cutout switches** CUTOUT → <span style="color:#f39c12">**STABILIZER CUTOUT**</span> advisory · <span style="color:#e74c3c">**STABILIZER**</span> warning suppressed
+- **Uncommanded trim motion** – hold column firmly · if motion continues, displace column in opposite direction to interrupt trim commands
 
 > [!info] If both channels already auto-shut down: placing cutout switches in CUTOUT will **not** clear the <span style="color:#e74c3c">**STABILIZER**</span> warning and will **not** trigger the <span style="color:#f39c12">**STABILIZER CUTOUT**</span> advisory.
-
-**Pitch trim after cutout** — in normal mode, pitch trim remains available through the elevators. Trim inputs change the trim reference speed; the elevators adjust pitch but the stabilizer does not move.
-
-**Uncommanded trim motion:** Hold control column firmly. If motion continues, displace column in the **opposite direction** to interrupt stabilizer trim commands.

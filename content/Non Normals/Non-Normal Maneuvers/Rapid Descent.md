@@ -12,7 +12,7 @@ tags: [non-normal, maneuvers]
 - **Cabin pressure loss:** Don oxygen masks and establish crew communications at the first indication. Verify cabin pressure is uncontrollable before initiating descent.
 - Communication under oxygen masks: **PF: ACP → FLT**
 - **Structural damage suspected:** Limit airspeed to current speed or less. Avoid high maneuvering loads.
-- **Both pilots:** Verify all memory items are accomplished — call out any items not completed.
+- **Both pilots:** Verify all memory items are accomplished – call out any items not completed.
 - Perform the maneuver deliberately and methodically. Do not be distracted from flying the airplane.
 - If icing conditions are entered: use anti-ice and thrust as required.
 - Rapid descents are normally made with **landing gear up**.
@@ -25,23 +25,27 @@ If severe turbulence is encountered or expected: reduce to turbulent air penetra
 
 <img src="/Bilder/rapid%20descent.webp" alt="Rapid Descent">
 
-- **C Pattern — twice:** first pass rough. Second pass: fine-tune each parameter
+- **C Pattern – twice:** first pass rough. Second pass fine-tune:
+  - MEA / MORA / MUFL
+  - Offset (e.g. 5 NM L/R in NAT)
+  - v<sub>MO</sub>/M<sub>MO</sub>
+  - **Structural integrity?**
 
 
 
-> [!proc]- Autoflight — C-Pattern
+> [!proc]- Autoflight – C-Pattern
 > 1. **MCP:** Set lower safe altitude
-> 2. **HDG/TRK SEL** — if offset or turn required
+> 2. **HDG/TRK SEL** – if offset or turn required
 > 3. Select **FLCH**
 > 4. Set speed as required
 > 5. Extend speedbrakes
-> 6. Close thrust levers — A/T stays connected
+> 6. Close thrust levers – A/T stays connected
 >
 > ---
 >
 > - FLCH provides airspeed and altitude protection with reduced crew workload. V/S or FPA not recommended.
-> - IAS/MACH transitions to IAS at ~**310 KIAS** — reset to v<sub>MO</sub> manually if needed.
-> - Short-term v<sub>MO</sub>/M<sub>MO</sub> exceedances acceptable — AP corrects automatically. Do not disengage unless clearly unacceptable. Document in logbook.
+> - IAS/MACH transitions to IAS at ~**310 KIAS** – reset to v<sub>MO</sub> manually if needed.
+> - Short-term v<sub>MO</sub>/M<sub>MO</sub> exceedances acceptable – AP corrects automatically. Do not disengage unless clearly unacceptable. Document in logbook.
 
 > [!proc]- PM Sequence
 > 1. PA *"Emergency descent, Emergency descent"*
@@ -60,7 +64,7 @@ If severe turbulence is encountered or expected: reduce to turbulent air penetra
 > **Approaching level-off:** Smoothly adjust pitch to reduce rate of descent. Return speedbrake lever to the **down detent** when approaching the desired level-off altitude. After reaching level flight: add thrust to maintain LRC or 300 kt.
 
 > [!info] Level-off sequence
-> First reduce speed (set command speed to target), **then** retract speedbrakes — retracting too early risks momentary overspeed.
+> First reduce speed (set command speed to target), **then** retract speedbrakes – retracting too early risks momentary overspeed.
 ## Landing Gear Extended Descent
 
 Normally performed with gear up. However, if structural integrity is in doubt and airspeed must be limited, extending the landing gear may provide a more satisfactory rate of descent.
@@ -74,5 +78,5 @@ If the landing gear is used during the descent: comply with the landing gear pla
 - Determine new course of action based on: weather, oxygen, fuel remaining, medical condition of crew and passengers, and available airports.
 - Obtain a new ATC clearance.
 
-> [!info]- Mountainous Terrain — Route Planning
+> [!info]- Mountainous Terrain – Route Planning
 > Some routes over mountainous terrain require careful operator planning: additional oxygen, special procedures, higher initial level-off altitudes, and emergency routes in the event of depressurization. These requirements are normally addressed in an approved company route manual or other route-specific document.

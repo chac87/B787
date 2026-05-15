@@ -43,8 +43,8 @@ Dekompressions-Panel = Escape-Route bei geklemmter Tür (Anleitung auf Türinnen
 | Keypad-Licht | Bedeutung |
 |:---:|:---|
 | <span class="c-red">Rot</span> | Tür gesichert (locked) |
-| <span class="c-amber">Amber</span> | Notfall-Code eingegeben — wartet auf Crew-Entscheidung |
-| <span class="c-green">Grün</span> | Zugang gewährt — Tür entsperrt |
+| <span class="c-amber">Amber</span> | Notfall-Code eingegeben – wartet auf Crew-Entscheidung |
+| <span class="c-green">Grün</span> | Zugang gewährt – Tür entsperrt |
 
 - **Klingel:** Taste `1` + ENT → EICAS COMM: **FD DOOR CALL**
 - Keypad dormant bis zum ersten Tastendruck · kehrt nach 3 min ohne Eingabe in Ruhezustand zurück
@@ -59,7 +59,7 @@ Dekompressions-Panel = Escape-Route bei geklemmter Tür (Anleitung auf Türinnen
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|
-| <span class="c-red">FD DOOR AUTO UNLOCK</span> | <span class="c-red">Warning</span> | Notfall-Code eingegeben — keine Crew-Aktion → automatischer Zugang |
+| <span class="c-red">FD DOOR AUTO UNLOCK</span> | <span class="c-red">Warning</span> | Notfall-Code eingegeben – keine Crew-Aktion → automatischer Zugang |
 | <span class="c-amber">FD DOOR OPEN</span> | <span class="c-amber">Advisory</span> | Lock-Pin ausgefahren obwohl Tür-Sensor offen meldet |
 | <span class="c-amber">FD DOOR LOCK FAIL</span> | <span class="c-amber">Advisory</span> | Schloss ausgefallen oder FD DOOR POWER OFF |
 
@@ -67,7 +67,7 @@ Dekompressions-Panel = Escape-Route bei geklemmter Tür (Anleitung auf Türinnen
 
 | Position | Wirkung | Schlüssel von Kabine |
 |:---|:---|:---:|
-| UNLOCKED | Deadbolt eingezogen | — |
+| UNLOCKED | Deadbolt eingezogen | – |
 | LOCKED – KEY OPERABLE | Deadbolt ausgefahren | Ja |
 | LOCKED – KEY INOPERABLE | Deadbolt ausgefahren | Nein |
 
@@ -75,9 +75,9 @@ Dekompressions-Panel = Escape-Route bei geklemmter Tür (Anleitung auf Türinnen
 
 ## Flight Deck Overhead Door
 
-Notausstieg via Descent Devices — **nur am Boden + depressurized**.
+Notausstieg via Descent Devices – **nur am Boden + depressurized**.
 
-> [!warning] Tür fällt nach innen auf — Verletzungsgefahr beim Öffnen.
+> [!warning] Tür fällt nach innen auf – Verletzungsgefahr beim Öffnen.
 
 | EICAS | Level | Bedeutung |
 |:---|:---:|:---|

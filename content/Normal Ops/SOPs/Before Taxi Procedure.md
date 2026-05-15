@@ -13,13 +13,13 @@ role: Both
 <div class="checklist">
 
 <span class="sop-tag-items">CP: "BEFORE TAXI Items – FLAPS ___"</span>
-<div class="cl-sub">Verify that all engine generator OFF lights are extinguished. — F/O</div>
+<div class="cl-sub">Verify that all engine generator OFF lights are extinguished. – F/O</div>
 
 <div class="cl-item"><strong>APU selector</strong><span class="cl-dots"></span><strong>OFF</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
 <div class="cl-item"><strong>ENGINE ANTI-ICE selectors</strong><span class="cl-dots"></span><strong>As needed</strong><span class="mi-role mi-role--pm">F/O</span></div>
 
-<div class="cl-sub">Verify that the ground personnel and equipment are clear. — CP, F/O</div>
+<div class="cl-sub">Verify that the ground personnel and equipment are clear. – CP, F/O</div>
 
 <div class="cl-item"><strong>Flap lever</strong><span class="cl-dots"></span><strong>Set takeoff flaps</strong><span class="mi-role mi-role--pm">F/O</span></div>
 

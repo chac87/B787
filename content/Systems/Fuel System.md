@@ -24,13 +24,13 @@ tags: [systems, fuel]
 ## Fuel Pumps
 
 > [!info]- AC Pumps
-> - **2 AC-powered pumps** in each tank (L main, R main, Center) — 6 pumps total
+> - **2 AC-powered pumps** in each tank (L main, R main, Center) – 6 pumps total
 > - A single pump can supply sufficient fuel to operate **one engine under all conditions**
 > - Center tank pumps are **override/jettison pumps** with higher output pressure → center fuel is used before wing tank fuel
-> - When less than all generators are operating, pumps may be **load shed** automatically — indicated by PRESS light illuminated and `LOAD SHED` label on the fuel synoptic
+> - When less than all generators are operating, pumps may be **load shed** automatically – indicated by PRESS light illuminated and `LOAD SHED` label on the fuel synoptic
 
 > [!info]- DC Pump
-> - **Left main tank only** — no controls or cockpit indicators, status visible on fuel synoptic only
+> - **Left main tank only** – no controls or cockpit indicators, status visible on fuel synoptic only
 > - Runs automatically to supply APU fuel when AC power is unavailable and APU selector is ON
 
 
@@ -56,7 +56,7 @@ APU fuel is supplied from the **left fuel manifold**.
 Each engine can draw fuel from its corresponding main tank through a suction feed line, bypassing the pumps.
 
 > [!warning] Altitude Risk
-> As the aircraft climbs, dissolved air is released from fuel due to decreasing air pressure. This air may collect in the suction feed line and restrict fuel flow — at high altitude this can cause **thrust deterioration or engine flameout**.
+> As the aircraft climbs, dissolved air is released from fuel due to decreasing air pressure. This air may collect in the suction feed line and restrict fuel flow – at high altitude this can cause **thrust deterioration or engine flameout**.
 > The dissolved air eventually depletes after reaching cruise altitude. Depletion time depends on altitude, fuel temperature, and fuel type.
 
 ## Fuel Crossfeed vs. Fuel Balancing
@@ -65,31 +65,31 @@ Each engine can draw fuel from its corresponding main tank through a suction fee
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Fuel Crossfeed</div>
-  <div class="eicas-card-body">Opens the crossfeed valve — connects the left and right fuel supply manifolds.<br>Pump pressure from one main tank feeds both engines (or the opposite engine).<br><strong>No fuel is transferred into the opposite tank.</strong></div>
+  <div class="eicas-card-body">Opens the crossfeed valve – connects the left and right fuel supply manifolds.<br>Pump pressure from one main tank feeds both engines (or the opposite engine).<br><strong>No fuel is transferred into the opposite tank.</strong></div>
 </div>
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Fuel Balance System</div>
-  <div class="eicas-card-body">Physically pumps fuel from the fuller main tank into the emptier one.<br>Uses the defuel/jettison valve (fuller tank) → inboard refuel valve (emptier tank).<br>Activated via the BALANCE switch — automatic or manual.</div>
+  <div class="eicas-card-body">Physically pumps fuel from the fuller main tank into the emptier one.<br>Uses the defuel/jettison valve (fuller tank) → inboard refuel valve (emptier tank).<br>Activated via the BALANCE switch – automatic or manual.</div>
 </div>
 
 </div>
 
-> [!info]- Manual Balancing — Practical Tip
+> [!info]- Manual Balancing – Practical Tip
 > If the Fuel Balance System is inhibited or unavailable, use the crossfeed valve to manually balance:
 > - Open the crossfeed valve
 > - Turn off the fuel pumps of the tank with the **lower** quantity
-> - Both engines are now fed from the fuller tank — quantities equalize over time
+> - Both engines are now fed from the fuller tank – quantities equalize over time
 >
-> Fuel flows exclusively to the engines — no transfer into the opposite tank occurs.
+> Fuel flows exclusively to the engines – no transfer into the opposite tank occurs.
 
 ## Fuel Jettison
 
 Pumps used: **L + R main tank boost pumps** and **center tank override/jettison pumps**.
 
-- **ARM switch → ARMED** — prepares the system; auto-sets TO REMAIN = MLW fuel quantity
-- **TO REMAIN selector** — pull and rotate to manually adjust the quantity to remain
-- **L / R NOZZLE → ON** — jettison starts; isolation valves open, fuel flows overboard
+- **ARM switch → ARMED** – prepares the system; auto-sets TO REMAIN = MLW fuel quantity
+- **TO REMAIN selector** – pull and rotate to manually adjust the quantity to remain
+- **L / R NOZZLE → ON** – jettison starts; isolation valves open, fuel flows overboard
 - Jettison stops automatically when TOTAL FUEL = FUEL TO REMAIN (isolation valves close)
 
 <div class="eicas-levels">
@@ -107,7 +107,7 @@ Pumps used: **L + R main tank boost pumps** and **center tank override/jettison 
 
 Provides automatic, full-time flammability protection. Generates nitrogen-enriched air that displaces fuel vapors in all tanks, minimising flammability during flight and ground operations.
 
-No flight deck controls or indications — the system operates entirely automatically.
+No flight deck controls or indications – the system operates entirely automatically.
 
 ---
 
@@ -121,16 +121,16 @@ No flight deck controls or indications — the system operates entirely automati
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>Density</strong><span class="cl-dots"></span><span>6.3 – 7.1 lb/gal</span></div>
-> <div class="cl-item"><strong>Max. fuel temperature — T/O</strong><span class="cl-dots"></span><span>+ 49 °C</span></div>
-> <div class="cl-item"><strong>Min. fuel temperature — T/O</strong><span class="cl-dots"></span><span>− 29 °C</span></div>
-> <div class="cl-item"><strong>Max. fuel temperature — in flight</strong><span class="cl-dots"></span><span>+ 65 °C (TS-1: + 57 °C at or above 35.000 ft)</span></div>
-> <div class="cl-item"><strong>Min. fuel temperature — in flight</strong><span class="cl-dots"></span><span>− 42 °C or 3 °C above freeze point (whichever is higher)</span></div>
+> <div class="cl-item"><strong>Max. fuel temperature – T/O</strong><span class="cl-dots"></span><span>+ 49 °C</span></div>
+> <div class="cl-item"><strong>Min. fuel temperature – T/O</strong><span class="cl-dots"></span><span>− 29 °C</span></div>
+> <div class="cl-item"><strong>Max. fuel temperature – in flight</strong><span class="cl-dots"></span><span>+ 65 °C (TS-1: + 57 °C at or above 35.000 ft)</span></div>
+> <div class="cl-item"><strong>Min. fuel temperature – in flight</strong><span class="cl-dots"></span><span>− 42 °C or 3 °C above freeze point (whichever is higher)</span></div>
 > <div class="cl-item"><strong>Tank capacity Main L / R</strong><span class="cl-dots"></span><span>17.777 kg each</span></div>
 > <div class="cl-item"><strong>Tank capacity Center</strong><span class="cl-dots"></span><span>71.946 kg</span></div>
-> <div class="cl-item"><strong>Loading — main tanks full when center loaded</strong><span class="cl-dots"></span><span>Exception: center ≤ 10.000 kg if ZFW + center ≤ MZFW</span></div>
-> <div class="cl-item"><strong>Imbalance — total fuel > 30.980 kg</strong><span class="cl-dots"></span><span>≤ 680 kg</span></div>
+> <div class="cl-item"><strong>Loading – main tanks full when center loaded</strong><span class="cl-dots"></span><span>Exception: center ≤ 10.000 kg if ZFW + center ≤ MZFW</span></div>
+> <div class="cl-item"><strong>Imbalance – total fuel > 30.980 kg</strong><span class="cl-dots"></span><span>≤ 680 kg</span></div>
 > <div class="cl-item"><strong>Standard Extra Fuel Flow</strong><span class="cl-dots"></span><span>4.800 kg/h</span></div>
-> <div class="cl-item"><strong>Imbalance — total fuel ≤ 19.005 kg</strong><span class="cl-dots"></span><span>≤ 1.133 kg</span></div>
+> <div class="cl-item"><strong>Imbalance – total fuel ≤ 19.005 kg</strong><span class="cl-dots"></span><span>≤ 1.133 kg</span></div>
 > <div class="cl-item"><strong>Center tank usage</strong><span class="cl-dots"></span><span>use center first when > 7.300 kg · switch at FUEL LOW CENTER</span></div>
 > <div class="cl-item"><strong>Jettison</strong><span class="cl-dots"></span><span>not with Flaps 30</span></div>
 > <div class="cl-item"><strong>Kathon FP 1.5</strong><span class="cl-dots"></span><span>not permitted</span></div>

@@ -9,32 +9,33 @@ tags: [non-normal]
 
 > [!info]- Overweight Landing
 > - Landing distance normally **less than T/O distance** for Flaps 20/25 at all gross weights
-> - Wet/slippery runway: verify field length from PI landing distance charts
 > - Brake energy limits will **not** be exceeded under any normal or non-normal landing conditions
-> - Accomplish **Overweight Landing NNC** — checks landing weight vs. landing climb limit weight:
+> - Accomplish **Overweight Landing NNC** – checks landing weight vs. landing climb limit weight:
 >   - Weight **> landing climb limit weight** OR **one engine inoperative** → Flaps 20, v<sub>REF</sub> 20
 >   - Weight **≤ landing climb limit weight**, both engines → Flaps 25, v<sub>REF</sub> 25 + additives
 
-> [!limit] B787 (-ABPA to -ABPE)
-> If flaps 25 is the landing flap: limit approach speed additives so that approach speed does **not exceed 185 kts** (5 kt margin to flaps 25 placard speed).
-
 > [!proc]- Approach & Landing Technique
-> - If stopping distance concern: reduce weight — consider fuel jettison or burn-off at low altitude with gear down
+> **Typical sequence in a non-normal case:**
+> NNC → FORDEC → LAPA → Overweight Landing NNC *(Execute)* → Descent CL → …
+>
+> ---
+>
+> - If stopping distance concern: reduce weight – consider fuel jettison or burn-off at low altitude with gear down
 > - Observe flap placard speeds during extension and on final; speed may be reduced up to **20 kts below** normal maneuver speeds before extending to the next flap position
+> - If flaps 25: limit additives so approach speed does **not exceed 185 kts** *(5 kt margin to placard – B787 -ABPA to -ABPE)*
 > - Use longest available runway; avoid tailwinds, negative slope, reduced braking conditions
-> - Do **not** carry excess airspeed on final — especially critical with engine inoperative or other non-normal
 > - Fly normal profile and rate of descent; do **not** hold the airplane off
-> - Fly onto runway at normal touchdown point — if long landing likely: **go-around**
+> - Fly onto runway at normal touchdown point – if long landing likely: **go-around**
 > - After touchdown: immediately apply **maximum reverse thrust** using all available runway
 > - Use recommended autobrake setting if adequate stopping distance available (ref. PI chapter QRH)
 
-> [!caution]- Overweight Autolands — NOT Recommended
+> [!caution]- Overweight Autolands – NOT Recommended
 > Autopilots **not certified** for automatic landings above MLAW. Performance may not be satisfactory at higher than normal speeds and weights.
 >
-> If auto approach attempted: disengage autopilot prior to flare height — accomplish **manual landing**.
+> If auto approach attempted: disengage autopilot prior to flare height – accomplish **manual landing**.
 >
-> In emergency (autoland is safest option) — closely monitor:
-> - Touchdown may be **beyond normal touchdown zone** — allow for additional landing distance
+> In emergency (autoland is safest option) – closely monitor:
+> - Touchdown may be **beyond normal touchdown zone** – allow for additional landing distance
 > - Higher than normal sink rates may **exceed structural limits**
 > - Plan for go-around or manual landing if autoland performance unsatisfactory
 > - Auto go-arounds can be initiated until just prior to touchdown, even if airplane touches down after initiation
@@ -70,7 +71,7 @@ tags: [non-normal]
 
 </div>
 
-<div class="nnc-note"><strong>LAPA:</strong> If LAW exceeds the G/A Climb Gradient Limited Weight — check EOSID or any safe visual flight path.</div>
+<div class="nnc-note"><strong>LAPA:</strong> If LAW exceeds the G/A Climb Gradient Limited Weight – check EOSID or any safe visual flight path.</div>
 
 ## NNC: Overweight Landing
 

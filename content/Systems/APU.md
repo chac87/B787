@@ -21,7 +21,7 @@
 <div class="checklist">
 
 <div class="cl-item"><strong>AC power available (Selector ON)</strong><span class="cl-dots"></span><span>Left AFT fuel pump auto-on (independent of flight deck switch)</span></div>
-<div class="cl-item"><strong>No AC power or no AC pump pressure</strong><span class="cl-dots"></span><span>DC pump in left main tank — runs until APU Shutdown or AC available</span></div>
+<div class="cl-item"><strong>No AC power or no AC pump pressure</strong><span class="cl-dots"></span><span>DC pump in left main tank – runs until APU Shutdown or AC available</span></div>
 <div class="cl-item"><strong>No pumps required</strong><span class="cl-dots"></span><span>Ground + flight up to <strong>14,000 ft</strong></span></div>
 
 </div>
@@ -38,9 +38,9 @@
 
 </div>
 
-> [!info] Cold start from unpowered airplane (Battery Switch just turned ON): APUC waits until CCS applications are available — indicated when the CDU page is visible on the lower display.
+> [!info] Cold start from unpowered airplane (Battery Switch just turned ON): APUC waits until CCS applications are available – indicated when the CDU page is visible on the lower display.
 
-> [!info] After an in-flight start: allow APU to run until oil temperature stabilizes — prevents thermal shock to bearings.
+> [!info] After an in-flight start: allow APU to run until oil temperature stabilizes – prevents thermal shock to bearings.
 
 > [!warning] **Failed Start:** APU shuts down automatically → <span class="c-amber">APU SHUTDOWN</span> Advisory · Selector ON → OFF to reset.
 
@@ -64,7 +64,7 @@
 
 ## APU Automatic Start
 
-In flight, the APU starts automatically when **≥ 3 Engine Generators** fail — regardless of Selector position.
+In flight, the APU starts automatically when **≥ 3 Engine Generators** fail – regardless of Selector position.
 
 <div class="checklist">
 
@@ -113,8 +113,8 @@ After cooldown: overspeed simulation tests overspeed and fuel shutoff protection
 </div>
 
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">APU LIMIT — APU Continues Running <span class="eicas-card-badge">CAUTION</span></div>
-  <div class="eicas-card-body">High EGT · High Oil Temperature · Low Oil Pressure — APU continues operating, no automatic shutdown</div>
+  <div class="eicas-card-title">APU LIMIT – APU Continues Running <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-body">High EGT · High Oil Temperature · Low Oil Pressure – APU continues operating, no automatic shutdown</div>
 </div>
 
 </div>
@@ -132,7 +132,7 @@ All Attended faults apply. The following additional faults also trigger an **imm
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">APU SHUTDOWN <span class="eicas-card-badge">ADVISORY</span></div>
-  <div class="eicas-card-body">APU automatically shut down — both Attended and Unattended mode</div>
+  <div class="eicas-card-body">APU automatically shut down – both Attended and Unattended mode</div>
 </div>
 
 </div>

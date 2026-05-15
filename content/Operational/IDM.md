@@ -1,4 +1,4 @@
-# IDM — In-flight Diversion Management
+# IDM – In-flight Diversion Management
 
 ![[idm.webp]]
 
@@ -17,7 +17,7 @@
 ## IDM in 3 Schritten
 
 **1. Validen Plan B finden**
-Runway ohne Threats — **nicht** die geplante Landing Runway (Plan A).
+Runway ohne Threats – **nicht** die geplante Landing Runway (Plan A).
 Bei Threats: Runway ohne Threats am Alternate.
 Second RWY als Plan B: muss eine **separate** RWY sein (Alternate Fuel = Go Around + neuer Anflug).
 

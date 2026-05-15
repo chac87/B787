@@ -5,7 +5,7 @@ tags: [systems, avionics]
 
 # Common Core System (CCS)
 
-Most airplane systems use a common computing network and data exchange system — the **Common Core System (CCS)**. Operation is automatic; there are no controls or indications during normal operations.
+Most airplane systems use a common computing network and data exchange system – the **Common Core System (CCS)**. Operation is automatic; there are no controls or indications during normal operations.
 
 ## Common Computing Resource (CCR)
 
@@ -23,7 +23,7 @@ The **left CCR always starts up first**.
 > [!info]- Battery Power Start-Up
 > - BATTERY switch pushed ON → left CCR start-up cycle begins (~2–3 min)
 > - Left CCR is online when the Captain's inboard and lower display units show the **default CDU page format**
-> - Right CCR start-up does **not** begin on battery alone — requires a power source other than the battery (APU or external power) to close the Electronic Circuit Breakers (ECBs)
+> - Right CCR start-up does **not** begin on battery alone – requires a power source other than the battery (APU or external power) to close the Electronic Circuit Breakers (ECBs)
 
 > [!info]- External / APU Power Start-Up
 > - When **AVAIL** is displayed on either forward EXT PWR switch → left CCR start-up cycle begins (~2–3 min), followed by the right CCR

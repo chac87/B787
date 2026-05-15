@@ -13,8 +13,8 @@ When icing conditions are sensed, the following systems activate automatically i
 | System | Ground | Flight |
 |:---|:---:|:---:|
 | **WAI** | above 75 kts | yes |
-| **EAI** | — | yes |
-| **Pack Inlet Anti-Ice** | — | yes |
+| **EAI** | – | yes |
+| **Pack Inlet Anti-Ice** | – | yes |
 
 ## Engine Anti-Ice
 
@@ -28,7 +28,7 @@ When icing conditions are sensed, the following systems activate automatically i
 |:---|:---|:---|
 | **AUTO** | In flight only | Automatic when icing detected |
 | **ON** | Ground + flight | Manually on continuously |
-| **OFF** | — | Off |
+| **OFF** | – | Off |
 
 **Auto-close of valves** when: both engines shut down · altitude above threshold · thrust lever advance to takeoff N1.
 
@@ -49,11 +49,11 @@ When icing conditions are sensed, the following systems activate automatically i
 |:---|:---|:---|
 | **AUTO** | Ground (GS > 75 kts) + flight | Automatic when icing detected · includes clean-up cycle after de-icing |
 | **MAN** | Ground + flight | Manual when TAT < **25 °C** (detectors may be unreliable) |
-| **OFF** | — | Off |
+| **OFF** | – | Off |
 
 **Symmetry protection**: If one mat fails → opposite side is also deactivated.
 
-**Load shedding**: Mats are briefly shed during high electrical load — max. **30 sec** interruption per cycle.
+**Load shedding**: Mats are briefly shed during high electrical load – max. **30 sec** interruption per cycle.
 
 ## Pack Inlet Anti-Ice
 
@@ -84,16 +84,16 @@ On primary system malfunction, the backup system automatically anti-fogs the for
 | AOA Vanes | 2 | With either engine running |
 | TAT Probe | 1 | In flight only |
 
-- Automatic activation — no manual control
+- Automatic activation – no manual control
 - <span class="c-amber">**PROBE HEAT**</span> EICAS message on failure of one or more probes
 
 ---
 
 > [!limit] Limitations
-> <div class="cl-item"><strong>EAI — ground</strong><span class="cl-dots"></span><span>ON</span></div>
-> <div class="cl-item"><strong>EAI — flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
-> <div class="cl-item"><strong>EAI — not when</strong><span class="cl-dots"></span><span>OAT >10°C (ground) · TAT >15°C (flight) · OAT <−40°C</span></div>
-> <div class="cl-item"><strong>WAI — flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
-> <div class="cl-item"><strong>WAI — not when</strong><span class="cl-dots"></span><span>TAT >15°C · OAT <−40°C</span></div>
-> <div class="cl-item"><strong>Ice Detection — flight</strong><span class="cl-dots"></span><span>TAT ≤15°C + visible moisture or clouds</span></div>
-> <div class="cl-item"><strong>Ice Detection — ground</strong><span class="cl-dots"></span><span>OAT ≤10°C + contaminated surface + visible moisture</span></div>
+> <div class="cl-item"><strong>EAI – ground</strong><span class="cl-dots"></span><span>ON</span></div>
+> <div class="cl-item"><strong>EAI – flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
+> <div class="cl-item"><strong>EAI – not when</strong><span class="cl-dots"></span><span>OAT >10°C (ground) · TAT >15°C (flight) · OAT <−40°C</span></div>
+> <div class="cl-item"><strong>WAI – flight</strong><span class="cl-dots"></span><span>ON or AUTO</span></div>
+> <div class="cl-item"><strong>WAI – not when</strong><span class="cl-dots"></span><span>TAT >15°C · OAT <−40°C</span></div>
+> <div class="cl-item"><strong>Ice Detection – flight</strong><span class="cl-dots"></span><span>TAT ≤15°C + visible moisture or clouds</span></div>
+> <div class="cl-item"><strong>Ice Detection – ground</strong><span class="cl-dots"></span><span>OAT ≤10°C + contaminated surface + visible moisture</span></div>
