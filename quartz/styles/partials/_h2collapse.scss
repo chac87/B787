@@ -20,8 +20,13 @@ h2:has(> .h2-collapse-btn) {
   user-select: none;
 
   &:hover {
-    opacity: 0.8;
+    opacity: 1;
+    color: var(--tertiary);
   }
+}
+
+h2.is-collapsed:has(> .h2-collapse-btn) {
+  color: color-mix(in srgb, var(--dark) 78%, transparent);
 }
 
 .h2-collapse-btn {

@@ -1,9 +1,9 @@
 ---
-title: Volcanic Ash
+title: Volcanic Ash Maneuver
 tags: [non-normal, maneuvers]
 ---
 
-# Volcanic Ash
+# Volcanic Ash Maneuver
 
 <div class="cl-note">→ <a href="/Non-Normals/Non-Normal-Checklists/Volcanic-Ash" style="color:#f39c12 !important"><strong>Volcanic Ash NNC</strong></a></div>
 

@@ -10,7 +10,7 @@
 ## [[Air, Pressurization Non-Normals]]
 ## [[Flight Control Non-Normals]]
 ## [[Engine & APU Non-Normals]]
-## [[Fire, Smoke & Fumes]]
+## [[Non Normals/Smoke Handling|Smoke Handling]]
 ## [[Non Normals/Fuel Non-Normals|Fuel Non-Normals]]
 ## [[Hydraulic Non-Normals]]
 ## [[Landing Gear, Brakes Non-Normals]]
