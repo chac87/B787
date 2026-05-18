@@ -751,6 +751,10 @@ main table:not(.perf-table) tr:nth-child(even) {
     background: color-mix(in srgb, var(--lightgray) 28%, transparent) !important;
 }
 
+:where(article, main, .callout-content) .data-table__col-sep {
+    border-left: 2px solid color-mix(in srgb, var(--secondary) 35%, var(--lightgray)) !important;
+}
+
 :where(article, main, .callout-content) tr.data-table__section-row td {
     border-top: 2px solid color-mix(in srgb, var(--secondary) 28%, var(--lightgray));
 }
@@ -901,6 +905,10 @@ main table:not(.perf-table) tr:nth-child(even) {
 
 [saved-theme="dark"] :where(article, main, .callout-content) .data-table__empty {
     background: rgba(255, 255, 255, 0.03) !important;
+}
+
+[saved-theme="dark"] :where(article, main, .callout-content) .data-table__col-sep {
+    border-left: 2px solid color-mix(in srgb, var(--secondary) 45%, var(--darkgray)) !important;
 }
 
 [saved-theme="dark"] :where(article, main, .callout-content) td table:not(.data-table):not(.eo-segment-table) th,
