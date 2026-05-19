@@ -102,9 +102,9 @@ tags: [sop, supplementary, rnp, navigation]
 > [!warning] EICAS Alerts — Verify Not Shown
 > The following alerts must **not** be displayed prior to commencing the approach:
 >
-> **[C] FMC VERIFY POSITION · [C] GND PROX SYS · [C] NAV AIR DATA SYS · [C] NAV INERTIAL SYS · [C] NAV IRU · [C] NAV SINGLE GPS · [C] SINGLE SOURCE F/D · [C] NAV UNABLE RNP · [C] SGL SOURCE RAD ALT · [C] SINGLE FMC · [C] TERR POS**
+> <span class="c-amber">**[C] FMC VERIFY POSITION · [C] GND PROX SYS · [C] NAV AIR DATA SYS · [C] NAV INERTIAL SYS · [C] NAV IRU · [C] NAV SINGLE GPS · [C] SINGLE SOURCE F/D · [C] NAV UNABLE RNP · [C] SGL SOURCE RAD ALT · [C] SINGLE FMC · [C] TERR POS**</span>
 >
-> Go-around/missed approach is required if **NAV UNABLE RNP** or **FMC VERIFY POSITION** is displayed unless suitable visual reference is established and maintained.
+> Go-around/missed approach is required if <span class="c-amber">**NAV UNABLE RNP**</span> or <span class="c-amber">**FMC VERIFY POSITION**</span> is displayed unless suitable visual reference is established and maintained.
 
 ## During Descent
 
@@ -143,6 +143,6 @@ tags: [sop, supplementary, rnp, navigation]
 
 > [!warning] Go-Around — No Visual Reference
 > If no visual reference is available when any of the following are displayed:
-> - **[C] NAV UNABLE RNP**
-> - **[C] FMC VERIFY POSITION**
-> - **[C] GPS**
+> - <span class="c-amber">**[C] NAV UNABLE RNP**</span>
+> - <span class="c-amber">**[C] FMC VERIFY POSITION**</span>
+> - <span class="c-amber">**[C] GPS**</span>
