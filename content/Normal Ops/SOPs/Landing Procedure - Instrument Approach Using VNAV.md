@@ -39,6 +39,11 @@ VNAV should be used only for approaches that have one of the following features:
   </div>
 </div>
 
+> [!info] RNP AR Approaches
+> For approaches requiring RNP values below 0.3, curved segments, or missed approach RNP < 1, the **RNP AR** procedure applies. The only approved guidance mode on the B787 is **LNAV – VNAV PTH**. Additional pre-approach requirements and stricter deviation limits apply.
+>
+> → [[Normal Ops/Supplementary Procedures/Flight Management, Navigation/RNP AR Approach|RNP AR Approach]]
+
 <div class="eicas-levels">
   <div class="eicas-card eicas-card--white">
     <div class="eicas-card-title">Recommended Roll Modes</div>

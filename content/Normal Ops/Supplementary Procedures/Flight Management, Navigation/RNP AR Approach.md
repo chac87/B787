@@ -24,64 +24,25 @@ tags: [sop, supplementary, rnp, navigation]
 > [!info] Approved Guidance Mode — B787
 > Only one guidance mode is approved for RNP AR on the Boeing 787: **LNAV – VNAV PTH**
 
-## Navigation Performance & Deviation Limits
+## Navigation Performance & Obstacle Clearance
 
-<div class="eicas-levels">
+<img src="/Bilder/rnp%20ar.webp" alt="RNP AR obstacle clearance zones">
 
-<div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">Lateral Deviation Limit</div>
-  <div class="eicas-card-body">1 RNP or NPS turns amber (= Scale and ANP bar)</div>
-</div>
+**Lateral obstacle clearance:** 2 × RNP to either side of the centerline · Maximum deviation: **1 RNP** or NPS turns amber (= Scale and ANP bar)
 
-<div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">Vertical Deviation Limit</div>
-  <div class="eicas-card-body">75 ft (= Scale and ANP bar amber after 5 sec)</div>
-</div>
-
-</div>
+**Vertical obstacle clearance (ROC/MOC):** ~1.000 ft initial · ~500 ft intermediate · Final: function of VEB · Maximum deviation: **75 ft** (= Scale and ANP bar amber after 5 sec)
 
 > [!info] PFD Indications when ANP ≥ RNP
 > - ANP bars meet in the middle
 > - After 5 seconds: NPS (Scale and ANP bar) turns amber
-> - Lateral scale only: **[C] NAV UNABLE RNP** displayed on EICAS
+> - Lateral scale only: **NAV UNABLE RNP** displayed on EICAS
 >
 > Lateral ANP depends on the position updating source. Vertical ANP depends on air data accuracy.
-
-> [!info] Vertical RNP — RNP AR Specific
-> The aircraft verifies **125 ft** for vertical RNP. Since no vertical RNP value is published on the approach chart, the use of 125 ft causes the NPS amber deviation alert to occur at or slightly less than **75 ft deviation**.
-
-## Obstacle Clearance
-
-**Lateral:** 2 × RNP to either side of the centerline.
-
-**Vertical ROC/MOC:**
-- ~1.000 ft on initial approach
-- ~500 ft on intermediate approach
-- Final approach: function of the Vertical Error Budget (VEB)
-
-<div class="eicas-levels">
-
-<div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title">Green Zone <span class="eicas-card-badge">½ RNP · 50 ft</span></div>
-  <div class="eicas-card-body">Normal corridor · PM callout when leaving</div>
-</div>
-
-<div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">Yellow Zone <span class="eicas-card-badge">1 × RNP · 75 ft</span></div>
-  <div class="eicas-card-body">Alert corridor · Go-Around when leaving</div>
-</div>
-
-<div class="eicas-card eicas-card--red">
-  <div class="eicas-card-title">Red Zone <span class="eicas-card-badge">2 × RNP · VEB</span></div>
-  <div class="eicas-card-body">Protection area · Must not be entered</div>
-</div>
-
-</div>
 
 > [!info] Vertical Error Budget (VEB)
 > Covers flight technical error of 75 ft (if not demonstrated), 20 ft QNH error, and temperature effects within the procedure's defined temperature range.
 >
-> During RNP AR procedures: **no temperature correction** by the flight crew.
+> The aircraft verifies **125 ft** for vertical RNP — the NPS amber alert triggers at or slightly less than **75 ft deviation**. During RNP AR: **no temperature correction** by the flight crew.
 
 ## Pre-Approach Requirements
 
@@ -102,7 +63,7 @@ tags: [sop, supplementary, rnp, navigation]
 > [!warning] EICAS Alerts — Verify Not Shown
 > The following alerts must **not** be displayed prior to commencing the approach:
 >
-> <span class="c-amber">**[C] FMC VERIFY POSITION · [C] GND PROX SYS · [C] NAV AIR DATA SYS · [C] NAV INERTIAL SYS · [C] NAV IRU · [C] NAV SINGLE GPS · [C] SINGLE SOURCE F/D · [C] NAV UNABLE RNP · [C] SGL SOURCE RAD ALT · [C] SINGLE FMC · [C] TERR POS**</span>
+> <span class="c-amber">**FMC VERIFY POSITION · GND PROX SYS · NAV AIR DATA SYS · NAV INERTIAL SYS · NAV IRU · NAV SINGLE GPS · SINGLE SOURCE F/D · NAV UNABLE RNP · SGL SOURCE RAD ALT · SINGLE FMC · TERR POS**</span>
 >
 > Go-around/missed approach is required if <span class="c-amber">**NAV UNABLE RNP**</span> or <span class="c-amber">**FMC VERIFY POSITION**</span> is displayed unless suitable visual reference is established and maintained.
 
@@ -143,6 +104,6 @@ tags: [sop, supplementary, rnp, navigation]
 
 > [!warning] Go-Around — No Visual Reference
 > If no visual reference is available when any of the following are displayed:
-> - <span class="c-amber">**[C] NAV UNABLE RNP**</span>
-> - <span class="c-amber">**[C] FMC VERIFY POSITION**</span>
-> - <span class="c-amber">**[C] GPS**</span>
+> - <span class="c-amber">**NAV UNABLE RNP**</span>
+> - <span class="c-amber">**FMC VERIFY POSITION**</span>
+> - <span class="c-amber">**GPS**</span>
