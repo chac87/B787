@@ -12,13 +12,13 @@ tags: [sop, supplementary, lvo]
 >
 > If LVO is not announced on ATIS or confirmed by other means, request: **"REQUEST CATEGORY II / III APPROACH"**
 
-| Category | Decision Height | RVR | Required Autoland Status |
-|:---|:---|:---|:---|
-| **CAT I** | ≥ 200 ft | ≥ 550 m | Manual or automatic |
-| **CAT II** | 100–199 ft | ≥ 300 m | LAND 2 or LAND 3 |
-| **CAT IIIA** (fail-passive) | 50 ft | 175 m | LAND 2 or LAND 3 |
-| **CAT IIIB with DH** (fail-operational) | 23 ft | 125 m | LAND 2 or LAND 3 |
-| **CAT IIIB no DH** (fail-operational) | no DH | 75 m | **LAND 3** |
+| Category                                | Decision Height | RVR     | Required Autoland Status |
+| :-------------------------------------- | :-------------- | :------ | :----------------------- |
+| **CAT I**                               | ≥ 200 ft        | ≥ 550 m (1.800 ft) | Manual or automatic      |
+| **CAT II**                              | 100 ft          | 300 m (1.000 ft)   | LAND 2 or LAND 3         |
+| **CAT IIIA** (fail-passive)             | 50 ft           | 175 m (600 ft)     | LAND 2 or LAND 3         |
+| **CAT IIIB with DH** (fail-operational) | 23 ft           | 125 m (400 ft)     | LAND 2 or LAND 3         |
+| **CAT IIIB no DH** (fail-operational)   | no DH           | 75 m (300 ft)      | **LAND 3**               |
 
 > [!warning] CAT II — Manual Landing Not Approved
 > CAT II manual landing is **not** approved. A CAT II approach may only be conducted using the autopilot (LAND 2 or LAND 3 required).
@@ -70,8 +70,8 @@ tags: [sop, supplementary, lvo]
 </div>
 
 <div class="eicas-card eicas-card--red">
-  <div class="eicas-card-title">Absolute Minimum <span class="eicas-card-badge">RVR 125 m</span></div>
-  <div class="eicas-card-body">No takeoff below RVR 125 m · LVTO below landing minima may require a Takeoff Alternate</div>
+  <div class="eicas-card-title">Absolute Minimum <span class="eicas-card-badge">RVR 125 m (400 ft)</span></div>
+  <div class="eicas-card-body">No takeoff below RVR 125 m · LVTO below landing minima may require a Takeoff Alternate · Centerline lights (spacing 15 m) · Edge lights (spacing 60 m)</div>
 </div>
 
 </div>
@@ -89,9 +89,10 @@ tags: [sop, supplementary, lvo]
 
 | Category | Required Visual Reference at DH |
 |:---|:---|
+| **CAT I** | At least 3 centerline lights/barrettes of the ALS and either one crossbar of the ALS or the threshold lights of the landing runway |
 | **CAT II** | At least 3 consecutive lights + a lateral element of the ground pattern |
-| **CAT IIIA** | At least 3 consecutive lights |
-| **CAT IIIB with DH** | At least 1 centreline light |
+| **CAT IIIA** (fail-passive · LAND 2) | Centerline of the approach lights or TDZ lights or RWY centerline lights or RWY edge lights or a combination |
+| **CAT IIIB with DH** (fail-operational · LAND 3) | At least 1 centreline light |
 | **CAT IIIB no DH** | No visual contact required |
 
 ## Task Sharing – CAT II/III Approach
