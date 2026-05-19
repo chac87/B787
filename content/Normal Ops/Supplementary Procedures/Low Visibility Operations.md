@@ -60,7 +60,7 @@ tags: [sop, supplementary, lvo]
 <div class="eicas-levels">
 
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title">RVR 200–400 m</div>
+  <div class="eicas-card-title">RVR &lt; 400 m</div>
   <div class="eicas-card-body">LVP must be in force at the aerodrome</div>
 </div>
 
@@ -190,11 +190,11 @@ tags: [sop, supplementary, lvo]
 
 ## After Landing
 
-> [!info] Contaminated Runway — Manual Rollout
+> [!info] Contaminated Runway – Manual Rollout
 > If a manual rollout is required due to a contaminated runway, a minimum RVR of **200 m** applies for all RVR measurement points along the required runway length (this maneuver has not been demonstrated at lower visibility). The landing category (e.g. DUAL) is maintained. Automatic landings on contaminated runways are possible within certain limits.
 
 > [!info] Runway Vacated
-> The runway is not considered vacated until the aircraft has completely exited the colour-coded lights. Only then report "Runway vacated" to ATC.
+> RWY is not considered vacated until the aircraft has completely exited the colour-coded lights. </br> Only then report "Runway vacated" to ATC.
 
 > [!info] Go-Around During LVO
 > Every go-around during LVO must be reported via the ACARS Flightlog (enter "LVO"). If the go-around was caused by an aerodrome-related reason, an additional Flight Report must be filed.

@@ -101,7 +101,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/Dual-Eng-Fail-Stall"><span>DUAL ENG FAIL/STALL</span></a></div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/Dual-Eng-Fail-Stall"><span>Dual Eng Fail/Stall</span></a></div>
   <div class="mi-condition">Condition: Engine speed for both engines is below idle.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>
@@ -165,7 +165,7 @@
 </div>
 
 <div class="mi-block mi-block--red">
-  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>ENG SVR DAMAGE/SEP L, R</span></a></div>
+  <div class="mi-title"><a href="/Non-Normals/Non-Normal-Checklists/Eng-Svr-Damage-Sep-L,-R"><span>Eng Svr Damage/Sep L/R</span></a></div>
   <div class="mi-condition">Condition: One or more of these occur: airframe vibrations with abnormal engine indications, or engine separation.</div>
   <div class="mi-item">
     <span class="mi-num">1</span>

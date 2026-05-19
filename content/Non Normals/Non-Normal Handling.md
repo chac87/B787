@@ -36,17 +36,17 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
 
 <div class="nn-flow-step nn-flow-step--white" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Aviate – Complete Non-Normal Checklists</div>
+    <div class="nn-flow-title">Complete Non-Normal Checklists</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--white" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Aviate – Complete Normal Checklist</div>
+    <div class="nn-flow-title">Complete Normal Checklist</div>
   </div>
 </div>
 <div class="nn-flow-step nn-flow-step--blue" style="display:block">
   <div class="nn-flow-copy">
-    <div class="nn-flow-title">Navigate – Decision Making Process</div>
+    <div class="nn-flow-title">Decision Making Process</div>
     <div class="nn-flow-body">Plan the diversion</div>
   </div>
 </div>
