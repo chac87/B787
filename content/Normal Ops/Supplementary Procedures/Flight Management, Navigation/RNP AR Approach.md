@@ -1,0 +1,148 @@
+---
+title: RNP AR Approach
+tags: [sop, supplementary, rnp, navigation]
+---
+
+# RNP AR Approach
+
+## RNP vs. RNP AR
+
+<table class="data-table">
+<thead>
+<tr><th></th><th>RNP</th><th>RNP AR</th></tr>
+</thead>
+<tbody>
+<tr><td>RNP Value 0.3</td><td>✓</td><td>✓</td></tr>
+<tr><td>RNP Value &lt; 0.3</td><td></td><td>✓</td></tr>
+<tr><td>Straight segment between FAP and RWY</td><td>✓</td><td>✓</td></tr>
+<tr><td>Curve between FAP and RWY</td><td></td><td>✓</td></tr>
+<tr><td>Minima down to 250 ft</td><td>✓</td><td>✓</td></tr>
+<tr><td>Departure and/or Missed Approach RNP &lt; 1</td><td></td><td>✓</td></tr>
+</tbody>
+</table>
+
+> [!info] Approved Guidance Mode — B787
+> Only one guidance mode is approved for RNP AR on the Boeing 787: **LNAV – VNAV PTH**
+
+## Navigation Performance & Deviation Limits
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Lateral Deviation Limit</div>
+  <div class="eicas-card-body">1 RNP or NPS turns amber (= Scale and ANP bar)</div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Vertical Deviation Limit</div>
+  <div class="eicas-card-body">75 ft (= Scale and ANP bar amber after 5 sec)</div>
+</div>
+
+</div>
+
+> [!info] PFD Indications when ANP ≥ RNP
+> - ANP bars meet in the middle
+> - After 5 seconds: NPS (Scale and ANP bar) turns amber
+> - Lateral scale only: **[C] NAV UNABLE RNP** displayed on EICAS
+>
+> Lateral ANP depends on the position updating source. Vertical ANP depends on air data accuracy.
+
+> [!info] Vertical RNP — RNP AR Specific
+> The aircraft verifies **125 ft** for vertical RNP. Since no vertical RNP value is published on the approach chart, the use of 125 ft causes the NPS amber deviation alert to occur at or slightly less than **75 ft deviation**.
+
+## Obstacle Clearance
+
+**Lateral:** 2 × RNP to either side of the centerline.
+
+**Vertical ROC/MOC:**
+- ~1.000 ft on initial approach
+- ~500 ft on intermediate approach
+- Final approach: function of the Vertical Error Budget (VEB)
+
+<div class="eicas-levels">
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">Green Zone <span class="eicas-card-badge">½ RNP · 50 ft</span></div>
+  <div class="eicas-card-body">Normal corridor · PM callout when leaving</div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">Yellow Zone <span class="eicas-card-badge">1 × RNP · 75 ft</span></div>
+  <div class="eicas-card-body">Alert corridor · Go-Around when leaving</div>
+</div>
+
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Red Zone <span class="eicas-card-badge">2 × RNP · VEB</span></div>
+  <div class="eicas-card-body">Protection area · Must not be entered</div>
+</div>
+
+</div>
+
+> [!info] Vertical Error Budget (VEB)
+> Covers flight technical error of 75 ft (if not demonstrated), 20 ft QNH error, and temperature effects within the procedure's defined temperature range.
+>
+> During RNP AR procedures: **no temperature correction** by the flight crew.
+
+## Pre-Approach Requirements
+
+<div class="checklist">
+
+<div class="cl-item"><strong>Required equipment</strong><span class="cl-dots"></span><strong>CHECK OPERATIONAL</strong></div>
+
+<div class="cl-item"><strong>RNP PROGRESS page 4</strong><span class="cl-dots"></span><strong>CHECK / MODIFY</strong></div>
+<div class="cl-sub">Verify the RNP value of the upcoming approach — modify as required</div>
+
+<div class="cl-item"><strong>Wind and temperature</strong><span class="cl-dots"></span><strong>WITHIN PROCEDURE LIMITS</strong></div>
+
+<div class="cl-item"><strong>QNH</strong><span class="cl-dots"></span><strong>LOCAL — REMOTE STATION PROHIBITED</strong></div>
+<div class="cl-sub">RNP AR approaches are based on barometric reference — use of QNH from a remote station is prohibited</div>
+
+</div>
+
+> [!warning] EICAS Alerts — Verify Not Shown
+> The following alerts must **not** be displayed prior to commencing the approach:
+>
+> **[C] FMC VERIFY POSITION · [C] GND PROX SYS · [C] NAV AIR DATA SYS · [C] NAV INERTIAL SYS · [C] NAV IRU · [C] NAV SINGLE GPS · [C] SINGLE SOURCE F/D · [C] NAV UNABLE RNP · [C] SGL SOURCE RAD ALT · [C] SINGLE FMC · [C] TERR POS**
+>
+> Go-around/missed approach is required if **NAV UNABLE RNP** or **FMC VERIFY POSITION** is displayed unless suitable visual reference is established and maintained.
+
+## During Descent
+
+<div class="checklist">
+
+<div class="cl-item"><strong>Go-Around strategy</strong><span class="cl-dots"></span><strong>REVIEW</strong></div>
+<div class="cl-sub">Including "Management of RNP AR capability"</div>
+
+<div class="cl-item"><strong>VOR/DME NAV</strong><span class="cl-dots"></span><strong>OFF</strong></div>
+
+<div class="cl-item"><strong>Aircraft RNP value</strong><span class="cl-dots"></span><strong>VERIFY COMPLIANT</strong></div>
+<div class="cl-sub">Must be compliant with the selected procedure</div>
+
+</div>
+
+## Approach Procedure
+
+<div class="checklist">
+
+<div class="cl-item"><strong>TERR</strong><span class="cl-dots"></span><strong>SELECT ON MAP</strong></div>
+
+<div class="cl-item"><strong>2 NM before Descent Point</strong><span class="cl-dots"></span><strong>PM CALLOUT</strong></div>
+<div class="cl-sub">PM calls out "Approaching Glide Path" — PF accomplishes required actions</div>
+
+<div class="cl-item"><strong>Navigation Performance</strong><span class="cl-dots"></span><strong>MONITOR</strong></div>
+<div class="cl-sub">Maximum deviation: Lateral 1 RNP or NPS amber · Vertical 75 ft</div>
+
+</div>
+
+## Go-Around Criteria
+
+> [!warning] Go-Around — Deviation Exceedance
+> Initiate a Go-Around when exceeding:
+> - **Lateral:** 1 RNP or NPS turns amber (= Scale and ANP bar)
+> - **Vertical:** 75 ft (= Scale and ANP bar amber after 5 sec)
+
+> [!warning] Go-Around — No Visual Reference
+> If no visual reference is available when any of the following are displayed:
+> - **[C] NAV UNABLE RNP**
+> - **[C] FMC VERIFY POSITION**
+> - **[C] GPS**
