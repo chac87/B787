@@ -57,11 +57,11 @@ If severe turbulence is encountered or expected: reduce to turbulent air penetra
 > [!proc]- Manual Entry and Level Off
 > Disconnect autothrottle and retard thrust levers to idle. Smoothly extend speedbrakes. Disengage autopilot and smoothly lower the nose to initial descent attitude (approximately **10° nose down**).
 >
-> About **10 kt before reaching target speed**: slowly raise pitch attitude to maintain target speed. Keep the airplane in trim at all times.
+> About **10 kts before reaching target speed**: slowly raise pitch attitude to maintain target speed. Keep the airplane in trim at all times.
 >
 > If M<sub>MO</sub>/v<sub>MO</sub> is inadvertently exceeded: change pitch smoothly to reduce speed.
 >
-> **Approaching level-off:** Smoothly adjust pitch to reduce rate of descent. Return speedbrake lever to the **down detent** when approaching the desired level-off altitude. After reaching level flight: add thrust to maintain LRC or 300 kt.
+> **Approaching level-off:** Smoothly adjust pitch to reduce rate of descent. Return speedbrake lever to the **down detent** when approaching the desired level-off altitude. After reaching level flight: add thrust to maintain LRC or 300 kts.
 
 > [!info] Level-off sequence
 > First reduce speed (set command speed to target), **then** retract speedbrakes – retracting too early risks momentary overspeed.

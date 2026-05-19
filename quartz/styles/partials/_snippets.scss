@@ -946,6 +946,14 @@ main table:not(.perf-table) tr:nth-child(even) {
     }
 }
 
+:where(article, main, .callout-content) .table-container > table.data-table--compact th,
+:where(article, main, .callout-content) .table-container > table.data-table--compact td,
+:where(article, main, .callout-content) table.data-table.data-table--compact th,
+:where(article, main, .callout-content) table.data-table.data-table--compact td {
+    padding: 0.45rem 0.75rem;
+    line-height: 1.2;
+}
+
 
 /* === snippet: table-50-50.css === */
 /* =========================================

@@ -36,7 +36,7 @@ tags: [performance, non-normal]
   </thead>
   <tbody>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">40.000<br><span>(260kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">40.000<br><span>(260kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>3.0</td><td>3.0</td><td>3.0</td>
       <td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td>
@@ -47,7 +47,7 @@ tags: [performance, non-normal]
       <td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">38.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">38.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>3.0</td><td>3.0</td><td>3.0</td><td>3.0</td>
       <td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td>
@@ -58,7 +58,7 @@ tags: [performance, non-normal]
       <td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">35.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">35.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>4.0</td><td>3.5</td><td>3.5</td><td>4.0</td><td>4.0</td>
       <td class="data-table__empty"></td><td class="data-table__empty"></td>
@@ -69,7 +69,7 @@ tags: [performance, non-normal]
       <td class="data-table__empty"></td><td class="data-table__empty"></td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">30.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">30.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>5.0</td><td>4.5</td><td>4.5</td><td>4.5</td><td>4.5</td><td>5.0</td><td>5.0</td>
     </tr>
@@ -78,7 +78,7 @@ tags: [performance, non-normal]
       <td>2.600</td><td>2.100</td><td>1.800</td><td>1.500</td><td>1.200</td><td>900</td><td>700</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">25.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">25.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>6.5</td><td>6.0</td><td>5.5</td><td>5.5</td><td>5.5</td><td>5.5</td><td>5.5</td>
     </tr>
@@ -87,7 +87,7 @@ tags: [performance, non-normal]
       <td>3.300</td><td>2.700</td><td>2.300</td><td>2.000</td><td>1.700</td><td>1.400</td><td>1.100</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">20.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">20.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>8.0</td><td>7.5</td><td>7.0</td><td>7.0</td><td>6.5</td><td>6.5</td><td>6.5</td>
     </tr>
@@ -96,7 +96,7 @@ tags: [performance, non-normal]
       <td>4.000</td><td>3.400</td><td>2.900</td><td>2.500</td><td>2.200</td><td>1.900</td><td>1.600</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">10.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">10.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>11.5</td><td>10.5</td><td>9.5</td><td>9.0</td><td>9.0</td><td>8.5</td><td>8.5</td>
     </tr>
@@ -105,7 +105,7 @@ tags: [performance, non-normal]
       <td>5.400</td><td>4.600</td><td>4.000</td><td>3.500</td><td>3.000</td><td>2.700</td><td>2.300</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">Sea Level<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">Sea Level<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>14.5</td><td>13.0</td><td>12.0</td><td>11.0</td><td>10.5</td><td>10.5</td><td>10.0</td>
     </tr>
@@ -135,7 +135,7 @@ tags: [performance, non-normal]
   </thead>
   <tbody>
     <tr class="data-table__section-row">
-      <td rowspan="3" class="data-table__group">40.000<br><span>(260kt IAS)</span></td>
+      <td rowspan="3" class="data-table__group">40.000<br><span>(260kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>1.5</td><td>2.0</td><td>2.5</td><td>3.0</td>
       <td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td>
@@ -151,7 +151,7 @@ tags: [performance, non-normal]
       <td class="data-table__empty"></td><td class="data-table__empty"></td><td class="data-table__empty"></td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="3" class="data-table__group">38.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="3" class="data-table__group">38.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>1.5</td><td>2.0</td><td>2.0</td><td>2.5</td><td>3.0</td>
       <td class="data-table__empty"></td><td class="data-table__empty"></td>
@@ -167,7 +167,7 @@ tags: [performance, non-normal]
       <td class="data-table__empty"></td><td class="data-table__empty"></td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="3" class="data-table__group">35.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="3" class="data-table__group">35.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>1.5</td><td>2.0</td><td>2.0</td><td>2.5</td><td>3.0</td><td>3.5</td><td>3.5</td>
     </tr>
@@ -180,7 +180,7 @@ tags: [performance, non-normal]
       <td>76.7</td><td>78.0</td><td>79.6</td><td>81.4</td><td>83.5</td><td>86.0</td><td>89.4</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="3" class="data-table__group">30.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="3" class="data-table__group">30.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>1.5</td><td>2.0</td><td>2.5</td><td>2.5</td><td>3.0</td><td>3.5</td><td>4.0</td>
     </tr>
@@ -193,7 +193,7 @@ tags: [performance, non-normal]
       <td>72.7</td><td>74.0</td><td>75.4</td><td>77.0</td><td>78.8</td><td>81.1</td><td>83.5</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="3" class="data-table__group">25.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="3" class="data-table__group">25.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>1.5</td><td>2.0</td><td>2.5</td><td>3.0</td><td>3.0</td><td>3.5</td><td>4.0</td>
     </tr>
@@ -206,7 +206,7 @@ tags: [performance, non-normal]
       <td>68.8</td><td>70.0</td><td>71.4</td><td>72.8</td><td>74.5</td><td>76.5</td><td>78.6</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="3" class="data-table__group">20.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="3" class="data-table__group">20.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>1.5</td><td>2.0</td><td>2.5</td><td>3.0</td><td>3.5</td><td>3.5</td><td>4.0</td>
     </tr>
@@ -219,7 +219,7 @@ tags: [performance, non-normal]
       <td>64.7</td><td>65.9</td><td>67.3</td><td>68.7</td><td>70.1</td><td>72.1</td><td>74.0</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="3" class="data-table__group">15.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="3" class="data-table__group">15.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>1.5</td><td>2.0</td><td>2.5</td><td>3.0</td><td>3.5</td><td>4.0</td><td>4.0</td>
     </tr>
@@ -253,7 +253,7 @@ tags: [performance, non-normal]
   </thead>
   <tbody>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">40.000<br><span>(260kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">40.000<br><span>(260kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−0.5</td><td>0.0</td><td>0.5</td><td>0.5</td><td>1.0</td><td>1.0</td><td>1.5</td>
     </tr>
@@ -262,7 +262,7 @@ tags: [performance, non-normal]
       <td>−2.000</td><td>−1.800</td><td>−1.800</td><td>−1.800</td><td>−1.900</td><td>−2.100</td><td>−2.300</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">38.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">38.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−1.0</td><td>−0.5</td><td>0.0</td><td>0.5</td><td>1.0</td><td>1.0</td><td>1.5</td>
     </tr>
@@ -271,7 +271,7 @@ tags: [performance, non-normal]
       <td>−2.100</td><td>−2.000</td><td>−1.800</td><td>−1.800</td><td>−1.800</td><td>−1.900</td><td>−2.000</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">35.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">35.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−1.5</td><td>−1.0</td><td>−0.5</td><td>0.0</td><td>0.5</td><td>1.0</td><td>1.5</td>
     </tr>
@@ -280,7 +280,7 @@ tags: [performance, non-normal]
       <td>−2.300</td><td>−2.100</td><td>−2.000</td><td>−1.900</td><td>−1.800</td><td>−1.900</td><td>−1.900</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">30.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">30.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−1.5</td><td>−1.0</td><td>−0.5</td><td>0.0</td><td>0.5</td><td>1.0</td><td>1.5</td>
     </tr>
@@ -289,7 +289,7 @@ tags: [performance, non-normal]
       <td>−2.300</td><td>−2.100</td><td>−1.900</td><td>−1.800</td><td>−1.800</td><td>−1.800</td><td>−1.800</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">25.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">25.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−1.5</td><td>−1.0</td><td>−0.5</td><td>0.0</td><td>0.5</td><td>1.0</td><td>1.0</td>
     </tr>
@@ -298,7 +298,7 @@ tags: [performance, non-normal]
       <td>−2.200</td><td>−2.100</td><td>−1.900</td><td>−1.800</td><td>−1.800</td><td>−1.800</td><td>−1.800</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">20.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">20.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−2.0</td><td>−1.0</td><td>−0.5</td><td>0.0</td><td>0.5</td><td>1.0</td><td>1.5</td>
     </tr>
@@ -307,7 +307,7 @@ tags: [performance, non-normal]
       <td>−2.100</td><td>−1.900</td><td>−1.800</td><td>−1.700</td><td>−1.600</td><td>−1.600</td><td>−1.600</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">10.000<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">10.000<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−2.0</td><td>−1.5</td><td>−0.5</td><td>0.0</td><td>0.5</td><td>1.0</td><td>1.5</td>
     </tr>
@@ -316,7 +316,7 @@ tags: [performance, non-normal]
       <td>−1.900</td><td>−1.800</td><td>−1.600</td><td>−1.600</td><td>−1.500</td><td>−1.500</td><td>−1.500</td>
     </tr>
     <tr class="data-table__section-row">
-      <td rowspan="2" class="data-table__group">Sea Level<br><span>(270kt IAS)</span></td>
+      <td rowspan="2" class="data-table__group">Sea Level<br><span>(270kts IAS)</span></td>
       <td class="data-table__row-label data-table__row-label--strong">PITCH ATT</td>
       <td>−2.0</td><td>−1.5</td><td>−0.5</td><td>0.0</td><td>0.5</td><td>1.0</td><td>1.5</td>
     </tr>
@@ -359,7 +359,7 @@ tags: [performance, non-normal]
       <td>50.8</td><td>53.3</td><td>55.9</td><td>58.4</td><td>60.8</td><td>63.1</td><td>65.1</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>206</td><td>215</td><td>224</td><td>233</td><td>245</td><td>253</td><td>253</td>
     </tr>
     <tr class="data-table__section-row">
@@ -376,7 +376,7 @@ tags: [performance, non-normal]
       <td>47.4</td><td>50.0</td><td>52.5</td><td>54.7</td><td>57.0</td><td>59.3</td><td>61.2</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>206</td><td>214</td><td>223</td><td>232</td><td>245</td><td>253</td><td>253</td>
     </tr>
   </tbody>
@@ -414,7 +414,7 @@ tags: [performance, non-normal]
       <td>47.5</td><td>50.3</td><td>52.9</td><td>55.3</td><td>58.2</td><td>60.3</td><td>62.1</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>206</td><td>215</td><td>223</td><td>232</td><td>245</td><td>253</td><td>253</td>
     </tr>
     <tr class="data-table__section-row">
@@ -431,7 +431,7 @@ tags: [performance, non-normal]
       <td>47.9</td><td>50.8</td><td>53.4</td><td>56.2</td><td>59.0</td><td>61.4</td><td>64.0</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>181</td><td>190</td><td>201</td><td>212</td><td>223</td><td>234</td><td>238</td>
     </tr>
     <tr class="data-table__section-row">
@@ -448,7 +448,7 @@ tags: [performance, non-normal]
       <td>48.0</td><td>51.5</td><td>54.5</td><td>57.5</td><td>59.8</td><td>62.0</td><td>64.3</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>166</td><td>175</td><td>183</td><td>192</td><td>200</td><td>207</td><td>208</td>
     </tr>
     <tr class="data-table__section-row">
@@ -465,7 +465,7 @@ tags: [performance, non-normal]
       <td>49.5</td><td>52.7</td><td>56.1</td><td>58.8</td><td>61.4</td><td>63.8</td><td>66.0</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>146</td><td>154</td><td>163</td><td>172</td><td>180</td><td>187</td><td>193</td>
     </tr>
     <tr class="data-table__section-row">
@@ -482,7 +482,7 @@ tags: [performance, non-normal]
       <td>57.8</td><td>61.1</td><td>63.7</td><td>67.2</td><td>70.4</td><td>72.9</td><td>74.4</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>141</td><td>149</td><td>158</td><td>167</td><td>175</td><td>182</td><td>188</td>
     </tr>
   </tbody>
@@ -520,7 +520,7 @@ tags: [performance, non-normal]
       <td>−40.9</td><td>43.2</td><td>45.5</td><td>47.7</td><td>49.7</td><td>51.5</td><td>53.0</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>139</td><td>149</td><td>158</td><td>166</td><td>175</td><td>182</td><td>189</td>
     </tr>
   </tbody>
@@ -556,7 +556,7 @@ tags: [performance, non-normal]
       <td>3.900</td><td>3.300</td><td>2.800</td><td>2.500</td><td>2.100</td><td>1.900</td><td>1.600</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>141</td><td>150</td><td>159</td><td>167</td><td>176</td><td>183</td><td>188</td>
     </tr>
     <tr class="data-table__section-row">
@@ -569,7 +569,7 @@ tags: [performance, non-normal]
       <td>4.500</td><td>3.900</td><td>3.400</td><td>3.000</td><td>2.700</td><td>2.400</td><td>2.100</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>141</td><td>149</td><td>158</td><td>167</td><td>175</td><td>182</td><td>188</td>
     </tr>
     <tr class="data-table__section-row">
@@ -582,7 +582,7 @@ tags: [performance, non-normal]
       <td>5.000</td><td>4.300</td><td>3.800</td><td>3.400</td><td>3.000</td><td>2.700</td><td>2.400</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>141</td><td>149</td><td>158</td><td>166</td><td>174</td><td>182</td><td>188</td>
     </tr>
   </tbody>
@@ -614,7 +614,7 @@ tags: [performance, non-normal]
       <td>3.500</td><td>3.000</td><td>2.600</td><td>2.200</td><td>1.900</td><td>1.600</td><td>1.400</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>141</td><td>150</td><td>159</td><td>167</td><td>176</td><td>183</td><td>188</td>
     </tr>
     <tr class="data-table__section-row">
@@ -627,7 +627,7 @@ tags: [performance, non-normal]
       <td>4.100</td><td>3.500</td><td>3.000</td><td>2.600</td><td>2.300</td><td>2.000</td><td>1.700</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>141</td><td>149</td><td>158</td><td>167</td><td>175</td><td>182</td><td>188</td>
     </tr>
     <tr class="data-table__section-row">
@@ -640,7 +640,7 @@ tags: [performance, non-normal]
       <td>4.300</td><td>3.700</td><td>3.300</td><td>2.900</td><td>2.600</td><td>2.300</td><td>2.000</td>
     </tr>
     <tr>
-      <td class="data-table__row-label">IAS [kt]</td>
+      <td class="data-table__row-label">IAS [kts]</td>
       <td>141</td><td>149</td><td>158</td><td>166</td><td>174</td><td>182</td><td>188</td>
     </tr>
   </tbody>

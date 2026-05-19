@@ -69,4 +69,4 @@ Use headsets:
 ## 12.8.3.1 - Meldung von Abweichungen
 
 - **ETO:** >=3 min (nicht notwendig bei einer aktiven ADS-C-connection)
-- **Speed:** >=+/-0.02 M; >=+/-10 kt TAS
+- **Speed:** >=+/-0.02 M; >=+/-10 kts TAS

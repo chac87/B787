@@ -119,7 +119,7 @@ tags: [non-normal, flightinstruments]
 <div class="nnc-sub">Use the left TCP to tune the ILS frequency and course as published on the instrument approach chart, or the GLS channel.</div>
 <div class="nnc-sub">Confirm magnetic heading with the standby compass.</div>
 
-<div class="nnc-step">When below 10.000 feet</div>
+<div class="nnc-step">When below 10.000 ft</div>
 <div class="nnc-item"><strong>OUTFLOW VALVE switches (both)</strong><span class="cl-dots"></span><strong>MAN</strong></div>
 <div class="nnc-item"><strong>OUTFLOW VALVE MANUAL switches (both)</strong><span class="cl-dots"></span><strong>Push to OPEN and hold for 30 seconds</strong></div>
 

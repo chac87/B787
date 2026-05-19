@@ -22,7 +22,7 @@
 
 <div class="cl-item"><strong>AC power available (Selector ON)</strong><span class="cl-dots"></span><span>Left AFT fuel pump auto-on (independent of flight deck switch)</span></div>
 <div class="cl-item"><strong>No AC power or no AC pump pressure</strong><span class="cl-dots"></span><span>DC pump in left main tank – runs until APU Shutdown or AC available</span></div>
-<div class="cl-item"><strong>No pumps required</strong><span class="cl-dots"></span><span>Ground + flight up to <strong>14,000 ft</strong></span></div>
+<div class="cl-item"><strong>No pumps required</strong><span class="cl-dots"></span><span>Ground + flight up to <strong>14.000 ft</strong></span></div>
 
 </div>
 

@@ -13,7 +13,7 @@ tags: [non-normal, engine]
 - Airborne detected: Autobrake RTO → **OFF** (audible "klack")
 
 > [!info] Below 400 ft RA
-> No actions except to cancel any warning and raise the landing gear with a positive rate of climb. Maintain speed v<sub>2</sub> to v<sub>2</sub>+15 kt until acceleration height.
+> No actions except to cancel any warning and raise the landing gear with a positive rate of climb. Maintain speed v<sub>2</sub> to v<sub>2</sub>+15 kts until acceleration height.
 > If time is available PM advises ATC: "MAYDAY, Callsign, engine failure, standby"
 
 <table class="data-table">
@@ -23,7 +23,7 @@ tags: [non-normal, engine]
 <tbody>
 <tr>
   <td><strong>&lt; 400 ft</strong></td>
-  <td>AP available > <strong>200 ft</strong> AGL<br>PF: <em>"Set RWY TRK and push"</em> – Engage roll mode (TRK HLD)<br>if needed: Max Power (Target V/S ~400–500 ft/min (gross gradient 2.4% × 180 kt GS ≈ 432 ft/min))</td>
+  <td>AP available > <strong>200 ft</strong> AGL<br>PF: <em>"Set RWY TRK and push"</em> – Engage roll mode (TRK HLD)<br>if needed: Max Power (Target V/S ~400–500 ft/min (gross gradient 2.4% × 180 kts GS ≈ 432 ft/min))</td>
 </tr>
 <tr>
   <td style="border-top: 1px solid color-mix(in srgb, var(--secondary) 16%, var(--lightgray))"><strong>> 400 ft</strong></td>
@@ -57,7 +57,7 @@ tags: [non-normal, engine]
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Thrust Increase</div>
-  <div class="eicas-card-body"><strong>Criteria:</strong> Airborne AND IAS ≥ 140 kt.<br><strong>&lt; 400 ft:</strong> manual thrust – A/T in HOLD.<br><strong>&gt; 400 ft:</strong> A/T disconnect + manual thrust, or TO/GA switch.</div>
+  <div class="eicas-card-body"><strong>Criteria:</strong> Airborne AND IAS ≥ 140 kts.<br><strong>&lt; 400 ft:</strong> manual thrust – A/T in HOLD.<br><strong>&gt; 400 ft:</strong> A/T disconnect + manual thrust, or TO/GA switch.</div>
 </div>
 
 <div class="eicas-card eicas-card--white">
@@ -67,7 +67,7 @@ tags: [non-normal, engine]
 
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">TAMS – Thrust Asymmetry Minimum Speed</div>
-  <div class="eicas-card-body">Situational awareness of minimum control speed required for directional control during large thrust asymmetry. During T/O or G/A: always ≥ 10 kt above v<sub>MCA</sub>. Shown as red-striped band at bottom of the PFD speed tape.</div>
+  <div class="eicas-card-body">Situational awareness of minimum control speed required for directional control during large thrust asymmetry. During T/O or G/A: always ≥ 10 kts above v<sub>MCA</sub>. Shown as red-striped band at bottom of the PFD speed tape.</div>
 </div>
 
 </div>
@@ -111,7 +111,7 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Restart Window</div>
-  <div class="eicas-card-body">Set approx. <strong>270 kt</strong> as compromise between best glide and windmilling relight speed.<br><strong>RR:</strong> approx. 250 kt.<br>Below FL300, speeds above the cross-start envelope improve restart probability.</div>
+  <div class="eicas-card-body">Set approx. <strong>270 kts</strong> as compromise between best glide and windmilling relight speed.<br><strong>RR:</strong> approx. 250 kts.<br>Below FL300, speeds above the cross-start envelope improve restart probability.</div>
 </div>
 
 <div class="eicas-card eicas-card--white">
@@ -132,7 +132,7 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 <div class="eicas-levels">
 <div class="eicas-card eicas-card--amber">
   <div class="eicas-card-title">Altitude available · Engine recoverable</div>
-  <div class="eicas-card-body">ex. dual engine stall at high altitude, volcanic ash<br>→ Increase speed above 250 kt – improves windmill restart probability</div>
+  <div class="eicas-card-body">ex. dual engine stall at high altitude, volcanic ash<br>→ Increase speed above 250 kts – improves windmill restart probability</div>
 </div>
 <div class="eicas-card eicas-card--red">
   <div class="eicas-card-title">Low altitude OR engine unrecoverable</div>
@@ -143,7 +143,7 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 **ATC:** MAYDAY · Callsign · DUAL ENG FAIL · UNABLE TO MAINTAIN ALTITUDE – request initial vector towards nearest suitable airport.
 
 - **Best chance:** restart attempt immediately after recognizing the failure – use remaining high RPM.
-- **Restart probability:** speeds above the cross-start envelope (250 kt) and altitudes below FL300 improve restart probability. Drift-down time can be used to assess landing/ditching options.
+- **Restart probability:** speeds above the cross-start envelope (250 kts) and altitudes below FL300 improve restart probability. Drift-down time can be used to assess landing/ditching options.
 - **Cabin:** all CACs are load shed → slow depressurisation. Monitor cabin altitude and don oxygen masks if necessary at high altitude.
 - **EICAS:** <span class="c-red">STABILIZER</span> with Master Warning on top is not relevant; <span class="c-amber">ENG FAIL L/R</span> may be on page 2.
 - **PM:** correct identification and checklist initiation is crucial for further actions.
@@ -246,7 +246,7 @@ An engine failure at cruise altitude may require a driftdown to single-engine ma
 
 At altitude capture the **ENG OUT CRZ** page displays. Maintain MCT and driftdown altitude until EO SPD is established. Level-off cruise mode matches the mode used during driftdown.
 
-> [!info] If EO altitude is entered within 150 ft of computed maximum (or lower), the FMC commands ~1,250 fpm descent instead of the driftdown schedule.
+> [!info] If EO altitude is entered within 150 ft of computed maximum (or lower), the FMC commands ~1.250 fpm descent instead of the driftdown schedule.
 
 > [!info] When driftdown established: Consider higher speed and FLCH.
 

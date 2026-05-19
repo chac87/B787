@@ -124,7 +124,7 @@ Start the Before Start Procedure after papers are on board.
 | <span class="c-green">**Flight deck door**</span> | <span class="c-green">Closed and locked</span> | F/O |
 | **Passenger signs** | ON | F/O |
 | **MCP**<br><small style="color:var(--gray)">CP announces values from MCP, F/O x-checks V2 with FMC</small> | V2\_\_, HDG\_\_, ALTITUDE\_\_ | CP |
-| **Takeoff speeds, Thrust**<br><small style="color:var(--gray)">CP announces SPD values from FMC and Reference N1 from EICAS,<br>F/O x-checks with TOPAS (Speeds ±0 kt, N1 ±0.5%) and replies "checked"</small> | V1\_\_, VR\_\_, V2\_\_, \_\_% | CP, F/O |
+| **Takeoff speeds, Thrust**<br><small style="color:var(--gray)">CP announces SPD values from FMC and Reference N1 from EICAS,<br>F/O x-checks with TOPAS (Speeds ±0 kts, N1 ±0.5%) and replies "checked"</small> | V1\_\_, VR\_\_, V2\_\_, \_\_% | CP, F/O |
 | **CDU preflight** | Completed | CP |
 | <span class="c-green">**Trim**</span> | <span class="c-green">Units, 0</span> | CP |
 | **Taxi and takeoff briefing** | Completed | CP |

@@ -17,7 +17,7 @@ tags: [non-normal, misc]
 
 <div style="text-align:center; font-weight:bold; letter-spacing:0.08em; margin: 0.75em 0 0.5em;">DEFERRED ITEMS</div>
 
-<div class="nnc-step">Below 5.000 feet</div>
+<div class="nnc-step">Below 5.000 ft</div>
 
 <div class="nnc-item"><strong>Tuning and control panel GPWS GEAR OVRD</strong><span class="cl-dots"></span><strong>OVRD</strong></div>
 <div class="nnc-item"><strong>Tuning and control panel GPWS TERR OVRD</strong><span class="cl-dots"></span><strong>OVRD</strong></div>

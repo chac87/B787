@@ -15,7 +15,7 @@ tags: [non-normal, maneuvers]
 - **Flaps 20** preferred; 15, 17 or 18 acceptable (near-equivalent performance)
 - **Longest suitable runway** clear of known windshear areas
 - **Use flight director** after T/O
-- **Consider increased v<sub>R</sub>** up to actual GW v<sub>R</sub> +20 kt (set V-speeds for actual GW) – if windshear encountered at actual v<sub>R</sub>: rotate without hesitation, do not wait for increased speed
+- **Consider increased v<sub>R</sub>** up to actual GW v<sub>R</sub> +20 kts (set V-speeds for actual GW) – if windshear encountered at actual v<sub>R</sub>: rotate without hesitation, do not wait for increased speed
 - Rotate at **normal rate** to all-engine initial climb pitch attitude; minimize pitch reductions until terrain/obstacle clearance assured – unless stick shaker activates
 - **PM:** actively monitor vertical path instruments (V/S, altimeter); call out deviations
 - Airspeed below trim speed → increased column forces expected. Stick shaker → reduce pitch. Do not exceed PLI.
@@ -25,7 +25,7 @@ tags: [non-normal, maneuvers]
 - **Flaps 25 or 30**
 - **Stabilized by 1.000 ft** AAL – improves early windshear recognition
 - Use runway **avoiding suspected windshear areas**; use electronic/visual glide path to detect deviations
-- If A/T disengaged: add airspeed correction up to **+15 kt** (applied same as gust correction)
+- If A/T disengaged: add airspeed correction up to **+15 kts** (applied same as gust correction)
 - **Avoid large thrust reductions or trim changes** after sudden airspeed increase – may be followed by airspeed decrease
 - **Crosscheck F/D commands** with vertical path instruments
 - **Consider AP + A/T** for the approach – provides more crew capacity for monitoring

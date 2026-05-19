@@ -47,7 +47,7 @@ A sole change of SID without change in runway and/or intersection can be done wi
 | Item | Response | Who |
 |:---|:---|:---:|
 | **MCP**<br><span style="font-size:0.85em;font-style:italic;opacity:0.75;">CP announces values from MCP, F/O x-check V2 with FMC.</span> | V2\_\_\_, HDG\_\_\_, ALTITUDE\_\_\_ | CP |
-| **Takeoff speeds, Thrust**<br><span style="font-size:0.85em;font-style:italic;opacity:0.75;">CP announces SPD values from FMC and Reference N1 from EICAS, F/O x-checks with TOPAS (Speeds +/- 0 kt, N1 +/- 0,5%) and replies "checked".</span> | V1\_\_\_, VR\_\_\_, V2\_\_\_, \_\_\_% | CP, F/O |
+| **Takeoff speeds, Thrust**<br><span style="font-size:0.85em;font-style:italic;opacity:0.75;">CP announces SPD values from FMC and Reference N1 from EICAS, F/O x-checks with TOPAS (Speeds +/- 0 kts, N1 +/- 0,5%) and replies "checked".</span> | V1\_\_\_, VR\_\_\_, V2\_\_\_, \_\_\_% | CP, F/O |
 | **CDU preflight** | Completed | CP |
 | **Trim** | \_Units, 0 | CP |
 | **Taxi and takeoff briefing** | Completed | CP |

@@ -54,7 +54,7 @@ Flaps/slats extension via the flap lever remains available, but takes considerab
 > Allow **1½ minutes** from UP to 1, and **2½ minutes** from 1 to 20.
 > Plan for a **long final** or **early extension on downwind**.
 
-<div class="nnc-note">Do not exceed 240 kt during go-around until slats are retracted to midrange.</div>
+<div class="nnc-note">Do not exceed 240 kts during go-around until slats are retracted to midrange.</div>
 <div class="nnc-note">Different speed selection recommended per FCTM.</div>
 
 ### Alternate Gear Extension
@@ -71,7 +71,7 @@ Performed as a **Deferred Item** during the Approach Checklist.
 </div>
 
 > [!warning] No Retraction Possible
-> Once extended via alternate system, gear cannot be retracted. The go-around procedure must be adapted and a **maximum speed of 270 kt** adhered to.
+> Once extended via alternate system, gear cannot be retracted. The go-around procedure must be adapted and a **maximum speed of 270 kts** adhered to.
 
 ### Manual Speedbrake Extension
 

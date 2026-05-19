@@ -62,7 +62,7 @@ The captain normally does this procedure. The first officer may do this procedur
 <div class="cl-note">Do the Initial Data and Navigation Data steps from the CDU/EFB Preflight Procedure and verify that the IRS alignment is complete before checking the flight instruments.</div>
 
 <div class="cl-item"><strong>Flight instruments</strong><span class="cl-dots"></span><strong>Heading__, Altimeter__, __</strong></div>
-<div class="cl-note">e.g. Heading 248, Altimeter Baro 1013, 360ft</div>
+<div class="cl-note">e.g. Heading 248, Altimeter Baro 1013, 360 ft</div>
 <div class="cl-sub">Verify that the flight instrument indications are correct.</div>
 <div class="cl-sub">Verify that only these flags are shown:</div>
 <div class="cl-sub cl-indent">· TCAS OFF</div>

@@ -16,7 +16,7 @@ tags: [non-normal, airsystems]
 
 <div class="nnc-text"><span class="nnc-num">4</span><strong>If</strong> the cabin altitude is uncontrollable:</div>
 <div class="nnc-sub-item"><strong>PASS OXYGEN switch</strong><span class="cl-dots"></span><strong>Push to ON and hold for 1 second</strong></div>
-<div class="nnc-sub"><strong>Without delay</strong>, descend to the lowest safe altitude or 10.000 feet, whichever is higher.</div>
+<div class="nnc-sub"><strong>Without delay</strong>, descend to the lowest safe altitude or 10.000 ft, whichever is higher.</div>
 <div class="nnc-box"><strong>To descend:</strong><ul><li>Move the thrust levers to idle</li><li>Extend the speedbrakes</li><li>If structural integrity is in doubt, limit airspeed and avoid high maneuvering loads</li><li>Descend at v<sub>MO</sub>/M<sub>MO</sub></li></ul></div>
 <div class="nnc-sub">Advise the Cabin.</div>
 <div class="nnc-note">→ <a href="/Non-Normals/Non-Normal-Maneuvers/Rapid-Descent">Rapid Descent</a></div>

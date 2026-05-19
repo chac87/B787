@@ -33,7 +33,7 @@ LNAV · VNAV · LOC/FAC · G/S (via APP) · G/P (via APP) · B/CRS (via LOC/FAC 
 
 Most modes are deselected by selecting another mode, or by disengaging the autopilot and turning both flight directors off.
 
-- **G/S and G/P** cannot be deselected by another mode – only by AP disengage + both FDs off, selecting go-around, or (above 1,500 ft RA) reselecting APP
+- **G/S and G/P** cannot be deselected by another mode – only by AP disengage + both FDs off, selecting go-around, or (above 1.500 ft RA) reselecting APP
 - **VNAV · LNAV · LOC · FAC · G/S · G/P** can be disarmed by pushing their switch a second time – except LNAV when automatically armed on go-around
 
 ## Flight Mode Annunciations (FMA)
@@ -176,7 +176,7 @@ When a specific flight director mode degrades, the affected pitch or roll bar di
 <div class="cl-sub">In flight: activated by pushing TO/GA switch. Armed when flaps are out of up or glideslope is captured (no FMA for armed state)</div>
 
 <div class="cl-item"><strong>ROLLOUT</strong><span class="cl-dots"></span><strong>Localizer centerline guidance after touchdown</strong></div>
-<div class="cl-sub">Arms below 1,500 ft RA; activates at touchdown with weight on wheels. Uses rudder and nosewheel steering</div>
+<div class="cl-sub">Arms below 1.500 ft RA; activates at touchdown with weight on wheels. Uses rudder and nosewheel steering</div>
 
 </div>
 
@@ -216,7 +216,7 @@ When a specific flight director mode degrades, the affected pitch or roll bar di
 <div class="cl-item"><strong>G/P</strong><span class="cl-dots"></span><strong>FMC glidepath (IAN approach)</strong></div>
 
 <div class="cl-item"><strong>FLARE</strong><span class="cl-dots"></span><strong>Autoland flare</strong></div>
-<div class="cl-sub">Arms below 1,500 ft RA. Activates between 60 and 40 ft RA. Deactivates at touchdown and smoothly lowers the nosewheel to the runway</div>
+<div class="cl-sub">Arms below 1.500 ft RA. Activates between 60 and 40 ft RA. Deactivates at touchdown and smoothly lowers the nosewheel to the runway</div>
 
 </div>
 
@@ -299,7 +299,7 @@ Automatic disconnect occurs:
 EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are inhibited when the disconnect is caused by reverse thrust.
 
 > [!warning] RA Disagreement
-> If an RA disagreement occurs and the **lower** of the two RAs indicates less than 1,500 ft, the autothrottle disconnects and AUTOTHROTTLE DISC shows.
+> If an RA disagreement occurs and the **lower** of the two RAs indicates less than 1.500 ft, the autothrottle disconnects and AUTOTHROTTLE DISC shows.
 >
 > - During takeoff, the autothrottle disconnects at 400 ft if an RA disagreement exists
 > - While lower RA < 1.500 ft: re-engagement only possible in **TO/GA** mode (push TO/GA switch)

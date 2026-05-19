@@ -14,7 +14,7 @@ tags: [non-normal, airsystems]
 
 <div class="nnc-text"><span class="nnc-num">2</span>Establish crew communications.</div>
 
-<div class="nnc-text"><span class="nnc-num">3</span><strong>Without delay</strong>, start a descent to the lowest safe altitude or 10.000 feet, whichever is higher.</div>
+<div class="nnc-text"><span class="nnc-num">3</span><strong>Without delay</strong>, start a descent to the lowest safe altitude or 10.000 ft, whichever is higher.</div>
 
 <div class="nnc-box">
   <strong>To descend:</strong>
@@ -26,7 +26,7 @@ tags: [non-normal, airsystems]
 
 <div class="nnc-text"><span class="nnc-num">4</span>Plan to land at the nearest suitable airport.</div>
 
-<div class="nnc-caution">Do not attempt an air conditioning reset above 34.000 feet.</div>
+<div class="nnc-caution">Do not attempt an air conditioning reset above 34.000 ft.</div>
 
 <div class="nnc-item"><span class="nnc-num">5</span><strong>⚠&ensp;AIR COND RESET switch</strong><span class="cl-dots"></span><strong>Push and hold for 1 second</strong></div>
 
@@ -56,7 +56,7 @@ tags: [non-normal, airsystems]
 <div class="nnc-text"><span class="nnc-num">12</span>During daylight, install the flight deck sun visors.</div>
 
 <div class="nnc-text"><span class="nnc-num">13</span><strong>When</strong> at level off:</div>
-<div class="nnc-note"><strong>Note:</strong> Do not exceed 260 knots when the airplane is below 6.000 feet.</div>
+<div class="nnc-note"><strong>Note:</strong> Do not exceed 260 knots when the airplane is below 6.000 ft.</div>
 
 <div class="nnc-item"><span class="nnc-num">14</span><strong>VENTILATION switch</strong><span class="cl-dots"></span><strong>ALTN</strong></div>
 

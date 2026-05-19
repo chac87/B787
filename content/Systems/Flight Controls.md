@@ -82,8 +82,8 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 
 | | Primary mode | Secondary mode |
 |:---|:---|:---|
-| **Gap control** | **Slat Autogap** – AOA approaches stall + speed < 240 kt → slats drive to fully extended. Return to mid when AOA decreases. | **Slat Pre-gap** – flap lever out of UP + speed < 240 kt → slats proactively drive to fully extended. *(Electric motors too slow for reactive autogap.)* |
-| **Load relief** | **Flap Load Relief** – flap placard exceeded at flaps 15–30 → auto-retract to flaps 5. Re-extend when speed decreases. Lever does not move. <span class="c-amber">LOAD RELIEF</span> on EICAS. | **Slat Load Relief** – speed > 240 kt with slats extended → auto-retract to mid. Re-extend when speed drops. <span class="c-amber">LOAD RELIEF</span> on EICAS. |
+| **Gap control** | **Slat Autogap** – AOA approaches stall + speed < 240 kts → slats drive to fully extended. Return to mid when AOA decreases. | **Slat Pre-gap** – flap lever out of UP + speed < 240 kts → slats proactively drive to fully extended. *(Electric motors too slow for reactive autogap.)* |
+| **Load relief** | **Flap Load Relief** – flap placard exceeded at flaps 15–30 → auto-retract to flaps 5. Re-extend when speed decreases. Lever does not move. <span class="c-amber">LOAD RELIEF</span> on EICAS. | **Slat Load Relief** – speed > 240 kts with slats extended → auto-retract to mid. Re-extend when speed drops. <span class="c-amber">LOAD RELIEF</span> on EICAS. |
 
 ### Flap/Slat Positions & Speed Selection
 

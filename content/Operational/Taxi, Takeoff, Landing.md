@@ -7,9 +7,9 @@ tags: [operational, taxi, takeoff, landing]
 
 ## Geschwindigkeit & Kurven
 
-- Zielgeschwindigkeit **< 20 kt** (max. 30 kt erlaubt)
+- Zielgeschwindigkeit **< 20 kts** (max. 30 kts erlaubt)
 - Breakaway Thrust zum Anrollen, danach auf Idle
-- Magic Number für Kurven: **~8 kt**
+- Magic Number für Kurven: **~8 kts**
 - Flugzeug dreht **75–100 ft hinter dem Piloten** – niemals Kurven abschneiden, Hauptfahrwerk überrollt sonst Taxiway-Lichter
 
 | Variante | Bugrad → Hauptfahrwerk |
@@ -23,7 +23,7 @@ tags: [operational, taxi, takeoff, landing]
 
 ## Taxi Brake Release
 
-Unter 30 kt reduziert das System Bremsdruck auf **50%** zum Schutz der Bremsen.
+Unter 30 kts reduziert das System Bremsdruck auf **50%** zum Schutz der Bremsen.
 
 > [!warning]
 > Pedale zwischen Bremsanwendungen **vollständig** freigeben – auch leichter Restdruck verhindert den Wechsel zur anderen Bremsenhälfte → Überhitzung.
@@ -51,7 +51,7 @@ Rolling Takeoff empfohlen: schnellere Freigabe der Runway, geringeres FOD-Risiko
 ## Takeoff Roll
 
 - Sitz auf der Centerline ausrichten – Knie des inneren Beins als Feinjustierung
-- Leichter Forward-Druck auf den Yoke bis **80 kt**, danach **neutral**
+- Leichter Forward-Druck auf den Yoke bis **80 kts**, danach **neutral**
 
 Bei "rotate"-Call: gleichmäßige, kontinuierliche Pitchbewegung nach oben – **12°** – in **6–8 Sekunden**.
 
@@ -71,9 +71,9 @@ Flap Retraction in VNAV: automatisch auf der Höhe aus TAKEOFF REF 2/2 im FMC.
 > Danach: beim Passieren jedes Speed Bugs den nächsten Flap-Setting aufrufen.
 > Kurzzeitig leicht unter Flap Maneuver Speed ist auf der 787 akzeptabel.
 
-**Flaps UP Bug** = v<sub>REF</sub> 30 + 80 kt → Margin von mind. 40° Bankwinkel zum Stick Shaker.
+**Flaps UP Bug** = v<sub>REF</sub> 30 + 80 kts → Margin von mind. 40° Bankwinkel zum Stick Shaker.
 
-Bei schwerer Beladung kann UP-Speed > 250 kt sein → Flap 1 muss **nicht** bis 10.000 ft gehalten werden. FAR 91.117(d): *If the minimum safe airspeed is greater than the maximum speed prescribed, the aircraft may be operated at that minimum speed.* → Einfach UP-Speed fliegen.
+Bei schwerer Beladung kann UP-Speed > 250 kts sein → Flap 1 muss **nicht** bis 10.000 ft gehalten werden. FAR 91.117(d): *If the minimum safe airspeed is greater than the maximum speed prescribed, the aircraft may be operated at that minimum speed.* → Einfach UP-Speed fliegen.
 
 ---
 
@@ -85,7 +85,7 @@ Bei schwerer Beladung kann UP-Speed > 250 kt sein → Flap 1 muss **nicht** bis 
 
 **1. Touchdown in Crab** – Kein Sideslip. Crab-Winkel halten bis nach dem Aufsetzen, dann Ruder/Querruder. Auf trockener Piste nicht empfohlen; auf sehr glatter Piste akzeptabel (weniger seitlicher Drift nach TD).
 
-**2. Sideslip / Wing Low** – Ruder richtet Nase auf Runway aus, Querruder hält Luvflügel unten. Zugelassen, aber schwierig. Turbulenz destabilisiert die Cross-Control-Koordination. Luvseitiges Hauptfahrwerk setzt zuerst auf → Engine und Outboard Flap kommen dem Boden gefährlich nahe. Nicht verwendbar bei > 25 kt Crosswind.
+**2. Sideslip / Wing Low** – Ruder richtet Nase auf Runway aus, Querruder hält Luvflügel unten. Zugelassen, aber schwierig. Turbulenz destabilisiert die Cross-Control-Koordination. Luvseitiges Hauptfahrwerk setzt zuerst auf → Engine und Outboard Flap kommen dem Boden gefährlich nahe. Nicht verwendbar bei > 25 kts Crosswind.
 
 **3. De-Crab During Flare** *(empfohlen)* – Crab-Winkel auf Final und während des Flares beibehalten. Erst Flare etablieren, dann kurz vor dem Aufsetzen minimal Ruder in Richtung Runway – Wings absolut level mit Querruder halten. Kein Roll akzeptieren.
 
@@ -103,7 +103,7 @@ Deviationen auf kurzer Final: kleine Korrekturen mit minimalen Inputs. Große Ab
 
 ## Runway-Turnoff
 
-HSTs sind für bis zu **60 kt** ausgelegt – das bedeutet nicht, dass man sie bei winterlichen Verhältnissen mit dieser Geschwindigkeit nutzen sollte.
+HSTs sind für bis zu **60 kts** ausgelegt – das bedeutet nicht, dass man sie bei winterlichen Verhältnissen mit dieser Geschwindigkeit nutzen sollte.
 
 - Taxiways sind oft schlechter geräumt als die Runway
 - Beim Abbiegen: Kurvenkräfte auf glatter Fläche sind erheblich

@@ -13,9 +13,9 @@ tags: [non-normal, air-pressurization]
 
 <div class="nnc-item"><span class="nnc-num">2</span><strong>TRIM AIR switches (both)</strong><span class="cl-dots"></span><strong>Off</strong></div>
 
-<div class="nnc-text"><span class="nnc-num">3</span><strong>If</strong> airplane altitude is above 10.000 feet:</div>
+<div class="nnc-text"><span class="nnc-num">3</span><strong>If</strong> airplane altitude is above 10.000 ft:</div>
 <div class="nnc-cl">
-<div class="nnc-sub">Start a descent to the lowest safe altitude or 10.000 feet, whichever is higher. Use the speedbrakes to increase the rate of descent, if needed.</div>
+<div class="nnc-sub">Start a descent to the lowest safe altitude or 10.000 ft, whichever is higher. Use the speedbrakes to increase the rate of descent, if needed.</div>
 </div>
 
 <div class="nnc-item"><span class="nnc-num">4</span><strong>IFE/PASS SEATS power switch</strong><span class="cl-dots"></span><strong>Off</strong></div>
@@ -35,12 +35,12 @@ tags: [non-normal, air-pressurization]
 
 <div class="nnc-step">Choose One:</div>
 
-<div class="nnc-decision">Airplane altitude is <strong>above 10.000 feet</strong>:</div>
+<div class="nnc-decision">Airplane altitude is <strong>above 10.000 ft</strong>:</div>
 <div class="nnc-cl">
 <div class="nnc-goto">▶▶ Go to step 11</div>
 </div>
 
-<div class="nnc-decision">Airplane altitude is <strong>at or below 10.000 feet</strong>:</div>
+<div class="nnc-decision">Airplane altitude is <strong>at or below 10.000 ft</strong>:</div>
 <div class="nnc-cl">
 <div class="nnc-goto">▶▶ Go to step 13</div>
 </div>

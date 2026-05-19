@@ -7,7 +7,7 @@ role: Both
 
 # Descent Procedure
 
-Start the Descent Procedure before the airplane descends below the cruise altitude for arrival at destination. Complete the Descent Procedure by 10.000 feet MSL.
+Start the Descent Procedure before the airplane descends below the cruise altitude for arrival at destination. Complete the Descent Procedure by 10.000 ft MSL.
 
 <div class="eicas-levels" style="flex-direction:row;gap:0.75rem;margin:0.5em 0 1em">
 
@@ -46,7 +46,7 @@ Start the Descent Procedure before the airplane descends below the cruise altitu
 <div class="eicas-levels" style="margin-top:0.5em">
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">v<sub>REF</sub> Increment</div>
-  <div class="eicas-card-body">min. v<sub>REF</sub> +5 kt<br>+ ½ HWC + full gust factor<br>max. v<sub>REF</sub> +15 kt</div>
+  <div class="eicas-card-body">min. v<sub>REF</sub> +5 kts<br>+ ½ HWC + full gust factor<br>max. v<sub>REF</sub> +15 kts</div>
 </div>
 </div>
 

@@ -25,11 +25,11 @@ tags: [non-normal, flightcontrols]
 <div class="nnc-text"><span class="nnc-num">4</span></div>
 <div class="nnc-step">&ensp;&ensp;Choose One:</div>
 
-<div class="nnc-decision">Landing airport elevation is <strong>greater than</strong> 2.500 feet:</div>
+<div class="nnc-decision">Landing airport elevation is <strong>greater than</strong> 2.500 ft:</div>
 <div class="nnc-sub">Refer to the Tire Speed Landing Limit Weight table in the Performance Inflight chapter. If landing weight exceeds the limit, reduce gross weight or divert to a lower elevation airport.</div>
 <div class="nnc-goto">▶▶&ensp;Go to step 5</div>
 
-<div class="nnc-decision">Landing airport elevation is <strong>less than or equal to</strong> 2.500 feet:</div>
+<div class="nnc-decision">Landing airport elevation is <strong>less than or equal to</strong> 2.500 ft:</div>
 <div class="nnc-goto">▶▶&ensp;Go to step 5</div>
 
 <div class="nnc-text"><span class="nnc-num">5</span>Do <strong>not</strong> accomplish the following checklists:</div>

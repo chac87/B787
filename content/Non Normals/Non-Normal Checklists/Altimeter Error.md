@@ -58,11 +58,11 @@ tags: [non-normal, flightinstruments]
 
 <div class="nnc-step">10&ensp;&ensp;Choose One:</div>
 
-<div class="nnc-decision">The difference between captain's and first officer's current altitude indications is <strong>greater than 200 feet:</strong></div>
-<div class="nnc-note"><strong>Note:</strong> Altimeter error is reduced below 20.000 feet.</div>
-<div class="nnc-note">Do not use VNAV at or above 20.000 feet. Use ALT HOLD and FLCH as needed.</div>
+<div class="nnc-decision">The difference between captain's and first officer's current altitude indications is <strong>greater than 200 ft:</strong></div>
+<div class="nnc-note"><strong>Note:</strong> Altimeter error is reduced below 20.000 ft.</div>
+<div class="nnc-note">Do not use VNAV at or above 20.000 ft. Use ALT HOLD and FLCH as needed.</div>
 
-<div class="nnc-decision">The difference between captain's and first officer's current altitude indications is <strong>200 feet or less:</strong></div>
+<div class="nnc-decision">The difference between captain's and first officer's current altitude indications is <strong>200 ft or less:</strong></div>
 <div class="nnc-sub">VNAV is available.</div>
 
 <div class="nnc-note"><strong>Note:</strong> V/S and FPA are unreliable.</div>

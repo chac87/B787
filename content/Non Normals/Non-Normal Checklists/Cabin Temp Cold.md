@@ -11,15 +11,15 @@ tags: [non-normal, airsystems]
 
 <div class="nnc-step">1&ensp;&ensp;Choose One:</div>
 
-<div class="nnc-decision">Airplane altitude is <strong>above 34.000 feet:</strong></div>
+<div class="nnc-decision">Airplane altitude is <strong>above 34.000 ft:</strong></div>
 <div class="nnc-goto">▶▶&ensp;Go to step 2</div>
 
-<div class="nnc-decision">Airplane altitude is at or below 34.000 feet:</div>
+<div class="nnc-decision">Airplane altitude is at or below 34.000 ft:</div>
 <div class="nnc-goto">▶▶&ensp;Go to step 4</div>
 
-<div class="nnc-text"><span class="nnc-num">2</span>Start a descent to 34.000 feet or lower.</div>
+<div class="nnc-text"><span class="nnc-num">2</span>Start a descent to 34.000 ft or lower.</div>
 
-<div class="nnc-text"><span class="nnc-num">3</span><strong>When</strong> at or below 34.000 feet:</div>
+<div class="nnc-text"><span class="nnc-num">3</span><strong>When</strong> at or below 34.000 ft:</div>
 
 <div class="nnc-item"><span class="nnc-num">4</span><strong>AIR COND RESET switch</strong><span class="cl-dots"></span><strong>Push and hold for 1 second</strong></div>
 
@@ -42,7 +42,7 @@ tags: [non-normal, airsystems]
 <div class="nnc-sub">Set to full cold. This provides more even distribution of warm air to the aft passenger cabin.</div>
 
 <div class="nnc-text"><span class="nnc-num">9</span>Start a descent to an altitude where cabin temperatures are becoming warmer, or the lowest safe altitude, whichever is higher.</div>
-<div class="nnc-sub">Under most conditions, cabin temperatures should become warmer above 22.000 feet. Under extreme conditions, a descent to as low as 10.000 feet may be necessary to increase cabin temperature.</div>
+<div class="nnc-sub">Under most conditions, cabin temperatures should become warmer above 22.000 ft. Under extreme conditions, a descent to as low as 10.000 ft may be necessary to increase cabin temperature.</div>
 
 <div class="nnc-text"><span class="nnc-num">10</span>An airspeed increase will aid in cabin heating.</div>
 
@@ -62,16 +62,16 @@ tags: [non-normal, airsystems]
 
 <div class="nnc-separator"></div>
 
-<div class="nnc-text"><span class="nnc-num">14</span>Descend to the lowest safe altitude or 10.000 feet, whichever is higher.</div>
+<div class="nnc-text"><span class="nnc-num">14</span>Descend to the lowest safe altitude or 10.000 ft, whichever is higher.</div>
 
 <div class="nnc-text"><span class="nnc-num">15</span>Plan to land at the nearest suitable airport.</div>
 
 <div class="nnc-step">16&ensp;&ensp;Choose One:</div>
 
-<div class="nnc-decision">Airplane altitude is <strong>above 10.000 feet:</strong></div>
+<div class="nnc-decision">Airplane altitude is <strong>above 10.000 ft:</strong></div>
 <div class="nnc-goto">▶▶&ensp;Go to step 17</div>
 
-<div class="nnc-decision">Airplane altitude is <strong>at or below 10.000 feet:</strong></div>
+<div class="nnc-decision">Airplane altitude is <strong>at or below 10.000 ft:</strong></div>
 <div class="nnc-goto">▶▶&ensp;Go to step 19</div>
 
 <div class="nnc-text"><span class="nnc-num">17</span>Don the oxygen masks.</div>

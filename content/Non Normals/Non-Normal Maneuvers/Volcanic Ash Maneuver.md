@@ -60,4 +60,4 @@ tags: [non-normal, maneuvers]
 > 1. **FUEL CONTROL switches (both)** → CUTOFF, then RUN
 > 2. **RAM AIR TURBINE switch** → Push and hold for 1 second
 
-<div class="cl-note">Windmill restart: airspeed >250 kt significantly improves restart probability after a volcanic ash dual engine stall.</div>
+<div class="cl-note">Windmill restart: airspeed >250 kts significantly improves restart probability after a volcanic ash dual engine stall.</div>

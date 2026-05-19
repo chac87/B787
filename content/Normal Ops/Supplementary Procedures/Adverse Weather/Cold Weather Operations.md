@@ -154,7 +154,7 @@ Call "FLAPS __" as needed.
 > Taxi at a reduced speed. Use smaller tiller and rudder inputs, and apply minimum thrust smoothly. Differential thrust may be used to help maintain airplane momentum during turns. At all other times, apply thrust evenly. Taxiing on slippery taxiways or runways at excessive speed or with high crosswinds may start a skid.
 
 > [!warning] Caution
-> Precautions must be taken for jet blast up to 600 feet (200 meters) behind the aircraft; snow and ice at the edge of the taxiway that can be ingested by the engines, slippery taxi surfaces, and airport noise restrictions.
+> Precautions must be taken for jet blast up to 600 ft (200 m) behind the aircraft; snow and ice at the edge of the taxiway that can be ingested by the engines, slippery taxi surfaces, and airport noise restrictions.
 
 In icing conditions with visible moisture (fog with visibility of one statute mile (1600m) or less, rain, snow, sleet, ice crystals, and so on), do the following procedure:
 
@@ -190,7 +190,7 @@ If OAT is below −7°C:
 > Taxi at a reduced speed. Use smaller tiller and rudder inputs, and apply minimum thrust smoothly. Differential thrust may be used to help maintain airplane momentum during turns. At all other times, apply thrust evenly. Taxiing on slippery taxiways or runways at excessive speed or with high crosswinds may start a skid.
 
 > [!warning] Caution
-> Precautions must be taken for jet blast up to 600 feet (200 meters) behind the aircraft; snow and ice at the edge of the taxiway that can be ingested by the engines, slippery taxi surfaces, and airport noise restrictions.
+> Precautions must be taken for jet blast up to 600 ft (200 m) behind the aircraft; snow and ice at the edge of the taxiway that can be ingested by the engines, slippery taxi surfaces, and airport noise restrictions.
 
 When both of the following exist, do an engine run-up to minimize ice build-up:
 
@@ -437,7 +437,7 @@ For NPAs the following applies:
 > Taxi at a reduced speed. Use smaller tiller and rudder inputs, and apply minimum thrust smoothly. Differential thrust may be used to help maintain airplane momentum during turns. At all other times, apply thrust evenly. Taxiing on slippery taxiways or runways at excessive speed or with high crosswinds may start a skid.
 
 > [!warning] Caution
-> Precautions must be taken for jet blast up to 600 feet (200 meters) behind the aircraft; snow and ice at the edge of the taxiway that can be ingested by the engines, slippery taxi surfaces, and airport noise restrictions.
+> Precautions must be taken for jet blast up to 600 ft (200 m) behind the aircraft; snow and ice at the edge of the taxiway that can be ingested by the engines, slippery taxi surfaces, and airport noise restrictions.
 
 Do the normal After Landing Procedure with the following modifications:
 

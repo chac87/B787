@@ -172,4 +172,4 @@ title: Performance
 
 - **Headwind:** Enter only part of HWC to cover changes
 - **Tailwind:** Enter 100 % of TWC (consider trends)
-- **v<sub>REF</sub> Increment:** ½ steady HWC + full gust factor (min. v<sub>REF</sub> +5 kt, max. v<sub>REF</sub> +15 kt)
+- **v<sub>REF</sub> Increment:** ½ steady HWC + full gust factor (min. v<sub>REF</sub> +5 kts, max. v<sub>REF</sub> +15 kts)

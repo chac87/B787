@@ -69,7 +69,7 @@ role: Both
 | | Verify a positive rate of climb on the altimeter and <span class="sop-tag-items">PM: "POSITIVE RATE"</span> |
 | Verify a positive rate of climb on the altimeter and <span class="sop-tag-items">PF: "GEAR UP"</span> | |
 | | Set the landing gear lever to UP.<br><span class="sop-tag-items">PM: "GEAR UP"</span> |
-| Above 400 feet radio altitude, call for a roll mode as needed. | Select or verify the roll mode.<br>Verify VNAV engaged. |
+| Above 400 ft radio altitude, call for a roll mode as needed. | Select or verify the roll mode.<br>Verify VNAV engaged. |
 | Verify that climb thrust is set. | |
 | Verify acceleration at the acceleration height.<br><span class="sop-tag-items">PF: "FLAPS ___"</span> according to the flap retraction schedule. | |
 | | Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span> |

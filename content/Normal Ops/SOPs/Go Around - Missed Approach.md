@@ -43,7 +43,7 @@ role: Both
 <tr><td>Verify a positive rate of climb on the altimeter.<br><span class="sop-tag-items">PF: "GEAR UP"</span></td><td></td></tr>
 <tr><td></td><td>Set the landing gear lever to UP.<br><span class="sop-tag-items">PM: "GEAR UP"</span></td></tr>
 <tr><td>Callout FMA.</td><td></td></tr>
-<tr><td>Above 400 feet radio altitude, verify or select a roll mode.</td><td>Verify that the missed approach altitude is set.</td></tr>
+<tr><td>Above 400 ft radio altitude, verify or select a roll mode.</td><td>Verify that the missed approach altitude is set.</td></tr>
 <tr><td>Verify that the missed approach route is tracked.</td><td></td></tr>
 <tr><td>At acceleration height, set speed to the maneuver speed for the planned flap setting.</td><td></td></tr>
 <tr><td><span class="sop-tag-items">PF: "FLAPS ___"</span><br>according to the flap retraction schedule.</td><td>Set the flap lever as directed.<br><span class="sop-tag-items">PM: "FLAPS ___"</span></td></tr>
@@ -84,7 +84,7 @@ role: Both
 
 > [!info]- First Push – Commands
 > - The roll and pitch modes change to **TO/GA** to provide flight director guidance for the go-around
-> - The autothrottle activates in **THR** (Thrust) mode, adjusting engine power to maintain a fixed climb rate of 2.000 feet per minute
+> - The autothrottle activates in **THR** (Thrust) mode, adjusting engine power to maintain a fixed climb rate of 2.000 ft/min
 > - If an LNAV path is available, LNAV automatically arms or engages
 
 > [!info]- Second Push – Commands

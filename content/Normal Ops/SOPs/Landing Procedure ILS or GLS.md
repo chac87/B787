@@ -52,7 +52,7 @@ role: Both
 <div class="data-table data-table--split">
 <table><tbody>
 <tr><td>At the final approach fix (LOM, MKR, DME), verify the crossing altitude.</td><td></td></tr>
-<tr><td>Monitor the approach.<br>Verify the autoland status at 500 feet AGL.</td><td></td></tr>
+<tr><td>Monitor the approach.<br>Verify the autoland status at 500 ft AGL.</td><td></td></tr>
 </tbody></table>
 </div>
 

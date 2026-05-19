@@ -159,7 +159,7 @@ During an airspeed unreliable event, altitude and vertical speed indications may
 
 When the AIR DATA/ATT source selector is set to ALTN – or when the system automatically rejects invalid air data – the PFD and HUD provide the following reliable indications:
 
-**AOA SPD** – Backup airspeed calculated from Angle of Attack sensors combined with inertial data. Completely independent of the pitot-static system. Subject to variations during configuration changes, maneuvering, and speedbrake use – avoid abrupt control inputs, high maneuvering loads, and in-flight speedbrake use. When active: **max speed reduced to 300 kt / .85 M** (normal: 360 kt / .90 M). OVERSPEED warnings are adjusted accordingly. Simplified control laws active.
+**AOA SPD** – Backup airspeed calculated from Angle of Attack sensors combined with inertial data. Completely independent of the pitot-static system. Subject to variations during configuration changes, maneuvering, and speedbrake use – avoid abrupt control inputs, high maneuvering loads, and in-flight speedbrake use. When active: **max speed reduced to 300 kts / .85 M** (normal: 360 kts / .90 M). OVERSPEED warnings are adjusted accordingly. Simplified control laws active.
 
 **GPS ALT** – Reliable backup altitude provided automatically from GPS satellite data.
 
