@@ -8,6 +8,9 @@ tags: [non-normal, fire]
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
+> [!warning] Continue Diversion
+> Continue diversion, even if fire indication is no longer present! Fire source is not accessible, fire bottles are empty.
+
 <div class="nnc-condition">Condition: Smoke is detected in the forward cargo compartment.</div>
 
 <div class="nnc-item"><span class="nnc-num">1</span><strong>FWD CARGO FIRE ARM switch</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>ARMED</strong></div>

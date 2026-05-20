@@ -44,7 +44,7 @@ Three distinct EICAS conditions can trigger an airspeed unreliable situation. Ea
 </div>
 
 > [!caution] Switching NNCs
-> If <a href="/Non-Normals/Non-Normal-Checklists/NAV-AIRSPEED-DATA" style="color:#f39c12 !important"><strong>NAV AIRSPEED DATA</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/NAV-AIR-DATA-SYS" style="color:#f39c12 !important"><strong>NAV AIR DATA SYS</strong></a> appears on EICAS while executing the <a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE" style="color:#f39c12 !important"><strong>AIRSPEED UNRELIABLE NNC</strong></a> – stop the current checklist immediately and proceed with the NNC for the newly indicated message.
+> If <a href="/Non-Normals/Non-Normal-Checklists/NAV-AIRSPEED-DATA" style="color:#f39c12 !important"><strong>NAV AIRSPEED DATA</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/NAV-AIR-DATA-SYS" style="color:#f39c12 !important"><strong>NAV AIR DATA SYS</strong></a> appears on EICAS while executing the <a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE" style="color:#f39c12 !important"><strong>AIRSPEED UNRELIABLE NNC</strong></a> – stop the current checklist immediately (CHKL OVRD) and proceed with the NNC for the newly indicated message.
 
 > [!info] Comparing Voted Airspeed vs AOA SPD
 > In the AIRSPEED UNRELIABLE scenario, AOA SPD is **not** displayed automatically. To compare both sources simultaneously: one pilot sets their **AIR DATA/ATT selector to ALTN** – that PFD now displays AOA SPD, while the other PFD continues to show voted airspeed from ADRS. Cross-check both against GPS groundspeed, pitch attitude, and ATC radar to identify the reliable indication.

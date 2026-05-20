@@ -28,6 +28,8 @@ tags: [sop, supplementary, lvo]
 
 ## Autoland Status & Limitations
 
+<img src="/Bilder/autoflight.webp" alt="Autoflight — Autoland Status">
+
 <div class="eicas-levels">
 
 <div class="eicas-card eicas-card--white">

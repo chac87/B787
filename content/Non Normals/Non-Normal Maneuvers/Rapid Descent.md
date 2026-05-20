@@ -25,11 +25,14 @@ If severe turbulence is encountered or expected: reduce to turbulent air penetra
 
 <img src="/Bilder/rapid%20descent.webp" alt="Rapid Descent">
 
-- **C Pattern – twice:** first pass rough. Second pass fine-tune:
-  - MEA / MORA / MUFL
-  - Offset (e.g. 5 NM L/R in NAT)
-  - v<sub>MO</sub>/M<sub>MO</sub>
-  - **Structural integrity?**
+**C Pattern – twice:** 
+- first pass rough:
+	- 2x drehen, 2x drücken, 2x ziehen
+- Second pass fine-tune:
+  - MEA / MORA / MUFL?
+  - Offset (e.g. 5 NM L/R in NAT)?
+  - v<sub>MO</sub>/M<sub>MO</sub>?
+  - Structural integrity?
 
 
 

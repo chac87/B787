@@ -8,6 +8,9 @@ tags: [non-normal, engine]
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
+> [!info] Note
+> If engine is still stalling at idle → consider **Eng Svr Damage/Sep L, R** memory items to secure the engine.
+
 <div class="nnc-condition">Condition: An engine surge or stall that requires crew action is detected.</div>
 
 <div class="nnc-item"><span class="nnc-num">1</span><strong>A/T ARM switch (affected side)</strong><span class="cl-dots"></span><span class="nnc-confirm">Confirm</span><strong>OFF</strong></div>

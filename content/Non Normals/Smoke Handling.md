@@ -9,6 +9,7 @@ tags: [non-normal]
 > Nicht auf Checklisten-Abschluss warten – **Land ASAP.** Zeit ist kritisch.
 
 Beide Checklisten (<a href="/Non-Normals/Non-Normal-Checklists/Smoke,-Fire-or-Fumes">Smoke, Fire or Fumes</a> und <a href="/Non-Normals/Non-Normal-Checklists/Smoke-or-Fumes-Removal">Smoke or Fumes Removal</a>) sind im **Non-Normal Menu → Unannunciated Checklists** zu finden.
+Möglichkeit: Smoke, Fire or Fumes NNC via ECL, Smoke or Fumes Removal NNC via QRH.
 
 <img src="/Bilder/Smoke%20Handling.webp" alt="Smoke Handling Decision">
 

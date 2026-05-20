@@ -13,6 +13,7 @@ tags: [non-normal]
 > - Accomplish **Overweight Landing NNC** – checks landing weight vs. landing climb limit weight:
 >   - Weight **> landing climb limit weight** OR **one engine inoperative** → Flaps 20, v<sub>REF</sub> 20
 >   - Weight **≤ landing climb limit weight**, both engines → Flaps 25, v<sub>REF</sub> 25 + additives
+> - **Time critical** → use Flaps 20 for approach
 
 > [!proc]- Approach & Landing Technique
 > **Typical sequence in a non-normal case:**
