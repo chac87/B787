@@ -809,11 +809,6 @@ main table:not(.perf-table) tr:nth-child(even) {
     font-weight: 400;
 }
 
-:where(article, main, .callout-content) table.data-table.data-table--split tbody td:first-child {
-    font-weight: 400 !important;
-    color: var(--darkgray) !important;
-}
-
 :where(article, main, .callout-content) table.data-table--split tbody td:first-child strong,
 :where(article, main, .callout-content) .data-table--split tbody td:first-child strong,
 :where(article, main, .callout-content) .data-table--split > table:not(.eo-segment-table) tbody td:first-child strong {
@@ -957,6 +952,12 @@ main table:not(.perf-table) tr:nth-child(even) {
 :where(article, main, .callout-content) table.data-table.data-table--compact td {
     padding: 0.45rem 0.75rem;
     line-height: 1.2;
+}
+
+/* Split tables: both columns equal weight — higher specificity than table.data-table rule */
+:where(article, main, .callout-content) table.data-table.data-table--split tbody td:first-child {
+    font-weight: 400 !important;
+    color: var(--darkgray) !important;
 }
 
 
