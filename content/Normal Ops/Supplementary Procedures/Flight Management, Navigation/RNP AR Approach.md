@@ -5,6 +5,44 @@ tags: [sop, supplementary, rnp, navigation]
 
 # RNP AR Approach
 
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: #b0b8c1; border-radius: 4px; overflow: hidden; margin: 1.5rem 0; font-size: 0.875rem;">
+
+  <div style="background: var(--light);">
+    <div style="background: #05164D; color: #fff; font-weight: 700; padding: 7px 14px;">1. Preflight</div>
+    <div style="padding: 10px 14px 14px; display: flex; flex-direction: column; gap: 5px;">
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Check RAIM prediction for number of satellites and/or outages</span></div>
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Check MEL for items affecting RNP AR</span></div>
+    </div>
+  </div>
+
+  <div style="background: var(--light);">
+    <div style="background: #05164D; color: #fff; font-weight: 700; padding: 7px 14px;">2. Approach Preparation</div>
+    <div style="padding: 10px 14px 14px; display: flex; flex-direction: column; gap: 5px;">
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Check equipment operational</span></div>
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Check RNP value</span></div>
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Select VOR/DME NAV OFF</span></div>
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Select TERR on Map</span></div>
+    </div>
+  </div>
+
+  <div style="background: var(--light);">
+    <div style="background: #05164D; color: #fff; font-weight: 700; padding: 7px 14px;">3. Approach</div>
+    <div style="padding: 10px 14px 14px; display: flex; flex-direction: column; gap: 5px;">
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Engage LNAV/VNAV</span></div>
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Confirm local QNH</span></div>
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Monitor PFD Indications/Deviations</span></div>
+    </div>
+  </div>
+
+  <div style="background: var(--light);">
+    <div style="background: #05164D; color: #fff; font-weight: 700; padding: 7px 14px;">4. Go Around</div>
+    <div style="padding: 10px 14px 14px; display: flex; flex-direction: column; gap: 5px;">
+      <div style="display: flex; gap: 7px;"><span>➤</span><span>Go-Around if Amber NPS or <span class="c-amber"><strong>[ ] NAV UNABLE RNP</strong></span> or <span class="c-amber"><strong>[ ] FMC VERIFY POSITION</strong></span> or <span class="c-amber"><strong>[ ] GPS</strong></span></span></div>
+    </div>
+  </div>
+
+</div>
+
 ## RNP vs. RNP AR
 
 <table class="data-table">

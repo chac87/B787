@@ -5,28 +5,7 @@ tags: [sop, supplementary, lvo]
 
 # Low Visibility Operations
 
-## Definition, Categories & Prerequisites
-
-> [!info] Low Visibility Operations
-> LVO applies at an RVR of **less than 550 m** for landings and **less than 400 m** for takeoffs. **Low Visibility Procedures (LVP)** must be officially in force at the aerodrome — they may already be active above these thresholds.
->
-> If LVO is not announced on ATIS or confirmed by other means, request: **"REQUEST CATEGORY II / III APPROACH"**
-
-| Category                                | Decision Height | RVR     | Required Autoland Status |
-| :-------------------------------------- | :-------------- | :------ | :----------------------- |
-| **CAT I**                               | ≥ 200 ft        | ≥ 550 m (1.800 ft) | Manual or automatic      |
-| **CAT II**                              | 100 ft          | 300 m (1.000 ft)   | LAND 2 or LAND 3         |
-| **CAT IIIA** (fail-passive)             | 50 ft           | 175 m (600 ft)     | LAND 2 or LAND 3         |
-| **CAT IIIB with DH** (fail-operational) | 23 ft           | 125 m (400 ft)     | LAND 2 or LAND 3         |
-| **CAT IIIB no DH** (fail-operational)   | no DH           | 75 m (300 ft)      | **LAND 3**               |
-
-> [!warning] CAT II — Manual Landing Not Approved
-> CAT II manual landing is **not** approved. A CAT II approach may only be conducted using the autopilot (LAND 2 or LAND 3 required).
-
-> [!info] IAN Approaches
-> For approaches using IAN deviations (non-ILS/GLS), only manual or automatic approach with manual landing is available — no autoland below CAT I minima.
-
-## Autoland Status & Limitations
+## Indications & Limitations
 
 <img src="/Bilder/autoflight.webp" alt="Autoflight — Autoland Status">
 
@@ -44,9 +23,19 @@ tags: [sop, supplementary, lvo]
 
 </div>
 
-**Wind limits for autoland:** Headwind max. 25 kts · Tailwind max. 15 kts · Crosswind max. 25 kts · Glideslope 2.5°–3.25°
-
-**Configuration:** Flaps 20, 25 or 30 · single or both engines operative · AFDS must annunciate LAND 2 or LAND 3
+<table class="data-table">
+<thead>
+<tr><th colspan="2">Limitations for Autoland</th></tr>
+</thead>
+<tbody>
+<tr><td>Flaps</td><td>20, 25, or 30</td></tr>
+<tr><td>Engines</td><td>All Engines or One Engine Inoperative</td></tr>
+<tr><td>Max. Elevation</td><td>8.400 ft</td></tr>
+<tr><td>Glide Slope</td><td>2.5° – 3.25°</td></tr>
+<tr><td>Overweight</td><td>Autoland not recommended</td></tr>
+<tr><td>Wind Limits</td><td>CWC &nbsp; 25 kts<br>HWC &nbsp; 25 kts<br>TWC &nbsp; 15 kts</td></tr>
+</tbody>
+</table>
 
 > [!limit] Autopilot Limitations
 > - The autopilot must not be engaged below **200 ft AGL** after takeoff.
@@ -77,6 +66,64 @@ tags: [sop, supplementary, lvo]
 </div>
 
 </div>
+
+
+### T/O Alternate
+
+<table class="data-table">
+<thead>
+<tr><th colspan="2">Conditions requiring a T/O Alternate</th></tr>
+</thead>
+<tbody>
+<tr><td>Wind</td><td>CWC > 25 kts and visibility &lt; 550 m, or HWC > 25 kts</td></tr>
+<tr><td>Weight</td><td>> MLAW</td></tr>
+<tr><td>Max. Distance</td><td>2 hrs. flight time for ETOPS certified aircraft and crew</td></tr>
+</tbody>
+</table>
+
+
+## LVO Approach Minima
+
+| Category                                | DH       | RVR                | ASA                                                                                |
+| :-------------------------------------- | :------- | :----------------- | :--------------------------------------------------------------------------------- |
+| **CAT I**                               | ≥ 200 ft | ≥ 550 m (1.800 ft) | **<span class="c-amber">NO AUTOLAND</span>**                                       |
+| **CAT II**                              | 100 ft   | 300 m (1.000 ft)   | **<span class="c-green">LAND 2</span>** or **<span class="c-green">LAND 3</span>** |
+| **CAT IIIA** (fail-passive)             | 50 ft    | 175 m (600 ft)     | **<span class="c-green">LAND 2</span>** or **<span class="c-green">LAND 3</span>** |
+| **CAT IIIB with DH** (fail-operational) | 23 ft    | 125 m (400 ft)     | **<span class="c-green">LAND 3</span>**                                            |
+| **CAT IIIB no DH** (fail-operational)   | no DH    | 75 m (300 ft)      | **<span class="c-green">LAND 3</span>**                                            |
+
+> [!warning] CAT II — Manual Landing Not Approved
+> CAT II manual landing is **not** approved. A CAT II approach may only be conducted using the autopilot (LAND 2 or LAND 3 required).
+
+> [!info] Contaminated Runway
+> Minimum RVR **200 m** at all measurement points along the required field length. Manual rollout.
+
+<table class="data-table">
+<thead>
+<tr>
+  <th>Height / Phase</th>
+  <th>TDZ RVR</th>
+  <th>Midpoint RVR(s)</th>
+  <th>Stopend RVR</th>
+</tr>
+</thead>
+<tbody>
+<tr class="data-table__section-row"><td colspan="4" class="data-table__section-title">&gt; 1.000 ft RA — Approach may be commenced regardless of reported RVR / visibility</td></tr>
+<tr>
+  <td>@ 1.000 ft</td>
+  <td>acc. IAC</td>
+  <td>75 m (or 125 m without rollout guidance/control)</td>
+  <td>75 m (if &gt; 60 kts)</td>
+</tr>
+<tr>
+  <td>&lt; 1.000 ft</td>
+  <td>75 m</td>
+  <td>75 m (or 125 m without rollout guidance/control)</td>
+  <td>75 m (if &gt; 60 kts)</td>
+</tr>
+<tr class="data-table__section-row"><td colspan="4" class="data-table__section-title">@ DH — Approach may be continued if necessary visual reference is established and can be maintained</td></tr>
+</tbody>
+</table>
 
 
 ## Alert Height – Below 200 ft RA
@@ -147,41 +194,67 @@ tags: [sop, supplementary, lvo]
 
 ## Procedures after Failures / Warnings
 
+> [!info] Memory Aid
+> Go-Around if EICAS shows <span class="c-amber">**NO**</span> or <span class="c-amber">**AUTO**</span>.
+
 > [!info] AFDS Fault — Decision Logic Above Alert Height
 > Immediately after recognizing a fault, **check the autoland status annunciation**:
 > - If the annunciation is **unchanged** and the affected equipment is not required for the approach → continue the approach
 > - If the annunciation has **changed**, or the affected equipment is required → adjust to appropriate higher minimums or go-around. If suitable visual reference is established, consider landing.
 
-<table class="data-table data-table--compact">
+<table class="data-table data-table--split">
 <thead>
-<tr>
-  <th rowspan="2" style="min-width: 10.5rem">Alert</th>
-  <th colspan="2">During Approach</th>
-  <th colspan="2" class="data-table__col-sep">After Autoland</th>
-</tr>
-<tr>
-  <th style="text-align: center">Above 200 ft AGL</th>
-  <th><span class="c-red">Below 200 ft AGL</span><br><small>Alert Height</small></th>
-  <th class="data-table__col-sep">During Rollout</th>
-  <th>During Go-Around</th>
-</tr>
+<tr><th colspan="2" style="text-align:center;font-size:0.95rem;">Above 200 ft RA — During Approach</th></tr>
+<tr><th>CONTINUE</th><th>GO-AROUND</th></tr>
 </thead>
 <tbody>
-<tr class="data-table__section-row"><td colspan="5" class="data-table__section-title"><span class="c-amber">Master Caution Light, EICAS Caution</span></td></tr>
-<tr><td><span class="c-amber">AUTOTHROTTLE DISC</span></td><td>Manual thrust, if LAND 2 sufficient</td><td>Go-Around (*)</td><td class="data-table__empty data-table__col-sep">N/A</td><td>Manual thrust</td></tr>
-<tr><td><span class="c-amber">SPEEDBRAKE EXTENDED</span></td><td>Retract speedbrakes</td><td>Go-Around (**)</td><td class="data-table__empty data-table__col-sep">N/A</td><td>Retract speedbrakes</td></tr>
-<tr><td><span class="c-amber">AUTOPILOT</span></td><td>Go-Around</td><td>Go-Around (**)</td><td class="data-table__col-sep">Disconnect AP &amp; Manual rollout</td><td>Disconnect AP &amp; Manual go-around</td></tr>
-<tr><td><span class="c-amber">NO AUTOLAND</span></td><td>Go-Around</td><td>N/A (message inhibited)</td><td class="data-table__empty data-table__col-sep">N/A</td><td class="data-table__empty">N/A</td></tr>
-<tr><td><span class="c-amber">NO LAND 3</span></td><td>Continue, if LAND 2 sufficient</td><td>N/A (message inhibited)</td><td class="data-table__empty data-table__col-sep">N/A</td><td class="data-table__empty">N/A</td></tr>
-<tr><td><span class="c-amber">ENG FAIL L, R<br>ENG THRUST L, R</span></td><td>Continue Approach</td><td>Continue Approach (master caution light &amp; aural inhibited)</td><td class="data-table__col-sep">Continue Rollout</td><td>Continue Go-around</td></tr>
-<tr><td><span class="c-amber">ENG REV AIR/GND<br>ENG REV COMMANDED L, R</span></td><td>Do not command reverse thrust</td><td>Do not command reverse thrust</td><td class="data-table__empty data-table__col-sep">N/A</td><td>Do not command reverse thrust</td></tr>
-<tr><td><span class="c-amber">All other EICAS cautions</span></td><td>Check EICAS</td><td>Continue Approach</td><td class="data-table__col-sep">Check EICAS</td><td>Check EICAS</td></tr>
-<tr class="data-table__section-row"><td colspan="5" class="data-table__section-title"><span class="c-red">Master Warning Light, EICAS Warning</span></td></tr>
-<tr><td><span class="c-red">AUTOPILOT DISC</span></td><td>Manual Go-Around</td><td>Manual Go-Around (**)</td><td class="data-table__col-sep">Manual rollout</td><td>Manual Go-Around</td></tr>
-<tr><td><span class="c-red">All other EICAS warnings</span></td><td>Check EICAS</td><td>Continue Approach</td><td class="data-table__col-sep">Check EICAS</td><td>Check EICAS</td></tr>
-<tr class="data-table__section-row"><td colspan="5" class="data-table__section-title">Deviation Alerts</td></tr>
-<tr><td><span class="c-amber">ILS Deviation Alert</span></td><td>Go-Around</td><td>Go-Around (**)</td><td class="data-table__empty data-table__col-sep">N/A</td><td class="data-table__empty">N/A</td></tr>
-<tr><td><span class="c-amber">GLS Deviation Alert</span></td><td>Go-Around</td><td>Go-Around (**)</td><td class="data-table__empty data-table__col-sep">N/A</td><td class="data-table__empty">N/A</td></tr>
+<tr>
+  <td>
+    <span class="c-amber">Other EICAS CAUTIONS</span> — check EICAS<br>
+    <span class="c-red">Other EICAS WARNINGS</span> — check EICAS<br>
+    <span class="c-amber">SPEEDBRAKE EXTENDED</span> — retract speedbrakes<br>
+    <span class="c-amber">ENG FAIL / ENG THRUST</span><br>
+    <span class="c-amber">ENG REV AIR/GND</span> — do not command reverse<br>
+    <span class="c-amber">ENG REV COMMANDED L, R</span> — do not command reverse<br>
+    <span class="c-amber">AUTOTHROTTLE DISC</span> — manual thrust, if LAND 2 sufficient (*)<br>
+    <span class="c-amber">NO LAND 3</span> — continue if LAND 2 sufficient
+  </td>
+  <td>
+    **<span class="c-amber">NO AUTOLAND</span>**<br>
+    <span class="c-amber">AUTOPILOT</span><br>
+    <span class="c-red">AUTOPILOT DISC</span><br>
+    <span class="c-amber">ILS Deviation Alert</span><br>
+    <span class="c-amber">GLS Deviation Alert</span>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<table class="data-table data-table--split">
+<thead>
+<tr><th colspan="2" style="text-align:center;font-size:0.95rem;">Below 200 ft RA — Alert Height</th></tr>
+<tr><th>CONTINUE</th><th>GO-AROUND</th></tr>
+</thead>
+<tbody>
+<tr>
+  <td>
+    <span class="c-amber">ENG FAIL / ENG THRUST</span> (MC &amp; aural inhibited)<br>
+    <span class="c-amber">ENG REV AIR/GND</span> — do not command reverse<br>
+    <span class="c-amber">ENG REV COMMANDED L, R</span> — do not command reverse<br>
+    <span class="c-amber">Other EICAS CAUTIONS</span><br>
+    <span class="c-red">Other EICAS WARNINGS</span><br>
+    <small><em>NO AUTOLAND / NO LAND 3 messages are inhibited below Alert Height</em></small>
+  </td>
+  <td>
+    Most go-around initiations are inhibited. Exceptions:<br><br>
+    <span class="c-amber">SPEEDBRAKE EXTENDED</span> — land, if visual conditions (**)<br>
+    <span class="c-amber">AUTOTHROTTLE DISC</span> — G/A if RVR &lt; 200 m (*)<br>
+    <span class="c-amber">AUTOPILOT</span> (**)<br>
+    <span class="c-red">AUTOPILOT DISC</span> — manual go-around (**)<br>
+    <span class="c-amber">ILS Deviation Alert</span> (**)<br>
+    <span class="c-amber">GLS Deviation Alert</span> (**)
+  </td>
+</tr>
 </tbody>
 </table>
 
@@ -189,14 +262,3 @@ tags: [sop, supplementary, lvo]
 > **(\*)** Continuation with manual thrust control is only allowed if the RVR is 200 m or more.
 >
 > **(\*\*)** A manual landing is only allowed if the RVR is 550 m or more, the runway is clearly identified and the manual landing has previously been briefed.
-
-## After Landing
-
-> [!info] Contaminated Runway – Manual Rollout
-> If a manual rollout is required due to a contaminated runway, a minimum RVR of **200 m** applies for all RVR measurement points along the required runway length (this maneuver has not been demonstrated at lower visibility). The landing category (e.g. DUAL) is maintained. Automatic landings on contaminated runways are possible within certain limits.
-
-> [!info] Runway Vacated
-> RWY is not considered vacated until the aircraft has completely exited the colour-coded lights. </br> Only then report "Runway vacated" to ATC.
-
-> [!info] Go-Around During LVO
-> Every go-around during LVO must be reported via the ACARS Flightlog (enter "LVO"). If the go-around was caused by an aerodrome-related reason, an additional Flight Report must be filed.
