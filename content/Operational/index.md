@@ -13,7 +13,7 @@ tags: [operational]
 
 ## [[Operational/Amber Landing Concept|Amber Landing Concept]]
 
-## [[Operational/NAT|NAT]]
+## [[Operational/NAT HLA|NAT HLA]]
 
 ## [[Operational/Use of Aerodromes|Use of Aerodromes]]
 
