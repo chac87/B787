@@ -40,4 +40,19 @@ Accomplish the following maneuver for any of these conditions:
 - Activation of the <span class="c-red">PULL UP</span>, <span class="c-red">OBSTACLE PULL UP</span> or <span class="c-red">TERRAIN TERRAIN PULL UP</span> warning
 - Other situations resulting in unacceptable flight toward terrain
 
-> [!warning] A GPWS Warning may only be disregarded above FL300 and in climb or level flight. (OM-A 8.3.4.15)
+---
+
+> [!info] GNSS Interference – Nuisance Alerts (OM-A 8.3.4.15)
+> The flight crew defines a **safe altitude** above which terrain alerts may be considered nuisance alerts. The agreed safe altitude shall
+> - not be lower than the respective MGAs/MSAs in proximity of the expected flightpath;
+> - be corrected for cold temperature if necessary.
+>
+> **Below** the briefed safe altitude – nuisance only if:
+> - in daylight VMC conditions; and
+> - it can be immediately determined that there is no imminent threat.
+>
+> **Above** the briefed safe altitude – nuisance only if:
+> - a confirmed aeroplane position is established; and
+> - the position is continuously monitored by use of raw data of VOR, NDB or DME.
+
+> [!warning] Below the briefed safe altitude, or if any doubt exists, an (E)GPWS alert must be followed immediately and without delay.
