@@ -390,8 +390,21 @@ h6,
 }
 
 /* =========================================
-   TEXT COLOR
+   TEXT COLOR + SHARED COLOR TOKENS
+   Single source for the status/brand palette — used by the website partials
+   (var(--status-*), var(--lhg-*)) and available in Obsidian alike.
    ========================================= */
+:root {
+    --lhg-core-blue: #3257BC;
+    --lhg-light-blue: #5291ED;
+    --status-red: #e74c3c;       /* EICAS warning */
+    --status-amber: #f39c12;     /* EICAS caution */
+    --status-advisory: #d4891a;
+    --status-red-dark: #ff7b7b;      /* dark-mode tints */
+    --status-amber-dark: #f5c842;
+    --status-advisory-dark: #e8a835;
+}
+
 .c-red   { color: #e74c3c }
 .c-amber { color: #f39c12 }
 .c-green { color: #2ecc71 }
@@ -439,13 +452,6 @@ h6,
 }
 
 /* =========================================
-   LINK CURSOR
-   ========================================= */
-a:hover {
-    cursor: pointer;
-}
-
-/* =========================================
    H2 SEPARATOR LINE (Quartz + Obsidian)
    ========================================= */
 h2,
@@ -464,16 +470,8 @@ h2 a,
     color: var(--dark) !important;
 }
 
-/* =========================================
-   BREADCRUMB + BOOK NAVIGATION
-   ========================================= */
-.breadcrumb-container a {
-    color: var(--dark) !important;
-}
-
-.nav-btn {
-    color: var(--dark) !important;
-}
+/* Breadcrumb + book navigation colors live in quartz/styles/partials/_global.scss
+   (website-only components — they don't exist in Obsidian). */
 
 /* === snippet: image-tweak.css === */
 /* =========================================
@@ -590,97 +588,60 @@ img[alt*="small"] {
     }
 }
 
-/* === snippet: tabelle-in-callout 2.css === */
+/* === snippet: tabelle-in-callout.css === */
 /* =========================================
-   TABLE STYLING – WEB / PANDOC / PDF
+   UNIFIED DATA TABLES - WEB / OBSIDIAN
    ========================================= */
 
-/* =========================================
-   TABLES INSIDE CALLOUTS / GENERIC CONTAINERS
-   Excludes .perf-table (handled by _sop.scss)
-   ========================================= */
+/* ---------- Obsidian reading view: tables inside callouts ----------
+   Obsidian doesn't wrap tables in .table-container, so the website rules
+   below never match there. This block replicates the classic look
+   (blue header, centered cells, zebra) for the Obsidian app only —
+   .markdown-rendered does not exist on the website. */
 
-/* Base table */
-.callout-content table:not(.perf-table),
-article table:not(.perf-table),
-main table:not(.perf-table) {
+.markdown-rendered .callout-content table {
     width: 100%;
     border-collapse: collapse;
-    margin: 8px 0 !important;
+    margin: 8px 0;
     font-size: 0.9em;
-    border: none !important;
+    border: none;
 }
 
-/* Header cells */
-.callout-content table:not(.perf-table) th,
-article table:not(.perf-table) th,
-main table:not(.perf-table) th {
+.markdown-rendered .callout-content table th {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 0.9em;
     letter-spacing: 0.5px;
     padding: 0.5em 0.6em;
-
     background: rgba(50, 87, 188, 0.8);
-    color: #ffffff !important;
-    opacity: 1;
-    border-bottom: none !important;
-
+    color: #ffffff;
+    border-bottom: none;
     text-align: center;
 }
 
-.callout-content table:not(.perf-table) thead tr th:first-child,
-article table:not(.perf-table) thead tr th:first-child,
-main table:not(.perf-table) thead tr th:first-child {
+.markdown-rendered .callout-content thead tr th:first-child {
     border-radius: 6px 0 0 6px;
 }
 
-.callout-content table:not(.perf-table) thead tr th:last-child,
-article table:not(.perf-table) thead tr th:last-child,
-main table:not(.perf-table) thead tr th:last-child {
+.markdown-rendered .callout-content thead tr th:last-child {
     border-radius: 0 6px 6px 0;
 }
 
-[saved-theme="dark"] .callout-content table:not(.perf-table) th,
-[saved-theme="dark"] article table:not(.perf-table) th,
-[saved-theme="dark"] main table:not(.perf-table) th {
-    background: #243F9B;
-    color: #e8eaf0 !important;
-}
-
-/* Data cells */
-.callout-content table:not(.perf-table) td,
-article table:not(.perf-table) td,
-main table:not(.perf-table) td {
+.markdown-rendered .callout-content table td {
     padding: 8px 6px;
-    border-bottom: 1px solid var(--lightgray, #eee);
-
+    border-bottom: 1px solid var(--background-modifier-border);
     text-align: center;
     vertical-align: middle;
-    color: var(--darkgray) !important;
 }
 
-/* First column emphasized */
-.callout-content table:not(.perf-table) td:first-child,
-article table:not(.perf-table) td:first-child,
-main table:not(.perf-table) td:first-child {
+.markdown-rendered .callout-content table td:first-child {
     text-align: left;
     font-weight: 600;
-    color: var(--darkgray) !important;
 }
 
-/* Zebra striping */
-.callout-content table:not(.perf-table) tr:nth-child(even),
-article table:not(.perf-table) tr:nth-child(even),
-main table:not(.perf-table) tr:nth-child(even) {
-    background-color: var(--web-table-row-alt, rgba(0,0,0,0.04));
+.markdown-rendered .callout-content table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.04);
 }
-
-
-/* === snippet: tabelle-in-callout.css === */
-/* =========================================
-   UNIFIED DATA TABLES - WEB / OBSIDIAN
-   ========================================= */
 
 :where(article, main, .callout-content) .table-container {
     overflow-x: auto;
@@ -1000,51 +961,5 @@ main table:not(.perf-table) tr:nth-child(even) {
 :where(article, main, .callout-content) table.data-table.data-table--split tbody td:first-child {
     font-weight: 400 !important;
     color: var(--darkgray) !important;
-}
-
-
-/* === snippet: table-50-50.css === */
-/* =========================================
-   TABLE 50 / 50 LAYOUT (Web / Pandoc / PDF)
-   Nur für Tabellen mit Klasse .table-50-50
-   ========================================= */
-
-table.table-50-50,
-.table-50-50 table {
-    table-layout: fixed;
-    width: 100%;
-}
-
-table.table-50-50 th,
-table.table-50-50 td,
-.table-50-50 th,
-.table-50-50 td {
-    width: 50%;
-}
-
-.table-50-50 th {
-    font-size: 1.05em;
-    font-weight: 700;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    background: rgba(50, 87, 188, 0.8);
-    color: #ffffff !important;
-    opacity: 1 !important;
-    padding: 0.55em 0.6em;
-    text-align: center;
-    border-bottom: none !important;
-}
-
-[saved-theme="dark"] .table-50-50 th {
-    background: rgba(36, 63, 155, 0.8);
-    color: #e8eaf0 !important;
-}
-
-.table-50-50 td {
-    text-align: left;
-}
-
-.table-50-50 td:first-child {
-    font-weight: normal;
 }
 

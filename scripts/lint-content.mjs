@@ -104,6 +104,18 @@ for (const file of mdFiles) {
       err(file, n, "images", ".png/.jpg reference — must be .webp")
     if (/<a[^>]*>\s*<img/i.test(line)) err(file, n, "images", "<img> wrapped in <a> — breaks lightbox")
 
+    // Raw <table> at line start without a class must sit inside a .data-table
+    // wrapper div (pattern: <div class="data-table data-table--split"> above).
+    // Nested mid-line layout tables (inside cells/cards) are intentionally exempt.
+    if (/^<table\b(?![^>]*class=)/.test(line)) {
+      const prev = lines
+        .slice(Math.max(0, i - 2), i)
+        .filter((l) => l.trim() !== "")
+        .join(" ")
+      if (!prev.includes("data-table"))
+        err(file, n, "tables", "raw <table> without class and without .data-table wrapper")
+    }
+
     for (const m of line.matchAll(/\[\[([^\]|#]+)/g)) {
       const target = m[1].trim()
       if (/\.(webp|png|jpe?g|svg|gif)$/i.test(target)) {

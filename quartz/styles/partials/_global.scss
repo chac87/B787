@@ -1,19 +1,6 @@
-/* =========================================
-   SHARED COLOR TOKENS
-   Status colors (EICAS semantics) + LHG brand accents used across partials.
-   Values are the long-standing project colors — change here, not inline.
-   ========================================= */
-
-:root {
-  --lhg-core-blue: #3257BC;
-  --lhg-light-blue: #5291ED;
-  --status-red: #e74c3c;       // EICAS warning
-  --status-amber: #f39c12;     // EICAS caution
-  --status-advisory: #d4891a;
-  --status-red-dark: #ff7b7b;      // dark-mode tints
-  --status-amber-dark: #f5c842;
-  --status-advisory-dark: #e8a835;
-}
+/* Shared color tokens (--status-*, --lhg-*) are defined in the Obsidian snippet
+   global-hacks.css (synced into _snippets.scss) so Obsidian and the website
+   share one palette. Use the variables here, never raw hex. */
 
 /* [!caution] is a standalone callout type (see ofm.ts calloutMapping).
    Colors come from the synced callouts.css snippet; the icon reuses the
