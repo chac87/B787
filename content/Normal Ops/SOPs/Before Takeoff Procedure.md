@@ -44,7 +44,6 @@ Approaching Takeoff-RWY:
 <span class="sop-tag-cl">CP → F/O: "BEFORE TAKEOFF CL"</span>
 </div>
 
----
 
 ## BEFORE TAKEOFF CHECKLIST
 

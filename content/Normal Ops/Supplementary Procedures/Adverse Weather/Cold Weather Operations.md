@@ -15,7 +15,6 @@ Icing conditions exist when OAT (on the ground) or TAT (in-flight) is 10°C or b
 > [!warning] Caution
 > Do not use engine anti-ice when OAT (on the ground) is above 10°C. Do not use engine or wing anti-ice when displayed TAT (in-flight) is above 10°C.
 
----
 
 ## Preliminary Preflight Procedure – Captain or First Officer
 
@@ -32,7 +31,6 @@ the engine was run up to a minimum of 20 TPR (42% N1) for at least 30 seconds du
 
 <div class="cl-variant-end">END B787 (-ABPF to -ABPU)</div>
 
----
 
 ## Exterior Inspection
 
@@ -66,7 +64,6 @@ Do the normal Exterior Inspection with the following additional steps:
 
 </div>
 
----
 
 ## Preflight Procedure – First Officer
 
@@ -77,7 +74,6 @@ During the hydraulic panel preflight, if all electric pump selectors are found s
 > [!info] Note
 > If the fuel temperature is less than or equal to −17°C, and if the electric hydraulic pump selectors are in the AUTO or OFF position for more than 10 minutes prior to engine hydraulic pump operation, notify maintenance personnel.
 
----
 
 ## Engine Start Procedure
 
@@ -94,7 +90,6 @@ Do the normal Engine Start Procedure with the following considerations:
 - additional warm-up time may be needed to allow oil temperature to reach the normal range
 - displays may require additional warm-up time before displayed engine indications accurately show changing values. Displays may appear less bright than normal
 
----
 
 ## Engine Anti-ice Operation – On the Ground
 
@@ -126,7 +121,6 @@ When engine anti-ice is no longer needed:
 
 If ice detection is available, position the selectors to AUTO. If ice detection is inoperative, position the selectors to OFF.
 
----
 
 ## Before Taxi Procedure
 
@@ -144,7 +138,6 @@ Call "FLAPS __" as needed.
 
 </div>
 
----
 
 ## Taxi-Out
 
@@ -211,7 +204,6 @@ If takeoff is not completed within 120 minutes total taxi time, manually de-ice 
 
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
----
 
 ## De-icing / Anti-icing
 
@@ -259,7 +251,6 @@ After de-icing / anti-icing is completed:
 
 </div>
 
----
 
 ## Before Takeoff Procedure
 
@@ -281,7 +272,6 @@ Call "FLAPS ___" as needed. (PF)
 
 </div>
 
----
 
 ## Takeoff Procedure
 
@@ -313,7 +303,6 @@ After the run-up, there is no need to reduce thrust before brake release for tak
 
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
----
 
 ## Engine Anti-ice Operation – In-flight
 
@@ -349,7 +338,6 @@ When manual use of engine anti-ice is no longer needed:
 
 If ice detection is available, position the selectors to AUTO. If ice detection is inoperative, position the selectors to OFF.
 
----
 
 ## Fan Ice Removal
 
@@ -373,7 +361,6 @@ During flight in moderate to severe icing conditions for prolonged periods with 
 
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
----
 
 ## Wing Anti-ice Operation – In-flight
 
@@ -410,7 +397,6 @@ If ice detection is available, position the selector to AUTO. If ice detection i
 
 The WING ANTI-ICE OFF advisory message is shown when the WING ANTI-ICE selector is in the OFF position.
 
----
 
 ## Cold Temperature Altitude Corrections
 
@@ -429,7 +415,6 @@ For NPAs the following applies:
   - Within temperature limit no correction necessary
   - Outside temperature limit correction according 2D approach type
 
----
 
 ## After Landing Procedure
 
@@ -525,7 +510,6 @@ If taxi-in occurs when both of the following exist and an engine run-up is not d
 
 <div class="cl-variant-end">END B787 (-ABPA to -ABPE)</div>
 
----
 
 ## Secure Procedure
 

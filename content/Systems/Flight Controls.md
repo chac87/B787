@@ -1,3 +1,7 @@
+---
+title: Flight Controls
+tags: [systems]
+---
 # Flight Controls
 
 ## Overview & Architecture
@@ -16,7 +20,6 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 > [!info]- Power Sources
 > ![[fctl source.webp]]
 
----
 
 ## Flight Control Modes
 
@@ -29,7 +32,6 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 | **AUTOPILOT** | ✓ | ✗ | ✗ |
 | **PROTECTION** | ✓ Full | Load factor only | ✗ |
 
----
 
 ## Pitch Control
 
@@ -51,7 +53,6 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 - Automatic thrust asymmetry compensation + yaw damping
 - No rudder influence below 60 kts
 
----
 
 ## High Lift Devices
 
@@ -105,13 +106,11 @@ The B787 primary flight control system is a **fly-by-wire** system. Pilot inputs
 - Functions: roll control assist + speedbrake
 - **Auto-drag:** Ailerons deflect downward + outboard spoilers raise to assist glide slope/path capture
 
----
 
 ## Flight Envelope Protections
 
 → [[Systems/Flight Envelope Protections|Flight Envelope Protections]]
 
----
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>Takeoff</strong><span class="cl-dots"></span><span>Normal Mode only</span></div>

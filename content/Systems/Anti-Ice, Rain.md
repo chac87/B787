@@ -1,3 +1,7 @@
+---
+title: Anti-Ice, Rain
+tags: [systems]
+---
 # Anti-Ice, Rain
 
 | Bleed Air | Electrical |
@@ -87,7 +91,6 @@ On primary system malfunction, the backup system automatically anti-fogs the for
 - Automatic activation – no manual control
 - <span class="c-amber">**PROBE HEAT**</span> EICAS message on failure of one or more probes
 
----
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>EAI – ground</strong><span class="cl-dots"></span><span>ON</span></div>

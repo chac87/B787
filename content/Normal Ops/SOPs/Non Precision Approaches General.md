@@ -23,22 +23,22 @@ They are normally flown using **IAN**, **VNAV**, **V/S**, or **FPA** pitch modes
 
 <div class="eicas-levels">
   <div class="eicas-card eicas-card--white">
-    <div class="eicas-card-title">2D Approach — LNAV Minimum (V/S or FPA)</div>
+    <div class="eicas-card-title">2D Approach – LNAV Minimum (V/S or FPA)</div>
     <div class="eicas-card-body">Stepdown altitudes restricting · Obstacle clearance ensured by crossing altitude at specified fixes · No vertical deviation limit</div>
   </div>
   <div class="eicas-card eicas-card--white">
-    <div class="eicas-card-title">2D Approach — LNAV Minimum (VNAV or IAN)</div>
+    <div class="eicas-card-title">2D Approach – LNAV Minimum (VNAV or IAN)</div>
     <div class="eicas-card-body">Vertical deviation restricting: −75 ft · Stepdown altitudes also restricting · Obstacle clearance ensured by crossing altitude at specified fixes</div>
   </div>
   <div class="eicas-card eicas-card--white">
-    <div class="eicas-card-title">3D Approach — LNAV/VNAV Minimum</div>
+    <div class="eicas-card-title">3D Approach – LNAV/VNAV Minimum</div>
     <div class="eicas-card-body">Must be flown in VNAV guidance (down to temperature limit) · Vertical deviation restricting: −75 ft · Stepdown altitudes not restricting · Obstacle clearance ensured by maximum vertical deviation to flight path</div>
   </div>
 </div>
 
 Both approach types have linear geometry. The DIST/ALT table is never restricting.
 
-<img src="/Bilder/obstacle%20clr.webp" alt="Obstacle Clearance — 2D vs. 3D Approaches">
+<img src="/Bilder/obstacle%20clr.webp" alt="Obstacle Clearance – 2D vs. 3D Approaches">
 
 ## Operating Principles
 

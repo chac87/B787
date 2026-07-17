@@ -21,7 +21,6 @@ tags: [non-normal, warnings]
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
----
 
 ## Zusatzinformationen
 

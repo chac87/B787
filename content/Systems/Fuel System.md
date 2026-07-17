@@ -109,13 +109,11 @@ Provides automatic, full-time flammability protection. Generates nitrogen-enrich
 
 No flight deck controls or indications – the system operates entirely automatically.
 
----
 
 > [!info] Un-annunciated Fuel Checklists
 > - [[Non Normals/Non-Normal Checklists/Fuel Leak|Fuel Leak]]
 > - [[Non Normals/Non-Normal Checklists/Fuel Jettison|Fuel Jettison]]
 
----
 
 ## Fuel Limitations
 

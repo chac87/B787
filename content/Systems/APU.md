@@ -1,3 +1,7 @@
+---
+title: APU
+tags: [systems]
+---
 # APU
 
 2 APU Starter/Generators (ASGs) · Operation up to the **maximum certified altitude** · Generator output decreases with altitude.
@@ -60,7 +64,6 @@
 
 </div>
 
----
 
 ## APU Automatic Start
 
@@ -73,7 +76,6 @@ In flight, the APU starts automatically when **≥ 3 Engine Generators** fail �
 
 </div>
 
----
 
 ## APU Shutdown
 
@@ -92,7 +94,6 @@ After cooldown: overspeed simulation tests overspeed and fuel shutoff protection
 
 </div>
 
----
 
 ## APU Operating Modes
 

@@ -53,7 +53,6 @@ tags: [non-normal, maneuvers]
 >
 > **PF** Engage AP, A/T
 
----
 
 ### CLIMB RA in Landing Configuration
 
@@ -77,7 +76,6 @@ tags: [non-normal, maneuvers]
 > ###### "POSITIVE RATE!" **PM**
 > ###### "GEAR UP!" **PM**
 
----
 
 ### TCAS Display Selection
 

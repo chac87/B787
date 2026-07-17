@@ -31,7 +31,6 @@ tags: [non-normal, backcover]
 
 <div class="nnc-note"><strong>Note:</strong> At any time, if evacuation not required: <em>"Cancel Alert, Cancel Alert."</em></div>
 
----
 
 ## Zusatzinformationen
 

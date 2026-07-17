@@ -124,7 +124,6 @@ tags: [non-normal, fuel]
 >
 > A discrepancy between the two indicates a possible fuel leak – triggering <a href="/Non-Normals/Non-Normal-Checklists/FUEL-DISAGREE"><span>**FUEL DISAGREE**</span></a>.
 
----
 
 ## Fuel Balance System
 
@@ -135,7 +134,6 @@ Automatically transfers fuel between main tanks to correct imbalance.
 - Faster than crossfeed method
 - Operates independently of the crossfeed system
 
----
 
 ## FUEL UNUSABLE CTR
 

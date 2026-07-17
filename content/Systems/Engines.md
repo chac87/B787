@@ -1,3 +1,7 @@
+---
+title: Engines
+tags: [systems, engines]
+---
 # Engines
 
 ![[eng indications.webp]]
@@ -13,7 +17,6 @@ The 787 is powered by 2 high-bypass-ratio engines: either the **General Electric
 
 **Engine Intermix**: Both engines operated on the same thrust rating. EGT amber band difference between engines is normal.
 
----
 
 ## Engine Indications
 
@@ -68,7 +71,6 @@ Secondary indications appear automatically when any of the following conditions 
 
 </div>
 
----
 
 ## Electronic Engine Control (EEC)
 
@@ -135,7 +137,6 @@ Automatic protection against ice crystal icing (ICI) · **above 30.000 ft** only
 - Each engine independent
 - After engine/EEC replacement: ICA may appear for up to **75 min** in any weather
 
----
 
 ## Engine Start & Ignition
 
@@ -208,9 +209,7 @@ Active whenever engine is ≤ idle with FUEL CONTROL in RUN:
 | Sub-idle stall | Fuel off for 1 sec → reduced schedule to idle |
 | Heavy rain/hail ingestion | Both igniters on at flameout |
 
----
 
----
 
 ## Engine Oil System
 
@@ -237,7 +236,6 @@ Active whenever engine is ≤ idle with FUEL CONTROL in RUN:
 
 </div>
 
----
 
 ## Thrust Reverser
 
@@ -281,7 +279,6 @@ Hydraulically actuated fan-air reverser · available **on ground only**.
 
 </div>
 
----
 
 ## Airborne Vibration Monitoring
 
@@ -292,7 +289,6 @@ Source displayed: **N1**, **N2**, or **BB** (broadband = average when source unk
 - N1 vibration usually felt · N2 vibration often not perceptible
 - Both typically respond to thrust lever adjustment
 
----
 
 ## Engine Failure Alert System
 
@@ -315,7 +311,6 @@ Source displayed: **N1**, **N2**, or **BB** (broadband = average when source unk
 
 </div>
 
----
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>Engine oil – min. temp for start</strong><span class="cl-dots"></span><span>−40°C</span></div>

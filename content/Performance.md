@@ -84,8 +84,8 @@ title: Performance
       <td><span class="seg-ep">Until End of Takeoff<br>Flight Path (1.500 ft)</span></td>
     </tr>
     <tr>
-      <td><strong>TOGA / Derate / ATM</strong><br>V2</td>
-      <td><strong>TOGA / Derate / ATM</strong><br>V2</td>
+      <td><strong>TOGA / Derate / ATM</strong><br>v<sub>2</sub></td>
+      <td><strong>TOGA / Derate / ATM</strong><br>v<sub>2</sub></td>
       <td><strong>TOGA / Derate / ATM</strong></td>
       <td><strong>MCT</strong><br>Final CLB Speed</td>
     </tr>

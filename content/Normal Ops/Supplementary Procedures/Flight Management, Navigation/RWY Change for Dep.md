@@ -27,7 +27,7 @@ A sole change of SID without change in runway and/or intersection can be done wi
 <div class="cl-sub">Check or select takeoff position.</div>
 
 <div class="cl-item"><strong>MCP</strong><span class="cl-dots"></span><strong>SET</strong><span class="mi-role">CP</span></div>
-<div class="cl-sub">C sets V2, LNAV, VNAV, HDG/TRK, ALT as required.</div>
+<div class="cl-sub">C sets v<sub>2</sub>, LNAV, VNAV, HDG/TRK, ALT as required.</div>
 
 <div class="cl-item"><strong>TRIM</strong><span class="cl-dots"></span><strong>CHECK/SET</strong><span class="mi-role">CP</span></div>
 <div class="cl-sub">Check or re-set stabilizer takeoff trim.</div>
@@ -46,8 +46,8 @@ A sole change of SID without change in runway and/or intersection can be done wi
 
 | Item | Response | Who |
 |:---|:---|:---:|
-| **MCP**<br><span style="font-size:0.85em;font-style:italic;opacity:0.75;">CP announces values from MCP, F/O x-check V2 with FMC.</span> | V2\_\_\_, HDG\_\_\_, ALTITUDE\_\_\_ | CP |
-| **Takeoff speeds, Thrust**<br><span style="font-size:0.85em;font-style:italic;opacity:0.75;">CP announces SPD values from FMC and Reference N1 from EICAS, F/O x-checks with TOPAS (Speeds +/- 0 kts, N1 +/- 0,5%) and replies "checked".</span> | V1\_\_\_, VR\_\_\_, V2\_\_\_, \_\_\_% | CP, F/O |
+| **MCP**<br><span style="font-size:0.85em;font-style:italic;opacity:0.75;">CP announces values from MCP, F/O x-check v<sub>2</sub> with FMC.</span> | v<sub>2</sub>\_\_\_, HDG\_\_\_, ALTITUDE\_\_\_ | CP |
+| **Takeoff speeds, Thrust**<br><span style="font-size:0.85em;font-style:italic;opacity:0.75;">CP announces SPD values from FMC and Reference N1 from EICAS, F/O x-checks with TOPAS (Speeds +/- 0 kts, N1 +/- 0,5%) and replies "checked".</span> | v<sub>1</sub>\_\_\_, v<sub>R</sub>\_\_\_, v<sub>2</sub>\_\_\_, \_\_\_% | CP, F/O |
 | **CDU preflight** | Completed | CP |
 | **Trim** | \_Units, 0 | CP |
 | **Taxi and takeoff briefing** | Completed | CP |

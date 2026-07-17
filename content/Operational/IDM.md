@@ -1,3 +1,7 @@
+---
+title: IDM
+tags: [operational]
+---
 # IDM – In-flight Diversion Management
 
 ![[idm.webp]]
@@ -12,7 +16,6 @@
 > [!info] Threats (ETA +/- 1 h incl. PROB)
 > LVO<br>Undue delay expected<br>Ceiling < minimum + 200 ft<br>Visibility < minimum + 1.000 m<br>Wind incl. gusts > 30 kts<br>Crosswind incl. gusts > 20 kts<br>CB/TS, SN, FZ, SS/DS, WS, etc.
 
----
 
 ## IDM in 3 Schritten
 
@@ -33,7 +36,6 @@ No Threats → **30 min** · Threats → **45 min**
 
 **Ergebnis:** Minimum Fuel an Destination = Fuel zum validen Plan B + **30 / 45 min**
 
----
 
 ## Fuel Callouts
 

@@ -49,7 +49,6 @@ role: Both
 <span class="sop-tag-cl">CP → F/O: "BEFORE TAXI CL"</span>
 </div>
 
----
 
 ## BEFORE TAXI CHECKLIST
 

@@ -14,7 +14,6 @@ The **CCR** is the main CCS component. It has a **left and right cabinet**, each
 > [!info] Fault / Loss of Displays
 > A CCR fault may result in loss of displays. An **unannunciated non-normal checklist** exists for this: **[LOSS OF ALL DISPLAYS](/Non-Normals/Non-Normal-Checklists/LOSS-OF-ALL-DISPLAYS)**. Two CCR RESET switches (L, R) are located on the overhead panel for use during this procedure.
 
----
 
 ## CCS Start-Up Sequence
 

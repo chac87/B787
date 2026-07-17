@@ -14,15 +14,15 @@ tags: [non-normal, general]
 
 <div class="nnc-step">2&nbsp;&nbsp; Choose One:</div>
 
-<div class="nnc-decision">Airplane altitude is <strong>at or below</strong> 8,000 feet:</div>
+<div class="nnc-decision">Airplane altitude is <strong>at or below</strong> 8.000 feet:</div>
 <div class="nnc-cl">
   <div class="nnc-sub">Level off at the lowest safe altitude.</div>
   <div class="nnc-goto">▶▶ Go to step 3</div>
 </div>
 
-<div class="nnc-decision">Airplane altitude is <strong>above</strong> 8,000 feet:</div>
+<div class="nnc-decision">Airplane altitude is <strong>above</strong> 8.000 feet:</div>
 <div class="nnc-cl">
-  <div class="nnc-sub">Descend to the lowest safe altitude or 8,000 feet, whichever is higher.</div>
+  <div class="nnc-sub">Descend to the lowest safe altitude or 8.000 feet, whichever is higher.</div>
   <div class="nnc-goto">▶▶ Go to step 3</div>
 </div>
 
@@ -30,12 +30,12 @@ tags: [non-normal, general]
 
 <div class="nnc-step">4&nbsp;&nbsp; Choose One:</div>
 
-<div class="nnc-decision">Airplane altitude is <strong>at or below</strong> 10,000 feet:</div>
+<div class="nnc-decision">Airplane altitude is <strong>at or below</strong> 10.000 feet:</div>
 <div class="nnc-cl">
   <div class="nnc-goto">▶▶ Go to step 5</div>
 </div>
 
-<div class="nnc-decision">Airplane altitude is <strong>above</strong> 10,000 feet:</div>
+<div class="nnc-decision">Airplane altitude is <strong>above</strong> 10.000 feet:</div>
 <div class="nnc-cl">
   <div class="nnc-sub">Don the oxygen masks.</div>
   <div class="nnc-sub">Establish crew communications.</div>

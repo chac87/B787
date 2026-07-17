@@ -29,7 +29,6 @@ Unter 30 kts reduziert das System Bremsdruck auf **50%** zum Schutz der Bremsen.
 > Pedale zwischen Bremsanwendungen **vollständig** freigeben – auch leichter Restdruck verhindert den Wechsel zur anderen Bremsenhälfte → Überhitzung.
 > **Trick:** Fersen nach jeder Bremsanwendung aktiv auf den Boden absetzen.
 
----
 
 # Takeoff
 
@@ -75,7 +74,6 @@ Flap Retraction in VNAV: automatisch auf der Höhe aus TAKEOFF REF 2/2 im FMC.
 
 Bei schwerer Beladung kann UP-Speed > 250 kts sein → Flap 1 muss **nicht** bis 10.000 ft gehalten werden. FAR 91.117(d): *If the minimum safe airspeed is greater than the maximum speed prescribed, the aircraft may be operated at that minimum speed.* → Einfach UP-Speed fliegen.
 
----
 
 # Landing
 

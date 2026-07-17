@@ -76,7 +76,6 @@ tags: [non-normal, engine]
   <img src="/Bilder/thrust%20asymm%20rudder.webp" alt="Thrust Asymmetry – Rudder">
 </div>
 
----
 
 ## Engine Fail vs. Severe Damage
 
@@ -96,7 +95,6 @@ tags: [non-normal, engine]
 
 > [!warning] Airframe vibrations? → **Always** Eng Svr Damage/Sep L, R
 
----
 
 ## Dual Engine Failure
 
@@ -174,7 +172,6 @@ Dual engine failure requires prompt action regardless of altitude or airspeed. A
 > [!info] RAT automatic deployment
 > The RAT deploys automatically in flight if any of the following occur: both engines have failed · all three hydraulic system pressures are low · loss of all electrical power to captain's and first officer's flight instruments · loss of all four EMPs and a flight control fault occurs on approach · loss of all four EMPs and an engine fails on takeoff or landing.
 
----
 
 ## OEI Cruise / Driftdown
 
@@ -321,7 +318,6 @@ After a successful in-flight engine restart, consider the following 3A:
 
 </div>
 
----
 
 ## OEI – Go-Around
 

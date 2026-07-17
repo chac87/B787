@@ -19,7 +19,7 @@ All procedures (Normal Ops, Non-Normals, Supplementary) must use the **dot-leade
 
 - **Main steps**: `<div class="cl-item">` — item name and action both in `<strong>`, separated by `<span class="cl-dots"></span>`
 - **Sub-steps**: `<div class="cl-sub">` — indented, slightly smaller font, plain text (no bold)
-- **No colored pills**: Never use `sop-badge` or `sop-value` classes inside `.checklist`
+- **No colored pills**: Never use the `sop-badge` class inside `.checklist`
 - **Notes/warnings** above the checklist: use Obsidian callouts (`> [!info]`, `> [!warning]`, `> [!limit]`)
 - **Mobile-safe**: The CSS handles responsive layout — do not add `white-space: nowrap` or fixed widths to checklist elements
 
@@ -62,7 +62,6 @@ Defined in `quartz/styles/custom.scss`:
 | `.cl-dots` | Dot-leader span that fills space between name and action |
 | `.cl-sub` | Indented sub-step (0.875em font, 1.4em left margin) |
 | `.sop-badge` | Colored pill — **only for non-checklist use** (e.g. summary tables) |
-| `.sop-value` | Monospace action value — **only for non-checklist use** |
 | `.cl-sep` | Thin horizontal rule — panel section separator inside a checklist |
 | `.cl-indent` | Adds one extra indent level — combine with `cl-item` or `cl-sub` for items nested under a panel header |
 | `.cl-variant` | Dark blue bar opening an aircraft-specific section (e.g. `B787 (-ABPF to -ABPU)`) |
@@ -72,24 +71,8 @@ Defined in `quartz/styles/custom.scss`:
 | `.cl-caution` | Inline caution — small italic amber text, indented |
 | `.c-red` | Inline red span for labeled indicators (e.g. `<span class="c-red">OFF</span>`) |
 | `.c-green` | Inline green span for positive states (e.g. `<span class="c-green">illuminated</span>`) |
-| `.nnc-back` | ← Back-link on NNC leaf pages (always after H1) |
-| `.nnc-condition` | Gray condition banner at top of NNC |
-| `.nnc-step` | Bold numbered step header |
-| `.nnc-decision` | ◆ decision option (auto-prefixed) |
-| `.nnc-cl` | Container for items under a decision branch |
-| `.nnc-item` | Numbered dot-leader checklist item |
-| `.nnc-num` | Step number inside `.nnc-item` or `.nnc-text` |
-| `.nnc-text` | Numbered plain-text step (no dot-leader) |
-| `.nnc-sub` | Indented plain sub-step |
-| `.nnc-sub-item` | Indented dot-leader sub-item |
-| `.nnc-box` | Bordered info box |
-| `.nnc-note` | Italic gray note |
-| `.nnc-caution` | Italic red caution |
-| `.nnc-goto` | ▶▶ redirect line |
-| `.nnc-separator` | Dashed separator (memory / reference) |
-| `.nnc-confirm` | Intermediate confirm value before final action (e.g. "Confirm … CUTOFF") |
-| `.nnc-role` | Role badge after action value — `C` (Captain) or `F/O` (First Officer) |
-| `.nnc-complete` | Checklist complete — always `text-align: center` |
+
+NNC-specific classes (`.nnc-*`) are documented in the **NNC (Non-Normal Checklist) Notes** section below.
 
 ## Alert / Info Cards
 
@@ -138,6 +121,14 @@ Use the `.eicas-card` pattern whenever color helps group or rank content — not
 - Procedures live in `content/Normal Ops/SOPs/` or `content/Non Normals/`
 - Content is a **symlink** to the Obsidian vault at `~/Library/Mobile Documents/iCloud~md~obsidian/Documents/787`
 - Editing files in `content/` directly edits the Obsidian vault
+- Build scripts resolve the vault via `$HOME` (override with the `OBSIDIAN_VAULT` env var) — never hardcode `/Users/<name>/` paths
+
+### Git & the content symlink — CRITICAL
+
+git tracks the content files as regular files, but the working tree has a symlink. Therefore `git status` permanently shows all `content/*` files as deleted plus `?? content` — **this is normal and harmless**. `npx quartz sync` dereferences the symlink itself before committing.
+
+- **Never** run `git add -A` / `git add .` + manual commit while `content` is a symlink — that would commit the deletion of every content file and Netlify would deploy an empty site. A pre-commit hook (`.git/hooks/pre-commit`) blocks this; do not remove the guard.
+- To publish content changes, always use `npx quartz sync --no-pull`.
 
 ## Markdown Rules
 
@@ -280,6 +271,9 @@ This project uses the official **Lufthansa Group (LHG) brand color palette** thr
 | `[!limit]` | LHG Light Blue `#5291ED` | `#243F9B` |
 | `[!info]` | LHG Teal `#4B9DA1` | `#1C4C5C` |
 | `[!warning]` | LHG Red `#FF526B` | `#93030C` |
+| `[!caution]` | EICAS Amber `#f39c12` | `#8C5A00` |
+
+Status colors (EICAS red/amber/advisory + dark tints) are centralized as CSS variables in `quartz/styles/partials/_global.scss` (`--status-red`, `--status-amber`, `--status-advisory`, `--lhg-core-blue`, `--lhg-light-blue`, …). Use the variables in new partial CSS, never raw hex.
 
 ### Exceptions — do NOT change
 
@@ -360,6 +354,19 @@ title: "<Title>"   # include [] prefix if EICAS-triggered
 tags: [non-normal, <category>]
 ---
 ```
+
+## Content Linter & Project Agents
+
+`node scripts/lint-content.mjs` (from repo root) deterministically checks all format rules: dash style, body `---`, thousands separator, speed notation, frontmatter, image rules, book.md link resolution, orphan pages, unused images. **Run it after any content change — 0 errors required.** Warnings (orphans, unused images) are user decisions, never auto-fix them.
+
+Project agents in `.claude/agents/`:
+
+| Agent | Use for |
+|---|---|
+| `content-linter` | Run the linter and fix all rule violations |
+| `sop-author` | Create/edit SOPs & Supplementary Procedures incl. navigation upkeep |
+| `nnc-author` | Create NNC leaf pages incl. index link + Memory Items upkeep |
+| `deploy-guard` | Pre-deploy GO/NO-GO check (symlink, snippets, guards, lint, build) |
 
 ## Deployment
 

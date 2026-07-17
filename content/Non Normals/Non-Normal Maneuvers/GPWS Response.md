@@ -40,7 +40,6 @@ Accomplish the following maneuver for any of these conditions:
 - Activation of the <span class="c-red">PULL UP</span>, <span class="c-red">OBSTACLE PULL UP</span> or <span class="c-red">TERRAIN TERRAIN PULL UP</span> warning
 - Other situations resulting in unacceptable flight toward terrain
 
----
 
 > [!info] GNSS Interference – Nuisance Alerts (OM-A 8.3.4.15)
 > The flight crew defines a **safe altitude** above which terrain alerts may be considered nuisance alerts. The agreed safe altitude shall

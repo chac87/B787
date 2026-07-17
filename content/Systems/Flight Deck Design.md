@@ -1,3 +1,7 @@
+---
+title: Flight Deck Design
+tags: [systems]
+---
 # Flight Deck Design
 
 ![[displays.webp]]

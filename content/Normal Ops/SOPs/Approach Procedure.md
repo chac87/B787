@@ -34,7 +34,6 @@ Complete the Approach Procedure before:
 <span class="sop-tag-cl">PF → PM: "APPROACH CL"</span>
 </div>
 
----
 
 ## APPROACH CHECKLIST
 

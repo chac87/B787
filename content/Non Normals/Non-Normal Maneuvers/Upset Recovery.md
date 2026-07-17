@@ -19,7 +19,6 @@ An upset condition is any time the airplane is diverting from the intended state
 >
 > **If stalled:** Apply and maintain nose down elevator until stick shaker stops – before starting upset recovery.
 
----
 
 > [!proc]- Upset Recovery – Nose High
 > **PF**

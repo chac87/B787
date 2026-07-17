@@ -1,3 +1,7 @@
+---
+title: Non-Normal Handling
+tags: [non-normal]
+---
 # Non-Normal Handling
 
 Non-normal handling follows one priority: **fly the aircraft first**, then analyze and act in a coordinated way.
@@ -227,7 +231,6 @@ The example below shows the call structure, not a replacement for the actual che
 </div>
 </div>
 
----
 
 <div class="nnc-step">1 &nbsp; Recognize & Fly</div>
 
@@ -237,13 +240,11 @@ The example below shows the call structure, not a replacement for the actual che
 <div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Confirmed"</strong></div>
 <div class="nnc-sub">Ensures the flight path is under control · verifies airplane is above 400 ft RA.</div>
 
----
 
 <div class="nnc-step">2 &nbsp; Initiate Memory Items</div>
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"Memory Items"</strong></div>
 
----
 
 <div class="nnc-step">3 &nbsp; Execute Memory Items – as Confirmed Items</div>
 
@@ -261,13 +262,11 @@ The example below shows the call structure, not a replacement for the actual che
 <div class="nnc-sub"><strong>PM</strong> (looks at the lever, verifies): &nbsp;"LEFT CONFIRMED"</div>
 <div class="nnc-sub"><strong>PF</strong> (slowly retards the lever until the ENG SURGE L message blanks or the lever is at idle): &nbsp;"RETARD"</div>
 
----
 
 <div class="nnc-step">4 &nbsp; Call for Checklist</div>
 
 <div class="nnc-item"><span class="nnc-num"></span><strong>PF</strong><span class="cl-dots"></span><strong>"ENG SURGE LEFT Checklist"</strong></div>
 
----
 
 <div class="nnc-step">5 &nbsp; Read the NNC</div>
 
@@ -283,4 +282,3 @@ The example below shows the call structure, not a replacement for the actual che
 <div class="nnc-item"><span class="nnc-num"></span><strong>PM</strong><span class="cl-dots"></span><strong>"Checklist Complete Except Deferred Items"</strong></div>
 <div class="nnc-sub">This checklist has deferred items for the approach – the PM will return to them during descent.</div>
 
----

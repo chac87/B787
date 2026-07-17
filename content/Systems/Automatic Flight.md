@@ -331,7 +331,7 @@ EICAS caution **AUTOTHROTTLE DISC** + aural alert on any disconnect. Both are in
 > If airspeed remains above target for more than 5 seconds → target resets to the lesser of actual speed or v<sub>2</sub> + 25 kts.
 > If the MCP IAS/MACH window is set above the current target → FD follows the new MCP value.
 >
-> *Note: The AFDS uses the IAS/MACH window speed as V2.*
+> *Note: The AFDS uses the IAS/MACH window speed as v<sub>2</sub>.*
 
 **Speed Guidance After Liftoff – Engine Failure:**
 

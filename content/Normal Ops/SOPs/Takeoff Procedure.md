@@ -81,7 +81,6 @@ role: Both
 <span class="sop-tag-cl">PF → PM: "AFTER TAKEOFF CL"</span>
 </div>
 
----
 
 ## AFTER TAKEOFF CHECKLIST
 

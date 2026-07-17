@@ -1,3 +1,7 @@
+---
+title: Warning Systems
+tags: [systems]
+---
 # Warning Systems
 
 ## EICAS Alert Levels
@@ -150,6 +154,5 @@ Integrated into the two Integrated Surveillance System Processor Units (ISSPU). 
 - Turbulence detection range: 40 NM
 - PWS windshear scanning: below 2.300 ft RA
 
----
 
 <a href="/Non-Normals/Non-Normal-Maneuvers" style="display:inline-flex;align-items:center;gap:0.5em;padding:0.55em 1.1em;background:#3257BC;color:#fff;border-radius:6px;font-weight:600;font-size:0.9em;text-decoration:none">▶ Non-Normal Maneuvers – GPWS · TCAS · Windshear</a>

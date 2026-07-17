@@ -4,8 +4,9 @@
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-# Machine-specific: iCloud vault path — adjust per machine if needed
-SNIPPETS_DIR="/Users/jonasvaupel/Library/Mobile Documents/iCloud~md~obsidian/Documents/787/.obsidian/snippets"
+# iCloud vault path — override with OBSIDIAN_VAULT env var if needed
+VAULT="${OBSIDIAN_VAULT:-$HOME/Library/Mobile Documents/iCloud~md~obsidian/Documents/787}"
+SNIPPETS_DIR="$VAULT/.obsidian/snippets"
 TARGET="$SCRIPT_DIR/quartz/styles/partials/_snippets.scss"
 
 # Guard: skip sync if snippets dir doesn't exist (e.g. Netlify CI).
@@ -16,7 +17,9 @@ if [ ! -d "$SNIPPETS_DIR" ]; then
   exit 0
 fi
 
-# Build and overwrite _snippets.scss directly (no marker logic needed)
+# Build into a temp file first — only replace the committed _snippets.scss if
+# the result is non-empty (protects against an existing-but-empty snippets dir).
+TMP="$TARGET.tmp"
 {
   for f in "$SNIPPETS_DIR"/*.css; do
     [ -f "$f" ] || continue
@@ -25,10 +28,16 @@ fi
     cat "$f"
     printf '\n'
   done
-} > "$TARGET"
+} > "$TMP"
 
-COUNT=$(ls "$SNIPPETS_DIR"/*.css 2>/dev/null | wc -l | tr -d ' ')
-echo "✓ $COUNT Snippets synchronisiert → $TARGET"
+if [ -s "$TMP" ]; then
+  mv "$TMP" "$TARGET"
+  COUNT=$(ls "$SNIPPETS_DIR"/*.css 2>/dev/null | wc -l | tr -d ' ')
+  echo "✓ $COUNT Snippets synchronisiert → $TARGET"
+else
+  rm -f "$TMP"
+  echo "⚠ Snippets dir is empty — keeping committed _snippets.scss"
+fi
 
 # Auto-convert new images in Bilder/ to WebP
 bash "$SCRIPT_DIR/convert-images.sh"

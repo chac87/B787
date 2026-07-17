@@ -139,7 +139,6 @@ The captain normally does this procedure. The first officer may do this procedur
 <span class="sop-tag-cl">CP → F/O: "PREFLIGHT CL"</span>
 </div>
 
----
 
 ## PREFLIGHT CHECKLIST
 
@@ -154,7 +153,6 @@ The captain normally does this procedure. The first officer may do this procedur
 
 <div style="text-align:center;margin-top:1.2em"><span class="sop-tag-cl">F/O: "Preflight Checklist complete."</span></div>
 
----
 
 <div class="checklist h2-collapse-break">
 

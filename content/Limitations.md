@@ -1,3 +1,7 @@
+---
+title: Limitations
+tags: [limitations]
+---
 # Limitations
 
 > [!limit] Weight Limitations

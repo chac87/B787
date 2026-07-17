@@ -54,7 +54,6 @@ Start the Descent Procedure before the airplane descends below the cruise altitu
 <span class="sop-tag-cl">PF → PM: "DESCENT CL"</span>
 </div>
 
----
 
 ## DESCENT CHECKLIST
 

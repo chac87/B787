@@ -126,12 +126,10 @@ tags: [systems, landing-gear]
 > <div class="cl-item"><strong>Normal</strong><span class="cl-dots"></span><span>White on synoptic</span></div>
 > <div class="cl-item"><strong>Out of normal range</strong><span class="cl-dots"></span><span>Amber on synoptic</span></div>
 >
----
 
 > [!info] Un-annunciated Checklists
 > **GEAR LEVER LOCKED DOWN** – select via Non-Normal Menu in ECL
 
----
 
 > [!limit] Limitations
 > <div class="cl-item"><strong>v<sub>LE</sub> (Gear Extended)</strong><span class="cl-dots"></span><span>270 kts</span></div>

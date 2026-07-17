@@ -1,6 +1,6 @@
-
-
-
+---
+title: Non-Normals
+---
 # Non-Normals
 ## [[Non-Normal Handling]]
 ## [[Memory Items]]

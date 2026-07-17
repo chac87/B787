@@ -78,7 +78,9 @@ const calloutMapping = {
   faq: "question",
   warning: "warning",
   attention: "warning",
-  caution: "warning",
+  // caution stays its own type (EICAS semantics: caution = amber, warning = red);
+  // colors come from the callouts.css snippet, icon from _global.scss
+  caution: "caution",
   failure: "failure",
   missing: "failure",
   fail: "failure",

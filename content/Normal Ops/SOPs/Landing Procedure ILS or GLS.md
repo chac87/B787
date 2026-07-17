@@ -56,7 +56,6 @@ role: Both
 </tbody></table>
 </div>
 
----
 
 ## LANDING CHECKLIST
 

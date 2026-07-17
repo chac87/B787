@@ -142,7 +142,6 @@ tags: [non-normal, flightinstruments]
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
----
 
 ## Additional Information
 

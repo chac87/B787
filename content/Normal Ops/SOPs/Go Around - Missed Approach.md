@@ -70,7 +70,6 @@ role: Both
 
 > [!info] After the After Takeoff Checklist: Check thrust reference mode on EICAS.
 
----
 
 ## TO/GA Switch
 
@@ -95,7 +94,6 @@ role: Both
 > It is generally recommended to fly an **automatic go-around** with the autopilot engaged.
 > If the autopilot was disconnected prior to the go-around, re-engage it as soon as the flight path is under control.
 
----
 
 ## Special Situations
 

@@ -1,3 +1,7 @@
+---
+title: Medical
+tags: [operational]
+---
 # Medical
 
 | **Cabin** | **Cockpit** |

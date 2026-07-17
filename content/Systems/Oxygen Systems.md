@@ -1,3 +1,7 @@
+---
+title: Oxygen Systems
+tags: [systems]
+---
 # Oxygen Systems
 
 ## Übersicht
@@ -9,7 +13,6 @@
 | Overhead Crew Rest | Crew Rest Bunks + Seat | Identisch mit Cabin |
 | Portable Bottles | Gesamte Kabine (verteilt) | Walk-around / First Aid |
 
----
 
 ## Flight Deck Oxygen System
 
@@ -48,7 +51,6 @@ One oxygen cylinder, installed in the **lower equipment bay**.
 >
 > **Abschluss:** Maskentüren geschlossen · linkes Türfähnchen eingezogen · Regler auf 100 % gestellt
 
----
 
 ## Passenger Cabin Oxygen System
 
@@ -63,13 +65,11 @@ One oxygen cylinder, installed in the **lower equipment bay**.
 - Zylinder sind **Einweggeräte** – nach Aktivierung bis zur Entleerung
 - Verfügbare Zeit: **≈ 60 Minuten** (basiert auf typischem Abstiegsprofil)
 
----
 
 ## Overhead Crew Rest Oxygen System
 
 Identisch mit dem Cabin-System. Je eine Maske pro Bunk + Sitz im Flight Crew Rest.
 
----
 
 ## Portable Oxygen Bottles
 

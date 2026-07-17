@@ -1,3 +1,7 @@
+---
+title: Ventilation System
+tags: [systems]
+---
 # Ventilation System
 
 The ventilation system uses recirculated cabin air to cool electronic and electrical components. The heated exhaust air is routed to the cargo heat system or discharged overboard. Two fluid cooling systems provide additional cooling: PECS and ICS.
@@ -42,13 +46,11 @@ Automatic activation (FWD or AFT) when:
 
 > [!warning] With EQUIP OVBD VLV AFT: do **not** pressurize the cabin – duct failure and cabin pressure loss possible.
 
----
 
 ## Lavatory / Galley Ventilation
 
 Supplies ventilation air to lavatories and galleys · controls smoke in lavatories and optional crew rests. Also serves as secondary heat sink for PECS and drives cabin temperature sensors.
 
----
 
 ## Fluid Cooling Systems
 

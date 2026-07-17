@@ -82,7 +82,6 @@ Use of IAN is not recommended when an approach has a visual maneuver segment tha
   </div>
 </div>
 
----
 
 ## LANDING CHECKLIST
 

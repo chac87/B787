@@ -13,7 +13,6 @@ tags: [non-normal, misc]
 
 <div class="nnc-text"><span class="nnc-num">2</span><strong>Checklist Complete Except Deferred Items</strong></div>
 
----
 
 <div style="text-align:center; font-weight:bold; letter-spacing:0.08em; margin: 0.75em 0 0.5em;">DEFERRED ITEMS</div>
 
@@ -42,7 +41,6 @@ tags: [non-normal, misc]
 
 <div class="nnc-complete">■ &thinsp; ■ &thinsp; ■ &thinsp; ■</div>
 
----
 
 ## Zusatzinformationen
 

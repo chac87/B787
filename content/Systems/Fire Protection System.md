@@ -1,6 +1,12 @@
+---
+title: Fire Protection System
+tags: [systems]
+---
 # Fire Protection System
 
 ## Overview
+
+<img src="/Bilder/fire%20detection%20protection.webp" alt="Fire Detection and Protection zones">
 
 | Area | Detection | Extinguishing |
 |:---|:---:|:---:|
@@ -13,7 +19,6 @@
 | Overhead Crew Rest | Fire | – |
 | Overhead FA Rest | Fire | – |
 
----
 
 ## Engine Fire Protection
 
@@ -38,7 +43,6 @@
 
 </div>
 
----
 
 ## APU Fire Protection
 
@@ -49,7 +53,6 @@
 | <span class="c-red">APU FIRE</span> | <span class="c-red">Warning</span> | Fire detected |
 | <span class="c-amber">DET FIRE APU</span> | <span class="c-amber">Advisory</span> | Detection system failed |
 
----
 
 ## Cargo Fire Protection
 
@@ -85,7 +88,6 @@
 
 **On the ground (manual via CARGO FIRE DISCHARGE):** 3 bottles simultaneously, no time delay.
 
----
 
 **Ventilation Isolation (CARGO FIRE ARM):**
 
@@ -113,7 +115,6 @@
 
 </div>
 
----
 
 ## Main Wheel Well Fire Protection
 
@@ -121,7 +122,6 @@
 - Nose Wheel Well: **neither detection nor extinguishing**
 - In case of fire: Gear Extension
 
----
 
 ## Lavatory Fire Protection
 

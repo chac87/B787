@@ -122,6 +122,20 @@
   color: #1C4C5C !important;
 }
 
+/* CAUTION – EICAS Amber */
+.callout[data-callout="caution"] {
+  --accent: #f39c12;
+  --color: #f39c12;
+  --border: rgba(243, 156, 18, 0.27);
+  --bg: rgba(243, 156, 18, 0.08);
+  background-color: rgba(243, 156, 18, 0.08) !important;
+  border-color: rgba(243, 156, 18, 0.27) !important;
+}
+.callout[data-callout="caution"] .callout-title,
+.callout[data-callout="caution"] .callout-title-inner p {
+  color: #8C5A00 !important;
+}
+
 /* WARNING – LHG Red */
 .callout[data-callout="warning"] {
   --accent: #FF526B;
@@ -140,15 +154,21 @@
    DARK MODE SUPPORT
    Both OS dark mode + Quartz JS toggle ([saved-theme="dark"])
    ========================================================= */
+/* OS dark mode (Obsidian / PDF). :not([saved-theme="light"]) keeps this from
+   firing on the website when the user has toggled the site to light mode —
+   in Obsidian saved-theme is never set, so behavior there is unchanged. */
 @media (prefers-color-scheme: dark) {
-  .callout {
+  :root:not([saved-theme="light"]) .callout {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     background-color: rgba(var(--accent-rgb, 82, 145, 237), 0.15) !important;
     border-color: rgba(var(--accent-rgb, 82, 145, 237), 0.4) !important;
   }
 }
+/* Quartz JS toggle — same generic dark treatment regardless of OS setting */
 [saved-theme="dark"] .callout {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background-color: rgba(var(--accent-rgb, 82, 145, 237), 0.15) !important;
+  border-color: rgba(var(--accent-rgb, 82, 145, 237), 0.4) !important;
 }
 /* Dark mode: set both --color (icon/chevron) and --accent (title text via base rule).
    Explicit color !important on .callout-title as failsafe for both code paths. */
@@ -184,6 +204,17 @@
 [saved-theme="dark"] .callout[data-callout="info"] .callout-title-inner,
 [saved-theme="dark"] .callout[data-callout="info"] .callout-title-inner p {
   color: #A8E8EC !important;
+}
+[saved-theme="dark"] .callout[data-callout="caution"] {
+  --color: #F5C26B;
+  --accent: #F5C26B;
+  background-color: rgba(243, 156, 18, 0.20) !important;
+  border-color: rgba(243, 156, 18, 0.50) !important;
+}
+[saved-theme="dark"] .callout[data-callout="caution"] .callout-title,
+[saved-theme="dark"] .callout[data-callout="caution"] .callout-title-inner,
+[saved-theme="dark"] .callout[data-callout="caution"] .callout-title-inner p {
+  color: #F5C26B !important;
 }
 [saved-theme="dark"] .callout[data-callout="warning"] {
   --color: #FF7A8A;
@@ -461,6 +492,17 @@ h2 a,
         --web-image-border: #444444;
         --web-image-shadow: rgba(0, 0, 0, 0.4);
     }
+}
+
+/* Quartz JS toggle — declared after the media query, so it overrides the OS
+   setting in both directions (site-light on dark OS and vice versa) */
+[saved-theme="light"] {
+    --web-image-border: #cccccc;
+    --web-image-shadow: rgba(0, 0, 0, 0.15);
+}
+[saved-theme="dark"] {
+    --web-image-border: #444444;
+    --web-image-shadow: rgba(0, 0, 0, 0.4);
 }
 
 /* =========================================

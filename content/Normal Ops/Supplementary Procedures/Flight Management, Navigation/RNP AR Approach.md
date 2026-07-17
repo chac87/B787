@@ -59,7 +59,7 @@ tags: [sop, supplementary, rnp, navigation]
 </tbody>
 </table>
 
-> [!info] Approved Guidance Mode — B787
+> [!info] Approved Guidance Mode – B787
 > Only one guidance mode is approved for RNP AR on the Boeing 787: **LNAV – VNAV PTH**
 
 ## Navigation Performance & Obstacle Clearance
@@ -80,7 +80,7 @@ tags: [sop, supplementary, rnp, navigation]
 > [!info] Vertical Error Budget (VEB)
 > Covers flight technical error of 75 ft (if not demonstrated), 20 ft QNH error, and temperature effects within the procedure's defined temperature range.
 >
-> The aircraft verifies **125 ft** for vertical RNP — the NPS amber alert triggers at or slightly less than **75 ft deviation**. During RNP AR: **no temperature correction** by the flight crew.
+> The aircraft verifies **125 ft** for vertical RNP – the NPS amber alert triggers at or slightly less than **75 ft deviation**. During RNP AR: **no temperature correction** by the flight crew.
 
 ## Pre-Approach Requirements
 
@@ -89,16 +89,16 @@ tags: [sop, supplementary, rnp, navigation]
 <div class="cl-item"><strong>Required equipment</strong><span class="cl-dots"></span><strong>CHECK OPERATIONAL</strong></div>
 
 <div class="cl-item"><strong>RNP PROGRESS page 4</strong><span class="cl-dots"></span><strong>CHECK / MODIFY</strong></div>
-<div class="cl-sub">Verify the RNP value of the upcoming approach — modify as required</div>
+<div class="cl-sub">Verify the RNP value of the upcoming approach – modify as required</div>
 
 <div class="cl-item"><strong>Wind and temperature</strong><span class="cl-dots"></span><strong>WITHIN PROCEDURE LIMITS</strong></div>
 
-<div class="cl-item"><strong>QNH</strong><span class="cl-dots"></span><strong>LOCAL — REMOTE STATION PROHIBITED</strong></div>
-<div class="cl-sub">RNP AR approaches are based on barometric reference — use of QNH from a remote station is prohibited</div>
+<div class="cl-item"><strong>QNH</strong><span class="cl-dots"></span><strong>LOCAL – REMOTE STATION PROHIBITED</strong></div>
+<div class="cl-sub">RNP AR approaches are based on barometric reference – use of QNH from a remote station is prohibited</div>
 
 </div>
 
-> [!warning] EICAS Alerts — Verify Not Shown
+> [!warning] EICAS Alerts – Verify Not Shown
 > The following alerts must **not** be displayed prior to commencing the approach:
 >
 > <span class="c-amber">**FMC VERIFY POSITION · GND PROX SYS · NAV AIR DATA SYS · NAV INERTIAL SYS · NAV IRU · NAV SINGLE GPS · SINGLE SOURCE F/D · NAV UNABLE RNP · SGL SOURCE RAD ALT · SINGLE FMC · TERR POS**</span>
@@ -126,7 +126,7 @@ tags: [sop, supplementary, rnp, navigation]
 <div class="cl-item"><strong>TERR</strong><span class="cl-dots"></span><strong>SELECT ON MAP</strong></div>
 
 <div class="cl-item"><strong>2 NM before Descent Point</strong><span class="cl-dots"></span><strong>PM CALLOUT</strong></div>
-<div class="cl-sub">PM calls out "Approaching Glide Path" — PF accomplishes required actions</div>
+<div class="cl-sub">PM calls out "Approaching Glide Path" – PF accomplishes required actions</div>
 
 <div class="cl-item"><strong>Navigation Performance</strong><span class="cl-dots"></span><strong>MONITOR</strong></div>
 <div class="cl-sub">Maximum deviation: Lateral 1 RNP or NPS amber · Vertical 75 ft</div>
@@ -135,12 +135,12 @@ tags: [sop, supplementary, rnp, navigation]
 
 ## Go-Around Criteria
 
-> [!warning] Go-Around — Deviation Exceedance
+> [!warning] Go-Around – Deviation Exceedance
 > Initiate a Go-Around when exceeding:
 > - **Lateral:** 1 RNP or NPS turns amber (= Scale and ANP bar)
 > - **Vertical:** 75 ft (= Scale and ANP bar amber after 5 sec)
 
-> [!warning] Go-Around — No Visual Reference
+> [!warning] Go-Around – No Visual Reference
 > If no visual reference is available when any of the following are displayed:
 > - <span class="c-amber">**NAV UNABLE RNP**</span>
 > - <span class="c-amber">**FMC VERIFY POSITION**</span>

@@ -51,7 +51,6 @@ Outside air enters through the CAC inlets, is compressed and sent warm to the pa
 > | <span class="c-amber">PACK L / R</span> | <span class="c-amber">Advisory</span> | Pack failed (surge, overheat, fault) |
 > | <span class="c-amber">PACK MODE L / R</span> | <span class="c-amber">Advisory</span> | Pack in Standby Cooling Mode |
 
----
 
 ### Air Distribution
 
@@ -69,7 +68,6 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 > [!info]- Alternate Ventilation System (AVS)
 > Used on failure of both packs. Switch → **ALTN** partially opens FWD + AFT Outflow Valves → fresh air is drawn into the distribution system. Effective in unpressurized flight only.
 
----
 
 ### Temperature Control
 
@@ -82,7 +80,6 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 > [!info]- Loss of Trim Air (L or R)
 > All zones regulated to average target temperature. Flight deck temperature remains 18 – 29 °C – but may become uncomfortable. Workaround: adjust CABIN TEMP Selector.
 
----
 
 ### Cargo Heat
 
@@ -105,7 +102,6 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 <div class="cl-item"><strong>Heat source</strong><span class="cl-dots"></span><span>Heated air below floor from aft equipment cooling system</span></div>
 <div class="cl-item"><strong>Live animals</strong><span class="cl-dots"></span><span>Not permitted</span></div>
 
----
 
 ## Pressurization
 
@@ -162,7 +158,6 @@ The **Flight Deck** receives 100% conditioned outside air (with one pack OFF + L
 > |:---|:---:|:---|
 > | <span class="c-amber">LANDING ALTITUDE</span> | <span class="c-amber">Advisory</span> | Landing altitude not available from FMC – system uses 2.000 ft |
 
----
 
 ### Non-Normals
 

@@ -73,7 +73,7 @@
   line-height: 1.45;
 }
 
-body[saved-theme="dark"] .nnc-note {
+[saved-theme="dark"] .nnc-note {
   color: #a5d6a7;
 }
 
@@ -110,15 +110,7 @@ body[saved-theme="dark"] .nnc-note {
     white-space: nowrap;
     flex-shrink: 0;
   }
-
-  .cl-dots {
-    flex: 1;
-    border-bottom: 1.5px dotted var(--gray);
-    opacity: 0.45;
-    margin-bottom: 0.22em;
-    min-width: 0.5em;
-    flex-shrink: 2;
-  }
+  // .cl-dots styling comes from the global rule in _sop.scss
 }
 
 // Numbered plain-text step (no dot-leader, no action value)
@@ -225,15 +217,7 @@ body[saved-theme="dark"] .nnc-note {
     white-space: nowrap;
     flex-shrink: 0;
   }
-
-  .cl-dots {
-    flex: 1;
-    border-bottom: 1.5px dotted var(--gray);
-    opacity: 0.45;
-    margin-bottom: 0.22em;
-    min-width: 0.5em;
-    flex-shrink: 2;
-  }
+  // .cl-dots styling comes from the global rule in _sop.scss
 }
 
 // Boxed info panel (e.g. "To descend:")
@@ -258,7 +242,7 @@ body[saved-theme="dark"] .nnc-note {
 .nnc-caution {
   font-size: 0.85em;
   font-style: italic;
-  color: #e74c3c;
+  color: var(--status-red);
   margin: 0.4em 0 0.4em 0;
   line-height: 1.45;
 }
@@ -276,25 +260,25 @@ body[saved-theme="dark"] .nnc-note {
   font-weight: 600;
   padding: 4px 12px;
   border-radius: 20px;
-  border: 1.5px solid #3257BC;
-  color: #3257BC;
+  border: 1.5px solid var(--lhg-core-blue);
+  color: var(--lhg-core-blue);
   background: transparent;
   cursor: pointer;
   transition: background 0.15s ease, color 0.15s ease;
 
   &.active {
-    background: #3257BC;
+    background: var(--lhg-core-blue);
     color: #fff;
   }
 }
 
-body[saved-theme="dark"] {
+[saved-theme="dark"] {
   .reg-btn {
-    border-color: #5291ED;
-    color: #5291ED;
+    border-color: var(--lhg-light-blue);
+    color: var(--lhg-light-blue);
 
     &.active {
-      background: #5291ED;
+      background: var(--lhg-light-blue);
       color: #05164D;
     }
   }
@@ -373,7 +357,7 @@ body[saved-theme="dark"] {
 }
 
 .mi-role--pm {
-  background: #3257BC;
+  background: var(--lhg-core-blue);
 }
 
 .mi-role--both {
@@ -407,35 +391,35 @@ body[saved-theme="dark"] {
 }
 
 .mi-block--amber {
-  border: 2px solid #f39c12;
+  border: 2px solid var(--status-amber);
 }
 
 .mi-block--amber .mi-title {
-  background-color: color-mix(in srgb, #f39c12 18%, transparent);
+  background-color: color-mix(in srgb, var(--status-amber) 18%, transparent);
   color: #966008;
-  border-bottom: 2px solid #f39c12;
+  border-bottom: 2px solid var(--status-amber);
 
 }
 
 .mi-block--red {
-  border: 2px solid #e74c3c;
+  border: 2px solid var(--status-red);
 }
 
 .mi-block--red .mi-title {
-  background-color: color-mix(in srgb, #e74c3c 18%, transparent);
+  background-color: color-mix(in srgb, var(--status-red) 18%, transparent);
   color: #a93226;
-  border-bottom: 2px solid #e74c3c;
+  border-bottom: 2px solid var(--status-red);
 
 }
 
-body[saved-theme="dark"] {
+[saved-theme="dark"] {
   .mi-block--amber .mi-title {
-    background-color: color-mix(in srgb, #f39c12 22%, transparent);
+    background-color: color-mix(in srgb, var(--status-amber) 22%, transparent);
     color: #f3b141;
   }
 
   .mi-block--red .mi-title {
-    background-color: color-mix(in srgb, #e74c3c 22%, transparent);
+    background-color: color-mix(in srgb, var(--status-red) 22%, transparent);
     color: #e97268;
   }
 
@@ -444,7 +428,7 @@ body[saved-theme="dark"] {
   }
 
   .mi-role--pm {
-    background: #5291ED;
+    background: var(--lhg-light-blue);
   }
 
   .mi-role--both {

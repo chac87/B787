@@ -1,3 +1,7 @@
+---
+title: Amber Landing Concept
+tags: [operational]
+---
 # Amber Landing Concept
 
 ## Definitionen
@@ -10,7 +14,6 @@
 | **ILD** | Inflight Landing Distance | Bildet die durchschnittliche Pilotenperformance inflight ab |
 | **FLD** | Factored Landing Distance | FLD = ILD · 1,15<br>Grundlage zur Planung von LAPA |
 
----
 
 ## Konzept
 

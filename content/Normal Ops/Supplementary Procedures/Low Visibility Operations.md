@@ -7,7 +7,7 @@ tags: [sop, supplementary, lvo]
 
 ## Indications & Limitations
 
-<img src="/Bilder/autoflight.webp" alt="Autoflight — Autoland Status">
+<img src="/Bilder/autoflight.webp" alt="Autoflight – Autoland Status">
 
 <div class="eicas-levels">
 
@@ -92,7 +92,7 @@ tags: [sop, supplementary, lvo]
 | **CAT IIIB with DH** (fail-operational) | 23 ft    | 125 m (400 ft)     | **<span class="c-green">LAND 3</span>**                                            |
 | **CAT IIIB no DH** (fail-operational)   | no DH    | 75 m (300 ft)      | **<span class="c-green">LAND 3</span>**                                            |
 
-> [!warning] CAT II — Manual Landing Not Approved
+> [!warning] CAT II – Manual Landing Not Approved
 > CAT II manual landing is **not** approved. A CAT II approach may only be conducted using the autopilot (LAND 2 or LAND 3 required).
 
 > [!info] Contaminated Runway
@@ -108,7 +108,7 @@ tags: [sop, supplementary, lvo]
 </tr>
 </thead>
 <tbody>
-<tr class="data-table__section-row"><td colspan="4" class="data-table__section-title">&gt; 1.000 ft RA — Approach may be commenced regardless of reported RVR / visibility</td></tr>
+<tr class="data-table__section-row"><td colspan="4" class="data-table__section-title">&gt; 1.000 ft RA – Approach may be commenced regardless of reported RVR / visibility</td></tr>
 <tr>
   <td>@ 1.000 ft</td>
   <td>acc. IAC</td>
@@ -121,7 +121,7 @@ tags: [sop, supplementary, lvo]
   <td>75 m (or 125 m without rollout guidance/control)</td>
   <td>75 m (if &gt; 60 kts)</td>
 </tr>
-<tr class="data-table__section-row"><td colspan="4" class="data-table__section-title">@ DH — Approach may be continued if necessary visual reference is established and can be maintained</td></tr>
+<tr class="data-table__section-row"><td colspan="4" class="data-table__section-title">@ DH – Approach may be continued if necessary visual reference is established and can be maintained</td></tr>
 </tbody>
 </table>
 
@@ -197,27 +197,27 @@ tags: [sop, supplementary, lvo]
 > [!info] Memory Aid
 > Go-Around if EICAS shows <span class="c-amber">**NO**</span> or <span class="c-amber">**AUTO**</span>.
 
-> [!info] AFDS Fault — Decision Logic Above Alert Height
+> [!info] AFDS Fault – Decision Logic Above Alert Height
 > Immediately after recognizing a fault, **check the autoland status annunciation**:
 > - If the annunciation is **unchanged** and the affected equipment is not required for the approach → continue the approach
 > - If the annunciation has **changed**, or the affected equipment is required → adjust to appropriate higher minimums or go-around. If suitable visual reference is established, consider landing.
 
 <table class="data-table data-table--split">
 <thead>
-<tr><th colspan="2" style="text-align:center;font-size:0.95rem;">Above 200 ft RA — During Approach</th></tr>
+<tr><th colspan="2" style="text-align:center;font-size:0.95rem;">Above 200 ft RA – During Approach</th></tr>
 <tr><th>CONTINUE</th><th>GO-AROUND</th></tr>
 </thead>
 <tbody>
 <tr>
   <td>
-    <span class="c-amber">Other EICAS CAUTIONS</span> — check EICAS<br>
-    <span class="c-red">Other EICAS WARNINGS</span> — check EICAS<br>
-    <span class="c-amber">SPEEDBRAKE EXTENDED</span> — retract speedbrakes<br>
+    <span class="c-amber">Other EICAS CAUTIONS</span> – check EICAS<br>
+    <span class="c-red">Other EICAS WARNINGS</span> – check EICAS<br>
+    <span class="c-amber">SPEEDBRAKE EXTENDED</span> – retract speedbrakes<br>
     <span class="c-amber">ENG FAIL / ENG THRUST</span><br>
-    <span class="c-amber">ENG REV AIR/GND</span> — do not command reverse<br>
-    <span class="c-amber">ENG REV COMMANDED L, R</span> — do not command reverse<br>
-    <span class="c-amber">AUTOTHROTTLE DISC</span> — manual thrust, if LAND 2 sufficient (*)<br>
-    <span class="c-amber">NO LAND 3</span> — continue if LAND 2 sufficient
+    <span class="c-amber">ENG REV AIR/GND</span> – do not command reverse<br>
+    <span class="c-amber">ENG REV COMMANDED L, R</span> – do not command reverse<br>
+    <span class="c-amber">AUTOTHROTTLE DISC</span> – manual thrust, if LAND 2 sufficient (*)<br>
+    <span class="c-amber">NO LAND 3</span> – continue if LAND 2 sufficient
   </td>
   <td>
     **<span class="c-amber">NO AUTOLAND</span>**<br>
@@ -232,25 +232,25 @@ tags: [sop, supplementary, lvo]
 
 <table class="data-table data-table--split">
 <thead>
-<tr><th colspan="2" style="text-align:center;font-size:0.95rem;">Below 200 ft RA — Alert Height</th></tr>
+<tr><th colspan="2" style="text-align:center;font-size:0.95rem;">Below 200 ft RA – Alert Height</th></tr>
 <tr><th>CONTINUE</th><th>GO-AROUND</th></tr>
 </thead>
 <tbody>
 <tr>
   <td>
     <span class="c-amber">ENG FAIL / ENG THRUST</span> (MC &amp; aural inhibited)<br>
-    <span class="c-amber">ENG REV AIR/GND</span> — do not command reverse<br>
-    <span class="c-amber">ENG REV COMMANDED L, R</span> — do not command reverse<br>
+    <span class="c-amber">ENG REV AIR/GND</span> – do not command reverse<br>
+    <span class="c-amber">ENG REV COMMANDED L, R</span> – do not command reverse<br>
     <span class="c-amber">Other EICAS CAUTIONS</span><br>
     <span class="c-red">Other EICAS WARNINGS</span><br>
     <small><em>NO AUTOLAND / NO LAND 3 messages are inhibited below Alert Height</em></small>
   </td>
   <td>
     Most go-around initiations are inhibited. Exceptions:<br><br>
-    <span class="c-amber">SPEEDBRAKE EXTENDED</span> — land, if visual conditions (**)<br>
-    <span class="c-amber">AUTOTHROTTLE DISC</span> — G/A if RVR &lt; 200 m (*)<br>
+    <span class="c-amber">SPEEDBRAKE EXTENDED</span> – land, if visual conditions (**)<br>
+    <span class="c-amber">AUTOTHROTTLE DISC</span> – G/A if RVR &lt; 200 m (*)<br>
     <span class="c-amber">AUTOPILOT</span> (**)<br>
-    <span class="c-red">AUTOPILOT DISC</span> — manual go-around (**)<br>
+    <span class="c-red">AUTOPILOT DISC</span> – manual go-around (**)<br>
     <span class="c-amber">ILS Deviation Alert</span> (**)<br>
     <span class="c-amber">GLS Deviation Alert</span> (**)
   </td>

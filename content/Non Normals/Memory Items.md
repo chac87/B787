@@ -1,3 +1,7 @@
+---
+title: Memory Items
+tags: [non-normal, memory-items]
+---
 # Memory Items
 
 - PF: "MEMORY ITEMS"

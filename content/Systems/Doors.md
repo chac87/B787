@@ -46,8 +46,8 @@ The decompression panel serves as an escape route if the door is jammed (instruc
 | Keypad Light | Meaning |
 |:---:|:---|
 | <span class="c-red">Red</span> | Door secured (locked) |
-| <span class="c-amber">Amber</span> | Emergency code entered — awaiting crew decision |
-| <span class="c-green">Green</span> | Access granted — door unlocked |
+| <span class="c-amber">Amber</span> | Emergency code entered – awaiting crew decision |
+| <span class="c-green">Green</span> | Access granted – door unlocked |
 
 - **Call button:** Press `1` + ENT → EICAS COMM: **FD DOOR CALL**
 - Keypad dormant until first keystroke · returns to dormant state after 3 min without input
@@ -62,7 +62,7 @@ The decompression panel serves as an escape route if the door is jammed (instruc
 
 | EICAS | Level | Meaning |
 |:---|:---:|:---|
-| <span class="c-red">FD DOOR AUTO UNLOCK</span> | <span class="c-red">Warning</span> | Emergency code entered — no crew action → automatic access granted |
+| <span class="c-red">FD DOOR AUTO UNLOCK</span> | <span class="c-red">Warning</span> | Emergency code entered – no crew action → automatic access granted |
 | <span class="c-amber">FD DOOR OPEN</span> | <span class="c-amber">Advisory</span> | Lock pin extended while door sensor shows open |
 | <span class="c-amber">FD DOOR LOCK FAIL</span> | <span class="c-amber">Advisory</span> | Lock failed or FD DOOR POWER OFF |
 
@@ -76,9 +76,9 @@ The decompression panel serves as an escape route if the door is jammed (instruc
 
 ## Flight Deck Overhead Door
 
-Emergency exit via Descent Devices — **ground only, depressurized**.
+Emergency exit via Descent Devices – **ground only, depressurized**.
 
-> [!warning] Door falls inward — risk of injury when opening.
+> [!warning] Door falls inward – risk of injury when opening.
 
 | EICAS | Level | Meaning |
 |:---|:---:|:---|

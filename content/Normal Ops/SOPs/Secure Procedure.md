@@ -46,7 +46,6 @@ role: Both
 
 </div>
 
----
 
 ## SECURE CHECKLIST
 

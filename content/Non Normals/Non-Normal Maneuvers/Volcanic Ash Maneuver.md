@@ -38,7 +38,7 @@ tags: [non-normal, maneuvers]
 </div>
 
 > [!warning] Workload Management
-> In volcanic ash, all three NNCs may be active simultaneously. The **Volcanic Ash NNC** always takes priority — do not run Eng Fail or Airspeed Unreliable checklists until the Volcanic Ash NNC explicitly directs you to do so.
+> In volcanic ash, all three NNCs may be active simultaneously. The **Volcanic Ash NNC** always takes priority – do not run Eng Fail or Airspeed Unreliable checklists until the Volcanic Ash NNC explicitly directs you to do so.
 
 ## Potential System Anomalies
 

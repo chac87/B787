@@ -86,7 +86,6 @@ VNAV should be used only for approaches that have one of the following features:
   </div>
 </div>
 
----
 
 ## LANDING CHECKLIST
 

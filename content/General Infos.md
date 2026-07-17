@@ -1,3 +1,7 @@
+---
+title: General Infos
+tags: [general]
+---
 # General Infos
 
 > [!info]- General Infos

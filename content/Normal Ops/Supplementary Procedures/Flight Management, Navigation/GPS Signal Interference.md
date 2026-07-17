@@ -27,7 +27,6 @@ tags: [sop, supplementary, flight-management, navigation]
 <div class="nnc-note">• If systems such as LNAV path or VNAV path experience degraded performance or unsatisfactory performance due to interference, reduce the level of automation (e.g., HDG/TRK, FLCH, VS).</div>
 <div class="nnc-note">• Cross-check terrain altitude using enroute charts if terrain depiction on ND appears unreasonable for the geographic location.</div>
 
----
 
 <div class="nnc-step">• Preliminary Preflight Procedure: <span style="font-weight:400;">(only when departing from airports with known GPS Signal Interference as announced by NOTAM, COMPANY NOTAM or other approved source)</span></div>
 
@@ -64,7 +63,6 @@ tags: [sop, supplementary, flight-management, navigation]
 
 </div>
 
----
 
 <div class="nnc-step">• In Cruise Flight, prior entering area of suspected or known spoofing, <span style="font-weight:400;">as announced by NOTAM, COMPANY NOTAM or other approved source:</span></div>
 
@@ -77,7 +75,6 @@ tags: [sop, supplementary, flight-management, navigation]
 
 </div>
 
----
 
 <div class="nnc-step">• When clear of GPS interference and no further interference is expected or latest before top of descent:</div>
 
@@ -96,7 +93,6 @@ tags: [sop, supplementary, flight-management, navigation]
 
 </div>
 
----
 
 <div class="nnc-step">• If Time / Date and GPS / INR does recover:</div>
 
@@ -109,7 +105,6 @@ tags: [sop, supplementary, flight-management, navigation]
 
 </div>
 
----
 
 <div class="nnc-step">• If Time / Date and GPS / INR does not recover:</div>
 
@@ -129,7 +124,6 @@ tags: [sop, supplementary, flight-management, navigation]
 
 </div>
 
----
 
 <div class="nnc-step">• After Landing:</div>
 

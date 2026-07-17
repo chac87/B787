@@ -51,7 +51,7 @@ Start the Before Start Procedure after papers are on board.
 <div class="cl-sub">Normally the PM selects the LEGS page.</div>
 
 <div class="cl-item"><strong>MCP (Final 5)</strong><span class="cl-dots"></span><strong>Set</strong><span class="mi-role">CP</span></div>
-<div class="cl-item cl-indent"><strong>V2</strong><span class="cl-dots"></span><strong>Set</strong></div>
+<div class="cl-item cl-indent"><strong>v<sub>2</sub></strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-item cl-indent"><strong>HDG</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-item cl-indent"><strong>Altitude</strong><span class="cl-dots"></span><strong>Set</strong></div>
 <div class="cl-item cl-indent"><strong>LNAV</strong><span class="cl-dots"></span><strong>Arm as needed</strong></div>
@@ -115,7 +115,6 @@ Start the Before Start Procedure after papers are on board.
 <span class="sop-tag-cl">CP → F/O: "BEFORE START CL"</span>
 </div>
 
----
 
 ## BEFORE START CHECKLIST
 
@@ -123,8 +122,8 @@ Start the Before Start Procedure after papers are on board.
 |:---|:---|:---:|
 | <span class="c-green">**Flight deck door**</span> | <span class="c-green">Closed and locked</span> | F/O |
 | **Passenger signs** | ON | F/O |
-| **MCP**<br><small style="color:var(--gray)">CP announces values from MCP, F/O x-checks V2 with FMC</small> | V2\_\_, HDG\_\_, ALTITUDE\_\_ | CP |
-| **Takeoff speeds, Thrust**<br><small style="color:var(--gray)">CP announces SPD values from FMC and Reference N1 from EICAS,<br>F/O x-checks with TOPAS (Speeds ±0 kts, N1 ±0.5%) and replies "checked"</small> | V1\_\_, VR\_\_, V2\_\_, \_\_% | CP, F/O |
+| **MCP**<br><small style="color:var(--gray)">CP announces values from MCP, F/O x-checks v<sub>2</sub> with FMC</small> | v<sub>2</sub>\_\_, HDG\_\_, ALTITUDE\_\_ | CP |
+| **Takeoff speeds, Thrust**<br><small style="color:var(--gray)">CP announces SPD values from FMC and Reference N1 from EICAS,<br>F/O x-checks with TOPAS (Speeds ±0 kts, N1 ±0.5%) and replies "checked"</small> | v<sub>1</sub>\_\_, v<sub>R</sub>\_\_, v<sub>2</sub>\_\_, \_\_% | CP, F/O |
 | **CDU preflight** | Completed | CP |
 | <span class="c-green">**Trim**</span> | <span class="c-green">Units, 0</span> | CP |
 | **Taxi and takeoff briefing** | Completed | CP |

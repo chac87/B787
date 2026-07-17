@@ -1,3 +1,7 @@
+---
+title: Kabinenvorbereitung
+tags: [operational]
+---
 # Kabinenvorbereitung
 
 Wenn absehbar ist, dass eine Notlandung/Notwasserung mit eventueller Evakuierung bevorsteht:

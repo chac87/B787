@@ -1,3 +1,7 @@
+---
+title: De-Ice, Anti-Ice
+tags: [sop, supplementary]
+---
 # De-Ice, Anti-Ice
 
 ## Clean Aircraft Concept
@@ -7,7 +11,6 @@
 
 **Kritische Flächen:** Tragflächen (Ober- und Unterseite), Steuerflächen, Leitwerk, Triebwerksgondeln, Pitot-Static-Anlagen.
 
----
 
 ## Flüssigkeitstypen
 
@@ -21,7 +24,6 @@
 > [!info] Holdover Time (HOT)
 > Die **HOT** ist die geschätzte Zeit, in der eine Deicing-/Anti-Icing-Flüssigkeit den Schutz vor erneuter Kontamination aufrechterhält. HOT-Tabellen sind **Richtwerte** – abhängig von Niederschlagsart, -intensität und OAT. Flüssigkeit, die ihre Schutzwirkung verloren hat (eingefroren, mit Niederschlag gesättigt), bietet **keine Wirkung** mehr.
 
----
 
 ## Two-Step Procedure
 
@@ -36,7 +38,6 @@
 > [!info] One-Step
 > Bei leichtem Frost oder Reif und ausreichenden Bedingungen: Typ-I-Heißgemisch kann als One-Step-Verfahren ausreichen. Immer anhand lokaler SOPs und HOT-Tabellen bewerten.
 
----
 
 ## LOUT – Last Opportunity To Look
 
@@ -47,7 +48,6 @@
 
 Falls Zweifel bestehen oder die HOT abgelaufen ist → **erneutes Deicing** vor dem Start erforderlich.
 
----
 
 ## Airborne Anti-Ice – Systemübersicht
 
