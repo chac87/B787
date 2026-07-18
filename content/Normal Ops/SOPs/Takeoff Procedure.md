@@ -64,7 +64,7 @@ role: Both
 | Monitor airspeed.<br>Maintain light forward pressure on the control column.<br>Aileron into the wind as speed increases. | Monitor airspeed and call out any abnormal indications. |
 | Verify 80 knots and <span class="sop-tag-items">PF: "CHECK"</span> | <span class="sop-tag-items">PM: "80 KNOTS"</span> |
 | Verify v<sub>1</sub> speed. | Verify the automatic v<sub>1</sub> callout or <span class="sop-tag-items">PM: "V1"</span> |
-| At V<sub>R</sub>, rotate toward 15° pitch attitude.<br>After liftoff, follow F/D commands. | At V<sub>R</sub> <span class="sop-tag-items">PM: "ROTATE"</span><br>Monitor airspeed and vertical speed. |
+| At v<sub>R</sub>, rotate to OEI pitch attitude + 2° in 5 sec.<br>Thereafter, follow F/D commands. | At v<sub>R</sub> <span class="sop-tag-items">PM: "ROTATE"</span><br>Monitor airspeed and vertical speed. |
 | Establish a positive rate of climb. | |
 | | Verify a positive rate of climb on the altimeter and <span class="sop-tag-items">PM: "POSITIVE RATE"</span> |
 | Verify a positive rate of climb on the altimeter and <span class="sop-tag-items">PF: "GEAR UP"</span> | |
