@@ -7,6 +7,11 @@ tags: [non-normal, flightcontrols]
 
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
+> [!info] FCTM Background
+> The flap lever can become inoperative due to certain electrical faults. When this fault occurs, the slats and flaps will not respond to the selected flap position. There is no EICAS alert for this condition. When this condition occurs, the unannunciated Flap Lever Inoperative NNC must be used. This directs flap extension or retraction using the alternate flap system.
+>
+> After takeoff, this condition will usually require a return for landing. Flaps should only be retracted after takeoff or go-around if needed to meet performance criteria, terrain clearance, or if proceeding to an alternate airport.
+
 <div class="nnc-condition">Condition: Flaps and slats not responding to flap position selected on flap lever.</div>
 
 <div class="nnc-text"><span class="nnc-num">1</span><strong>If</strong> one or more of the following messages currently show, do the associated checklist(s), and do not do the Flap Lever Inoperative checklist.</div>

@@ -216,11 +216,12 @@ Before FAF - approximately **2 NM before FAF**:
 >
 > **No valid vertical path or VNAV/IAN not suitable** -> use **V/S** or **FPA CDFA**.
 
-**Summary:**
+## Summary
 
 | Item | Using IAN | Using VNAV | Using FPA/V/S |
 |---|---|---|---|
 | Set DA/MDA | Not required | approx. 2 NM before FAF | approx. 2 NM before FAF |
 | Set missed app alt | After glidepath capture | 300 ft below missed app alt | Between missed app alt - 300 ft and DA/MDA + 300 ft |
-| AP usage | Until MUH (135 ft AGL) | Until MUH (135 ft AGL) | Until DA/MDA |
+| earliest AP off | RWY in sight | RWY in sight | RWY in sight |
+| latest AP off | Until MUH (135 ft AGL) | Until MUH (135 ft AGL) | Until DA/MDA |
 | FD usage | Until T/D | Until T/D | Until DA/MDA |
