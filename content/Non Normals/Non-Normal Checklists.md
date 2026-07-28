@@ -74,7 +74,7 @@ tags: [non-normal, reference, eicas, checklists]
 <div class="nn-section" data-section="B">
 <div class="nn-section-header">B</div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="navigation"><span><a href="/Non-Normals/Non-Normal-Checklists/BARO-SET-DISAGREE">BARO SET DISAGREE</a></span></div>
-<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="backcover"><span>Bomb On Board</span></div>
+<div class="nn-item" data-qa="false" data-eicas="false" data-unann="true" data-cat="backcover"><span><a href="/Non-Normals/Non-Normal-Checklists/Bomb-On-Board">Bomb On Board</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/BOTTLE-1,-2-DISCH-ENG">BOTTLE 1, 2 DISCH ENG</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/BOTTLE-DISCH-APU">BOTTLE DISCH APU</a></span></div>
 <div data-eicas-level="advisory" class="nn-item" data-qa="false" data-eicas="true" data-unann="false" data-cat="fire"><span><a href="/Non-Normals/Non-Normal-Checklists/BOTTLE-DISCH-CARGO">BOTTLE DISCH CARGO</a></span></div>
