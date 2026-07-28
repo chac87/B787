@@ -3,7 +3,7 @@ import fs from "fs"
 import path from "path"
 import { QuartzEmitterPlugin } from "../types"
 import { write } from "./helpers"
-import { FullSlug, QUARTZ, joinSegments } from "../../util/path"
+import { FilePath, FullSlug, QUARTZ, joinSegments, slugifyFilePath } from "../../util/path"
 import { glob } from "../../util/glob"
 
 const rev = (data: string | Buffer): string =>
@@ -61,7 +61,12 @@ export const PWA: QuartzEmitterPlugin = () => ({
       cfg.ignorePatterns,
     )
     for (const f of imageFiles) {
-      manifest[`/${f}`] = await fileRev(path.join(ctx.argv.directory, f), buildStamp)
+      // the Assets emitter slugifies file paths on copy (spaces -> dashes),
+      // so the served URL differs from the vault path we hash
+      manifest[`/${slugifyFilePath(f as FilePath)}`] = await fileRev(
+        path.join(ctx.argv.directory, f),
+        buildStamp,
+      )
     }
 
     const staticSrc = joinSegments(QUARTZ, "static")
