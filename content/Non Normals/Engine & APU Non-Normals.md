@@ -255,6 +255,12 @@ At altitude capture the **ENG OUT CRZ** page displays. Maintain MCT and driftdow
 | **EO LRC** | Lower driftdown altitude | Best fuel economy |
 | **CO SPD** | Higher driftdown speed | Shorter flight time; specified in AMI |
 
+> [!info] Speed ↔ MAX ALT
+> The faster the EO speed, the lower the achievable single-engine altitude:
+> - **EO SPD** (driftdown speed) is very low → MAX ALT is relatively high
+> - **EO LRC** is somewhat faster → MAX ALT is lower
+> - **CO SPD / ETOPS SPD** (310 kts / M .85) is faster still → MAX ALT is lowest
+
 ### Special Cases
 
 <div class="eicas-levels">

@@ -8,6 +8,10 @@ tags: [non-normal, fire]
 <a class="nnc-back" href="/Non-Normals/Non-Normal-Checklists">Non-Normal Checklists</a>
 
 > [!warning] On ground: No Memory Items!
+> Two scenarios lead to this checklist:
+>
+> - ATC or fire brigade observes a fire from outside, but EICAS shows no fire indication
+> - Engine fire occurs on final approach → approach is continued. The ECL is stuck in the in-flight condition, so after landing the checklist must be read from the **QRH**
 
 <div class="nnc-condition">Condition: One or more of these occur on the ground:<br>• Fire is observed in the affected engine<br>• Fire is detected in the affected engine</div>
 

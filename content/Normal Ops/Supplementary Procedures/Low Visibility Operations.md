@@ -179,7 +179,7 @@ tags: [sop, supplementary, lvo]
 <tr><th>Event</th><th>PF</th><th>PM</th></tr>
 </thead>
 <tbody>
-<tr><td>Prior Approach</td><td colspan="2">Check that no DH is set</td></tr>
+<tr><td>Prior Approach</td><td colspan="2">Check that no DH is set<br>Preselect CAT IIIA minimum (50 ft) in case of <span class="c-amber">NO LAND 3</span> during approach</td></tr>
 <tr><td>Between 1.500 ft and 1.000 ft RA, when LAND 3 is displayed</td><td>"ROLLOUT FLARE ARMED"</td><td></td></tr>
 <tr><td>Passing 1.000 ft RA – auto callout "ONE THOUSAND"</td><td>"CHECKED"</td><td>"CHECKED"</td></tr>
 <tr><td>At 500 ft RA – verify Autoland status as required for planned approach</td><td>"CHECKED"</td><td>"LAND 3"</td></tr>

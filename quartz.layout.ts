@@ -3,12 +3,13 @@ import * as Component from "./quartz/components"
 import BookNavigation from "./quartz/components/BookNavigation"
 import FloatingHome from "./quartz/components/FloatingHome"
 import ImageLightbox from "./quartz/components/ImageLightbox"
+import OfflineStatus from "./quartz/components/OfflineStatus"
 
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [Component.Search(), Component.Darkmode()],
-  afterBody: [BookNavigation(), FloatingHome(), ImageLightbox()],
+  afterBody: [BookNavigation(), FloatingHome(), ImageLightbox(), OfflineStatus()],
   footer: Component.Footer({ links: {} }),
 }
 
