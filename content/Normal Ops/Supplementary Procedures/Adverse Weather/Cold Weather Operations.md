@@ -5,15 +5,41 @@ tags: [sop, supplementary, warning-systems]
 
 # Cold Weather Operations
 
-Considerations associated with cold weather operation are primarily concerned with low temperatures and with ice, snow, slush, and standing water on the airplane, ramps, taxiways, and runways.
+## Cold WX Quick Guide
 
-Icing conditions exist when OAT (on the ground) or TAT (in-flight) is 10°C or below, and any of the following exist:
+<div class="eicas-levels">
 
-- visible moisture (clouds, fog with visibility of one statute mile (1600 m) or less, rain, snow, sleet, ice crystals, and so on) is present, or
-- ice, snow, slush, or standing water is present on the ramps, taxiways, or runways
+<div class="eicas-card eicas-card--red">
+  <div class="eicas-card-title">Definition: Icing Conditions</div>
+  <div class="eicas-card-body"><strong>Temperature:</strong> OAT (ground) or TAT (flight) ≤ 10°C<br><strong>Moisture:</strong> Visible moisture (visibility ≤ 1.600 m / 1 SM, clouds, rain, snow, ice crystals) <strong>or</strong> contaminated surfaces (ice, snow, slush, standing water)</div>
+</div>
 
-> [!warning] Caution
-> Do not use engine anti-ice when OAT (on the ground) is above 10°C. Do not use engine or wing anti-ice when displayed TAT (in-flight) is above 10°C.
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">1 · Preflight, De-Icing &amp; Start</div>
+  <div class="eicas-card-body"><strong>Exterior Inspection:</strong> Max. 3 mm (1/8 inch) hoarfrost on lower wing surfaces / upper fuselage is allowed. All other critical surfaces must be clear<br><strong>De-Icing/Anti-Icing:</strong> Flaps UP · Thrust IDLE · PACK switches OFF · leave the APU OFF if possible<br><strong>Engine Start:</strong> Oil pressure may be slow to rise<br><strong>Engine Anti-Ice (EAI):</strong> Select ON immediately after both engines are started (except OAT &lt; −40°C)<br><span class="c-amber"><strong>Caution:</strong></span> Do not use EAI when OAT &gt; 10°C</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">2 · Taxi-Out &amp; Takeoff</div>
+  <div class="eicas-card-body"><strong>Taxiing:</strong> If the taxi route is through slush/snow/ice, taxi with Flaps UP. Extend to takeoff flaps only when clear of contamination (prior to the Before Takeoff Checklist)<br><strong>Engine Run-ups (OAT ≤ 3°C + visible moisture):</strong> Every 60 minutes: min. 40% N1 for ≥ 5 seconds<br><strong>Static Run-up (just before takeoff):</strong> 40% to max. 55% N1 for ≥ 5 seconds. Confirm stable engine indications before starting the takeoff roll<br><strong>Takeoff Calculation:</strong> The Assumed Temperature method (D-TO) is prohibited on contaminated runways</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">3 · Inflight (Cruise &amp; Descent)</div>
+  <div class="eicas-card-body"><strong>Anti-Ice System:</strong> EAI / WAI on AUTO or ON. Manual operation: Select ON before entering icing conditions (do not rely on visual airframe icing cues)<br><strong>Fan Ice Removal:</strong> During prolonged moderate/severe icing &amp; ≤ 70% N1: Every 15 minutes, increase thrust (one engine at a time) to min. 70% N1 for 10 to 30 seconds<br><strong>Ice Crystal Icing (ICI):</strong> Be alert near high-altitude thunderstorms. Indicators: TAT stays near 0°C or the sound of liquid water on the windshield. Execute ICI non-normal checklist if suspected<br><strong>Descent:</strong> Enter expected anti-ice altitudes on the FMC DESCENT FORECAST page (for an accurate VNAV path). Apply Cold Temperature Altitude Corrections during the approach</div>
+</div>
+
+<div class="eicas-card eicas-card--white">
+  <div class="eicas-card-title">4 · After Landing, Taxi-In &amp; Secure</div>
+  <div class="eicas-card-body"><strong>Flaps:</strong> After landing in icing conditions or on a contaminated runway, do <strong>not</strong> retract the flaps until they have been checked by ground personnel to be free of contaminates<br><strong>Taxi-In:</strong> Taxi at a reduced speed, using minimum tiller and thrust inputs<br><strong>Engine Run-ups:</strong> If OAT remains ≤ 3°C with visible moisture, continue the 60-min run-up intervals (40% N1 for ≥ 5 s) during taxi-in<br><strong>Secure (airplane left unattended):</strong> OUTFLOW VALVE switches to MAN and CLOSE (inhibits the intake of snow or ice) · Parking brake RELEASED (verify chocks are in place) to prevent frozen brakes</div>
+</div>
+
+<div class="eicas-card eicas-card--amber">
+  <div class="eicas-card-title">5 · Mandatory TLB Entries <span class="eicas-card-badge">after landing</span></div>
+  <div class="eicas-card-body"><strong>Taxi-In Time (the 120-minute limit):</strong><br>Condition: OAT ≤ 3°C + visible moisture <strong>and</strong> no engine run-up was performed during taxi-in<br>Action: Log the taxi-in time. This time will be added to the taxi-out time of the next flight – a total time &gt; 120 min requires manual engine de-icing on the ground<br><br><strong>Slat Drive System Check:</strong><br>Condition: Landing at ≤ 10°C on a contaminated runway or visible airframe ice was observed <strong>and</strong> flaps were left extended after landing (or retracted for safety reasons)<br>Action: Make the following exact TLB entry: "Flaps and slats operated in specified cold weather conditions." This triggers a post-flight operation check of the outboard slat actuators by maintenance</div>
+</div>
+
+</div>
 
 
 ## Preliminary Preflight Procedure – Captain or First Officer
