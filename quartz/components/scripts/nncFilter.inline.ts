@@ -21,6 +21,12 @@ function setupNncFilter() {
     "hydraulic","gear","warnings","backcover",
   ]
 
+  // Toggle buttons: visual state via .active, announced state via aria-pressed
+  const setPressed = (btn: HTMLElement, on: boolean) => {
+    btn.classList.toggle("active", on)
+    btn.setAttribute("aria-pressed", String(on))
+  }
+
   let currentMode: string      = "alpha"
   let currentCat:  string|null = null
   let currentLevel: string|null = null
@@ -59,7 +65,7 @@ function setupNncFilter() {
     )
 
     document.querySelectorAll<HTMLElement>(".nn-filter-btn").forEach(btn => {
-      btn.classList.toggle("active", btn.dataset.mode === currentMode)
+      setPressed(btn, btn.dataset.mode === currentMode)
     })
 
     if (currentMode === "eicas") {
@@ -67,7 +73,7 @@ function setupNncFilter() {
     } else {
       levelBar?.classList.remove("visible")
       currentLevel = null
-      document.querySelectorAll<HTMLElement>(".nn-level-btn").forEach(b => b.classList.remove("active"))
+      document.querySelectorAll<HTMLElement>(".nn-level-btn").forEach(b => setPressed(b, false))
     }
 
     if (currentMode === "cat") {
@@ -115,7 +121,7 @@ function setupNncFilter() {
     const key = btn.dataset.level ?? ""
     currentLevel = currentLevel === key ? null : key
     document.querySelectorAll<HTMLElement>(".nn-level-btn").forEach(b => {
-      b.classList.toggle("active", b.dataset.level === currentLevel)
+      setPressed(b, b.dataset.level === currentLevel)
     })
     applyFilter()
   }
@@ -126,7 +132,7 @@ function setupNncFilter() {
     const key = btn.dataset.cat ?? ""
     currentCat = currentCat === key ? null : key
     document.querySelectorAll<HTMLElement>(".nn-cat-btn").forEach(b => {
-      b.classList.toggle("active", b.dataset.cat === currentCat)
+      setPressed(b, b.dataset.cat === currentCat)
     })
     applyFilter()
   }
@@ -142,6 +148,7 @@ function setupNncFilter() {
     window.addCleanup(() => catBar.removeEventListener("click", onCatClick))
   }
 
+  document.querySelectorAll<HTMLElement>(".nn-cat-btn").forEach(b => setPressed(b, false))
   applyFilter()
 
   // Inject EICAS / Unann badges

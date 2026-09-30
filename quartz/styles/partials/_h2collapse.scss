@@ -31,7 +31,30 @@ h2.is-collapsed:has(> .h2-collapse-btn) {
 
 .h2-collapse-btn {
   flex-shrink: 0;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.15em;
+  margin: 0;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+
+  &.is-collapsed .h2-collapse-icon {
+    transform: rotateZ(-90deg);
+  }
+
+  h2:hover > & .h2-collapse-icon {
+    opacity: 1;
+  }
+}
+
+// Icon lives on a child span: a mask on the button itself would clip its focus ring
+.h2-collapse-icon {
+  display: block;
   width: 1em;
   height: 1em;
   background-color: var(--secondary);
@@ -41,12 +64,11 @@ h2.is-collapsed:has(> .h2-collapse-btn) {
   mask-position: center;
   opacity: 0.75;
   transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s ease;
+}
 
-  &.is-collapsed {
-    transform: rotateZ(-90deg);
-  }
-
-  h2:hover > & {
-    opacity: 1;
+@media (prefers-reduced-motion: reduce) {
+  .h2-section-content,
+  .h2-collapse-icon {
+    transition: none;
   }
 }

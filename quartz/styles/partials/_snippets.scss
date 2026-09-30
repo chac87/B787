@@ -403,11 +403,27 @@ h6,
     --status-red-dark: #ff7b7b;      /* dark-mode tints */
     --status-amber-dark: #f5c842;
     --status-advisory-dark: #e8a835;
+    /* Status colors as TEXT. The signal hues above stay for bars, borders and
+       fills; on the light sand background they fall below 4.5:1 as text
+       (amber 1.9:1), so text uses these darker shades (all >= 5:1). */
+    --status-red-text: #B3261E;
+    --status-amber-text: #765600;
+    --status-advisory-text: #9C4A00;
+    --status-green-text: #176A32;
 }
 
-.c-red   { color: #e74c3c }
-.c-amber { color: #f39c12 }
-.c-green { color: #2ecc71 }
+/* Quartz theme toggle + Obsidian dark theme */
+[saved-theme="dark"],
+.theme-dark {
+    --status-red-text: var(--status-red-dark);
+    --status-amber-text: var(--status-amber-dark);
+    --status-advisory-text: var(--status-advisory-dark);
+    --status-green-text: #2ecc71;
+}
+
+.c-red   { color: var(--status-red-text) }
+.c-amber { color: var(--status-amber-text) }
+.c-green { color: var(--status-green-text) }
 /* CM1 / PF — bold label in proc callouts → LHG Core Blue */
 .callout[data-callout="proc"] p > strong:first-child {
   color: #3257BC;

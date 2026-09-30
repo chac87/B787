@@ -8,15 +8,27 @@ function setupRegVariant() {
 
   function applyVariant(variant: string | null) {
     blocks.forEach(b => b.classList.toggle("hidden", !!variant && b.dataset.variant !== variant))
-    btns.forEach(b => b.classList.toggle("active", b.dataset.variant === variant))
+    btns.forEach(b => {
+      const on = b.dataset.variant === variant
+      b.classList.toggle("active", on)
+      b.setAttribute("aria-pressed", String(on))
+    })
   }
 
-  applyVariant(localStorage.getItem("reg-variant") || null)
+  // Storage can throw (Safari private mode, blocked site data) — the selector
+  // must still work, it just won't remember the choice.
+  let saved: string | null = null
+  try {
+    saved = localStorage.getItem("reg-variant")
+  } catch {}
+  applyVariant(saved || null)
 
   btns.forEach(btn => {
     btn.addEventListener("click", () => {
       const next = btn.classList.contains("active") ? null : (btn.dataset.variant ?? null)
-      localStorage.setItem("reg-variant", next ?? "")
+      try {
+        localStorage.setItem("reg-variant", next ?? "")
+      } catch {}
       applyVariant(next)
     })
   })

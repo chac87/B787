@@ -242,7 +242,7 @@
 .nnc-caution {
   font-size: 0.85em;
   font-style: italic;
-  color: var(--status-red);
+  color: var(--status-red-text);
   margin: 0.4em 0 0.4em 0;
   line-height: 1.45;
 }
@@ -281,6 +281,13 @@
       background: var(--lhg-light-blue);
       color: #05164D;
     }
+  }
+}
+
+// Touch devices: 44px targets, same as the NNC filter pills
+@media (pointer: coarse) {
+  .reg-btn {
+    min-height: 44px;
   }
 }
 

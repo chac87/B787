@@ -272,7 +272,7 @@ article table td:first-child:has(+ td .sop-badge) {
 .cl-warning {
   font-size: 0.85em;
   font-style: italic;
-  color: var(--status-red);
+  color: var(--status-red-text);
   margin-left: 1.4em;
   line-height: 1.4;
 }
@@ -280,7 +280,7 @@ article table td:first-child:has(+ td .sop-badge) {
 .cl-caution {
   font-size: 0.85em;
   font-style: italic;
-  color: var(--status-amber);
+  color: var(--status-amber-text);
   margin-left: 1.4em;
   line-height: 1.4;
 }

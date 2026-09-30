@@ -277,7 +277,8 @@ Status colors (EICAS red/amber/advisory + dark tints) are centralized as CSS var
 
 ### Exceptions — do NOT change
 
-- `.c-red` (`#e74c3c`) and `.c-amber` (`#f39c12`) — EICAS indicator colors, always keep as-is
+- EICAS signal hues `--status-red` (`#e74c3c`), `--status-amber` (`#f39c12`), `--status-advisory` — keep as-is for bars, borders and fills
+- Status colors as **text** always use the theme-aware `--status-*-text` tokens (light: darker shades ≥ 5:1 on sand; dark: the `-dark` tints). `.c-red`, `.c-amber`, `.c-green` use them. Never put a raw signal hue on text — amber on sand is 1.9:1. Tokens live in the `global-hacks.css` snippet.
 - `quartz.config.ts` background/text colors (`light`, `lightgray`, `gray`, `darkgray`, `dark`) — these are the warm sand/navy page palette, not LHG brand colors
 
 ### Speed Notation

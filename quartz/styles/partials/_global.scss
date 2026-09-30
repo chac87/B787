@@ -15,37 +15,43 @@
 
 .callout.is-collapsible > .callout-title,
 .callout.is-collapsible > .callout-title * {
-  cursor: pointer !important;
+  cursor: pointer;
 }
 
 .callout .fold-callout-icon {
-  background-color: var(--accent) !important;
-  opacity: 1 !important;
+  background-color: var(--accent);
+  opacity: 1;
 }
 
 .callout .fold-callout-icon:hover {
-  opacity: 0.7 !important;
+  opacity: 0.7;
 }
 
 /* =========================================
-   CLEAN LINKS (Keine Unterstreichung)
+   LINKS
+   custom.scss loads after base.scss and all component styles, so equal
+   specificity is enough to override — no !important needed.
    ========================================= */
 
-/* 1. Alle Links im Text "nackt" machen */
 a,
 a.internal,
 a.external {
-    text-decoration: none !important;      /* Keine Linie */
-    background: none !important;           /* Kein Hintergrund-Balken */
-    border: none !important;
-    transition: color 0.2s ease;           /* Weicher Farbwechsel */
-    touch-action: manipulation;            /* Verhindert iOS Doppelklick-Delay */
+  color: var(--secondary);
+  text-decoration: none;
+  background: none;
+  border: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  touch-action: manipulation; /* Verhindert iOS Doppelklick-Delay */
 }
 
-/* 2. Nur die Farbe steuert jetzt die Interaktion */
-/* Normalzustand */
-a {
-    color: var(--secondary) !important;
+/* Links inside running text need a second cue besides color (WCAG 1.4.1):
+   link vs. body text is only 1.7:1. Navigation, checklists and the NNC index
+   are not prose and stay underline-free. */
+article :is(p, li, td) a:is(.internal, .external):not(.tag-link) {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
 }
 
 /* Breadcrumb + book navigation: always dark */
@@ -53,7 +59,7 @@ a {
 .book-navigation .nav-btn,
 .book-navigation .nav-label,
 .book-navigation .nav-title {
-    color: var(--dark) !important;
+  color: var(--dark);
 }
 
 /* Hover-Zustand (nur auf Geräten mit echter Maus) */
@@ -61,12 +67,38 @@ a {
   a:hover,
   a.internal:hover,
   a.external:hover {
-      color: var(--tertiary) !important;
-      background: transparent !important;
+    color: var(--tertiary);
+    background: transparent;
+    text-decoration-color: currentColor;
   }
 }
 
-/* Heading anchor icon: immer verstecken */
+/* Heading anchor icon: immer verstecken.
+   !important: base.scss targets it via h1–h6[id] > a[href^="#"] (higher specificity). */
 a[role="anchor"] {
   display: none !important;
+}
+
+/* =========================================
+   FOCUS
+   One visible ring for every keyboard-reachable control. :focus-visible
+   keeps it off mouse clicks.
+   ========================================= */
+
+:is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 2px;
+  border-radius: 3px;
+}
+
+/* =========================================
+   REDUCED MOTION
+   Component-specific fallbacks live next to each component; this covers
+   the page-level smooth scrolling from base.scss.
+   ========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

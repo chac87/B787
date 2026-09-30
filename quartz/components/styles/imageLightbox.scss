@@ -27,6 +27,10 @@ article img:not([alt*="clean"]) {
     visibility: visible;
     pointer-events: auto;
     opacity: 1;
+    // Become visible instantly on open (a transitioning visibility is still
+    // "hidden" at its start, which makes focus() on the close button fail);
+    // the delayed hide on close comes from the base transition.
+    transition: opacity 0.25s ease, visibility 0s;
   }
 
   #lightbox-img {
@@ -51,8 +55,8 @@ article img:not([alt*="clean"]) {
     color: #fff;
     font-size: 1.6rem;
     line-height: 1;
-    width: 36px;
-    height: 36px;
+    width: 44px;
+    height: 44px;
     border-radius: 50%;
     cursor: pointer;
     display: flex;
@@ -62,6 +66,21 @@ article img:not([alt*="clean"]) {
 
     &:hover {
       background: rgba(255, 255, 255, 0.3);
+    }
+
+    &:focus-visible {
+      outline: 2px solid #fff;
+      outline-offset: 2px;
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #lightbox-overlay {
+    transition: none;
+
+    #lightbox-img {
+      animation: none;
     }
   }
 }

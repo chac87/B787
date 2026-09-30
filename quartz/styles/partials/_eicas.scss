@@ -16,7 +16,7 @@
   .eicas-card-title {
     font-weight: 700;
     font-size: 0.95em;
-    color: var(--card-color, #888);
+    color: var(--card-text, var(--card-color, #888));
     margin-bottom: 0.2em;
   }
 
@@ -32,18 +32,19 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     border: 1.5px solid var(--card-color, #888);
-    color: var(--card-color, #888);
+    color: var(--card-text, var(--card-color, #888));
     border-radius: 4px;
     padding: 1px 6px;
     margin-left: 0.5em;
     vertical-align: middle;
-    opacity: 0.8;
   }
 }
 
-.eicas-card--red   { --card-color: var(--status-red); }
-.eicas-card--amber { --card-color: var(--status-amber); }
-.eicas-card--white { --card-color: #888888; }
+/* --card-color paints bar and tint; --card-text is the readable shade for text.
+   The neutral text mixes toward --dark so it stays legible in both themes. */
+.eicas-card--red   { --card-color: var(--status-red);   --card-text: var(--status-red-text); }
+.eicas-card--amber { --card-color: var(--status-amber); --card-text: var(--status-amber-text); }
+.eicas-card--white { --card-color: #888888; --card-text: color-mix(in srgb, #888888, var(--dark) 45%); }
 
 [saved-theme="dark"] .eicas-card {
   background: color-mix(in srgb, var(--card-color, #888), transparent 88%);
@@ -68,9 +69,9 @@
   padding: 0.65rem 0.9rem;
 }
 
-.nn-flow-step--red { --nn-flow-color: var(--status-red); }
-.nn-flow-step--amber { --nn-flow-color: var(--status-amber); }
-.nn-flow-step--white { --nn-flow-color: #888888; }
+.nn-flow-step--red { --nn-flow-color: var(--status-red); --nn-flow-text: var(--status-red-text); }
+.nn-flow-step--amber { --nn-flow-color: var(--status-amber); --nn-flow-text: var(--status-amber-text); }
+.nn-flow-step--white { --nn-flow-color: #888888; --nn-flow-text: color-mix(in srgb, #888888, var(--dark) 45%); }
 .nn-flow-step--blue { --nn-flow-color: #3E5FA8; }
 
 .nn-flow-num {
@@ -81,14 +82,14 @@
   height: 1.6rem;
   border: 1.5px solid var(--nn-flow-color);
   border-radius: 999px;
-  color: var(--nn-flow-color);
+  color: var(--nn-flow-text, var(--nn-flow-color));
   font-weight: 700;
   font-size: 0.82rem;
   line-height: 1;
 }
 
 .nn-flow-title {
-  color: var(--nn-flow-color);
+  color: var(--nn-flow-text, var(--nn-flow-color));
   font-weight: 700;
   font-size: 0.98rem;
   line-height: 1.25;
@@ -137,14 +138,14 @@
   min-width: 0;
 }
 
-.nn-branch--yes { --nn-branch-color: var(--status-amber); }
+.nn-branch--yes { --nn-branch-color: var(--status-amber); --nn-branch-text: var(--status-amber-text); }
 .nn-branch--no { --nn-branch-color: #3E5FA8; }
 
 .nn-branch-label {
   justify-self: start;
   border: 1.5px solid var(--nn-branch-color);
   border-radius: 999px;
-  color: var(--nn-branch-color);
+  color: var(--nn-branch-text, var(--nn-branch-color));
   font-size: 0.7rem;
   font-weight: 800;
   letter-spacing: 0.06em;

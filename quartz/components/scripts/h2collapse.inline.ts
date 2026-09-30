@@ -12,8 +12,13 @@ function setupH2Collapse() {
   article.querySelectorAll(".h2-collapse-btn").forEach((b) => b.remove())
 
   const isHomeIndex = article.querySelector("h1")?.textContent?.trim() === "B787 Guide"
+  // hidden="until-found" keeps collapsed text findable via Cmd+F (browser
+  // fires beforematch and we expand). Without support, fall back to inert.
+  const supportsUntilFound = "onbeforematch" in document.body
+  // Matches the grid-template-rows transition in _h2collapse.scss
+  const collapseMs = 200
 
-  for (const h2 of Array.from(article.querySelectorAll("h2"))) {
+  for (const [index, h2] of Array.from(article.querySelectorAll("h2")).entries()) {
     if (h2.classList.contains("h2-no-collapse")) continue
     const h2Link = h2.querySelector("a.internal") as HTMLAnchorElement | null
     if (
@@ -38,28 +43,64 @@ function setupH2Collapse() {
 
     // Outer = grid container, inner = min-height:0 child for 0fr collapse
     const outer = document.createElement("div")
-    outer.className = "h2-section-content is-collapsed"
-    outer.style.gridTemplateRows = "0fr"
+    outer.className = "h2-section-content"
+    outer.id = `h2-section-${h2.id || index}`
     const inner = document.createElement("div")
     siblings.forEach((s) => inner.appendChild(s))
     outer.appendChild(inner)
     h2.after(outer)
 
-    // Visual indicator button (non-interactive — h2 handles click)
-    const btn = document.createElement("span")
-    btn.className = "h2-collapse-btn is-collapsed"
+    // Real button so the section is reachable by keyboard and screen readers.
+    // Its click bubbles to the h2 handler, which also serves mouse clicks on the text.
+    const btn = document.createElement("button")
+    btn.type = "button"
+    btn.className = "h2-collapse-btn"
+    btn.setAttribute("aria-controls", outer.id)
+    if (h2.id) btn.setAttribute("aria-labelledby", h2.id)
+    else btn.setAttribute("aria-label", h2.textContent?.trim() ?? "")
+    btn.appendChild(document.createElement("span")).className = "h2-collapse-icon"
     h2.appendChild(btn)
+
+    let hideTimer: number | undefined
+    const setCollapsed = (collapsed: boolean) => {
+      window.clearTimeout(hideTimer)
+      outer.classList.toggle("is-collapsed", collapsed)
+      outer.style.gridTemplateRows = collapsed ? "0fr" : "1fr"
+      btn.classList.toggle("is-collapsed", collapsed)
+      btn.setAttribute("aria-expanded", String(!collapsed))
+      h2.classList.toggle("is-collapsed", collapsed)
+
+      if (!collapsed) {
+        inner.removeAttribute("hidden")
+        outer.inert = false
+        return
+      }
+      // inert right away so focus can't land in the closing section;
+      // swap to until-found once the collapse animation has finished.
+      outer.inert = true
+      if (supportsUntilFound) {
+        hideTimer = window.setTimeout(() => {
+          inner.setAttribute("hidden", "until-found")
+          outer.inert = false
+        }, collapseMs)
+      }
+    }
+
+    setCollapsed(true)
 
     const toggle = (e: Event) => {
       // Don't toggle when clicking the heading anchor link
       if ((e.target as Element).closest('a[role="anchor"]')) return
-      const collapsed = outer.classList.toggle("is-collapsed")
-      outer.style.gridTemplateRows = collapsed ? "0fr" : "1fr"
-      btn.classList.toggle("is-collapsed", collapsed)
-      h2.classList.toggle("is-collapsed", collapsed)
+      setCollapsed(!outer.classList.contains("is-collapsed"))
     }
+    const onBeforeMatch = () => setCollapsed(false)
     h2.addEventListener("click", toggle)
-    window.addCleanup(() => h2.removeEventListener("click", toggle))
+    inner.addEventListener("beforematch", onBeforeMatch)
+    window.addCleanup(() => {
+      window.clearTimeout(hideTimer)
+      h2.removeEventListener("click", toggle)
+      inner.removeEventListener("beforematch", onBeforeMatch)
+    })
   }
 }
 

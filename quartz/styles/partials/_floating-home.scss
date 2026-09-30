@@ -14,14 +14,13 @@
     align-items: stretch;
     width: 46px;
 
-    background-color: rgba(50, 87, 188, 0.82);
-    background: rgba(50, 87, 188, 0.82);
+    background: color-mix(in srgb, var(--lhg-core-blue) 82%, transparent);
     color: #ffffff;
     border-radius: 23px;
     border: none;
     overflow: hidden;
 
-    box-shadow: 0 4px 20px rgba(50,87,188,0.4);
+    box-shadow: 0 4px 20px color-mix(in srgb, var(--lhg-core-blue) 40%, transparent);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     transition: opacity 0.3s ease, transform 0.3s ease, box-shadow 0.2s;
@@ -86,7 +85,7 @@ body[data-slug="index"] .floating-home {
     align-items: center;
     justify-content: center;
     height: 46px;
-    color: #ffffff !important; /* overrides global a { color: !important } */
+    color: #ffffff;
     text-decoration: none;
     background: none;
     transition: background 0.15s;
@@ -94,7 +93,7 @@ body[data-slug="index"] .floating-home {
 
 .floating-home__home:hover {
     background: rgba(255, 255, 255, 0.12);
-    color: #ffffff !important; /* overrides global a:hover { color: !important } */
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -154,4 +153,28 @@ body[data-slug="index"] .floating-home {
 .floating-home__top > svg:last-child {
     position: relative;
     z-index: 1;
+}
+
+/* The pill clips overflow, so an outside ring would be cut off — draw it inset.
+   Element selectors lift specificity above the global ring in _global.scss. */
+.floating-home a:focus-visible,
+.floating-home button:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: -4px;
+    border-radius: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .floating-home {
+        transition: opacity 0.2s ease;
+        transform: none;
+    }
+
+    .floating-home.is-visible {
+        transform: none;
+    }
+
+    .floating-home .progress-ring__fill {
+        transition: none;
+    }
 }
