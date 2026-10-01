@@ -15,7 +15,7 @@ role: Both
 | PF | PM |
 |:---|:---|
 | | During climb or cruise, verify the RNP as needed. |
-| | **When passing FL100:**<br>· LDG Lights OFF<br>· Seat belt signs AUTO<br><span style="color:var(--gray)">· Delete NAV RAD</span><br><span style="color:var(--gray)">· Erase FIXES</span><br><span class="nnc-note">Consider reducing CLB Thrust to CLB1 or CLB2 (check ALT constraints, ATC, Terrain)</span> |
+| | **When passing FL100:**<br>· LDG Lights OFF<br>· Seat belt signs AUTO<br><span style="color:var(--text-muted)">· Delete NAV RAD</span><br><span style="color:var(--text-muted)">· Erase FIXES</span><br><span class="nnc-note">Consider reducing CLB Thrust to CLB1 or CLB2 (check ALT constraints, ATC, Terrain)</span> |
 | <span class="nnc-note">Note: In case of passenger-upgrade or re-seating of passengers, refer to Passenger-Upgrade on Board.</span> | |
 | When climbing above transition altitude, set the altimeters to standard.<br><span class="nnc-note">Note: Pilot Monitoring sets standby altimeter.</span> | |
 | <span class="sop-tag-items">PF: "Altimeters"</span> | |

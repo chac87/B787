@@ -11,7 +11,8 @@ const config: QuartzConfig = {
     },
     locale: "de-DE",
     baseUrl: "lh787.netlify.app",
-    ignorePatterns: ["private", "templates", ".obsidian"],
+    // book.md is only the Prev/Next manifest (read by BookNavigation via fs), not a page
+    ignorePatterns: ["private", "templates", ".obsidian", "book.md"],
     defaultDateType: "modified",
     theme: {
       fontOrigin: "googleFonts",
@@ -61,6 +62,7 @@ const config: QuartzConfig = {
         keepBackground: false,
       }),
       Plugin.ObsidianFlavoredMarkdown({ enableInHtmlEmbed: false }),
+      Plugin.ProcCalloutLines(),
       Plugin.GitHubFlavoredMarkdown(),
       Plugin.TableOfContents(),
       Plugin.CrawlLinks({ markdownLinkResolution: "shortest", lazyLoad: true }),

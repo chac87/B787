@@ -12,7 +12,7 @@ role: Both
 
 <div class="checklist">
 
-<div class="cl-note" style="color:#2d7d32">The SECURE PROCEDURE must not be performed before all passengers have exited the airplane.</div>
+<div class="cl-note" style="color:var(--status-green-text)">The SECURE PROCEDURE must not be performed before all passengers have exited the airplane.</div>
 
 <span class="sop-tag-items">CP: "SECURE Items"</span>
 
@@ -55,6 +55,6 @@ role: Both
 | <span class="c-green">**Battery**</span> | <span class="c-green">Off</span> | F/O |
 | <span class="c-green">**Emergency lights**</span> | <span class="c-green">Off</span> | F/O |
 | <span class="c-green">**Packs**</span> | <span class="c-green">Off</span> | F/O |
-| **RDC18**<br><small style="color:var(--gray)">B787 (-ABPF to -ABPU, -ABQA to -ABQG)</small> | SECURED | F/O |
+| **RDC18**<br><small style="color:var(--text-muted)">B787 (-ABPF to -ABPU, -ABQA to -ABQG)</small> | SECURED | F/O |
 
 <div style="text-align:center;margin-top:1.2em"><span class="sop-tag-cl">F/O: „Secure Checklist complete."</span></div>

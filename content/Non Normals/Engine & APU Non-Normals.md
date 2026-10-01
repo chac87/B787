@@ -47,11 +47,11 @@ tags: [non-normal, engine]
 <div class="eicas-card eicas-card--white">
   <div class="eicas-card-title">Engine Fail: JCENA</div>
   <div class="eicas-card-body" style="line-height: 2.1">
-    <span><strong style="color: #3257BC">J</strong> – Just fly / Memory Items</span><br>
-    <span style="padding-left: 1.8em"><strong style="color: #3257BC">C</strong> – Clean-Up and CON Thrust</span><br>
-    <span style="padding-left: 3.6em"><strong style="color: #3257BC">E</strong> – Eng Out on VNAV</span><br>
-    <span style="padding-left: 5.4em"><strong style="color: #3257BC">N</strong> – NNC</span><br>
-    <span style="padding-left: 7.2em"><strong style="color: #3257BC">A</strong> – After Take Off Checklist</span>
+    <span><strong style="color: var(--secondary)">J</strong> – Just fly / Memory Items</span><br>
+    <span style="padding-left: 1.8em"><strong style="color: var(--secondary)">C</strong> – Clean-Up and CON Thrust</span><br>
+    <span style="padding-left: 3.6em"><strong style="color: var(--secondary)">E</strong> – Eng Out on VNAV</span><br>
+    <span style="padding-left: 5.4em"><strong style="color: var(--secondary)">N</strong> – NNC</span><br>
+    <span style="padding-left: 7.2em"><strong style="color: var(--secondary)">A</strong> – After Take Off Checklist</span>
   </div>
 </div>
 

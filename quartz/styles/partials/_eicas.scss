@@ -72,7 +72,7 @@
 .nn-flow-step--red { --nn-flow-color: var(--status-red); --nn-flow-text: var(--status-red-text); }
 .nn-flow-step--amber { --nn-flow-color: var(--status-amber); --nn-flow-text: var(--status-amber-text); }
 .nn-flow-step--white { --nn-flow-color: #888888; --nn-flow-text: color-mix(in srgb, #888888, var(--dark) 45%); }
-.nn-flow-step--blue { --nn-flow-color: #3E5FA8; }
+.nn-flow-step--blue { --nn-flow-color: #3E5FA8; --nn-flow-text: #3E5FA8; }
 
 .nn-flow-num {
   display: inline-flex;
@@ -140,6 +140,26 @@
 
 .nn-branch--yes { --nn-branch-color: var(--status-amber); --nn-branch-text: var(--status-amber-text); }
 .nn-branch--no { --nn-branch-color: #3E5FA8; }
+
+/* #3E5FA8 as text is 2.9:1 on the dark background → Light Blue in dark mode */
+[saved-theme="dark"] {
+  .nn-flow-step--blue { --nn-flow-text: var(--lhg-light-blue); }
+  .nn-branch,
+  .nn-branch--no { --nn-branch-text: var(--lhg-light-blue); }
+  .nn-branch--yes { --nn-branch-text: var(--status-amber-text); }
+}
+
+/* Color legend swatch (e.g. display color coding). Shows the hue as a filled
+   square so the label itself stays in readable text color. */
+.color-swatch {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  margin-right: 0.4em;
+  border-radius: 2px;
+  background: var(--swatch);
+  vertical-align: -0.05em;
+}
 
 .nn-branch-label {
   justify-self: start;

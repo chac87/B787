@@ -196,7 +196,8 @@ article table td:first-child:has(+ td .sop-badge) {
 .cl-sub {
   margin-left: 1.4em;
   font-size: 0.875em;
-  opacity: 0.75;
+  // Muted via color, not opacity: opacity also dimmed colored hints inside (c-amber → 3.5:1)
+  color: var(--text-muted);
   line-height: 1.5;
 }
 
@@ -264,7 +265,7 @@ article table td:first-child:has(+ td .sop-badge) {
 .cl-note {
   font-size: 0.85em;
   font-style: italic;
-  opacity: 0.75;
+  color: var(--text-muted);
   margin-left: 1.4em;
   line-height: 1.4;
 }

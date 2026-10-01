@@ -9,11 +9,11 @@ role: Both
 
 <div style="display:flex;flex-wrap:wrap;gap:0.5em;margin:1em 0 0.25em 0;">
 <span class="sop-badge" style="background:#3257BC;color:#fff;border-color:#3257BC">ON GROUND</span>
-<span style="align-self:center;color:var(--gray)">→</span>
-<span class="sop-badge" style="background:#4B9DA1;color:#fff;border-color:#4B9DA1">IN FLIGHT</span>
+<span style="align-self:center;color:var(--text-muted)">→</span>
+<span class="sop-badge" style="background:#4B9DA1;color:#05164D;border-color:#4B9DA1">IN FLIGHT</span>
 </div>
 
-<p style="font-size:0.8em;color:var(--gray);font-style:italic;margin:0.25em 0 1.5em 0;">C kündigt Items und Checklisten an · F/O führt Checklisten aus · PF/PM wechselt mit dem Leg</p>
+<p style="font-size:0.8em;color:var(--text-muted);font-style:italic;margin:0.25em 0 1.5em 0;">C kündigt Items und Checklisten an · F/O führt Checklisten aus · PF/PM wechselt mit dem Leg</p>
 
 <div class="sop-flow">
 
@@ -115,7 +115,7 @@ role: Both
 </div>
 </div>
 
-<div class="sop-phase-bar" style="background:#4B9DA1">In Flight</div>
+<div class="sop-phase-bar" style="background:#4B9DA1;color:#05164D">In Flight</div>
 
 <div class="sop-entry">
 <div class="sop-entry-name">

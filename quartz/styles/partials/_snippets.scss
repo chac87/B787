@@ -424,9 +424,13 @@ h6,
 .c-red   { color: var(--status-red-text) }
 .c-amber { color: var(--status-amber-text) }
 .c-green { color: var(--status-green-text) }
+/* Colors use the theme tokens (--secondary / --dark switch with Quartz's theme);
+   the hex fallbacks apply in Obsidian, which has its own dark override below.
+   Fixed hex used to leave the PM lines at 1.1:1 in dark mode. */
+
 /* CM1 / PF — bold label in proc callouts → LHG Core Blue */
-.callout[data-callout="proc"] p > strong:first-child {
-  color: #3257BC;
+.callout[data-callout="proc"] p:not(.proc-pm) > strong:first-child {
+  color: var(--secondary, #3257BC);
 }
 
 /* Tight paragraph spacing in proc callouts (blank > lines create paragraphs) */
@@ -448,17 +452,29 @@ h6,
   cursor: default;
 }
 
-/* CM2 / PM — h6 lines in proc callouts → LHG Core Blue Dark, right-aligned */
-.callout[data-callout="proc"] h6 {
-  color: #05164D;
+/* CM2 / PM — `######` lines in proc callouts → LHG Core Blue Dark, right-aligned.
+   Obsidian renders them as h6; the Quartz build turns them into p.proc-pm so
+   screen readers don't announce them as headings. */
+.callout[data-callout="proc"] :is(h6, .proc-pm) {
+  color: var(--dark, #05164D);
+  font-family: var(--headerFont, inherit);
   font-weight: 400;
   font-size: 0.9em;
   text-align: right;
   margin: 0.1em 0;
 }
-.callout[data-callout="proc"] h6 strong {
-  color: #05164D;
+.callout[data-callout="proc"] :is(h6, .proc-pm) strong {
+  color: var(--dark, #05164D);
   font-weight: 700;
+}
+
+/* Obsidian dark theme (Quartz is covered by the tokens above) */
+.theme-dark .callout[data-callout="proc"] p:not(.proc-pm) > strong:first-child {
+  color: #5291ED;
+}
+.theme-dark .callout[data-callout="proc"] :is(h6, .proc-pm),
+.theme-dark .callout[data-callout="proc"] :is(h6, .proc-pm) strong {
+  color: var(--text-normal);
 }
 
 /* Compact dot-leader rows inside callouts */

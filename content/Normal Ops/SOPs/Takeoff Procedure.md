@@ -59,7 +59,7 @@ role: Both
 
 | PF | PM |
 |:---|:---|
-| | Monitor the engine instruments during the takeoff. Call out any abnormal indications.<br>Adjust takeoff thrust before 80 knots as needed.<br>During strong headwinds, if the thrust levers do not advance to the planned takeoff thrust, manually advance the thrust levers before 80 knots.<br><span class="sop-tag-items">PM: "THRUST SET"</span> <span style="font-size:0.8em;color:var(--gray);font-style:italic;">before passing 65 kts</span> |
+| | Monitor the engine instruments during the takeoff. Call out any abnormal indications.<br>Adjust takeoff thrust before 80 knots as needed.<br>During strong headwinds, if the thrust levers do not advance to the planned takeoff thrust, manually advance the thrust levers before 80 knots.<br><span class="sop-tag-items">PM: "THRUST SET"</span> <span style="font-size:0.8em;color:var(--text-muted);font-style:italic;">before passing 65 kts</span> |
 | After takeoff thrust is set, the captain's hand must be on the thrust levers until v<sub>1</sub>. | |
 | Monitor airspeed.<br>Maintain light forward pressure on the control column.<br>Aileron into the wind as speed increases. | Monitor airspeed and call out any abnormal indications. |
 | Verify 80 knots and <span class="sop-tag-items">PF: "CHECK"</span> | <span class="sop-tag-items">PM: "80 KNOTS"</span> |

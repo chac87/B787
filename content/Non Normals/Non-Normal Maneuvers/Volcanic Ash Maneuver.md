@@ -5,7 +5,7 @@ tags: [non-normal, maneuvers]
 
 # Volcanic Ash Maneuver
 
-<div class="cl-note">→ <a href="/Non-Normals/Non-Normal-Checklists/Volcanic-Ash" style="color:#f39c12 !important"><strong>Volcanic Ash NNC</strong></a></div>
+<div class="cl-note">→ <a href="/Non-Normals/Non-Normal-Checklists/Volcanic-Ash" style="color:var(--status-amber-text)"><strong>Volcanic Ash NNC</strong></a></div>
 
 ## Recognition
 
@@ -29,11 +29,11 @@ tags: [non-normal, maneuvers]
   <div style="grid-column: 1/4; display: flex; justify-content: center; margin-bottom: 2px;">
     <div class="flow-node fn-start" style="text-align: center;">Volcanic Ash NNC</div>
   </div>
-  <div style="text-align: right; padding-right: 1.5rem; color: var(--gray); font-size: 1.25rem; line-height: 1.2;">↙</div>
+  <div style="text-align: right; padding-right: 1.5rem; color: var(--text-muted); font-size: 1.25rem; line-height: 1.2;">↙</div>
   <div></div>
-  <div style="text-align: left; padding-left: 1.5rem; color: var(--gray); font-size: 1.25rem; line-height: 1.2;">↗</div>
-  <div class="flow-node fn-action" style="text-align: center; white-space: normal; display: block;">Eng Fail NNC<br><small style="font-weight: 400; font-size: 0.82em; color: var(--gray);">1 or 2 engines</small></div>
-  <span style="color: var(--gray); white-space: nowrap; padding: 0 8px;">──▶</span>
+  <div style="text-align: left; padding-left: 1.5rem; color: var(--text-muted); font-size: 1.25rem; line-height: 1.2;">↗</div>
+  <div class="flow-node fn-action" style="text-align: center; white-space: normal; display: block;">Eng Fail NNC<br><small style="font-weight: 400; font-size: 0.82em; color: var(--text-muted);">1 or 2 engines</small></div>
+  <span style="color: var(--text-muted); white-space: nowrap; padding: 0 8px;">──▶</span>
   <div class="flow-node fn-action" style="text-align: center;">Airspeed Unreliable NNC</div>
 </div>
 

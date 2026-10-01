@@ -10,7 +10,7 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
 
 <div class="nn-flow">
 
-<div style="margin:0.4rem 0 0.2rem;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#e74c3c;border-left:4px solid #e74c3c;padding-left:0.6em">RECOVER</div>
+<div style="margin:0.4rem 0 0.2rem;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--status-red-text);border-left:4px solid #e74c3c;padding-left:0.6em">RECOVER</div>
 
 <div class="nn-flow-step nn-flow-step--red" style="display:block">
   <div class="nn-flow-copy">
@@ -36,7 +36,7 @@ Non-normal handling follows one priority: **fly the aircraft first**, then analy
   </div>
 </div>
 
-<div style="margin:0.8rem 0 0.2rem;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:#3257BC;border-left:4px solid #3257BC;padding-left:0.6em">SECURE</div>
+<div style="margin:0.8rem 0 0.2rem;font-size:0.72rem;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;color:var(--secondary);border-left:4px solid #3257BC;padding-left:0.6em">SECURE</div>
 
 <div class="nn-flow-step nn-flow-step--white" style="display:block">
   <div class="nn-flow-copy">

@@ -56,12 +56,12 @@ An upset condition is any time the airplane is diverting from the intended state
   <tbody>
     <tr>
       <td colspan="2" style="background: color-mix(in srgb, var(--secondary) 15%, var(--lightgray)); font-weight: 700; text-align: center;">
-        <span style="float: left; opacity: 0.6;">1</span>PUSH TO UNLOAD
+        <span style="float: left; font-weight: 400;">1</span>PUSH TO UNLOAD
       </td>
     </tr>
     <tr>
       <td style="background: color-mix(in srgb, var(--secondary) 15%, var(--lightgray)); font-weight: 700;">
-        <span style="opacity: 0.6; margin-right: 1em;">2</span>ROLL
+        <span style="font-weight: 400; margin-right: 1em;">2</span>ROLL
       </td>
       <td rowspan="2" style="vertical-align: middle; text-align: center; color: var(--darkgray);">
         Thrust / Drag as required
@@ -69,7 +69,7 @@ An upset condition is any time the airplane is diverting from the intended state
     </tr>
     <tr>
       <td style="background: color-mix(in srgb, var(--secondary) 15%, var(--lightgray)); font-weight: 700;">
-        <span style="opacity: 0.6; margin-right: 1em;">3</span>STABILIZE
+        <span style="font-weight: 400; margin-right: 1em;">3</span>STABILIZE
       </td>
     </tr>
   </tbody>

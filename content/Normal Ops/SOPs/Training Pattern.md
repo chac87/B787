@@ -15,4 +15,4 @@ Reduced procedure instead of Descent Checklist and Approach Checklist:
 <div class="cl-item"><strong>PM:</strong><span class="cl-dots"></span><span>Insert V<sub>REF</sub> and set autobrake</span></div>
 <div class="cl-item"><strong>PF:</strong><span class="cl-dots"></span><span>"Pattern Checklist"</span></div>
 
-<span style="color: green; font-style: italic;"><strong>Note:</strong> After Takeoff, Descent- and Approach-checklist items have to be clicked through silently by PM and only "autobrake" and "landing data" are read aloud for confirmation. The Landing Checklist however has to be read in the normal manner.</span>
+<span style="color: var(--status-green-text); font-style: italic;"><strong>Note:</strong> After Takeoff, Descent- and Approach-checklist items have to be clicked through silently by PM and only "autobrake" and "landing data" are read aloud for confirmation. The Landing Checklist however has to be read in the normal manner.</span>

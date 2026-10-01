@@ -47,7 +47,7 @@ VNAV should be used only for approaches that have one of the following features:
 <div class="eicas-levels">
   <div class="eicas-card eicas-card--white">
     <div class="eicas-card-title">Recommended Roll Modes</div>
-    <div class="eicas-card-body">Any recommended roll mode from the procedure may be used.<br><table style="width:100%;font-size:0.9em;margin-top:0.45em;border:none"><tr><td><strong>RNAV / GPS / VOR / NDB</strong></td><td style="color:var(--gray)">LNAV</td></tr><tr><td><strong>B/CRS</strong></td><td style="color:var(--gray)">LNAV or B/CRS</td></tr><tr><td><strong>LOC / SDF / LDA / ILS G/S off / IGS G/S off</strong></td><td style="color:var(--gray)">LNAV or LOC</td></tr></table></div>
+    <div class="eicas-card-body">Any recommended roll mode from the procedure may be used.<br><table style="width:100%;font-size:0.9em;margin-top:0.45em;border:none"><tr><td><strong>RNAV / GPS / VOR / NDB</strong></td><td style="color:var(--text-muted)">LNAV</td></tr><tr><td><strong>B/CRS</strong></td><td style="color:var(--text-muted)">LNAV or B/CRS</td></tr><tr><td><strong>LOC / SDF / LDA / ILS G/S off / IGS G/S off</strong></td><td style="color:var(--text-muted)">LNAV or LOC</td></tr></table></div>
   </div>
   <div class="eicas-card eicas-card--white">
     <div class="eicas-card-title">Localizer-Based Approaches</div>

@@ -71,6 +71,9 @@ Defined in `quartz/styles/custom.scss`:
 | `.cl-caution` | Inline caution — small italic amber text, indented |
 | `.c-red` | Inline red span for labeled indicators (e.g. `<span class="c-red">OFF</span>`) |
 | `.c-green` | Inline green span for positive states (e.g. `<span class="c-green">illuminated</span>`) |
+| `.color-swatch` | Color legend square: `<span class="color-swatch" style="--swatch:#e74c3c" aria-hidden="true"></span><strong>Red</strong>` — never color the label text itself |
+
+Inline colors in content: use the classes above or theme tokens (`var(--status-amber-text)`, `var(--text-muted)`, `var(--secondary)`), never raw hex — raw hex has no dark-mode variant. In `[!proc]` callouts, `######` PM lines are turned into `p.proc-pm` at build time (`ProcCalloutLines` transformer), so keep writing them as `######`.
 
 NNC-specific classes (`.nnc-*`) are documented in the **NNC (Non-Normal Checklist) Notes** section below.
 

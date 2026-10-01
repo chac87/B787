@@ -85,7 +85,7 @@ The autopilot should normally remain engaged until **suitable visual reference**
 | Selected guidance | HDG SEL, TRK SEL, V/S, FPA | Use when required by approach type, raw data, or procedure |
 
 > [!warning] On approach with RNP alerting requirement
-> <a href="/Non-Normals/Non-Normal-Checklists/NAV-UNABLE-RNP" style="color:#f39c12 !important"><strong>NAV UNABLE RNP</strong></a> → start a Go-Around unless suitable visual references can be established and maintained.
+> <a href="/Non-Normals/Non-Normal-Checklists/NAV-UNABLE-RNP" style="color:var(--status-amber-text)"><strong>NAV UNABLE RNP</strong></a> → start a Go-Around unless suitable visual references can be established and maintained.
 
 ## IAN
 

@@ -71,7 +71,7 @@ article :is(p, li, td) a:is(.internal, .external):not(.tag-link) {
 
 /* Callout and memory-item title tints lift the background in dark mode;
    a lighter link keeps 4.5:1 */
-:root[saved-theme="dark"] :is(.callout-content, .mi-title) a:is(.internal, .external) {
+:root[saved-theme="dark"] :is(.callout, .mi-title) a:is(.internal, .external) {
   color: color-mix(in srgb, var(--secondary), #ffffff 25%);
 }
 

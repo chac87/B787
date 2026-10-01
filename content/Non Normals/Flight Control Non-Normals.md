@@ -49,54 +49,54 @@ Activated when flap/slat electronics have completely failed.
 - **No closed-loop** → no asymmetry or uncommanded motion protection
 
 > [!warning] Only when directed by NNC
-> Alternate mode only for: <a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE" style="color:#f39c12 !important"><strong>AIRSPEED UNRELIABLE</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL</strong></a> NNC
+> Alternate mode only for: <a href="/Non-Normals/Non-Normal-Checklists/AIRSPEED-UNRELIABLE" style="color:var(--status-amber-text)"><strong>AIRSPEED UNRELIABLE</strong></a> or <a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:var(--status-amber-text)"><strong>FLAP/SLAT CONTROL</strong></a> NNC
 
-<a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL NNC:</strong></a> Extension takes approx. 3 minutes – plan approach early. v<sub>REF</sub> 20. Flap lever stays UP (per checklist – it is inoperative regardless).
+<a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:var(--status-amber-text)"><strong>FLAP/SLAT CONTROL NNC:</strong></a> Extension takes approx. 3 minutes – plan approach early. v<sub>REF</sub> 20. Flap lever stays UP (per checklist – it is inoperative regardless).
 
 ## Slat/Flap Malfunctions
 
 <div class="eicas-levels">
 
 <div class="eicas-card eicas-card--white">
-  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/CRUISE-FLAPS-SYS" style="color:#888888 !important"><strong>CRUISE FLAPS SYS</strong></a> <span class="eicas-card-badge">ADVISORY</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/CRUISE-FLAPS-SYS" style="color:var(--text-muted)"><strong>CRUISE FLAPS SYS</strong></a> <span class="eicas-card-badge">ADVISORY</span></div>
   <div class="eicas-card-body">Cruise flap system failed · Normal flaps available for landing</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:var(--status-amber-text)"><strong>FLAPS PRIMARY FAIL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
   <div class="eicas-card-body">Primary flap mode failed · Secondary mode · Flaps 20 · Slow extension/retraction</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:var(--status-amber-text)"><strong>SLATS PRIMARY FAIL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
   <div class="eicas-card-body">Primary slat mode failed · Secondary mode · Normal landing · Allow time for slower extension</div>
 </div>
 
 <div class="eicas-card eicas-card--red">
-  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:var(--status-amber-text)"><strong>FLAPS DRIVE</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
   <div class="eicas-card-body">Drive mechanism failed · Flaps fixed in current position · <strong>DO NOT USE Alternate Mode</strong> · Max FL 200 · Higher fuel burn · Autoland not certified · Higher approach speed / LDG Dist.</div>
 </div>
 
 <div class="eicas-card eicas-card--red">
-  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:var(--status-amber-text)"><strong>SLATS DRIVE</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
   <div class="eicas-card-body">Drive mechanism failed · Slats fixed in current position · Flap extension limited to Flaps 20 · v<sub>REF</sub> 30+30 · Pitch at touchdown lower than normal</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:#f39c12 !important"><strong>FLAP/SLAT CONTROL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/FLAP-SLAT-CONTROL" style="color:var(--status-amber-text)"><strong>FLAP/SLAT CONTROL</strong></a> <span class="eicas-card-badge">CAUTION</span></div>
   <div class="eicas-card-body">Electronics failed · Alternate mode required · Extension ~3 min · v<sub>REF</sub> 20</div>
 </div>
 
 <div class="eicas-card eicas-card--amber">
-  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/Flap-Lever-Inoperative" style="color:#f39c12 !important"><strong>Flap Lever Inoperative</strong></a> <span class="eicas-card-badge">UNANNUNCIATED</span></div>
+  <div class="eicas-card-title"><a href="/Non-Normals/Non-Normal-Checklists/Flap-Lever-Inoperative" style="color:var(--status-amber-text)"><strong>Flap Lever Inoperative</strong></a> <span class="eicas-card-badge">UNANNUNCIATED</span></div>
   <div class="eicas-card-body">Flaps/slats not responding to flap lever · Alternate mode required · After T/O: usually return for landing</div>
 </div>
 
 </div>
 
 **Escalation paths:**
-- <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>FLAPS PRIMARY FAIL</strong></a> → secondary fails or asymmetry detected → <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:#f39c12 !important"><strong>FLAPS DRIVE</strong></a>
-- <a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:#f39c12 !important"><strong>SLATS PRIMARY FAIL</strong></a> → secondary fails or asymmetry detected → <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:#f39c12 !important"><strong>SLATS DRIVE</strong></a>
+- <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-PRIMARY-FAIL" style="color:var(--status-amber-text)"><strong>FLAPS PRIMARY FAIL</strong></a> → secondary fails or asymmetry detected → <a href="/Non-Normals/Non-Normal-Checklists/FLAPS-DRIVE" style="color:var(--status-amber-text)"><strong>FLAPS DRIVE</strong></a>
+- <a href="/Non-Normals/Non-Normal-Checklists/SLATS-PRIMARY-FAIL" style="color:var(--status-amber-text)"><strong>SLATS PRIMARY FAIL</strong></a> → secondary fails or asymmetry detected → <a href="/Non-Normals/Non-Normal-Checklists/SLATS-DRIVE" style="color:var(--status-amber-text)"><strong>SLATS DRIVE</strong></a>
 
 <div class="eicas-levels">
 
@@ -193,7 +193,7 @@ May result from dirt, component failure, worn parts, improper lubrication, or fo
 
 ## Inoperative Stabilizer
 
-**EICAS:** <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER" style="color:#e74c3c !important"><strong>STABILIZER</strong></a> (warning) · <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-L2" style="color:#f39c12 !important"><strong>STABILIZER L2</strong></a> / <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-R2" style="color:#f39c12 !important"><strong>STABILIZER R2</strong></a> (advisory, one channel) · <span style="color:#f39c12"><strong>STABILIZER CUTOUT</strong></span> (advisory, both cutout)
+**EICAS:** <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER" style="color:var(--status-red-text)"><strong>STABILIZER</strong></a> (warning) · <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-L2" style="color:var(--status-amber-text)"><strong>STABILIZER L2</strong></a> / <a href="/Non-Normals/Non-Normal-Checklists/STABILIZER-R2" style="color:var(--status-amber-text)"><strong>STABILIZER R2</strong></a> (advisory, one channel) · <span class="c-amber"><strong>STABILIZER CUTOUT</strong></span> (advisory, both cutout)
 
 <div class="eicas-levels">
 
@@ -219,8 +219,8 @@ May result from dirt, component failure, worn parts, improper lubrication, or fo
 
 </div>
 
-- **Auto-shutdown** – one channel: <span style="color:#f39c12">**STABILIZER L2/R2**</span> advisory, other channel operative · both channels or motion not stopped: <span style="color:#e74c3c">**STABILIZER**</span> warning · secondary mode: <span style="color:#e74c3c">**STABILIZER**</span> warning inhibited
-- **Cutout switches** CUTOUT → <span style="color:#f39c12">**STABILIZER CUTOUT**</span> advisory · <span style="color:#e74c3c">**STABILIZER**</span> warning suppressed
+- **Auto-shutdown** – one channel: <span class="c-amber">**STABILIZER L2/R2**</span> advisory, other channel operative · both channels or motion not stopped: <span class="c-red">**STABILIZER**</span> warning · secondary mode: <span class="c-red">**STABILIZER**</span> warning inhibited
+- **Cutout switches** CUTOUT → <span class="c-amber">**STABILIZER CUTOUT**</span> advisory · <span class="c-red">**STABILIZER**</span> warning suppressed
 - **Uncommanded trim motion** – hold column firmly · if motion continues, displace column in opposite direction to interrupt trim commands
 
-> [!info] If both channels already auto-shut down: placing cutout switches in CUTOUT will **not** clear the <span style="color:#e74c3c">**STABILIZER**</span> warning and will **not** trigger the <span style="color:#f39c12">**STABILIZER CUTOUT**</span> advisory.
+> [!info] If both channels already auto-shut down: placing cutout switches in CUTOUT will **not** clear the <span class="c-red">**STABILIZER**</span> warning and will **not** trigger the <span class="c-amber">**STABILIZER CUTOUT**</span> advisory.
