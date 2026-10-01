@@ -243,7 +243,7 @@
 .flow-node.fn-result { background: rgba(62,95,168,0.14) !important; border-color: #3E5FA8 !important; font-style: italic; }
 .flow-arrow { color: var(--gray) !important; user-select: none; white-space: nowrap; display: inline-block; }
 .flow-vline { width: 1.5px; min-height: 20px; background: var(--gray); margin-left: 16px; display: block; }
-.flow-label { font-size: 0.72rem; color: var(--gray) !important; font-weight: 700; margin-left: 18px; line-height: 1; display: block; }
+.flow-label { font-size: 0.72rem; color: var(--text-muted) !important; font-weight: 700; margin-left: 18px; line-height: 1; display: block; }
 
 /* Mobile: scale down to fit iPhone width */
 @media (max-width: 700px) {

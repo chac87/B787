@@ -141,7 +141,7 @@ article table td:first-child:has(+ td .sop-badge) {
 
 .sop-trigger {
   font-size: 0.68em;
-  color: var(--gray);
+  color: var(--text-muted);
   font-style: italic;
   text-align: right;
 }
@@ -251,7 +251,7 @@ article table td:first-child:has(+ td .sop-badge) {
 // Aircraft variant section end bar
 .cl-variant-end {
   background-color: var(--lightgray);
-  color: var(--gray);
+  color: var(--text-muted);
   font-size: 0.7rem;
   font-style: italic;
   padding: 2px 8px;

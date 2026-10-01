@@ -28,6 +28,21 @@
 }
 
 /* =========================================
+   MUTED TEXT
+   --gray is a line/border color: as text it is 3.4:1 on the light sand.
+   --text-muted is the readable muted shade (5.3:1 light). Dark mode keeps
+   --gray, which already reads at 7.1:1.
+   ========================================= */
+
+:root {
+  --text-muted: color-mix(in srgb, var(--gray), var(--darkgray) 45%);
+}
+
+:root[saved-theme="dark"] {
+  --text-muted: var(--gray);
+}
+
+/* =========================================
    LINKS
    custom.scss loads after base.scss and all component styles, so equal
    specificity is enough to override — no !important needed.
@@ -52,6 +67,12 @@ article :is(p, li, td) a:is(.internal, .external):not(.tag-link) {
   text-decoration-thickness: 1px;
   text-underline-offset: 0.2em;
   text-decoration-color: color-mix(in srgb, currentColor 40%, transparent);
+}
+
+/* Callout and memory-item title tints lift the background in dark mode;
+   a lighter link keeps 4.5:1 */
+:root[saved-theme="dark"] :is(.callout-content, .mi-title) a:is(.internal, .external) {
+  color: color-mix(in srgb, var(--secondary), #ffffff 25%);
 }
 
 /* Breadcrumb + book navigation: always dark */

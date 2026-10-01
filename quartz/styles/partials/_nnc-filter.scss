@@ -216,6 +216,8 @@ article:is(.eicas-warning, .eicas-caution, .eicas-advisory) h1 .h1-bracket { col
   .nn-level-btn[data-level="advisory"]         { border-color: var(--status-advisory-dark); }
   .nn-level-btn[data-level="advisory"].active  { background: var(--status-advisory-dark); color: #1a1a1a; }
 
+  // Badge without a level falls back to Core Blue, which is 3:1 on navy
+  .nn-eicas-badge:not([data-level]) { border-color: var(--lhg-light-blue); color: var(--lhg-light-blue); }
   .nn-eicas-badge[data-level="warning"]  { border-color: var(--status-red-dark); }
   .nn-eicas-badge[data-level="caution"]  { border-color: var(--status-amber-dark); }
   .nn-eicas-badge[data-level="advisory"] { border-color: var(--status-advisory-dark); }

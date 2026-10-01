@@ -221,6 +221,9 @@ async function setupSearch(searchElement: Element, currentSlug: FullSlug, data: 
   }
 
   function hideSearch() {
+    // The Escape handler listens on the whole document; without this guard every
+    // Escape anywhere on the page (e.g. closing the lightbox) stole focus to the search button
+    if (!container.classList.contains("active")) return
     container.classList.remove("active")
     searchBar.value = "" // clear the input when we dismiss the search
     if (sidebar) sidebar.style.zIndex = ""

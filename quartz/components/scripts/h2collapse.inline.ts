@@ -17,6 +17,7 @@ function setupH2Collapse() {
   const supportsUntilFound = "onbeforematch" in document.body
   // Matches the grid-template-rows transition in _h2collapse.scss
   const collapseMs = 200
+  const expanders = new Map<Element, () => void>()
 
   for (const [index, h2] of Array.from(article.querySelectorAll("h2")).entries()) {
     if (h2.classList.contains("h2-no-collapse")) continue
@@ -87,6 +88,7 @@ function setupH2Collapse() {
     }
 
     setCollapsed(true)
+    expanders.set(outer, () => setCollapsed(false))
 
     const toggle = (e: Event) => {
       // Don't toggle when clicking the heading anchor link
@@ -102,6 +104,29 @@ function setupH2Collapse() {
       inner.removeEventListener("beforematch", onBeforeMatch)
     })
   }
+
+  // Anchor target inside a collapsed section: expand it, then scroll once it has
+  // opened — the SPA already scrolled to the still-hidden position.
+  const revealAnchor = (hash: string) => {
+    if (!hash) return
+    const target = document.getElementById(decodeURIComponent(hash.slice(1)))
+    const section = target?.closest(".h2-section-content.is-collapsed")
+    const expand = section && expanders.get(section)
+    if (!target || !expand) return
+    expand()
+    window.setTimeout(() => target.scrollIntoView(), collapseMs)
+  }
+  revealAnchor(location.hash)
+
+  // Same-page anchor clicks don't fire "nav", so catch them before the SPA scrolls
+  const onAnchorClick = (e: MouseEvent) => {
+    const link = (e.target as Element).closest<HTMLAnchorElement>('a[href*="#"]')
+    if (!link) return
+    const url = new URL(link.href)
+    if (url.pathname === location.pathname) revealAnchor(url.hash)
+  }
+  document.addEventListener("click", onAnchorClick)
+  window.addCleanup(() => document.removeEventListener("click", onAnchorClick))
 }
 
 document.addEventListener("nav", setupH2Collapse)

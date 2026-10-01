@@ -9,7 +9,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "de-DE",
     baseUrl: "lh787.netlify.app",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",

@@ -10,13 +10,12 @@
   font-size: 0.8em;
   font-weight: 600;
   letter-spacing: 0.03em;
-  color: var(--secondary);
-  opacity: 0.65;
+  // Muted via color, not opacity: opacity 0.65 dropped it to 2.8:1
+  color: var(--text-muted);
   text-decoration: none;
-  transition: opacity 0.15s ease;
+  transition: color 0.15s ease;
 
   &:hover {
-    opacity: 1;
     text-decoration: none;
     color: var(--secondary);
   }
@@ -68,7 +67,7 @@
 .nnc-note {
   font-size: 0.85em;
   font-style: italic;
-  color: #2d7d32;
+  color: #2a7530; // QRH-app green, one step darker: #2d7d32 was 4.39:1
   margin: 0.2em 0 0.2em 1.5em;
   line-height: 1.45;
 }
@@ -131,7 +130,7 @@
 // Intermediate confirm value (e.g. "Confirm … CUTOFF")
 .nnc-confirm {
   font-size: 0.88em;
-  color: var(--gray);
+  color: var(--text-muted);
   white-space: nowrap;
   flex-shrink: 0;
   margin-right: 0.4em;
@@ -156,7 +155,7 @@
   font-size: 0.78em;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: var(--gray);
+  color: var(--text-muted);
 
   &::before,
   &::after {
@@ -179,12 +178,11 @@
 .nnc-role {
   font-size: 0.75em;
   font-weight: 700;
-  color: var(--gray);
+  color: var(--text-muted);
   white-space: nowrap;
   flex-shrink: 0;
   margin-left: 0.4em;
   margin-right: 0.1em;
-  opacity: 0.7;
 }
 
 // Dashed separator line (memory items above / reference items below)
@@ -318,7 +316,7 @@
 .mi-condition {
   font-size: 0.82em;
   font-style: italic;
-  color: var(--gray);
+  color: var(--text-muted);
   padding: 4px 12px 6px;
   border-bottom: 1px solid var(--lightgray);
 }
@@ -334,7 +332,7 @@
 
 .mi-num {
   min-width: 1.4em;
-  color: var(--gray);
+  color: var(--text-muted);
   font-size: 0.85em;
   flex-shrink: 0;
 }
@@ -348,6 +346,15 @@
   font-weight: 700;
   margin-right: 6px;
   white-space: nowrap;
+}
+
+// Phones: long actions ("Push and hold for 1 second") must wrap, otherwise the
+// role badge is pushed out of the block and clipped by its overflow: hidden
+@media (max-width: 600px) {
+  .mi-item-action {
+    white-space: normal;
+    text-align: right;
+  }
 }
 
 .mi-role {
@@ -369,6 +376,7 @@
 
 .mi-role--both {
   background: #4B9DA1;
+  color: #05164D; // white on Teal is 3.2:1
 }
 
 .mi-subheader {
@@ -392,7 +400,7 @@
 .mi-note {
   font-size: 0.82em;
   font-style: italic;
-  color: var(--gray);
+  color: var(--text-muted);
   padding: 3px 12px 3px 3em;
   border-top: 1px solid var(--lightgray);
 }
@@ -434,11 +442,14 @@
     background: #64748b;
   }
 
+  // Light fills need dark text (white was 3.2:1)
   .mi-role--pm {
     background: var(--lhg-light-blue);
+    color: #070D1F;
   }
 
   .mi-role--both {
     background: #3d9096;
+    color: #070D1F;
   }
 }

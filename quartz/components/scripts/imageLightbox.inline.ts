@@ -45,12 +45,7 @@ if (!document.getElementById("lightbox-overlay")) {
 
   document.addEventListener("keydown", (e) => {
     if (!overlay.classList.contains("open")) return
-    if (e.key === "Escape") {
-      // Quartz search's Escape handler (also on document, registered later)
-      // would otherwise pull focus to the search button
-      e.stopImmediatePropagation()
-      close()
-    }
+    if (e.key === "Escape") close()
     // The close button is the only focusable element — keep focus inside the dialog
     if (e.key === "Tab") {
       e.preventDefault()
